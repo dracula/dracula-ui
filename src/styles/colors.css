@@ -9,6 +9,8 @@
   --purple: #9580ff;
   --red: #ff9580;
   --yellow: #ffff80;
+
+  --gradientDegree: 135deg;
 }
 
 .drac-bg-black {
@@ -38,6 +40,34 @@
 .drac-bg-yellow {
   background: var(--yellow);
 }
+.drac-bg-purple-cyan {
+  background: linear-gradient(
+    var(--gradientDegree),
+    var(--purple) 0%,
+    var(--cyan) 100%
+  );
+}
+.drac-bg-yellow-pink {
+  background: linear-gradient(
+    var(--gradientDegree),
+    var(--yellow) 0%,
+    var(--pink) 100%
+  );
+}
+.drac-bg-cyan-green {
+  background: linear-gradient(
+    var(--gradientDegree),
+    var(--cyan) 0%,
+    var(--green) 100%
+  );
+}
+.drac-bg-pink-purple {
+  background: linear-gradient(
+    var(--gradientDegree),
+    var(--pink) 0%,
+    var(--purple) 100%
+  );
+}
 
 .drac-text-black {
   color: var(--black);
@@ -65,4 +95,32 @@
 }
 .drac-text-yellow {
   color: var(--yellow);
+}
+.drac-text-purple-cyan {
+  color: linear-gradient(
+    var(--gradientDegree),
+    var(--purple) 0%,
+    var(--cyan) 100%
+  );
+}
+.drac-text-yellow-pink {
+  color: linear-gradient(
+    var(--gradientDegree),
+    var(--yellow) 0%,
+    var(--pink) 100%
+  );
+}
+.drac-text-cyan-green {
+  color: linear-gradient(
+    var(--gradientDegree),
+    var(--cyan) 0%,
+    var(--green) 100%
+  );
+}
+.drac-text-pink-purple {
+  color: linear-gradient(
+    var(--gradientDegree),
+    var(--pink) 0%,
+    var(--purple) 100%
+  );
 }

@@ -9,7 +9,11 @@ export const colors = {
   pink: 'drac-bg-pink',
   purple: 'drac-bg-purple',
   red: 'drac-bg-red',
-  yellow: 'drac-bg-yellow'
+  yellow: 'drac-bg-yellow',
+  purpleCyan: 'drac-bg-purple-cyan',
+  yellowPink: 'drac-bg-yellow-pink',
+  cyanGreen: 'drac-bg-cyan-green',
+  pinkPurple: 'drac-bg-pink-purple'
 }
 
 export interface BoxProps extends HTMLAttributes<HTMLDivElement> {
