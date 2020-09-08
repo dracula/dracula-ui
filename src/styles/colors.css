@@ -2,17 +2,17 @@
   --black: hsl(230, 15%, 15%);
   --blackSecondary: hsl(230, 15%, 30%);
   --blackTernary: hsl(230, 15%, 70%);
-  --white: #f8f8f2;
+  --white: hsl(60, 30%, 96%);
 
-  --cyan: #80ffea;
-  --green: #8aff80;
-  --orange: #ffca80;
-  --pink: #ff80bf;
-  --purple: #9580ff;
-  --red: #ff9580;
-  --yellow: #ffff80;
+  --cyan: hsl(170, 100%, 75%);
+  --green: hsl(115, 100%, 75%);
+  --orange: hsl(35, 100%, 75%);
+  --pink: hsl(330, 100%, 75%);
+  --purple: hsl(250, 100%, 75%);
+  --red: hsl(10, 100%, 75%);
+  --yellow: hsl(60, 100%, 75%);
 
-  --disabled: #6d7392;
+  --disabled: hsl(230, 15%, 50%);
 
   --gradientDegree: 135deg;
 }
