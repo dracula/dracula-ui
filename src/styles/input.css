@@ -1,0 +1,68 @@
+.drac-input {
+  border-radius: 10px;
+  outline: none;
+  background: var(--blackSecondary);
+  border: 0.3rem solid transparent;
+  padding: 20px;
+  transition: 0.3s ease-in-out all;
+  -webkit-appearance: textfield;
+}
+
+.drac-input:focus {
+  border-color: var(--white);
+}
+
+.drac-input::placeholder {
+  color: var(--blackTernary);
+}
+
+.drac-input-outline {
+  background: transparent;
+  border-color: var(--blackTernary);
+}
+
+.drac-input-outline.drac-input-black,
+.drac-input-outline.drac-input-black:focus,
+.drac-input.drac-input-black:focus {
+  border-color: var(--blackSecondary);
+}
+.drac-input-outline.drac-input-white,
+.drac-input-outline.drac-input-white:focus,
+.drac-input.drac-input-white:focus {
+  border-color: var(--white);
+}
+.drac-input-outline.drac-input-cyan,
+.drac-input-outline.drac-input-cyan:focus,
+.drac-input.drac-input-cyan:focus {
+  border-color: var(--cyan);
+}
+.drac-input-outline.drac-input-green,
+.drac-input-outline.drac-input-green:focus,
+.drac-input.drac-input-green:focus {
+  border-color: var(--green);
+}
+.drac-input-outline.drac-input-orange,
+.drac-input-outline.drac-input-orange:focus,
+.drac-input.drac-input-orange:focus {
+  border-color: var(--orange);
+}
+.drac-input-outline.drac-input-pink,
+.drac-input-outline.drac-input-pink:focus,
+.drac-input.drac-input-pink:focus {
+  border-color: var(--pink);
+}
+.drac-input-outline.drac-input-purple,
+.drac-input-outline.drac-input-purple:focus,
+.drac-input.drac-input-purple:focus {
+  border-color: var(--purple);
+}
+.drac-input-outline.drac-input-red,
+.drac-input-outline.drac-input-red:focus,
+.drac-input.drac-input-red:focus {
+  border-color: var(--red);
+}
+.drac-input-outline.drac-input-yellow,
+.drac-input-outline.drac-input-yellow:focus,
+.drac-input.drac-input-yellow:focus {
+  border-color: var(--yellow);
+}

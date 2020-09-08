@@ -1,5 +1,7 @@
 :root {
-  --black: #282a36;
+  --black: hsl(230, 15%, 15%);
+  --blackSecondary: hsl(230, 15%, 30%);
+  --blackTernary: hsl(230, 15%, 70%);
   --white: #f8f8f2;
 
   --cyan: #80ffea;
