@@ -33,7 +33,7 @@ export const Buttons = (props?: Partial<TextProps>) => (
                   themeColor={color as ButtonProps['themeColor']}
                   style={{ margin: '1rem' }}
                 >
-                  Normal 🤠
+                  Normal <span>🤠</span>
                 </Button>
 
                 <Button
@@ -41,7 +41,7 @@ export const Buttons = (props?: Partial<TextProps>) => (
                   style={{ margin: '1rem' }}
                   disabled
                 >
-                  Normal 🤠
+                  Normal <span>🤠</span>
                 </Button>
               </Box>
             </Box>
@@ -54,7 +54,7 @@ export const Buttons = (props?: Partial<TextProps>) => (
                   style={{ margin: '1rem' }}
                   variant="ghost"
                 >
-                  Ghost 👻
+                  Ghost <span>👻</span>
                 </Button>
                 <Button
                   themeColor={color as ButtonProps['themeColor']}
@@ -62,7 +62,7 @@ export const Buttons = (props?: Partial<TextProps>) => (
                   variant="ghost"
                   disabled
                 >
-                  Ghost 👻
+                  Ghost <span>👻</span>
                 </Button>
               </Box>
             </Box>
