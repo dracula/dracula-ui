@@ -5,6 +5,7 @@
 @import './badge.css';
 @import './input.css';
 @import './select.css';
+@import './avatar.css';
 
 .drac {
   /* 1rem = 10px */

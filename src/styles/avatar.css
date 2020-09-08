@@ -1,0 +1,29 @@
+.drac-avatar {
+  border-radius: 100rem;
+  border-style: solid;
+  border-width: 1px;
+
+  text-transform: uppercase;
+
+  height: 4.4rem;
+  width: 4.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.drac-avatar-subtle {
+  filter: grayscale(100%);
+}
+
+.drac-avatar .drac-text {
+  text-transform: uppercase;
+
+  /* Fira code is adding 1px to the bottom of the span */
+  transform: translateY(1px);
+}
