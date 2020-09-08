@@ -1,32 +1,68 @@
 :root {
   --black: #282a36;
   --white: #f8f8f2;
-  
-  --cyan: #80FFEA;
-  --green: #8AFF80;
-  --orange: #FFCA80;
-  --pink: #FF80BF;
-  --purple: #9580FF;
-  --red: #FF9580;
-  --yellow: #FFFF80;
+
+  --cyan: #80ffea;
+  --green: #8aff80;
+  --orange: #ffca80;
+  --pink: #ff80bf;
+  --purple: #9580ff;
+  --red: #ff9580;
+  --yellow: #ffff80;
 }
 
-.drac-bg-black  { background: var(--black); }
-.drac-bg-white  { background: var(--white); }
-.drac-bg-cyan   { background: var(--cyan); }
-.drac-bg-green  { background: var(--green); }
-.drac-bg-orange { background: var(--orange); }
-.drac-bg-pink   { background: var(--pink); }
-.drac-bg-purple { background: var(--purple); }
-.drac-bg-red    { background: var(--red); }
-.drac-bg-yellow { background: var(--yellow); }
+.drac-bg-black {
+  background: var(--black);
+}
+.drac-bg-white {
+  background: var(--white);
+}
+.drac-bg-cyan {
+  background: var(--cyan);
+}
+.drac-bg-green {
+  background: var(--green);
+}
+.drac-bg-orange {
+  background: var(--orange);
+}
+.drac-bg-pink {
+  background: var(--pink);
+}
+.drac-bg-purple {
+  background: var(--purple);
+}
+.drac-bg-red {
+  background: var(--red);
+}
+.drac-bg-yellow {
+  background: var(--yellow);
+}
 
-.drac-text-black  { color: var(--black); }
-.drac-text-white  { color: var(--white); }
-.drac-text-cyan   { color: var(--cyan); }
-.drac-text-green  { color: var(--green); }
-.drac-text-orange { color: var(--orange); }
-.drac-text-pink   { color: var(--pink); }
-.drac-text-purple { color: var(--purple); }
-.drac-text-red    { color: var(--red); }
-.drac-text-yellow { color: var(--yellow); }
+.drac-text-black {
+  color: var(--black);
+}
+.drac-text-white {
+  color: var(--white);
+}
+.drac-text-cyan {
+  color: var(--cyan);
+}
+.drac-text-green {
+  color: var(--green);
+}
+.drac-text-orange {
+  color: var(--orange);
+}
+.drac-text-pink {
+  color: var(--pink);
+}
+.drac-text-purple {
+  color: var(--purple);
+}
+.drac-text-red {
+  color: var(--red);
+}
+.drac-text-yellow {
+  color: var(--yellow);
+}
