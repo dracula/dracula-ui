@@ -1,2 +1,7 @@
 @import './colors.css';
 @import './typography.css';
+
+/* Normalizes sizes */
+.drac {
+  font-size: 62.5%;
+}
