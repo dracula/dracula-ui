@@ -1,8 +1,0 @@
-:root {
-    --black: #282A36;
-    --white: #F8F8F2;
-}
-
-.drac-bg-black {
-    background: var(--black);
-}

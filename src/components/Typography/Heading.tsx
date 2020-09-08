@@ -15,7 +15,7 @@ export const Heading: React.FC<HeadingProps> = props => {
   const size = tag[props.size]
   const finalProps = {
     ...props,
-    className: `.drac-Heading .drac-Heading--${props.size}`
+    className: `drac-Heading drac-Heading--${props.size}`
   }
 
   return React.createElement(size, finalProps, props.children)
