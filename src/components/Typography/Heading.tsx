@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { HTMLAttributes } from 'react'
 import { mapValues } from 'lodash'
 import { colors } from '../Color/Box'
 
@@ -13,7 +13,7 @@ export const HeadingColors = mapValues(colors, className => {
   return className.replace('-bg-', '-text-')
 })
 
-export interface HeadingProps {
+export interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {
   size?: keyof typeof HeadingSizes
   color?: keyof typeof HeadingColors
 }

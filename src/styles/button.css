@@ -1,0 +1,65 @@
+.drac-btn {
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: var(--corner-radius);
+}
+
+.drac-btn:active,
+.drac-btn:focus {
+  opacity: 0.75;
+  box-shadow: -4px -4px 1px rgba(255, 255, 255, 0.3) inset;
+  outline: 0;
+}
+
+.drac-btn:disabled {
+  background-color: var(--disabled);
+}
+
+.drac-btn:hover {
+  opacity: 0.75;
+  box-shadow: 4px 4px rgba(255, 255, 255, 0.1);
+}
+
+.drac-btn:disabled:hover {
+  box-shadow: none;
+}
+
+.drac-btn-outline {
+  border-width: var(--border-size);
+  border-style: solid;
+  background-color: transparent;
+}
+
+.drac-btn-outline:disabled {
+  background-color: transparent;
+  border-color: var(--disabled);
+  color: var(--disabled);
+}
+
+.drac-btn-outline:disabled .drac-text {
+  color: var(--disabled);
+}
+
+.drac-btn-ghost {
+  background-color: transparent;
+}
+
+.drac-btn-ghost:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+}
+
+.drac-btn-ghost:active,
+.drac-btn-ghost:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+}
+
+.drac-btn-ghost:disabled {
+  background-color: var(--disabled);
+  color: var(--black);
+}
+
+.drac-btn-ghost:disabled .drac-text {
+  color: var(--black);
+}

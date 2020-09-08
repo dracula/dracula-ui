@@ -1,5 +1,7 @@
+@import './sizes.css';
 @import './colors.css';
 @import './typography.css';
+@import './button.css';
 
 .drac {
   /* 1rem = 10px */
