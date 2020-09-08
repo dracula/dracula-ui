@@ -1,6 +1,6 @@
 import React from 'react'
 import { TextProps, Text, TextSizes } from '../../..'
-import { TextWeights } from '../Text'
+import { TextWeights, TextColors } from '../Text'
 import { Box } from '../../Color/Box'
 import { colorname } from '../../../story-helpers/random-color'
 import { Heading } from '../Heading'
@@ -25,7 +25,7 @@ export const Texts = (props?: Partial<TextProps>) => (
               >
                 <Text
                   size={size as TextProps['size']}
-                  weigth={weight as TextProps['weigth']}
+                  weight={weight as TextProps['weight']}
                 >
                   .{TextSizes[size]} .{TextWeights[weight]}
                 </Text>
@@ -35,5 +35,23 @@ export const Texts = (props?: Partial<TextProps>) => (
         </Heading>
       )
     })}
+  </div>
+)
+
+export const TextWithColors = (props?: Partial<TextProps>) => (
+  <div>
+    return (
+    <Heading size="heading-2">
+      Colors
+      {Object.keys(TextColors).map(color => {
+        return (
+          <Box key={color} style={{ padding: '1rem' }}>
+            <Text color={color as TextProps['color']}>
+              .{TextColors[color]}
+            </Text>
+          </Box>
+        )
+      })}
+    </Heading>
   </div>
 )

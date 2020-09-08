@@ -1,4 +1,6 @@
 import React from 'react'
+import { colors } from '../Color/Box'
+import { mapValues } from 'lodash'
 
 export const TextSizes = {
   large: 'drac-text-lg',
@@ -13,15 +15,24 @@ export const TextWeights = {
   bold: 'drac-text-bold'
 }
 
+export const TextColors = mapValues(colors, className => {
+  return className.replace('-bg-', '-text-')
+})
+
 export interface TextProps {
-  size: keyof typeof TextSizes
-  weigth: keyof typeof TextWeights
+  size?: keyof typeof TextSizes
+  weight?: keyof typeof TextWeights
+  color?: keyof typeof TextColors
 }
 
 export const Text: React.FC<TextProps> = props => {
   const finalProps = {
     ...props,
-    className: `drac-text ${TextSizes[props.size]} ${TextWeights[props.weigth]}`
+    className: `
+      drac-text ${TextSizes[props.size ?? 'normal']}
+      ${TextWeights[props.weight ?? 'normal']}
+      ${TextColors[props.color ?? 'black']}
+    `.trim()
   }
 
   return <span {...finalProps}>{props.children}</span>

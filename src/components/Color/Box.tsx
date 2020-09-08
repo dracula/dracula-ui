@@ -17,13 +17,13 @@ export const colors = {
 }
 
 export interface BoxProps extends HTMLAttributes<HTMLDivElement> {
-  color: keyof typeof colors
+  color?: keyof typeof colors
 }
 
-export const Box: React.FC<BoxProps> = (props) => {
+export const Box: React.FC<BoxProps> = props => {
   const finalProps = {
     ...props,
-    className: `drac-box ${colors[props.color]}`
+    className: `drac-box ${colors[props.color ?? 'black']}`
   }
 
   return <div {...finalProps} />

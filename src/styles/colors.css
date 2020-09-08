@@ -97,30 +97,63 @@
   color: var(--yellow);
 }
 .drac-text-purple-cyan {
-  color: linear-gradient(
+  background-image: linear-gradient(
     var(--gradientDegree),
     var(--purple) 0%,
     var(--cyan) 100%
   );
+
+  background-size: 100%;
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
+
 .drac-text-yellow-pink {
-  color: linear-gradient(
+  background-image: linear-gradient(
     var(--gradientDegree),
     var(--yellow) 0%,
     var(--pink) 100%
   );
+
+  background-size: 100%;
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 .drac-text-cyan-green {
-  color: linear-gradient(
+  background-image: linear-gradient(
     var(--gradientDegree),
     var(--cyan) 0%,
     var(--green) 100%
   );
+
+  background-size: 100%;
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 .drac-text-pink-purple {
-  color: linear-gradient(
+  background-image: linear-gradient(
     var(--gradientDegree),
     var(--pink) 0%,
     var(--purple) 100%
   );
+
+  background-size: 100%;
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }

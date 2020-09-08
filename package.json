@@ -44,6 +44,7 @@
     "@storybook/addon-links": "^6.0.21",
     "@storybook/addons": "^6.0.21",
     "@storybook/react": "^6.0.21",
+    "@types/lodash": "^4.14.161",
     "@types/react": "^16.9.49",
     "@types/react-dom": "^16.9.8",
     "@types/react-test-renderer": "^16.9.3",
@@ -60,6 +61,7 @@
     "typescript": "^4.0.2"
   },
   "dependencies": {
+    "lodash": "^4.17.20",
     "normalize.css": "^8.0.1"
   }
 }
