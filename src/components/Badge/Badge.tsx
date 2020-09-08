@@ -4,43 +4,43 @@ import cx from 'classnames'
 import { Text, TextColors } from '../Typography/Text'
 
 const variants = {
-  normal: 'drac-btn',
-  outline: 'drac-btn-outline',
-  ghost: 'drac-btn-ghost'
+  normal: 'drac-badge',
+  subtle: 'drac-badge-subtle',
+  outline: 'drac-badge-outline'
 }
 
-export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
+export interface BadgeProps extends HTMLAttributes<HTMLSpanElement> {
   themeColor?: keyof typeof backgroundColors
   variant?: keyof typeof variants
   disabled?: boolean
 }
 
-export const Button: React.FC<ButtonProps> = props => {
+export const Badge: React.FC<BadgeProps> = props => {
   const isOutline = props.variant === 'outline'
-  const isGhost = props.variant === 'ghost'
-  const overrideTextColor = isOutline || isGhost
+  const isSubtle = props.variant === 'subtle'
+  const overrideTextColor = isOutline || isSubtle
 
   const textColorClass = overrideTextColor
     ? TextColors[props.themeColor ?? 'green']
     : undefined
 
   let backgroundClass = backgroundColors[props.themeColor ?? 'green']
-  if (isGhost) {
+  if (isSubtle) {
     backgroundClass = `${backgroundClass}-transparent`
   }
 
   const classes = cx(
-    'drac-btn',
+    'drac-badge',
     backgroundClass,
     variants[props.variant ?? 'normal'],
     textColorClass
   )
 
   return (
-    <button className={classes} {...props}>
+    <span className={classes} {...props}>
       <Text color={overrideTextColor ? props.themeColor : undefined}>
         {props.children}
       </Text>
-    </button>
+    </span>
   )
 }

@@ -12,8 +12,15 @@
   --red: hsl(10, 100%, 75%);
   --yellow: hsl(60, 100%, 75%);
 
-  --disabled: hsl(230, 15%, 50%);
+  --cyan-transparent: hsl(170, 100%, 75%, 0.1);
+  --green-transparent: hsl(115, 100%, 75%, 0.1);
+  --orange-transparent: hsl(35, 100%, 75%, 0.1);
+  --pink-transparent: hsl(330, 100%, 75%, 0.1);
+  --purple-transparent: hsl(250, 100%, 75%, 0.1);
+  --red-transparent: hsl(10, 100%, 75%, 0.1);
+  --yellow-transparent: hsl(60, 100%, 75%, 0.1);
 
+  --disabled: hsl(230, 15%, 50%);
   --gradientDegree: 135deg;
 }
 
@@ -44,6 +51,35 @@
 .drac-bg-yellow {
   background: var(--yellow);
 }
+
+.drac-bg-black-transparent {
+  background: var(--black-transparent);
+}
+.drac-bg-white-transparent {
+  background: var(--white-transparent);
+}
+.drac-bg-cyan-transparent {
+  background: var(--cyan-transparent);
+}
+.drac-bg-green-transparent {
+  background: var(--green-transparent);
+}
+.drac-bg-orange-transparent {
+  background: var(--orange-transparent);
+}
+.drac-bg-pink-transparent {
+  background: var(--pink-transparent);
+}
+.drac-bg-purple-transparent {
+  background: var(--purple-transparent);
+}
+.drac-bg-red-transparent {
+  background: var(--red-transparent);
+}
+.drac-bg-yellow-transparent {
+  background: var(--yellow-transparent);
+}
+
 .drac-bg-purple-cyan {
   background: linear-gradient(
     var(--gradientDegree),
@@ -70,6 +106,35 @@
     var(--gradientDegree),
     var(--pink) 0%,
     var(--purple) 100%
+  );
+}
+
+.drac-bg-purple-cyan-transparent {
+  background: linear-gradient(
+    var(--gradientDegree),
+    var(--purple-transparent) 0%,
+    var(--cyan-transparent) 100%
+  );
+}
+.drac-bg-yellow-pink-transparent {
+  background: linear-gradient(
+    var(--gradientDegree),
+    var(--yellow-transparent) 0%,
+    var(--pink-transparent) 100%
+  );
+}
+.drac-bg-cyan-green-transparent {
+  background: linear-gradient(
+    var(--gradientDegree),
+    var(--cyan-transparent) 0%,
+    var(--green-transparent) 100%
+  );
+}
+.drac-bg-pink-purple-transparent {
+  background: linear-gradient(
+    var(--gradientDegree),
+    var(--pink-transparent) 0%,
+    var(--purple-transparent) 100%
   );
 }
 

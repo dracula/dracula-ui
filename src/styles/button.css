@@ -40,10 +40,6 @@
   color: var(--disabled);
 }
 
-.drac-btn-ghost {
-  background-color: transparent;
-}
-
 .drac-btn-ghost:hover {
   background-color: rgba(255, 255, 255, 0.1);
   box-shadow: none;

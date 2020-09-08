@@ -2,6 +2,7 @@
 @import './colors.css';
 @import './typography.css';
 @import './button.css';
+@import './badge.css';
 @import './input.css';
 
 .drac {
