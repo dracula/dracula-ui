@@ -1,19 +1,19 @@
-.drac-Heading {
+.drac-heading {
   font-family: 'Fira Code', monospace;
 }
 
-.drac-Heading--heading-1 {
+.drac-heading-heading-1 {
   font-size: 8rem;
 }
 
-.drac-Heading--heading-2 {
+.drac-heading-heading-2 {
   font-size: 6rem;
 }
 
-.drac-Heading--heading-3 {
+.drac-heading-heading-3 {
   font-size: 3rem;
 }
 
-.drac-Heading--heading-3 {
+.drac-heading-heading-3 {
   font-size: 2.4rem;
 }
