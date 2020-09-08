@@ -4,7 +4,7 @@ export interface HeadingProps {
   size: 'heading-1' | 'heading-2' | 'heading-3' | 'heading-4'
 }
 
-export const Heading: React.FC<HeadingProps> = props => {
+export const Heading: React.FC<HeadingProps> = (props) => {
   const tag: Record<HeadingProps['size'], string> = {
     'heading-1': 'h1',
     'heading-2': 'h2',
