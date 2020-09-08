@@ -4,6 +4,7 @@
 @import './button.css';
 @import './badge.css';
 @import './input.css';
+@import './select.css';
 
 .drac {
   /* 1rem = 10px */

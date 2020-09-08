@@ -17,7 +17,7 @@ export const inputColors = {
   yellow: 'drac-input-yellow drac-text-yellow'
 }
 
-export interface InputProps extends HTMLAttributes<HTMLDivElement> {
+export interface InputProps extends HTMLAttributes<HTMLInputElement> {
   variant: keyof typeof inputVariants
   color: keyof typeof inputColors
 }

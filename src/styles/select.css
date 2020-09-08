@@ -1,0 +1,110 @@
+.drac-select {
+  border-radius: 10px;
+  background: var(--blackSecondary);
+  border: 0.3rem solid transparent;
+  color: var(--white);
+  padding: 20px;
+  transition: 0.3s ease-in-out all;
+  appearance: none;
+  outline: none;
+  position: relative;
+  width: 100%;
+}
+
+.drac-select::before {
+  border-style: solid;
+  border-width: 0.25rem 0.25rem 0 0;
+  content: '';
+  display: inline-block;
+  height: 0.45rem;
+  left: 0.15rem;
+  position: relative;
+  top: 0.15rem;
+  transform: rotate(-45deg);
+  vertical-align: top;
+  width: 0.45rem;
+  left: 0;
+  transform: rotate(45deg);
+  background-color: white;
+}
+
+.drac-select:focus {
+  border-color: var(--white);
+}
+
+.drac-select::placeholder {
+  color: var(--blackTernary);
+}
+
+.drac-select-outline {
+  background: transparent;
+  border-color: var(--blackTernary);
+}
+
+.drac-select-arrow {
+  position: absolute;
+  display: inline-flex;
+  width: 3.6rem;
+  height: 100%;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  right: 2rem;
+  top: 50%;
+  pointer-events: none;
+  z-index: 2;
+  transform: translateY(-50%);
+}
+
+.drac-select-arrow svg {
+  width: 3.6rem;
+  height: 3.6rem;
+  fill: currentColor;
+}
+
+.drac-select-outline.drac-select-black,
+.drac-select-outline.drac-select-black:focus,
+.drac-select.drac-select-black:focus {
+  border-color: var(--black);
+}
+.drac-select-outline.drac-select-white,
+.drac-select-outline.drac-select-white:focus,
+.drac-select.drac-select-white:focus {
+  border-color: var(--white);
+}
+.drac-select-outline.drac-select-cyan,
+.drac-select-outline.drac-select-cyan:focus,
+.drac-select.drac-select-cyan:focus {
+  border-color: var(--cyan);
+}
+.drac-select-outline.drac-select-green,
+.drac-select-outline.drac-select-green:focus,
+.drac-select.drac-select-green:focus {
+  border-color: var(--green);
+}
+.drac-select-outline.drac-select-orange,
+.drac-select-outline.drac-select-orange:focus,
+.drac-select.drac-select-orange:focus {
+  border-color: var(--orange);
+}
+.drac-select-outline.drac-select-pink,
+.drac-select-outline.drac-select-pink:focus,
+.drac-select.drac-select-pink:focus {
+  border-color: var(--pink);
+}
+.drac-select-outline.drac-select-purple,
+.drac-select-outline.drac-select-purple:focus,
+.drac-select.drac-select-purple:focus {
+  border-color: var(--purple);
+}
+.drac-select-outline.drac-select-red,
+.drac-select-outline.drac-select-red:focus,
+.drac-select.drac-select-red:focus {
+  border-color: var(--red);
+}
+.drac-select-outline.drac-select-yellow,
+.drac-select-outline.drac-select-yellow:focus,
+.drac-select.drac-select-yellow:focus {
+  border-color: var(--yellow);
+}
