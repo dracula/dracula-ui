@@ -1,5 +1,6 @@
 import React from 'react'
-import { HeadingProps, Heading } from '../../..'
+import { HeadingProps, Heading, HeadingSizes, Box } from '../../..'
+import { colorname } from '../../../story-helpers/random-color'
 
 export default {
   title: 'Headings'
@@ -7,9 +8,21 @@ export default {
 
 export const Headers = (props?: Partial<HeadingProps>) => (
   <div>
-    <Heading size="heading-1">Heading 1</Heading>
-    <Heading size="heading-2">Heading 2</Heading>
-    <Heading size="heading-3">Heading 3</Heading>
-    <Heading size="heading-4">Heading 4</Heading>
+    {Object.keys(HeadingSizes).map(size => {
+      return (
+        <Box
+          color={colorname()}
+          style={{
+            borderRadius: 20,
+            padding: '1rem 3rem',
+            margin: '1rem'
+          }}
+        >
+          <Heading key={size} size={size as HeadingProps['size']}>
+            .{HeadingSizes[size]}
+          </Heading>
+        </Box>
+      )
+    })}
   </div>
 )

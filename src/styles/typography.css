@@ -1,19 +1,47 @@
-.drac-heading {
+.drac-heading,
+.drac-text {
   font-family: 'Fira Code', monospace;
 }
 
-.drac-heading-heading-1 {
+/* -- Heading -- */
+.drac-heading-1 {
   font-size: 8rem;
 }
 
-.drac-heading-heading-2 {
+.drac-heading-2 {
   font-size: 6rem;
 }
 
-.drac-heading-heading-3 {
+.drac-heading-3 {
   font-size: 3rem;
 }
 
-.drac-heading-heading-3 {
+.drac-heading-3 {
   font-size: 2.4rem;
+}
+
+/* -- Text -- */
+
+.drac-text-bold {
+  font-weight: bold;
+}
+
+.drac-text-semibold {
+  font-weight: 600;
+}
+
+.drac-text {
+  font-size: 1.6rem;
+}
+
+.drac-text-lg {
+  font-size: 2.4rem;
+}
+
+.drac-text-md {
+  font-size: 2rem;
+}
+
+.drac-text-sm {
+  font-size: 1.2rem;
 }

@@ -1,4 +1,5 @@
 import 'normalize.css'
 import './styles/dracula-ui.css'
 export * from './components/Typography/Heading'
+export * from './components/Typography/Text'
 export * from './components/Color/Box'

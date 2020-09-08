@@ -1,7 +1,14 @@
 import React from 'react'
 
+export const HeadingSizes = {
+  'heading-1': 'drac-heading-1',
+  'heading-2': 'drac-heading-2',
+  'heading-3': 'drac-heading-3',
+  'heading-4': 'drac-heading-4'
+}
+
 export interface HeadingProps {
-  size: 'heading-1' | 'heading-2' | 'heading-3' | 'heading-4'
+  size: keyof typeof HeadingSizes
 }
 
 export const Heading: React.FC<HeadingProps> = props => {
@@ -15,7 +22,7 @@ export const Heading: React.FC<HeadingProps> = props => {
   const size = tag[props.size]
   const finalProps = {
     ...props,
-    className: `drac-heading drac-heading-${props.size}`
+    className: `drac-heading ${HeadingSizes[props.size]}`
   }
 
   return React.createElement(size, finalProps, props.children)
