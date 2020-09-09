@@ -20,14 +20,38 @@ export const colors = {
 
 export const spacing = {
   none: 'drac-spacing-none',
+  noneX: 'drac-spacing-none-x',
+  noneY: 'drac-spacing-none-y',
   small: 'drac-spacing-sm',
+  smallX: 'drac-spacing-sm-x',
+  smallY: 'drac-spacing-sm-y',
   medium: 'drac-spacing-md',
-  large: 'drac-spacing-lg'
+  mediumX: 'drac-spacing-md-x',
+  mediumY: 'drac-spacing-md-y',
+  large: 'drac-spacing-lg',
+  largeX: 'drac-spacing-lg-x',
+  largeY: 'drac-spacing-lg-y'
 }
+
+export type SpacingPropType = keyof typeof spacing | Array<keyof typeof spacing>
 
 export interface BoxProps extends HTMLAttributes<HTMLDivElement> {
   color?: keyof typeof colors
-  spacing?: keyof typeof spacing
+  spacing?: SpacingPropType
+}
+
+export function spacingClasses(input?: SpacingPropType): string[] {
+  let spacingInput = input ?? []
+
+  if (!Array.isArray(spacingInput)) {
+    spacingInput = [spacingInput]
+  }
+
+  spacingInput = spacingInput as Array<keyof typeof spacing>
+
+  return spacingInput.map(spc => {
+    return spacing[spc]
+  })
 }
 
 export const Box: React.FC<BoxProps> = props => {
@@ -36,7 +60,7 @@ export const Box: React.FC<BoxProps> = props => {
     className: cx(
       `drac-box`,
       props.color && colors[props.color],
-      props.spacing && spacing[props.spacing],
+      ...spacingClasses(props.spacing),
       props.className
     )
   }
