@@ -13,7 +13,7 @@ const boxStyle = {
   marginBottom: '1rem'
 }
 
-export const Badges = () => (
+export const Avatars = () => (
   <Box color="black" style={{ padding: '1rem 2rem' }}>
     <Heading
       size="heading-2"

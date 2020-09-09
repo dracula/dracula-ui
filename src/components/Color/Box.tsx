@@ -1,4 +1,5 @@
 import React, { HTMLAttributes } from 'react'
+import cx from 'classnames'
 
 export const colors = {
   black: 'drac-bg-black',
@@ -24,7 +25,7 @@ export interface BoxProps extends HTMLAttributes<HTMLDivElement> {
 export const Box: React.FC<BoxProps> = props => {
   const finalProps = {
     ...props,
-    className: `drac-box ${colors[props.color ?? 'black']}`
+    className: cx(`drac-box`, colors[props.color ?? 'black'], props.className)
   }
 
   return <div {...finalProps} />
