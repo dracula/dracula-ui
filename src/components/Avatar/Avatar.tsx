@@ -9,10 +9,17 @@ export const AvatarVariants = {
   subtle: 'drac-avatar-subtle'
 }
 
+export const AvatarBorderVariants = {
+  normal: '',
+  large: 'drac-avatar-lg-stroke',
+  none: 'drac-avatar-no-border'
+}
+
 export interface AvatarProps
   extends HTMLAttributes<HTMLSpanElement & HTMLImageElement> {
   themeColor?: keyof typeof backgroundColors
   variant?: keyof typeof AvatarVariants
+  borderVariant?: keyof typeof AvatarBorderVariants
   src?: string
   title: string
 }
@@ -26,7 +33,8 @@ export const Avatar: React.FC<AvatarProps> = props => {
     'drac-avatar',
     backgroundClass,
     TextColors[props.themeColor ?? 'green'],
-    AvatarVariants[props.variant ?? 'normal']
+    AvatarVariants[props.variant ?? 'normal'],
+    AvatarBorderVariants[props.borderVariant ?? 'normal']
   )
   const names = props.title.split(' ')
 

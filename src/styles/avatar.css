@@ -1,4 +1,5 @@
 .drac-avatar {
+  box-sizing: border-box;
   border-radius: 100rem;
   border-style: solid;
   border-width: 1px;
@@ -15,6 +16,14 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.drac-avatar-lg-stroke {
+  border-width: 3px;
+}
+
+.drac-avatar-no-border {
+  border-width: 0;
 }
 
 .drac-avatar-subtle {

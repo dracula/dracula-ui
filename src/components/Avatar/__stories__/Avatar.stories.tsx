@@ -44,6 +44,20 @@ export const Badges = () => (
               themeColor={color as AvatarProps['themeColor']}
               style={{ margin: '1rem' }}
               src="https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg"
+              borderVariant="large"
+            />
+            <Avatar
+              title="Netto Farah"
+              themeColor={color as AvatarProps['themeColor']}
+              style={{ margin: '1rem' }}
+              src="https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg"
+              borderVariant="none"
+            />
+            <Avatar
+              title="Netto Farah"
+              themeColor={color as AvatarProps['themeColor']}
+              style={{ margin: '1rem' }}
+              src="https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg"
               variant="subtle"
             />
 
@@ -57,6 +71,20 @@ export const Badges = () => (
               themeColor={color as AvatarProps['themeColor']}
               style={{ margin: '1rem' }}
               src="https://pbs.twimg.com/profile_images/1145166093029265408/9gJSVrQ7_400x400.jpg"
+            />
+            <Avatar
+              title="Zeno Rocha"
+              themeColor={color as AvatarProps['themeColor']}
+              style={{ margin: '1rem' }}
+              src="https://pbs.twimg.com/profile_images/1145166093029265408/9gJSVrQ7_400x400.jpg"
+              borderVariant="large"
+            />
+            <Avatar
+              title="Zeno Rocha"
+              themeColor={color as AvatarProps['themeColor']}
+              style={{ margin: '1rem' }}
+              src="https://pbs.twimg.com/profile_images/1145166093029265408/9gJSVrQ7_400x400.jpg"
+              borderVariant="none"
             />
             <Avatar
               title="Zeno Rocha"
