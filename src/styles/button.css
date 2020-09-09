@@ -1,4 +1,5 @@
 .drac-btn {
+  appearance: none;
   padding: 1rem 1.5rem;
   border: none;
   border-radius: var(--corner-radius);
