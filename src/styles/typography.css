@@ -1,6 +1,12 @@
 .drac-heading,
 .drac-text,
 .drac-btn {
+  /* Help prevent overflow of long words/names/URLs */
+  word-break: break-word;
+  /* Optional, not supported for all languages */
+  hyphens: auto;
+
+  /* TODO: add web font */
   font-family: 'Fira Code', monospace;
 }
 
