@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { HTMLAttributes } from 'react'
 import { colors } from '../Color/Box'
 import { mapValues } from 'lodash'
 
@@ -19,7 +19,7 @@ export const TextColors = mapValues(colors, className => {
   return className.replace('-bg-', '-text-')
 })
 
-export interface TextProps {
+export interface TextProps extends HTMLAttributes<HTMLSpanElement> {
   size?: keyof typeof TextSizes
   weight?: keyof typeof TextWeights
   color?: keyof typeof TextColors

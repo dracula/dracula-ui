@@ -18,14 +18,27 @@ export const colors = {
   animated: 'drac-bg-animated'
 }
 
+export const spacing = {
+  none: 'drac-spacing-none',
+  small: 'drac-spacing-sm',
+  medium: 'drac-spacing-md',
+  large: 'drac-spacing-lg'
+}
+
 export interface BoxProps extends HTMLAttributes<HTMLDivElement> {
   color?: keyof typeof colors
+  spacing?: keyof typeof spacing
 }
 
 export const Box: React.FC<BoxProps> = props => {
   const finalProps = {
     ...props,
-    className: cx(`drac-box`, colors[props.color ?? 'black'], props.className)
+    className: cx(
+      `drac-box`,
+      props.color && colors[props.color],
+      props.spacing && spacing[props.spacing],
+      props.className
+    )
   }
 
   return <div {...finalProps} />

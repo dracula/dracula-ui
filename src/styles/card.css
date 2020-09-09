@@ -1,0 +1,4 @@
+.drac-card {
+  border-radius: var(--corner-radius);
+  padding: var(--padding);
+}
