@@ -6,6 +6,7 @@
 @import './input.css';
 @import './select.css';
 @import './avatar.css';
+@import './radio-checkbox-switch.css';
 
 .drac {
   /* 1rem = 10px */
