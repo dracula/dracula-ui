@@ -1,28 +1,48 @@
 import React from 'react'
 
-import { Card, Heading, Box, BoxProps } from '../../..'
-import { Avatar } from '../../Avatar/Avatar'
-import { Text } from '../../Typography/Text'
+import {
+  Card,
+  Heading,
+  Box,
+  BoxProps,
+  CardOrientationProps,
+  Text,
+  Avatar,
+  Paragraph
+} from '../../..'
 import { colors } from '../../Color/Box'
+import { CardProps } from '../Card'
 
 export default {
   title: 'Card'
 }
 
-const Crd: React.FC<{ color: BoxProps['color'] }> = ({ color }) => {
+const Crd: React.FC<CardProps & {}> = ({ color, ...props }) => {
   const accentColor = color === 'black' ? 'white' : 'black'
 
   return (
-    <Card color={color} spacing={['small']} style={{ margin: '2rem' }}>
+    <Card
+      color={color}
+      spacing={['small']}
+      style={{ margin: '2rem' }}
+      {...props}
+    >
       <Heading color={accentColor} size="heading-3" spacing="medium">
         How to kill Vampires
       </Heading>
 
-      <Box style={{ maxWidth: 300 }} spacing="mediumX">
-        <Text color={accentColor}>
-          Depending on the vampire’s power level, they may be able to resist
-          sunlight exposure.
-        </Text>
+      <Box spacing="mediumX">
+        <Paragraph color={accentColor} style={{ paddingBottom: 0 }}>
+          {`A half-mortal, half-immortal is out to avenge his mother's death and
+          rid the world of vampires. The modern-day technologically advanced
+          vampires he is going after are in search of his special blood type
+          needed to summon an evil god who plays a key role in their plan to
+          execute the human race.`.slice(
+            0,
+            props.orientation === 'normal' ? 120 : -1
+          )}
+          ...
+        </Paragraph>
       </Box>
 
       <Box spacing="medium" style={{ display: 'flex', alignItems: 'center' }}>
@@ -54,7 +74,25 @@ export const Cards = () => {
       style={{ display: 'flex', flexWrap: 'wrap' }}
     >
       {Object.keys(colors).map(color => (
-        <Crd color={color as BoxProps['color']} />
+        <Crd
+          style={{ width: '600px', margin: '2rem' }}
+          color={color as BoxProps['color']}
+          orientation="normal"
+        />
+      ))}
+    </Box>
+  )
+}
+
+export const Portrait = () => {
+  return (
+    <Box
+      color="black"
+      spacing="large"
+      style={{ display: 'flex', flexWrap: 'wrap' }}
+    >
+      {Object.keys(colors).map(color => (
+        <Crd color={color as BoxProps['color']} orientation="portrait" />
       ))}
     </Box>
   )
