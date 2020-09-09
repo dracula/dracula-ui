@@ -1,5 +1,6 @@
 import React, { HTMLAttributes } from 'react'
 import cx from 'classnames'
+import { mapValues } from 'lodash'
 
 export const colors = {
   black: 'drac-bg-black',
@@ -17,6 +18,10 @@ export const colors = {
   pinkPurple: 'drac-bg-pink-purple',
   animated: 'drac-bg-animated'
 }
+
+export const borderColors = mapValues(colors, className =>
+  className.replace('-bg-', '-border-')
+)
 
 export const spacing = {
   none: 'drac-spacing-none',

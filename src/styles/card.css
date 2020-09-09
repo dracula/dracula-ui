@@ -6,3 +6,10 @@
 .drac-card-portrait {
   max-width: 30rem;
 }
+
+.drac-card-subtle {
+  box-shadow: none;
+  background: none;
+  border-width: 2px;
+  border-style: solid;
+}

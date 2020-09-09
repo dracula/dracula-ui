@@ -1,15 +1,5 @@
 import React from 'react'
-
-import {
-  Card,
-  Heading,
-  Box,
-  BoxProps,
-  CardOrientationProps,
-  Text,
-  Avatar,
-  Paragraph
-} from '../../..'
+import { Avatar, Box, BoxProps, Card, Heading, Paragraph, Text } from '../../..'
 import { colors } from '../../Color/Box'
 import { CardProps } from '../Card'
 
@@ -18,7 +8,14 @@ export default {
 }
 
 const Crd: React.FC<CardProps & {}> = ({ color, ...props }) => {
-  const accentColor = color === 'black' ? 'white' : 'black'
+  let accentColor = color === 'black' ? 'white' : 'black'
+
+  if (props.variant === 'subtle') {
+    accentColor = color
+    if (color === 'black') {
+      accentColor = 'white'
+    }
+  }
 
   return (
     <Card
@@ -93,6 +90,24 @@ export const Portrait = () => {
     >
       {Object.keys(colors).map(color => (
         <Crd color={color as BoxProps['color']} orientation="portrait" />
+      ))}
+    </Box>
+  )
+}
+
+export const Subtle = () => {
+  return (
+    <Box
+      color="black"
+      spacing="large"
+      style={{ display: 'flex', flexWrap: 'wrap' }}
+    >
+      {Object.keys(colors).map(color => (
+        <Crd
+          style={{ width: '600px', margin: '2rem' }}
+          color={color as BoxProps['color']}
+          variant="subtle"
+        />
       ))}
     </Box>
   )
