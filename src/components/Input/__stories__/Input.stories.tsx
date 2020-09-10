@@ -1,11 +1,11 @@
 import React from 'react'
-import { InputProps, Input, inputVariants, inputColors } from '../../..'
+import { InputProps, Input, inputVariants, inputColors } from '@/index'
 
 export default {
   title: 'Inputs'
 }
 
-export const InputVariants = (props?: Partial<InputProps>) => {
+export const InputVariants = () => {
   return (
     <div
       className={'drac-bg-black'}
@@ -26,7 +26,7 @@ export const InputVariants = (props?: Partial<InputProps>) => {
   )
 }
 
-export const InputColors = (props?: Partial<InputProps>) => {
+export const InputColors = () => {
   return (
     <div
       className={'drac-bg-black'}

@@ -1,9 +1,5 @@
 import React from 'react'
-import { Avatar } from '../../..'
-import { Box, colors } from '../../Color/Box'
-import { Text } from '../../Typography/Text'
-import { Heading } from '../../Typography/Heading'
-import { AvatarProps } from '../Avatar'
+import { Avatar, AvatarProps, Box, colors, Heading, Text } from '@/index'
 
 export default {
   title: 'Avatar'

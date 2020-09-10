@@ -1,8 +1,8 @@
-import React, { HTMLAttributes } from 'react'
 import cx from 'classnames'
-import { colors as backgroundColors } from '../Color/Box'
-import { Text, TextColors } from '../Typography/Text'
 import { first, last } from 'lodash'
+import React, { HTMLAttributes } from 'react'
+import { colors as backgroundColors } from '@/components/Color/Box'
+import { Text, TextColors } from '@/components/Typography/Text'
 
 export const AvatarVariants = {
   normal: 'drac-avatar',

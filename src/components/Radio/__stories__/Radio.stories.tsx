@@ -1,11 +1,11 @@
 import React from 'react'
-import { RadioProps, Radio, radioColors } from '../../..'
+import { RadioProps, Radio, radioColors } from '@/index'
 
 export default {
   title: 'Radio'
 }
 
-export const RadioNormal = (props?: Partial<RadioProps>) => {
+export const RadioNormal = () => {
   return (
     <div
       className={'drac-bg-black'}
@@ -86,7 +86,7 @@ export const RadioDisabled = (props?: Partial<RadioProps>) => {
   )
 }
 
-export const RadioColors = (props?: Partial<RadioProps>) => {
+export const RadioColors = () => {
   return (
     <div
       className={'drac-bg-black'}

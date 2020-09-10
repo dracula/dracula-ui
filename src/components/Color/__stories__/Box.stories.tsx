@@ -1,11 +1,11 @@
 import React from 'react'
-import { BoxProps, Box, colors } from '../../..'
+import { BoxProps, Box, colors } from '@/index'
 
 export default {
   title: 'Boxes'
 }
 
-export const Boxes = (props?: Partial<BoxProps>) => {
+export const Boxes = () => {
   return (
     <div style={{ display: 'flex', flexDirection: 'row' }}>
       {Object.keys(colors).map(color => {

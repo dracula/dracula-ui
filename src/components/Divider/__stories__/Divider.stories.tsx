@@ -1,11 +1,11 @@
 import React from 'react'
-import { DividerProps, Divider, dividerColors } from '../../..'
+import { DividerProps, Divider, dividerColors } from '@/index'
 
 export default {
   title: 'Divider'
 }
 
-export const DividerColors = (props?: Partial<DividerProps>) => {
+export const DividerColors = () => {
   return (
     <div
       className={'drac-bg-black'}

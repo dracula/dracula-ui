@@ -1,6 +1,6 @@
 import React from 'react'
 import * as ReactDOM from 'react-dom'
-import { Box } from '../Box'
+import { Box } from '@/components/Color/Box'
 
 describe('Box', () => {
   it('renders without crashing', () => {

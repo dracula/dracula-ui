@@ -14,6 +14,7 @@ export const radioColors = {
 
 export interface RadioProps extends HTMLAttributes<HTMLInputElement> {
   color: keyof typeof radioColors
+  name?: string
 }
 
 export const Radio: React.FC<RadioProps> = props => {

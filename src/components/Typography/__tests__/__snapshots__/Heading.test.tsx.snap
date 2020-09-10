@@ -2,7 +2,7 @@
 
 exports[`Heading heading-1 1`] = `
 <h1
-  className="drac-heading drac-heading-heading-1"
+  className="drac-heading drac-heading-1 drac-spacing-none"
   size="heading-1"
 >
   Hello World
@@ -11,7 +11,7 @@ exports[`Heading heading-1 1`] = `
 
 exports[`Heading heading-2 1`] = `
 <h2
-  className="drac-heading drac-heading-heading-2"
+  className="drac-heading drac-heading-2 drac-spacing-none"
   size="heading-2"
 >
   Hello World
@@ -20,7 +20,7 @@ exports[`Heading heading-2 1`] = `
 
 exports[`Heading heading-3 1`] = `
 <h3
-  className="drac-heading drac-heading-heading-3"
+  className="drac-heading drac-heading-3 drac-spacing-none"
   size="heading-3"
 >
   Hello World
@@ -29,7 +29,7 @@ exports[`Heading heading-3 1`] = `
 
 exports[`Heading heading-4 1`] = `
 <h4
-  className="drac-heading drac-heading-heading-4"
+  className="drac-heading drac-heading-4 drac-spacing-none"
   size="heading-4"
 >
   Hello World

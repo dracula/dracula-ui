@@ -1,11 +1,11 @@
 import React from 'react'
-import { SwitchProps, Switch, switchColors } from '../../..'
+import { SwitchProps, Switch, switchColors } from '@/index'
 
 export default {
   title: 'Switch'
 }
 
-export const SwitchNormal = (props?: Partial<SwitchProps>) => {
+export const SwitchNormal = () => {
   return (
     <div
       className={'drac-bg-black'}
@@ -43,7 +43,7 @@ export const SwitchNormal = (props?: Partial<SwitchProps>) => {
   )
 }
 
-export const SwitchDisabled = (props?: Partial<SwitchProps>) => {
+export const SwitchDisabled = () => {
   return (
     <div
       className={'drac-bg-black'}

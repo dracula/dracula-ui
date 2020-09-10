@@ -1,6 +1,6 @@
 import React from 'react'
 import * as ReactDOM from 'react-dom'
-import { Divider } from '../Divider'
+import { Divider } from '@/components/Divider/Divider'
 
 describe('Divider', () => {
   it('renders without crashing', () => {

@@ -1,6 +1,6 @@
 import React from 'react'
 import * as ReactDOM from 'react-dom'
-import { Input } from '../Input'
+import { Input } from '@/components/Input/Input'
 
 describe('Input', () => {
   it('renders without crashing', () => {

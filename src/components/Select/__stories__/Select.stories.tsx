@@ -1,11 +1,11 @@
 import React from 'react'
-import { SelectProps, Select, selectVariants, selectColors } from '../../..'
+import { SelectProps, Select, selectVariants, selectColors } from '@/index'
 
 export default {
   title: 'Select'
 }
 
-export const SelectVariants = (props?: Partial<SelectProps>) => {
+export const SelectVariants = () => {
   return (
     <div
       className={'drac-bg-black'}
@@ -33,7 +33,7 @@ export const SelectVariants = (props?: Partial<SelectProps>) => {
   )
 }
 
-export const SelectColors = (props?: Partial<SelectProps>) => {
+export const SelectColors = () => {
   return (
     <div
       className={'drac-bg-black'}

@@ -1,0 +1,33 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    // Launches Jest tests in debug mode
+    // Simply drop a breakpoint and wait for the debugger to pick it up
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Jest Current File",
+      "program": "${workspaceFolder}/node_modules/.bin/tsdx",
+      "args": ["test", "--runTestsByPath", "${relativeFile}"],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "skipFiles": [
+        // skip annoying `async_hooks` file for promises
+        "<node_internals>/**"
+      ]
+    },
+    {
+      "type": "node",
+      "name": "Jest All",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "program": "${workspaceFolder}/node_modules/.bin/tsdx",
+      "args": ["test", "--runInBand"],
+      "skipFiles": [
+        // skip annoying `async_hooks` file for promises
+        "<node_internals>/**"
+      ]
+    }
+  ]
+}

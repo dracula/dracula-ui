@@ -1,7 +1,7 @@
 import React, { HTMLAttributes } from 'react'
-import { colors as backgroundColors } from '../Color/Box'
+import { colors as backgroundColors } from '@/components/Color/Box'
+import { Text, TextColors } from '@/components/Typography/Text'
 import cx from 'classnames'
-import { Text, TextColors } from '../Typography/Text'
 
 const variants = {
   normal: 'drac-badge',

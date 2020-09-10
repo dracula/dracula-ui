@@ -1,6 +1,6 @@
 import React from 'react'
 import * as ReactDOM from 'react-dom'
-import { Checkbox } from '../Checkbox'
+import { Checkbox } from '@/components/Checkbox/Checkbox'
 
 describe('Checkbox', () => {
   it('renders without crashing', () => {

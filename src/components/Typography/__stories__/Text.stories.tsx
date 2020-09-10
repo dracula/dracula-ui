@@ -1,15 +1,20 @@
 import React from 'react'
-import { TextProps, Text, TextSizes } from '../../..'
-import { TextWeights, TextColors } from '../Text'
-import { Box } from '../../Color/Box'
-import { colorname } from '../../../story-helpers/random-color'
-import { Heading } from '../Heading'
+import {
+  TextProps,
+  Text,
+  TextSizes,
+  TextWeights,
+  TextColors,
+  Box,
+  Heading
+} from '@/index'
+import { colorname } from '@/story-helpers/random-color'
 
 export default {
   title: 'Text'
 }
 
-export const Texts = (props?: Partial<TextProps>) => (
+export const Texts = () => (
   <div>
     {Object.keys(TextSizes).map(size => {
       return (
@@ -38,7 +43,7 @@ export const Texts = (props?: Partial<TextProps>) => (
   </div>
 )
 
-export const TextWithColors = (props?: Partial<TextProps>) => (
+export const TextWithColors = () => (
   <div>
     return (
     <Heading size="heading-2">

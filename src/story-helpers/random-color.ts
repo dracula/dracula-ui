@@ -1,4 +1,4 @@
-import { colors, BoxProps } from '../components/Color/Box'
+import { colors, BoxProps } from '@/components/Color/Box'
 
 export const colorname = () => {
   const colorNames = Object.keys(colors)

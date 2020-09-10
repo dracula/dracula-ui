@@ -1,5 +1,5 @@
 import React from 'react'
-import { Heading } from '../Heading'
+import { Heading } from '@/components/Typography/Heading'
 import testRenderer from 'react-test-renderer'
 
 describe('Heading', () => {

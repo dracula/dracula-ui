@@ -1,11 +1,11 @@
 import React from 'react'
-import { CheckboxProps, Checkbox, checkboxColors } from '../../..'
+import { CheckboxProps, Checkbox, checkboxColors } from '@/index'
 
 export default {
   title: 'Checkbox'
 }
 
-export const CheckboxNormal = (props?: Partial<CheckboxProps>) => {
+export const CheckboxNormal = () => {
   return (
     <div
       className={'drac-bg-black'}

@@ -1,6 +1,6 @@
 import React from 'react'
 import * as ReactDOM from 'react-dom'
-import { Switch } from '../Switch'
+import { Switch } from '@/components/Switch/Switch'
 
 describe('Switch', () => {
   it('renders without crashing', () => {

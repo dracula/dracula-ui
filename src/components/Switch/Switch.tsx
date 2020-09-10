@@ -14,6 +14,7 @@ export const switchColors = {
 
 export interface SwitchProps extends HTMLAttributes<HTMLInputElement> {
   color: keyof typeof switchColors
+  name?: string
 }
 
 export const Switch: React.FC<SwitchProps> = props => {

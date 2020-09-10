@@ -1,0 +1,11 @@
+{
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "eslint.enable": true,
+  "typescript.preferences.importModuleSpecifier": "non-relative" // use @/<path> imports by default
+}

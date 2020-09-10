@@ -1,7 +1,15 @@
 import React from 'react'
-import { Avatar, Box, BoxProps, Card, Heading, Paragraph, Text } from '../../..'
-import { colors } from '../../Color/Box'
-import { CardProps } from '../Card'
+import {
+  Avatar,
+  Box,
+  BoxProps,
+  Card,
+  Heading,
+  Paragraph,
+  Text,
+  CardProps,
+  colors
+} from '@/index'
 
 export default {
   title: 'Card'

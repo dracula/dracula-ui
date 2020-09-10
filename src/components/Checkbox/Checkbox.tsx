@@ -14,6 +14,7 @@ export const checkboxColors = {
 
 export interface CheckboxProps extends HTMLAttributes<HTMLInputElement> {
   color: keyof typeof checkboxColors
+  name?: string
 }
 
 export const Checkbox: React.FC<CheckboxProps> = props => {

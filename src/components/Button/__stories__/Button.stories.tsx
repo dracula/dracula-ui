@@ -1,13 +1,11 @@
 import React from 'react'
-import { Button, Heading, TextProps, ButtonProps } from '../../..'
-import { Box, colors } from '../../Color/Box'
-import { Text } from '../../Typography/Text'
+import { Button, Heading, ButtonProps, Box, colors, Text } from '@/index'
 
 export default {
   title: 'Button'
 }
 
-export const Buttons = (props?: Partial<TextProps>) => (
+export const Buttons = () => (
   <Box color="black" style={{ padding: '1rem 2rem' }}>
     <Heading
       size="heading-2"

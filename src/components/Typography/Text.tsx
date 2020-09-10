@@ -1,5 +1,5 @@
 import React, { HTMLAttributes } from 'react'
-import { colors, SpacingPropType, spacingClasses } from '../Color/Box'
+import { colors, SpacingPropType, spacingClasses } from '@/components/Color/Box'
 import { mapValues } from 'lodash'
 import cx from 'classnames'
 
