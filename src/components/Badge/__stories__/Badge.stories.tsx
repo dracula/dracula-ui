@@ -1,8 +1,8 @@
 import React from 'react'
-import { Badge, Heading, TextProps, BadgeProps } from '@/index'
+import { colors } from '@/base/colors'
 import { Box } from '@/components/Box/Box'
 import { Text } from '@/components/Typography/Text'
-import { colors } from '@/base/colors'
+import { Badge, BadgeProps, Heading } from '@/index'
 
 export default {
   title: 'Badge'
@@ -16,7 +16,7 @@ const boxStyle = {
   flex: 1
 }
 
-export const Badges = (props?: Partial<TextProps>) => (
+export const Badges = () => (
   <Box color="black" style={{ padding: '1rem 2rem' }}>
     <Heading
       size="heading-2"
