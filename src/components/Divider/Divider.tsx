@@ -1,16 +1,7 @@
+import { borderColors } from '@/base/colors'
 import React, { HTMLAttributes } from 'react'
 
-export const dividerColors = {
-  black: 'drac-border-black',
-  white: 'drac-border-white',
-  cyan: 'drac-border-cyan',
-  green: 'drac-border-green',
-  orange: 'drac-border-orange',
-  pink: 'drac-border-pink',
-  purple: 'drac-border-purple',
-  red: 'drac-border-red',
-  yellow: 'drac-border-yellow'
-}
+export const dividerColors = borderColors
 
 export interface DividerProps extends HTMLAttributes<HTMLDivElement> {
   color: keyof typeof dividerColors

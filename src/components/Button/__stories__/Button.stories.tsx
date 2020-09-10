@@ -1,5 +1,6 @@
 import React from 'react'
-import { Button, Heading, ButtonProps, Box, colors, Text } from '@/index'
+import { Button, Heading, ButtonProps, Box, Text } from '@/index'
+import { colors } from '@/base/colors'
 
 export default {
   title: 'Button'

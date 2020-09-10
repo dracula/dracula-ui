@@ -1,7 +1,8 @@
 import React, { HTMLAttributes } from 'react'
-import { colors, SpacingPropType, spacingClasses } from '@/components/Color/Box'
 import { mapValues } from 'lodash'
 import cx from 'classnames'
+import { spacingClasses, SpacingPropType } from '@/base/spacing'
+import { textColors } from '@/base/colors'
 
 export const TextSizes = {
   large: 'drac-text-lg',
@@ -16,7 +17,7 @@ export const TextWeights = {
   bold: 'drac-text-bold'
 }
 
-export const TextColors = mapValues(colors, className => {
+export const TextColors = mapValues(textColors, className => {
   return className.replace('-bg-', '-text-')
 })
 

@@ -1,7 +1,8 @@
-import React, { HTMLAttributes } from 'react'
+import React from 'react'
 import { Badge, Heading, TextProps, BadgeProps } from '@/index'
-import { Box, colors } from '@/components/Color/Box'
+import { Box } from '@/components/Box/Box'
 import { Text } from '@/components/Typography/Text'
+import { colors } from '@/base/colors'
 
 export default {
   title: 'Badge'

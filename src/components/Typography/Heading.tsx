@@ -1,7 +1,8 @@
 import cx from 'classnames'
 import { mapValues } from 'lodash'
 import React, { HTMLAttributes } from 'react'
-import { colors, spacingClasses, SpacingPropType } from '@/components/Color/Box'
+import { colors } from '@/base/colors'
+import { spacingClasses, SpacingPropType } from '@/base/spacing'
 
 export const HeadingSizes = {
   'heading-1': 'drac-heading-1',

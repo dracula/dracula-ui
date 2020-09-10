@@ -1,3 +1,4 @@
+import { ColorMap } from '@/base/colors'
 import React, { HTMLAttributes } from 'react'
 
 export const selectVariants = {
@@ -5,7 +6,7 @@ export const selectVariants = {
   outline: 'drac-select-outline'
 }
 
-export const selectColors = {
+export const selectColors: ColorMap = {
   black: 'drac-select-black',
   white: 'drac-select-white',
   cyan: 'drac-select-cyan',
@@ -14,7 +15,12 @@ export const selectColors = {
   pink: 'drac-select-pink',
   purple: 'drac-select-purple',
   red: 'drac-select-red',
-  yellow: 'drac-select-yellow'
+  yellow: 'drac-select-yellow',
+  animated: '',
+  cyanGreen: '',
+  pinkPurple: '',
+  purpleCyan: '',
+  yellowPink: ''
 }
 
 export interface SelectProps extends HTMLAttributes<HTMLSelectElement> {

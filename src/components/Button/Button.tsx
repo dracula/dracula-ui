@@ -1,5 +1,5 @@
 import React, { HTMLAttributes } from 'react'
-import { colors as backgroundColors } from '@/components/Color/Box'
+import { colors as backgroundColors } from '@/base/colors'
 import cx from 'classnames'
 import { Text, TextColors } from '@/components/Typography/Text'
 

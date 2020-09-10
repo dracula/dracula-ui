@@ -7,9 +7,10 @@ import {
   Heading,
   Paragraph,
   Text,
-  CardProps,
-  colors
+  CardProps
 } from '@/index'
+
+import { colors } from '@/base/colors'
 
 export default {
   title: 'Card'

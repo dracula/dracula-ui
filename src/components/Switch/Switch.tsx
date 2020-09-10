@@ -1,6 +1,7 @@
+import { ColorMap } from '@/base/colors'
 import React, { HTMLAttributes } from 'react'
 
-export const switchColors = {
+export const switchColors: ColorMap = {
   black: 'drac-switch-black',
   white: 'drac-switch-white',
   cyan: 'drac-switch-cyan',
@@ -9,7 +10,12 @@ export const switchColors = {
   pink: 'drac-switch-pink',
   purple: 'drac-switch-purple',
   red: 'drac-switch-red',
-  yellow: 'drac-switch-yellow'
+  yellow: 'drac-switch-yellow',
+  animated: '',
+  cyanGreen: '',
+  pinkPurple: '',
+  purpleCyan: '',
+  yellowPink: ''
 }
 
 export interface SwitchProps extends HTMLAttributes<HTMLInputElement> {

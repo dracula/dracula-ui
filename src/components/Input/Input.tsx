@@ -1,3 +1,4 @@
+import { ColorMap } from '@/base/colors'
 import React, { HTMLAttributes } from 'react'
 
 export const inputVariants = {
@@ -5,7 +6,7 @@ export const inputVariants = {
   outline: 'drac-input-outline'
 }
 
-export const inputColors = {
+export const inputColors: ColorMap = {
   black: 'drac-input-black drac-text-white',
   white: 'drac-input-white drac-text-white',
   cyan: 'drac-input-cyan drac-text-cyan',
@@ -14,7 +15,12 @@ export const inputColors = {
   pink: 'drac-input-pink drac-text-pink',
   purple: 'drac-input-purple drac-text-purple',
   red: 'drac-input-red drac-text-red',
-  yellow: 'drac-input-yellow drac-text-yellow'
+  yellow: 'drac-input-yellow drac-text-yellow',
+  animated: '',
+  cyanGreen: '',
+  pinkPurple: '',
+  purpleCyan: '',
+  yellowPink: ''
 }
 
 export interface InputProps extends HTMLAttributes<HTMLInputElement> {

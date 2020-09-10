@@ -1,5 +1,6 @@
 import React from 'react'
-import { BoxProps, Box, colors } from '@/index'
+import { BoxProps, Box } from '@/index'
+import { colors } from '@/base/colors'
 
 export default {
   title: 'Boxes'

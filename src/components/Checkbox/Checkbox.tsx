@@ -1,6 +1,8 @@
 import React, { HTMLAttributes } from 'react'
+import cx from 'classnames'
+import { ColorMap } from '@/base/colors'
 
-export const checkboxColors = {
+export const checkboxColors: ColorMap = {
   black: 'drac-checkbox-black',
   white: 'drac-checkbox-white',
   cyan: 'drac-checkbox-cyan',
@@ -9,18 +11,23 @@ export const checkboxColors = {
   pink: 'drac-checkbox-pink',
   purple: 'drac-checkbox-purple',
   red: 'drac-checkbox-red',
-  yellow: 'drac-checkbox-yellow'
+  yellow: 'drac-checkbox-yellow',
+  animated: '',
+  cyanGreen: '',
+  pinkPurple: '',
+  purpleCyan: '',
+  yellowPink: ''
 }
 
 export interface CheckboxProps extends HTMLAttributes<HTMLInputElement> {
-  color: keyof typeof checkboxColors
+  color?: keyof typeof checkboxColors
   name?: string
 }
 
 export const Checkbox: React.FC<CheckboxProps> = props => {
   const finalProps = {
     ...props,
-    className: `drac-checkbox ${checkboxColors[props.color]}`
+    className: cx(`drac-checkbox`, props.color && checkboxColors[props.color])
   }
 
   return <input type="checkbox" {...finalProps} />

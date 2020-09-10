@@ -1,6 +1,7 @@
+import { ColorMap } from '@/base/colors'
 import React, { HTMLAttributes } from 'react'
 
-export const radioColors = {
+export const radioColors: ColorMap = {
   black: 'drac-radio-black',
   white: 'drac-radio-white',
   cyan: 'drac-radio-cyan',
@@ -9,7 +10,12 @@ export const radioColors = {
   pink: 'drac-radio-pink',
   purple: 'drac-radio-purple',
   red: 'drac-radio-red',
-  yellow: 'drac-radio-yellow'
+  yellow: 'drac-radio-yellow',
+  animated: '',
+  cyanGreen: '',
+  pinkPurple: '',
+  purpleCyan: '',
+  yellowPink: ''
 }
 
 export interface RadioProps extends HTMLAttributes<HTMLInputElement> {
