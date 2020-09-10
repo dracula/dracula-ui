@@ -2,10 +2,10 @@
   "version": "0.1.0",
   "license": "MIT",
   "main": "dist/index.js",
+  "style": "dist/styles/dracula-ui.css",
   "typings": "dist/index.d.ts",
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "engines": {
     "node": ">=10"
