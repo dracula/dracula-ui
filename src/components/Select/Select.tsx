@@ -28,7 +28,7 @@ export interface SelectProps extends HTMLAttributes<HTMLSelectElement> {
   color: keyof typeof selectColors
 }
 
-export const Select: React.FC<SelectProps> = props => {
+export const Select: React.FC<SelectProps> = (props) => {
   const finalProps = {
     ...props,
     className: `drac-select drac-text drac-text-md ${
@@ -55,3 +55,5 @@ export const Select: React.FC<SelectProps> = props => {
     </div>
   )
 }
+
+Select.displayName = 'Select'

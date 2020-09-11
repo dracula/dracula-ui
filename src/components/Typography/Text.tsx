@@ -17,7 +17,7 @@ export const TextWeights = {
   bold: 'drac-text-bold'
 }
 
-export const TextColors = mapValues(textColors, className => {
+export const TextColors = mapValues(textColors, (className) => {
   return className.replace('-bg-', '-text-')
 })
 
@@ -28,7 +28,7 @@ export interface TextProps extends HTMLAttributes<HTMLSpanElement> {
   spacing?: SpacingPropType
 }
 
-export const Text: React.FC<TextProps> = props => {
+export const Text: React.FC<TextProps> = (props) => {
   const finalProps = {
     ...props,
 
@@ -44,7 +44,7 @@ export const Text: React.FC<TextProps> = props => {
   return <span {...finalProps}>{props.children}</span>
 }
 
-export const Paragraph: React.FC<TextProps> = props => {
+export const Paragraph: React.FC<TextProps> = (props) => {
   const finalProps = {
     ...props,
 
@@ -59,3 +59,5 @@ export const Paragraph: React.FC<TextProps> = props => {
 
   return <p {...finalProps}>{props.children}</p>
 }
+
+Text.displayName = 'Text'

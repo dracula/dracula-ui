@@ -11,7 +11,7 @@ export const HeadingSizes = {
   'heading-4': 'drac-heading-4'
 }
 
-export const HeadingColors = mapValues(colors, className => {
+export const HeadingColors = mapValues(colors, (className) => {
   return className.replace('-bg-', '-text-')
 })
 
@@ -21,7 +21,7 @@ export interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {
   spacing?: SpacingPropType
 }
 
-export const Heading: React.FC<HeadingProps> = props => {
+export const Heading: React.FC<HeadingProps> = (props) => {
   const tag = {
     'heading-1': 'h1',
     'heading-2': 'h2',
@@ -42,3 +42,5 @@ export const Heading: React.FC<HeadingProps> = props => {
 
   return React.createElement(size, finalProps, props.children)
 }
+
+Heading.displayName = 'Heading'

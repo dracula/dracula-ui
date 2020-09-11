@@ -23,7 +23,7 @@ export interface RadioProps extends HTMLAttributes<HTMLInputElement> {
   name?: string
 }
 
-export const Radio: React.FC<RadioProps> = props => {
+export const Radio: React.FC<RadioProps> = (props) => {
   const finalProps = {
     ...props,
     className: `drac-radio ${radioColors[props.color]}`
@@ -31,3 +31,5 @@ export const Radio: React.FC<RadioProps> = props => {
 
   return <input type="radio" {...finalProps} />
 }
+
+Radio.displayName = 'Radio'

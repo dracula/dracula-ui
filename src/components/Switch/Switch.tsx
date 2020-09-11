@@ -23,7 +23,7 @@ export interface SwitchProps extends HTMLAttributes<HTMLInputElement> {
   name?: string
 }
 
-export const Switch: React.FC<SwitchProps> = props => {
+export const Switch: React.FC<SwitchProps> = (props) => {
   const finalProps = {
     ...props,
     className: `drac-switch drac-checkbox ${switchColors[props.color]}`
@@ -31,3 +31,5 @@ export const Switch: React.FC<SwitchProps> = props => {
 
   return <input type="checkbox" {...finalProps} />
 }
+
+Switch.displayName = 'Switch'

@@ -28,7 +28,7 @@ export interface InputProps extends HTMLAttributes<HTMLInputElement> {
   color: keyof typeof inputColors
 }
 
-export const Input: React.FC<InputProps> = props => {
+export const Input: React.FC<InputProps> = (props) => {
   const finalProps = {
     ...props,
     className: `drac-input drac-text drac-text-md ${
@@ -38,3 +38,5 @@ export const Input: React.FC<InputProps> = props => {
 
   return <input {...finalProps} />
 }
+
+Input.displayName = 'Input'

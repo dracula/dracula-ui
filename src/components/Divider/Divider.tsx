@@ -7,7 +7,7 @@ export interface DividerProps extends HTMLAttributes<HTMLDivElement> {
   color: keyof typeof dividerColors
 }
 
-export const Divider: React.FC<DividerProps> = props => {
+export const Divider: React.FC<DividerProps> = (props) => {
   const finalProps = {
     ...props,
     className: `drac-divider ${dividerColors[props.color]}`
@@ -15,3 +15,5 @@ export const Divider: React.FC<DividerProps> = props => {
 
   return <hr {...finalProps} />
 }
+
+Divider.displayName = 'Divider'

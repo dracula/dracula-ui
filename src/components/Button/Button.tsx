@@ -15,7 +15,7 @@ export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   disabled?: boolean
 }
 
-export const Button: React.FC<ButtonProps> = props => {
+export const Button: React.FC<ButtonProps> = (props) => {
   const isOutline = props.variant === 'outline'
   const isGhost = props.variant === 'ghost'
   const overrideTextColor = isOutline || isGhost
@@ -44,3 +44,5 @@ export const Button: React.FC<ButtonProps> = props => {
     </button>
   )
 }
+
+Button.displayName = 'Button'
