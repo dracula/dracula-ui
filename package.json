@@ -5,7 +5,8 @@
   "style": "dist/styles/dracula-ui.css",
   "typings": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "engines": {
     "node": ">=10"

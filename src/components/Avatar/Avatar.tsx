@@ -41,15 +41,16 @@ export const Avatar: React.FC<AvatarProps> = props => {
   const f = first(names)?.slice(0, 1)
   const l = last(names)?.slice(0, 1)
 
+  const style: React.HTMLAttributes<HTMLSpanElement>['style'] = {
+    ...props.style
+  }
+
+  if (props.src) {
+    style.backgroundImage = `url('${props.src}')`
+  }
+
   return (
-    <span
-      className={classes}
-      {...props}
-      style={{
-        ...props.style,
-        backgroundImage: props.src && `url('${props.src}')`
-      }}
-    >
+    <span className={classes} style={style} {...props}>
       {!props.src && (
         <Text color={props.themeColor ?? 'white'}>
           {f}
