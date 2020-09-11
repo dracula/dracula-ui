@@ -1,10 +1,10 @@
 import {
+  ComponentExample,
   renderSnapshot,
   SnapshotBuilder
 } from '@/story-helpers/render-component'
 import React from 'react'
-
-// import * as serializer from 'jest-snapshot-serializer-raw'
+import fs from 'fs'
 
 interface Documentation {
   basicUsage: () => SnapshotBuilder
@@ -15,7 +15,16 @@ export function siteDocs<T>(
   componentClass: React.FunctionComponent<T>,
   documentation: Documentation
 ) {
-  describe(`Site: ${componentClass.displayName ?? componentClass.name}`, () => {
+  const name = componentClass.displayName ?? componentClass.name
+
+  describe(`Site: ${name}`, () => {
+    let examples: Record<string, ComponentExample> = {}
+
+    afterAll(() => {
+      const path = `${process.cwd()}/examples/${name}.json`
+      fs.writeFileSync(path, JSON.stringify(examples, null, ' '))
+    })
+
     test('Basic Usage', () => {
       const variation = documentation.basicUsage()
       const snapshot = renderSnapshot(
@@ -24,11 +33,15 @@ export function siteDocs<T>(
         variation.docs
       )
       expect(snapshot).toMatchSnapshot()
+      examples = {
+        ...examples,
+        ['basic']: snapshot
+      }
     })
 
     const variations = documentation.variations()
 
-    variations.forEach(variation => {
+    variations.forEach((variation) => {
       test(variation.title, () => {
         const snapshot = renderSnapshot(
           variation.title,
@@ -36,6 +49,11 @@ export function siteDocs<T>(
           variation.docs
         )
         expect(snapshot).toMatchSnapshot()
+
+        examples = {
+          ...examples,
+          [variation.title]: snapshot
+        }
       })
     })
   })

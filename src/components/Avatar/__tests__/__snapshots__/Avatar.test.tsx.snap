@@ -12,12 +12,7 @@ Object {
   src=\\"https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg\\"
 ></span>
 ",
-  "react": <div>
-    <Avatar
-      src="https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg"
-      title="Netto Farah"
-    />
-  </div>,
+  "react": "<Avatar />",
   "title": "basic usage",
 }
 `;
@@ -43,18 +38,7 @@ Object {
   >
 </div>
 ",
-  "react": <div>
-    <div>
-      <Avatar
-        color="black"
-        title="Netto Farah"
-      />
-      <Avatar
-        color="cyan"
-        title="Netto Farah"
-      />
-    </div>
-  </div>,
+  "react": "<Avatar /><Avatar />",
   "title": "Custom colors",
 }
 `;
@@ -80,18 +64,7 @@ Object {
   >
 </div>
 ",
-  "react": <div>
-    <div>
-      <Avatar
-        title="Netto Farah"
-        variant="normal"
-      />
-      <Avatar
-        title="Zeno Rocha"
-        variant="subtle"
-      />
-    </div>
-  </div>,
+  "react": "<Avatar /><Avatar />",
   "title": "Custom variants",
 }
 `;
@@ -108,12 +81,7 @@ Object {
   ></span
 >
 ",
-  "react": <div>
-    <Avatar
-      borderVariant="large"
-      title="Netto Farah"
-    />
-  </div>,
+  "react": "<Avatar />",
   "title": "border: large",
 }
 `;
@@ -130,12 +98,7 @@ Object {
   ></span
 >
 ",
-  "react": <div>
-    <Avatar
-      borderVariant="none"
-      title="Netto Farah"
-    />
-  </div>,
+  "react": "<Avatar />",
   "title": "border: none",
 }
 `;
@@ -152,12 +115,7 @@ Object {
   ></span
 >
 ",
-  "react": <div>
-    <Avatar
-      borderVariant="normal"
-      title="Netto Farah"
-    />
-  </div>,
+  "react": "<Avatar />",
   "title": "border: normal",
 }
 `;
