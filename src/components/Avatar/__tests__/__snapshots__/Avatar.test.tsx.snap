@@ -8,8 +8,6 @@ Object {
   style=\\"
     background-image: url(https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg);
   \\"
-  title=\\"Netto Farah\\"
-  src=\\"https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg\\"
 ></span>
 ",
   "react": "function () { return (react_1.default.createElement(Avatar_1.Avatar, { title: \\"Netto Farah\\", src: \\"https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg\\" })); }",
@@ -23,14 +21,12 @@ Object {
   "html": "<div>
   <span
     class=\\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar\\"
-    title=\\"Netto Farah\\"
     color=\\"black\\"
     ><span color=\\"white\\" class=\\"drac-text drac-text drac-text drac-text-white\\"
       >NF</span
     ></span
   ><span
     class=\\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar\\"
-    title=\\"Netto Farah\\"
     color=\\"cyan\\"
     ><span color=\\"white\\" class=\\"drac-text drac-text drac-text drac-text-white\\"
       >NF</span
@@ -51,15 +47,11 @@ Object {
   "html": "<div>
   <span
     class=\\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar\\"
-    title=\\"Netto Farah\\"
-    variant=\\"normal\\"
     ><span color=\\"white\\" class=\\"drac-text drac-text drac-text drac-text-white\\"
       >NF</span
     ></span
   ><span
     class=\\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-subtle\\"
-    title=\\"Zeno Rocha\\"
-    variant=\\"subtle\\"
     ><span color=\\"white\\" class=\\"drac-text drac-text drac-text drac-text-white\\"
       >ZR</span
     ></span
@@ -78,8 +70,6 @@ Object {
   "docs": "",
   "html": "<span
   class=\\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar drac-avatar-lg-stroke\\"
-  title=\\"Netto Farah\\"
-  bordervariant=\\"large\\"
   ><span color=\\"white\\" class=\\"drac-text drac-text drac-text drac-text-white\\"
     >NF</span
   ></span
@@ -95,8 +85,6 @@ Object {
   "docs": "",
   "html": "<span
   class=\\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar drac-avatar-no-border\\"
-  title=\\"Netto Farah\\"
-  bordervariant=\\"none\\"
   ><span color=\\"white\\" class=\\"drac-text drac-text drac-text drac-text-white\\"
     >NF</span
   ></span
@@ -110,10 +98,7 @@ Object {
 exports[`Site: Avatar border: normal 1`] = `
 Object {
   "docs": "",
-  "html": "<span
-  class=\\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar\\"
-  title=\\"Netto Farah\\"
-  bordervariant=\\"normal\\"
+  "html": "<span class=\\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar\\"
   ><span color=\\"white\\" class=\\"drac-text drac-text drac-text drac-text-white\\"
     >NF</span
   ></span

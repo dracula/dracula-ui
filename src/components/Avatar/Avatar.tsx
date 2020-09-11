@@ -24,17 +24,19 @@ export interface AvatarProps
   title: string
 }
 
-export const Avatar: React.FC<AvatarProps> = props => {
+export const Avatar: React.FC<AvatarProps> = (props) => {
+  const { themeColor, variant, borderVariant, src, title, ...htmlProps } = props
+
   const backgroundClass = `${
-    backgroundColors[props.themeColor ?? 'green']
+    backgroundColors[themeColor ?? 'green']
   }-transparent`
 
   const classes = cx(
     'drac-avatar',
     backgroundClass,
-    TextColors[props.themeColor ?? 'green'],
-    AvatarVariants[props.variant ?? 'normal'],
-    AvatarBorderVariants[props.borderVariant ?? 'normal']
+    TextColors[themeColor ?? 'green'],
+    AvatarVariants[variant ?? 'normal'],
+    AvatarBorderVariants[borderVariant ?? 'normal']
   )
   const names = props.title.split(' ')
 
@@ -50,7 +52,7 @@ export const Avatar: React.FC<AvatarProps> = props => {
   }
 
   return (
-    <span className={classes} style={style} {...props}>
+    <span className={classes} style={style} {...htmlProps}>
       {!props.src && (
         <Text color={props.themeColor ?? 'white'}>
           {f}
