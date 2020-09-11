@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Site:  Basic Usage 1`] = `
+exports[`Site: Avatar Basic Usage 1`] = `
 Object {
   "code": <span
     className="drac-avatar drac-bg-green-transparent drac-text-green drac-avatar"
@@ -17,7 +17,7 @@ Object {
 }
 `;
 
-exports[`Site:  Custom colors 1`] = `
+exports[`Site: Avatar Custom colors 1`] = `
 Object {
   "code": Array [
     <span
@@ -54,7 +54,44 @@ Object {
 }
 `;
 
-exports[`Site:  border: large 1`] = `
+exports[`Site: Avatar Custom variants 1`] = `
+Object {
+  "code": Array [
+    <span
+      className="drac-avatar drac-bg-green-transparent drac-text-green drac-avatar"
+      style={Object {}}
+      title="Netto Farah"
+      variant="normal"
+    >
+      <span
+        className="drac-text drac-text drac-text drac-text-white"
+        color="white"
+      >
+        N
+        F
+      </span>
+    </span>,
+    <span
+      className="drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-subtle"
+      style={Object {}}
+      title="Zeno Rocha"
+      variant="subtle"
+    >
+      <span
+        className="drac-text drac-text drac-text drac-text-white"
+        color="white"
+      >
+        Z
+        R
+      </span>
+    </span>,
+  ],
+  "docs": "Avatars accept multiple variants, like in the example below...",
+  "title": "Custom variants",
+}
+`;
+
+exports[`Site: Avatar border: large 1`] = `
 Object {
   "code": <span
     borderVariant="large"
@@ -75,7 +112,7 @@ Object {
 }
 `;
 
-exports[`Site:  border: none 1`] = `
+exports[`Site: Avatar border: none 1`] = `
 Object {
   "code": <span
     borderVariant="none"
@@ -96,7 +133,7 @@ Object {
 }
 `;
 
-exports[`Site:  border: normal 1`] = `
+exports[`Site: Avatar border: normal 1`] = `
 Object {
   "code": <span
     borderVariant="normal"
@@ -114,341 +151,5 @@ Object {
   </span>,
   "docs": "",
   "title": "border: normal",
-}
-`;
-
-exports[`Site:  color: animated 1`] = `
-Object {
-  "code": <span
-    className="drac-avatar drac-bg-green-transparent drac-text-green drac-avatar"
-    color="animated"
-    style={Object {}}
-    title="Netto Farah"
-  >
-    <span
-      className="drac-text drac-text drac-text drac-text-white"
-      color="white"
-    >
-      N
-      F
-    </span>
-  </span>,
-  "docs": "",
-  "title": "color: animated",
-}
-`;
-
-exports[`Site:  color: black 1`] = `
-Object {
-  "code": <span
-    className="drac-avatar drac-bg-green-transparent drac-text-green drac-avatar"
-    color="black"
-    style={Object {}}
-    title="Netto Farah"
-  >
-    <span
-      className="drac-text drac-text drac-text drac-text-white"
-      color="white"
-    >
-      N
-      F
-    </span>
-  </span>,
-  "docs": "",
-  "title": "color: black",
-}
-`;
-
-exports[`Site:  color: cyan 1`] = `
-Object {
-  "code": <span
-    className="drac-avatar drac-bg-green-transparent drac-text-green drac-avatar"
-    color="cyan"
-    style={Object {}}
-    title="Netto Farah"
-  >
-    <span
-      className="drac-text drac-text drac-text drac-text-white"
-      color="white"
-    >
-      N
-      F
-    </span>
-  </span>,
-  "docs": "",
-  "title": "color: cyan",
-}
-`;
-
-exports[`Site:  color: cyanGreen 1`] = `
-Object {
-  "code": <span
-    className="drac-avatar drac-bg-green-transparent drac-text-green drac-avatar"
-    color="cyanGreen"
-    style={Object {}}
-    title="Netto Farah"
-  >
-    <span
-      className="drac-text drac-text drac-text drac-text-white"
-      color="white"
-    >
-      N
-      F
-    </span>
-  </span>,
-  "docs": "",
-  "title": "color: cyanGreen",
-}
-`;
-
-exports[`Site:  color: green 1`] = `
-Object {
-  "code": <span
-    className="drac-avatar drac-bg-green-transparent drac-text-green drac-avatar"
-    color="green"
-    style={Object {}}
-    title="Netto Farah"
-  >
-    <span
-      className="drac-text drac-text drac-text drac-text-white"
-      color="white"
-    >
-      N
-      F
-    </span>
-  </span>,
-  "docs": "",
-  "title": "color: green",
-}
-`;
-
-exports[`Site:  color: orange 1`] = `
-Object {
-  "code": <span
-    className="drac-avatar drac-bg-green-transparent drac-text-green drac-avatar"
-    color="orange"
-    style={Object {}}
-    title="Netto Farah"
-  >
-    <span
-      className="drac-text drac-text drac-text drac-text-white"
-      color="white"
-    >
-      N
-      F
-    </span>
-  </span>,
-  "docs": "",
-  "title": "color: orange",
-}
-`;
-
-exports[`Site:  color: pink 1`] = `
-Object {
-  "code": <span
-    className="drac-avatar drac-bg-green-transparent drac-text-green drac-avatar"
-    color="pink"
-    style={Object {}}
-    title="Netto Farah"
-  >
-    <span
-      className="drac-text drac-text drac-text drac-text-white"
-      color="white"
-    >
-      N
-      F
-    </span>
-  </span>,
-  "docs": "",
-  "title": "color: pink",
-}
-`;
-
-exports[`Site:  color: pinkPurple 1`] = `
-Object {
-  "code": <span
-    className="drac-avatar drac-bg-green-transparent drac-text-green drac-avatar"
-    color="pinkPurple"
-    style={Object {}}
-    title="Netto Farah"
-  >
-    <span
-      className="drac-text drac-text drac-text drac-text-white"
-      color="white"
-    >
-      N
-      F
-    </span>
-  </span>,
-  "docs": "",
-  "title": "color: pinkPurple",
-}
-`;
-
-exports[`Site:  color: purple 1`] = `
-Object {
-  "code": <span
-    className="drac-avatar drac-bg-green-transparent drac-text-green drac-avatar"
-    color="purple"
-    style={Object {}}
-    title="Netto Farah"
-  >
-    <span
-      className="drac-text drac-text drac-text drac-text-white"
-      color="white"
-    >
-      N
-      F
-    </span>
-  </span>,
-  "docs": "",
-  "title": "color: purple",
-}
-`;
-
-exports[`Site:  color: purpleCyan 1`] = `
-Object {
-  "code": <span
-    className="drac-avatar drac-bg-green-transparent drac-text-green drac-avatar"
-    color="purpleCyan"
-    style={Object {}}
-    title="Netto Farah"
-  >
-    <span
-      className="drac-text drac-text drac-text drac-text-white"
-      color="white"
-    >
-      N
-      F
-    </span>
-  </span>,
-  "docs": "",
-  "title": "color: purpleCyan",
-}
-`;
-
-exports[`Site:  color: red 1`] = `
-Object {
-  "code": <span
-    className="drac-avatar drac-bg-green-transparent drac-text-green drac-avatar"
-    color="red"
-    style={Object {}}
-    title="Netto Farah"
-  >
-    <span
-      className="drac-text drac-text drac-text drac-text-white"
-      color="white"
-    >
-      N
-      F
-    </span>
-  </span>,
-  "docs": "",
-  "title": "color: red",
-}
-`;
-
-exports[`Site:  color: white 1`] = `
-Object {
-  "code": <span
-    className="drac-avatar drac-bg-green-transparent drac-text-green drac-avatar"
-    color="white"
-    style={Object {}}
-    title="Netto Farah"
-  >
-    <span
-      className="drac-text drac-text drac-text drac-text-white"
-      color="white"
-    >
-      N
-      F
-    </span>
-  </span>,
-  "docs": "",
-  "title": "color: white",
-}
-`;
-
-exports[`Site:  color: yellow 1`] = `
-Object {
-  "code": <span
-    className="drac-avatar drac-bg-green-transparent drac-text-green drac-avatar"
-    color="yellow"
-    style={Object {}}
-    title="Netto Farah"
-  >
-    <span
-      className="drac-text drac-text drac-text drac-text-white"
-      color="white"
-    >
-      N
-      F
-    </span>
-  </span>,
-  "docs": "",
-  "title": "color: yellow",
-}
-`;
-
-exports[`Site:  color: yellowPink 1`] = `
-Object {
-  "code": <span
-    className="drac-avatar drac-bg-green-transparent drac-text-green drac-avatar"
-    color="yellowPink"
-    style={Object {}}
-    title="Netto Farah"
-  >
-    <span
-      className="drac-text drac-text drac-text drac-text-white"
-      color="white"
-    >
-      N
-      F
-    </span>
-  </span>,
-  "docs": "",
-  "title": "color: yellowPink",
-}
-`;
-
-exports[`Site:  variant: normal 1`] = `
-Object {
-  "code": <span
-    className="drac-avatar drac-bg-green-transparent drac-text-green drac-avatar"
-    style={Object {}}
-    title="Netto Farah"
-    variant="normal"
-  >
-    <span
-      className="drac-text drac-text drac-text drac-text-white"
-      color="white"
-    >
-      N
-      F
-    </span>
-  </span>,
-  "docs": "",
-  "title": "variant: normal",
-}
-`;
-
-exports[`Site:  variant: subtle 1`] = `
-Object {
-  "code": <span
-    className="drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-subtle"
-    style={Object {}}
-    title="Netto Farah"
-    variant="subtle"
-  >
-    <span
-      className="drac-text drac-text drac-text drac-text-white"
-      color="white"
-    >
-      N
-      F
-    </span>
-  </span>,
-  "docs": "",
-  "title": "variant: subtle",
 }
 `;

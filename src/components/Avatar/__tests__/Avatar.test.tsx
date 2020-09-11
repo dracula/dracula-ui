@@ -1,17 +1,11 @@
-import React from 'react'
-import { colors } from '@/base/colors'
-import {
-  Avatar,
-  AvatarBorderVariants,
-  AvatarVariants
-} from '@/components/Avatar/Avatar'
+import { Avatar, AvatarBorderVariants } from '@/components/Avatar/Avatar'
 import {
   buildSnapshot,
   SnapshotBuilder
 } from '@/story-helpers/render-component'
 import { siteDocs } from '@/story-helpers/site-docs'
-import { withColors } from '@/story-helpers/with-colors'
 import { withEntries } from '@/story-helpers/with-entries'
+import React from 'react'
 
 siteDocs(Avatar, {
   basicUsage() {
@@ -36,11 +30,18 @@ siteDocs(Avatar, {
     `
     )
 
-    const colorVariations = withColors(colors, color => {
-      return buildSnapshot(`color: ${color}`, () => (
-        <Avatar title="Netto Farah" color={color} />
-      ))
-    })
+    const variants = buildSnapshot(
+      'Custom variants',
+      () => (
+        <>
+          <Avatar title="Netto Farah" variant="normal" />
+          <Avatar title="Zeno Rocha" variant="subtle" />
+        </>
+      ),
+      `
+    Avatars accept multiple variants, like in the example below...
+    `
+    )
 
     const borders = withEntries(AvatarBorderVariants, variant => {
       return buildSnapshot(`border: ${variant}`, () => (
@@ -48,17 +49,6 @@ siteDocs(Avatar, {
       ))
     })
 
-    const avatars = withEntries(AvatarVariants, variant => {
-      return buildSnapshot(`variant: ${variant}`, () => (
-        <Avatar title="Netto Farah" variant={variant} />
-      ))
-    })
-
-    return [
-      ...colorVariations,
-      ...borders,
-      ...avatars,
-      snap
-    ] as SnapshotBuilder[]
+    return [...borders, variants, snap] as SnapshotBuilder[]
   }
 })

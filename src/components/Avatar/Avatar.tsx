@@ -60,3 +60,5 @@ export const Avatar: React.FC<AvatarProps> = props => {
     </span>
   )
 }
+
+Avatar.displayName = 'Avatar'
