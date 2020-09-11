@@ -28,7 +28,7 @@ export interface TextProps extends HTMLAttributes<HTMLSpanElement> {
   spacing?: SpacingPropType
 }
 
-export const Text: React.FC<TextProps> = (props) => {
+export const Text = (props: TextProps) => {
   const finalProps = {
     ...props,
 
@@ -44,7 +44,7 @@ export const Text: React.FC<TextProps> = (props) => {
   return <span {...finalProps}>{props.children}</span>
 }
 
-export const Paragraph: React.FC<TextProps> = (props) => {
+export const Paragraph: React.FC<TextProps> = (props: TextProps) => {
   const finalProps = {
     ...props,
 

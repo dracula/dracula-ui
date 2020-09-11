@@ -15,16 +15,25 @@ export const AvatarBorderVariants = {
   none: 'drac-avatar-no-border'
 }
 
+/** Le props */
 export interface AvatarProps
   extends HTMLAttributes<HTMLSpanElement & HTMLImageElement> {
+  /** The theme color */
   themeColor?: keyof typeof backgroundColors
+  /** Variant yo */
   variant?: keyof typeof AvatarVariants
+  /** Border yoo */
   borderVariant?: keyof typeof AvatarBorderVariants
+  /** Le source */
   src?: string
+  /** Titulo */
   title: string
 }
 
-export const Avatar: React.FC<AvatarProps> = (props) => {
+/**
+ * Le Avatar
+ */
+export const Avatar = (props: AvatarProps) => {
   const { themeColor, variant, borderVariant, src, title, ...htmlProps } = props
 
   const backgroundClass = `${

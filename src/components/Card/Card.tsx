@@ -20,7 +20,7 @@ export interface CardProps extends BoxProps {
   variant?: CardVariantProps
 }
 
-export const Card: React.FC<CardProps> = (props) => {
+export const Card: React.FC<CardProps> = (props: CardProps) => {
   const classNames = cx(
     'drac-card',
     props.className,

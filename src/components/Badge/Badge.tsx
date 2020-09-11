@@ -15,7 +15,7 @@ export interface BadgeProps extends HTMLAttributes<HTMLSpanElement> {
   disabled?: boolean
 }
 
-export const Badge: React.FC<BadgeProps> = (props) => {
+export const Badge: React.FC<BadgeProps> = (props: BadgeProps) => {
   const isOutline = props.variant === 'outline'
   const isSubtle = props.variant === 'subtle'
   const overrideTextColor = isOutline || isSubtle

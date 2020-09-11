@@ -8,7 +8,7 @@ export interface BoxProps extends HTMLAttributes<HTMLDivElement> {
   spacing?: SpacingPropType
 }
 
-export const Box: React.FC<BoxProps> = (props) => {
+export const Box: React.FC<BoxProps> = (props: BoxProps) => {
   const finalProps = {
     ...props,
     className: cx(

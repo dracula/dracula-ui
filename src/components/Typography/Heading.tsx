@@ -21,7 +21,7 @@ export interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {
   spacing?: SpacingPropType
 }
 
-export const Heading: React.FC<HeadingProps> = (props) => {
+export const Heading: React.FC<HeadingProps> = (props: HeadingProps) => {
   const tag = {
     'heading-1': 'h1',
     'heading-2': 'h2',

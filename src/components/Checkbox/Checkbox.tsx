@@ -24,7 +24,7 @@ export interface CheckboxProps extends HTMLAttributes<HTMLInputElement> {
   name?: string
 }
 
-export const Checkbox: React.FC<CheckboxProps> = (props) => {
+export const Checkbox: React.FC<CheckboxProps> = (props: CheckboxProps) => {
   const finalProps = {
     ...props,
     className: cx(`drac-checkbox`, props.color && checkboxColors[props.color])
