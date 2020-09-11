@@ -1,5 +1,5 @@
 import React from 'react'
-import Enzyme, { mount, shallow } from 'enzyme'
+import Enzyme, { mount } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 import prettier from 'prettier'
 
@@ -32,11 +32,11 @@ export function buildSnapshot(
 
 export function renderSnapshot(
   title: string,
-  comp: React.ReactElement,
+  comp: () => React.ReactElement,
   docs: string = ''
 ): ComponentExample {
-  const html = mount(comp).html()
-  const react = shallow(<div>{comp}</div>).text()
+  const html = mount(comp()).html()
+  const react = comp.toString()
 
   const prettyHTML = prettier.format(html, {
     parser: 'html'

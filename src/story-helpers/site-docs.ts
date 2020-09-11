@@ -29,7 +29,7 @@ export function siteDocs<T>(
       const variation = documentation.basicUsage()
       const snapshot = renderSnapshot(
         variation.title,
-        variation.comp(),
+        variation.comp,
         variation.docs
       )
       expect(snapshot).toMatchSnapshot()
@@ -45,7 +45,7 @@ export function siteDocs<T>(
       test(variation.title, () => {
         const snapshot = renderSnapshot(
           variation.title,
-          variation.comp(),
+          variation.comp,
           variation.docs
         )
         expect(snapshot).toMatchSnapshot()

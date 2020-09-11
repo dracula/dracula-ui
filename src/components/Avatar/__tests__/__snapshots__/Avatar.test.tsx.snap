@@ -12,7 +12,7 @@ Object {
   src=\\"https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg\\"
 ></span>
 ",
-  "react": "<Avatar />",
+  "react": "function () { return (react_1.default.createElement(Avatar_1.Avatar, { title: \\"Netto Farah\\", src: \\"https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg\\" })); }",
   "title": "basic usage",
 }
 `;
@@ -38,7 +38,9 @@ Object {
   >
 </div>
 ",
-  "react": "<Avatar /><Avatar />",
+  "react": "function () { return (react_1.default.createElement(\\"div\\", null,
+            react_1.default.createElement(Avatar_1.Avatar, { title: \\"Netto Farah\\", color: \\"black\\" }),
+            react_1.default.createElement(Avatar_1.Avatar, { title: \\"Netto Farah\\", color: \\"cyan\\" }))); }",
   "title": "Custom colors",
 }
 `;
@@ -64,7 +66,9 @@ Object {
   >
 </div>
 ",
-  "react": "<Avatar /><Avatar />",
+  "react": "function () { return (react_1.default.createElement(\\"div\\", null,
+            react_1.default.createElement(Avatar_1.Avatar, { title: \\"Netto Farah\\", variant: \\"normal\\" }),
+            react_1.default.createElement(Avatar_1.Avatar, { title: \\"Zeno Rocha\\", variant: \\"subtle\\" }))); }",
   "title": "Custom variants",
 }
 `;
@@ -81,7 +85,7 @@ Object {
   ></span
 >
 ",
-  "react": "<Avatar />",
+  "react": "function () { return (react_1.default.createElement(Avatar_1.Avatar, { title: \\"Netto Farah\\", borderVariant: variant })); }",
   "title": "border: large",
 }
 `;
@@ -98,7 +102,7 @@ Object {
   ></span
 >
 ",
-  "react": "<Avatar />",
+  "react": "function () { return (react_1.default.createElement(Avatar_1.Avatar, { title: \\"Netto Farah\\", borderVariant: variant })); }",
   "title": "border: none",
 }
 `;
@@ -115,7 +119,7 @@ Object {
   ></span
 >
 ",
-  "react": "<Avatar />",
+  "react": "function () { return (react_1.default.createElement(Avatar_1.Avatar, { title: \\"Netto Farah\\", borderVariant: variant })); }",
   "title": "border: normal",
 }
 `;
