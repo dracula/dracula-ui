@@ -2,154 +2,162 @@
 
 exports[`Site: Avatar Basic Usage 1`] = `
 Object {
-  "code": <span
-    className="drac-avatar drac-bg-green-transparent drac-text-green drac-avatar"
-    src="https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg"
-    style={
-      Object {
-        "backgroundImage": "url('https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg')",
-      }
-    }
-    title="Netto Farah"
-  />,
   "docs": "",
+  "html": "<span
+  class=\\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar\\"
+  style=\\"
+    background-image: url(https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg);
+  \\"
+  title=\\"Netto Farah\\"
+  src=\\"https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg\\"
+></span>
+",
+  "react": <div>
+    <Avatar
+      src="https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg"
+      title="Netto Farah"
+    />
+  </div>,
   "title": "basic usage",
 }
 `;
 
 exports[`Site: Avatar Custom colors 1`] = `
 Object {
-  "code": Array [
-    <span
-      className="drac-avatar drac-bg-green-transparent drac-text-green drac-avatar"
-      color="black"
-      style={Object {}}
-      title="Netto Farah"
-    >
-      <span
-        className="drac-text drac-text drac-text drac-text-white"
-        color="white"
-      >
-        N
-        F
-      </span>
-    </span>,
-    <span
-      className="drac-avatar drac-bg-green-transparent drac-text-green drac-avatar"
-      color="cyan"
-      style={Object {}}
-      title="Netto Farah"
-    >
-      <span
-        className="drac-text drac-text drac-text drac-text-white"
-        color="white"
-      >
-        N
-        F
-      </span>
-    </span>,
-  ],
   "docs": "Avatars accept colors, like in the example below...",
+  "html": "<div>
+  <span
+    class=\\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar\\"
+    title=\\"Netto Farah\\"
+    color=\\"black\\"
+    ><span color=\\"white\\" class=\\"drac-text drac-text drac-text drac-text-white\\"
+      >NF</span
+    ></span
+  ><span
+    class=\\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar\\"
+    title=\\"Netto Farah\\"
+    color=\\"cyan\\"
+    ><span color=\\"white\\" class=\\"drac-text drac-text drac-text drac-text-white\\"
+      >NF</span
+    ></span
+  >
+</div>
+",
+  "react": <div>
+    <div>
+      <Avatar
+        color="black"
+        title="Netto Farah"
+      />
+      <Avatar
+        color="cyan"
+        title="Netto Farah"
+      />
+    </div>
+  </div>,
   "title": "Custom colors",
 }
 `;
 
 exports[`Site: Avatar Custom variants 1`] = `
 Object {
-  "code": Array [
-    <span
-      className="drac-avatar drac-bg-green-transparent drac-text-green drac-avatar"
-      style={Object {}}
-      title="Netto Farah"
-      variant="normal"
-    >
-      <span
-        className="drac-text drac-text drac-text drac-text-white"
-        color="white"
-      >
-        N
-        F
-      </span>
-    </span>,
-    <span
-      className="drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-subtle"
-      style={Object {}}
-      title="Zeno Rocha"
-      variant="subtle"
-    >
-      <span
-        className="drac-text drac-text drac-text drac-text-white"
-        color="white"
-      >
-        Z
-        R
-      </span>
-    </span>,
-  ],
   "docs": "Avatars accept multiple variants, like in the example below...",
+  "html": "<div>
+  <span
+    class=\\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar\\"
+    title=\\"Netto Farah\\"
+    variant=\\"normal\\"
+    ><span color=\\"white\\" class=\\"drac-text drac-text drac-text drac-text-white\\"
+      >NF</span
+    ></span
+  ><span
+    class=\\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-subtle\\"
+    title=\\"Zeno Rocha\\"
+    variant=\\"subtle\\"
+    ><span color=\\"white\\" class=\\"drac-text drac-text drac-text drac-text-white\\"
+      >ZR</span
+    ></span
+  >
+</div>
+",
+  "react": <div>
+    <div>
+      <Avatar
+        title="Netto Farah"
+        variant="normal"
+      />
+      <Avatar
+        title="Zeno Rocha"
+        variant="subtle"
+      />
+    </div>
+  </div>,
   "title": "Custom variants",
 }
 `;
 
 exports[`Site: Avatar border: large 1`] = `
 Object {
-  "code": <span
-    borderVariant="large"
-    className="drac-avatar drac-bg-green-transparent drac-text-green drac-avatar drac-avatar-lg-stroke"
-    style={Object {}}
-    title="Netto Farah"
-  >
-    <span
-      className="drac-text drac-text drac-text drac-text-white"
-      color="white"
-    >
-      N
-      F
-    </span>
-  </span>,
   "docs": "",
+  "html": "<span
+  class=\\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar drac-avatar-lg-stroke\\"
+  title=\\"Netto Farah\\"
+  bordervariant=\\"large\\"
+  ><span color=\\"white\\" class=\\"drac-text drac-text drac-text drac-text-white\\"
+    >NF</span
+  ></span
+>
+",
+  "react": <div>
+    <Avatar
+      borderVariant="large"
+      title="Netto Farah"
+    />
+  </div>,
   "title": "border: large",
 }
 `;
 
 exports[`Site: Avatar border: none 1`] = `
 Object {
-  "code": <span
-    borderVariant="none"
-    className="drac-avatar drac-bg-green-transparent drac-text-green drac-avatar drac-avatar-no-border"
-    style={Object {}}
-    title="Netto Farah"
-  >
-    <span
-      className="drac-text drac-text drac-text drac-text-white"
-      color="white"
-    >
-      N
-      F
-    </span>
-  </span>,
   "docs": "",
+  "html": "<span
+  class=\\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar drac-avatar-no-border\\"
+  title=\\"Netto Farah\\"
+  bordervariant=\\"none\\"
+  ><span color=\\"white\\" class=\\"drac-text drac-text drac-text drac-text-white\\"
+    >NF</span
+  ></span
+>
+",
+  "react": <div>
+    <Avatar
+      borderVariant="none"
+      title="Netto Farah"
+    />
+  </div>,
   "title": "border: none",
 }
 `;
 
 exports[`Site: Avatar border: normal 1`] = `
 Object {
-  "code": <span
-    borderVariant="normal"
-    className="drac-avatar drac-bg-green-transparent drac-text-green drac-avatar"
-    style={Object {}}
-    title="Netto Farah"
-  >
-    <span
-      className="drac-text drac-text drac-text drac-text-white"
-      color="white"
-    >
-      N
-      F
-    </span>
-  </span>,
   "docs": "",
+  "html": "<span
+  class=\\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar\\"
+  title=\\"Netto Farah\\"
+  bordervariant=\\"normal\\"
+  ><span color=\\"white\\" class=\\"drac-text drac-text drac-text drac-text-white\\"
+    >NF</span
+  ></span
+>
+",
+  "react": <div>
+    <Avatar
+      borderVariant="normal"
+      title="Netto Farah"
+    />
+  </div>,
   "title": "border: normal",
 }
 `;

@@ -1,9 +1,16 @@
-import testRenderer from 'react-test-renderer'
+import React from 'react'
+import Enzyme, { mount,  shallow } from 'enzyme'
+import Adapter from 'enzyme-adapter-react-16'
+import prettier from 'prettier'
+import toJson from "enzyme-to-json";
+
+Enzyme.configure({ adapter: new Adapter() })
 
 export type ComponentExample = {
-  code: ReturnType<testRenderer.ReactTestRenderer['toJSON']>
+  html: string
   docs: string
   title: string
+  react?: any
 }
 
 export type SnapshotBuilder = {
@@ -29,11 +36,19 @@ export function renderSnapshot(
   comp: React.ReactElement,
   docs: string = ''
 ): ComponentExample {
-  const rendered = testRenderer.create(comp)
-  const code = rendered.toJSON()
+
+  
+  const html = mount(comp).html()
+  const react = toJson(shallow(<div>{comp}</div>))
+
+  const prettyHTML = prettier.format(html, {
+    parser: 'html'
+  })
+
   return {
     title,
-    code,
+    html: prettyHTML,
+    react,
     docs
   }
 }

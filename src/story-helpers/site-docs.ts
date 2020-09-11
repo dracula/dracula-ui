@@ -4,6 +4,8 @@ import {
 } from '@/story-helpers/render-component'
 import React from 'react'
 
+// import * as serializer from 'jest-snapshot-serializer-raw'
+
 interface Documentation {
   basicUsage: () => SnapshotBuilder
   variations: () => Array<SnapshotBuilder>

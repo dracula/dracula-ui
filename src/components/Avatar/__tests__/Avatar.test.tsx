@@ -20,10 +20,10 @@ siteDocs(Avatar, {
     const snap = buildSnapshot(
       'Custom colors',
       () => (
-        <>
+        <div>
           <Avatar title="Netto Farah" color="black" />
           <Avatar title="Netto Farah" color="cyan" />
-        </>
+        </div>
       ),
       `
     Avatars accept colors, like in the example below...
@@ -33,10 +33,10 @@ siteDocs(Avatar, {
     const variants = buildSnapshot(
       'Custom variants',
       () => (
-        <>
+        <div>
           <Avatar title="Netto Farah" variant="normal" />
           <Avatar title="Zeno Rocha" variant="subtle" />
-        </>
+        </div>
       ),
       `
     Avatars accept multiple variants, like in the example below...
