@@ -1,11 +1,23 @@
-import React from 'react'
-import * as ReactDOM from 'react-dom'
 import { Radio } from '@/components/Radio/Radio'
+import {
+  buildSnapshot,
+  SnapshotBuilder
+} from '@/story-helpers/render-component'
+import { siteDocs } from '@/story-helpers/site-docs'
+import {
+  RadioNormal,
+  RadioDisabled,
+  RadioColors
+} from '@/components/Radio/__stories__/Radio.stories'
 
-describe('Radio', () => {
-  it('renders without crashing', () => {
-    const div = document.createElement('div')
-    ReactDOM.render(<Radio color="white" />, div)
-    ReactDOM.unmountComponentAtNode(div)
-  })
+siteDocs(Radio, {
+  basicUsage() {
+    return buildSnapshot('Usage', RadioNormal)
+  },
+  variations() {
+    return [
+      buildSnapshot('Disabled', RadioDisabled),
+      buildSnapshot('Colors', RadioColors)
+    ] as SnapshotBuilder[]
+  }
 })

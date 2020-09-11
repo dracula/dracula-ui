@@ -1,5 +1,5 @@
 import React from 'react'
-import { RadioProps, Radio, radioColors } from '@/index'
+import { RadioProps, Radio, radioColors } from '@/components/Radio/Radio'
 
 export default {
   title: 'Radio'
@@ -7,11 +7,7 @@ export default {
 
 export const RadioNormal = () => {
   return (
-    <div
-      className={'drac-bg-black'}
-      style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}
-    >
-      <p className="drac-text drac-text-white">.drac-radio</p>
+    <div>
       <div style={{ marginBottom: 10 }}>
         <Radio
           id="one"
@@ -50,18 +46,13 @@ export const RadioNormal = () => {
   )
 }
 
-export const RadioDisabled = (props?: Partial<RadioProps>) => {
+export const RadioDisabled = () => {
   return (
-    <div
-      className={'drac-bg-black'}
-      style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}
-    >
-      <p className="drac-text drac-text-white">.drac-radio[disabled]</p>
+    <div>
       <div style={{ marginBottom: 10 }}>
         <Radio
           id="one"
           key="one"
-          disabled
           defaultChecked
           color={'white' as RadioProps['color']}
           name="demo"
@@ -74,7 +65,6 @@ export const RadioDisabled = (props?: Partial<RadioProps>) => {
         <Radio
           id="two"
           key="two"
-          disabled
           color={'white' as RadioProps['color']}
           name="demo"
         />
@@ -88,16 +78,10 @@ export const RadioDisabled = (props?: Partial<RadioProps>) => {
 
 export const RadioColors = () => {
   return (
-    <div
-      className={'drac-bg-black'}
-      style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}
-    >
-      {Object.keys(radioColors).map(color => {
+    <div>
+      {Object.keys(radioColors).map((color) => {
         return (
-          <div key={color}>
-            <p className="drac-text drac-text-white">
-              .drac-radio .drac-radio-{color}
-            </p>
+          <div key={color} style={{ marginBottom: 10 }}>
             <Radio
               id={color}
               color={color as RadioProps['color']}

@@ -1,0 +1,232 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Site: Radio Basic Usage 1`] = `
+Object {
+  "docs": "",
+  "html": "<div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"radio\\"
+      id=\\"one\\"
+      color=\\"purple\\"
+      name=\\"demo\\"
+      class=\\"drac-radio drac-radio-purple\\"
+      checked=\\"\\"
+    /><label for=\\"one\\" class=\\"drac-text drac-text-white\\">Option 1</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"radio\\"
+      id=\\"two\\"
+      color=\\"purple\\"
+      name=\\"demo\\"
+      class=\\"drac-radio drac-radio-purple\\"
+    /><label for=\\"two\\" class=\\"drac-text drac-text-white\\">Option 2</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"radio\\"
+      id=\\"three\\"
+      color=\\"purple\\"
+      name=\\"demo\\"
+      class=\\"drac-radio drac-radio-purple\\"
+    /><label for=\\"three\\" class=\\"drac-text drac-text-white\\">Option 3</label>
+  </div>
+</div>
+",
+  "react": "function () {
+    return (react_1.default.createElement(\\"div\\", null,
+        react_1.default.createElement(\\"div\\", { style: { marginBottom: 10 } },
+            react_1.default.createElement(Radio_1.Radio, { id: \\"one\\", key: \\"one\\", defaultChecked: true, color: 'purple', name: \\"demo\\" }),
+            react_1.default.createElement(\\"label\\", { htmlFor: \\"one\\", className: \\"drac-text drac-text-white\\" }, \\"Option 1\\")),
+        react_1.default.createElement(\\"div\\", { style: { marginBottom: 10 } },
+            react_1.default.createElement(Radio_1.Radio, { id: \\"two\\", key: \\"two\\", color: 'purple', name: \\"demo\\" }),
+            react_1.default.createElement(\\"label\\", { htmlFor: \\"two\\", className: \\"drac-text drac-text-white\\" }, \\"Option 2\\")),
+        react_1.default.createElement(\\"div\\", { style: { marginBottom: 10 } },
+            react_1.default.createElement(Radio_1.Radio, { id: \\"three\\", key: \\"three\\", color: 'purple', name: \\"demo\\" }),
+            react_1.default.createElement(\\"label\\", { htmlFor: \\"three\\", className: \\"drac-text drac-text-white\\" }, \\"Option 3\\"))));
+}",
+  "title": "Usage",
+}
+`;
+
+exports[`Site: Radio Colors 1`] = `
+Object {
+  "docs": "",
+  "html": "<div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"radio\\"
+      id=\\"black\\"
+      color=\\"black\\"
+      name=\\"demo\\"
+      class=\\"drac-radio drac-radio-black\\"
+    /><label for=\\"black\\" class=\\"drac-text drac-text-white\\">Radio</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"radio\\"
+      id=\\"white\\"
+      color=\\"white\\"
+      name=\\"demo\\"
+      class=\\"drac-radio drac-radio-white\\"
+    /><label for=\\"white\\" class=\\"drac-text drac-text-white\\">Radio</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"radio\\"
+      id=\\"cyan\\"
+      color=\\"cyan\\"
+      name=\\"demo\\"
+      class=\\"drac-radio drac-radio-cyan\\"
+    /><label for=\\"cyan\\" class=\\"drac-text drac-text-white\\">Radio</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"radio\\"
+      id=\\"green\\"
+      color=\\"green\\"
+      name=\\"demo\\"
+      class=\\"drac-radio drac-radio-green\\"
+    /><label for=\\"green\\" class=\\"drac-text drac-text-white\\">Radio</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"radio\\"
+      id=\\"orange\\"
+      color=\\"orange\\"
+      name=\\"demo\\"
+      class=\\"drac-radio drac-radio-orange\\"
+    /><label for=\\"orange\\" class=\\"drac-text drac-text-white\\">Radio</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"radio\\"
+      id=\\"pink\\"
+      color=\\"pink\\"
+      name=\\"demo\\"
+      class=\\"drac-radio drac-radio-pink\\"
+    /><label for=\\"pink\\" class=\\"drac-text drac-text-white\\">Radio</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"radio\\"
+      id=\\"purple\\"
+      color=\\"purple\\"
+      name=\\"demo\\"
+      class=\\"drac-radio drac-radio-purple\\"
+    /><label for=\\"purple\\" class=\\"drac-text drac-text-white\\">Radio</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"radio\\"
+      id=\\"red\\"
+      color=\\"red\\"
+      name=\\"demo\\"
+      class=\\"drac-radio drac-radio-red\\"
+    /><label for=\\"red\\" class=\\"drac-text drac-text-white\\">Radio</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"radio\\"
+      id=\\"yellow\\"
+      color=\\"yellow\\"
+      name=\\"demo\\"
+      class=\\"drac-radio drac-radio-yellow\\"
+    /><label for=\\"yellow\\" class=\\"drac-text drac-text-white\\">Radio</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"radio\\"
+      id=\\"animated\\"
+      color=\\"animated\\"
+      name=\\"demo\\"
+      class=\\"drac-radio\\"
+    /><label for=\\"animated\\" class=\\"drac-text drac-text-white\\">Radio</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"radio\\"
+      id=\\"cyanGreen\\"
+      color=\\"cyanGreen\\"
+      name=\\"demo\\"
+      class=\\"drac-radio\\"
+    /><label for=\\"cyanGreen\\" class=\\"drac-text drac-text-white\\">Radio</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"radio\\"
+      id=\\"pinkPurple\\"
+      color=\\"pinkPurple\\"
+      name=\\"demo\\"
+      class=\\"drac-radio\\"
+    /><label for=\\"pinkPurple\\" class=\\"drac-text drac-text-white\\">Radio</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"radio\\"
+      id=\\"purpleCyan\\"
+      color=\\"purpleCyan\\"
+      name=\\"demo\\"
+      class=\\"drac-radio\\"
+    /><label for=\\"purpleCyan\\" class=\\"drac-text drac-text-white\\">Radio</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"radio\\"
+      id=\\"yellowPink\\"
+      color=\\"yellowPink\\"
+      name=\\"demo\\"
+      class=\\"drac-radio\\"
+    /><label for=\\"yellowPink\\" class=\\"drac-text drac-text-white\\">Radio</label>
+  </div>
+</div>
+",
+  "react": "function () {
+    return (react_1.default.createElement(\\"div\\", null, Object.keys(Radio_1.radioColors).map(function (color) {
+        return (react_1.default.createElement(\\"div\\", { key: color, style: { marginBottom: 10 } },
+            react_1.default.createElement(Radio_1.Radio, { id: color, color: color, name: \\"demo\\" }),
+            react_1.default.createElement(\\"label\\", { htmlFor: color, className: \\"drac-text drac-text-white\\" }, \\"Radio\\")));
+    })));
+}",
+  "title": "Colors",
+}
+`;
+
+exports[`Site: Radio Disabled 1`] = `
+Object {
+  "docs": "",
+  "html": "<div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"radio\\"
+      id=\\"one\\"
+      color=\\"white\\"
+      name=\\"demo\\"
+      class=\\"drac-radio drac-radio-white\\"
+      checked=\\"\\"
+    /><label for=\\"one\\" class=\\"drac-text drac-text-white\\">Checked</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"radio\\"
+      id=\\"two\\"
+      color=\\"white\\"
+      name=\\"demo\\"
+      class=\\"drac-radio drac-radio-white\\"
+    /><label for=\\"two\\" class=\\"drac-text drac-text-white\\">Unchecked</label>
+  </div>
+</div>
+",
+  "react": "function () {
+    return (react_1.default.createElement(\\"div\\", null,
+        react_1.default.createElement(\\"div\\", { style: { marginBottom: 10 } },
+            react_1.default.createElement(Radio_1.Radio, { id: \\"one\\", key: \\"one\\", defaultChecked: true, color: 'white', name: \\"demo\\" }),
+            react_1.default.createElement(\\"label\\", { htmlFor: \\"one\\", className: \\"drac-text drac-text-white\\" }, \\"Checked\\")),
+        react_1.default.createElement(\\"div\\", { style: { marginBottom: 10 } },
+            react_1.default.createElement(Radio_1.Radio, { id: \\"two\\", key: \\"two\\", color: 'white', name: \\"demo\\" }),
+            react_1.default.createElement(\\"label\\", { htmlFor: \\"two\\", className: \\"drac-text drac-text-white\\" }, \\"Unchecked\\"))));
+}",
+  "title": "Disabled",
+}
+`;
