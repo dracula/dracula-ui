@@ -1,4 +1,5 @@
 import * as dg from 'react-docgen-typescript'
+import path from 'path'
 import globby from 'globby'
 
 test('whatever', async () => {
@@ -12,6 +13,9 @@ test('whatever', async () => {
     }
   }
 
-  const parsed = dg.parse(await globby('src/components/**/**.tsx'), options)
+  const parsed = dg
+    .withCustomConfig(path.join(__dirname, '../../tsconfig.json'), options)
+    .parse(await globby('src/components/**/**.tsx'))
+
   console.log(JSON.stringify(parsed, null, '  '))
 })
