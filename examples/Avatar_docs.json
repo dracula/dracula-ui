@@ -52,7 +52,7 @@
       },
       "required": false,
       "type": {
-        "name": "\"normal\" | \"none\" | \"large\" | undefined"
+        "name": "\"normal\" | \"large\" | \"none\" | undefined"
       }
     },
     "src": {

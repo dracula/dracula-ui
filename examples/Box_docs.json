@@ -26,7 +26,7 @@
       },
       "required": false,
       "type": {
-        "name": "\"none\" | \"large\" | \"noneX\" | \"noneY\" | \"small\" | \"smallX\" | \"smallY\" | \"medium\" | \"mediumX\" | \"mediumY\" | \"largeX\" | \"largeY\" | (\"none\" | \"large\" | \"noneX\" | \"noneY\" | \"small\" | ... 6 more ... | \"largeY\")[] | undefined"
+        "name": "\"large\" | \"none\" | \"noneX\" | \"noneY\" | \"small\" | \"smallX\" | \"smallY\" | \"medium\" | \"mediumX\" | \"mediumY\" | \"largeX\" | \"largeY\" | (\"large\" | \"none\" | \"noneX\" | \"noneY\" | \"small\" | ... 6 more ... | \"largeY\")[] | undefined"
       }
     }
   }
