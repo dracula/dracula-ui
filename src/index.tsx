@@ -1,8 +1,8 @@
+import './styles/dracula-ui.css'
+
 if (process.env.NODE_ENV !== 'test') {
   require('normalize.css')
 }
-
-import './styles/dracula-ui.css'
 
 export * from '@/components/Typography/Heading'
 export * from '@/components/Typography/Text'
