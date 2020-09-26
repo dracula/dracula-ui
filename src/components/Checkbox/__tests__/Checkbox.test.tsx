@@ -1,11 +1,23 @@
-import React from 'react'
-import * as ReactDOM from 'react-dom'
 import { Checkbox } from '@/components/Checkbox/Checkbox'
+import {
+  buildSnapshot,
+  SnapshotBuilder
+} from '@/story-helpers/render-component'
+import { siteDocs } from '@/story-helpers/docs/site-docs'
+import {
+  CheckboxNormal,
+  CheckboxDisabled,
+  CheckboxColors
+} from '@/components/Checkbox/__stories__/Checkbox.stories'
 
-describe('Checkbox', () => {
-  it('renders without crashing', () => {
-    const div = document.createElement('div')
-    ReactDOM.render(<Checkbox color="white" />, div)
-    ReactDOM.unmountComponentAtNode(div)
-  })
+siteDocs(Checkbox, {
+  basicUsage() {
+    return buildSnapshot('Usage', CheckboxNormal)
+  },
+  variations() {
+    return [
+      buildSnapshot('Disabled', CheckboxDisabled),
+      buildSnapshot('Colors', CheckboxColors)
+    ] as SnapshotBuilder[]
+  }
 })

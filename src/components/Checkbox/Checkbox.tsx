@@ -25,6 +25,8 @@ export interface CheckboxProps extends HTMLAttributes<HTMLInputElement> {
   color?: keyof typeof checkboxColors
   /** The name of the checkbox. Mirrors the name HTML attribute. */
   name?: string
+
+  disabled?: boolean
 }
 
 /**

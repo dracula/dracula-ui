@@ -28,6 +28,19 @@
       "type": {
         "name": "string | undefined"
       }
+    },
+    "disabled": {
+      "defaultValue": null,
+      "description": "",
+      "name": "disabled",
+      "parent": {
+        "fileName": "src/components/Checkbox/Checkbox.tsx",
+        "name": "CheckboxProps"
+      },
+      "required": false,
+      "type": {
+        "name": "boolean | undefined"
+      }
     }
   }
 }

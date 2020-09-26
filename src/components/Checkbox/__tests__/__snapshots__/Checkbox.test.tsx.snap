@@ -1,0 +1,340 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Site: Checkbox Basic Usage 1`] = `
+Object {
+  "docs": "",
+  "html": "<div style=\\"display: flex; flex-direction: column; padding: 3rem\\">
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"checkbox\\"
+      id=\\"one\\"
+      color=\\"purple\\"
+      name=\\"demo\\"
+      class=\\"drac-checkbox drac-checkbox-purple\\"
+      checked=\\"\\"
+    /><label for=\\"one\\" class=\\"drac-text drac-text-white\\">Option 1</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"checkbox\\"
+      id=\\"two\\"
+      color=\\"purple\\"
+      name=\\"demo\\"
+      class=\\"drac-checkbox drac-checkbox-purple\\"
+    /><label for=\\"two\\" class=\\"drac-text drac-text-white\\">Option 2</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"checkbox\\"
+      id=\\"three\\"
+      color=\\"purple\\"
+      name=\\"demo\\"
+      class=\\"drac-checkbox drac-checkbox-purple\\"
+    /><label for=\\"three\\" class=\\"drac-text drac-text-white\\">Option 3</label>
+  </div>
+</div>
+",
+  "react": "<div style={{...}}>
+  <div style={{...}}>
+    <Checkbox id=\\"one\\" defaultChecked={true} color=\\"purple\\" name=\\"demo\\" />
+    <label htmlFor=\\"one\\" className=\\"drac-text drac-text-white\\">
+      Option 1
+    </label>
+  </div>
+  <div style={{...}}>
+    <Checkbox id=\\"two\\" color=\\"purple\\" name=\\"demo\\" />
+    <label htmlFor=\\"two\\" className=\\"drac-text drac-text-white\\">
+      Option 2
+    </label>
+  </div>
+  <div style={{...}}>
+    <Checkbox id=\\"three\\" color=\\"purple\\" name=\\"demo\\" />
+    <label htmlFor=\\"three\\" className=\\"drac-text drac-text-white\\">
+      Option 3
+    </label>
+  </div>
+</div>",
+  "title": "Usage",
+}
+`;
+
+exports[`Site: Checkbox Colors 1`] = `
+Object {
+  "docs": "",
+  "html": "<div style=\\"display: flex; flex-direction: column; padding: 3rem\\">
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"checkbox\\"
+      id=\\"black\\"
+      color=\\"black\\"
+      name=\\"demo\\"
+      class=\\"drac-checkbox drac-checkbox-black\\"
+      checked=\\"\\"
+    /><label for=\\"black\\" class=\\"drac-text drac-text-white\\">Checkbox</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"checkbox\\"
+      id=\\"white\\"
+      color=\\"white\\"
+      name=\\"demo\\"
+      class=\\"drac-checkbox drac-checkbox-white\\"
+      checked=\\"\\"
+    /><label for=\\"white\\" class=\\"drac-text drac-text-white\\">Checkbox</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"checkbox\\"
+      id=\\"cyan\\"
+      color=\\"cyan\\"
+      name=\\"demo\\"
+      class=\\"drac-checkbox drac-checkbox-cyan\\"
+      checked=\\"\\"
+    /><label for=\\"cyan\\" class=\\"drac-text drac-text-white\\">Checkbox</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"checkbox\\"
+      id=\\"green\\"
+      color=\\"green\\"
+      name=\\"demo\\"
+      class=\\"drac-checkbox drac-checkbox-green\\"
+      checked=\\"\\"
+    /><label for=\\"green\\" class=\\"drac-text drac-text-white\\">Checkbox</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"checkbox\\"
+      id=\\"orange\\"
+      color=\\"orange\\"
+      name=\\"demo\\"
+      class=\\"drac-checkbox drac-checkbox-orange\\"
+      checked=\\"\\"
+    /><label for=\\"orange\\" class=\\"drac-text drac-text-white\\">Checkbox</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"checkbox\\"
+      id=\\"pink\\"
+      color=\\"pink\\"
+      name=\\"demo\\"
+      class=\\"drac-checkbox drac-checkbox-pink\\"
+      checked=\\"\\"
+    /><label for=\\"pink\\" class=\\"drac-text drac-text-white\\">Checkbox</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"checkbox\\"
+      id=\\"purple\\"
+      color=\\"purple\\"
+      name=\\"demo\\"
+      class=\\"drac-checkbox drac-checkbox-purple\\"
+      checked=\\"\\"
+    /><label for=\\"purple\\" class=\\"drac-text drac-text-white\\">Checkbox</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"checkbox\\"
+      id=\\"red\\"
+      color=\\"red\\"
+      name=\\"demo\\"
+      class=\\"drac-checkbox drac-checkbox-red\\"
+      checked=\\"\\"
+    /><label for=\\"red\\" class=\\"drac-text drac-text-white\\">Checkbox</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"checkbox\\"
+      id=\\"yellow\\"
+      color=\\"yellow\\"
+      name=\\"demo\\"
+      class=\\"drac-checkbox drac-checkbox-yellow\\"
+      checked=\\"\\"
+    /><label for=\\"yellow\\" class=\\"drac-text drac-text-white\\">Checkbox</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"checkbox\\"
+      id=\\"animated\\"
+      color=\\"animated\\"
+      name=\\"demo\\"
+      class=\\"drac-checkbox\\"
+      checked=\\"\\"
+    /><label for=\\"animated\\" class=\\"drac-text drac-text-white\\">Checkbox</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"checkbox\\"
+      id=\\"cyanGreen\\"
+      color=\\"cyanGreen\\"
+      name=\\"demo\\"
+      class=\\"drac-checkbox\\"
+      checked=\\"\\"
+    /><label for=\\"cyanGreen\\" class=\\"drac-text drac-text-white\\">Checkbox</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"checkbox\\"
+      id=\\"pinkPurple\\"
+      color=\\"pinkPurple\\"
+      name=\\"demo\\"
+      class=\\"drac-checkbox\\"
+      checked=\\"\\"
+    /><label for=\\"pinkPurple\\" class=\\"drac-text drac-text-white\\">Checkbox</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"checkbox\\"
+      id=\\"purpleCyan\\"
+      color=\\"purpleCyan\\"
+      name=\\"demo\\"
+      class=\\"drac-checkbox\\"
+      checked=\\"\\"
+    /><label for=\\"purpleCyan\\" class=\\"drac-text drac-text-white\\">Checkbox</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"checkbox\\"
+      id=\\"yellowPink\\"
+      color=\\"yellowPink\\"
+      name=\\"demo\\"
+      class=\\"drac-checkbox\\"
+      checked=\\"\\"
+    /><label for=\\"yellowPink\\" class=\\"drac-text drac-text-white\\">Checkbox</label>
+  </div>
+</div>
+",
+  "react": "<div style={{...}}>
+  <div style={{...}}>
+    <Checkbox id=\\"black\\" defaultChecked={true} color=\\"black\\" name=\\"demo\\" />
+    <label htmlFor=\\"black\\" className=\\"drac-text drac-text-white\\">
+      Checkbox
+    </label>
+  </div>
+  <div style={{...}}>
+    <Checkbox id=\\"white\\" defaultChecked={true} color=\\"white\\" name=\\"demo\\" />
+    <label htmlFor=\\"white\\" className=\\"drac-text drac-text-white\\">
+      Checkbox
+    </label>
+  </div>
+  <div style={{...}}>
+    <Checkbox id=\\"cyan\\" defaultChecked={true} color=\\"cyan\\" name=\\"demo\\" />
+    <label htmlFor=\\"cyan\\" className=\\"drac-text drac-text-white\\">
+      Checkbox
+    </label>
+  </div>
+  <div style={{...}}>
+    <Checkbox id=\\"green\\" defaultChecked={true} color=\\"green\\" name=\\"demo\\" />
+    <label htmlFor=\\"green\\" className=\\"drac-text drac-text-white\\">
+      Checkbox
+    </label>
+  </div>
+  <div style={{...}}>
+    <Checkbox id=\\"orange\\" defaultChecked={true} color=\\"orange\\" name=\\"demo\\" />
+    <label htmlFor=\\"orange\\" className=\\"drac-text drac-text-white\\">
+      Checkbox
+    </label>
+  </div>
+  <div style={{...}}>
+    <Checkbox id=\\"pink\\" defaultChecked={true} color=\\"pink\\" name=\\"demo\\" />
+    <label htmlFor=\\"pink\\" className=\\"drac-text drac-text-white\\">
+      Checkbox
+    </label>
+  </div>
+  <div style={{...}}>
+    <Checkbox id=\\"purple\\" defaultChecked={true} color=\\"purple\\" name=\\"demo\\" />
+    <label htmlFor=\\"purple\\" className=\\"drac-text drac-text-white\\">
+      Checkbox
+    </label>
+  </div>
+  <div style={{...}}>
+    <Checkbox id=\\"red\\" defaultChecked={true} color=\\"red\\" name=\\"demo\\" />
+    <label htmlFor=\\"red\\" className=\\"drac-text drac-text-white\\">
+      Checkbox
+    </label>
+  </div>
+  <div style={{...}}>
+    <Checkbox id=\\"yellow\\" defaultChecked={true} color=\\"yellow\\" name=\\"demo\\" />
+    <label htmlFor=\\"yellow\\" className=\\"drac-text drac-text-white\\">
+      Checkbox
+    </label>
+  </div>
+  <div style={{...}}>
+    <Checkbox id=\\"animated\\" defaultChecked={true} color=\\"animated\\" name=\\"demo\\" />
+    <label htmlFor=\\"animated\\" className=\\"drac-text drac-text-white\\">
+      Checkbox
+    </label>
+  </div>
+  <div style={{...}}>
+    <Checkbox id=\\"cyanGreen\\" defaultChecked={true} color=\\"cyanGreen\\" name=\\"demo\\" />
+    <label htmlFor=\\"cyanGreen\\" className=\\"drac-text drac-text-white\\">
+      Checkbox
+    </label>
+  </div>
+  <div style={{...}}>
+    <Checkbox id=\\"pinkPurple\\" defaultChecked={true} color=\\"pinkPurple\\" name=\\"demo\\" />
+    <label htmlFor=\\"pinkPurple\\" className=\\"drac-text drac-text-white\\">
+      Checkbox
+    </label>
+  </div>
+  <div style={{...}}>
+    <Checkbox id=\\"purpleCyan\\" defaultChecked={true} color=\\"purpleCyan\\" name=\\"demo\\" />
+    <label htmlFor=\\"purpleCyan\\" className=\\"drac-text drac-text-white\\">
+      Checkbox
+    </label>
+  </div>
+  <div style={{...}}>
+    <Checkbox id=\\"yellowPink\\" defaultChecked={true} color=\\"yellowPink\\" name=\\"demo\\" />
+    <label htmlFor=\\"yellowPink\\" className=\\"drac-text drac-text-white\\">
+      Checkbox
+    </label>
+  </div>
+</div>",
+  "title": "Colors",
+}
+`;
+
+exports[`Site: Checkbox Disabled 1`] = `
+Object {
+  "docs": "",
+  "html": "<div style=\\"display: flex; flex-direction: column; padding: 3rem\\">
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"checkbox\\"
+      id=\\"one\\"
+      disabled=\\"\\"
+      color=\\"white\\"
+      name=\\"demo\\"
+      class=\\"drac-checkbox drac-checkbox-white\\"
+      checked=\\"\\"
+    /><label for=\\"one\\" class=\\"drac-text drac-text-white\\">Checked</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"checkbox\\"
+      id=\\"two\\"
+      disabled=\\"\\"
+      color=\\"white\\"
+      name=\\"demo\\"
+      class=\\"drac-checkbox drac-checkbox-white\\"
+    /><label for=\\"two\\" class=\\"drac-text drac-text-white\\">Unchecked</label>
+  </div>
+</div>
+",
+  "react": "<div style={{...}}>
+  <div style={{...}}>
+    <Checkbox id=\\"one\\" disabled={true} defaultChecked={true} color=\\"white\\" name=\\"demo\\" />
+    <label htmlFor=\\"one\\" className=\\"drac-text drac-text-white\\">
+      Checked
+    </label>
+  </div>
+  <div style={{...}}>
+    <Checkbox id=\\"two\\" disabled={true} color=\\"white\\" name=\\"demo\\" />
+    <label htmlFor=\\"two\\" className=\\"drac-text drac-text-white\\">
+      Unchecked
+    </label>
+  </div>
+</div>",
+  "title": "Disabled",
+}
+`;

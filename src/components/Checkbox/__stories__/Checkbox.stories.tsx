@@ -7,11 +7,7 @@ export default {
 
 export const CheckboxNormal = () => {
   return (
-    <div
-      className={'drac-bg-black'}
-      style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}
-    >
-      <p className="drac-text drac-text-white">.drac-checkbox</p>
+    <div style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}>
       <div style={{ marginBottom: 10 }}>
         <Checkbox
           id="one"
@@ -47,13 +43,9 @@ export const CheckboxNormal = () => {
   )
 }
 
-export const CheckboxDisabled = (props?: Partial<CheckboxProps>) => {
+export const CheckboxDisabled = () => {
   return (
-    <div
-      className={'drac-bg-black'}
-      style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}
-    >
-      <p className="drac-text drac-text-white">.drac-checkbox[disabled]</p>
+    <div style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}>
       <div style={{ marginBottom: 10 }}>
         <Checkbox
           id="one"
@@ -83,18 +75,12 @@ export const CheckboxDisabled = (props?: Partial<CheckboxProps>) => {
   )
 }
 
-export const CheckboxColors = (props?: Partial<CheckboxProps>) => {
+export const CheckboxColors = () => {
   return (
-    <div
-      className={'drac-bg-black'}
-      style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}
-    >
+    <div style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}>
       {Object.keys(checkboxColors).map((color) => {
         return (
-          <div key={color}>
-            <p className="drac-text drac-text-white">
-              .drac-checkbox .drac-checkbox-{color}
-            </p>
+          <div key={color} style={{ marginBottom: 10 }}>
             <Checkbox
               id={color}
               defaultChecked
