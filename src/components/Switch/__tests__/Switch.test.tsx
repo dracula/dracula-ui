@@ -1,11 +1,23 @@
-import React from 'react'
-import * as ReactDOM from 'react-dom'
 import { Switch } from '@/components/Switch/Switch'
+import {
+  buildSnapshot,
+  SnapshotBuilder
+} from '@/story-helpers/render-component'
+import { siteDocs } from '@/story-helpers/docs/site-docs'
+import {
+  SwitchNormal,
+  SwitchDisabled,
+  SwitchColors
+} from '@/components/Switch/__stories__/Switch.stories'
 
-describe('Switch', () => {
-  it('renders without crashing', () => {
-    const div = document.createElement('div')
-    ReactDOM.render(<Switch color="white" />, div)
-    ReactDOM.unmountComponentAtNode(div)
-  })
+siteDocs(Switch, {
+  basicUsage() {
+    return buildSnapshot('Usage', SwitchNormal)
+  },
+  variations() {
+    return [
+      buildSnapshot('Disabled', SwitchDisabled),
+      buildSnapshot('Colors', SwitchColors)
+    ] as SnapshotBuilder[]
+  }
 })

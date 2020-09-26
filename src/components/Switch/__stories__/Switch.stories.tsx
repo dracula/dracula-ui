@@ -7,11 +7,7 @@ export default {
 
 export const SwitchNormal = () => {
   return (
-    <div
-      className={'drac-bg-black'}
-      style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}
-    >
-      <p className="drac-text drac-text-white">.drac-switch</p>
+    <div style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}>
       <div style={{ marginBottom: 10 }}>
         <Switch
           id="one"
@@ -45,11 +41,7 @@ export const SwitchNormal = () => {
 
 export const SwitchDisabled = () => {
   return (
-    <div
-      className={'drac-bg-black'}
-      style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}
-    >
-      <p className="drac-text drac-text-white">.drac-switch[disabled]</p>
+    <div style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}>
       <div style={{ marginBottom: 10 }}>
         <Switch
           id="one"
@@ -81,10 +73,7 @@ export const SwitchDisabled = () => {
 
 export const SwitchColors = (props?: Partial<SwitchProps>) => {
   return (
-    <div
-      className={'drac-bg-black'}
-      style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}
-    >
+    <div style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}>
       {Object.keys(switchColors).map((color) => {
         return (
           <div key={color}>
