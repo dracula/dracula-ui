@@ -15,23 +15,44 @@ export const AvatarBorderVariants = {
   none: 'drac-avatar-no-border'
 }
 
-/** Le props */
+/** Avatar Props */
 export interface AvatarProps
   extends HTMLAttributes<HTMLSpanElement & HTMLImageElement> {
-  /** The theme color */
-  themeColor?: keyof typeof backgroundColors
-  /** Variant yo */
-  variant?: keyof typeof AvatarVariants
-  /** Border yoo */
-  borderVariant?: keyof typeof AvatarBorderVariants
-  /** Le source */
-  src?: string
-  /** Titulo */
+  /**
+   * The title or name to be used in the avatar.
+   */
   title: string
+
+  /**
+   * The theme color for the avatar.
+   * This property controls the border and glow colors for the component.
+   */
+  themeColor?: keyof typeof backgroundColors
+
+  /**
+   * The variant property allows for consumers to choose from
+   * a regular avatar, or a subtle variation.
+   */
+  variant?: keyof typeof AvatarVariants
+
+  /**
+   * Allows for controlling the border of the avatar.
+   * `large` -> to use a thicker border.
+   * `none` -> hides the border.
+   */
+  borderVariant?: keyof typeof AvatarBorderVariants
+
+  /**
+   * Sets the source for the profile picture.
+   */
+  src?: string
 }
 
 /**
- * Le Avatar
+ * The Avatar component is used to represent a user.
+ *
+ * It displays a profile picture, or falls back to the user's initials
+ * if a profile pic is not provided.
  */
 export const Avatar = (props: AvatarProps) => {
   const { themeColor, variant, borderVariant, src, title, ...htmlProps } = props
