@@ -15,12 +15,31 @@ export const HeadingColors = mapValues(colors, (className) => {
   return className.replace('-bg-', '-text-')
 })
 
+/** Heading Props */
 export interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {
+  /**
+   * The size and type of Heading to be used.
+   * Denotes hierarchy.
+   */
   size?: keyof typeof HeadingSizes
+
+  /**
+   * The Dracula UI color to be applied to the Heading.
+   */
   color?: keyof typeof HeadingColors
+
+  /**
+   * Controls the spacing between the Heading component and its parent and siblings.
+   */
   spacing?: SpacingPropType
 }
 
+/**
+ * Heading is used to display headlines and other forms of hierarchical Text.
+ *
+ * Headings are similar to the base Text component, but restricted to certain
+ * sizes and font weight.
+ */
 export const Heading: React.FC<HeadingProps> = (props: HeadingProps) => {
   const tag = {
     'heading-1': 'h1',

@@ -41,7 +41,7 @@ export interface TextProps extends HTMLAttributes<HTMLSpanElement> {
   color?: keyof typeof TextColors
 
   /**
-   * Controls the spacing between the Text components and its parent and siblings.
+   * Controls the spacing between the Text component and its parent and siblings.
    */
   spacing?: SpacingPropType
 }
