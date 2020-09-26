@@ -15,11 +15,27 @@ export const cardVariants = {
 }
 export type CardVariantProps = keyof typeof cardVariants
 
+/** Card Props */
 export interface CardProps extends BoxProps {
+  /**
+   * Shortcut property that makes it convenient to orient a card vertically or horizontally.
+   * `normal` -> Orients the Card horizontally in landscape format.
+   * `portrait` -> Orients the Card vertically.
+   */
   orientation?: CardOrientationProps
+
+  /**
+   * The Card display variant.
+   * `normal` -> Applies the chosen background color with dark text.
+   * `subtle` -> Inverts the theme color, and adds a slight glow to the Card. Use this when you don't want all your cards to stand out.
+   */
   variant?: CardVariantProps
 }
 
+/**
+ * Card is a high level Pattern Component use to group
+ * related or hierarchical information.
+ */
 export const Card: React.FC<CardProps> = (props: CardProps) => {
   const classNames = cx(
     'drac-card',
