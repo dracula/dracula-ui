@@ -27,6 +27,8 @@ export interface SwitchProps extends HTMLAttributes<HTMLInputElement> {
    * The Dracula UI theme color to be applied to the Switch.
    */
   color: keyof typeof switchColors
+
+  disabled?: boolean
 }
 
 /**

@@ -1,5 +1,5 @@
 import React from 'react'
-import { SwitchProps, Switch, switchColors } from '@/index'
+import { SwitchProps, Switch, switchColors } from '@/components/Switch/Switch'
 
 export default {
   title: 'Switch'
@@ -71,7 +71,7 @@ export const SwitchDisabled = () => {
   )
 }
 
-export const SwitchColors = (props?: Partial<SwitchProps>) => {
+export const SwitchColors = () => {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}>
       {Object.keys(switchColors).map((color) => {
