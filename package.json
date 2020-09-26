@@ -61,6 +61,7 @@
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.4",
     "enzyme-to-json": "^3.5.0",
+    "eslint-plugin-prettier": "^3.1.4",
     "globby": "^11.0.1",
     "husky": "^4.3.0",
     "jest-snapshot-serializer-raw": "^1.1.0",
