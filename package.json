@@ -15,7 +15,7 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
-    "test": "tsdx test --passWithNoTests",
+    "test": "tsdx test",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "storybook": "start-storybook -p 6006",
@@ -76,7 +76,7 @@
     "rollup-plugin-postcss": "^3.1.8",
     "ts-loader": "^8.0.3",
     "tsconfig-paths-webpack-plugin": "^3.3.0",
-    "tsdx": "^0.13.3",
+    "tsdx": "^0.14.0",
     "tslib": "^2.0.1",
     "typescript": "^4.0.2"
   },
