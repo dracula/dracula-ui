@@ -9,12 +9,28 @@ const variants = {
   outline: 'drac-badge-outline'
 }
 
+/**
+ * Badge Props
+ */
 export interface BadgeProps extends HTMLAttributes<HTMLSpanElement> {
+  /**
+   * The theme variation color for a badge.
+   */
   themeColor?: keyof typeof backgroundColors
+
+  /**
+   * The variants for the Badge components.
+   * `normal` -> Default solid badge.
+   * `subtle` -> Subtler background, highlights the text.
+   * `outline` -> No background color, just borders and text.
+   */
   variant?: keyof typeof variants
-  disabled?: boolean
 }
 
+/**
+ * Badges are used to denote status or to highlight specific
+ * information.
+ */
 export const Badge: React.FC<BadgeProps> = (props: BadgeProps) => {
   const isOutline = props.variant === 'outline'
   const isSubtle = props.variant === 'subtle'
