@@ -85,7 +85,7 @@ export const SwitchColors = (props?: Partial<SwitchProps>) => {
       className={'drac-bg-black'}
       style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}
     >
-      {Object.keys(switchColors).map(color => {
+      {Object.keys(switchColors).map((color) => {
         return (
           <div key={color}>
             <p className="drac-text drac-text-white">

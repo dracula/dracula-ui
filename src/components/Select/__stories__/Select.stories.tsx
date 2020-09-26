@@ -11,7 +11,7 @@ export const SelectVariants = () => {
       className={'drac-bg-black'}
       style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}
     >
-      {Object.keys(selectVariants).map(variant => {
+      {Object.keys(selectVariants).map((variant) => {
         return (
           <Select
             key={variant}
@@ -39,7 +39,7 @@ export const SelectColors = () => {
       className={'drac-bg-black'}
       style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}
     >
-      {Object.keys(selectColors).map(color => {
+      {Object.keys(selectColors).map((color) => {
         return (
           <div>
             <p className="drac-text drac-text-white">
@@ -64,7 +64,7 @@ export const SelectColors = () => {
       })}
 
       <p className="drac-text drac-text-white">Default</p>
-      {Object.keys(selectColors).map(color => {
+      {Object.keys(selectColors).map((color) => {
         return (
           <div>
             <p className="drac-text drac-text-white">

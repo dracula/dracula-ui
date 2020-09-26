@@ -24,7 +24,7 @@ export function spacingClasses(input?: SpacingPropType): string[] {
 
   spacingInput = spacingInput as Array<keyof typeof spacing>
 
-  return spacingInput.map(spc => {
+  return spacingInput.map((spc) => {
     return spacing[spc]
   })
 }

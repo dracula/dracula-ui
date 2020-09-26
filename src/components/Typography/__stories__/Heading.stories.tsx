@@ -14,7 +14,7 @@ export default {
 
 export const Headers = () => (
   <div>
-    {Object.keys(HeadingSizes).map(size => {
+    {Object.keys(HeadingSizes).map((size) => {
       return (
         <Box
           color={colorname()}
@@ -35,7 +35,7 @@ export const Headers = () => (
 
 export const HeadersWithColors = () => (
   <div>
-    {Object.keys(HeadingColors).map(color => {
+    {Object.keys(HeadingColors).map((color) => {
       return (
         <Box
           color="black"

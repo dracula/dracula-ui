@@ -11,7 +11,7 @@ export const DividerColors = () => {
       className={'drac-bg-black'}
       style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}
     >
-      {Object.keys(dividerColors).map(color => {
+      {Object.keys(dividerColors).map((color) => {
         return (
           <div>
             <p className="drac-text drac-text-white">

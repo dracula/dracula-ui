@@ -89,7 +89,7 @@ export const CheckboxColors = (props?: Partial<CheckboxProps>) => {
       className={'drac-bg-black'}
       style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}
     >
-      {Object.keys(checkboxColors).map(color => {
+      {Object.keys(checkboxColors).map((color) => {
         return (
           <div key={color}>
             <p className="drac-text drac-text-white">

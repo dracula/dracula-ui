@@ -20,10 +20,10 @@ export const colors = {
 export type ColorNames = keyof typeof colors
 export type ColorMap = Record<ColorNames, string>
 
-export const borderColors: ColorMap = mapValues(colors, className =>
+export const borderColors: ColorMap = mapValues(colors, (className) =>
   className.replace('-bg-', '-border-')
 )
 
-export const textColors: ColorMap = mapValues(colors, className => {
+export const textColors: ColorMap = mapValues(colors, (className) => {
   return className.replace('-bg-', '-text-')
 })

@@ -11,7 +11,7 @@ export const InputVariants = () => {
       className={'drac-bg-black'}
       style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}
     >
-      {Object.keys(inputVariants).map(variant => {
+      {Object.keys(inputVariants).map((variant) => {
         return (
           <Input
             key={variant}
@@ -32,7 +32,7 @@ export const InputColors = () => {
       className={'drac-bg-black'}
       style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}
     >
-      {Object.keys(inputColors).map(color => {
+      {Object.keys(inputColors).map((color) => {
         return (
           <div>
             <p className="drac-text drac-text-white">
@@ -50,7 +50,7 @@ export const InputColors = () => {
       })}
 
       <p className="drac-text drac-text-white">Default</p>
-      {Object.keys(inputColors).map(color => {
+      {Object.keys(inputColors).map((color) => {
         return (
           <div>
             <p className="drac-text drac-text-white">

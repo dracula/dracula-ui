@@ -16,7 +16,7 @@ export const Buttons = () => (
       .drac-btn
     </Heading>
 
-    {Object.keys(colors).map(color => {
+    {Object.keys(colors).map((color) => {
       return (
         <div key={color}>
           <Box
@@ -32,7 +32,7 @@ export const Buttons = () => (
                   themeColor={color as ButtonProps['themeColor']}
                   style={{ margin: '1rem' }}
                 >
-                  Normal <span>🤠</span>
+                  Normal
                 </Button>
 
                 <Button
@@ -40,7 +40,7 @@ export const Buttons = () => (
                   style={{ margin: '1rem' }}
                   disabled
                 >
-                  Normal <span>🤠</span>
+                  Normal
                 </Button>
               </Box>
             </Box>
@@ -53,7 +53,7 @@ export const Buttons = () => (
                   style={{ margin: '1rem' }}
                   variant="ghost"
                 >
-                  Ghost <span>👻</span>
+                  Ghost
                 </Button>
                 <Button
                   themeColor={color as ButtonProps['themeColor']}
@@ -61,7 +61,7 @@ export const Buttons = () => (
                   variant="ghost"
                   disabled
                 >
-                  Ghost <span>👻</span>
+                  Ghost
                 </Button>
               </Box>
             </Box>

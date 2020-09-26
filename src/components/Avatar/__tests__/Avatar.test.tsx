@@ -43,7 +43,7 @@ siteDocs(Avatar, {
     `
     )
 
-    const borders = withEntries(AvatarBorderVariants, variant => {
+    const borders = withEntries(AvatarBorderVariants, (variant) => {
       return buildSnapshot(`border: ${variant}`, () => (
         <Avatar title="Netto Farah" borderVariant={variant} />
       ))

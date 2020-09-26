@@ -9,7 +9,7 @@ export default {
 export const Boxes = () => {
   return (
     <div style={{ display: 'flex', flexDirection: 'row' }}>
-      {Object.keys(colors).map(color => {
+      {Object.keys(colors).map((color) => {
         return (
           <Box
             key={color}

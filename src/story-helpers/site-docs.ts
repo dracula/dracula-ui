@@ -35,7 +35,7 @@ export function siteDocs<T>(
       expect(snapshot).toMatchSnapshot()
       examples = {
         ...examples,
-        ['basic']: snapshot
+        basic: snapshot
       }
     })
 

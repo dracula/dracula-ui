@@ -16,12 +16,12 @@ export default {
 
 export const Texts = () => (
   <div>
-    {Object.keys(TextSizes).map(size => {
+    {Object.keys(TextSizes).map((size) => {
       return (
         <Heading size="heading-2">
           {size}
 
-          {Object.keys(TextWeights).map(weight => {
+          {Object.keys(TextWeights).map((weight) => {
             return (
               <Box
                 key={`${size}-${weight}`}
@@ -48,7 +48,7 @@ export const TextWithColors = () => (
     return (
     <Heading size="heading-2">
       Colors
-      {Object.keys(TextColors).map(color => {
+      {Object.keys(TextColors).map((color) => {
         return (
           <Box key={color} style={{ padding: '1rem' }}>
             <Text color={color as TextProps['color']}>

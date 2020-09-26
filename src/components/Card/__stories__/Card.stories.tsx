@@ -79,7 +79,7 @@ export const Cards = () => {
       spacing="large"
       style={{ display: 'flex', flexWrap: 'wrap' }}
     >
-      {Object.keys(colors).map(color => (
+      {Object.keys(colors).map((color) => (
         <Crd
           style={{ width: '600px', margin: '2rem' }}
           color={color as BoxProps['color']}
@@ -97,7 +97,7 @@ export const Portrait = () => {
       spacing="large"
       style={{ display: 'flex', flexWrap: 'wrap' }}
     >
-      {Object.keys(colors).map(color => (
+      {Object.keys(colors).map((color) => (
         <Crd color={color as BoxProps['color']} orientation="portrait" />
       ))}
     </Box>
@@ -111,7 +111,7 @@ export const Subtle = () => {
       spacing="large"
       style={{ display: 'flex', flexWrap: 'wrap' }}
     >
-      {Object.keys(colors).map(color => (
+      {Object.keys(colors).map((color) => (
         <Crd
           style={{ width: '600px', margin: '2rem' }}
           color={color as BoxProps['color']}

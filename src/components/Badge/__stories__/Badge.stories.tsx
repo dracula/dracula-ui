@@ -26,7 +26,7 @@ export const Badges = () => (
       .drac-badge
     </Heading>
 
-    {Object.keys(colors).map(color => {
+    {Object.keys(colors).map((color) => {
       return (
         <div key={color} style={{ display: 'flex' }}>
           <Box style={boxStyle}>
@@ -35,7 +35,7 @@ export const Badges = () => (
               themeColor={color as BadgeProps['themeColor']}
               style={{ margin: '1rem' }}
             >
-              Normal <span>🤠</span>
+              Normal
             </Badge>
           </Box>
 

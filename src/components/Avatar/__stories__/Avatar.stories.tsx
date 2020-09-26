@@ -20,7 +20,7 @@ export const Avatars = () => (
       .drac-avatar
     </Heading>
 
-    {Object.keys(colors).map(color => {
+    {Object.keys(colors).map((color) => {
       return (
         <Box style={boxStyle}>
           <Text color="white">.drac-avatar .{colors[color]}</Text>
