@@ -18,11 +18,26 @@ export const switchColors: ColorMap = {
   yellowPink: ''
 }
 
+/** Switch Props. */
 export interface SwitchProps extends HTMLAttributes<HTMLInputElement> {
-  color: keyof typeof switchColors
+  /** The name of the form element. */
   name?: string
+
+  /**
+   * The Dracula UI theme color to be applied to the Switch.
+   */
+  color: keyof typeof switchColors
 }
 
+/**
+ * Switch is an abstraction pattern that represents toggles.
+ *
+ * Use the Switch component as an alternative for Checkboxes or Radios
+ * when options are binary.
+ *
+ * Switches are implemented as Checkboxes under the hood,
+ * and work normally with forms.
+ */
 export const Switch: React.FC<SwitchProps> = (props: SwitchProps) => {
   const finalProps = {
     ...props,

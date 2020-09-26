@@ -1,5 +1,6 @@
 import { ColorMap } from '@/base/colors'
 import React, { HTMLAttributes } from 'react'
+import cx from 'classnames'
 
 export const inputVariants = {
   normal: 'drac-input',
@@ -23,17 +24,37 @@ export const inputColors: ColorMap = {
   yellowPink: ''
 }
 
+/** Input Props */
 export interface InputProps extends HTMLAttributes<HTMLInputElement> {
-  variant: keyof typeof inputVariants
-  color: keyof typeof inputColors
+  /**
+   * The Dracula UI theme color to be used
+   */
+  color?: keyof typeof inputColors
+
+  /**
+   * Controls the variation the input.
+   * `normal` -> Regular Input component with a light background color.
+   * `outline` -> Keeps the accent color, but removes the background.
+   */
+  variant?: keyof typeof inputVariants
 }
 
+/**
+ * Input is a styled HTML Input.
+ *
+ * There are no behavior changes applied to the native HTML tag other
+ * than light styling done via CSS in order to keep inputs accessible.
+ */
 export const Input: React.FC<InputProps> = (props: InputProps) => {
   const finalProps = {
     ...props,
-    className: `drac-input drac-text drac-text-md ${
-      inputVariants[props.variant]
-    } ${inputColors[props.color]}`
+    className: cx(
+      `drac-input`,
+      `drac-text`,
+      `drac-text-md`,
+      props.variant && inputVariants[props.variant],
+      props.color && inputColors[props.color]
+    )
   }
 
   return <input {...finalProps} />
