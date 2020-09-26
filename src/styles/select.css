@@ -36,7 +36,14 @@
   color: var(--blackTernary);
 }
 
-.drac-select-outline {
+.drac-select:disabled {
+  background: var(--blackTernary);
+  cursor: not-allowed;
+  opacity: 0.9;
+}
+
+.drac-select-outline,
+.drac-select-outline:disabled {
   background: transparent;
   border-color: var(--blackTernary);
 }

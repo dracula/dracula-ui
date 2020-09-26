@@ -35,6 +35,8 @@ export interface SelectProps extends HTMLAttributes<HTMLSelectElement> {
    * `outline` -> Keeps the accent color, but removes the background.
    */
   variant?: keyof typeof selectVariants
+
+  disabled?: boolean
 }
 
 /**
@@ -47,7 +49,7 @@ export const Select: React.FC<SelectProps> = (props: SelectProps) => {
   const finalProps = {
     ...props,
     className: cx(
-      'drac-seelect',
+      'drac-select',
       'drac-text',
       'drac-text-md',
       props.variant && selectVariants[props.variant],
