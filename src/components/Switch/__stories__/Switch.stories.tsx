@@ -76,10 +76,7 @@ export const SwitchColors = () => {
     <div style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}>
       {Object.keys(switchColors).map((color) => {
         return (
-          <div key={color}>
-            <p className="drac-text drac-text-white">
-              .drac-switch .drac-switch-{color}
-            </p>
+          <div key={color} style={{ marginBottom: 10 }}>
             <Switch
               id={color}
               defaultChecked

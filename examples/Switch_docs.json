@@ -28,6 +28,19 @@
       "type": {
         "name": "\"black\" | \"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
       }
+    },
+    "disabled": {
+      "defaultValue": null,
+      "description": "",
+      "name": "disabled",
+      "parent": {
+        "fileName": "src/components/Switch/Switch.tsx",
+        "name": "SwitchProps"
+      },
+      "required": false,
+      "type": {
+        "name": "boolean | undefined"
+      }
     }
   }
 }
