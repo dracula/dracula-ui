@@ -7,26 +7,50 @@ export default {
 
 export const SelectVariants = () => {
   return (
-    <div
-      className={'drac-bg-black'}
-      style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}
-    >
+    <div style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}>
       {Object.keys(selectVariants).map((variant) => {
         return (
-          <Select
-            key={variant}
-            variant={variant as SelectProps['variant']}
-            color={'white'}
-          >
-            <option disabled selected>
-              Select option
-            </option>
-            <option>Blade</option>
-            <option>Buffy</option>
-            <option>Lincoln</option>
-            <option>Morbius</option>
-            <option>Van Helsing</option>
-          </Select>
+          <div key={variant} style={{ marginBottom: 10 }}>
+            <Select
+              defaultValue="default"
+              variant={variant as SelectProps['variant']}
+              color={'white'}
+            >
+              <option value="default" disabled>
+                Select option
+              </option>
+              <option>Blade</option>
+              <option>Buffy</option>
+              <option>Lincoln</option>
+              <option>Morbius</option>
+              <option>Van Helsing</option>
+            </Select>
+          </div>
+        )
+      })}
+    </div>
+  )
+}
+
+export const SelectDisabled = () => {
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}>
+      {Object.keys(selectVariants).map((variant) => {
+        return (
+          <div key={variant} style={{ marginBottom: 10 }}>
+            <Select
+              disabled
+              variant={variant as SelectProps['variant']}
+              color={'white'}
+            >
+              <option value="default">Select option</option>
+              <option>Blade</option>
+              <option>Buffy</option>
+              <option>Lincoln</option>
+              <option>Morbius</option>
+              <option>Van Helsing</option>
+            </Select>
+          </div>
         )
       })}
     </div>
@@ -35,22 +59,16 @@ export const SelectVariants = () => {
 
 export const SelectColors = () => {
   return (
-    <div
-      className={'drac-bg-black'}
-      style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}
-    >
+    <div style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}>
       {Object.keys(selectColors).map((color) => {
         return (
-          <div>
-            <p className="drac-text drac-text-white">
-              .drac-select-outline .drac-select-{color}
-            </p>
+          <div key={color} style={{ marginBottom: 10 }}>
             <Select
-              key={color}
+              defaultValue="default"
               variant={'outline'}
               color={color as SelectProps['color']}
             >
-              <option disabled selected>
+              <option value="default" disabled>
                 Select option
               </option>
               <option>Blade</option>
@@ -63,19 +81,15 @@ export const SelectColors = () => {
         )
       })}
 
-      <p className="drac-text drac-text-white">Default</p>
       {Object.keys(selectColors).map((color) => {
         return (
-          <div>
-            <p className="drac-text drac-text-white">
-              .drac-select .drac-select-{color}
-            </p>
+          <div key={color} style={{ marginBottom: 10 }}>
             <Select
-              key={color}
+              defaultValue="default"
               variant={'normal'}
               color={color as SelectProps['color']}
             >
-              <option disabled selected>
+              <option value="default" disabled>
                 Select option
               </option>
               <option>Blade</option>

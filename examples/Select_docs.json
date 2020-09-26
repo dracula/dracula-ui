@@ -28,6 +28,19 @@
       "type": {
         "name": "\"normal\" | \"outline\" | undefined"
       }
+    },
+    "disabled": {
+      "defaultValue": null,
+      "description": "",
+      "name": "disabled",
+      "parent": {
+        "fileName": "src/components/Select/Select.tsx",
+        "name": "SelectProps"
+      },
+      "required": false,
+      "type": {
+        "name": "boolean | undefined"
+      }
     }
   }
 }

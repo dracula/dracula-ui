@@ -1,11 +1,23 @@
-import React from 'react'
-import * as ReactDOM from 'react-dom'
 import { Select } from '@/components/Select/Select'
+import {
+  buildSnapshot,
+  SnapshotBuilder
+} from '@/story-helpers/render-component'
+import { siteDocs } from '@/story-helpers/docs/site-docs'
+import {
+  SelectVariants,
+  SelectDisabled,
+  SelectColors
+} from '@/components/Select/__stories__/Select.stories'
 
-describe('Select', () => {
-  it('renders without crashing', () => {
-    const div = document.createElement('div')
-    ReactDOM.render(<Select variant="outline" color="white" />, div)
-    ReactDOM.unmountComponentAtNode(div)
-  })
+siteDocs(Select, {
+  basicUsage() {
+    return buildSnapshot('Usage', SelectVariants)
+  },
+  variations() {
+    return [
+      buildSnapshot('Disabled', SelectDisabled),
+      buildSnapshot('Colors', SelectColors)
+    ] as SnapshotBuilder[]
+  }
 })
