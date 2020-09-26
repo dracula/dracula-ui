@@ -1,0 +1,33 @@
+{
+  "description": "Switch is an abstraction pattern that represents toggles.\n\nUse the Switch component as an alternative for Checkboxes or Radios\nwhen options are binary.\n\nSwitches are implemented as Checkboxes under the hood,\nand work normally with forms.",
+  "displayName": "Switch",
+  "methods": [],
+  "props": {
+    "name": {
+      "defaultValue": null,
+      "description": "The name of the form element.",
+      "name": "name",
+      "parent": {
+        "fileName": "src/components/Switch/Switch.tsx",
+        "name": "SwitchProps"
+      },
+      "required": false,
+      "type": {
+        "name": "string | undefined"
+      }
+    },
+    "color": {
+      "defaultValue": null,
+      "description": "The Dracula UI theme color to be applied to the Switch.",
+      "name": "color",
+      "parent": {
+        "fileName": "src/components/Switch/Switch.tsx",
+        "name": "SwitchProps"
+      },
+      "required": true,
+      "type": {
+        "name": "\"black\" | \"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
+      }
+    }
+  }
+}

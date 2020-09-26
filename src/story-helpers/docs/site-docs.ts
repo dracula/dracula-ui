@@ -22,7 +22,7 @@ export function siteDocs<T>(
 
     afterAll(() => {
       const path = `${process.cwd()}/examples/${name}.json`
-      fs.writeFileSync(path, JSON.stringify(examples, null, ' '))
+      fs.writeFileSync(path, JSON.stringify(examples, null, '  '))
     })
 
     test('Basic Usage', () => {

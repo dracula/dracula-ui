@@ -1,6 +1,7 @@
 import * as dg from 'react-docgen-typescript'
 import path from 'path'
 import globby from 'globby'
+import fs from 'fs'
 
 test('whatever', async () => {
   const options = {
@@ -17,5 +18,9 @@ test('whatever', async () => {
     .withCustomConfig(path.join(__dirname, '../../tsconfig.json'), options)
     .parse(await globby('src/components/**/**.tsx'))
 
-  console.log(JSON.stringify(parsed, null, '  '))
+  parsed.forEach((componentMetadata) => {
+    const name = componentMetadata.displayName
+    const path = `${process.cwd()}/examples/${name}_docs.json`
+    fs.writeFileSync(path, JSON.stringify(componentMetadata, null, '  '))
+  })
 })

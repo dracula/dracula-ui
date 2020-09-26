@@ -3,7 +3,7 @@ import {
   buildSnapshot,
   SnapshotBuilder
 } from '@/story-helpers/render-component'
-import { siteDocs } from '@/story-helpers/site-docs'
+import { siteDocs } from '@/story-helpers/docs/site-docs'
 import {
   RadioNormal,
   RadioDisabled,

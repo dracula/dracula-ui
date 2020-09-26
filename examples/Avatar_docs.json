@@ -1,0 +1,72 @@
+{
+  "description": "The Avatar component is used to represent a user.\n\nIt displays a profile picture, or falls back to the user's initials\nif a profile pic is not provided.",
+  "displayName": "Avatar",
+  "methods": [],
+  "props": {
+    "title": {
+      "defaultValue": null,
+      "description": "The title or name to be used in the avatar.",
+      "name": "title",
+      "parent": {
+        "fileName": "src/components/Avatar/Avatar.tsx",
+        "name": "AvatarProps"
+      },
+      "required": true,
+      "type": {
+        "name": "string"
+      }
+    },
+    "themeColor": {
+      "defaultValue": null,
+      "description": "The theme color for the avatar.\nThis property controls the border and glow colors for the component.",
+      "name": "themeColor",
+      "parent": {
+        "fileName": "src/components/Avatar/Avatar.tsx",
+        "name": "AvatarProps"
+      },
+      "required": false,
+      "type": {
+        "name": "\"black\" | \"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+      }
+    },
+    "variant": {
+      "defaultValue": null,
+      "description": "The variant property allows for consumers to choose from\na regular avatar, or a subtle variation.",
+      "name": "variant",
+      "parent": {
+        "fileName": "src/components/Avatar/Avatar.tsx",
+        "name": "AvatarProps"
+      },
+      "required": false,
+      "type": {
+        "name": "\"normal\" | \"subtle\" | undefined"
+      }
+    },
+    "borderVariant": {
+      "defaultValue": null,
+      "description": "Allows for controlling the border of the avatar.\n`large` -> to use a thicker border.\n`none` -> hides the border.",
+      "name": "borderVariant",
+      "parent": {
+        "fileName": "src/components/Avatar/Avatar.tsx",
+        "name": "AvatarProps"
+      },
+      "required": false,
+      "type": {
+        "name": "\"normal\" | \"none\" | \"large\" | undefined"
+      }
+    },
+    "src": {
+      "defaultValue": null,
+      "description": "Sets the source for the profile picture.",
+      "name": "src",
+      "parent": {
+        "fileName": "src/components/Avatar/Avatar.tsx",
+        "name": "AvatarProps"
+      },
+      "required": false,
+      "type": {
+        "name": "string | undefined"
+      }
+    }
+  }
+}

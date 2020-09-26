@@ -1,0 +1,59 @@
+{
+  "description": "Card is a high level Pattern Component use to group\nrelated or hierarchical information.",
+  "displayName": "Card",
+  "methods": [],
+  "props": {
+    "orientation": {
+      "defaultValue": null,
+      "description": "Shortcut property that makes it convenient to orient a card vertically or horizontally.\n`normal` -> Orients the Card horizontally in landscape format.\n`portrait` -> Orients the Card vertically.",
+      "name": "orientation",
+      "parent": {
+        "fileName": "src/components/Card/Card.tsx",
+        "name": "CardProps"
+      },
+      "required": false,
+      "type": {
+        "name": "\"normal\" | \"portrait\" | undefined"
+      }
+    },
+    "variant": {
+      "defaultValue": null,
+      "description": "The Card display variant.\n`normal` -> Applies the chosen background color with dark text.\n`subtle` -> Inverts the theme color, and adds a slight glow to the Card. Use this when you don't want all your cards to stand out.",
+      "name": "variant",
+      "parent": {
+        "fileName": "src/components/Card/Card.tsx",
+        "name": "CardProps"
+      },
+      "required": false,
+      "type": {
+        "name": "\"normal\" | \"subtle\" | undefined"
+      }
+    },
+    "color": {
+      "defaultValue": null,
+      "description": "The background color.",
+      "name": "color",
+      "parent": {
+        "fileName": "src/components/Box/Box.tsx",
+        "name": "BoxProps"
+      },
+      "required": false,
+      "type": {
+        "name": "\"black\" | \"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+      }
+    },
+    "spacing": {
+      "defaultValue": null,
+      "description": "Dracula UI standard spacing properties.",
+      "name": "spacing",
+      "parent": {
+        "fileName": "src/components/Box/Box.tsx",
+        "name": "BoxProps"
+      },
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"large\" | \"noneX\" | \"noneY\" | \"small\" | \"smallX\" | \"smallY\" | \"medium\" | \"mediumX\" | \"mediumY\" | \"largeX\" | \"largeY\" | (\"none\" | \"large\" | \"noneX\" | \"noneY\" | \"small\" | ... 6 more ... | \"largeY\")[] | undefined"
+      }
+    }
+  }
+}

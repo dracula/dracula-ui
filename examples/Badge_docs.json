@@ -1,0 +1,33 @@
+{
+  "description": "Badges are used to denote status or to highlight specific\ninformation.",
+  "displayName": "Badge",
+  "methods": [],
+  "props": {
+    "themeColor": {
+      "defaultValue": null,
+      "description": "The theme variation color for a badge.",
+      "name": "themeColor",
+      "parent": {
+        "fileName": "src/components/Badge/Badge.tsx",
+        "name": "BadgeProps"
+      },
+      "required": false,
+      "type": {
+        "name": "\"black\" | \"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+      }
+    },
+    "variant": {
+      "defaultValue": null,
+      "description": "The variants for the Badge components.\n`normal` -> Default solid badge.\n`subtle` -> Subtler background, highlights the text.\n`outline` -> No background color, just borders and text.",
+      "name": "variant",
+      "parent": {
+        "fileName": "src/components/Badge/Badge.tsx",
+        "name": "BadgeProps"
+      },
+      "required": false,
+      "type": {
+        "name": "\"normal\" | \"subtle\" | \"outline\" | undefined"
+      }
+    }
+  }
+}

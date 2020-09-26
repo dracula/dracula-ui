@@ -1,0 +1,59 @@
+{
+  "description": "Paragraph is a semantic component used for blocks of text with\nsemantic meaning.\n\nParagraph accepts all the same customization options as Text.",
+  "displayName": "Paragraph",
+  "methods": [],
+  "props": {
+    "size": {
+      "defaultValue": null,
+      "description": "Controls the size of the text based on pre-configured Dracula UI sizes.\nOptions: `normal`, `small`, `medium`, `large`",
+      "name": "size",
+      "parent": {
+        "fileName": "dracula-ui/src/components/Typography/Text.tsx",
+        "name": "TextProps"
+      },
+      "required": false,
+      "type": {
+        "name": "\"normal\" | \"large\" | \"small\" | \"medium\" | undefined"
+      }
+    },
+    "weight": {
+      "defaultValue": null,
+      "description": "Controsl the weight of the text.\nOptions: `normal`, `semibold`, `bold`.",
+      "name": "weight",
+      "parent": {
+        "fileName": "dracula-ui/src/components/Typography/Text.tsx",
+        "name": "TextProps"
+      },
+      "required": false,
+      "type": {
+        "name": "\"normal\" | \"semibold\" | \"bold\" | undefined"
+      }
+    },
+    "color": {
+      "defaultValue": null,
+      "description": "Controls the color of the text",
+      "name": "color",
+      "parent": {
+        "fileName": "dracula-ui/src/components/Typography/Text.tsx",
+        "name": "TextProps"
+      },
+      "required": false,
+      "type": {
+        "name": "\"black\" | \"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+      }
+    },
+    "spacing": {
+      "defaultValue": null,
+      "description": "Controls the spacing between the Text component and its parent and siblings.",
+      "name": "spacing",
+      "parent": {
+        "fileName": "dracula-ui/src/components/Typography/Text.tsx",
+        "name": "TextProps"
+      },
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"large\" | \"noneX\" | \"noneY\" | \"small\" | \"smallX\" | \"smallY\" | \"medium\" | \"mediumX\" | \"mediumY\" | \"largeX\" | \"largeY\" | (\"none\" | \"large\" | \"noneX\" | \"noneY\" | \"small\" | ... 6 more ... | \"largeY\")[] | undefined"
+      }
+    }
+  }
+}

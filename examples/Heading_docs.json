@@ -1,0 +1,46 @@
+{
+  "description": "Heading is used to display headlines and other forms of hierarchical Text.\n\nHeadings are similar to the base Text component, but restricted to certain\nsizes and font weight.",
+  "displayName": "Heading",
+  "methods": [],
+  "props": {
+    "size": {
+      "defaultValue": null,
+      "description": "The size and type of Heading to be used.\nDenotes hierarchy.",
+      "name": "size",
+      "parent": {
+        "fileName": "src/components/Typography/Heading.tsx",
+        "name": "HeadingProps"
+      },
+      "required": false,
+      "type": {
+        "name": "\"heading-1\" | \"heading-2\" | \"heading-3\" | \"heading-4\" | undefined"
+      }
+    },
+    "color": {
+      "defaultValue": null,
+      "description": "The Dracula UI color to be applied to the Heading.",
+      "name": "color",
+      "parent": {
+        "fileName": "src/components/Typography/Heading.tsx",
+        "name": "HeadingProps"
+      },
+      "required": false,
+      "type": {
+        "name": "\"black\" | \"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+      }
+    },
+    "spacing": {
+      "defaultValue": null,
+      "description": "Controls the spacing between the Heading component and its parent and siblings.",
+      "name": "spacing",
+      "parent": {
+        "fileName": "src/components/Typography/Heading.tsx",
+        "name": "HeadingProps"
+      },
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"large\" | \"noneX\" | \"noneY\" | \"small\" | \"smallX\" | \"smallY\" | \"medium\" | \"mediumX\" | \"mediumY\" | \"largeX\" | \"largeY\" | (\"none\" | \"large\" | \"noneX\" | \"noneY\" | \"small\" | ... 6 more ... | \"largeY\")[] | undefined"
+      }
+    }
+  }
+}
