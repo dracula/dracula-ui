@@ -2,6 +2,7 @@ import * as dg from 'react-docgen-typescript'
 import path from 'path'
 import globby from 'globby'
 import fs from 'fs'
+import { pretty } from '@/story-helpers/pretty'
 
 test('whatever', async () => {
   const options = {
@@ -21,6 +22,9 @@ test('whatever', async () => {
   parsed.forEach((componentMetadata) => {
     const name = componentMetadata.displayName
     const path = `${process.cwd()}/examples/${name}_docs.json`
-    fs.writeFileSync(path, JSON.stringify(componentMetadata, null, '  '))
+    fs.writeFileSync(
+      path,
+      pretty(JSON.stringify(componentMetadata, null, '  '), 'json')
+    )
   })
 })

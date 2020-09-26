@@ -34,18 +34,26 @@ Object {
   </div>
 </div>
 ",
-  "react": "function () {
-    return (react_1.default.createElement(\\"div\\", null,
-        react_1.default.createElement(\\"div\\", { style: { marginBottom: 10 } },
-            react_1.default.createElement(Radio_1.Radio, { id: \\"one\\", key: \\"one\\", defaultChecked: true, color: 'purple', name: \\"demo\\" }),
-            react_1.default.createElement(\\"label\\", { htmlFor: \\"one\\", className: \\"drac-text drac-text-white\\" }, \\"Option 1\\")),
-        react_1.default.createElement(\\"div\\", { style: { marginBottom: 10 } },
-            react_1.default.createElement(Radio_1.Radio, { id: \\"two\\", key: \\"two\\", color: 'purple', name: \\"demo\\" }),
-            react_1.default.createElement(\\"label\\", { htmlFor: \\"two\\", className: \\"drac-text drac-text-white\\" }, \\"Option 2\\")),
-        react_1.default.createElement(\\"div\\", { style: { marginBottom: 10 } },
-            react_1.default.createElement(Radio_1.Radio, { id: \\"three\\", key: \\"three\\", color: 'purple', name: \\"demo\\" }),
-            react_1.default.createElement(\\"label\\", { htmlFor: \\"three\\", className: \\"drac-text drac-text-white\\" }, \\"Option 3\\"))));
-}",
+  "react": "<div>
+  <div style={{...}}>
+    <Radio id=\\"one\\" defaultChecked={true} color=\\"purple\\" name=\\"demo\\" />
+    <label htmlFor=\\"one\\" className=\\"drac-text drac-text-white\\">
+      Option 1
+    </label>
+  </div>
+  <div style={{...}}>
+    <Radio id=\\"two\\" color=\\"purple\\" name=\\"demo\\" />
+    <label htmlFor=\\"two\\" className=\\"drac-text drac-text-white\\">
+      Option 2
+    </label>
+  </div>
+  <div style={{...}}>
+    <Radio id=\\"three\\" color=\\"purple\\" name=\\"demo\\" />
+    <label htmlFor=\\"three\\" className=\\"drac-text drac-text-white\\">
+      Option 3
+    </label>
+  </div>
+</div>",
   "title": "Usage",
 }
 `;
@@ -182,13 +190,92 @@ Object {
   </div>
 </div>
 ",
-  "react": "function () {
-    return (react_1.default.createElement(\\"div\\", null, Object.keys(Radio_1.radioColors).map(function (color) {
-        return (react_1.default.createElement(\\"div\\", { key: color, style: { marginBottom: 10 } },
-            react_1.default.createElement(Radio_1.Radio, { id: color, color: color, name: \\"demo\\" }),
-            react_1.default.createElement(\\"label\\", { htmlFor: color, className: \\"drac-text drac-text-white\\" }, \\"Radio\\")));
-    })));
-}",
+  "react": "<div>
+  <div style={{...}}>
+    <Radio id=\\"black\\" color=\\"black\\" name=\\"demo\\" />
+    <label htmlFor=\\"black\\" className=\\"drac-text drac-text-white\\">
+      Radio
+    </label>
+  </div>
+  <div style={{...}}>
+    <Radio id=\\"white\\" color=\\"white\\" name=\\"demo\\" />
+    <label htmlFor=\\"white\\" className=\\"drac-text drac-text-white\\">
+      Radio
+    </label>
+  </div>
+  <div style={{...}}>
+    <Radio id=\\"cyan\\" color=\\"cyan\\" name=\\"demo\\" />
+    <label htmlFor=\\"cyan\\" className=\\"drac-text drac-text-white\\">
+      Radio
+    </label>
+  </div>
+  <div style={{...}}>
+    <Radio id=\\"green\\" color=\\"green\\" name=\\"demo\\" />
+    <label htmlFor=\\"green\\" className=\\"drac-text drac-text-white\\">
+      Radio
+    </label>
+  </div>
+  <div style={{...}}>
+    <Radio id=\\"orange\\" color=\\"orange\\" name=\\"demo\\" />
+    <label htmlFor=\\"orange\\" className=\\"drac-text drac-text-white\\">
+      Radio
+    </label>
+  </div>
+  <div style={{...}}>
+    <Radio id=\\"pink\\" color=\\"pink\\" name=\\"demo\\" />
+    <label htmlFor=\\"pink\\" className=\\"drac-text drac-text-white\\">
+      Radio
+    </label>
+  </div>
+  <div style={{...}}>
+    <Radio id=\\"purple\\" color=\\"purple\\" name=\\"demo\\" />
+    <label htmlFor=\\"purple\\" className=\\"drac-text drac-text-white\\">
+      Radio
+    </label>
+  </div>
+  <div style={{...}}>
+    <Radio id=\\"red\\" color=\\"red\\" name=\\"demo\\" />
+    <label htmlFor=\\"red\\" className=\\"drac-text drac-text-white\\">
+      Radio
+    </label>
+  </div>
+  <div style={{...}}>
+    <Radio id=\\"yellow\\" color=\\"yellow\\" name=\\"demo\\" />
+    <label htmlFor=\\"yellow\\" className=\\"drac-text drac-text-white\\">
+      Radio
+    </label>
+  </div>
+  <div style={{...}}>
+    <Radio id=\\"animated\\" color=\\"animated\\" name=\\"demo\\" />
+    <label htmlFor=\\"animated\\" className=\\"drac-text drac-text-white\\">
+      Radio
+    </label>
+  </div>
+  <div style={{...}}>
+    <Radio id=\\"cyanGreen\\" color=\\"cyanGreen\\" name=\\"demo\\" />
+    <label htmlFor=\\"cyanGreen\\" className=\\"drac-text drac-text-white\\">
+      Radio
+    </label>
+  </div>
+  <div style={{...}}>
+    <Radio id=\\"pinkPurple\\" color=\\"pinkPurple\\" name=\\"demo\\" />
+    <label htmlFor=\\"pinkPurple\\" className=\\"drac-text drac-text-white\\">
+      Radio
+    </label>
+  </div>
+  <div style={{...}}>
+    <Radio id=\\"purpleCyan\\" color=\\"purpleCyan\\" name=\\"demo\\" />
+    <label htmlFor=\\"purpleCyan\\" className=\\"drac-text drac-text-white\\">
+      Radio
+    </label>
+  </div>
+  <div style={{...}}>
+    <Radio id=\\"yellowPink\\" color=\\"yellowPink\\" name=\\"demo\\" />
+    <label htmlFor=\\"yellowPink\\" className=\\"drac-text drac-text-white\\">
+      Radio
+    </label>
+  </div>
+</div>",
   "title": "Colors",
 }
 `;
@@ -218,15 +305,20 @@ Object {
   </div>
 </div>
 ",
-  "react": "function () {
-    return (react_1.default.createElement(\\"div\\", null,
-        react_1.default.createElement(\\"div\\", { style: { marginBottom: 10 } },
-            react_1.default.createElement(Radio_1.Radio, { id: \\"one\\", key: \\"one\\", defaultChecked: true, color: 'white', name: \\"demo\\" }),
-            react_1.default.createElement(\\"label\\", { htmlFor: \\"one\\", className: \\"drac-text drac-text-white\\" }, \\"Checked\\")),
-        react_1.default.createElement(\\"div\\", { style: { marginBottom: 10 } },
-            react_1.default.createElement(Radio_1.Radio, { id: \\"two\\", key: \\"two\\", color: 'white', name: \\"demo\\" }),
-            react_1.default.createElement(\\"label\\", { htmlFor: \\"two\\", className: \\"drac-text drac-text-white\\" }, \\"Unchecked\\"))));
-}",
+  "react": "<div>
+  <div style={{...}}>
+    <Radio id=\\"one\\" defaultChecked={true} color=\\"white\\" name=\\"demo\\" />
+    <label htmlFor=\\"one\\" className=\\"drac-text drac-text-white\\">
+      Checked
+    </label>
+  </div>
+  <div style={{...}}>
+    <Radio id=\\"two\\" color=\\"white\\" name=\\"demo\\" />
+    <label htmlFor=\\"two\\" className=\\"drac-text drac-text-white\\">
+      Unchecked
+    </label>
+  </div>
+</div>",
   "title": "Disabled",
 }
 `;

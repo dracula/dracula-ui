@@ -10,7 +10,9 @@ Object {
   \\"
 ></span>
 ",
-  "react": "function () { return (react_1.default.createElement(Avatar_1.Avatar, { title: \\"Netto Farah\\", src: \\"https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg\\" })); }",
+  "react": "<div>
+  <Avatar title=\\"Netto Farah\\" src=\\"https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg\\" />
+</div>",
   "title": "basic usage",
 }
 `;
@@ -34,9 +36,10 @@ Object {
   >
 </div>
 ",
-  "react": "function () { return (react_1.default.createElement(\\"div\\", null,
-            react_1.default.createElement(Avatar_1.Avatar, { title: \\"Netto Farah\\", color: \\"black\\" }),
-            react_1.default.createElement(Avatar_1.Avatar, { title: \\"Netto Farah\\", color: \\"cyan\\" }))); }",
+  "react": "<div>
+  <Avatar title=\\"Netto Farah\\" color=\\"black\\" />
+  <Avatar title=\\"Netto Farah\\" color=\\"cyan\\" />
+</div>",
   "title": "Custom colors",
 }
 `;
@@ -58,9 +61,10 @@ Object {
   >
 </div>
 ",
-  "react": "function () { return (react_1.default.createElement(\\"div\\", null,
-            react_1.default.createElement(Avatar_1.Avatar, { title: \\"Netto Farah\\", variant: \\"normal\\" }),
-            react_1.default.createElement(Avatar_1.Avatar, { title: \\"Zeno Rocha\\", variant: \\"subtle\\" }))); }",
+  "react": "<div>
+  <Avatar title=\\"Netto Farah\\" variant=\\"normal\\" />
+  <Avatar title=\\"Zeno Rocha\\" variant=\\"subtle\\" />
+</div>",
   "title": "Custom variants",
 }
 `;
@@ -75,7 +79,9 @@ Object {
   ></span
 >
 ",
-  "react": "function () { return (react_1.default.createElement(Avatar_1.Avatar, { title: \\"Netto Farah\\", borderVariant: variant })); }",
+  "react": "<div>
+  <Avatar title=\\"Netto Farah\\" borderVariant=\\"large\\" />
+</div>",
   "title": "border: large",
 }
 `;
@@ -90,7 +96,9 @@ Object {
   ></span
 >
 ",
-  "react": "function () { return (react_1.default.createElement(Avatar_1.Avatar, { title: \\"Netto Farah\\", borderVariant: variant })); }",
+  "react": "<div>
+  <Avatar title=\\"Netto Farah\\" borderVariant=\\"none\\" />
+</div>",
   "title": "border: none",
 }
 `;
@@ -104,7 +112,9 @@ Object {
   ></span
 >
 ",
-  "react": "function () { return (react_1.default.createElement(Avatar_1.Avatar, { title: \\"Netto Farah\\", borderVariant: variant })); }",
+  "react": "<div>
+  <Avatar title=\\"Netto Farah\\" borderVariant=\\"normal\\" />
+</div>",
   "title": "border: normal",
 }
 `;

@@ -5,6 +5,7 @@ import {
 } from '@/story-helpers/render-component'
 import React from 'react'
 import fs from 'fs'
+import { pretty } from '@/story-helpers/pretty'
 
 interface Documentation {
   basicUsage: () => SnapshotBuilder
@@ -22,7 +23,7 @@ export function siteDocs<T>(
 
     afterAll(() => {
       const path = `${process.cwd()}/examples/${name}.json`
-      fs.writeFileSync(path, JSON.stringify(examples, null, '  '))
+      fs.writeFileSync(path, pretty(JSON.stringify(examples), 'json'))
     })
 
     test('Basic Usage', () => {

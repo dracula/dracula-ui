@@ -1,7 +1,7 @@
 import React from 'react'
-import Enzyme, { mount } from 'enzyme'
+import Enzyme, { mount, shallow } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
-import prettier from 'prettier'
+import { pretty } from './pretty'
 
 Enzyme.configure({ adapter: new Adapter() })
 
@@ -35,16 +35,21 @@ export function renderSnapshot(
   comp: () => React.ReactElement,
   docs: string = ''
 ): ComponentExample {
-  const html = mount(comp()).html()
-  const react = comp.toString()
+  let component = comp()
+  const html = mount(component).html()
 
-  const prettyHTML = prettier.format(html, {
-    parser: 'html'
-  })
+  // wrap the component in a div when it's not wrapped already
+  // we do this so we can get the actual component example to not be shallow rendered.
+  // Shallow rendering a parent "div" gives us a nice JSX representation of the example.
+  if (component.type !== 'div') {
+    component = <div>{component}</div>
+  }
+
+  const react = shallow(component).debug()
 
   return {
     title,
-    html: prettyHTML,
+    html: pretty(html, 'html'),
     react,
     docs
   }
