@@ -9,12 +9,29 @@ const variants = {
   ghost: 'drac-btn-ghost'
 }
 
+/** Button Props */
 export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
+  /** A Dracula UI theme color for the Button. */
   themeColor?: keyof typeof backgroundColors
+
+  /**
+   * Controls the Button style:
+   * `normal` -> Default solid Button with background color.
+   * `outline` -> A subtle variation of the Button component with a softer background color that highlights the action text.
+   * `ghost` -> A less prominent variation of the Button component that highlights hover interactions.
+   */
   variant?: keyof typeof variants
+
+  /**
+   * Controls the Button state. Mirrors the HTMLButtonElement `disabled` property.
+   */
   disabled?: boolean
 }
 
+/**
+ * The Button component triggers actions, behaviors, or events based
+ * on user input.
+ */
 export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
   const isOutline = props.variant === 'outline'
   const isGhost = props.variant === 'ghost'
