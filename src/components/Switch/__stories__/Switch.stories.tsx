@@ -1,5 +1,5 @@
 import React from 'react'
-import { SwitchProps, Switch, switchColors } from '@/components/Switch/Switch'
+import { SwitchProps, Switch, switchColors } from '@/index'
 
 export default {
   title: 'Switch'
