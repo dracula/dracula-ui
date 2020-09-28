@@ -3,7 +3,7 @@ import { colors as backgroundColors } from '@/base/colors'
 import cx from 'classnames'
 import { Text, TextColors } from '@/components/Typography/Text'
 
-const variants = {
+export const buttonVariants = {
   normal: 'drac-btn',
   outline: 'drac-btn-outline',
   ghost: 'drac-btn-ghost'
@@ -20,7 +20,7 @@ export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
    * `outline` -> A subtle variation of the Button component with a softer background color that highlights the action text.
    * `ghost` -> A less prominent variation of the Button component that highlights hover interactions.
    */
-  variant?: keyof typeof variants
+  variant?: keyof typeof buttonVariants
 
   /**
    * Controls the Button state. Mirrors the HTMLButtonElement `disabled` property.
@@ -49,7 +49,7 @@ export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
   const classes = cx(
     'drac-btn',
     backgroundClass,
-    variants[props.variant ?? 'normal'],
+    buttonVariants[props.variant ?? 'normal'],
     textColorClass
   )
 

@@ -3,10 +3,10 @@
   "displayName": "Button",
   "methods": [],
   "props": {
-    "themeColor": {
+    "color": {
       "defaultValue": null,
       "description": "A Dracula UI theme color for the Button.",
-      "name": "themeColor",
+      "name": "color",
       "parent": {
         "fileName": "src/components/Button/Button.tsx",
         "name": "ButtonProps"
