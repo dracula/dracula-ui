@@ -1,11 +1,19 @@
-import React from 'react'
-import * as ReactDOM from 'react-dom'
 import { Divider } from '@/components/Divider/Divider'
+import {
+  buildSnapshot,
+  SnapshotBuilder
+} from '@/story-helpers/render-component'
+import { siteDocs } from '@/story-helpers/docs/site-docs'
+import {
+  DividerNormal,
+  DividerColors
+} from '@/components/Divider/__stories__/Divider.stories'
 
-describe('Divider', () => {
-  it('renders without crashing', () => {
-    const div = document.createElement('div')
-    ReactDOM.render(<Divider color="white" />, div)
-    ReactDOM.unmountComponentAtNode(div)
-  })
+siteDocs(Divider, {
+  basicUsage() {
+    return buildSnapshot('Usage', DividerNormal)
+  },
+  variations() {
+    return [buildSnapshot('Colors', DividerColors)] as SnapshotBuilder[]
+  }
 })

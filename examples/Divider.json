@@ -1,0 +1,14 @@
+{
+  "basic": {
+    "title": "Usage",
+    "html": "<div style=\"padding: 3rem\">\n  <hr color=\"purple\" class=\"drac-divider drac-border-purple\" />\n</div>\n",
+    "react": "<div style={{...}}>\n  <Divider color=\"purple\" />\n</div>",
+    "docs": ""
+  },
+  "Colors": {
+    "title": "Colors",
+    "html": "<div style=\"display: flex; flex-direction: column; padding: 3rem\">\n  <div><hr color=\"black\" class=\"drac-divider drac-border-black\" /></div>\n  <div><hr color=\"white\" class=\"drac-divider drac-border-white\" /></div>\n  <div><hr color=\"cyan\" class=\"drac-divider drac-border-cyan\" /></div>\n  <div><hr color=\"green\" class=\"drac-divider drac-border-green\" /></div>\n  <div><hr color=\"orange\" class=\"drac-divider drac-border-orange\" /></div>\n  <div><hr color=\"pink\" class=\"drac-divider drac-border-pink\" /></div>\n  <div><hr color=\"purple\" class=\"drac-divider drac-border-purple\" /></div>\n  <div><hr color=\"red\" class=\"drac-divider drac-border-red\" /></div>\n  <div><hr color=\"yellow\" class=\"drac-divider drac-border-yellow\" /></div>\n  <div>\n    <hr color=\"purpleCyan\" class=\"drac-divider drac-border-purple-cyan\" />\n  </div>\n  <div>\n    <hr color=\"yellowPink\" class=\"drac-divider drac-border-yellow-pink\" />\n  </div>\n  <div>\n    <hr color=\"cyanGreen\" class=\"drac-divider drac-border-cyan-green\" />\n  </div>\n  <div>\n    <hr color=\"pinkPurple\" class=\"drac-divider drac-border-pink-purple\" />\n  </div>\n  <div><hr color=\"animated\" class=\"drac-divider drac-border-animated\" /></div>\n</div>\n",
+    "react": "<div style={{...}}>\n  <div>\n    <Divider color=\"black\" />\n  </div>\n  <div>\n    <Divider color=\"white\" />\n  </div>\n  <div>\n    <Divider color=\"cyan\" />\n  </div>\n  <div>\n    <Divider color=\"green\" />\n  </div>\n  <div>\n    <Divider color=\"orange\" />\n  </div>\n  <div>\n    <Divider color=\"pink\" />\n  </div>\n  <div>\n    <Divider color=\"purple\" />\n  </div>\n  <div>\n    <Divider color=\"red\" />\n  </div>\n  <div>\n    <Divider color=\"yellow\" />\n  </div>\n  <div>\n    <Divider color=\"purpleCyan\" />\n  </div>\n  <div>\n    <Divider color=\"yellowPink\" />\n  </div>\n  <div>\n    <Divider color=\"cyanGreen\" />\n  </div>\n  <div>\n    <Divider color=\"pinkPurple\" />\n  </div>\n  <div>\n    <Divider color=\"animated\" />\n  </div>\n</div>",
+    "docs": ""
+  }
+}
