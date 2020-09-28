@@ -12,7 +12,7 @@ const variants = {
 /** Button Props */
 export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   /** A Dracula UI theme color for the Button. */
-  themeColor?: keyof typeof backgroundColors
+  color?: keyof typeof backgroundColors
 
   /**
    * Controls the Button style:
@@ -38,10 +38,10 @@ export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
   const overrideTextColor = isOutline || isGhost
 
   const textColorClass = overrideTextColor
-    ? TextColors[props.themeColor ?? 'green']
+    ? TextColors[props.color ?? 'green']
     : undefined
 
-  let backgroundClass = backgroundColors[props.themeColor ?? 'green']
+  let backgroundClass = backgroundColors[props.color ?? 'green']
   if (isGhost) {
     backgroundClass = `${backgroundClass}-transparent`
   }
@@ -55,7 +55,7 @@ export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
 
   return (
     <button className={classes} {...props}>
-      <Text color={overrideTextColor ? props.themeColor : undefined}>
+      <Text color={overrideTextColor ? props.color : undefined}>
         {props.children}
       </Text>
     </button>
