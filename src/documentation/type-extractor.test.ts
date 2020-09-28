@@ -21,7 +21,7 @@ test('whatever', async () => {
 
   parsed.forEach((componentMetadata) => {
     const name = componentMetadata.displayName
-    const path = `${process.cwd()}/examples/${name}_docs.json`
+    const path = `${process.cwd()}/docs/${name}.json`
     fs.writeFileSync(
       path,
       pretty(JSON.stringify(componentMetadata, null, '  '), 'json')
