@@ -1,0 +1,237 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Site: Input Basic Usage 1`] = `
+Object {
+  "docs": "",
+  "html": "<div style=\\"display: flex; flex-direction: column; padding: 3rem\\">
+  <input
+    placeholder=\\"Placeholder\\"
+    variant=\\"normal\\"
+    color=\\"white\\"
+    style=\\"margin-bottom: 20px\\"
+    class=\\"drac-input drac-text drac-text-md drac-input drac-input-white drac-text-white\\"
+  /><input
+    placeholder=\\"Placeholder\\"
+    variant=\\"outline\\"
+    color=\\"white\\"
+    style=\\"margin-bottom: 20px\\"
+    class=\\"drac-input drac-text drac-text-md drac-input-outline drac-input-white drac-text-white\\"
+  />
+</div>
+",
+  "react": "<div style={{...}}>
+  <Input placeholder=\\"Placeholder\\" variant=\\"normal\\" color=\\"white\\" style={{...}} />
+  <Input placeholder=\\"Placeholder\\" variant=\\"outline\\" color=\\"white\\" style={{...}} />
+</div>",
+  "title": "Usage",
+}
+`;
+
+exports[`Site: Input Colors 1`] = `
+Object {
+  "docs": "",
+  "html": "<div style=\\"display: flex; flex-direction: column; padding: 3rem\\">
+  <input
+    placeholder=\\"Placeholder\\"
+    variant=\\"outline\\"
+    color=\\"black\\"
+    style=\\"margin-bottom: 20px\\"
+    class=\\"drac-input drac-text drac-text-md drac-input-outline drac-input-black drac-text-white\\"
+  /><input
+    placeholder=\\"Placeholder\\"
+    variant=\\"outline\\"
+    color=\\"white\\"
+    style=\\"margin-bottom: 20px\\"
+    class=\\"drac-input drac-text drac-text-md drac-input-outline drac-input-white drac-text-white\\"
+  /><input
+    placeholder=\\"Placeholder\\"
+    variant=\\"outline\\"
+    color=\\"cyan\\"
+    style=\\"margin-bottom: 20px\\"
+    class=\\"drac-input drac-text drac-text-md drac-input-outline drac-input-cyan drac-text-cyan\\"
+  /><input
+    placeholder=\\"Placeholder\\"
+    variant=\\"outline\\"
+    color=\\"green\\"
+    style=\\"margin-bottom: 20px\\"
+    class=\\"drac-input drac-text drac-text-md drac-input-outline drac-input-green drac-text-green\\"
+  /><input
+    placeholder=\\"Placeholder\\"
+    variant=\\"outline\\"
+    color=\\"orange\\"
+    style=\\"margin-bottom: 20px\\"
+    class=\\"drac-input drac-text drac-text-md drac-input-outline drac-input-orange drac-text-orange\\"
+  /><input
+    placeholder=\\"Placeholder\\"
+    variant=\\"outline\\"
+    color=\\"pink\\"
+    style=\\"margin-bottom: 20px\\"
+    class=\\"drac-input drac-text drac-text-md drac-input-outline drac-input-pink drac-text-pink\\"
+  /><input
+    placeholder=\\"Placeholder\\"
+    variant=\\"outline\\"
+    color=\\"purple\\"
+    style=\\"margin-bottom: 20px\\"
+    class=\\"drac-input drac-text drac-text-md drac-input-outline drac-input-purple drac-text-purple\\"
+  /><input
+    placeholder=\\"Placeholder\\"
+    variant=\\"outline\\"
+    color=\\"red\\"
+    style=\\"margin-bottom: 20px\\"
+    class=\\"drac-input drac-text drac-text-md drac-input-outline drac-input-red drac-text-red\\"
+  /><input
+    placeholder=\\"Placeholder\\"
+    variant=\\"outline\\"
+    color=\\"yellow\\"
+    style=\\"margin-bottom: 20px\\"
+    class=\\"drac-input drac-text drac-text-md drac-input-outline drac-input-yellow drac-text-yellow\\"
+  /><input
+    placeholder=\\"Placeholder\\"
+    variant=\\"outline\\"
+    color=\\"animated\\"
+    style=\\"margin-bottom: 20px\\"
+    class=\\"drac-input drac-text drac-text-md drac-input-outline\\"
+  /><input
+    placeholder=\\"Placeholder\\"
+    variant=\\"outline\\"
+    color=\\"cyanGreen\\"
+    style=\\"margin-bottom: 20px\\"
+    class=\\"drac-input drac-text drac-text-md drac-input-outline\\"
+  /><input
+    placeholder=\\"Placeholder\\"
+    variant=\\"outline\\"
+    color=\\"pinkPurple\\"
+    style=\\"margin-bottom: 20px\\"
+    class=\\"drac-input drac-text drac-text-md drac-input-outline\\"
+  /><input
+    placeholder=\\"Placeholder\\"
+    variant=\\"outline\\"
+    color=\\"purpleCyan\\"
+    style=\\"margin-bottom: 20px\\"
+    class=\\"drac-input drac-text drac-text-md drac-input-outline\\"
+  /><input
+    placeholder=\\"Placeholder\\"
+    variant=\\"outline\\"
+    color=\\"yellowPink\\"
+    style=\\"margin-bottom: 20px\\"
+    class=\\"drac-input drac-text drac-text-md drac-input-outline\\"
+  /><input
+    placeholder=\\"Placeholder\\"
+    variant=\\"normal\\"
+    color=\\"black\\"
+    style=\\"margin-bottom: 20px\\"
+    class=\\"drac-input drac-text drac-text-md drac-input drac-input-black drac-text-white\\"
+  /><input
+    placeholder=\\"Placeholder\\"
+    variant=\\"normal\\"
+    color=\\"white\\"
+    style=\\"margin-bottom: 20px\\"
+    class=\\"drac-input drac-text drac-text-md drac-input drac-input-white drac-text-white\\"
+  /><input
+    placeholder=\\"Placeholder\\"
+    variant=\\"normal\\"
+    color=\\"cyan\\"
+    style=\\"margin-bottom: 20px\\"
+    class=\\"drac-input drac-text drac-text-md drac-input drac-input-cyan drac-text-cyan\\"
+  /><input
+    placeholder=\\"Placeholder\\"
+    variant=\\"normal\\"
+    color=\\"green\\"
+    style=\\"margin-bottom: 20px\\"
+    class=\\"drac-input drac-text drac-text-md drac-input drac-input-green drac-text-green\\"
+  /><input
+    placeholder=\\"Placeholder\\"
+    variant=\\"normal\\"
+    color=\\"orange\\"
+    style=\\"margin-bottom: 20px\\"
+    class=\\"drac-input drac-text drac-text-md drac-input drac-input-orange drac-text-orange\\"
+  /><input
+    placeholder=\\"Placeholder\\"
+    variant=\\"normal\\"
+    color=\\"pink\\"
+    style=\\"margin-bottom: 20px\\"
+    class=\\"drac-input drac-text drac-text-md drac-input drac-input-pink drac-text-pink\\"
+  /><input
+    placeholder=\\"Placeholder\\"
+    variant=\\"normal\\"
+    color=\\"purple\\"
+    style=\\"margin-bottom: 20px\\"
+    class=\\"drac-input drac-text drac-text-md drac-input drac-input-purple drac-text-purple\\"
+  /><input
+    placeholder=\\"Placeholder\\"
+    variant=\\"normal\\"
+    color=\\"red\\"
+    style=\\"margin-bottom: 20px\\"
+    class=\\"drac-input drac-text drac-text-md drac-input drac-input-red drac-text-red\\"
+  /><input
+    placeholder=\\"Placeholder\\"
+    variant=\\"normal\\"
+    color=\\"yellow\\"
+    style=\\"margin-bottom: 20px\\"
+    class=\\"drac-input drac-text drac-text-md drac-input drac-input-yellow drac-text-yellow\\"
+  /><input
+    placeholder=\\"Placeholder\\"
+    variant=\\"normal\\"
+    color=\\"animated\\"
+    style=\\"margin-bottom: 20px\\"
+    class=\\"drac-input drac-text drac-text-md drac-input\\"
+  /><input
+    placeholder=\\"Placeholder\\"
+    variant=\\"normal\\"
+    color=\\"cyanGreen\\"
+    style=\\"margin-bottom: 20px\\"
+    class=\\"drac-input drac-text drac-text-md drac-input\\"
+  /><input
+    placeholder=\\"Placeholder\\"
+    variant=\\"normal\\"
+    color=\\"pinkPurple\\"
+    style=\\"margin-bottom: 20px\\"
+    class=\\"drac-input drac-text drac-text-md drac-input\\"
+  /><input
+    placeholder=\\"Placeholder\\"
+    variant=\\"normal\\"
+    color=\\"purpleCyan\\"
+    style=\\"margin-bottom: 20px\\"
+    class=\\"drac-input drac-text drac-text-md drac-input\\"
+  /><input
+    placeholder=\\"Placeholder\\"
+    variant=\\"normal\\"
+    color=\\"yellowPink\\"
+    style=\\"margin-bottom: 20px\\"
+    class=\\"drac-input drac-text drac-text-md drac-input\\"
+  />
+</div>
+",
+  "react": "<div style={{...}}>
+  <Input placeholder=\\"Placeholder\\" variant=\\"outline\\" color=\\"black\\" style={{...}} />
+  <Input placeholder=\\"Placeholder\\" variant=\\"outline\\" color=\\"white\\" style={{...}} />
+  <Input placeholder=\\"Placeholder\\" variant=\\"outline\\" color=\\"cyan\\" style={{...}} />
+  <Input placeholder=\\"Placeholder\\" variant=\\"outline\\" color=\\"green\\" style={{...}} />
+  <Input placeholder=\\"Placeholder\\" variant=\\"outline\\" color=\\"orange\\" style={{...}} />
+  <Input placeholder=\\"Placeholder\\" variant=\\"outline\\" color=\\"pink\\" style={{...}} />
+  <Input placeholder=\\"Placeholder\\" variant=\\"outline\\" color=\\"purple\\" style={{...}} />
+  <Input placeholder=\\"Placeholder\\" variant=\\"outline\\" color=\\"red\\" style={{...}} />
+  <Input placeholder=\\"Placeholder\\" variant=\\"outline\\" color=\\"yellow\\" style={{...}} />
+  <Input placeholder=\\"Placeholder\\" variant=\\"outline\\" color=\\"animated\\" style={{...}} />
+  <Input placeholder=\\"Placeholder\\" variant=\\"outline\\" color=\\"cyanGreen\\" style={{...}} />
+  <Input placeholder=\\"Placeholder\\" variant=\\"outline\\" color=\\"pinkPurple\\" style={{...}} />
+  <Input placeholder=\\"Placeholder\\" variant=\\"outline\\" color=\\"purpleCyan\\" style={{...}} />
+  <Input placeholder=\\"Placeholder\\" variant=\\"outline\\" color=\\"yellowPink\\" style={{...}} />
+  <Input placeholder=\\"Placeholder\\" variant=\\"normal\\" color=\\"black\\" style={{...}} />
+  <Input placeholder=\\"Placeholder\\" variant=\\"normal\\" color=\\"white\\" style={{...}} />
+  <Input placeholder=\\"Placeholder\\" variant=\\"normal\\" color=\\"cyan\\" style={{...}} />
+  <Input placeholder=\\"Placeholder\\" variant=\\"normal\\" color=\\"green\\" style={{...}} />
+  <Input placeholder=\\"Placeholder\\" variant=\\"normal\\" color=\\"orange\\" style={{...}} />
+  <Input placeholder=\\"Placeholder\\" variant=\\"normal\\" color=\\"pink\\" style={{...}} />
+  <Input placeholder=\\"Placeholder\\" variant=\\"normal\\" color=\\"purple\\" style={{...}} />
+  <Input placeholder=\\"Placeholder\\" variant=\\"normal\\" color=\\"red\\" style={{...}} />
+  <Input placeholder=\\"Placeholder\\" variant=\\"normal\\" color=\\"yellow\\" style={{...}} />
+  <Input placeholder=\\"Placeholder\\" variant=\\"normal\\" color=\\"animated\\" style={{...}} />
+  <Input placeholder=\\"Placeholder\\" variant=\\"normal\\" color=\\"cyanGreen\\" style={{...}} />
+  <Input placeholder=\\"Placeholder\\" variant=\\"normal\\" color=\\"pinkPurple\\" style={{...}} />
+  <Input placeholder=\\"Placeholder\\" variant=\\"normal\\" color=\\"purpleCyan\\" style={{...}} />
+  <Input placeholder=\\"Placeholder\\" variant=\\"normal\\" color=\\"yellowPink\\" style={{...}} />
+</div>",
+  "title": "Colors",
+}
+`;
