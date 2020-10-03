@@ -2,30 +2,39 @@
   --black: hsl(230, 15%, 15%);
   --blackSecondary: hsl(230, 15%, 30%);
   --blackTernary: hsl(230, 15%, 70%);
+  --blackLight: hsla(230, 15%, 15%, 5%);
 
   --white: hsl(60, 30%, 96%);
   --whiteSecondary: hsl(60, 30%, 100%);
+  --whiteLight: hsla(60, 30%, 96%, 5%);
 
   --cyan: hsl(170, 100%, 75%);
   --cyanSecondary: hsl(170, 100%, 90%);
+  --cyanLight: hsla(170, 100%, 75%, 5%);
 
   --green: hsl(115, 100%, 75%);
   --greenSecondary: hsl(115, 100%, 90%);
+  --greenLight: hsla(115, 100%, 75%, 5%);
 
   --orange: hsl(35, 100%, 75%);
   --orangeSecondary: hsl(35, 100%, 90%);
+  --orangeLight: hsla(35, 100%, 75%, 5%);
 
   --pink: hsl(330, 100%, 75%);
   --pinkSecondary: hsl(330, 100%, 90%);
+  --pinkLight: hsla(330, 100%, 75%, 5%);
 
   --purple: hsl(250, 100%, 75%);
   --purpleSecondary: hsl(250, 100%, 90%);
+  --purpleLight: hsl(250, 100%, 75%, 5%);
 
   --red: hsl(10, 100%, 75%);
   --redSecondary: hsl(10, 100%, 90%);
+  --redLight: hsla(10, 100%, 75%, 5%);
 
   --yellow: hsl(60, 100%, 75%);
   --yellowSecondary: hsl(60, 100%, 90%);
+  --yellowLight: hsla(60, 100%, 75%, 5%);
 
   --cyan-transparent: hsl(170, 100%, 75%, 0.1);
   --green-transparent: hsl(115, 100%, 75%, 0.1);
