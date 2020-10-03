@@ -1,7 +1,7 @@
 {
-  "dsp_spec_version": "0.5.0",
-  "last_updated_by": "Zeno Rocha",
-  "last_updated": "2020-07-28T22:44:29.537Z",
+  "dsp_spec_version": "0.0.1",
+  "last_updated_by": "",
+  "last_updated": "2020-09-30T21:16:45.280Z",
   "entities": [
     {
       "class": "collection",

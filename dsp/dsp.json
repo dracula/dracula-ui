@@ -6,7 +6,7 @@
     "name": "Dracula UI",
     "package_version": "0.0.1",
     "build_tool": "StyleDictionary",
-    "snippet_trigger_prefix": "xd_",
+    "snippet_trigger_prefix": "drac_",
     "build_status_label": "dev",
     "build_params": "-c ./config.json",
     "languages": [
