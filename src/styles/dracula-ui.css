@@ -8,6 +8,7 @@
 @import './avatar.css';
 @import './radio-checkbox-switch.css';
 @import './card.css';
+@import './tabs.css';
 
 .drac {
   /* 1rem = 10px */
