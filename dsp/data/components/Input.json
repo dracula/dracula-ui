@@ -1,14 +1,14 @@
 {
   "dsp_spec_version": "0.0.1",
   "last_updated_by": "System",
-  "last_updated": "2020-10-04T23:30:49.682Z",
+  "last_updated": "2020-10-04T23:40:33.480Z",
   "entities": [
     {
       "class": "component",
       "type": "page",
       "id": "Input",
       "name": "Input",
-      "last_updated": "2020-10-04T23:30:49.682Z",
+      "last_updated": "2020-10-04T23:40:33.480Z",
       "last_updated_by": "System",
       "description": "Input is a styled HTML Input.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep inputs accessible.",
       "related_entity_ids": [],
@@ -58,6 +58,37 @@
           },
           "required": false,
           "type": { "name": "\"normal\" | \"outline\" | undefined" }
+        }
+      },
+      "ext_com_draculaui_docgen": {
+        "description": "Input is a styled HTML Input.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep inputs accessible.",
+        "displayName": "Input",
+        "methods": [],
+        "props": {
+          "color": {
+            "defaultValue": null,
+            "description": "The Dracula UI theme color to be used",
+            "name": "color",
+            "parent": {
+              "fileName": "src/components/Input/Input.tsx",
+              "name": "InputProps"
+            },
+            "required": false,
+            "type": {
+              "name": "\"black\" | \"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+            }
+          },
+          "variant": {
+            "defaultValue": null,
+            "description": "Controls the variation the input.\n`normal` -> Regular Input component with a light background color.\n`outline` -> Keeps the accent color, but removes the background.",
+            "name": "variant",
+            "parent": {
+              "fileName": "src/components/Input/Input.tsx",
+              "name": "InputProps"
+            },
+            "required": false,
+            "type": { "name": "\"normal\" | \"outline\" | undefined" }
+          }
         }
       }
     }

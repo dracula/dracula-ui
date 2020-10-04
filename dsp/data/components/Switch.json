@@ -1,14 +1,14 @@
 {
   "dsp_spec_version": "0.0.1",
   "last_updated_by": "System",
-  "last_updated": "2020-10-04T23:30:50.223Z",
+  "last_updated": "2020-10-04T23:40:33.670Z",
   "entities": [
     {
       "class": "component",
       "type": "page",
       "id": "Switch",
       "name": "Switch",
-      "last_updated": "2020-10-04T23:30:50.223Z",
+      "last_updated": "2020-10-04T23:40:33.670Z",
       "last_updated_by": "System",
       "description": "Switch is an abstraction pattern that represents toggles.\n\nUse the Switch component as an alternative for Checkboxes or Radios\nwhen options are binary.\n\nSwitches are implemented as Checkboxes under the hood,\nand work normally with forms.",
       "related_entity_ids": [],
@@ -75,6 +75,48 @@
           },
           "required": false,
           "type": { "name": "boolean | undefined" }
+        }
+      },
+      "ext_com_draculaui_docgen": {
+        "description": "Switch is an abstraction pattern that represents toggles.\n\nUse the Switch component as an alternative for Checkboxes or Radios\nwhen options are binary.\n\nSwitches are implemented as Checkboxes under the hood,\nand work normally with forms.",
+        "displayName": "Switch",
+        "methods": [],
+        "props": {
+          "name": {
+            "defaultValue": null,
+            "description": "The name of the form element.",
+            "name": "name",
+            "parent": {
+              "fileName": "src/components/Switch/Switch.tsx",
+              "name": "SwitchProps"
+            },
+            "required": false,
+            "type": { "name": "string | undefined" }
+          },
+          "color": {
+            "defaultValue": null,
+            "description": "The Dracula UI theme color to be applied to the Switch.",
+            "name": "color",
+            "parent": {
+              "fileName": "src/components/Switch/Switch.tsx",
+              "name": "SwitchProps"
+            },
+            "required": true,
+            "type": {
+              "name": "\"black\" | \"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
+            }
+          },
+          "disabled": {
+            "defaultValue": null,
+            "description": "",
+            "name": "disabled",
+            "parent": {
+              "fileName": "src/components/Switch/Switch.tsx",
+              "name": "SwitchProps"
+            },
+            "required": false,
+            "type": { "name": "boolean | undefined" }
+          }
         }
       }
     }

@@ -1,14 +1,14 @@
 {
   "dsp_spec_version": "0.0.1",
   "last_updated_by": "System",
-  "last_updated": "2020-10-04T23:30:51.001Z",
+  "last_updated": "2020-10-04T23:40:34.334Z",
   "entities": [
     {
       "class": "component",
       "type": "page",
       "id": "Button",
       "name": "Button",
-      "last_updated": "2020-10-04T23:30:51.001Z",
+      "last_updated": "2020-10-04T23:40:34.333Z",
       "last_updated_by": "System",
       "description": "The Button component triggers actions, behaviors, or events based\non user input.",
       "related_entity_ids": [],
@@ -75,6 +75,50 @@
           },
           "required": false,
           "type": { "name": "boolean | undefined" }
+        }
+      },
+      "ext_com_draculaui_docgen": {
+        "description": "The Button component triggers actions, behaviors, or events based\non user input.",
+        "displayName": "Button",
+        "methods": [],
+        "props": {
+          "color": {
+            "defaultValue": null,
+            "description": "A Dracula UI theme color for the Button.",
+            "name": "color",
+            "parent": {
+              "fileName": "src/components/Button/Button.tsx",
+              "name": "ButtonProps"
+            },
+            "required": false,
+            "type": {
+              "name": "\"black\" | \"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+            }
+          },
+          "variant": {
+            "defaultValue": null,
+            "description": "Controls the Button style:\n`normal` -> Default solid Button with background color.\n`outline` -> A subtle variation of the Button component with a softer background color that highlights the action text.\n`ghost` -> A less prominent variation of the Button component that highlights hover interactions.",
+            "name": "variant",
+            "parent": {
+              "fileName": "src/components/Button/Button.tsx",
+              "name": "ButtonProps"
+            },
+            "required": false,
+            "type": {
+              "name": "\"normal\" | \"outline\" | \"ghost\" | undefined"
+            }
+          },
+          "disabled": {
+            "defaultValue": null,
+            "description": "Controls the Button state. Mirrors the HTMLButtonElement `disabled` property.",
+            "name": "disabled",
+            "parent": {
+              "fileName": "src/components/Button/Button.tsx",
+              "name": "ButtonProps"
+            },
+            "required": false,
+            "type": { "name": "boolean | undefined" }
+          }
         }
       }
     }

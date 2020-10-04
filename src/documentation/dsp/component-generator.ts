@@ -20,6 +20,7 @@ type Component = {
   }
   ext_com_draculaui_variations: ComponentExample[]
   ext_com_draculaui_props: dg.ComponentDoc['props']
+  ext_com_draculaui_docgen: dg.ComponentDoc
 }
 
 export function toDSP(
@@ -47,7 +48,8 @@ export function toDSP(
       }
     },
     ext_com_draculaui_variations: Object.values(usage),
-    ext_com_draculaui_props: docs.props
+    ext_com_draculaui_props: docs.props,
+    ext_com_draculaui_docgen: docs
   }
 
   return {

@@ -1,14 +1,14 @@
 {
   "dsp_spec_version": "0.0.1",
   "last_updated_by": "System",
-  "last_updated": "2020-10-04T23:30:50.857Z",
+  "last_updated": "2020-10-04T23:40:34.017Z",
   "entities": [
     {
       "class": "component",
       "type": "page",
       "id": "Select",
       "name": "Select",
-      "last_updated": "2020-10-04T23:30:50.857Z",
+      "last_updated": "2020-10-04T23:40:34.017Z",
       "last_updated_by": "System",
       "description": "Select is a styled HTML Select element.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS, and small SVG component in order to keep Selects accessible.",
       "related_entity_ids": [],
@@ -75,6 +75,48 @@
           },
           "required": false,
           "type": { "name": "boolean | undefined" }
+        }
+      },
+      "ext_com_draculaui_docgen": {
+        "description": "Select is a styled HTML Select element.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS, and small SVG component in order to keep Selects accessible.",
+        "displayName": "Select",
+        "methods": [],
+        "props": {
+          "color": {
+            "defaultValue": null,
+            "description": "The Dracula UI theme color for the Select.",
+            "name": "color",
+            "parent": {
+              "fileName": "src/components/Select/Select.tsx",
+              "name": "SelectProps"
+            },
+            "required": false,
+            "type": {
+              "name": "\"black\" | \"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+            }
+          },
+          "variant": {
+            "defaultValue": null,
+            "description": "The variation to be used for the Select element.\n`normal` -> Regular Select component with a light background color.\n`outline` -> Keeps the accent color, but removes the background.",
+            "name": "variant",
+            "parent": {
+              "fileName": "src/components/Select/Select.tsx",
+              "name": "SelectProps"
+            },
+            "required": false,
+            "type": { "name": "\"normal\" | \"outline\" | undefined" }
+          },
+          "disabled": {
+            "defaultValue": null,
+            "description": "",
+            "name": "disabled",
+            "parent": {
+              "fileName": "src/components/Select/Select.tsx",
+              "name": "SelectProps"
+            },
+            "required": false,
+            "type": { "name": "boolean | undefined" }
+          }
         }
       }
     }

@@ -1,14 +1,14 @@
 {
   "dsp_spec_version": "0.0.1",
   "last_updated_by": "System",
-  "last_updated": "2020-10-04T23:30:51.200Z",
+  "last_updated": "2020-10-04T23:40:34.198Z",
   "entities": [
     {
       "class": "component",
       "type": "page",
       "id": "Table",
       "name": "Table",
-      "last_updated": "2020-10-04T23:30:51.200Z",
+      "last_updated": "2020-10-04T23:40:34.198Z",
       "last_updated_by": "System",
       "description": "Tables are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
       "related_entity_ids": [],
@@ -58,6 +58,37 @@
           },
           "required": false,
           "type": { "name": "\"normal\" | \"striped\" | undefined" }
+        }
+      },
+      "ext_com_draculaui_docgen": {
+        "description": "Tables are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
+        "displayName": "Table",
+        "methods": [],
+        "props": {
+          "color": {
+            "defaultValue": null,
+            "description": "The Dracula UI color for the Table.",
+            "name": "color",
+            "parent": {
+              "fileName": "src/components/Table/Table.tsx",
+              "name": "TableProps"
+            },
+            "required": false,
+            "type": {
+              "name": "\"black\" | \"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+            }
+          },
+          "variant": {
+            "defaultValue": null,
+            "description": "The variation to be used for the Table element.\n`normal` -> Regular Table component without background colors.\n`striped` -> Changes the background color of each even row.",
+            "name": "variant",
+            "parent": {
+              "fileName": "src/components/Table/Table.tsx",
+              "name": "TableProps"
+            },
+            "required": false,
+            "type": { "name": "\"normal\" | \"striped\" | undefined" }
+          }
         }
       }
     }

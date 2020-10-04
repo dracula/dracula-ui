@@ -1,14 +1,14 @@
 {
   "dsp_spec_version": "0.0.1",
   "last_updated_by": "System",
-  "last_updated": "2020-10-04T23:30:49.887Z",
+  "last_updated": "2020-10-04T23:40:33.405Z",
   "entities": [
     {
       "class": "component",
       "type": "page",
       "id": "Tabs",
       "name": "Tabs",
-      "last_updated": "2020-10-04T23:30:49.887Z",
+      "last_updated": "2020-10-04T23:40:33.405Z",
       "last_updated_by": "System",
       "description": "Tabs are horizontal navigation elements used to display\ncontent within the same page.",
       "related_entity_ids": [],
@@ -46,6 +46,26 @@
           "required": true,
           "type": {
             "name": "\"black\" | \"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
+          }
+        }
+      },
+      "ext_com_draculaui_docgen": {
+        "description": "Tabs are horizontal navigation elements used to display\ncontent within the same page.",
+        "displayName": "Tabs",
+        "methods": [],
+        "props": {
+          "color": {
+            "defaultValue": null,
+            "description": "The Dracula UI color for the Tabs.",
+            "name": "color",
+            "parent": {
+              "fileName": "src/components/Tabs/Tabs.tsx",
+              "name": "TabsProps"
+            },
+            "required": true,
+            "type": {
+              "name": "\"black\" | \"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
+            }
           }
         }
       }

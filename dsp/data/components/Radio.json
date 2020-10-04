@@ -1,14 +1,14 @@
 {
   "dsp_spec_version": "0.0.1",
   "last_updated_by": "System",
-  "last_updated": "2020-10-04T23:30:49.836Z",
+  "last_updated": "2020-10-04T23:40:33.418Z",
   "entities": [
     {
       "class": "component",
       "type": "page",
       "id": "Radio",
       "name": "Radio",
-      "last_updated": "2020-10-04T23:30:49.836Z",
+      "last_updated": "2020-10-04T23:40:33.418Z",
       "last_updated_by": "System",
       "description": "Radio is a styled HTML Input of type radio.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep Radios accessible.",
       "related_entity_ids": [],
@@ -64,6 +64,37 @@
           },
           "required": false,
           "type": { "name": "string | undefined" }
+        }
+      },
+      "ext_com_draculaui_docgen": {
+        "description": "Radio is a styled HTML Input of type radio.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep Radios accessible.",
+        "displayName": "Radio",
+        "methods": [],
+        "props": {
+          "color": {
+            "defaultValue": null,
+            "description": "The Dracula UI theme color for the radio button.",
+            "name": "color",
+            "parent": {
+              "fileName": "src/components/Radio/Radio.tsx",
+              "name": "RadioProps"
+            },
+            "required": true,
+            "type": {
+              "name": "\"black\" | \"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
+            }
+          },
+          "name": {
+            "defaultValue": null,
+            "description": "The name of the radio. Mirrors the name HTML attribute.",
+            "name": "name",
+            "parent": {
+              "fileName": "src/components/Radio/Radio.tsx",
+              "name": "RadioProps"
+            },
+            "required": false,
+            "type": { "name": "string | undefined" }
+          }
         }
       }
     }

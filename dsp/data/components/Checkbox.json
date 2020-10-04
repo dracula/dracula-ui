@@ -1,14 +1,14 @@
 {
   "dsp_spec_version": "0.0.1",
   "last_updated_by": "System",
-  "last_updated": "2020-10-04T23:30:49.988Z",
+  "last_updated": "2020-10-04T23:40:33.114Z",
   "entities": [
     {
       "class": "component",
       "type": "page",
       "id": "Checkbox",
       "name": "Checkbox",
-      "last_updated": "2020-10-04T23:30:49.988Z",
+      "last_updated": "2020-10-04T23:40:33.114Z",
       "last_updated_by": "System",
       "description": "Checkbox is a styled HTML Input of type checkbox.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep check boxes accessible.",
       "related_entity_ids": [],
@@ -75,6 +75,48 @@
           },
           "required": false,
           "type": { "name": "boolean | undefined" }
+        }
+      },
+      "ext_com_draculaui_docgen": {
+        "description": "Checkbox is a styled HTML Input of type checkbox.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep check boxes accessible.",
+        "displayName": "Checkbox",
+        "methods": [],
+        "props": {
+          "color": {
+            "defaultValue": null,
+            "description": "The Dracula UI theme color for the checkbox.",
+            "name": "color",
+            "parent": {
+              "fileName": "src/components/Checkbox/Checkbox.tsx",
+              "name": "CheckboxProps"
+            },
+            "required": false,
+            "type": {
+              "name": "\"black\" | \"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+            }
+          },
+          "name": {
+            "defaultValue": null,
+            "description": "The name of the checkbox. Mirrors the name HTML attribute.",
+            "name": "name",
+            "parent": {
+              "fileName": "src/components/Checkbox/Checkbox.tsx",
+              "name": "CheckboxProps"
+            },
+            "required": false,
+            "type": { "name": "string | undefined" }
+          },
+          "disabled": {
+            "defaultValue": null,
+            "description": "",
+            "name": "disabled",
+            "parent": {
+              "fileName": "src/components/Checkbox/Checkbox.tsx",
+              "name": "CheckboxProps"
+            },
+            "required": false,
+            "type": { "name": "boolean | undefined" }
+          }
         }
       }
     }
