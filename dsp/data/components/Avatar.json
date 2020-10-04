@@ -1,16 +1,16 @@
 {
   "dsp_spec_version": "0.0.1",
   "last_updated_by": "System",
-  "last_updated": "2020-10-04T23:00:51.902Z",
+  "last_updated": "2020-10-04T23:22:26.938Z",
   "entities": [
     {
       "class": "component",
       "type": "page",
       "id": "Avatar",
       "name": "Avatar",
-      "last_updated": "2020-10-04T23:00:51.902Z",
+      "last_updated": "2020-10-04T23:22:26.938Z",
       "last_updated_by": "System",
-      "description": "The Avatar component is used to represent a user.\n\nIt displays a profile picture, or falls back to the user's initials\nif a profile pic is not provided.",
+      "description": "The Avatar component is used to represent a user.\n\nIt displays a profile picture, or falls back to the user's initials\nif a profile pic is not provided.\n ## Examples \n ### border: normal\n\n\n```javascript\n<div>\n  <Avatar title=\"Netto Farah\" borderVariant=\"normal\" />\n</div>\n```\n\n```html\n<span class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar\"\n  ><span color=\"white\" class=\"drac-text drac-text drac-text drac-text-white\"\n    >NF</span\n  ></span\n>\n\n```\n### border: large\n\n\n```javascript\n<div>\n  <Avatar title=\"Netto Farah\" borderVariant=\"large\" />\n</div>\n```\n\n```html\n<span\n  class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar drac-avatar-lg-stroke\"\n  ><span color=\"white\" class=\"drac-text drac-text drac-text drac-text-white\"\n    >NF</span\n  ></span\n>\n\n```\n### border: none\n\n\n```javascript\n<div>\n  <Avatar title=\"Netto Farah\" borderVariant=\"none\" />\n</div>\n```\n\n```html\n<span\n  class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar drac-avatar-no-border\"\n  ><span color=\"white\" class=\"drac-text drac-text drac-text drac-text-white\"\n    >NF</span\n  ></span\n>\n\n```\n### Custom variants\nAvatars accept multiple variants, like in the example below...\n\n```javascript\n<div>\n  <Avatar title=\"Netto Farah\" variant=\"normal\" />\n  <Avatar title=\"Zeno Rocha\" variant=\"subtle\" />\n</div>\n```\n\n```html\n<div>\n  <span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar\"\n    ><span color=\"white\" class=\"drac-text drac-text drac-text drac-text-white\"\n      >NF</span\n    ></span\n  ><span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-subtle\"\n    ><span color=\"white\" class=\"drac-text drac-text drac-text drac-text-white\"\n      >ZR</span\n    ></span\n  >\n</div>\n\n```\n### Custom colors\nAvatars accept colors, like in the example below...\n\n```javascript\n<div>\n  <Avatar title=\"Netto Farah\" color=\"black\" />\n  <Avatar title=\"Netto Farah\" color=\"cyan\" />\n</div>\n```\n\n```html\n<div>\n  <span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar\"\n    color=\"black\"\n    ><span color=\"white\" class=\"drac-text drac-text drac-text drac-text-white\"\n      >NF</span\n    ></span\n  ><span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar\"\n    color=\"cyan\"\n    ><span color=\"white\" class=\"drac-text drac-text drac-text drac-text-white\"\n      >NF</span\n    ></span\n  >\n</div>\n\n```",
       "related_entity_ids": [],
       "tags": ["component"],
       "snippets": {
@@ -18,6 +18,97 @@
         "languages": {
           "javascript": "<div>\n  <Avatar title=\"Netto Farah\" src=\"https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg\" />\n</div>",
           "html": "<span\n  class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar\"\n  style=\"\n    background-image: url(https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg);\n  \"\n></span>\n"
+        }
+      },
+      "ext_com_draculaui_variations": [
+        {
+          "title": "border: normal",
+          "html": "<span class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar\"\n  ><span color=\"white\" class=\"drac-text drac-text drac-text drac-text-white\"\n    >NF</span\n  ></span\n>\n",
+          "react": "<div>\n  <Avatar title=\"Netto Farah\" borderVariant=\"normal\" />\n</div>",
+          "docs": ""
+        },
+        {
+          "title": "border: large",
+          "html": "<span\n  class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar drac-avatar-lg-stroke\"\n  ><span color=\"white\" class=\"drac-text drac-text drac-text drac-text-white\"\n    >NF</span\n  ></span\n>\n",
+          "react": "<div>\n  <Avatar title=\"Netto Farah\" borderVariant=\"large\" />\n</div>",
+          "docs": ""
+        },
+        {
+          "title": "border: none",
+          "html": "<span\n  class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar drac-avatar-no-border\"\n  ><span color=\"white\" class=\"drac-text drac-text drac-text drac-text-white\"\n    >NF</span\n  ></span\n>\n",
+          "react": "<div>\n  <Avatar title=\"Netto Farah\" borderVariant=\"none\" />\n</div>",
+          "docs": ""
+        },
+        {
+          "title": "Custom variants",
+          "html": "<div>\n  <span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar\"\n    ><span color=\"white\" class=\"drac-text drac-text drac-text drac-text-white\"\n      >NF</span\n    ></span\n  ><span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-subtle\"\n    ><span color=\"white\" class=\"drac-text drac-text drac-text drac-text-white\"\n      >ZR</span\n    ></span\n  >\n</div>\n",
+          "react": "<div>\n  <Avatar title=\"Netto Farah\" variant=\"normal\" />\n  <Avatar title=\"Zeno Rocha\" variant=\"subtle\" />\n</div>",
+          "docs": "Avatars accept multiple variants, like in the example below..."
+        },
+        {
+          "title": "Custom colors",
+          "html": "<div>\n  <span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar\"\n    color=\"black\"\n    ><span color=\"white\" class=\"drac-text drac-text drac-text drac-text-white\"\n      >NF</span\n    ></span\n  ><span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar\"\n    color=\"cyan\"\n    ><span color=\"white\" class=\"drac-text drac-text drac-text drac-text-white\"\n      >NF</span\n    ></span\n  >\n</div>\n",
+          "react": "<div>\n  <Avatar title=\"Netto Farah\" color=\"black\" />\n  <Avatar title=\"Netto Farah\" color=\"cyan\" />\n</div>",
+          "docs": "Avatars accept colors, like in the example below..."
+        }
+      ],
+      "ext_com_draculaui_props": {
+        "title": {
+          "defaultValue": null,
+          "description": "The title or name to be used in the avatar.",
+          "name": "title",
+          "parent": {
+            "fileName": "src/components/Avatar/Avatar.tsx",
+            "name": "AvatarProps"
+          },
+          "required": true,
+          "type": { "name": "string" }
+        },
+        "themeColor": {
+          "defaultValue": null,
+          "description": "The theme color for the avatar.\nThis property controls the border and glow colors for the component.",
+          "name": "themeColor",
+          "parent": {
+            "fileName": "src/components/Avatar/Avatar.tsx",
+            "name": "AvatarProps"
+          },
+          "required": false,
+          "type": {
+            "name": "\"black\" | \"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+          }
+        },
+        "variant": {
+          "defaultValue": null,
+          "description": "The variant property allows for consumers to choose from\na regular avatar, or a subtle variation.",
+          "name": "variant",
+          "parent": {
+            "fileName": "src/components/Avatar/Avatar.tsx",
+            "name": "AvatarProps"
+          },
+          "required": false,
+          "type": { "name": "\"normal\" | \"subtle\" | undefined" }
+        },
+        "borderVariant": {
+          "defaultValue": null,
+          "description": "Allows for controlling the border of the avatar.\n`large` -> to use a thicker border.\n`none` -> hides the border.",
+          "name": "borderVariant",
+          "parent": {
+            "fileName": "src/components/Avatar/Avatar.tsx",
+            "name": "AvatarProps"
+          },
+          "required": false,
+          "type": { "name": "\"normal\" | \"large\" | \"none\" | undefined" }
+        },
+        "src": {
+          "defaultValue": null,
+          "description": "Sets the source for the profile picture.",
+          "name": "src",
+          "parent": {
+            "fileName": "src/components/Avatar/Avatar.tsx",
+            "name": "AvatarProps"
+          },
+          "required": false,
+          "type": { "name": "string | undefined" }
         }
       }
     }

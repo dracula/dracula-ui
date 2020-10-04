@@ -18,13 +18,33 @@ type Component = {
       html: string
     }
   }
+  ext_com_draculaui_variations: ComponentExample[]
+  ext_com_draculaui_props: dg.ComponentDoc['props']
 }
 
 export function toDSP(
   name: string,
-  usage: ComponentExample,
+  usage: Record<string, ComponentExample>,
   docs: dg.ComponentDoc
 ) {
+  const { basic: basicUsage, ...variations } = usage
+  const extraDocs = Object.values(variations)
+    .map((variation) => {
+      return `
+### ${variation.title}
+${variation.docs}
+
+\`\`\`javascript
+${variation.react}
+\`\`\`
+
+\`\`\`html
+${variation.html}
+\`\`\`
+    `.trim()
+    })
+    .join('\n')
+
   const comp: Component = {
     class: 'component',
     type: 'page',
@@ -32,16 +52,18 @@ export function toDSP(
     name,
     last_updated: new Date(),
     last_updated_by: 'System',
-    description: docs.description,
+    description: `${docs.description}\n ## Examples \n ${extraDocs}`,
     related_entity_ids: [],
     tags: ['component'],
     snippets: {
       trigger: name,
       languages: {
-        javascript: usage.react,
-        html: usage.html
+        javascript: basicUsage.react,
+        html: basicUsage.html
       }
-    }
+    },
+    ext_com_draculaui_variations: Object.values(variations),
+    ext_com_draculaui_props: docs.props
   }
 
   return {
