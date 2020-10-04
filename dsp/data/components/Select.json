@@ -1,14 +1,14 @@
 {
   "dsp_spec_version": "0.0.1",
   "last_updated_by": "System",
-  "last_updated": "2020-10-04T23:24:11.349Z",
+  "last_updated": "2020-10-04T23:30:50.857Z",
   "entities": [
     {
       "class": "component",
       "type": "page",
       "id": "Select",
       "name": "Select",
-      "last_updated": "2020-10-04T23:24:11.349Z",
+      "last_updated": "2020-10-04T23:30:50.857Z",
       "last_updated_by": "System",
       "description": "Select is a styled HTML Select element.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS, and small SVG component in order to keep Selects accessible.",
       "related_entity_ids": [],
@@ -21,6 +21,12 @@
         }
       },
       "ext_com_draculaui_variations": [
+        {
+          "title": "Usage",
+          "html": "<div style=\"display: flex; flex-direction: column; padding: 3rem\">\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"normal\"\n        color=\"white\"\n        class=\"drac-select drac-text drac-text-md drac-select drac-select-white\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-white\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"outline\"\n        color=\"white\"\n        class=\"drac-select drac-text drac-text-md drac-select-outline drac-select-white\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-white\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n</div>\n",
+          "react": "<div style={{...}}>\n  <div style={{...}}>\n    <Select defaultValue=\"default\" variant=\"normal\" color=\"white\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>\n        Blade\n      </option>\n      <option>\n        Buffy\n      </option>\n      <option>\n        Lincoln\n      </option>\n      <option>\n        Morbius\n      </option>\n      <option>\n        Van Helsing\n      </option>\n    </Select>\n  </div>\n  <div style={{...}}>\n    <Select defaultValue=\"default\" variant=\"outline\" color=\"white\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>\n        Blade\n      </option>\n      <option>\n        Buffy\n      </option>\n      <option>\n        Lincoln\n      </option>\n      <option>\n        Morbius\n      </option>\n      <option>\n        Van Helsing\n      </option>\n    </Select>\n  </div>\n</div>",
+          "docs": ""
+        },
         {
           "title": "Disabled",
           "html": "<div style=\"display: flex; flex-direction: column; padding: 3rem\">\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        disabled=\"\"\n        variant=\"normal\"\n        color=\"white\"\n        class=\"drac-select drac-text drac-text-md drac-select drac-select-white\"\n      >\n        <option value=\"default\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-white\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        disabled=\"\"\n        variant=\"outline\"\n        color=\"white\"\n        class=\"drac-select drac-text drac-text-md drac-select-outline drac-select-white\"\n      >\n        <option value=\"default\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-white\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n</div>\n",

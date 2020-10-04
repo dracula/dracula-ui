@@ -27,7 +27,7 @@ export function toDSP(
   usage: Record<string, ComponentExample>,
   docs: dg.ComponentDoc
 ) {
-  const { basic: basicUsage, ...variations } = usage
+  const { basic: basicUsage } = usage
 
   const comp: Component = {
     class: 'component',
@@ -46,7 +46,7 @@ export function toDSP(
         html: basicUsage.html
       }
     },
-    ext_com_draculaui_variations: Object.values(variations),
+    ext_com_draculaui_variations: Object.values(usage),
     ext_com_draculaui_props: docs.props
   }
 

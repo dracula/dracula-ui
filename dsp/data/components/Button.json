@@ -1,14 +1,14 @@
 {
   "dsp_spec_version": "0.0.1",
   "last_updated_by": "System",
-  "last_updated": "2020-10-04T23:24:11.308Z",
+  "last_updated": "2020-10-04T23:30:51.001Z",
   "entities": [
     {
       "class": "component",
       "type": "page",
       "id": "Button",
       "name": "Button",
-      "last_updated": "2020-10-04T23:24:11.308Z",
+      "last_updated": "2020-10-04T23:30:51.001Z",
       "last_updated_by": "System",
       "description": "The Button component triggers actions, behaviors, or events based\non user input.",
       "related_entity_ids": [],
@@ -21,6 +21,12 @@
         }
       },
       "ext_com_draculaui_variations": [
+        {
+          "title": "Usage",
+          "html": "<div style=\"padding: 3rem\" class=\"drac-box\">\n  <button class=\"drac-btn drac-bg-purple drac-btn\" color=\"purple\">\n    <span class=\"drac-text drac-text drac-text drac-text-black\">normal</span>\n  </button>\n</div>\n",
+          "react": "<div>\n  <Box style={{...}}>\n    <Button color=\"purple\">\n      normal\n    </Button>\n  </Box>\n</div>",
+          "docs": ""
+        },
         {
           "title": "Variants",
           "html": "<div\n  style=\"display: flex; flex-direction: column; padding: 3rem\"\n  class=\"drac-box\"\n>\n  <div style=\"margin-bottom: 10px\" class=\"drac-box\">\n    <button\n      class=\"drac-btn drac-bg-purple drac-btn\"\n      variant=\"normal\"\n      color=\"purple\"\n    >\n      <span class=\"drac-text drac-text drac-text drac-text-black\">normal</span>\n    </button>\n  </div>\n  <div style=\"margin-bottom: 10px\" class=\"drac-box\">\n    <button\n      class=\"drac-btn drac-bg-purple drac-btn-outline drac-text-purple\"\n      variant=\"outline\"\n      color=\"purple\"\n    >\n      <span\n        color=\"purple\"\n        class=\"drac-text drac-text drac-text drac-text-purple\"\n        >outline</span\n      >\n    </button>\n  </div>\n  <div style=\"margin-bottom: 10px\" class=\"drac-box\">\n    <button\n      class=\"drac-btn drac-bg-purple-transparent drac-btn-ghost drac-text-purple\"\n      variant=\"ghost\"\n      color=\"purple\"\n    >\n      <span\n        color=\"purple\"\n        class=\"drac-text drac-text drac-text drac-text-purple\"\n        >ghost</span\n      >\n    </button>\n  </div>\n</div>\n",
