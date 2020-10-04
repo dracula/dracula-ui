@@ -1,14 +1,14 @@
 {
   "dsp_spec_version": "0.0.1",
   "last_updated_by": "System",
-  "last_updated": "2020-10-04T01:51:13.899Z",
+  "last_updated": "2020-10-04T01:53:04.068Z",
   "entities": [
     {
       "class": "component",
       "type": "page",
       "id": "Input",
       "name": "Input",
-      "last_updated": "2020-10-04T01:51:13.899Z",
+      "last_updated": "2020-10-04T01:53:04.062Z",
       "last_updated_by": "System",
       "description": "Input is a styled HTML Input.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep inputs accessible.",
       "related_entity_ids": [],
