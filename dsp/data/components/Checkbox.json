@@ -1,14 +1,14 @@
 {
   "dsp_spec_version": "0.0.1",
   "last_updated_by": "System",
-  "last_updated": "2020-10-04T01:34:12.344Z",
+  "last_updated": "2020-10-04T01:51:13.214Z",
   "entities": [
     {
       "class": "component",
       "type": "page",
       "id": "Checkbox",
       "name": "Checkbox",
-      "last_updated": "2020-10-04T01:34:12.344Z",
+      "last_updated": "2020-10-04T01:51:13.214Z",
       "last_updated_by": "System",
       "description": "Checkbox is a styled HTML Input of type checkbox.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep check boxes accessible.",
       "related_entity_ids": [],
