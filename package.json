@@ -7,7 +7,9 @@
   "files": [
     "dist",
     "src",
-    "examples"
+    "examples",
+    "docs",
+    "dsp"
   ],
   "engines": {
     "node": ">=10"
