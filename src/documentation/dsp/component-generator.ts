@@ -6,7 +6,7 @@ type Component = {
   type: string
   id: string
   name: string
-  last_updated: Date
+  last_updated: Date | string
   last_updated_by: string
   description: string
   tags: string[]
@@ -30,7 +30,7 @@ export function toDSP(
     type: 'page',
     id: name,
     name,
-    last_updated: new Date(),
+    last_updated: '2020-10-04T01:34:12.344Z',
     last_updated_by: 'System',
     description: docs.description,
     related_entity_ids: [],
@@ -47,7 +47,7 @@ export function toDSP(
   return {
     dsp_spec_version: '0.0.1',
     last_updated_by: 'System',
-    last_updated: new Date(),
+    last_updated: '2020-10-04T01:34:12.344Z',
     entities: [comp]
   }
 }
