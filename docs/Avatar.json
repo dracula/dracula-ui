@@ -12,9 +12,7 @@
         "name": "AvatarProps"
       },
       "required": true,
-      "type": {
-        "name": "string"
-      }
+      "type": { "name": "string" }
     },
     "themeColor": {
       "defaultValue": null,
@@ -38,9 +36,7 @@
         "name": "AvatarProps"
       },
       "required": false,
-      "type": {
-        "name": "\"normal\" | \"subtle\" | undefined"
-      }
+      "type": { "name": "\"normal\" | \"subtle\" | undefined" }
     },
     "borderVariant": {
       "defaultValue": null,
@@ -51,9 +47,7 @@
         "name": "AvatarProps"
       },
       "required": false,
-      "type": {
-        "name": "\"normal\" | \"large\" | \"none\" | undefined"
-      }
+      "type": { "name": "\"normal\" | \"large\" | \"none\" | undefined" }
     },
     "src": {
       "defaultValue": null,
@@ -64,9 +58,7 @@
         "name": "AvatarProps"
       },
       "required": false,
-      "type": {
-        "name": "string | undefined"
-      }
+      "type": { "name": "string | undefined" }
     }
   }
 }

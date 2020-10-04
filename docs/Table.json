@@ -25,9 +25,7 @@
         "name": "TableProps"
       },
       "required": false,
-      "type": {
-        "name": "\"normal\" | \"striped\" | undefined"
-      }
+      "type": { "name": "\"normal\" | \"striped\" | undefined" }
     }
   }
 }

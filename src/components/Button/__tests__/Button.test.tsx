@@ -3,7 +3,7 @@ import {
   buildSnapshot,
   SnapshotBuilder
 } from '@/story-helpers/render-component'
-import { siteDocs } from '@/story-helpers/docs/site-docs'
+import { siteDocs } from '@/documentation/site-docs'
 import {
   ButtonNormal,
   ButtonVariants,

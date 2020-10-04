@@ -1,0 +1,25 @@
+{
+  "dsp_spec_version": "0.0.1",
+  "last_updated_by": "System",
+  "last_updated": "2020-10-04T01:33:22.024Z",
+  "entities": [
+    {
+      "class": "component",
+      "type": "page",
+      "id": "Button",
+      "name": "Button",
+      "last_updated": "2020-10-04T01:33:22.023Z",
+      "last_updated_by": "System",
+      "description": "The Button component triggers actions, behaviors, or events based\non user input.",
+      "related_entity_ids": [],
+      "tags": ["component"],
+      "snippets": {
+        "trigger": "Button",
+        "languages": {
+          "javascript": "<div>\n  <Box style={{...}}>\n    <Button color=\"purple\">\n      normal\n    </Button>\n  </Box>\n</div>",
+          "html": "<div style=\"padding: 3rem\" class=\"drac-box\">\n  <button class=\"drac-btn drac-bg-purple drac-btn\" color=\"purple\">\n    <span class=\"drac-text drac-text drac-text drac-text-black\">normal</span>\n  </button>\n</div>\n"
+        }
+      }
+    }
+  ]
+}

@@ -12,9 +12,7 @@
         "name": "SwitchProps"
       },
       "required": false,
-      "type": {
-        "name": "string | undefined"
-      }
+      "type": { "name": "string | undefined" }
     },
     "color": {
       "defaultValue": null,
@@ -38,9 +36,7 @@
         "name": "SwitchProps"
       },
       "required": false,
-      "type": {
-        "name": "boolean | undefined"
-      }
+      "type": { "name": "boolean | undefined" }
     }
   }
 }

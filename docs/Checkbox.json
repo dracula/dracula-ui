@@ -25,9 +25,7 @@
         "name": "CheckboxProps"
       },
       "required": false,
-      "type": {
-        "name": "string | undefined"
-      }
+      "type": { "name": "string | undefined" }
     },
     "disabled": {
       "defaultValue": null,
@@ -38,9 +36,7 @@
         "name": "CheckboxProps"
       },
       "required": false,
-      "type": {
-        "name": "boolean | undefined"
-      }
+      "type": { "name": "boolean | undefined" }
     }
   }
 }
