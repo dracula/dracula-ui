@@ -1,14 +1,14 @@
 {
   "dsp_spec_version": "0.0.1",
   "last_updated_by": "System",
-  "last_updated": "2020-10-04T01:34:13.732Z",
+  "last_updated": "2020-10-04T01:34:12.344Z",
   "entities": [
     {
       "class": "component",
       "type": "page",
       "id": "Switch",
       "name": "Switch",
-      "last_updated": "2020-10-04T01:34:13.732Z",
+      "last_updated": "2020-10-04T01:34:12.344Z",
       "last_updated_by": "System",
       "description": "Switch is an abstraction pattern that represents toggles.\n\nUse the Switch component as an alternative for Checkboxes or Radios\nwhen options are binary.\n\nSwitches are implemented as Checkboxes under the hood,\nand work normally with forms.",
       "related_entity_ids": [],
