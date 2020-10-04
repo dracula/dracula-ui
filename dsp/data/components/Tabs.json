@@ -1,14 +1,14 @@
 {
   "dsp_spec_version": "0.0.1",
   "last_updated_by": "System",
-  "last_updated": "2020-10-04T23:40:33.405Z",
+  "last_updated": "2020-10-04T23:51:23.435Z",
   "entities": [
     {
       "class": "component",
       "type": "page",
       "id": "Tabs",
       "name": "Tabs",
-      "last_updated": "2020-10-04T23:40:33.405Z",
+      "last_updated": "2020-10-04T23:51:23.435Z",
       "last_updated_by": "System",
       "description": "Tabs are horizontal navigation elements used to display\ncontent within the same page.",
       "related_entity_ids": [],
