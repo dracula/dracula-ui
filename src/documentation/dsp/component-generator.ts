@@ -28,22 +28,6 @@ export function toDSP(
   docs: dg.ComponentDoc
 ) {
   const { basic: basicUsage, ...variations } = usage
-  const extraDocs = Object.values(variations)
-    .map((variation) => {
-      return `
-### ${variation.title}
-${variation.docs}
-
-\`\`\`javascript
-${variation.react}
-\`\`\`
-
-\`\`\`html
-${variation.html}
-\`\`\`
-    `.trim()
-    })
-    .join('\n')
 
   const comp: Component = {
     class: 'component',
@@ -52,7 +36,7 @@ ${variation.html}
     name,
     last_updated: new Date(),
     last_updated_by: 'System',
-    description: `${docs.description}\n ## Examples \n ${extraDocs}`,
+    description: docs.description,
     related_entity_ids: [],
     tags: ['component'],
     snippets: {

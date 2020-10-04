@@ -1,16 +1,16 @@
 {
   "dsp_spec_version": "0.0.1",
   "last_updated_by": "System",
-  "last_updated": "2020-10-04T23:22:26.938Z",
+  "last_updated": "2020-10-04T23:24:10.024Z",
   "entities": [
     {
       "class": "component",
       "type": "page",
       "id": "Avatar",
       "name": "Avatar",
-      "last_updated": "2020-10-04T23:22:26.938Z",
+      "last_updated": "2020-10-04T23:24:10.024Z",
       "last_updated_by": "System",
-      "description": "The Avatar component is used to represent a user.\n\nIt displays a profile picture, or falls back to the user's initials\nif a profile pic is not provided.\n ## Examples \n ### border: normal\n\n\n```javascript\n<div>\n  <Avatar title=\"Netto Farah\" borderVariant=\"normal\" />\n</div>\n```\n\n```html\n<span class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar\"\n  ><span color=\"white\" class=\"drac-text drac-text drac-text drac-text-white\"\n    >NF</span\n  ></span\n>\n\n```\n### border: large\n\n\n```javascript\n<div>\n  <Avatar title=\"Netto Farah\" borderVariant=\"large\" />\n</div>\n```\n\n```html\n<span\n  class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar drac-avatar-lg-stroke\"\n  ><span color=\"white\" class=\"drac-text drac-text drac-text drac-text-white\"\n    >NF</span\n  ></span\n>\n\n```\n### border: none\n\n\n```javascript\n<div>\n  <Avatar title=\"Netto Farah\" borderVariant=\"none\" />\n</div>\n```\n\n```html\n<span\n  class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar drac-avatar-no-border\"\n  ><span color=\"white\" class=\"drac-text drac-text drac-text drac-text-white\"\n    >NF</span\n  ></span\n>\n\n```\n### Custom variants\nAvatars accept multiple variants, like in the example below...\n\n```javascript\n<div>\n  <Avatar title=\"Netto Farah\" variant=\"normal\" />\n  <Avatar title=\"Zeno Rocha\" variant=\"subtle\" />\n</div>\n```\n\n```html\n<div>\n  <span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar\"\n    ><span color=\"white\" class=\"drac-text drac-text drac-text drac-text-white\"\n      >NF</span\n    ></span\n  ><span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-subtle\"\n    ><span color=\"white\" class=\"drac-text drac-text drac-text drac-text-white\"\n      >ZR</span\n    ></span\n  >\n</div>\n\n```\n### Custom colors\nAvatars accept colors, like in the example below...\n\n```javascript\n<div>\n  <Avatar title=\"Netto Farah\" color=\"black\" />\n  <Avatar title=\"Netto Farah\" color=\"cyan\" />\n</div>\n```\n\n```html\n<div>\n  <span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar\"\n    color=\"black\"\n    ><span color=\"white\" class=\"drac-text drac-text drac-text drac-text-white\"\n      >NF</span\n    ></span\n  ><span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar\"\n    color=\"cyan\"\n    ><span color=\"white\" class=\"drac-text drac-text drac-text drac-text-white\"\n      >NF</span\n    ></span\n  >\n</div>\n\n```",
+      "description": "The Avatar component is used to represent a user.\n\nIt displays a profile picture, or falls back to the user's initials\nif a profile pic is not provided.",
       "related_entity_ids": [],
       "tags": ["component"],
       "snippets": {
