@@ -1,6 +1,6 @@
 import React from 'react'
-import { Box, BoxProps } from '@/components/Box/Box'
-import { borderColors } from '@/base/colors'
+import { Box, BoxProps } from '../../components/Box/Box'
+import { borderColors } from '../../base/colors'
 import cx from 'classnames'
 
 export const cardOrientations = {

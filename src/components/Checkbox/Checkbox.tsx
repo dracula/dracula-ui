@@ -1,6 +1,6 @@
 import React, { HTMLAttributes } from 'react'
 import cx from 'classnames'
-import { ColorMap } from '@/base/colors'
+import { ColorMap } from '../../base/colors'
 
 export const checkboxColors: ColorMap = {
   black: 'drac-checkbox-black',

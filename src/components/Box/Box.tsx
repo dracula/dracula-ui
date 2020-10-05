@@ -1,7 +1,7 @@
 import React, { HTMLAttributes } from 'react'
 import cx from 'classnames'
-import { spacingClasses, SpacingPropType } from '@/base/spacing'
-import { colors } from '@/base/colors'
+import { spacingClasses, SpacingPropType } from '../../base/spacing'
+import { colors } from '../../base/colors'
 
 /**
  * Box Props

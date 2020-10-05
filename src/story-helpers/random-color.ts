@@ -1,4 +1,4 @@
-import { colors } from '@/base/colors'
+import { colors } from '../base/colors'
 
 export const colorname = () => {
   const colorNames = Object.keys(colors)

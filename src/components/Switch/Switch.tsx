@@ -1,4 +1,4 @@
-import { ColorMap } from '@/base/colors'
+import { ColorMap } from '../../base/colors'
 import React, { HTMLAttributes } from 'react'
 
 export const switchColors: ColorMap = {

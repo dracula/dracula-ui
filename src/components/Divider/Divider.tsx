@@ -1,4 +1,4 @@
-import { borderColors } from '@/base/colors'
+import { borderColors } from '../../base/colors'
 import React, { HTMLAttributes } from 'react'
 
 export const dividerColors = borderColors

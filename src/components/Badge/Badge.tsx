@@ -1,6 +1,6 @@
 import React, { HTMLAttributes } from 'react'
-import { colors as backgroundColors } from '@/base/colors'
-import { Text, TextColors } from '@/components/Typography/Text'
+import { colors as backgroundColors } from '../../base/colors'
+import { Text, TextColors } from '../../components/Typography/Text'
 import cx from 'classnames'
 
 const variants = {

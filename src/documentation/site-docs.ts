@@ -2,12 +2,12 @@ import {
   ComponentExample,
   renderSnapshot,
   SnapshotBuilder
-} from '@/story-helpers/render-component'
+} from '../story-helpers/render-component'
 import React from 'react'
 import fs from 'fs-extra'
-import { pretty } from '@/story-helpers/pretty'
-import { getDocGen } from '@/documentation/docgen/doc-generator'
-import { toDSP } from '@/documentation/dsp/component-generator'
+import { pretty } from '../story-helpers/pretty'
+import { getDocGen } from '../documentation/docgen/doc-generator'
+import { toDSP } from '../documentation/dsp/component-generator'
 
 interface Documentation {
   basicUsage: () => SnapshotBuilder

@@ -1,4 +1,4 @@
-import { ColorMap } from '@/base/colors'
+import { ColorMap } from '../base/colors'
 
 export function withColors(
   colorMap: ColorMap,

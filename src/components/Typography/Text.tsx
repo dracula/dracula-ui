@@ -1,8 +1,8 @@
 import React, { HTMLAttributes } from 'react'
 import { mapValues } from 'lodash'
 import cx from 'classnames'
-import { spacingClasses, SpacingPropType } from '@/base/spacing'
-import { textColors } from '@/base/colors'
+import { spacingClasses, SpacingPropType } from '../../base/spacing'
+import { textColors } from '../../base/colors'
 
 export const TextSizes = {
   large: 'drac-text-lg',

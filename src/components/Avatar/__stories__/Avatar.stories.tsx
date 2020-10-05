@@ -1,6 +1,6 @@
+import { colors } from '../../../base/colors'
+import { Avatar, AvatarProps, Box, Heading, Text } from '../../../index'
 import React from 'react'
-import { Avatar, AvatarProps, Box, Heading, Text } from '@/index'
-import { colors } from '@/base/colors'
 
 export default {
   title: 'Avatar'
