@@ -12,6 +12,12 @@ export async function componentScreenshot(
 ): Promise<string> {
   const page = await browser.newPage()
 
+  await page.setViewport({
+    width: 600,
+    height: 200,
+    deviceScaleFactor: 3
+  })
+
   await page.setContent(`
     <div class="drac">
       ${snapshot.html}

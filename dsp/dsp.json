@@ -30,37 +30,10 @@
       "src": "data/fonts.json"
     },
     {
+      "src": "data/components.json"
+    },
+    {
       "src": "data/docs.json"
-    },
-    {
-      "src": "./data/components/Avatar.json"
-    },
-    {
-      "src": "./data/components/Button.json"
-    },
-    {
-      "src": "./data/components/Checkbox.json"
-    },
-    {
-      "src": "./data/components/Divider.json"
-    },
-    {
-      "src": "./data/components/Input.json"
-    },
-    {
-      "src": "./data/components/Radio.json"
-    },
-    {
-      "src": "./data/components/Select.json"
-    },
-    {
-      "src": "./data/components/Switch.json"
-    },
-    {
-      "src": "./data/components/Table.json"
-    },
-    {
-      "src": "./data/components/Tabs.json"
     }
   ]
 }

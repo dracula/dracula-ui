@@ -11,7 +11,9 @@
       "last_updated": "2020-07-28T22:44:29.537Z",
       "last_updated_by": "Zeno Rocha",
       "description": "The base font used everywhere",
-      "tags": ["text"],
+      "tags": [
+        "text"
+      ],
       "tokens": [
         {
           "id": "8f0b0569-aa2b-4e78-9770-09ed36ee90e0",
@@ -41,7 +43,9 @@
       "last_updated": "2020-07-28T22:44:29.537Z",
       "last_updated_by": "Zeno Rocha",
       "description": "The large font used everywhere",
-      "tags": ["text"],
+      "tags": [
+        "text"
+      ],
       "tokens": [
         {
           "id": "8f0b0569-aa2b-4e78-9770-09ed36ee90e2",
@@ -71,7 +75,9 @@
       "last_updated": "2020-07-28T22:44:29.537Z",
       "last_updated_by": "Zeno Rocha",
       "description": "The medium font used everywhere",
-      "tags": ["text"],
+      "tags": [
+        "text"
+      ],
       "tokens": [
         {
           "id": "8f0b0569-aa2b-4e78-9770-09ed36ee90e1",
@@ -101,7 +107,9 @@
       "last_updated": "2020-07-28T22:44:29.537Z",
       "last_updated_by": "Zeno Rocha",
       "description": "The small font used everywhere",
-      "tags": ["text"],
+      "tags": [
+        "text"
+      ],
       "tokens": [
         {
           "id": "8f0b0569-aa2b-4e78-9770-09ed36ee90e3",
@@ -128,7 +136,9 @@
       "type": "font",
       "id": "183fd64a-884a-41c7-aef3-8ff5d9467dd0",
       "name": "heading-1",
-      "tags": ["heading"],
+      "tags": [
+        "heading"
+      ],
       "tokens": [
         {
           "id": "ba133c88-ba93-43d0-a05e-69fbe412ee70",
@@ -155,7 +165,9 @@
       "type": "font",
       "id": "183fd64a-884a-41c7-aef3-8ff5d9467dd1",
       "name": "heading-2",
-      "tags": ["heading"],
+      "tags": [
+        "heading"
+      ],
       "tokens": [
         {
           "id": "ba133c88-ba93-43d0-a05e-69fbe412ee71",
@@ -182,7 +194,9 @@
       "type": "font",
       "id": "183fd64a-884a-41c7-aef3-8ff5d9467dd2",
       "name": "heading-3",
-      "tags": ["heading"],
+      "tags": [
+        "heading"
+      ],
       "tokens": [
         {
           "id": "ba133c88-ba93-43d0-a05e-69fbe412ee72",
@@ -209,7 +223,9 @@
       "type": "font",
       "id": "183fd64a-884a-41c7-aef3-8ff5d9467dd3",
       "name": "heading-4",
-      "tags": ["heading"],
+      "tags": [
+        "heading"
+      ],
       "tokens": [
         {
           "id": "ba133c88-ba93-43d0-a05e-69fbe412ee73",
