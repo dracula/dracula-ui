@@ -4,7 +4,7 @@ import {
   SnapshotBuilder
 } from '@/story-helpers/render-component'
 import React from 'react'
-import fs from 'fs'
+import fs from 'fs-extra'
 import { pretty } from '@/story-helpers/pretty'
 import { getDocGen } from '@/documentation/docgen/doc-generator'
 import { toDSP } from '@/documentation/dsp/component-generator'
@@ -23,11 +23,11 @@ export function siteDocs<T>(
   describe(`Site: ${name}`, () => {
     let examples: Record<string, ComponentExample> = {}
 
-    afterAll(() => {
+    afterAll(async () => {
       const docGen = getDocGen(name)
       const dsp = toDSP(name, examples, docGen)
       const dspPath = `${process.cwd()}/dsp/data/components/${name}.json`
-      fs.writeFileSync(dspPath, pretty(JSON.stringify(dsp), 'json'))
+      await fs.writeFile(dspPath, pretty(JSON.stringify(dsp), 'json'))
     })
 
     test('Basic Usage', () => {

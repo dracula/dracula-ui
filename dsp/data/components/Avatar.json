@@ -1,14 +1,14 @@
 {
   "dsp_spec_version": "0.0.1",
   "last_updated_by": "System",
-  "last_updated": "2020-10-05T13:19:51.862Z",
+  "last_updated": "2020-10-05T13:22:06.221Z",
   "entities": [
     {
       "class": "component",
       "type": "page",
       "id": "Avatar",
       "name": "Avatar",
-      "last_updated": "2020-10-05T13:19:51.862Z",
+      "last_updated": "2020-10-05T13:22:06.221Z",
       "last_updated_by": "System",
       "description": "The Avatar component is used to represent a user.\n\nIt displays a profile picture, or falls back to the user's initials\nif a profile pic is not provided.",
       "related_entity_ids": [],
