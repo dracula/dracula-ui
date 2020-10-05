@@ -1,14 +1,14 @@
 {
   "dsp_spec_version": "0.0.1",
   "last_updated_by": "System",
-  "last_updated": "2020-10-05T13:22:07.789Z",
+  "last_updated": "2020-10-05T14:36:18.062Z",
   "entities": [
     {
       "class": "component",
       "type": "page",
       "id": "Table",
       "name": "Table",
-      "last_updated": "2020-10-05T13:22:07.789Z",
+      "last_updated": "2020-10-05T14:36:18.062Z",
       "last_updated_by": "System",
       "description": "Tables are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
       "related_entity_ids": [],

@@ -1,14 +1,14 @@
 {
   "dsp_spec_version": "0.0.1",
   "last_updated_by": "System",
-  "last_updated": "2020-10-05T13:22:07.737Z",
+  "last_updated": "2020-10-05T14:36:17.931Z",
   "entities": [
     {
       "class": "component",
       "type": "page",
       "id": "Button",
       "name": "Button",
-      "last_updated": "2020-10-05T13:22:07.737Z",
+      "last_updated": "2020-10-05T14:36:17.931Z",
       "last_updated_by": "System",
       "description": "The Button component triggers actions, behaviors, or events based\non user input.",
       "related_entity_ids": [],
