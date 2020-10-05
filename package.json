@@ -17,7 +17,7 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
-    "test": "tsdx test",
+    "test": "tsdx test && && node ./dsp/update.js",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "storybook": "start-storybook -p 6006",
@@ -28,7 +28,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "tsdx test && tsdx lint --fix && node ./dsp/update.js && git add ."
+      "pre-commit": "tsdx lint --fix && git add ."
     }
   },
   "prettier": {
