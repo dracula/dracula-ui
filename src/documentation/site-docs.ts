@@ -24,13 +24,7 @@ export function siteDocs<T>(
     let examples: Record<string, ComponentExample> = {}
 
     afterAll(() => {
-      const examplesPath = `${process.cwd()}/examples/${name}.json`
-      fs.writeFileSync(examplesPath, pretty(JSON.stringify(examples), 'json'))
-
       const docGen = getDocGen(name)
-      const docPath = `${process.cwd()}/docs/${name}.json`
-      fs.writeFileSync(docPath, pretty(JSON.stringify(docGen), 'json'))
-
       const dsp = toDSP(name, examples, docGen)
       const dspPath = `${process.cwd()}/dsp/data/components/${name}.json`
       fs.writeFileSync(dspPath, pretty(JSON.stringify(dsp), 'json'))

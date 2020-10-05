@@ -1,14 +1,14 @@
 {
   "dsp_spec_version": "0.0.1",
   "last_updated_by": "System",
-  "last_updated": "2020-10-04T23:51:18.444Z",
+  "last_updated": "2020-10-05T13:19:51.160Z",
   "entities": [
     {
       "class": "component",
       "type": "page",
       "id": "Radio",
       "name": "Radio",
-      "last_updated": "2020-10-04T23:51:18.444Z",
+      "last_updated": "2020-10-05T13:19:51.160Z",
       "last_updated_by": "System",
       "description": "Radio is a styled HTML Input of type radio.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep Radios accessible.",
       "related_entity_ids": [],
