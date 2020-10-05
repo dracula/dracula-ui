@@ -10,6 +10,7 @@ export type ComponentExample = {
   docs: string
   title: string
   react?: any
+  screenshot?: string
 }
 
 export type SnapshotBuilder = {
