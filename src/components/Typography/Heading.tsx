@@ -8,7 +8,9 @@ export const HeadingSizes = {
   'heading-1': 'drac-heading-1',
   'heading-2': 'drac-heading-2',
   'heading-3': 'drac-heading-3',
-  'heading-4': 'drac-heading-4'
+  'heading-4': 'drac-heading-4',
+  'heading-5': 'drac-heading-5',
+  'heading-6': 'drac-heading-6'
 }
 
 export const HeadingColors = mapValues(colors, (className) => {
@@ -45,7 +47,9 @@ export const Heading: React.FC<HeadingProps> = (props: HeadingProps) => {
     'heading-1': 'h1',
     'heading-2': 'h2',
     'heading-3': 'h3',
-    'heading-4': 'h4'
+    'heading-4': 'h4',
+    'heading-5': 'h5',
+    'heading-6': 'h6'
   }
 
   const size = tag[props.size ?? 'heading-1']

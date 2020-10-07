@@ -8,7 +8,8 @@ export const TextSizes = {
   large: 'drac-text-lg',
   medium: 'drac-text-md',
   normal: 'drac-text',
-  small: 'drac-text-sm'
+  small: 'drac-text-sm',
+  xsmall: 'drac-text-xs'
 }
 
 export const TextWeights = {
@@ -64,7 +65,7 @@ export const Text = (props: TextProps) => {
       `drac-text`,
       TextSizes[props.size ?? 'normal'],
       TextWeights[props.weight ?? 'normal'],
-      TextColors[props.color ?? 'black'],
+      TextColors[props.color ?? 'white'],
       spacingClasses(props.spacing)
     )
   }
@@ -86,7 +87,7 @@ export const Paragraph: React.FC<TextProps> = (props: TextProps) => {
       `drac-text`,
       TextSizes[props.size ?? 'normal'],
       TextWeights[props.weight ?? 'normal'],
-      TextColors[props.color ?? 'black'],
+      TextColors[props.color ?? 'white'],
       spacingClasses(props.spacing ?? 'smallY')
     )
   }

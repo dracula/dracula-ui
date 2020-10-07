@@ -27,6 +27,14 @@
   font-size: 2.4rem;
 }
 
+.drac-heading-5 {
+  font-size: 2rem;
+}
+
+.drac-heading-6 {
+  font-size: 1.6rem;
+}
+
 /* -- Text -- */
 
 .drac-text-bold {
@@ -51,4 +59,8 @@
 
 .drac-text-sm {
   font-size: 1.2rem;
+}
+
+.drac-text-xs {
+  font-size: 1rem;
 }

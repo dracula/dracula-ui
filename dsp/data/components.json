@@ -12,9 +12,7 @@
       "last_updated_by": "System",
       "description": "The Avatar component is used to represent a user.\n\nIt displays a profile picture, or falls back to the user's initials\nif a profile pic is not provided.",
       "related_entity_ids": [],
-      "tags": [
-        "component"
-      ],
+      "tags": ["component"],
       "snippets": {
         "trigger": "avatar",
         "languages": {
@@ -215,9 +213,7 @@
       "last_updated_by": "System",
       "description": "The Button component triggers actions, behaviors, or events based\non user input.",
       "related_entity_ids": [],
-      "tags": [
-        "component"
-      ],
+      "tags": ["component"],
       "snippets": {
         "trigger": "button",
         "languages": {
@@ -345,9 +341,7 @@
       "last_updated_by": "System",
       "description": "Checkbox is a styled HTML Input of type checkbox.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep check boxes accessible.",
       "related_entity_ids": [],
-      "tags": [
-        "component"
-      ],
+      "tags": ["component"],
       "snippets": {
         "trigger": "checkbox",
         "languages": {
@@ -475,9 +469,7 @@
       "last_updated_by": "System",
       "description": "Dividers are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
       "related_entity_ids": [],
-      "tags": [
-        "component"
-      ],
+      "tags": ["component"],
       "snippets": {
         "trigger": "divider",
         "languages": {
@@ -546,9 +538,7 @@
       "last_updated_by": "System",
       "description": "Input is a styled HTML Input.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep inputs accessible.",
       "related_entity_ids": [],
-      "tags": [
-        "component"
-      ],
+      "tags": ["component"],
       "snippets": {
         "trigger": "input",
         "languages": {
@@ -643,9 +633,7 @@
       "last_updated_by": "System",
       "description": "Radio is a styled HTML Input of type radio.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep Radios accessible.",
       "related_entity_ids": [],
-      "tags": [
-        "component"
-      ],
+      "tags": ["component"],
       "snippets": {
         "trigger": "radio",
         "languages": {
@@ -747,9 +735,7 @@
       "last_updated_by": "System",
       "description": "Select is a styled HTML Select element.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS, and small SVG component in order to keep Selects accessible.",
       "related_entity_ids": [],
-      "tags": [
-        "component"
-      ],
+      "tags": ["component"],
       "snippets": {
         "trigger": "select",
         "languages": {
@@ -877,9 +863,7 @@
       "last_updated_by": "System",
       "description": "Switch is an abstraction pattern that represents toggles.\n\nUse the Switch component as an alternative for Checkboxes or Radios\nwhen options are binary.\n\nSwitches are implemented as Checkboxes under the hood,\nand work normally with forms.",
       "related_entity_ids": [],
-      "tags": [
-        "component"
-      ],
+      "tags": ["component"],
       "snippets": {
         "trigger": "switch",
         "languages": {
@@ -1007,9 +991,7 @@
       "last_updated_by": "System",
       "description": "Tables are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
       "related_entity_ids": [],
-      "tags": [
-        "component"
-      ],
+      "tags": ["component"],
       "snippets": {
         "trigger": "table",
         "languages": {
@@ -1104,9 +1086,7 @@
       "last_updated_by": "System",
       "description": "Tabs are horizontal navigation elements used to display\ncontent within the same page.",
       "related_entity_ids": [],
-      "tags": [
-        "component"
-      ],
+      "tags": ["component"],
       "snippets": {
         "trigger": "tabs",
         "languages": {
