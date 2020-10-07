@@ -34,7 +34,7 @@ export function toDSP(
     name,
     last_updated: new Date(),
     last_updated_by: 'System',
-    description: docs.description,
+    description: `${docs.description}`,
     related_entity_ids: [],
     tags: ['component'],
     snippets: {
