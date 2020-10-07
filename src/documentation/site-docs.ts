@@ -16,6 +16,8 @@ interface Documentation {
   variations: () => Array<SnapshotBuilder>
 }
 
+jest.setTimeout(10000)
+
 export function siteDocs<T>(
   componentClass: React.FunctionComponent<T>,
   documentation: Documentation

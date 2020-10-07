@@ -18,7 +18,6 @@ exports[`Site: Divider Colors 1`] = `
 Object {
   "docs": "",
   "html": "<div style=\\"display: flex; flex-direction: column; padding: 3rem\\">
-  <div><hr color=\\"black\\" class=\\"drac-divider drac-border-black\\" /></div>
   <div><hr color=\\"white\\" class=\\"drac-divider drac-border-white\\" /></div>
   <div><hr color=\\"cyan\\" class=\\"drac-divider drac-border-cyan\\" /></div>
   <div><hr color=\\"green\\" class=\\"drac-divider drac-border-green\\" /></div>
@@ -43,9 +42,6 @@ Object {
 </div>
 ",
   "react": "<div style={{...}}>
-  <div>
-    <Divider color=\\"black\\" />
-  </div>
   <div>
     <Divider color=\\"white\\" />
   </div>

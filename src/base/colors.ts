@@ -1,7 +1,6 @@
 import { mapValues } from 'lodash'
 
 export const colors = {
-  black: 'drac-bg-black',
   white: 'drac-bg-white',
   cyan: 'drac-bg-cyan',
   green: 'drac-bg-green',

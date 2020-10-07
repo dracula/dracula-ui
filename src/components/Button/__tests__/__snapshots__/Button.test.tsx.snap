@@ -5,7 +5,7 @@ Object {
   "docs": "",
   "html": "<div style=\\"padding: 3rem\\" class=\\"drac-box\\">
   <button class=\\"drac-btn drac-bg-purple drac-btn\\" color=\\"purple\\">
-    <span class=\\"drac-text drac-text drac-text drac-text-black\\">normal</span>
+    <span class=\\"drac-text drac-text drac-text\\">normal</span>
   </button>
 </div>
 ",
@@ -28,98 +28,18 @@ Object {
     <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
       <div class=\\"drac-box\\">
         <button
-          class=\\"drac-btn drac-bg-black drac-btn\\"
-          color=\\"black\\"
-          style=\\"margin: 1rem\\"
-        >
-          <span class=\\"drac-text drac-text drac-text drac-text-black\\"
-            >Normal</span
-          ></button
-        ><button
-          class=\\"drac-btn drac-bg-black drac-btn\\"
-          color=\\"black\\"
-          style=\\"margin: 1rem\\"
-          disabled=\\"\\"
-        >
-          <span class=\\"drac-text drac-text drac-text drac-text-black\\"
-            >Normal</span
-          >
-        </button>
-      </div>
-      <div class=\\"drac-box\\">
-        <button
-          class=\\"drac-btn drac-bg-black-transparent drac-btn-ghost drac-text-black\\"
-          color=\\"black\\"
-          style=\\"margin: 1rem\\"
-          variant=\\"ghost\\"
-        >
-          <span
-            color=\\"black\\"
-            class=\\"drac-text drac-text drac-text drac-text-black\\"
-            >Ghost</span
-          ></button
-        ><button
-          class=\\"drac-btn drac-bg-black-transparent drac-btn-ghost drac-text-black\\"
-          color=\\"black\\"
-          style=\\"margin: 1rem\\"
-          variant=\\"ghost\\"
-          disabled=\\"\\"
-        >
-          <span
-            color=\\"black\\"
-            class=\\"drac-text drac-text drac-text drac-text-black\\"
-            >Ghost</span
-          >
-        </button>
-      </div>
-      <div class=\\"drac-box\\">
-        <button
-          class=\\"drac-btn drac-bg-black drac-btn-outline drac-text-black\\"
-          color=\\"black\\"
-          style=\\"margin: 1rem\\"
-          variant=\\"outline\\"
-        >
-          <span
-            color=\\"black\\"
-            class=\\"drac-text drac-text drac-text drac-text-black\\"
-            >Outline</span
-          ></button
-        ><button
-          class=\\"drac-btn drac-bg-black drac-btn-outline drac-text-black\\"
-          color=\\"black\\"
-          style=\\"margin: 1rem\\"
-          variant=\\"outline\\"
-          disabled=\\"\\"
-        >
-          <span
-            color=\\"black\\"
-            class=\\"drac-text drac-text drac-text drac-text-black\\"
-            >Outline</span
-          >
-        </button>
-      </div>
-    </div>
-  </div>
-  <div class=\\"drac-box\\">
-    <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
-      <div class=\\"drac-box\\">
-        <button
           class=\\"drac-btn drac-bg-white drac-btn\\"
           color=\\"white\\"
           style=\\"margin: 1rem\\"
         >
-          <span class=\\"drac-text drac-text drac-text drac-text-black\\"
-            >Normal</span
-          ></button
+          <span class=\\"drac-text drac-text drac-text\\">Normal</span></button
         ><button
           class=\\"drac-btn drac-bg-white drac-btn\\"
           color=\\"white\\"
           style=\\"margin: 1rem\\"
           disabled=\\"\\"
         >
-          <span class=\\"drac-text drac-text drac-text drac-text-black\\"
-            >Normal</span
-          >
+          <span class=\\"drac-text drac-text drac-text\\">Normal</span>
         </button>
       </div>
       <div class=\\"drac-box\\">
@@ -184,18 +104,14 @@ Object {
           color=\\"cyan\\"
           style=\\"margin: 1rem\\"
         >
-          <span class=\\"drac-text drac-text drac-text drac-text-black\\"
-            >Normal</span
-          ></button
+          <span class=\\"drac-text drac-text drac-text\\">Normal</span></button
         ><button
           class=\\"drac-btn drac-bg-cyan drac-btn\\"
           color=\\"cyan\\"
           style=\\"margin: 1rem\\"
           disabled=\\"\\"
         >
-          <span class=\\"drac-text drac-text drac-text drac-text-black\\"
-            >Normal</span
-          >
+          <span class=\\"drac-text drac-text drac-text\\">Normal</span>
         </button>
       </div>
       <div class=\\"drac-box\\">
@@ -260,18 +176,14 @@ Object {
           color=\\"green\\"
           style=\\"margin: 1rem\\"
         >
-          <span class=\\"drac-text drac-text drac-text drac-text-black\\"
-            >Normal</span
-          ></button
+          <span class=\\"drac-text drac-text drac-text\\">Normal</span></button
         ><button
           class=\\"drac-btn drac-bg-green drac-btn\\"
           color=\\"green\\"
           style=\\"margin: 1rem\\"
           disabled=\\"\\"
         >
-          <span class=\\"drac-text drac-text drac-text drac-text-black\\"
-            >Normal</span
-          >
+          <span class=\\"drac-text drac-text drac-text\\">Normal</span>
         </button>
       </div>
       <div class=\\"drac-box\\">
@@ -336,18 +248,14 @@ Object {
           color=\\"orange\\"
           style=\\"margin: 1rem\\"
         >
-          <span class=\\"drac-text drac-text drac-text drac-text-black\\"
-            >Normal</span
-          ></button
+          <span class=\\"drac-text drac-text drac-text\\">Normal</span></button
         ><button
           class=\\"drac-btn drac-bg-orange drac-btn\\"
           color=\\"orange\\"
           style=\\"margin: 1rem\\"
           disabled=\\"\\"
         >
-          <span class=\\"drac-text drac-text drac-text drac-text-black\\"
-            >Normal</span
-          >
+          <span class=\\"drac-text drac-text drac-text\\">Normal</span>
         </button>
       </div>
       <div class=\\"drac-box\\">
@@ -412,18 +320,14 @@ Object {
           color=\\"pink\\"
           style=\\"margin: 1rem\\"
         >
-          <span class=\\"drac-text drac-text drac-text drac-text-black\\"
-            >Normal</span
-          ></button
+          <span class=\\"drac-text drac-text drac-text\\">Normal</span></button
         ><button
           class=\\"drac-btn drac-bg-pink drac-btn\\"
           color=\\"pink\\"
           style=\\"margin: 1rem\\"
           disabled=\\"\\"
         >
-          <span class=\\"drac-text drac-text drac-text drac-text-black\\"
-            >Normal</span
-          >
+          <span class=\\"drac-text drac-text drac-text\\">Normal</span>
         </button>
       </div>
       <div class=\\"drac-box\\">
@@ -488,18 +392,14 @@ Object {
           color=\\"purple\\"
           style=\\"margin: 1rem\\"
         >
-          <span class=\\"drac-text drac-text drac-text drac-text-black\\"
-            >Normal</span
-          ></button
+          <span class=\\"drac-text drac-text drac-text\\">Normal</span></button
         ><button
           class=\\"drac-btn drac-bg-purple drac-btn\\"
           color=\\"purple\\"
           style=\\"margin: 1rem\\"
           disabled=\\"\\"
         >
-          <span class=\\"drac-text drac-text drac-text drac-text-black\\"
-            >Normal</span
-          >
+          <span class=\\"drac-text drac-text drac-text\\">Normal</span>
         </button>
       </div>
       <div class=\\"drac-box\\">
@@ -564,18 +464,14 @@ Object {
           color=\\"red\\"
           style=\\"margin: 1rem\\"
         >
-          <span class=\\"drac-text drac-text drac-text drac-text-black\\"
-            >Normal</span
-          ></button
+          <span class=\\"drac-text drac-text drac-text\\">Normal</span></button
         ><button
           class=\\"drac-btn drac-bg-red drac-btn\\"
           color=\\"red\\"
           style=\\"margin: 1rem\\"
           disabled=\\"\\"
         >
-          <span class=\\"drac-text drac-text drac-text drac-text-black\\"
-            >Normal</span
-          >
+          <span class=\\"drac-text drac-text drac-text\\">Normal</span>
         </button>
       </div>
       <div class=\\"drac-box\\">
@@ -632,18 +528,14 @@ Object {
           color=\\"yellow\\"
           style=\\"margin: 1rem\\"
         >
-          <span class=\\"drac-text drac-text drac-text drac-text-black\\"
-            >Normal</span
-          ></button
+          <span class=\\"drac-text drac-text drac-text\\">Normal</span></button
         ><button
           class=\\"drac-btn drac-bg-yellow drac-btn\\"
           color=\\"yellow\\"
           style=\\"margin: 1rem\\"
           disabled=\\"\\"
         >
-          <span class=\\"drac-text drac-text drac-text drac-text-black\\"
-            >Normal</span
-          >
+          <span class=\\"drac-text drac-text drac-text\\">Normal</span>
         </button>
       </div>
       <div class=\\"drac-box\\">
@@ -708,18 +600,14 @@ Object {
           color=\\"purpleCyan\\"
           style=\\"margin: 1rem\\"
         >
-          <span class=\\"drac-text drac-text drac-text drac-text-black\\"
-            >Normal</span
-          ></button
+          <span class=\\"drac-text drac-text drac-text\\">Normal</span></button
         ><button
           class=\\"drac-btn drac-bg-purple-cyan drac-btn\\"
           color=\\"purpleCyan\\"
           style=\\"margin: 1rem\\"
           disabled=\\"\\"
         >
-          <span class=\\"drac-text drac-text drac-text drac-text-black\\"
-            >Normal</span
-          >
+          <span class=\\"drac-text drac-text drac-text\\">Normal</span>
         </button>
       </div>
       <div class=\\"drac-box\\">
@@ -784,18 +672,14 @@ Object {
           color=\\"yellowPink\\"
           style=\\"margin: 1rem\\"
         >
-          <span class=\\"drac-text drac-text drac-text drac-text-black\\"
-            >Normal</span
-          ></button
+          <span class=\\"drac-text drac-text drac-text\\">Normal</span></button
         ><button
           class=\\"drac-btn drac-bg-yellow-pink drac-btn\\"
           color=\\"yellowPink\\"
           style=\\"margin: 1rem\\"
           disabled=\\"\\"
         >
-          <span class=\\"drac-text drac-text drac-text drac-text-black\\"
-            >Normal</span
-          >
+          <span class=\\"drac-text drac-text drac-text\\">Normal</span>
         </button>
       </div>
       <div class=\\"drac-box\\">
@@ -860,18 +744,14 @@ Object {
           color=\\"cyanGreen\\"
           style=\\"margin: 1rem\\"
         >
-          <span class=\\"drac-text drac-text drac-text drac-text-black\\"
-            >Normal</span
-          ></button
+          <span class=\\"drac-text drac-text drac-text\\">Normal</span></button
         ><button
           class=\\"drac-btn drac-bg-cyan-green drac-btn\\"
           color=\\"cyanGreen\\"
           style=\\"margin: 1rem\\"
           disabled=\\"\\"
         >
-          <span class=\\"drac-text drac-text drac-text drac-text-black\\"
-            >Normal</span
-          >
+          <span class=\\"drac-text drac-text drac-text\\">Normal</span>
         </button>
       </div>
       <div class=\\"drac-box\\">
@@ -936,18 +816,14 @@ Object {
           color=\\"pinkPurple\\"
           style=\\"margin: 1rem\\"
         >
-          <span class=\\"drac-text drac-text drac-text drac-text-black\\"
-            >Normal</span
-          ></button
+          <span class=\\"drac-text drac-text drac-text\\">Normal</span></button
         ><button
           class=\\"drac-btn drac-bg-pink-purple drac-btn\\"
           color=\\"pinkPurple\\"
           style=\\"margin: 1rem\\"
           disabled=\\"\\"
         >
-          <span class=\\"drac-text drac-text drac-text drac-text-black\\"
-            >Normal</span
-          >
+          <span class=\\"drac-text drac-text drac-text\\">Normal</span>
         </button>
       </div>
       <div class=\\"drac-box\\">
@@ -1012,18 +888,14 @@ Object {
           color=\\"animated\\"
           style=\\"margin: 1rem\\"
         >
-          <span class=\\"drac-text drac-text drac-text drac-text-black\\"
-            >Normal</span
-          ></button
+          <span class=\\"drac-text drac-text drac-text\\">Normal</span></button
         ><button
           class=\\"drac-btn drac-bg-animated drac-btn\\"
           color=\\"animated\\"
           style=\\"margin: 1rem\\"
           disabled=\\"\\"
         >
-          <span class=\\"drac-text drac-text drac-text drac-text-black\\"
-            >Normal</span
-          >
+          <span class=\\"drac-text drac-text drac-text\\">Normal</span>
         </button>
       </div>
       <div class=\\"drac-box\\">
@@ -1084,34 +956,6 @@ Object {
 ",
   "react": "<div>
   <Box style={{...}}>
-    <Box>
-      <Box style={{...}}>
-        <Box>
-          <Button color=\\"black\\" style={{...}}>
-            Normal
-          </Button>
-          <Button color=\\"black\\" style={{...}} disabled={true}>
-            Normal
-          </Button>
-        </Box>
-        <Box>
-          <Button color=\\"black\\" style={{...}} variant=\\"ghost\\">
-            Ghost
-          </Button>
-          <Button color=\\"black\\" style={{...}} variant=\\"ghost\\" disabled={true}>
-            Ghost
-          </Button>
-        </Box>
-        <Box>
-          <Button color=\\"black\\" style={{...}} variant=\\"outline\\">
-            Outline
-          </Button>
-          <Button color=\\"black\\" style={{...}} variant=\\"outline\\" disabled={true}>
-            Outline
-          </Button>
-        </Box>
-      </Box>
-    </Box>
     <Box>
       <Box style={{...}}>
         <Box>
@@ -1495,7 +1339,7 @@ Object {
       variant=\\"normal\\"
       color=\\"purple\\"
     >
-      <span class=\\"drac-text drac-text drac-text drac-text-black\\">normal</span>
+      <span class=\\"drac-text drac-text drac-text\\">normal</span>
     </button>
   </div>
   <div style=\\"margin-bottom: 10px\\" class=\\"drac-box\\">
