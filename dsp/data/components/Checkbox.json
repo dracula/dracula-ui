@@ -1,22 +1,22 @@
 {
   "dsp_spec_version": "0.0.1",
   "last_updated_by": "System",
-  "last_updated": "2020-10-07T00:01:19.556Z",
+  "last_updated": "2020-10-07T00:13:50.951Z",
   "entities": [
     {
       "class": "component",
       "type": "page",
       "id": "Checkbox",
       "name": "Checkbox",
-      "last_updated": "2020-10-07T00:01:19.556Z",
+      "last_updated": "2020-10-07T00:13:50.950Z",
       "last_updated_by": "System",
       "description": "Checkbox is a styled HTML Input of type checkbox.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep check boxes accessible.",
       "related_entity_ids": [],
       "tags": ["component"],
       "snippets": {
-        "trigger": "Checkbox",
+        "trigger": "checkbox",
         "languages": {
-          "javascript": "<div style={{...}}>\n  <div style={{...}}>\n    <Checkbox id=\"one\" defaultChecked={true} color=\"purple\" name=\"demo\" />\n    <label htmlFor=\"one\" className=\"drac-text drac-text-white\">\n      Option 1\n    </label>\n  </div>\n  <div style={{...}}>\n    <Checkbox id=\"two\" color=\"purple\" name=\"demo\" />\n    <label htmlFor=\"two\" className=\"drac-text drac-text-white\">\n      Option 2\n    </label>\n  </div>\n  <div style={{...}}>\n    <Checkbox id=\"three\" color=\"purple\" name=\"demo\" />\n    <label htmlFor=\"three\" className=\"drac-text drac-text-white\">\n      Option 3\n    </label>\n  </div>\n</div>",
+          "react": "<div style={{...}}>\n  <div style={{...}}>\n    <Checkbox id=\"one\" defaultChecked={true} color=\"purple\" name=\"demo\" />\n    <label htmlFor=\"one\" className=\"drac-text drac-text-white\">\n      Option 1\n    </label>\n  </div>\n  <div style={{...}}>\n    <Checkbox id=\"two\" color=\"purple\" name=\"demo\" />\n    <label htmlFor=\"two\" className=\"drac-text drac-text-white\">\n      Option 2\n    </label>\n  </div>\n  <div style={{...}}>\n    <Checkbox id=\"three\" color=\"purple\" name=\"demo\" />\n    <label htmlFor=\"three\" className=\"drac-text drac-text-white\">\n      Option 3\n    </label>\n  </div>\n</div>",
           "html": "<div style=\"display: flex; flex-direction: column; padding: 3rem\">\n  <div style=\"margin-bottom: 10px\">\n    <input\n      type=\"checkbox\"\n      id=\"one\"\n      color=\"purple\"\n      name=\"demo\"\n      class=\"drac-checkbox drac-checkbox-purple\"\n      checked=\"\"\n    /><label for=\"one\" class=\"drac-text drac-text-white\">Option 1</label>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <input\n      type=\"checkbox\"\n      id=\"two\"\n      color=\"purple\"\n      name=\"demo\"\n      class=\"drac-checkbox drac-checkbox-purple\"\n    /><label for=\"two\" class=\"drac-text drac-text-white\">Option 2</label>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <input\n      type=\"checkbox\"\n      id=\"three\"\n      color=\"purple\"\n      name=\"demo\"\n      class=\"drac-checkbox drac-checkbox-purple\"\n    /><label for=\"three\" class=\"drac-text drac-text-white\">Option 3</label>\n  </div>\n</div>\n"
         }
       },

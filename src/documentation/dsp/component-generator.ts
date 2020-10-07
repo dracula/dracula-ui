@@ -13,10 +13,7 @@ type Component = {
   related_entity_ids: string[]
   snippets: {
     trigger: string
-    languages: {
-      javascript: string
-      html: string
-    }
+    languages: Record<string, string>
   }
   ext_com_draculaui_variations: ComponentExample[]
   ext_com_draculaui_props: dg.ComponentDoc['props']
@@ -41,9 +38,9 @@ export function toDSP(
     related_entity_ids: [],
     tags: ['component'],
     snippets: {
-      trigger: name,
+      trigger: name.toLocaleLowerCase(),
       languages: {
-        javascript: basicUsage.react,
+        react: basicUsage.react,
         html: basicUsage.html
       }
     },

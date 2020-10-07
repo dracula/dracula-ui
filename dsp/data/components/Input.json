@@ -1,22 +1,22 @@
 {
   "dsp_spec_version": "0.0.1",
   "last_updated_by": "System",
-  "last_updated": "2020-10-07T00:01:16.003Z",
+  "last_updated": "2020-10-07T00:13:49.122Z",
   "entities": [
     {
       "class": "component",
       "type": "page",
       "id": "Input",
       "name": "Input",
-      "last_updated": "2020-10-07T00:01:16.003Z",
+      "last_updated": "2020-10-07T00:13:49.122Z",
       "last_updated_by": "System",
       "description": "Input is a styled HTML Input.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep inputs accessible.",
       "related_entity_ids": [],
       "tags": ["component"],
       "snippets": {
-        "trigger": "Input",
+        "trigger": "input",
         "languages": {
-          "javascript": "<div style={{...}}>\n  <Input placeholder=\"Placeholder\" variant=\"normal\" color=\"white\" style={{...}} />\n  <Input placeholder=\"Placeholder\" variant=\"outline\" color=\"white\" style={{...}} />\n</div>",
+          "react": "<div style={{...}}>\n  <Input placeholder=\"Placeholder\" variant=\"normal\" color=\"white\" style={{...}} />\n  <Input placeholder=\"Placeholder\" variant=\"outline\" color=\"white\" style={{...}} />\n</div>",
           "html": "<div style=\"display: flex; flex-direction: column; padding: 3rem\">\n  <input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"white\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-text drac-text-md drac-input drac-input-white drac-text-white\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"white\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-text drac-text-md drac-input-outline drac-input-white drac-text-white\"\n  />\n</div>\n"
         }
       },

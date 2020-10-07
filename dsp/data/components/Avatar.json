@@ -1,22 +1,22 @@
 {
   "dsp_spec_version": "0.0.1",
   "last_updated_by": "System",
-  "last_updated": "2020-10-07T00:01:20.483Z",
+  "last_updated": "2020-10-07T00:13:55.232Z",
   "entities": [
     {
       "class": "component",
       "type": "page",
       "id": "Avatar",
       "name": "Avatar",
-      "last_updated": "2020-10-07T00:01:20.483Z",
+      "last_updated": "2020-10-07T00:13:55.232Z",
       "last_updated_by": "System",
       "description": "The Avatar component is used to represent a user.\n\nIt displays a profile picture, or falls back to the user's initials\nif a profile pic is not provided.",
       "related_entity_ids": [],
       "tags": ["component"],
       "snippets": {
-        "trigger": "Avatar",
+        "trigger": "avatar",
         "languages": {
-          "javascript": "<div>\n  <Avatar title=\"Netto Farah\" src=\"https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg\" />\n</div>",
+          "react": "<div>\n  <Avatar title=\"Netto Farah\" src=\"https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg\" />\n</div>",
           "html": "<span\n  class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar\"\n  style=\"\n    background-image: url(https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg);\n  \"\n></span>\n"
         }
       },

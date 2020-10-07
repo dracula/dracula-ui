@@ -1,22 +1,22 @@
 {
   "dsp_spec_version": "0.0.1",
   "last_updated_by": "System",
-  "last_updated": "2020-10-07T00:01:15.865Z",
+  "last_updated": "2020-10-07T00:13:49.263Z",
   "entities": [
     {
       "class": "component",
       "type": "page",
       "id": "Tabs",
       "name": "Tabs",
-      "last_updated": "2020-10-07T00:01:15.865Z",
+      "last_updated": "2020-10-07T00:13:49.263Z",
       "last_updated_by": "System",
       "description": "Tabs are horizontal navigation elements used to display\ncontent within the same page.",
       "related_entity_ids": [],
       "tags": ["component"],
       "snippets": {
-        "trigger": "Tabs",
+        "trigger": "tabs",
         "languages": {
-          "javascript": "<div>\n  <Tabs color=\"purple\">\n    <li className=\"drac-tab drac-tab-active\">\n      <a className=\"drac-tab-link drac-text\" href=\"#\">\n        Item One\n      </a>\n    </li>\n    <li className=\"drac-tab\">\n      <a className=\"drac-tab-link drac-text\" href=\"#\">\n        Item Two\n      </a>\n    </li>\n    <li className=\"drac-tab\">\n      <a className=\"drac-tab-link drac-text\" href=\"#\">\n        Item Three\n      </a>\n    </li>\n  </Tabs>\n</div>",
+          "react": "<div>\n  <Tabs color=\"purple\">\n    <li className=\"drac-tab drac-tab-active\">\n      <a className=\"drac-tab-link drac-text\" href=\"#\">\n        Item One\n      </a>\n    </li>\n    <li className=\"drac-tab\">\n      <a className=\"drac-tab-link drac-text\" href=\"#\">\n        Item Two\n      </a>\n    </li>\n    <li className=\"drac-tab\">\n      <a className=\"drac-tab-link drac-text\" href=\"#\">\n        Item Three\n      </a>\n    </li>\n  </Tabs>\n</div>",
           "html": "<ul color=\"purple\" class=\"drac-tabs drac-tabs-purple\">\n  <li class=\"drac-tab drac-tab-active\">\n    <a class=\"drac-tab-link drac-text\" href=\"#\">Item One</a>\n  </li>\n  <li class=\"drac-tab\">\n    <a class=\"drac-tab-link drac-text\" href=\"#\">Item Two</a>\n  </li>\n  <li class=\"drac-tab\">\n    <a class=\"drac-tab-link drac-text\" href=\"#\">Item Three</a>\n  </li>\n</ul>\n"
         }
       },

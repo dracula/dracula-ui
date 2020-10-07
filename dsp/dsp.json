@@ -1,24 +1,22 @@
 {
   "dsp_spec_version": "0.0.1",
-  "last_updated_by": "",
+  "last_updated_by": "System",
   "last_updated": "2020-09-30T21:16:45.280Z",
   "settings": {
     "name": "Dracula UI",
-    "package_version": "0.0.1",
-    "build_tool": "StyleDictionary",
+    "package_version": "0.1.0",
     "snippet_trigger_prefix": "drac_",
     "build_status_label": "dev",
-    "build_params": "-c ./config.json",
     "languages": [
       {
-        "type": "css",
-        "label": "CSS",
-        "selected": true
+        "label": "HTML",
+        "snippet_id": "html",
+        "syntax": "text/html"
       },
       {
-        "type": "javascript",
-        "label": "JavaScript",
-        "selected": true
+        "label": "React",
+        "snippet_id": "react",
+        "syntax": "text/typescript-jsx"
       }
     ]
   },
