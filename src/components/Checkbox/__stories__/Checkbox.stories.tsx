@@ -7,39 +7,12 @@ export default {
 
 export const CheckboxNormal = () => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}>
-      <div style={{ marginBottom: 10 }}>
-        <Checkbox
-          id="one"
-          defaultChecked
-          color={'purple' as CheckboxProps['color']}
-          name="demo"
-        />
-        <label htmlFor="one" className="drac-text drac-text-white">
-          Option 1
-        </label>
-      </div>
-      <div style={{ marginBottom: 10 }}>
-        <Checkbox
-          id="two"
-          color={'purple' as CheckboxProps['color']}
-          name="demo"
-        />
-        <label htmlFor="two" className="drac-text drac-text-white">
-          Option 2
-        </label>
-      </div>
-      <div style={{ marginBottom: 10 }}>
-        <Checkbox
-          id="three"
-          color={'purple' as CheckboxProps['color']}
-          name="demo"
-        />
-        <label htmlFor="three" className="drac-text drac-text-white">
-          Option 3
-        </label>
-      </div>
-    </div>
+    <Checkbox
+      id="one"
+      defaultChecked
+      color={'purple' as CheckboxProps['color']}
+      name="demo"
+    />
   )
 }
 

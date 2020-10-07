@@ -3,26 +3,14 @@
 exports[`Site: Input Basic Usage 1`] = `
 Object {
   "docs": "",
-  "html": "<div style=\\"display: flex; flex-direction: column; padding: 3rem\\">
-  <input
-    placeholder=\\"Placeholder\\"
-    variant=\\"normal\\"
-    color=\\"white\\"
-    style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-text drac-text-md drac-input drac-input-white drac-text-white\\"
-  /><input
-    placeholder=\\"Placeholder\\"
-    variant=\\"outline\\"
-    color=\\"white\\"
-    style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-text drac-text-md drac-input-outline drac-input-white drac-text-white\\"
-  />
-</div>
+  "html": "<input
+  placeholder=\\"Placeholder\\"
+  color=\\"white\\"
+  class=\\"drac-input drac-text drac-text-md drac-input-white drac-text-white\\"
+/>
 ",
-  "react": "<div style={{...}}>
-  <Input placeholder=\\"Placeholder\\" variant=\\"normal\\" color=\\"white\\" style={{...}} />
-  <Input placeholder=\\"Placeholder\\" variant=\\"outline\\" color=\\"white\\" style={{...}} />
-</div>",
+  "react": "<Input placeholder=\\"Placeholder\\" color=\\"white\\" />;
+",
   "title": "Usage",
 }
 `;
@@ -202,36 +190,215 @@ Object {
   />
 </div>
 ",
-  "react": "<div style={{...}}>
-  <Input placeholder=\\"Placeholder\\" variant=\\"outline\\" color=\\"black\\" style={{...}} />
-  <Input placeholder=\\"Placeholder\\" variant=\\"outline\\" color=\\"white\\" style={{...}} />
-  <Input placeholder=\\"Placeholder\\" variant=\\"outline\\" color=\\"cyan\\" style={{...}} />
-  <Input placeholder=\\"Placeholder\\" variant=\\"outline\\" color=\\"green\\" style={{...}} />
-  <Input placeholder=\\"Placeholder\\" variant=\\"outline\\" color=\\"orange\\" style={{...}} />
-  <Input placeholder=\\"Placeholder\\" variant=\\"outline\\" color=\\"pink\\" style={{...}} />
-  <Input placeholder=\\"Placeholder\\" variant=\\"outline\\" color=\\"purple\\" style={{...}} />
-  <Input placeholder=\\"Placeholder\\" variant=\\"outline\\" color=\\"red\\" style={{...}} />
-  <Input placeholder=\\"Placeholder\\" variant=\\"outline\\" color=\\"yellow\\" style={{...}} />
-  <Input placeholder=\\"Placeholder\\" variant=\\"outline\\" color=\\"animated\\" style={{...}} />
-  <Input placeholder=\\"Placeholder\\" variant=\\"outline\\" color=\\"cyanGreen\\" style={{...}} />
-  <Input placeholder=\\"Placeholder\\" variant=\\"outline\\" color=\\"pinkPurple\\" style={{...}} />
-  <Input placeholder=\\"Placeholder\\" variant=\\"outline\\" color=\\"purpleCyan\\" style={{...}} />
-  <Input placeholder=\\"Placeholder\\" variant=\\"outline\\" color=\\"yellowPink\\" style={{...}} />
-  <Input placeholder=\\"Placeholder\\" variant=\\"normal\\" color=\\"black\\" style={{...}} />
-  <Input placeholder=\\"Placeholder\\" variant=\\"normal\\" color=\\"white\\" style={{...}} />
-  <Input placeholder=\\"Placeholder\\" variant=\\"normal\\" color=\\"cyan\\" style={{...}} />
-  <Input placeholder=\\"Placeholder\\" variant=\\"normal\\" color=\\"green\\" style={{...}} />
-  <Input placeholder=\\"Placeholder\\" variant=\\"normal\\" color=\\"orange\\" style={{...}} />
-  <Input placeholder=\\"Placeholder\\" variant=\\"normal\\" color=\\"pink\\" style={{...}} />
-  <Input placeholder=\\"Placeholder\\" variant=\\"normal\\" color=\\"purple\\" style={{...}} />
-  <Input placeholder=\\"Placeholder\\" variant=\\"normal\\" color=\\"red\\" style={{...}} />
-  <Input placeholder=\\"Placeholder\\" variant=\\"normal\\" color=\\"yellow\\" style={{...}} />
-  <Input placeholder=\\"Placeholder\\" variant=\\"normal\\" color=\\"animated\\" style={{...}} />
-  <Input placeholder=\\"Placeholder\\" variant=\\"normal\\" color=\\"cyanGreen\\" style={{...}} />
-  <Input placeholder=\\"Placeholder\\" variant=\\"normal\\" color=\\"pinkPurple\\" style={{...}} />
-  <Input placeholder=\\"Placeholder\\" variant=\\"normal\\" color=\\"purpleCyan\\" style={{...}} />
-  <Input placeholder=\\"Placeholder\\" variant=\\"normal\\" color=\\"yellowPink\\" style={{...}} />
-</div>",
+  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\", padding: \\"3rem\\" }}>
+  <Input
+    placeholder=\\"Placeholder\\"
+    variant=\\"outline\\"
+    color=\\"black\\"
+    style={{ marginBottom: 20 }}
+  />
+  <Input
+    placeholder=\\"Placeholder\\"
+    variant=\\"outline\\"
+    color=\\"white\\"
+    style={{ marginBottom: 20 }}
+  />
+  <Input
+    placeholder=\\"Placeholder\\"
+    variant=\\"outline\\"
+    color=\\"cyan\\"
+    style={{ marginBottom: 20 }}
+  />
+  <Input
+    placeholder=\\"Placeholder\\"
+    variant=\\"outline\\"
+    color=\\"green\\"
+    style={{ marginBottom: 20 }}
+  />
+  <Input
+    placeholder=\\"Placeholder\\"
+    variant=\\"outline\\"
+    color=\\"orange\\"
+    style={{ marginBottom: 20 }}
+  />
+  <Input
+    placeholder=\\"Placeholder\\"
+    variant=\\"outline\\"
+    color=\\"pink\\"
+    style={{ marginBottom: 20 }}
+  />
+  <Input
+    placeholder=\\"Placeholder\\"
+    variant=\\"outline\\"
+    color=\\"purple\\"
+    style={{ marginBottom: 20 }}
+  />
+  <Input
+    placeholder=\\"Placeholder\\"
+    variant=\\"outline\\"
+    color=\\"red\\"
+    style={{ marginBottom: 20 }}
+  />
+  <Input
+    placeholder=\\"Placeholder\\"
+    variant=\\"outline\\"
+    color=\\"yellow\\"
+    style={{ marginBottom: 20 }}
+  />
+  <Input
+    placeholder=\\"Placeholder\\"
+    variant=\\"outline\\"
+    color=\\"animated\\"
+    style={{ marginBottom: 20 }}
+  />
+  <Input
+    placeholder=\\"Placeholder\\"
+    variant=\\"outline\\"
+    color=\\"cyanGreen\\"
+    style={{ marginBottom: 20 }}
+  />
+  <Input
+    placeholder=\\"Placeholder\\"
+    variant=\\"outline\\"
+    color=\\"pinkPurple\\"
+    style={{ marginBottom: 20 }}
+  />
+  <Input
+    placeholder=\\"Placeholder\\"
+    variant=\\"outline\\"
+    color=\\"purpleCyan\\"
+    style={{ marginBottom: 20 }}
+  />
+  <Input
+    placeholder=\\"Placeholder\\"
+    variant=\\"outline\\"
+    color=\\"yellowPink\\"
+    style={{ marginBottom: 20 }}
+  />
+  <Input
+    placeholder=\\"Placeholder\\"
+    variant=\\"normal\\"
+    color=\\"black\\"
+    style={{ marginBottom: 20 }}
+  />
+  <Input
+    placeholder=\\"Placeholder\\"
+    variant=\\"normal\\"
+    color=\\"white\\"
+    style={{ marginBottom: 20 }}
+  />
+  <Input
+    placeholder=\\"Placeholder\\"
+    variant=\\"normal\\"
+    color=\\"cyan\\"
+    style={{ marginBottom: 20 }}
+  />
+  <Input
+    placeholder=\\"Placeholder\\"
+    variant=\\"normal\\"
+    color=\\"green\\"
+    style={{ marginBottom: 20 }}
+  />
+  <Input
+    placeholder=\\"Placeholder\\"
+    variant=\\"normal\\"
+    color=\\"orange\\"
+    style={{ marginBottom: 20 }}
+  />
+  <Input
+    placeholder=\\"Placeholder\\"
+    variant=\\"normal\\"
+    color=\\"pink\\"
+    style={{ marginBottom: 20 }}
+  />
+  <Input
+    placeholder=\\"Placeholder\\"
+    variant=\\"normal\\"
+    color=\\"purple\\"
+    style={{ marginBottom: 20 }}
+  />
+  <Input
+    placeholder=\\"Placeholder\\"
+    variant=\\"normal\\"
+    color=\\"red\\"
+    style={{ marginBottom: 20 }}
+  />
+  <Input
+    placeholder=\\"Placeholder\\"
+    variant=\\"normal\\"
+    color=\\"yellow\\"
+    style={{ marginBottom: 20 }}
+  />
+  <Input
+    placeholder=\\"Placeholder\\"
+    variant=\\"normal\\"
+    color=\\"animated\\"
+    style={{ marginBottom: 20 }}
+  />
+  <Input
+    placeholder=\\"Placeholder\\"
+    variant=\\"normal\\"
+    color=\\"cyanGreen\\"
+    style={{ marginBottom: 20 }}
+  />
+  <Input
+    placeholder=\\"Placeholder\\"
+    variant=\\"normal\\"
+    color=\\"pinkPurple\\"
+    style={{ marginBottom: 20 }}
+  />
+  <Input
+    placeholder=\\"Placeholder\\"
+    variant=\\"normal\\"
+    color=\\"purpleCyan\\"
+    style={{ marginBottom: 20 }}
+  />
+  <Input
+    placeholder=\\"Placeholder\\"
+    variant=\\"normal\\"
+    color=\\"yellowPink\\"
+    style={{ marginBottom: 20 }}
+  />
+</div>;
+",
   "title": "Colors",
+}
+`;
+
+exports[`Site: Input Variants 1`] = `
+Object {
+  "docs": "",
+  "html": "<div style=\\"display: flex; flex-direction: column; padding: 3rem\\">
+  <input
+    placeholder=\\"Placeholder\\"
+    variant=\\"normal\\"
+    color=\\"white\\"
+    style=\\"margin-bottom: 20px\\"
+    class=\\"drac-input drac-text drac-text-md drac-input drac-input-white drac-text-white\\"
+  /><input
+    placeholder=\\"Placeholder\\"
+    variant=\\"outline\\"
+    color=\\"white\\"
+    style=\\"margin-bottom: 20px\\"
+    class=\\"drac-input drac-text drac-text-md drac-input-outline drac-input-white drac-text-white\\"
+  />
+</div>
+",
+  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\", padding: \\"3rem\\" }}>
+  <Input
+    placeholder=\\"Placeholder\\"
+    variant=\\"normal\\"
+    color=\\"white\\"
+    style={{ marginBottom: 20 }}
+  />
+  <Input
+    placeholder=\\"Placeholder\\"
+    variant=\\"outline\\"
+    color=\\"white\\"
+    style={{ marginBottom: 20 }}
+  />
+</div>;
+",
+  "title": "Variants",
 }
 `;

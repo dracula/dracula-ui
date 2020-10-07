@@ -6,14 +6,18 @@ import {
 import { siteDocs } from '@/documentation/site-docs'
 import {
   InputVariants,
-  InputColors
+  InputColors,
+  InputBasic
 } from '@/components/Input/__stories__/Input.stories'
 
 siteDocs(Input, {
   basicUsage() {
-    return buildSnapshot('Usage', InputVariants)
+    return buildSnapshot('Usage', InputBasic)
   },
   variations() {
-    return [buildSnapshot('Colors', InputColors)] as SnapshotBuilder[]
+    return [
+      buildSnapshot('Colors', InputColors),
+      buildSnapshot('Variants', InputVariants)
+    ] as SnapshotBuilder[]
   }
 })

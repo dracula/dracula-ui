@@ -7,11 +7,8 @@ Object {
   <span class=\\"drac-text drac-text drac-text drac-text-white\\">Normal</span>
 </button>
 ",
-  "react": "<div>
-  <Button color=\\"purple\\">
-    Normal
-  </Button>
-</div>",
+  "react": "<Button color=\\"purple\\">Normal</Button>;
+",
   "title": "Usage",
 }
 `;
@@ -431,153 +428,152 @@ Object {
   </div>
 </div>
 ",
-  "react": "<div>
-  <Box>
-    <Box style={{...}}>
-      <Button color=\\"white\\" style={{...}}>
-        Normal
-      </Button>
-      <Button color=\\"white\\" style={{...}} variant=\\"outline\\">
-        Outline
-      </Button>
-      <Button color=\\"white\\" style={{...}} variant=\\"ghost\\">
-        Ghost
-      </Button>
-    </Box>
-    <Box style={{...}}>
-      <Button color=\\"cyan\\" style={{...}}>
-        Normal
-      </Button>
-      <Button color=\\"cyan\\" style={{...}} variant=\\"outline\\">
-        Outline
-      </Button>
-      <Button color=\\"cyan\\" style={{...}} variant=\\"ghost\\">
-        Ghost
-      </Button>
-    </Box>
-    <Box style={{...}}>
-      <Button color=\\"green\\" style={{...}}>
-        Normal
-      </Button>
-      <Button color=\\"green\\" style={{...}} variant=\\"outline\\">
-        Outline
-      </Button>
-      <Button color=\\"green\\" style={{...}} variant=\\"ghost\\">
-        Ghost
-      </Button>
-    </Box>
-    <Box style={{...}}>
-      <Button color=\\"orange\\" style={{...}}>
-        Normal
-      </Button>
-      <Button color=\\"orange\\" style={{...}} variant=\\"outline\\">
-        Outline
-      </Button>
-      <Button color=\\"orange\\" style={{...}} variant=\\"ghost\\">
-        Ghost
-      </Button>
-    </Box>
-    <Box style={{...}}>
-      <Button color=\\"pink\\" style={{...}}>
-        Normal
-      </Button>
-      <Button color=\\"pink\\" style={{...}} variant=\\"outline\\">
-        Outline
-      </Button>
-      <Button color=\\"pink\\" style={{...}} variant=\\"ghost\\">
-        Ghost
-      </Button>
-    </Box>
-    <Box style={{...}}>
-      <Button color=\\"purple\\" style={{...}}>
-        Normal
-      </Button>
-      <Button color=\\"purple\\" style={{...}} variant=\\"outline\\">
-        Outline
-      </Button>
-      <Button color=\\"purple\\" style={{...}} variant=\\"ghost\\">
-        Ghost
-      </Button>
-    </Box>
-    <Box style={{...}}>
-      <Button color=\\"red\\" style={{...}}>
-        Normal
-      </Button>
-      <Button color=\\"red\\" style={{...}} variant=\\"outline\\">
-        Outline
-      </Button>
-      <Button color=\\"red\\" style={{...}} variant=\\"ghost\\">
-        Ghost
-      </Button>
-    </Box>
-    <Box style={{...}}>
-      <Button color=\\"yellow\\" style={{...}}>
-        Normal
-      </Button>
-      <Button color=\\"yellow\\" style={{...}} variant=\\"outline\\">
-        Outline
-      </Button>
-      <Button color=\\"yellow\\" style={{...}} variant=\\"ghost\\">
-        Ghost
-      </Button>
-    </Box>
-    <Box style={{...}}>
-      <Button color=\\"purpleCyan\\" style={{...}}>
-        Normal
-      </Button>
-      <Button color=\\"purpleCyan\\" style={{...}} variant=\\"outline\\">
-        Outline
-      </Button>
-      <Button color=\\"purpleCyan\\" style={{...}} variant=\\"ghost\\">
-        Ghost
-      </Button>
-    </Box>
-    <Box style={{...}}>
-      <Button color=\\"yellowPink\\" style={{...}}>
-        Normal
-      </Button>
-      <Button color=\\"yellowPink\\" style={{...}} variant=\\"outline\\">
-        Outline
-      </Button>
-      <Button color=\\"yellowPink\\" style={{...}} variant=\\"ghost\\">
-        Ghost
-      </Button>
-    </Box>
-    <Box style={{...}}>
-      <Button color=\\"cyanGreen\\" style={{...}}>
-        Normal
-      </Button>
-      <Button color=\\"cyanGreen\\" style={{...}} variant=\\"outline\\">
-        Outline
-      </Button>
-      <Button color=\\"cyanGreen\\" style={{...}} variant=\\"ghost\\">
-        Ghost
-      </Button>
-    </Box>
-    <Box style={{...}}>
-      <Button color=\\"pinkPurple\\" style={{...}}>
-        Normal
-      </Button>
-      <Button color=\\"pinkPurple\\" style={{...}} variant=\\"outline\\">
-        Outline
-      </Button>
-      <Button color=\\"pinkPurple\\" style={{...}} variant=\\"ghost\\">
-        Ghost
-      </Button>
-    </Box>
-    <Box style={{...}}>
-      <Button color=\\"animated\\" style={{...}}>
-        Normal
-      </Button>
-      <Button color=\\"animated\\" style={{...}} variant=\\"outline\\">
-        Outline
-      </Button>
-      <Button color=\\"animated\\" style={{...}} variant=\\"ghost\\">
-        Ghost
-      </Button>
-    </Box>
+  "react": "<Box>
+  <Box style={{ display: \\"flex\\", justifyContent: \\"space-around\\" }}>
+    <Button color=\\"white\\" style={{ margin: \\"1rem\\" }}>
+      Normal
+    </Button>
+    <Button color=\\"white\\" style={{ margin: \\"1rem\\" }} variant=\\"outline\\">
+      Outline
+    </Button>
+    <Button color=\\"white\\" style={{ margin: \\"1rem\\" }} variant=\\"ghost\\">
+      Ghost
+    </Button>
   </Box>
-</div>",
+  <Box style={{ display: \\"flex\\", justifyContent: \\"space-around\\" }}>
+    <Button color=\\"cyan\\" style={{ margin: \\"1rem\\" }}>
+      Normal
+    </Button>
+    <Button color=\\"cyan\\" style={{ margin: \\"1rem\\" }} variant=\\"outline\\">
+      Outline
+    </Button>
+    <Button color=\\"cyan\\" style={{ margin: \\"1rem\\" }} variant=\\"ghost\\">
+      Ghost
+    </Button>
+  </Box>
+  <Box style={{ display: \\"flex\\", justifyContent: \\"space-around\\" }}>
+    <Button color=\\"green\\" style={{ margin: \\"1rem\\" }}>
+      Normal
+    </Button>
+    <Button color=\\"green\\" style={{ margin: \\"1rem\\" }} variant=\\"outline\\">
+      Outline
+    </Button>
+    <Button color=\\"green\\" style={{ margin: \\"1rem\\" }} variant=\\"ghost\\">
+      Ghost
+    </Button>
+  </Box>
+  <Box style={{ display: \\"flex\\", justifyContent: \\"space-around\\" }}>
+    <Button color=\\"orange\\" style={{ margin: \\"1rem\\" }}>
+      Normal
+    </Button>
+    <Button color=\\"orange\\" style={{ margin: \\"1rem\\" }} variant=\\"outline\\">
+      Outline
+    </Button>
+    <Button color=\\"orange\\" style={{ margin: \\"1rem\\" }} variant=\\"ghost\\">
+      Ghost
+    </Button>
+  </Box>
+  <Box style={{ display: \\"flex\\", justifyContent: \\"space-around\\" }}>
+    <Button color=\\"pink\\" style={{ margin: \\"1rem\\" }}>
+      Normal
+    </Button>
+    <Button color=\\"pink\\" style={{ margin: \\"1rem\\" }} variant=\\"outline\\">
+      Outline
+    </Button>
+    <Button color=\\"pink\\" style={{ margin: \\"1rem\\" }} variant=\\"ghost\\">
+      Ghost
+    </Button>
+  </Box>
+  <Box style={{ display: \\"flex\\", justifyContent: \\"space-around\\" }}>
+    <Button color=\\"purple\\" style={{ margin: \\"1rem\\" }}>
+      Normal
+    </Button>
+    <Button color=\\"purple\\" style={{ margin: \\"1rem\\" }} variant=\\"outline\\">
+      Outline
+    </Button>
+    <Button color=\\"purple\\" style={{ margin: \\"1rem\\" }} variant=\\"ghost\\">
+      Ghost
+    </Button>
+  </Box>
+  <Box style={{ display: \\"flex\\", justifyContent: \\"space-around\\" }}>
+    <Button color=\\"red\\" style={{ margin: \\"1rem\\" }}>
+      Normal
+    </Button>
+    <Button color=\\"red\\" style={{ margin: \\"1rem\\" }} variant=\\"outline\\">
+      Outline
+    </Button>
+    <Button color=\\"red\\" style={{ margin: \\"1rem\\" }} variant=\\"ghost\\">
+      Ghost
+    </Button>
+  </Box>
+  <Box style={{ display: \\"flex\\", justifyContent: \\"space-around\\" }}>
+    <Button color=\\"yellow\\" style={{ margin: \\"1rem\\" }}>
+      Normal
+    </Button>
+    <Button color=\\"yellow\\" style={{ margin: \\"1rem\\" }} variant=\\"outline\\">
+      Outline
+    </Button>
+    <Button color=\\"yellow\\" style={{ margin: \\"1rem\\" }} variant=\\"ghost\\">
+      Ghost
+    </Button>
+  </Box>
+  <Box style={{ display: \\"flex\\", justifyContent: \\"space-around\\" }}>
+    <Button color=\\"purpleCyan\\" style={{ margin: \\"1rem\\" }}>
+      Normal
+    </Button>
+    <Button color=\\"purpleCyan\\" style={{ margin: \\"1rem\\" }} variant=\\"outline\\">
+      Outline
+    </Button>
+    <Button color=\\"purpleCyan\\" style={{ margin: \\"1rem\\" }} variant=\\"ghost\\">
+      Ghost
+    </Button>
+  </Box>
+  <Box style={{ display: \\"flex\\", justifyContent: \\"space-around\\" }}>
+    <Button color=\\"yellowPink\\" style={{ margin: \\"1rem\\" }}>
+      Normal
+    </Button>
+    <Button color=\\"yellowPink\\" style={{ margin: \\"1rem\\" }} variant=\\"outline\\">
+      Outline
+    </Button>
+    <Button color=\\"yellowPink\\" style={{ margin: \\"1rem\\" }} variant=\\"ghost\\">
+      Ghost
+    </Button>
+  </Box>
+  <Box style={{ display: \\"flex\\", justifyContent: \\"space-around\\" }}>
+    <Button color=\\"cyanGreen\\" style={{ margin: \\"1rem\\" }}>
+      Normal
+    </Button>
+    <Button color=\\"cyanGreen\\" style={{ margin: \\"1rem\\" }} variant=\\"outline\\">
+      Outline
+    </Button>
+    <Button color=\\"cyanGreen\\" style={{ margin: \\"1rem\\" }} variant=\\"ghost\\">
+      Ghost
+    </Button>
+  </Box>
+  <Box style={{ display: \\"flex\\", justifyContent: \\"space-around\\" }}>
+    <Button color=\\"pinkPurple\\" style={{ margin: \\"1rem\\" }}>
+      Normal
+    </Button>
+    <Button color=\\"pinkPurple\\" style={{ margin: \\"1rem\\" }} variant=\\"outline\\">
+      Outline
+    </Button>
+    <Button color=\\"pinkPurple\\" style={{ margin: \\"1rem\\" }} variant=\\"ghost\\">
+      Ghost
+    </Button>
+  </Box>
+  <Box style={{ display: \\"flex\\", justifyContent: \\"space-around\\" }}>
+    <Button color=\\"animated\\" style={{ margin: \\"1rem\\" }}>
+      Normal
+    </Button>
+    <Button color=\\"animated\\" style={{ margin: \\"1rem\\" }} variant=\\"outline\\">
+      Outline
+    </Button>
+    <Button color=\\"animated\\" style={{ margin: \\"1rem\\" }} variant=\\"ghost\\">
+      Ghost
+    </Button>
+  </Box>
+</Box>;
+",
   "title": "Colors",
 }
 `;
@@ -623,25 +619,24 @@ Object {
   </div>
 </div>
 ",
-  "react": "<div>
-  <Box>
-    <Box style={{...}}>
-      <Button variant=\\"normal\\" color=\\"purple\\">
-        normal
-      </Button>
-    </Box>
-    <Box style={{...}}>
-      <Button variant=\\"outline\\" color=\\"purple\\">
-        outline
-      </Button>
-    </Box>
-    <Box style={{...}}>
-      <Button variant=\\"ghost\\" color=\\"purple\\">
-        ghost
-      </Button>
-    </Box>
+  "react": "<Box>
+  <Box style={{ marginBottom: 10 }}>
+    <Button variant=\\"normal\\" color=\\"purple\\">
+      normal
+    </Button>
   </Box>
-</div>",
+  <Box style={{ marginBottom: 10 }}>
+    <Button variant=\\"outline\\" color=\\"purple\\">
+      outline
+    </Button>
+  </Box>
+  <Box style={{ marginBottom: 10 }}>
+    <Button variant=\\"ghost\\" color=\\"purple\\">
+      ghost
+    </Button>
+  </Box>
+</Box>;
+",
   "title": "Variants",
 }
 `;

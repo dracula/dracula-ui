@@ -41,8 +41,12 @@ export function siteDocs<T>(
     afterAll(async () => {
       const docGen = getDocGen(name)
       const dsp = toDSP(name, examples, docGen)
-      const path = `${dspPath}/data/components/${name}.json`
 
+      await fs.mkdirp(`${dspPath}/data/components/`).catch(() => {
+        // folder already exists
+      })
+
+      const path = `${dspPath}/data/components/${name}.json`
       await fs.writeFile(path, pretty(JSON.stringify(dsp), 'json'))
     })
 

@@ -7,35 +7,12 @@ export default {
 
 export const SwitchNormal = () => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}>
-      <div style={{ marginBottom: 10 }}>
-        <Switch
-          id="one"
-          defaultChecked
-          color={'purple' as SwitchProps['color']}
-          name="demo"
-        />
-        <label htmlFor="one" className="drac-text drac-text-white">
-          Option 1
-        </label>
-      </div>
-      <div style={{ marginBottom: 10 }}>
-        <Switch id="two" color={'purple' as SwitchProps['color']} name="demo" />
-        <label htmlFor="two" className="drac-text drac-text-white">
-          Option 2
-        </label>
-      </div>
-      <div style={{ marginBottom: 10 }}>
-        <Switch
-          id="three"
-          color={'purple' as SwitchProps['color']}
-          name="demo"
-        />
-        <label htmlFor="three" className="drac-text drac-text-white">
-          Option 3
-        </label>
-      </div>
-    </div>
+    <Switch
+      id="one"
+      defaultChecked
+      color={'purple' as SwitchProps['color']}
+      name="demo"
+    />
   )
 }
 

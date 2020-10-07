@@ -6,14 +6,18 @@ import {
 import { siteDocs } from '@/documentation/site-docs'
 import {
   TableVariants,
-  TableColors
+  TableColors,
+  TableBasic
 } from '@/components/Table/__stories__/Table.stories'
 
 siteDocs(Table, {
   basicUsage() {
-    return buildSnapshot('Usage', TableVariants)
+    return buildSnapshot('Usage', TableBasic)
   },
   variations() {
-    return [buildSnapshot('Colors', TableColors)] as SnapshotBuilder[]
+    return [
+      buildSnapshot('Colors', TableColors),
+      buildSnapshot('Variants', TableVariants)
+    ] as SnapshotBuilder[]
   }
 })

@@ -5,6 +5,21 @@ export default {
   title: 'Select'
 }
 
+export const SelectBasic = () => {
+  return (
+    <Select defaultValue="default" color={'white'}>
+      <option value="default" disabled>
+        Select option
+      </option>
+      <option>Blade</option>
+      <option>Buffy</option>
+      <option>Lincoln</option>
+      <option>Morbius</option>
+      <option>Van Helsing</option>
+    </Select>
+  )
+}
+
 export const SelectVariants = () => {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}>

@@ -5,6 +5,38 @@ export default {
   title: 'Table'
 }
 
+export const TableBasic = () => (
+  <Table>
+    <thead>
+      <tr>
+        <th className="drac-text drac-text-white">Name</th>
+        <th className="drac-text drac-text-white">Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td className="drac-text drac-text-white">Nandor</td>
+        <td className="drac-text drac-text-white">758 years</td>
+      </tr>
+
+      <tr>
+        <td className="drac-text drac-text-white">Nadja</td>
+        <td className="drac-text drac-text-white">512 years</td>
+      </tr>
+
+      <tr>
+        <td className="drac-text drac-text-white">Laszlo</td>
+        <td className="drac-text drac-text-white">329 years</td>
+      </tr>
+
+      <tr>
+        <td className="drac-text drac-text-white">Colin</td>
+        <td className="drac-text drac-text-white">103 years</td>
+      </tr>
+    </tbody>
+  </Table>
+)
+
 export const TableVariants = () => {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}>

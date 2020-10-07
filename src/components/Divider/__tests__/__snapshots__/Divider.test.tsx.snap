@@ -3,13 +3,10 @@
 exports[`Site: Divider Basic Usage 1`] = `
 Object {
   "docs": "",
-  "html": "<div style=\\"padding: 3rem\\">
-  <hr color=\\"purple\\" class=\\"drac-divider drac-border-purple\\" />
-</div>
+  "html": "<hr color=\\"purple\\" class=\\"drac-divider drac-border-purple\\" />
 ",
-  "react": "<div style={{...}}>
-  <Divider color=\\"purple\\" />
-</div>",
+  "react": "<Divider color=\\"purple\\" />;
+",
   "title": "Usage",
 }
 `;
@@ -41,7 +38,7 @@ Object {
   <div><hr color=\\"animated\\" class=\\"drac-divider drac-border-animated\\" /></div>
 </div>
 ",
-  "react": "<div style={{...}}>
+  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\", padding: \\"3rem\\" }}>
   <div>
     <Divider color=\\"white\\" />
   </div>
@@ -81,7 +78,8 @@ Object {
   <div>
     <Divider color=\\"animated\\" />
   </div>
-</div>",
+</div>;
+",
   "title": "Colors",
 }
 `;

@@ -15,25 +15,24 @@ Object {
   </li>
 </ul>
 ",
-  "react": "<div>
-  <Tabs color=\\"purple\\">
-    <li className=\\"drac-tab drac-tab-active\\">
-      <a className=\\"drac-tab-link drac-text\\" href=\\"#\\">
-        Item One
-      </a>
-    </li>
-    <li className=\\"drac-tab\\">
-      <a className=\\"drac-tab-link drac-text\\" href=\\"#\\">
-        Item Two
-      </a>
-    </li>
-    <li className=\\"drac-tab\\">
-      <a className=\\"drac-tab-link drac-text\\" href=\\"#\\">
-        Item Three
-      </a>
-    </li>
-  </Tabs>
-</div>",
+  "react": "<Tabs color=\\"purple\\">
+  <li className=\\"drac-tab drac-tab-active\\">
+    <a className=\\"drac-tab-link drac-text\\" href=\\"#\\">
+      Item One
+    </a>
+  </li>
+  <li className=\\"drac-tab\\">
+    <a className=\\"drac-tab-link drac-text\\" href=\\"#\\">
+      Item Two
+    </a>
+  </li>
+  <li className=\\"drac-tab\\">
+    <a className=\\"drac-tab-link drac-text\\" href=\\"#\\">
+      Item Three
+    </a>
+  </li>
+</Tabs>;
+",
   "title": "Usage",
 }
 `;
@@ -198,7 +197,7 @@ Object {
   </ul>
 </div>
 ",
-  "react": "<div style={{...}}>
+  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\", padding: \\"3rem\\" }}>
   <Tabs color=\\"black\\">
     <li className=\\"drac-tab drac-tab-active\\">
       <a className=\\"drac-tab-link drac-text\\" href=\\"#\\">
@@ -437,7 +436,8 @@ Object {
       </a>
     </li>
   </Tabs>
-</div>",
+</div>;
+",
   "title": "Colors",
 }
 `;

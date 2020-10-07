@@ -64,52 +64,33 @@ Object {
   </div>
 </div>
 ",
-  "react": "<div style={{...}}>
-  <div style={{...}}>
+  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\", padding: \\"3rem\\" }}>
+  <div style={{ marginBottom: 10 }}>
     <Select defaultValue=\\"default\\" variant=\\"normal\\" color=\\"white\\">
       <option value=\\"default\\" disabled={true}>
         Select option
       </option>
-      <option>
-        Blade
-      </option>
-      <option>
-        Buffy
-      </option>
-      <option>
-        Lincoln
-      </option>
-      <option>
-        Morbius
-      </option>
-      <option>
-        Van Helsing
-      </option>
+      <option>Blade</option>
+      <option>Buffy</option>
+      <option>Lincoln</option>
+      <option>Morbius</option>
+      <option>Van Helsing</option>
     </Select>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Select defaultValue=\\"default\\" variant=\\"outline\\" color=\\"white\\">
       <option value=\\"default\\" disabled={true}>
         Select option
       </option>
-      <option>
-        Blade
-      </option>
-      <option>
-        Buffy
-      </option>
-      <option>
-        Lincoln
-      </option>
-      <option>
-        Morbius
-      </option>
-      <option>
-        Van Helsing
-      </option>
+      <option>Blade</option>
+      <option>Buffy</option>
+      <option>Lincoln</option>
+      <option>Morbius</option>
+      <option>Van Helsing</option>
     </Select>
   </div>
-</div>",
+</div>;
+",
   "title": "Usage",
 }
 `;
@@ -932,624 +913,345 @@ Object {
   </div>
 </div>
 ",
-  "react": "<div style={{...}}>
-  <div style={{...}}>
+  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\", padding: \\"3rem\\" }}>
+  <div style={{ marginBottom: 10 }}>
     <Select defaultValue=\\"default\\" variant=\\"outline\\" color=\\"black\\">
       <option value=\\"default\\" disabled={true}>
         Select option
       </option>
-      <option>
-        Blade
-      </option>
-      <option>
-        Buffy
-      </option>
-      <option>
-        Lincoln
-      </option>
-      <option>
-        Morbius
-      </option>
-      <option>
-        Van Helsing
-      </option>
+      <option>Blade</option>
+      <option>Buffy</option>
+      <option>Lincoln</option>
+      <option>Morbius</option>
+      <option>Van Helsing</option>
     </Select>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Select defaultValue=\\"default\\" variant=\\"outline\\" color=\\"white\\">
       <option value=\\"default\\" disabled={true}>
         Select option
       </option>
-      <option>
-        Blade
-      </option>
-      <option>
-        Buffy
-      </option>
-      <option>
-        Lincoln
-      </option>
-      <option>
-        Morbius
-      </option>
-      <option>
-        Van Helsing
-      </option>
+      <option>Blade</option>
+      <option>Buffy</option>
+      <option>Lincoln</option>
+      <option>Morbius</option>
+      <option>Van Helsing</option>
     </Select>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Select defaultValue=\\"default\\" variant=\\"outline\\" color=\\"cyan\\">
       <option value=\\"default\\" disabled={true}>
         Select option
       </option>
-      <option>
-        Blade
-      </option>
-      <option>
-        Buffy
-      </option>
-      <option>
-        Lincoln
-      </option>
-      <option>
-        Morbius
-      </option>
-      <option>
-        Van Helsing
-      </option>
+      <option>Blade</option>
+      <option>Buffy</option>
+      <option>Lincoln</option>
+      <option>Morbius</option>
+      <option>Van Helsing</option>
     </Select>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Select defaultValue=\\"default\\" variant=\\"outline\\" color=\\"green\\">
       <option value=\\"default\\" disabled={true}>
         Select option
       </option>
-      <option>
-        Blade
-      </option>
-      <option>
-        Buffy
-      </option>
-      <option>
-        Lincoln
-      </option>
-      <option>
-        Morbius
-      </option>
-      <option>
-        Van Helsing
-      </option>
+      <option>Blade</option>
+      <option>Buffy</option>
+      <option>Lincoln</option>
+      <option>Morbius</option>
+      <option>Van Helsing</option>
     </Select>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Select defaultValue=\\"default\\" variant=\\"outline\\" color=\\"orange\\">
       <option value=\\"default\\" disabled={true}>
         Select option
       </option>
-      <option>
-        Blade
-      </option>
-      <option>
-        Buffy
-      </option>
-      <option>
-        Lincoln
-      </option>
-      <option>
-        Morbius
-      </option>
-      <option>
-        Van Helsing
-      </option>
+      <option>Blade</option>
+      <option>Buffy</option>
+      <option>Lincoln</option>
+      <option>Morbius</option>
+      <option>Van Helsing</option>
     </Select>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Select defaultValue=\\"default\\" variant=\\"outline\\" color=\\"pink\\">
       <option value=\\"default\\" disabled={true}>
         Select option
       </option>
-      <option>
-        Blade
-      </option>
-      <option>
-        Buffy
-      </option>
-      <option>
-        Lincoln
-      </option>
-      <option>
-        Morbius
-      </option>
-      <option>
-        Van Helsing
-      </option>
+      <option>Blade</option>
+      <option>Buffy</option>
+      <option>Lincoln</option>
+      <option>Morbius</option>
+      <option>Van Helsing</option>
     </Select>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Select defaultValue=\\"default\\" variant=\\"outline\\" color=\\"purple\\">
       <option value=\\"default\\" disabled={true}>
         Select option
       </option>
-      <option>
-        Blade
-      </option>
-      <option>
-        Buffy
-      </option>
-      <option>
-        Lincoln
-      </option>
-      <option>
-        Morbius
-      </option>
-      <option>
-        Van Helsing
-      </option>
+      <option>Blade</option>
+      <option>Buffy</option>
+      <option>Lincoln</option>
+      <option>Morbius</option>
+      <option>Van Helsing</option>
     </Select>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Select defaultValue=\\"default\\" variant=\\"outline\\" color=\\"red\\">
       <option value=\\"default\\" disabled={true}>
         Select option
       </option>
-      <option>
-        Blade
-      </option>
-      <option>
-        Buffy
-      </option>
-      <option>
-        Lincoln
-      </option>
-      <option>
-        Morbius
-      </option>
-      <option>
-        Van Helsing
-      </option>
+      <option>Blade</option>
+      <option>Buffy</option>
+      <option>Lincoln</option>
+      <option>Morbius</option>
+      <option>Van Helsing</option>
     </Select>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Select defaultValue=\\"default\\" variant=\\"outline\\" color=\\"yellow\\">
       <option value=\\"default\\" disabled={true}>
         Select option
       </option>
-      <option>
-        Blade
-      </option>
-      <option>
-        Buffy
-      </option>
-      <option>
-        Lincoln
-      </option>
-      <option>
-        Morbius
-      </option>
-      <option>
-        Van Helsing
-      </option>
+      <option>Blade</option>
+      <option>Buffy</option>
+      <option>Lincoln</option>
+      <option>Morbius</option>
+      <option>Van Helsing</option>
     </Select>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Select defaultValue=\\"default\\" variant=\\"outline\\" color=\\"animated\\">
       <option value=\\"default\\" disabled={true}>
         Select option
       </option>
-      <option>
-        Blade
-      </option>
-      <option>
-        Buffy
-      </option>
-      <option>
-        Lincoln
-      </option>
-      <option>
-        Morbius
-      </option>
-      <option>
-        Van Helsing
-      </option>
+      <option>Blade</option>
+      <option>Buffy</option>
+      <option>Lincoln</option>
+      <option>Morbius</option>
+      <option>Van Helsing</option>
     </Select>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Select defaultValue=\\"default\\" variant=\\"outline\\" color=\\"cyanGreen\\">
       <option value=\\"default\\" disabled={true}>
         Select option
       </option>
-      <option>
-        Blade
-      </option>
-      <option>
-        Buffy
-      </option>
-      <option>
-        Lincoln
-      </option>
-      <option>
-        Morbius
-      </option>
-      <option>
-        Van Helsing
-      </option>
+      <option>Blade</option>
+      <option>Buffy</option>
+      <option>Lincoln</option>
+      <option>Morbius</option>
+      <option>Van Helsing</option>
     </Select>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Select defaultValue=\\"default\\" variant=\\"outline\\" color=\\"pinkPurple\\">
       <option value=\\"default\\" disabled={true}>
         Select option
       </option>
-      <option>
-        Blade
-      </option>
-      <option>
-        Buffy
-      </option>
-      <option>
-        Lincoln
-      </option>
-      <option>
-        Morbius
-      </option>
-      <option>
-        Van Helsing
-      </option>
+      <option>Blade</option>
+      <option>Buffy</option>
+      <option>Lincoln</option>
+      <option>Morbius</option>
+      <option>Van Helsing</option>
     </Select>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Select defaultValue=\\"default\\" variant=\\"outline\\" color=\\"purpleCyan\\">
       <option value=\\"default\\" disabled={true}>
         Select option
       </option>
-      <option>
-        Blade
-      </option>
-      <option>
-        Buffy
-      </option>
-      <option>
-        Lincoln
-      </option>
-      <option>
-        Morbius
-      </option>
-      <option>
-        Van Helsing
-      </option>
+      <option>Blade</option>
+      <option>Buffy</option>
+      <option>Lincoln</option>
+      <option>Morbius</option>
+      <option>Van Helsing</option>
     </Select>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Select defaultValue=\\"default\\" variant=\\"outline\\" color=\\"yellowPink\\">
       <option value=\\"default\\" disabled={true}>
         Select option
       </option>
-      <option>
-        Blade
-      </option>
-      <option>
-        Buffy
-      </option>
-      <option>
-        Lincoln
-      </option>
-      <option>
-        Morbius
-      </option>
-      <option>
-        Van Helsing
-      </option>
+      <option>Blade</option>
+      <option>Buffy</option>
+      <option>Lincoln</option>
+      <option>Morbius</option>
+      <option>Van Helsing</option>
     </Select>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Select defaultValue=\\"default\\" variant=\\"normal\\" color=\\"black\\">
       <option value=\\"default\\" disabled={true}>
         Select option
       </option>
-      <option>
-        Blade
-      </option>
-      <option>
-        Buffy
-      </option>
-      <option>
-        Lincoln
-      </option>
-      <option>
-        Morbius
-      </option>
-      <option>
-        Van Helsing
-      </option>
+      <option>Blade</option>
+      <option>Buffy</option>
+      <option>Lincoln</option>
+      <option>Morbius</option>
+      <option>Van Helsing</option>
     </Select>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Select defaultValue=\\"default\\" variant=\\"normal\\" color=\\"white\\">
       <option value=\\"default\\" disabled={true}>
         Select option
       </option>
-      <option>
-        Blade
-      </option>
-      <option>
-        Buffy
-      </option>
-      <option>
-        Lincoln
-      </option>
-      <option>
-        Morbius
-      </option>
-      <option>
-        Van Helsing
-      </option>
+      <option>Blade</option>
+      <option>Buffy</option>
+      <option>Lincoln</option>
+      <option>Morbius</option>
+      <option>Van Helsing</option>
     </Select>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Select defaultValue=\\"default\\" variant=\\"normal\\" color=\\"cyan\\">
       <option value=\\"default\\" disabled={true}>
         Select option
       </option>
-      <option>
-        Blade
-      </option>
-      <option>
-        Buffy
-      </option>
-      <option>
-        Lincoln
-      </option>
-      <option>
-        Morbius
-      </option>
-      <option>
-        Van Helsing
-      </option>
+      <option>Blade</option>
+      <option>Buffy</option>
+      <option>Lincoln</option>
+      <option>Morbius</option>
+      <option>Van Helsing</option>
     </Select>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Select defaultValue=\\"default\\" variant=\\"normal\\" color=\\"green\\">
       <option value=\\"default\\" disabled={true}>
         Select option
       </option>
-      <option>
-        Blade
-      </option>
-      <option>
-        Buffy
-      </option>
-      <option>
-        Lincoln
-      </option>
-      <option>
-        Morbius
-      </option>
-      <option>
-        Van Helsing
-      </option>
+      <option>Blade</option>
+      <option>Buffy</option>
+      <option>Lincoln</option>
+      <option>Morbius</option>
+      <option>Van Helsing</option>
     </Select>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Select defaultValue=\\"default\\" variant=\\"normal\\" color=\\"orange\\">
       <option value=\\"default\\" disabled={true}>
         Select option
       </option>
-      <option>
-        Blade
-      </option>
-      <option>
-        Buffy
-      </option>
-      <option>
-        Lincoln
-      </option>
-      <option>
-        Morbius
-      </option>
-      <option>
-        Van Helsing
-      </option>
+      <option>Blade</option>
+      <option>Buffy</option>
+      <option>Lincoln</option>
+      <option>Morbius</option>
+      <option>Van Helsing</option>
     </Select>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Select defaultValue=\\"default\\" variant=\\"normal\\" color=\\"pink\\">
       <option value=\\"default\\" disabled={true}>
         Select option
       </option>
-      <option>
-        Blade
-      </option>
-      <option>
-        Buffy
-      </option>
-      <option>
-        Lincoln
-      </option>
-      <option>
-        Morbius
-      </option>
-      <option>
-        Van Helsing
-      </option>
+      <option>Blade</option>
+      <option>Buffy</option>
+      <option>Lincoln</option>
+      <option>Morbius</option>
+      <option>Van Helsing</option>
     </Select>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Select defaultValue=\\"default\\" variant=\\"normal\\" color=\\"purple\\">
       <option value=\\"default\\" disabled={true}>
         Select option
       </option>
-      <option>
-        Blade
-      </option>
-      <option>
-        Buffy
-      </option>
-      <option>
-        Lincoln
-      </option>
-      <option>
-        Morbius
-      </option>
-      <option>
-        Van Helsing
-      </option>
+      <option>Blade</option>
+      <option>Buffy</option>
+      <option>Lincoln</option>
+      <option>Morbius</option>
+      <option>Van Helsing</option>
     </Select>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Select defaultValue=\\"default\\" variant=\\"normal\\" color=\\"red\\">
       <option value=\\"default\\" disabled={true}>
         Select option
       </option>
-      <option>
-        Blade
-      </option>
-      <option>
-        Buffy
-      </option>
-      <option>
-        Lincoln
-      </option>
-      <option>
-        Morbius
-      </option>
-      <option>
-        Van Helsing
-      </option>
+      <option>Blade</option>
+      <option>Buffy</option>
+      <option>Lincoln</option>
+      <option>Morbius</option>
+      <option>Van Helsing</option>
     </Select>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Select defaultValue=\\"default\\" variant=\\"normal\\" color=\\"yellow\\">
       <option value=\\"default\\" disabled={true}>
         Select option
       </option>
-      <option>
-        Blade
-      </option>
-      <option>
-        Buffy
-      </option>
-      <option>
-        Lincoln
-      </option>
-      <option>
-        Morbius
-      </option>
-      <option>
-        Van Helsing
-      </option>
+      <option>Blade</option>
+      <option>Buffy</option>
+      <option>Lincoln</option>
+      <option>Morbius</option>
+      <option>Van Helsing</option>
     </Select>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Select defaultValue=\\"default\\" variant=\\"normal\\" color=\\"animated\\">
       <option value=\\"default\\" disabled={true}>
         Select option
       </option>
-      <option>
-        Blade
-      </option>
-      <option>
-        Buffy
-      </option>
-      <option>
-        Lincoln
-      </option>
-      <option>
-        Morbius
-      </option>
-      <option>
-        Van Helsing
-      </option>
+      <option>Blade</option>
+      <option>Buffy</option>
+      <option>Lincoln</option>
+      <option>Morbius</option>
+      <option>Van Helsing</option>
     </Select>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Select defaultValue=\\"default\\" variant=\\"normal\\" color=\\"cyanGreen\\">
       <option value=\\"default\\" disabled={true}>
         Select option
       </option>
-      <option>
-        Blade
-      </option>
-      <option>
-        Buffy
-      </option>
-      <option>
-        Lincoln
-      </option>
-      <option>
-        Morbius
-      </option>
-      <option>
-        Van Helsing
-      </option>
+      <option>Blade</option>
+      <option>Buffy</option>
+      <option>Lincoln</option>
+      <option>Morbius</option>
+      <option>Van Helsing</option>
     </Select>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Select defaultValue=\\"default\\" variant=\\"normal\\" color=\\"pinkPurple\\">
       <option value=\\"default\\" disabled={true}>
         Select option
       </option>
-      <option>
-        Blade
-      </option>
-      <option>
-        Buffy
-      </option>
-      <option>
-        Lincoln
-      </option>
-      <option>
-        Morbius
-      </option>
-      <option>
-        Van Helsing
-      </option>
+      <option>Blade</option>
+      <option>Buffy</option>
+      <option>Lincoln</option>
+      <option>Morbius</option>
+      <option>Van Helsing</option>
     </Select>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Select defaultValue=\\"default\\" variant=\\"normal\\" color=\\"purpleCyan\\">
       <option value=\\"default\\" disabled={true}>
         Select option
       </option>
-      <option>
-        Blade
-      </option>
-      <option>
-        Buffy
-      </option>
-      <option>
-        Lincoln
-      </option>
-      <option>
-        Morbius
-      </option>
-      <option>
-        Van Helsing
-      </option>
+      <option>Blade</option>
+      <option>Buffy</option>
+      <option>Lincoln</option>
+      <option>Morbius</option>
+      <option>Van Helsing</option>
     </Select>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Select defaultValue=\\"default\\" variant=\\"normal\\" color=\\"yellowPink\\">
       <option value=\\"default\\" disabled={true}>
         Select option
       </option>
-      <option>
-        Blade
-      </option>
-      <option>
-        Buffy
-      </option>
-      <option>
-        Lincoln
-      </option>
-      <option>
-        Morbius
-      </option>
-      <option>
-        Van Helsing
-      </option>
+      <option>Blade</option>
+      <option>Buffy</option>
+      <option>Lincoln</option>
+      <option>Morbius</option>
+      <option>Van Helsing</option>
     </Select>
   </div>
-</div>",
+</div>;
+",
   "title": "Colors",
 }
 `;
@@ -1620,52 +1322,29 @@ Object {
   </div>
 </div>
 ",
-  "react": "<div style={{...}}>
-  <div style={{...}}>
+  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\", padding: \\"3rem\\" }}>
+  <div style={{ marginBottom: 10 }}>
     <Select disabled={true} variant=\\"normal\\" color=\\"white\\">
-      <option value=\\"default\\">
-        Select option
-      </option>
-      <option>
-        Blade
-      </option>
-      <option>
-        Buffy
-      </option>
-      <option>
-        Lincoln
-      </option>
-      <option>
-        Morbius
-      </option>
-      <option>
-        Van Helsing
-      </option>
+      <option value=\\"default\\">Select option</option>
+      <option>Blade</option>
+      <option>Buffy</option>
+      <option>Lincoln</option>
+      <option>Morbius</option>
+      <option>Van Helsing</option>
     </Select>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Select disabled={true} variant=\\"outline\\" color=\\"white\\">
-      <option value=\\"default\\">
-        Select option
-      </option>
-      <option>
-        Blade
-      </option>
-      <option>
-        Buffy
-      </option>
-      <option>
-        Lincoln
-      </option>
-      <option>
-        Morbius
-      </option>
-      <option>
-        Van Helsing
-      </option>
+      <option value=\\"default\\">Select option</option>
+      <option>Blade</option>
+      <option>Buffy</option>
+      <option>Lincoln</option>
+      <option>Morbius</option>
+      <option>Van Helsing</option>
     </Select>
   </div>
-</div>",
+</div>;
+",
   "title": "Disabled",
 }
 `;

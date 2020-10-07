@@ -3,57 +3,17 @@
 exports[`Site: Checkbox Basic Usage 1`] = `
 Object {
   "docs": "",
-  "html": "<div style=\\"display: flex; flex-direction: column; padding: 3rem\\">
-  <div style=\\"margin-bottom: 10px\\">
-    <input
-      type=\\"checkbox\\"
-      id=\\"one\\"
-      color=\\"purple\\"
-      name=\\"demo\\"
-      class=\\"drac-checkbox drac-checkbox-purple\\"
-      checked=\\"\\"
-    /><label for=\\"one\\" class=\\"drac-text drac-text-white\\">Option 1</label>
-  </div>
-  <div style=\\"margin-bottom: 10px\\">
-    <input
-      type=\\"checkbox\\"
-      id=\\"two\\"
-      color=\\"purple\\"
-      name=\\"demo\\"
-      class=\\"drac-checkbox drac-checkbox-purple\\"
-    /><label for=\\"two\\" class=\\"drac-text drac-text-white\\">Option 2</label>
-  </div>
-  <div style=\\"margin-bottom: 10px\\">
-    <input
-      type=\\"checkbox\\"
-      id=\\"three\\"
-      color=\\"purple\\"
-      name=\\"demo\\"
-      class=\\"drac-checkbox drac-checkbox-purple\\"
-    /><label for=\\"three\\" class=\\"drac-text drac-text-white\\">Option 3</label>
-  </div>
-</div>
+  "html": "<input
+  type=\\"checkbox\\"
+  id=\\"one\\"
+  color=\\"purple\\"
+  name=\\"demo\\"
+  class=\\"drac-checkbox drac-checkbox-purple\\"
+  checked=\\"\\"
+/>
 ",
-  "react": "<div style={{...}}>
-  <div style={{...}}>
-    <Checkbox id=\\"one\\" defaultChecked={true} color=\\"purple\\" name=\\"demo\\" />
-    <label htmlFor=\\"one\\" className=\\"drac-text drac-text-white\\">
-      Option 1
-    </label>
-  </div>
-  <div style={{...}}>
-    <Checkbox id=\\"two\\" color=\\"purple\\" name=\\"demo\\" />
-    <label htmlFor=\\"two\\" className=\\"drac-text drac-text-white\\">
-      Option 2
-    </label>
-  </div>
-  <div style={{...}}>
-    <Checkbox id=\\"three\\" color=\\"purple\\" name=\\"demo\\" />
-    <label htmlFor=\\"three\\" className=\\"drac-text drac-text-white\\">
-      Option 3
-    </label>
-  </div>
-</div>",
+  "react": "<Checkbox id=\\"one\\" defaultChecked={true} color=\\"purple\\" name=\\"demo\\" />;
+",
   "title": "Usage",
 }
 `;
@@ -204,92 +164,118 @@ Object {
   </div>
 </div>
 ",
-  "react": "<div style={{...}}>
-  <div style={{...}}>
+  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\", padding: \\"3rem\\" }}>
+  <div style={{ marginBottom: 10 }}>
     <Checkbox id=\\"black\\" defaultChecked={true} color=\\"black\\" name=\\"demo\\" />
     <label htmlFor=\\"black\\" className=\\"drac-text drac-text-white\\">
       Checkbox
     </label>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Checkbox id=\\"white\\" defaultChecked={true} color=\\"white\\" name=\\"demo\\" />
     <label htmlFor=\\"white\\" className=\\"drac-text drac-text-white\\">
       Checkbox
     </label>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Checkbox id=\\"cyan\\" defaultChecked={true} color=\\"cyan\\" name=\\"demo\\" />
     <label htmlFor=\\"cyan\\" className=\\"drac-text drac-text-white\\">
       Checkbox
     </label>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Checkbox id=\\"green\\" defaultChecked={true} color=\\"green\\" name=\\"demo\\" />
     <label htmlFor=\\"green\\" className=\\"drac-text drac-text-white\\">
       Checkbox
     </label>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Checkbox id=\\"orange\\" defaultChecked={true} color=\\"orange\\" name=\\"demo\\" />
     <label htmlFor=\\"orange\\" className=\\"drac-text drac-text-white\\">
       Checkbox
     </label>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Checkbox id=\\"pink\\" defaultChecked={true} color=\\"pink\\" name=\\"demo\\" />
     <label htmlFor=\\"pink\\" className=\\"drac-text drac-text-white\\">
       Checkbox
     </label>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Checkbox id=\\"purple\\" defaultChecked={true} color=\\"purple\\" name=\\"demo\\" />
     <label htmlFor=\\"purple\\" className=\\"drac-text drac-text-white\\">
       Checkbox
     </label>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Checkbox id=\\"red\\" defaultChecked={true} color=\\"red\\" name=\\"demo\\" />
     <label htmlFor=\\"red\\" className=\\"drac-text drac-text-white\\">
       Checkbox
     </label>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Checkbox id=\\"yellow\\" defaultChecked={true} color=\\"yellow\\" name=\\"demo\\" />
     <label htmlFor=\\"yellow\\" className=\\"drac-text drac-text-white\\">
       Checkbox
     </label>
   </div>
-  <div style={{...}}>
-    <Checkbox id=\\"animated\\" defaultChecked={true} color=\\"animated\\" name=\\"demo\\" />
+  <div style={{ marginBottom: 10 }}>
+    <Checkbox
+      id=\\"animated\\"
+      defaultChecked={true}
+      color=\\"animated\\"
+      name=\\"demo\\"
+    />
     <label htmlFor=\\"animated\\" className=\\"drac-text drac-text-white\\">
       Checkbox
     </label>
   </div>
-  <div style={{...}}>
-    <Checkbox id=\\"cyanGreen\\" defaultChecked={true} color=\\"cyanGreen\\" name=\\"demo\\" />
+  <div style={{ marginBottom: 10 }}>
+    <Checkbox
+      id=\\"cyanGreen\\"
+      defaultChecked={true}
+      color=\\"cyanGreen\\"
+      name=\\"demo\\"
+    />
     <label htmlFor=\\"cyanGreen\\" className=\\"drac-text drac-text-white\\">
       Checkbox
     </label>
   </div>
-  <div style={{...}}>
-    <Checkbox id=\\"pinkPurple\\" defaultChecked={true} color=\\"pinkPurple\\" name=\\"demo\\" />
+  <div style={{ marginBottom: 10 }}>
+    <Checkbox
+      id=\\"pinkPurple\\"
+      defaultChecked={true}
+      color=\\"pinkPurple\\"
+      name=\\"demo\\"
+    />
     <label htmlFor=\\"pinkPurple\\" className=\\"drac-text drac-text-white\\">
       Checkbox
     </label>
   </div>
-  <div style={{...}}>
-    <Checkbox id=\\"purpleCyan\\" defaultChecked={true} color=\\"purpleCyan\\" name=\\"demo\\" />
+  <div style={{ marginBottom: 10 }}>
+    <Checkbox
+      id=\\"purpleCyan\\"
+      defaultChecked={true}
+      color=\\"purpleCyan\\"
+      name=\\"demo\\"
+    />
     <label htmlFor=\\"purpleCyan\\" className=\\"drac-text drac-text-white\\">
       Checkbox
     </label>
   </div>
-  <div style={{...}}>
-    <Checkbox id=\\"yellowPink\\" defaultChecked={true} color=\\"yellowPink\\" name=\\"demo\\" />
+  <div style={{ marginBottom: 10 }}>
+    <Checkbox
+      id=\\"yellowPink\\"
+      defaultChecked={true}
+      color=\\"yellowPink\\"
+      name=\\"demo\\"
+    />
     <label htmlFor=\\"yellowPink\\" className=\\"drac-text drac-text-white\\">
       Checkbox
     </label>
   </div>
-</div>",
+</div>;
+",
   "title": "Colors",
 }
 `;
@@ -321,20 +307,27 @@ Object {
   </div>
 </div>
 ",
-  "react": "<div style={{...}}>
-  <div style={{...}}>
-    <Checkbox id=\\"one\\" disabled={true} defaultChecked={true} color=\\"white\\" name=\\"demo\\" />
+  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\", padding: \\"3rem\\" }}>
+  <div style={{ marginBottom: 10 }}>
+    <Checkbox
+      id=\\"one\\"
+      disabled={true}
+      defaultChecked={true}
+      color=\\"white\\"
+      name=\\"demo\\"
+    />
     <label htmlFor=\\"one\\" className=\\"drac-text drac-text-white\\">
       Checked
     </label>
   </div>
-  <div style={{...}}>
+  <div style={{ marginBottom: 10 }}>
     <Checkbox id=\\"two\\" disabled={true} color=\\"white\\" name=\\"demo\\" />
     <label htmlFor=\\"two\\" className=\\"drac-text drac-text-white\\">
       Unchecked
     </label>
   </div>
-</div>",
+</div>;
+",
   "title": "Disabled",
 }
 `;

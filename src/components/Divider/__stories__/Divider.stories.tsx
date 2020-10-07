@@ -6,11 +6,7 @@ export default {
 }
 
 export const DividerNormal = () => {
-  return (
-    <div style={{ padding: '3rem' }}>
-      <Divider color={'purple' as DividerProps['color']} />
-    </div>
-  )
+  return <Divider color={'purple' as DividerProps['color']} />
 }
 
 export const DividerColors = () => {

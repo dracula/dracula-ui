@@ -5,6 +5,10 @@ export default {
   title: 'Input'
 }
 
+export const InputBasic = () => {
+  return <Input placeholder="Placeholder" color="white" />
+}
+
 export const InputVariants = () => {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}>
