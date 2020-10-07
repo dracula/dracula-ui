@@ -1,14 +1,14 @@
 {
   "dsp_spec_version": "0.0.1",
   "last_updated_by": "System",
-  "last_updated": "2020-10-07T00:13:48.417Z",
+  "last_updated": "2020-10-07T00:40:34.381Z",
   "entities": [
     {
       "class": "component",
       "type": "page",
       "id": "Divider",
       "name": "Divider",
-      "last_updated": "2020-10-07T00:13:48.417Z",
+      "last_updated": "2020-10-07T00:40:34.380Z",
       "last_updated_by": "System",
       "description": "Dividers are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
       "related_entity_ids": [],
