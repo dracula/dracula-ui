@@ -3,16 +3,23 @@
 exports[`Site: Checkbox Basic Usage 1`] = `
 Object {
   "docs": "",
-  "html": "<input
-  type=\\"checkbox\\"
-  id=\\"one\\"
-  color=\\"purple\\"
-  name=\\"demo\\"
-  class=\\"drac-checkbox drac-checkbox-purple\\"
-  checked=\\"\\"
-/>
+  "html": "<div>
+  <input
+    type=\\"checkbox\\"
+    id=\\"one\\"
+    color=\\"purple\\"
+    name=\\"demo\\"
+    class=\\"drac-checkbox drac-checkbox-purple\\"
+    checked=\\"\\"
+  /><label for=\\"one\\" class=\\"drac-text drac-text-white\\">Checked</label>
+</div>
 ",
-  "react": "<Checkbox id=\\"one\\" defaultChecked={true} color=\\"purple\\" name=\\"demo\\" />;
+  "react": "<div>
+  <Checkbox id=\\"one\\" defaultChecked={true} color=\\"purple\\" name=\\"demo\\" />
+  <label htmlFor=\\"one\\" className=\\"drac-text drac-text-white\\">
+    Checked
+  </label>
+</div>;
 ",
   "title": "Usage",
 }

@@ -8,7 +8,7 @@
       "type": "page",
       "id": "Avatar",
       "name": "Avatar",
-      "last_updated": "2020-10-07T01:22:02.432Z",
+      "last_updated": "2020-10-07T01:32:34.548Z",
       "last_updated_by": "System",
       "description": "The Avatar component is used to represent a user.\n\nIt displays a profile picture, or falls back to the user's initials\nif a profile pic is not provided.",
       "related_entity_ids": [],
@@ -18,7 +18,7 @@
       "snippets": {
         "trigger": "avatar",
         "languages": {
-          "react": "<Avatar\n  title=\"Netto Farah\"\n  src=\"https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg\"\n/>;\n",
+          "javascriptreact": "<Avatar\n  title=\"Netto Farah\"\n  src=\"https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg\"\n/>;\n",
           "html": "<span\n  class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar\"\n  style=\"\n    background-image: url(https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg);\n  \"\n></span>\n"
         }
       },
@@ -211,7 +211,7 @@
       "type": "page",
       "id": "Button",
       "name": "Button",
-      "last_updated": "2020-10-07T01:21:54.730Z",
+      "last_updated": "2020-10-07T01:32:28.972Z",
       "last_updated_by": "System",
       "description": "The Button component triggers actions, behaviors, or events based\non user input.",
       "related_entity_ids": [],
@@ -221,7 +221,7 @@
       "snippets": {
         "trigger": "button",
         "languages": {
-          "react": "<Button color=\"purple\">Normal</Button>;\n",
+          "javascriptreact": "<Button color=\"purple\">Normal</Button>;\n",
           "html": "<button class=\"drac-btn drac-bg-purple drac-btn\" color=\"purple\">\n  <span class=\"drac-text drac-text drac-text drac-text-white\">Normal</span>\n</button>\n"
         }
       },
@@ -341,7 +341,7 @@
       "type": "page",
       "id": "Checkbox",
       "name": "Checkbox",
-      "last_updated": "2020-10-07T01:21:58.300Z",
+      "last_updated": "2020-10-07T01:32:28.782Z",
       "last_updated_by": "System",
       "description": "Checkbox is a styled HTML Input of type checkbox.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep check boxes accessible.",
       "related_entity_ids": [],
@@ -351,15 +351,15 @@
       "snippets": {
         "trigger": "checkbox",
         "languages": {
-          "react": "<Checkbox id=\"one\" defaultChecked={true} color=\"purple\" name=\"demo\" />;\n",
-          "html": "<input\n  type=\"checkbox\"\n  id=\"one\"\n  color=\"purple\"\n  name=\"demo\"\n  class=\"drac-checkbox drac-checkbox-purple\"\n  checked=\"\"\n/>\n"
+          "javascriptreact": "<div>\n  <Checkbox id=\"one\" defaultChecked={true} color=\"purple\" name=\"demo\" />\n  <label htmlFor=\"one\" className=\"drac-text drac-text-white\">\n    Checked\n  </label>\n</div>;\n",
+          "html": "<div>\n  <input\n    type=\"checkbox\"\n    id=\"one\"\n    color=\"purple\"\n    name=\"demo\"\n    class=\"drac-checkbox drac-checkbox-purple\"\n    checked=\"\"\n  /><label for=\"one\" class=\"drac-text drac-text-white\">Checked</label>\n</div>\n"
         }
       },
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
-          "html": "<input\n  type=\"checkbox\"\n  id=\"one\"\n  color=\"purple\"\n  name=\"demo\"\n  class=\"drac-checkbox drac-checkbox-purple\"\n  checked=\"\"\n/>\n",
-          "react": "<Checkbox id=\"one\" defaultChecked={true} color=\"purple\" name=\"demo\" />;\n",
+          "html": "<div>\n  <input\n    type=\"checkbox\"\n    id=\"one\"\n    color=\"purple\"\n    name=\"demo\"\n    class=\"drac-checkbox drac-checkbox-purple\"\n    checked=\"\"\n  /><label for=\"one\" class=\"drac-text drac-text-white\">Checked</label>\n</div>\n",
+          "react": "<div>\n  <Checkbox id=\"one\" defaultChecked={true} color=\"purple\" name=\"demo\" />\n  <label htmlFor=\"one\" className=\"drac-text drac-text-white\">\n    Checked\n  </label>\n</div>;\n",
           "docs": "",
           "screenshot": "./dsp/assets/Checkbox.png"
         },
@@ -471,7 +471,7 @@
       "type": "page",
       "id": "Divider",
       "name": "Divider",
-      "last_updated": "2020-10-07T01:21:53.744Z",
+      "last_updated": "2020-10-07T01:32:27.539Z",
       "last_updated_by": "System",
       "description": "Dividers are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
       "related_entity_ids": [],
@@ -481,7 +481,7 @@
       "snippets": {
         "trigger": "divider",
         "languages": {
-          "react": "<Divider color=\"purple\" />;\n",
+          "javascriptreact": "<Divider color=\"purple\" />;\n",
           "html": "<hr color=\"purple\" class=\"drac-divider drac-border-purple\" />\n"
         }
       },
@@ -542,7 +542,7 @@
       "type": "page",
       "id": "Input",
       "name": "Input",
-      "last_updated": "2020-10-07T01:21:59.519Z",
+      "last_updated": "2020-10-07T01:32:33.263Z",
       "last_updated_by": "System",
       "description": "Input is a styled HTML Input.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep inputs accessible.",
       "related_entity_ids": [],
@@ -552,7 +552,7 @@
       "snippets": {
         "trigger": "input",
         "languages": {
-          "react": "<Input placeholder=\"Placeholder\" color=\"white\" />;\n",
+          "javascriptreact": "<Input placeholder=\"Placeholder\" color=\"white\" />;\n",
           "html": "<input\n  placeholder=\"Placeholder\"\n  color=\"white\"\n  class=\"drac-input drac-text drac-text-md drac-input-white drac-text-white\"\n/>\n"
         }
       },
@@ -646,7 +646,7 @@
       "type": "page",
       "id": "Radio",
       "name": "Radio",
-      "last_updated": "2020-10-07T01:21:58.080Z",
+      "last_updated": "2020-10-07T01:32:28.602Z",
       "last_updated_by": "System",
       "description": "Radio is a styled HTML Input of type radio.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep Radios accessible.",
       "related_entity_ids": [],
@@ -656,15 +656,15 @@
       "snippets": {
         "trigger": "radio",
         "languages": {
-          "react": "<Radio id=\"one\" defaultChecked={true} color=\"purple\" name=\"demo\" />;\n",
-          "html": "<input\n  type=\"radio\"\n  id=\"one\"\n  color=\"purple\"\n  name=\"demo\"\n  class=\"drac-radio drac-radio-purple\"\n  checked=\"\"\n/>\n"
+          "javascriptreact": "<div>\n  <Radio id=\"one\" defaultChecked={true} color=\"purple\" name=\"demo\" />\n  <label htmlFor=\"one\" className=\"drac-text drac-text-white\">\n    Checked\n  </label>\n</div>;\n",
+          "html": "<div>\n  <input\n    type=\"radio\"\n    id=\"one\"\n    color=\"purple\"\n    name=\"demo\"\n    class=\"drac-radio drac-radio-purple\"\n    checked=\"\"\n  /><label for=\"one\" class=\"drac-text drac-text-white\">Checked</label>\n</div>\n"
         }
       },
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
-          "html": "<input\n  type=\"radio\"\n  id=\"one\"\n  color=\"purple\"\n  name=\"demo\"\n  class=\"drac-radio drac-radio-purple\"\n  checked=\"\"\n/>\n",
-          "react": "<Radio id=\"one\" defaultChecked={true} color=\"purple\" name=\"demo\" />;\n",
+          "html": "<div>\n  <input\n    type=\"radio\"\n    id=\"one\"\n    color=\"purple\"\n    name=\"demo\"\n    class=\"drac-radio drac-radio-purple\"\n    checked=\"\"\n  /><label for=\"one\" class=\"drac-text drac-text-white\">Checked</label>\n</div>\n",
+          "react": "<div>\n  <Radio id=\"one\" defaultChecked={true} color=\"purple\" name=\"demo\" />\n  <label htmlFor=\"one\" className=\"drac-text drac-text-white\">\n    Checked\n  </label>\n</div>;\n",
           "docs": "",
           "screenshot": "./dsp/assets/Radio.png"
         },
@@ -750,7 +750,7 @@
       "type": "page",
       "id": "Select",
       "name": "Select",
-      "last_updated": "2020-10-07T01:22:00.269Z",
+      "last_updated": "2020-10-07T01:32:33.839Z",
       "last_updated_by": "System",
       "description": "Select is a styled HTML Select element.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS, and small SVG component in order to keep Selects accessible.",
       "related_entity_ids": [],
@@ -760,15 +760,15 @@
       "snippets": {
         "trigger": "select",
         "languages": {
-          "react": "<div style={{ display: \"flex\", flexDirection: \"column\", padding: \"3rem\" }}>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"normal\" color=\"white\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"outline\" color=\"white\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n</div>;\n",
-          "html": "<div style=\"display: flex; flex-direction: column; padding: 3rem\">\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"normal\"\n        color=\"white\"\n        class=\"drac-select drac-text drac-text-md drac-select drac-select-white\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-white\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"outline\"\n        color=\"white\"\n        class=\"drac-select drac-text drac-text-md drac-select-outline drac-select-white\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-white\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n</div>\n"
+          "javascriptreact": "<Select defaultValue=\"default\" color=\"white\">\n  <option value=\"default\" disabled={true}>\n    Select option\n  </option>\n  <option>Blade</option>\n  <option>Buffy</option>\n  <option>Lincoln</option>\n  <option>Morbius</option>\n  <option>Van Helsing</option>\n</Select>;\n",
+          "html": "<div style=\"position: relative\">\n  <select\n    color=\"white\"\n    class=\"drac-select drac-text drac-text-md drac-select-white\"\n  >\n    <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n    <option>Blade</option>\n    <option>Buffy</option>\n    <option>Lincoln</option>\n    <option>Morbius</option>\n    <option>Van Helsing</option>\n  </select>\n  <div class=\"drac-select-arrow drac-text-white\">\n    <svg\n      viewBox=\"0 0 24 24\"\n      focusable=\"false\"\n      role=\"presentation\"\n      aria-hidden=\"true\"\n    >\n      <path\n        fill=\"currentColor\"\n        d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n      ></path>\n    </svg>\n  </div>\n</div>\n"
         }
       },
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
-          "html": "<div style=\"display: flex; flex-direction: column; padding: 3rem\">\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"normal\"\n        color=\"white\"\n        class=\"drac-select drac-text drac-text-md drac-select drac-select-white\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-white\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"outline\"\n        color=\"white\"\n        class=\"drac-select drac-text drac-text-md drac-select-outline drac-select-white\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-white\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n</div>\n",
-          "react": "<div style={{ display: \"flex\", flexDirection: \"column\", padding: \"3rem\" }}>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"normal\" color=\"white\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"outline\" color=\"white\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n</div>;\n",
+          "html": "<div style=\"position: relative\">\n  <select\n    color=\"white\"\n    class=\"drac-select drac-text drac-text-md drac-select-white\"\n  >\n    <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n    <option>Blade</option>\n    <option>Buffy</option>\n    <option>Lincoln</option>\n    <option>Morbius</option>\n    <option>Van Helsing</option>\n  </select>\n  <div class=\"drac-select-arrow drac-text-white\">\n    <svg\n      viewBox=\"0 0 24 24\"\n      focusable=\"false\"\n      role=\"presentation\"\n      aria-hidden=\"true\"\n    >\n      <path\n        fill=\"currentColor\"\n        d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n      ></path>\n    </svg>\n  </div>\n</div>\n",
+          "react": "<Select defaultValue=\"default\" color=\"white\">\n  <option value=\"default\" disabled={true}>\n    Select option\n  </option>\n  <option>Blade</option>\n  <option>Buffy</option>\n  <option>Lincoln</option>\n  <option>Morbius</option>\n  <option>Van Helsing</option>\n</Select>;\n",
           "docs": "",
           "screenshot": "./dsp/assets/Select.png"
         },
@@ -785,6 +785,13 @@
           "react": "<div style={{ display: \"flex\", flexDirection: \"column\", padding: \"3rem\" }}>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"outline\" color=\"black\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"outline\" color=\"white\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"outline\" color=\"cyan\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"outline\" color=\"green\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"outline\" color=\"orange\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"outline\" color=\"pink\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"outline\" color=\"purple\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"outline\" color=\"red\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"outline\" color=\"yellow\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"outline\" color=\"animated\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"outline\" color=\"cyanGreen\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"outline\" color=\"pinkPurple\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"outline\" color=\"purpleCyan\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"outline\" color=\"yellowPink\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"normal\" color=\"black\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"normal\" color=\"white\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"normal\" color=\"cyan\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"normal\" color=\"green\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"normal\" color=\"orange\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"normal\" color=\"pink\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"normal\" color=\"purple\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"normal\" color=\"red\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"normal\" color=\"yellow\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"normal\" color=\"animated\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"normal\" color=\"cyanGreen\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"normal\" color=\"pinkPurple\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"normal\" color=\"purpleCyan\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"normal\" color=\"yellowPink\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n</div>;\n",
           "docs": "",
           "screenshot": "./dsp/assets/SelectColors.png"
+        },
+        {
+          "title": "Variants",
+          "html": "<div style=\"display: flex; flex-direction: column; padding: 3rem\">\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"normal\"\n        color=\"white\"\n        class=\"drac-select drac-text drac-text-md drac-select drac-select-white\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-white\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"outline\"\n        color=\"white\"\n        class=\"drac-select drac-text drac-text-md drac-select-outline drac-select-white\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-white\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n</div>\n",
+          "react": "<div style={{ display: \"flex\", flexDirection: \"column\", padding: \"3rem\" }}>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"normal\" color=\"white\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"outline\" color=\"white\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n</div>;\n",
+          "docs": "",
+          "screenshot": "./dsp/assets/SelectVariants.png"
         }
       ],
       "ext_com_draculaui_props": {
@@ -880,7 +887,7 @@
       "type": "page",
       "id": "Switch",
       "name": "Switch",
-      "last_updated": "2020-10-07T01:21:54.387Z",
+      "last_updated": "2020-10-07T01:32:31.809Z",
       "last_updated_by": "System",
       "description": "Switch is an abstraction pattern that represents toggles.\n\nUse the Switch component as an alternative for Checkboxes or Radios\nwhen options are binary.\n\nSwitches are implemented as Checkboxes under the hood,\nand work normally with forms.",
       "related_entity_ids": [],
@@ -890,15 +897,15 @@
       "snippets": {
         "trigger": "switch",
         "languages": {
-          "react": "<Switch id=\"one\" defaultChecked={true} color=\"purple\" name=\"demo\" />;\n",
-          "html": "<input\n  type=\"checkbox\"\n  id=\"one\"\n  color=\"purple\"\n  name=\"demo\"\n  class=\"drac-switch drac-checkbox drac-switch-purple\"\n  checked=\"\"\n/>\n"
+          "javascriptreact": "<div style={{ marginBottom: 10 }}>\n  <Switch id=\"one\" defaultChecked={true} color=\"white\" name=\"demo\" />\n  <label htmlFor=\"one\" className=\"drac-text drac-text-white\">\n    Checked\n  </label>\n</div>;\n",
+          "html": "<div style=\"margin-bottom: 10px\">\n  <input\n    type=\"checkbox\"\n    id=\"one\"\n    color=\"white\"\n    name=\"demo\"\n    class=\"drac-switch drac-checkbox drac-switch-white\"\n    checked=\"\"\n  /><label for=\"one\" class=\"drac-text drac-text-white\">Checked</label>\n</div>\n"
         }
       },
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
-          "html": "<input\n  type=\"checkbox\"\n  id=\"one\"\n  color=\"purple\"\n  name=\"demo\"\n  class=\"drac-switch drac-checkbox drac-switch-purple\"\n  checked=\"\"\n/>\n",
-          "react": "<Switch id=\"one\" defaultChecked={true} color=\"purple\" name=\"demo\" />;\n",
+          "html": "<div style=\"margin-bottom: 10px\">\n  <input\n    type=\"checkbox\"\n    id=\"one\"\n    color=\"white\"\n    name=\"demo\"\n    class=\"drac-switch drac-checkbox drac-switch-white\"\n    checked=\"\"\n  /><label for=\"one\" class=\"drac-text drac-text-white\">Checked</label>\n</div>\n",
+          "react": "<div style={{ marginBottom: 10 }}>\n  <Switch id=\"one\" defaultChecked={true} color=\"white\" name=\"demo\" />\n  <label htmlFor=\"one\" className=\"drac-text drac-text-white\">\n    Checked\n  </label>\n</div>;\n",
           "docs": "",
           "screenshot": "./dsp/assets/Switch.png"
         },
@@ -1010,7 +1017,7 @@
       "type": "page",
       "id": "Table",
       "name": "Table",
-      "last_updated": "2020-10-07T01:21:59.921Z",
+      "last_updated": "2020-10-07T01:32:32.846Z",
       "last_updated_by": "System",
       "description": "Tables are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
       "related_entity_ids": [],
@@ -1020,7 +1027,7 @@
       "snippets": {
         "trigger": "table",
         "languages": {
-          "react": "<Table>\n  <thead>\n    <tr>\n      <th className=\"drac-text drac-text-white\">Name</th>\n      <th className=\"drac-text drac-text-white\">Age</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td className=\"drac-text drac-text-white\">Nandor</td>\n      <td className=\"drac-text drac-text-white\">758 years</td>\n    </tr>\n    <tr>\n      <td className=\"drac-text drac-text-white\">Nadja</td>\n      <td className=\"drac-text drac-text-white\">512 years</td>\n    </tr>\n    <tr>\n      <td className=\"drac-text drac-text-white\">Laszlo</td>\n      <td className=\"drac-text drac-text-white\">329 years</td>\n    </tr>\n    <tr>\n      <td className=\"drac-text drac-text-white\">Colin</td>\n      <td className=\"drac-text drac-text-white\">103 years</td>\n    </tr>\n  </tbody>\n</Table>;\n",
+          "javascriptreact": "<Table>\n  <thead>\n    <tr>\n      <th className=\"drac-text drac-text-white\">Name</th>\n      <th className=\"drac-text drac-text-white\">Age</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td className=\"drac-text drac-text-white\">Nandor</td>\n      <td className=\"drac-text drac-text-white\">758 years</td>\n    </tr>\n    <tr>\n      <td className=\"drac-text drac-text-white\">Nadja</td>\n      <td className=\"drac-text drac-text-white\">512 years</td>\n    </tr>\n    <tr>\n      <td className=\"drac-text drac-text-white\">Laszlo</td>\n      <td className=\"drac-text drac-text-white\">329 years</td>\n    </tr>\n    <tr>\n      <td className=\"drac-text drac-text-white\">Colin</td>\n      <td className=\"drac-text drac-text-white\">103 years</td>\n    </tr>\n  </tbody>\n</Table>;\n",
           "html": "<table class=\"drac-table\">\n  <thead>\n    <tr>\n      <th class=\"drac-text drac-text-white\">Name</th>\n      <th class=\"drac-text drac-text-white\">Age</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td class=\"drac-text drac-text-white\">Nandor</td>\n      <td class=\"drac-text drac-text-white\">758 years</td>\n    </tr>\n    <tr>\n      <td class=\"drac-text drac-text-white\">Nadja</td>\n      <td class=\"drac-text drac-text-white\">512 years</td>\n    </tr>\n    <tr>\n      <td class=\"drac-text drac-text-white\">Laszlo</td>\n      <td class=\"drac-text drac-text-white\">329 years</td>\n    </tr>\n    <tr>\n      <td class=\"drac-text drac-text-white\">Colin</td>\n      <td class=\"drac-text drac-text-white\">103 years</td>\n    </tr>\n  </tbody>\n</table>\n"
         }
       },
@@ -1114,7 +1121,7 @@
       "type": "page",
       "id": "Tabs",
       "name": "Tabs",
-      "last_updated": "2020-10-07T01:21:53.181Z",
+      "last_updated": "2020-10-07T01:32:27.556Z",
       "last_updated_by": "System",
       "description": "Tabs are horizontal navigation elements used to display\ncontent within the same page.",
       "related_entity_ids": [],
@@ -1124,7 +1131,7 @@
       "snippets": {
         "trigger": "tabs",
         "languages": {
-          "react": "<Tabs color=\"purple\">\n  <li className=\"drac-tab drac-tab-active\">\n    <a className=\"drac-tab-link drac-text\" href=\"#\">\n      Item One\n    </a>\n  </li>\n  <li className=\"drac-tab\">\n    <a className=\"drac-tab-link drac-text\" href=\"#\">\n      Item Two\n    </a>\n  </li>\n  <li className=\"drac-tab\">\n    <a className=\"drac-tab-link drac-text\" href=\"#\">\n      Item Three\n    </a>\n  </li>\n</Tabs>;\n",
+          "javascriptreact": "<Tabs color=\"purple\">\n  <li className=\"drac-tab drac-tab-active\">\n    <a className=\"drac-tab-link drac-text\" href=\"#\">\n      Item One\n    </a>\n  </li>\n  <li className=\"drac-tab\">\n    <a className=\"drac-tab-link drac-text\" href=\"#\">\n      Item Two\n    </a>\n  </li>\n  <li className=\"drac-tab\">\n    <a className=\"drac-tab-link drac-text\" href=\"#\">\n      Item Three\n    </a>\n  </li>\n</Tabs>;\n",
           "html": "<ul color=\"purple\" class=\"drac-tabs drac-tabs-purple\">\n  <li class=\"drac-tab drac-tab-active\">\n    <a class=\"drac-tab-link drac-text\" href=\"#\">Item One</a>\n  </li>\n  <li class=\"drac-tab\">\n    <a class=\"drac-tab-link drac-text\" href=\"#\">Item Two</a>\n  </li>\n  <li class=\"drac-tab\">\n    <a class=\"drac-tab-link drac-text\" href=\"#\">Item Three</a>\n  </li>\n</ul>\n"
         }
       },

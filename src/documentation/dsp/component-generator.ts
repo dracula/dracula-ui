@@ -40,7 +40,7 @@ export function toDSP(
     snippets: {
       trigger: name.toLocaleLowerCase(),
       languages: {
-        react: basicUsage.react,
+        javascriptreact: basicUsage.react,
         html: basicUsage.html
       }
     },

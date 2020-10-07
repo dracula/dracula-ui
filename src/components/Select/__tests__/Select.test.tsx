@@ -7,17 +7,19 @@ import { siteDocs } from '@/documentation/site-docs'
 import {
   SelectVariants,
   SelectDisabled,
-  SelectColors
+  SelectColors,
+  SelectBasic
 } from '@/components/Select/__stories__/Select.stories'
 
 siteDocs(Select, {
   basicUsage() {
-    return buildSnapshot('Usage', SelectVariants)
+    return buildSnapshot('Usage', SelectBasic)
   },
   variations() {
     return [
       buildSnapshot('Disabled', SelectDisabled),
-      buildSnapshot('Colors', SelectColors)
+      buildSnapshot('Colors', SelectColors),
+      buildSnapshot('Variants', SelectVariants)
     ] as SnapshotBuilder[]
   }
 })

@@ -7,12 +7,17 @@ export default {
 
 export const CheckboxNormal = () => {
   return (
-    <Checkbox
-      id="one"
-      defaultChecked
-      color={'purple' as CheckboxProps['color']}
-      name="demo"
-    />
+    <div>
+      <Checkbox
+        id="one"
+        defaultChecked
+        color={'purple' as CheckboxProps['color']}
+        name="demo"
+      />
+      <label htmlFor="one" className="drac-text drac-text-white">
+        Checked
+      </label>
+    </div>
   )
 }
 

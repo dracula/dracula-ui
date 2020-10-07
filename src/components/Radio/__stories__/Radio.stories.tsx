@@ -7,13 +7,19 @@ export default {
 
 export const RadioNormal = () => {
   return (
-    <Radio
-      id="one"
-      key="one"
-      defaultChecked
-      color={'purple' as RadioProps['color']}
-      name="demo"
-    />
+    <div>
+      <Radio
+        id="one"
+        key="one"
+        defaultChecked
+        color={'purple' as RadioProps['color']}
+        name="demo"
+      />
+
+      <label htmlFor="one" className="drac-text drac-text-white">
+        Checked
+      </label>
+    </div>
   )
 }
 

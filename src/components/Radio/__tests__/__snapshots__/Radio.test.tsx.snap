@@ -3,16 +3,23 @@
 exports[`Site: Radio Basic Usage 1`] = `
 Object {
   "docs": "",
-  "html": "<input
-  type=\\"radio\\"
-  id=\\"one\\"
-  color=\\"purple\\"
-  name=\\"demo\\"
-  class=\\"drac-radio drac-radio-purple\\"
-  checked=\\"\\"
-/>
+  "html": "<div>
+  <input
+    type=\\"radio\\"
+    id=\\"one\\"
+    color=\\"purple\\"
+    name=\\"demo\\"
+    class=\\"drac-radio drac-radio-purple\\"
+    checked=\\"\\"
+  /><label for=\\"one\\" class=\\"drac-text drac-text-white\\">Checked</label>
+</div>
 ",
-  "react": "<Radio id=\\"one\\" defaultChecked={true} color=\\"purple\\" name=\\"demo\\" />;
+  "react": "<div>
+  <Radio id=\\"one\\" defaultChecked={true} color=\\"purple\\" name=\\"demo\\" />
+  <label htmlFor=\\"one\\" className=\\"drac-text drac-text-white\\">
+    Checked
+  </label>
+</div>;
 ",
   "title": "Usage",
 }

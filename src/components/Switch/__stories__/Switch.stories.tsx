@@ -7,12 +7,17 @@ export default {
 
 export const SwitchNormal = () => {
   return (
-    <Switch
-      id="one"
-      defaultChecked
-      color={'purple' as SwitchProps['color']}
-      name="demo"
-    />
+    <div style={{ marginBottom: 10 }}>
+      <Switch
+        id="one"
+        defaultChecked
+        color={'white' as SwitchProps['color']}
+        name="demo"
+      />
+      <label htmlFor="one" className="drac-text drac-text-white">
+        Checked
+      </label>
+    </div>
   )
 }
 
