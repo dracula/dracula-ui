@@ -13,13 +13,13 @@ export async function componentScreenshot(
   const page = await browser.newPage()
 
   await page.setViewport({
-    width: 600,
-    height: 200,
-    deviceScaleFactor: 3
+    width: 2000,
+    height: 2000,
+    deviceScaleFactor: 1
   })
 
   await page.setContent(`
-    <div class="drac">
+    <div id="drac" class="drac">
       ${snapshot.html}
     </div>
   `)
@@ -38,12 +38,21 @@ export async function componentScreenshot(
         align-items: center;
         justify-content: center;
       }
+
+      #drac {
+        padding: 20px;
+      }
     `
   })
 
   const path = `./dsp/assets/${name}${variation?.title ?? ''}.png`
+
+  const dracElement = await page.$('.drac')
+  const box = await dracElement?.boundingBox()
+
   await page.screenshot({
-    path
+    path,
+    clip: box ?? undefined
   })
 
   return path

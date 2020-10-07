@@ -3,19 +3,18 @@
 exports[`Site: Switch Basic Usage 1`] = `
 Object {
   "docs": "",
-  "html": "<div style=\\"margin-bottom: 10px\\">
+  "html": "<div>
   <input
     type=\\"checkbox\\"
     id=\\"one\\"
-    color=\\"white\\"
+    color=\\"purple\\"
     name=\\"demo\\"
-    class=\\"drac-switch drac-checkbox drac-switch-white\\"
-    checked=\\"\\"
+    class=\\"drac-switch drac-checkbox drac-switch-purple\\"
   /><label for=\\"one\\" class=\\"drac-text drac-text-white\\">Checked</label>
 </div>
 ",
-  "react": "<div style={{ marginBottom: 10 }}>
-  <Switch id=\\"one\\" defaultChecked={true} color=\\"white\\" name=\\"demo\\" />
+  "react": "<div>
+  <Switch id=\\"one\\" color=\\"purple\\" name=\\"demo\\" />
   <label htmlFor=\\"one\\" className=\\"drac-text drac-text-white\\">
     Checked
   </label>
