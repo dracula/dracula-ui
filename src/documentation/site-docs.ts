@@ -42,6 +42,7 @@ export function siteDocs<T>(
       const docGen = getDocGen(name)
       const dsp = toDSP(name, examples, docGen)
       const path = `${dspPath}/data/components/${name}.json`
+
       await fs.writeFile(path, pretty(JSON.stringify(dsp), 'json'))
     })
 

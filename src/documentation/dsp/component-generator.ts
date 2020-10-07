@@ -49,10 +49,5 @@ export function toDSP(
     ext_com_draculaui_docgen: docs
   }
 
-  return {
-    dsp_spec_version: '0.0.1',
-    last_updated_by: 'System',
-    last_updated: new Date(),
-    entities: [comp]
-  }
+  return comp
 }

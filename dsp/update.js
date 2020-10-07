@@ -1,18 +1,23 @@
 const fs = require('fs')
-const dsp = require('./dsp.json')
 const globby = require('globby')
-const { last, uniqBy } = require('lodash')
+const rimraf = require('rimraf')
 
+const dspComponent = require('./data/components.json')
 const files = globby.sync(`${process.cwd()}/dsp/data/components`)
 
-const componentFileNames = files.map((file) => {
-  const lastPart = last(file.split('/'))
-  return { src: `./data/components/${lastPart}` }
-})
+if (files.length === 0) {
+  return
+}
 
-dsp.import = uniqBy([...dsp.import, ...componentFileNames], (i) => i.src).sort()
+const components = files.map((file) =>
+  JSON.parse(fs.readFileSync(file).toString())
+)
+
+dspComponent.entities = components
 
 fs.writeFileSync(
-  `${process.cwd()}/dsp/dsp.json`,
-  JSON.stringify(dsp, null, '  ')
+  `${process.cwd()}/dsp/data/components.json`,
+  JSON.stringify(dspComponent, null, '  ')
 )
+
+rimraf.sync(`${process.cwd()}/dsp/data/components/`)
