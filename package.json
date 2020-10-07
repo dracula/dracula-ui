@@ -26,11 +26,6 @@
   "peerDependencies": {
     "react": ">=16"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "tsdx lint --fix && git add ."
-    }
-  },
   "prettier": {
     "printWidth": 80,
     "semi": false,
@@ -73,6 +68,7 @@
     "jest": "^26.4.2",
     "jest-snapshot-serializer-raw": "^1.1.0",
     "jest-transform-css": "^2.1.0",
+    "parse-data-url": "^3.0.0",
     "postcss-import": "^12.0.1",
     "prettier": "^2.1.1",
     "puppeteer": "^5.3.1",

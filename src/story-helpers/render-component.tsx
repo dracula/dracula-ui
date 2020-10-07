@@ -11,6 +11,7 @@ export type ComponentExample = {
   title: string
   react?: any
   screenshot?: string
+  svgData?: string
 }
 
 export type SnapshotBuilder = {

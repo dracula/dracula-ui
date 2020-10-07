@@ -1,21 +1,26 @@
+/* eslint-disable */
+
 import puppeteer from 'puppeteer'
 import {
   ComponentExample,
   SnapshotBuilder
 } from '../../story-helpers/render-component'
+// @ts-ignore
+import parseData from 'parse-data-url'
+import fs from 'fs-extra'
 
 export async function componentScreenshot(
   browser: puppeteer.Browser,
   snapshot: ComponentExample,
   variation: SnapshotBuilder | null,
   name: string
-): Promise<string> {
+): Promise<[string, string | undefined]> {
   const page = await browser.newPage()
 
   await page.setViewport({
     width: 2000,
     height: 2000,
-    deviceScaleFactor: 1
+    deviceScaleFactor: 2
   })
 
   await page.setContent(`
@@ -23,6 +28,11 @@ export async function componentScreenshot(
       ${snapshot.html}
     </div>
   `)
+
+  await page.addScriptTag({
+    path: process.cwd() + '/vendor/html-to-image.js'
+  })
+
   await page.addStyleTag({
     path: process.cwd() + '/dist/styles/dracula-ui.css'
   })
@@ -55,5 +65,22 @@ export async function componentScreenshot(
     clip: box ?? undefined
   })
 
-  return path
+  await page.evaluate(
+    `window.HTMLToImage.toSvg(document.getElementById('drac')).then(data => {
+      window.svg = data
+    })`
+  )
+
+  await page.waitForFunction(`window.svg !== undefined`)
+  const dataURL = await page.evaluate(`window.svg`)
+
+  const parsed = parseData(dataURL)
+  let svgPath: string | undefined = undefined
+
+  if (parsed) {
+    svgPath = `./dsp/assets/svgs/${name}${variation?.title ?? ''}.svg`
+    await fs.writeFile(svgPath, decodeURIComponent(parsed.data))
+  }
+
+  return [path, svgPath]
 }

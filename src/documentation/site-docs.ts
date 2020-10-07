@@ -59,12 +59,15 @@ export function siteDocs<T>(
       )
       expect(snapshot).toMatchSnapshot()
 
-      snapshot.screenshot = await componentScreenshot(
+      const [screenshot, svg] = await componentScreenshot(
         browser,
         snapshot,
         null,
         name
       )
+
+      snapshot.screenshot = screenshot
+      snapshot.svgData = svg
 
       examples = {
         ...examples,
@@ -82,12 +85,15 @@ export function siteDocs<T>(
           variation.docs
         )
         expect(snapshot).toMatchSnapshot()
-        snapshot.screenshot = await componentScreenshot(
+        const [screenshot, svg] = await componentScreenshot(
           browser,
           snapshot,
           variation,
           name
         )
+
+        snapshot.screenshot = screenshot
+        snapshot.svgData = svg
 
         examples = {
           ...examples,
