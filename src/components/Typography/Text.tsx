@@ -8,7 +8,8 @@ export const TextSizes = {
   large: 'drac-text-lg',
   medium: 'drac-text-md',
   normal: 'drac-text',
-  small: 'drac-text-sm'
+  small: 'drac-text-sm',
+  xsmall: 'drac-text-xs'
 }
 
 export const TextWeights = {
