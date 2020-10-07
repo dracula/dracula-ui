@@ -1,18 +1,18 @@
-import { Button } from '@/components/Button/Button'
+import React from 'react'
+import { Button } from '../Button'
 import {
   buildSnapshot,
   SnapshotBuilder
 } from '@/story-helpers/render-component'
 import { siteDocs } from '@/documentation/site-docs'
 import {
-  ButtonNormal,
   ButtonVariants,
   ButtonColors
 } from '@/components/Button/__stories__/Button.stories'
 
 siteDocs(Button, {
   basicUsage() {
-    return buildSnapshot('Usage', ButtonNormal)
+    return buildSnapshot('Usage', () => <Button color="purple">Dracula</Button>)
   },
   variations() {
     return [

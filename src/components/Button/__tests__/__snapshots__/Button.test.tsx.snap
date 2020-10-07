@@ -4,10 +4,10 @@ exports[`Site: Button Basic Usage 1`] = `
 Object {
   "docs": "",
   "html": "<button class=\\"drac-btn drac-bg-purple drac-btn\\" color=\\"purple\\">
-  <span class=\\"drac-text drac-text drac-text drac-text-white\\">Normal</span>
+  <span class=\\"drac-text drac-text drac-text drac-text-white\\">Dracula</span>
 </button>
 ",
-  "react": "<Button color=\\"purple\\">Normal</Button>;
+  "react": "<Button color=\\"purple\\">Dracula</Button>;
 ",
   "title": "Usage",
 }

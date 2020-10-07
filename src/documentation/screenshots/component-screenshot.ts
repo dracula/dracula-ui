@@ -8,6 +8,7 @@ import {
 // @ts-ignore
 import parseData from 'parse-data-url'
 import fs from 'fs-extra'
+import { pretty } from '../../story-helpers/pretty'
 
 export async function componentScreenshot(
   browser: puppeteer.Browser,
@@ -81,6 +82,10 @@ export async function componentScreenshot(
     svgPath = `./dsp/assets/svgs/${name}${variation?.title ?? ''}.svg`
     await fs.writeFile(svgPath, decodeURIComponent(parsed.data))
   }
+
+  const content = await page.content()
+  const contentPath = `./dsp/assets/html/${name}${variation?.title ?? ''}.html`
+  await fs.writeFile(contentPath, pretty(content, 'html'))
 
   return [path, svgPath]
 }

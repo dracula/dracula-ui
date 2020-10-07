@@ -20,4 +20,4 @@ fs.writeFileSync(
   JSON.stringify(dspComponent, null, '  ')
 )
 
-rimraf.sync(`${process.cwd()}/dsp/data/components/`)
+// rimraf.sync(`${process.cwd()}/dsp/data/components/`)
