@@ -1,6 +1,5 @@
 .drac-btn {
   appearance: none;
-  padding: 1rem 1.5rem;
   border: none;
   border-radius: var(--corner-radius);
 }
@@ -59,4 +58,34 @@
 
 .drac-btn-ghost:disabled .drac-text {
   color: var(--black);
+}
+
+/* Sizes */
+
+.drac-btn.drac-btn-xs {
+  padding: 0 var(--spacing-2);
+  height: var(--spacing-6);
+  min-width: var(--spacing-6);
+  font-size: var(--font-xs);
+}
+
+.drac-btn.drac-btn-sm {
+  padding: 0 var(--spacing-3);
+  height: var(--spacing-8);
+  min-width: var(--spacing-8);
+  font-size: var(--font-sm);
+}
+
+.drac-btn {
+  padding: 0 var(--spacing-4);
+  height: var(--spacing-10);
+  min-width: var(--spacing-10);
+  font-size: var(--font-md);
+}
+
+.drac-btn.drac-btn-lg {
+  padding: 0 var(--spacing-6);
+  height: var(--spacing-12);
+  min-width: var(--spacing-12);
+  font-size: var(--font-lg);
 }

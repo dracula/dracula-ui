@@ -9,10 +9,23 @@ export const buttonVariants = {
   ghost: 'drac-btn-ghost'
 }
 
+export const buttonSizes = {
+  large: 'drac-btn-lg',
+  medium: 'drac-btn',
+  small: 'drac-btn-sm',
+  xsmall: 'drac-btn-xs'
+}
+
 /** Button Props */
 export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   /** A Dracula UI theme color for the Button. */
   color?: keyof typeof backgroundColors
+
+  /**
+   * Controls the size of the button based on pre-configured Dracula UI sizes.
+   * Options: `xsmall`, `small`, `medium`, `large`
+   */
+  size?: keyof typeof buttonSizes
 
   /**
    * Controls the Button style:
@@ -50,14 +63,13 @@ export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
     'drac-btn',
     backgroundClass,
     buttonVariants[props.variant ?? 'normal'],
+    buttonSizes[props.size ?? 'medium'],
     textColorClass
   )
 
   return (
     <button className={classes} {...props}>
-      <Text color={overrideTextColor ? props.color : undefined}>
-        {props.children}
-      </Text>
+      {props.children}
     </button>
   )
 }
