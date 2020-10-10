@@ -10,14 +10,3 @@
 @import './card.css';
 @import './tabs.css';
 @import './table.css';
-
-.drac {
-  /* 1rem = 10px */
-  font-size: 62.5%;
-}
-
-.drac *,
-.drac *::before,
-.drac *::after {
-  box-sizing: border-box;
-}
