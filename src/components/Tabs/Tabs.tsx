@@ -3,7 +3,6 @@ import React, { HTMLAttributes } from 'react'
 import cx from 'classnames'
 
 export const tabsColors: ColorMap = {
-  black: 'drac-tabs-black',
   white: 'drac-tabs-white',
   cyan: 'drac-tabs-cyan',
   green: 'drac-tabs-green',

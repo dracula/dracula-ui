@@ -8,7 +8,6 @@ export const inputVariants = {
 }
 
 export const inputColors: ColorMap = {
-  black: 'drac-input-black drac-text-white',
   white: 'drac-input-white drac-text-white',
   cyan: 'drac-input-cyan drac-text-cyan',
   green: 'drac-input-green drac-text-green',

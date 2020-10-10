@@ -2,7 +2,6 @@ import { ColorMap } from '../../base/colors'
 import React, { HTMLAttributes } from 'react'
 
 export const radioColors: ColorMap = {
-  black: 'drac-radio-black',
   white: 'drac-radio-white',
   cyan: 'drac-radio-cyan',
   green: 'drac-radio-green',

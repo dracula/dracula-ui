@@ -22,12 +22,6 @@ Object {
   <input
     placeholder=\\"Placeholder\\"
     variant=\\"outline\\"
-    color=\\"black\\"
-    style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-text drac-text-md drac-input-outline drac-input-black drac-text-white\\"
-  /><input
-    placeholder=\\"Placeholder\\"
-    variant=\\"outline\\"
     color=\\"white\\"
     style=\\"margin-bottom: 20px\\"
     class=\\"drac-input drac-text drac-text-md drac-input-outline drac-input-white drac-text-white\\"
@@ -103,12 +97,6 @@ Object {
     color=\\"yellowPink\\"
     style=\\"margin-bottom: 20px\\"
     class=\\"drac-input drac-text drac-text-md drac-input-outline\\"
-  /><input
-    placeholder=\\"Placeholder\\"
-    variant=\\"normal\\"
-    color=\\"black\\"
-    style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-text drac-text-md drac-input drac-input-black drac-text-white\\"
   /><input
     placeholder=\\"Placeholder\\"
     variant=\\"normal\\"
@@ -194,12 +182,6 @@ Object {
   <Input
     placeholder=\\"Placeholder\\"
     variant=\\"outline\\"
-    color=\\"black\\"
-    style={{ marginBottom: 20 }}
-  />
-  <Input
-    placeholder=\\"Placeholder\\"
-    variant=\\"outline\\"
     color=\\"white\\"
     style={{ marginBottom: 20 }}
   />
@@ -273,12 +255,6 @@ Object {
     placeholder=\\"Placeholder\\"
     variant=\\"outline\\"
     color=\\"yellowPink\\"
-    style={{ marginBottom: 20 }}
-  />
-  <Input
-    placeholder=\\"Placeholder\\"
-    variant=\\"normal\\"
-    color=\\"black\\"
     style={{ marginBottom: 20 }}
   />
   <Input

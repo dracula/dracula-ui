@@ -3,7 +3,6 @@ import React, { HTMLAttributes } from 'react'
 import cx from 'classnames'
 
 export const tableColors: ColorMap = {
-  black: 'drac-table-black',
   white: 'drac-table-white',
   cyan: 'drac-table-cyan',
   green: 'drac-table-green',

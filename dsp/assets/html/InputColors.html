@@ -1866,7 +1866,7 @@
           },
         ]);
       });
-      //# sourceURL=/Users/netto.farah/projects/dracula-ui/vendor/html-to-image.js
+      //# sourceURL=/Users/zeno/Projects/dracula-ui/vendor/html-to-image.js
     </script>
     <style type="text/css">
       :root {
@@ -2209,6 +2209,18 @@
       .drac-border-yellow {
         border-color: var(--yellow);
       }
+      :root {
+        --font-xs: 0.75rem;
+        --font-sm: 0.875rem;
+        --font-md: 1rem;
+        --font-lg: 1.125rem;
+        --font-xl: 1.25rem;
+        --font-2xl: 1.5rem;
+        --font-3xl: 1.875rem;
+        --font-4xl: 2.25rem;
+        --font-5xl: 3rem;
+        --font-6xl: 4rem;
+      }
       .drac-btn,
       .drac-heading,
       .drac-text {
@@ -2219,22 +2231,22 @@
         font-family: Fira Code, monospace;
       }
       .drac-heading-1 {
-        font-size: 8rem;
+        font-size: var(--font-3xl);
       }
       .drac-heading-2 {
-        font-size: 6rem;
+        font-size: var(--font-2xl);
       }
       .drac-heading-3 {
-        font-size: 3rem;
+        font-size: var(--font-xl);
       }
       .drac-heading-4 {
-        font-size: 2.4rem;
+        font-size: var(--font-lg);
       }
       .drac-heading-5 {
-        font-size: 2rem;
+        font-size: var(--font-md);
       }
       .drac-heading-6 {
-        font-size: 1.6rem;
+        font-size: var(--font-sm);
       }
       .drac-text-bold {
         font-weight: 700;
@@ -2243,25 +2255,24 @@
         font-weight: 600;
       }
       .drac-text {
-        font-size: 1.6rem;
+        font-size: var(--font-md);
       }
       .drac-text-lg {
-        font-size: 2.4rem;
+        font-size: var(--font-lg);
       }
       .drac-text-md {
-        font-size: 2rem;
+        font-size: var(--font-md);
       }
       .drac-text-sm {
-        font-size: 1.2rem;
+        font-size: var(--font-sm);
       }
       .drac-text-xs {
-        font-size: 1rem;
+        font-size: var(--font-xs);
       }
       .drac-btn {
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
-        padding: 1rem 1.5rem;
         border: none;
         border-radius: var(--corner-radius);
       }
@@ -2306,6 +2317,30 @@
       }
       .drac-btn-ghost:disabled .drac-text {
         color: var(--black);
+      }
+      .drac-btn.drac-btn-xs {
+        padding: 0 var(--spacing-2);
+        height: var(--spacing-6);
+        min-width: var(--spacing-6);
+        font-size: var(--font-xs);
+      }
+      .drac-btn.drac-btn-sm {
+        padding: 0 var(--spacing-3);
+        height: var(--spacing-8);
+        min-width: var(--spacing-8);
+        font-size: var(--font-sm);
+      }
+      .drac-btn {
+        padding: 0 var(--spacing-4);
+        height: var(--spacing-10);
+        min-width: var(--spacing-10);
+        font-size: var(--font-md);
+      }
+      .drac-btn.drac-btn-lg {
+        padding: 0 var(--spacing-6);
+        height: var(--spacing-12);
+        min-width: var(--spacing-12);
+        font-size: var(--font-lg);
       }
       .drac-badge {
         padding: 1rem 1.5rem;
@@ -2900,15 +2935,26 @@
       .drac-table-striped.drac-table-yellow tr:nth-child(2n) {
         background-color: var(--yellowLight);
       }
-      .drac {
-        font-size: 62.5%;
+      :root {
+        --spacing-1: 0.25rem;
+        --spacing-2: 0.5rem;
+        --spacing-3: 0.75rem;
+        --spacing-4: 1rem;
+        --spacing-5: 1.25rem;
+        --spacing-6: 1.5rem;
+        --spacing-8: 2rem;
+        --spacing-10: 2.5rem;
+        --spacing-12: 3rem;
+        --spacing-16: 4rem;
+        --spacing-20: 5rem;
+        --spacing-24: 6rem;
+        --spacing-32: 8rem;
+        --spacing-40: 10rem;
+        --spacing-48: 12rem;
+        --spacing-56: 14rem;
+        --spacing-64: 16rem;
       }
-      .drac *,
-      .drac :after,
-      .drac :before {
-        box-sizing: border-box;
-      }
-      /*# sourceMappingURL=dracula-ui.css.map */ /*# sourceURL=/Users/netto.farah/projects/dracula-ui/dist/styles/dracula-ui.css*/
+      /*# sourceMappingURL=dracula-ui.css.map */ /*# sourceURL=/Users/zeno/Projects/dracula-ui/dist/styles/dracula-ui.css*/
     </style>
     <style type="text/css">
       /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -3262,7 +3308,7 @@
       [hidden] {
         display: none;
       }
-      /*# sourceURL=/Users/netto.farah/projects/dracula-ui/node_modules/normalize.css/normalize.css*/
+      /*# sourceURL=/Users/zeno/Projects/dracula-ui/node_modules/normalize.css/normalize.css*/
     </style>
     <style type="text/css">
       body {
@@ -3281,12 +3327,6 @@
     <div id="drac" class="drac">
       <div style="display: flex; flex-direction: column; padding: 3rem">
         <input
-          placeholder="Placeholder"
-          variant="outline"
-          color="black"
-          style="margin-bottom: 20px"
-          class="drac-input drac-text drac-text-md drac-input-outline drac-input-black drac-text-white"
-        /><input
           placeholder="Placeholder"
           variant="outline"
           color="white"
@@ -3364,12 +3404,6 @@
           color="yellowPink"
           style="margin-bottom: 20px"
           class="drac-input drac-text drac-text-md drac-input-outline"
-        /><input
-          placeholder="Placeholder"
-          variant="normal"
-          color="black"
-          style="margin-bottom: 20px"
-          class="drac-input drac-text drac-text-md drac-input drac-input-black drac-text-white"
         /><input
           placeholder="Placeholder"
           variant="normal"

@@ -31,16 +31,6 @@ Object {
   <div style=\\"margin-bottom: 10px\\">
     <input
       type=\\"checkbox\\"
-      id=\\"black\\"
-      color=\\"black\\"
-      name=\\"demo\\"
-      class=\\"drac-switch drac-checkbox drac-switch-black\\"
-      checked=\\"\\"
-    /><label for=\\"black\\" class=\\"drac-text drac-text-white\\">Switch</label>
-  </div>
-  <div style=\\"margin-bottom: 10px\\">
-    <input
-      type=\\"checkbox\\"
       id=\\"white\\"
       color=\\"white\\"
       name=\\"demo\\"
@@ -171,12 +161,6 @@ Object {
 </div>
 ",
   "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\", padding: \\"3rem\\" }}>
-  <div style={{ marginBottom: 10 }}>
-    <Switch id=\\"black\\" defaultChecked={true} color=\\"black\\" name=\\"demo\\" />
-    <label htmlFor=\\"black\\" className=\\"drac-text drac-text-white\\">
-      Switch
-    </label>
-  </div>
   <div style={{ marginBottom: 10 }}>
     <Switch id=\\"white\\" defaultChecked={true} color=\\"white\\" name=\\"demo\\" />
     <label htmlFor=\\"white\\" className=\\"drac-text drac-text-white\\">

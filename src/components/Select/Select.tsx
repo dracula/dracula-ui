@@ -8,7 +8,6 @@ export const selectVariants = {
 }
 
 export const selectColors: ColorMap = {
-  black: 'drac-select-black',
   white: 'drac-select-white',
   cyan: 'drac-select-cyan',
   green: 'drac-select-green',

@@ -1866,7 +1866,7 @@
           },
         ]);
       });
-      //# sourceURL=/Users/netto.farah/projects/dracula-ui/vendor/html-to-image.js
+      //# sourceURL=/Users/zeno/Projects/dracula-ui/vendor/html-to-image.js
     </script>
     <style type="text/css">
       :root {
@@ -2209,6 +2209,18 @@
       .drac-border-yellow {
         border-color: var(--yellow);
       }
+      :root {
+        --font-xs: 0.75rem;
+        --font-sm: 0.875rem;
+        --font-md: 1rem;
+        --font-lg: 1.125rem;
+        --font-xl: 1.25rem;
+        --font-2xl: 1.5rem;
+        --font-3xl: 1.875rem;
+        --font-4xl: 2.25rem;
+        --font-5xl: 3rem;
+        --font-6xl: 4rem;
+      }
       .drac-btn,
       .drac-heading,
       .drac-text {
@@ -2219,22 +2231,22 @@
         font-family: Fira Code, monospace;
       }
       .drac-heading-1 {
-        font-size: 8rem;
+        font-size: var(--font-3xl);
       }
       .drac-heading-2 {
-        font-size: 6rem;
+        font-size: var(--font-2xl);
       }
       .drac-heading-3 {
-        font-size: 3rem;
+        font-size: var(--font-xl);
       }
       .drac-heading-4 {
-        font-size: 2.4rem;
+        font-size: var(--font-lg);
       }
       .drac-heading-5 {
-        font-size: 2rem;
+        font-size: var(--font-md);
       }
       .drac-heading-6 {
-        font-size: 1.6rem;
+        font-size: var(--font-sm);
       }
       .drac-text-bold {
         font-weight: 700;
@@ -2243,25 +2255,24 @@
         font-weight: 600;
       }
       .drac-text {
-        font-size: 1.6rem;
+        font-size: var(--font-md);
       }
       .drac-text-lg {
-        font-size: 2.4rem;
+        font-size: var(--font-lg);
       }
       .drac-text-md {
-        font-size: 2rem;
+        font-size: var(--font-md);
       }
       .drac-text-sm {
-        font-size: 1.2rem;
+        font-size: var(--font-sm);
       }
       .drac-text-xs {
-        font-size: 1rem;
+        font-size: var(--font-xs);
       }
       .drac-btn {
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
-        padding: 1rem 1.5rem;
         border: none;
         border-radius: var(--corner-radius);
       }
@@ -2306,6 +2317,30 @@
       }
       .drac-btn-ghost:disabled .drac-text {
         color: var(--black);
+      }
+      .drac-btn.drac-btn-xs {
+        padding: 0 var(--spacing-2);
+        height: var(--spacing-6);
+        min-width: var(--spacing-6);
+        font-size: var(--font-xs);
+      }
+      .drac-btn.drac-btn-sm {
+        padding: 0 var(--spacing-3);
+        height: var(--spacing-8);
+        min-width: var(--spacing-8);
+        font-size: var(--font-sm);
+      }
+      .drac-btn {
+        padding: 0 var(--spacing-4);
+        height: var(--spacing-10);
+        min-width: var(--spacing-10);
+        font-size: var(--font-md);
+      }
+      .drac-btn.drac-btn-lg {
+        padding: 0 var(--spacing-6);
+        height: var(--spacing-12);
+        min-width: var(--spacing-12);
+        font-size: var(--font-lg);
       }
       .drac-badge {
         padding: 1rem 1.5rem;
@@ -2900,15 +2935,26 @@
       .drac-table-striped.drac-table-yellow tr:nth-child(2n) {
         background-color: var(--yellowLight);
       }
-      .drac {
-        font-size: 62.5%;
+      :root {
+        --spacing-1: 0.25rem;
+        --spacing-2: 0.5rem;
+        --spacing-3: 0.75rem;
+        --spacing-4: 1rem;
+        --spacing-5: 1.25rem;
+        --spacing-6: 1.5rem;
+        --spacing-8: 2rem;
+        --spacing-10: 2.5rem;
+        --spacing-12: 3rem;
+        --spacing-16: 4rem;
+        --spacing-20: 5rem;
+        --spacing-24: 6rem;
+        --spacing-32: 8rem;
+        --spacing-40: 10rem;
+        --spacing-48: 12rem;
+        --spacing-56: 14rem;
+        --spacing-64: 16rem;
       }
-      .drac *,
-      .drac :after,
-      .drac :before {
-        box-sizing: border-box;
-      }
-      /*# sourceMappingURL=dracula-ui.css.map */ /*# sourceURL=/Users/netto.farah/projects/dracula-ui/dist/styles/dracula-ui.css*/
+      /*# sourceMappingURL=dracula-ui.css.map */ /*# sourceURL=/Users/zeno/Projects/dracula-ui/dist/styles/dracula-ui.css*/
     </style>
     <style type="text/css">
       /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -3262,7 +3308,7 @@
       [hidden] {
         display: none;
       }
-      /*# sourceURL=/Users/netto.farah/projects/dracula-ui/node_modules/normalize.css/normalize.css*/
+      /*# sourceURL=/Users/zeno/Projects/dracula-ui/node_modules/normalize.css/normalize.css*/
     </style>
     <style type="text/css">
       body {
@@ -3285,35 +3331,25 @@
           class="drac-box"
         >
           <button
-            class="drac-btn drac-bg-white drac-btn"
+            class="drac-btn drac-bg-white drac-btn drac-btn"
             color="white"
             style="margin: 1rem"
           >
-            <span class="drac-text drac-text drac-text drac-text-white"
-              >Normal</span
-            ></button
+            Normal</button
           ><button
-            class="drac-btn drac-bg-white drac-btn-outline drac-text-white"
+            class="drac-btn drac-bg-white drac-btn-outline drac-btn drac-text-white"
             color="white"
             style="margin: 1rem"
             variant="outline"
           >
-            <span
-              color="white"
-              class="drac-text drac-text drac-text drac-text-white"
-              >Outline</span
-            ></button
+            Outline</button
           ><button
-            class="drac-btn drac-bg-white-transparent drac-btn-ghost drac-text-white"
+            class="drac-btn drac-bg-white-transparent drac-btn-ghost drac-btn drac-text-white"
             color="white"
             style="margin: 1rem"
             variant="ghost"
           >
-            <span
-              color="white"
-              class="drac-text drac-text drac-text drac-text-white"
-              >Ghost</span
-            >
+            Ghost
           </button>
         </div>
         <div
@@ -3321,35 +3357,25 @@
           class="drac-box"
         >
           <button
-            class="drac-btn drac-bg-cyan drac-btn"
+            class="drac-btn drac-bg-cyan drac-btn drac-btn"
             color="cyan"
             style="margin: 1rem"
           >
-            <span class="drac-text drac-text drac-text drac-text-white"
-              >Normal</span
-            ></button
+            Normal</button
           ><button
-            class="drac-btn drac-bg-cyan drac-btn-outline drac-text-cyan"
+            class="drac-btn drac-bg-cyan drac-btn-outline drac-btn drac-text-cyan"
             color="cyan"
             style="margin: 1rem"
             variant="outline"
           >
-            <span
-              color="cyan"
-              class="drac-text drac-text drac-text drac-text-cyan"
-              >Outline</span
-            ></button
+            Outline</button
           ><button
-            class="drac-btn drac-bg-cyan-transparent drac-btn-ghost drac-text-cyan"
+            class="drac-btn drac-bg-cyan-transparent drac-btn-ghost drac-btn drac-text-cyan"
             color="cyan"
             style="margin: 1rem"
             variant="ghost"
           >
-            <span
-              color="cyan"
-              class="drac-text drac-text drac-text drac-text-cyan"
-              >Ghost</span
-            >
+            Ghost
           </button>
         </div>
         <div
@@ -3357,35 +3383,25 @@
           class="drac-box"
         >
           <button
-            class="drac-btn drac-bg-green drac-btn"
+            class="drac-btn drac-bg-green drac-btn drac-btn"
             color="green"
             style="margin: 1rem"
           >
-            <span class="drac-text drac-text drac-text drac-text-white"
-              >Normal</span
-            ></button
+            Normal</button
           ><button
-            class="drac-btn drac-bg-green drac-btn-outline drac-text-green"
+            class="drac-btn drac-bg-green drac-btn-outline drac-btn drac-text-green"
             color="green"
             style="margin: 1rem"
             variant="outline"
           >
-            <span
-              color="green"
-              class="drac-text drac-text drac-text drac-text-green"
-              >Outline</span
-            ></button
+            Outline</button
           ><button
-            class="drac-btn drac-bg-green-transparent drac-btn-ghost drac-text-green"
+            class="drac-btn drac-bg-green-transparent drac-btn-ghost drac-btn drac-text-green"
             color="green"
             style="margin: 1rem"
             variant="ghost"
           >
-            <span
-              color="green"
-              class="drac-text drac-text drac-text drac-text-green"
-              >Ghost</span
-            >
+            Ghost
           </button>
         </div>
         <div
@@ -3393,35 +3409,25 @@
           class="drac-box"
         >
           <button
-            class="drac-btn drac-bg-orange drac-btn"
+            class="drac-btn drac-bg-orange drac-btn drac-btn"
             color="orange"
             style="margin: 1rem"
           >
-            <span class="drac-text drac-text drac-text drac-text-white"
-              >Normal</span
-            ></button
+            Normal</button
           ><button
-            class="drac-btn drac-bg-orange drac-btn-outline drac-text-orange"
+            class="drac-btn drac-bg-orange drac-btn-outline drac-btn drac-text-orange"
             color="orange"
             style="margin: 1rem"
             variant="outline"
           >
-            <span
-              color="orange"
-              class="drac-text drac-text drac-text drac-text-orange"
-              >Outline</span
-            ></button
+            Outline</button
           ><button
-            class="drac-btn drac-bg-orange-transparent drac-btn-ghost drac-text-orange"
+            class="drac-btn drac-bg-orange-transparent drac-btn-ghost drac-btn drac-text-orange"
             color="orange"
             style="margin: 1rem"
             variant="ghost"
           >
-            <span
-              color="orange"
-              class="drac-text drac-text drac-text drac-text-orange"
-              >Ghost</span
-            >
+            Ghost
           </button>
         </div>
         <div
@@ -3429,35 +3435,25 @@
           class="drac-box"
         >
           <button
-            class="drac-btn drac-bg-pink drac-btn"
+            class="drac-btn drac-bg-pink drac-btn drac-btn"
             color="pink"
             style="margin: 1rem"
           >
-            <span class="drac-text drac-text drac-text drac-text-white"
-              >Normal</span
-            ></button
+            Normal</button
           ><button
-            class="drac-btn drac-bg-pink drac-btn-outline drac-text-pink"
+            class="drac-btn drac-bg-pink drac-btn-outline drac-btn drac-text-pink"
             color="pink"
             style="margin: 1rem"
             variant="outline"
           >
-            <span
-              color="pink"
-              class="drac-text drac-text drac-text drac-text-pink"
-              >Outline</span
-            ></button
+            Outline</button
           ><button
-            class="drac-btn drac-bg-pink-transparent drac-btn-ghost drac-text-pink"
+            class="drac-btn drac-bg-pink-transparent drac-btn-ghost drac-btn drac-text-pink"
             color="pink"
             style="margin: 1rem"
             variant="ghost"
           >
-            <span
-              color="pink"
-              class="drac-text drac-text drac-text drac-text-pink"
-              >Ghost</span
-            >
+            Ghost
           </button>
         </div>
         <div
@@ -3465,35 +3461,25 @@
           class="drac-box"
         >
           <button
-            class="drac-btn drac-bg-purple drac-btn"
+            class="drac-btn drac-bg-purple drac-btn drac-btn"
             color="purple"
             style="margin: 1rem"
           >
-            <span class="drac-text drac-text drac-text drac-text-white"
-              >Normal</span
-            ></button
+            Normal</button
           ><button
-            class="drac-btn drac-bg-purple drac-btn-outline drac-text-purple"
+            class="drac-btn drac-bg-purple drac-btn-outline drac-btn drac-text-purple"
             color="purple"
             style="margin: 1rem"
             variant="outline"
           >
-            <span
-              color="purple"
-              class="drac-text drac-text drac-text drac-text-purple"
-              >Outline</span
-            ></button
+            Outline</button
           ><button
-            class="drac-btn drac-bg-purple-transparent drac-btn-ghost drac-text-purple"
+            class="drac-btn drac-bg-purple-transparent drac-btn-ghost drac-btn drac-text-purple"
             color="purple"
             style="margin: 1rem"
             variant="ghost"
           >
-            <span
-              color="purple"
-              class="drac-text drac-text drac-text drac-text-purple"
-              >Ghost</span
-            >
+            Ghost
           </button>
         </div>
         <div
@@ -3501,35 +3487,25 @@
           class="drac-box"
         >
           <button
-            class="drac-btn drac-bg-red drac-btn"
+            class="drac-btn drac-bg-red drac-btn drac-btn"
             color="red"
             style="margin: 1rem"
           >
-            <span class="drac-text drac-text drac-text drac-text-white"
-              >Normal</span
-            ></button
+            Normal</button
           ><button
-            class="drac-btn drac-bg-red drac-btn-outline drac-text-red"
+            class="drac-btn drac-bg-red drac-btn-outline drac-btn drac-text-red"
             color="red"
             style="margin: 1rem"
             variant="outline"
           >
-            <span
-              color="red"
-              class="drac-text drac-text drac-text drac-text-red"
-              >Outline</span
-            ></button
+            Outline</button
           ><button
-            class="drac-btn drac-bg-red-transparent drac-btn-ghost drac-text-red"
+            class="drac-btn drac-bg-red-transparent drac-btn-ghost drac-btn drac-text-red"
             color="red"
             style="margin: 1rem"
             variant="ghost"
           >
-            <span
-              color="red"
-              class="drac-text drac-text drac-text drac-text-red"
-              >Ghost</span
-            >
+            Ghost
           </button>
         </div>
         <div
@@ -3537,35 +3513,25 @@
           class="drac-box"
         >
           <button
-            class="drac-btn drac-bg-yellow drac-btn"
+            class="drac-btn drac-bg-yellow drac-btn drac-btn"
             color="yellow"
             style="margin: 1rem"
           >
-            <span class="drac-text drac-text drac-text drac-text-white"
-              >Normal</span
-            ></button
+            Normal</button
           ><button
-            class="drac-btn drac-bg-yellow drac-btn-outline drac-text-yellow"
+            class="drac-btn drac-bg-yellow drac-btn-outline drac-btn drac-text-yellow"
             color="yellow"
             style="margin: 1rem"
             variant="outline"
           >
-            <span
-              color="yellow"
-              class="drac-text drac-text drac-text drac-text-yellow"
-              >Outline</span
-            ></button
+            Outline</button
           ><button
-            class="drac-btn drac-bg-yellow-transparent drac-btn-ghost drac-text-yellow"
+            class="drac-btn drac-bg-yellow-transparent drac-btn-ghost drac-btn drac-text-yellow"
             color="yellow"
             style="margin: 1rem"
             variant="ghost"
           >
-            <span
-              color="yellow"
-              class="drac-text drac-text drac-text drac-text-yellow"
-              >Ghost</span
-            >
+            Ghost
           </button>
         </div>
         <div
@@ -3573,35 +3539,25 @@
           class="drac-box"
         >
           <button
-            class="drac-btn drac-bg-purple-cyan drac-btn"
+            class="drac-btn drac-bg-purple-cyan drac-btn drac-btn"
             color="purpleCyan"
             style="margin: 1rem"
           >
-            <span class="drac-text drac-text drac-text drac-text-white"
-              >Normal</span
-            ></button
+            Normal</button
           ><button
-            class="drac-btn drac-bg-purple-cyan drac-btn-outline drac-text-purple-cyan"
+            class="drac-btn drac-bg-purple-cyan drac-btn-outline drac-btn drac-text-purple-cyan"
             color="purpleCyan"
             style="margin: 1rem"
             variant="outline"
           >
-            <span
-              color="purpleCyan"
-              class="drac-text drac-text drac-text drac-text-purple-cyan"
-              >Outline</span
-            ></button
+            Outline</button
           ><button
-            class="drac-btn drac-bg-purple-cyan-transparent drac-btn-ghost drac-text-purple-cyan"
+            class="drac-btn drac-bg-purple-cyan-transparent drac-btn-ghost drac-btn drac-text-purple-cyan"
             color="purpleCyan"
             style="margin: 1rem"
             variant="ghost"
           >
-            <span
-              color="purpleCyan"
-              class="drac-text drac-text drac-text drac-text-purple-cyan"
-              >Ghost</span
-            >
+            Ghost
           </button>
         </div>
         <div
@@ -3609,35 +3565,25 @@
           class="drac-box"
         >
           <button
-            class="drac-btn drac-bg-yellow-pink drac-btn"
+            class="drac-btn drac-bg-yellow-pink drac-btn drac-btn"
             color="yellowPink"
             style="margin: 1rem"
           >
-            <span class="drac-text drac-text drac-text drac-text-white"
-              >Normal</span
-            ></button
+            Normal</button
           ><button
-            class="drac-btn drac-bg-yellow-pink drac-btn-outline drac-text-yellow-pink"
+            class="drac-btn drac-bg-yellow-pink drac-btn-outline drac-btn drac-text-yellow-pink"
             color="yellowPink"
             style="margin: 1rem"
             variant="outline"
           >
-            <span
-              color="yellowPink"
-              class="drac-text drac-text drac-text drac-text-yellow-pink"
-              >Outline</span
-            ></button
+            Outline</button
           ><button
-            class="drac-btn drac-bg-yellow-pink-transparent drac-btn-ghost drac-text-yellow-pink"
+            class="drac-btn drac-bg-yellow-pink-transparent drac-btn-ghost drac-btn drac-text-yellow-pink"
             color="yellowPink"
             style="margin: 1rem"
             variant="ghost"
           >
-            <span
-              color="yellowPink"
-              class="drac-text drac-text drac-text drac-text-yellow-pink"
-              >Ghost</span
-            >
+            Ghost
           </button>
         </div>
         <div
@@ -3645,35 +3591,25 @@
           class="drac-box"
         >
           <button
-            class="drac-btn drac-bg-cyan-green drac-btn"
+            class="drac-btn drac-bg-cyan-green drac-btn drac-btn"
             color="cyanGreen"
             style="margin: 1rem"
           >
-            <span class="drac-text drac-text drac-text drac-text-white"
-              >Normal</span
-            ></button
+            Normal</button
           ><button
-            class="drac-btn drac-bg-cyan-green drac-btn-outline drac-text-cyan-green"
+            class="drac-btn drac-bg-cyan-green drac-btn-outline drac-btn drac-text-cyan-green"
             color="cyanGreen"
             style="margin: 1rem"
             variant="outline"
           >
-            <span
-              color="cyanGreen"
-              class="drac-text drac-text drac-text drac-text-cyan-green"
-              >Outline</span
-            ></button
+            Outline</button
           ><button
-            class="drac-btn drac-bg-cyan-green-transparent drac-btn-ghost drac-text-cyan-green"
+            class="drac-btn drac-bg-cyan-green-transparent drac-btn-ghost drac-btn drac-text-cyan-green"
             color="cyanGreen"
             style="margin: 1rem"
             variant="ghost"
           >
-            <span
-              color="cyanGreen"
-              class="drac-text drac-text drac-text drac-text-cyan-green"
-              >Ghost</span
-            >
+            Ghost
           </button>
         </div>
         <div
@@ -3681,35 +3617,25 @@
           class="drac-box"
         >
           <button
-            class="drac-btn drac-bg-pink-purple drac-btn"
+            class="drac-btn drac-bg-pink-purple drac-btn drac-btn"
             color="pinkPurple"
             style="margin: 1rem"
           >
-            <span class="drac-text drac-text drac-text drac-text-white"
-              >Normal</span
-            ></button
+            Normal</button
           ><button
-            class="drac-btn drac-bg-pink-purple drac-btn-outline drac-text-pink-purple"
+            class="drac-btn drac-bg-pink-purple drac-btn-outline drac-btn drac-text-pink-purple"
             color="pinkPurple"
             style="margin: 1rem"
             variant="outline"
           >
-            <span
-              color="pinkPurple"
-              class="drac-text drac-text drac-text drac-text-pink-purple"
-              >Outline</span
-            ></button
+            Outline</button
           ><button
-            class="drac-btn drac-bg-pink-purple-transparent drac-btn-ghost drac-text-pink-purple"
+            class="drac-btn drac-bg-pink-purple-transparent drac-btn-ghost drac-btn drac-text-pink-purple"
             color="pinkPurple"
             style="margin: 1rem"
             variant="ghost"
           >
-            <span
-              color="pinkPurple"
-              class="drac-text drac-text drac-text drac-text-pink-purple"
-              >Ghost</span
-            >
+            Ghost
           </button>
         </div>
         <div
@@ -3717,35 +3643,25 @@
           class="drac-box"
         >
           <button
-            class="drac-btn drac-bg-animated drac-btn"
+            class="drac-btn drac-bg-animated drac-btn drac-btn"
             color="animated"
             style="margin: 1rem"
           >
-            <span class="drac-text drac-text drac-text drac-text-white"
-              >Normal</span
-            ></button
+            Normal</button
           ><button
-            class="drac-btn drac-bg-animated drac-btn-outline drac-text-animated"
+            class="drac-btn drac-bg-animated drac-btn-outline drac-btn drac-text-animated"
             color="animated"
             style="margin: 1rem"
             variant="outline"
           >
-            <span
-              color="animated"
-              class="drac-text drac-text drac-text drac-text-animated"
-              >Outline</span
-            ></button
+            Outline</button
           ><button
-            class="drac-btn drac-bg-animated-transparent drac-btn-ghost drac-text-animated"
+            class="drac-btn drac-bg-animated-transparent drac-btn-ghost drac-btn drac-text-animated"
             color="animated"
             style="margin: 1rem"
             variant="ghost"
           >
-            <span
-              color="animated"
-              class="drac-text drac-text drac-text drac-text-animated"
-              >Ghost</span
-            >
+            Ghost
           </button>
         </div>
       </div>

@@ -32,16 +32,6 @@ Object {
   <div style=\\"margin-bottom: 10px\\">
     <input
       type=\\"checkbox\\"
-      id=\\"black\\"
-      color=\\"black\\"
-      name=\\"demo\\"
-      class=\\"drac-checkbox drac-checkbox-black\\"
-      checked=\\"\\"
-    /><label for=\\"black\\" class=\\"drac-text drac-text-white\\">Checkbox</label>
-  </div>
-  <div style=\\"margin-bottom: 10px\\">
-    <input
-      type=\\"checkbox\\"
       id=\\"white\\"
       color=\\"white\\"
       name=\\"demo\\"
@@ -172,12 +162,6 @@ Object {
 </div>
 ",
   "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\", padding: \\"3rem\\" }}>
-  <div style={{ marginBottom: 10 }}>
-    <Checkbox id=\\"black\\" defaultChecked={true} color=\\"black\\" name=\\"demo\\" />
-    <label htmlFor=\\"black\\" className=\\"drac-text drac-text-white\\">
-      Checkbox
-    </label>
-  </div>
   <div style={{ marginBottom: 10 }}>
     <Checkbox id=\\"white\\" defaultChecked={true} color=\\"white\\" name=\\"demo\\" />
     <label htmlFor=\\"white\\" className=\\"drac-text drac-text-white\\">

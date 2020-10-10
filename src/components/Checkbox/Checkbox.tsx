@@ -3,7 +3,6 @@ import cx from 'classnames'
 import { ColorMap } from '../../base/colors'
 
 export const checkboxColors: ColorMap = {
-  black: 'drac-checkbox-black',
   white: 'drac-checkbox-white',
   cyan: 'drac-checkbox-cyan',
   green: 'drac-checkbox-green',

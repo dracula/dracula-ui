@@ -32,15 +32,6 @@ Object {
   <div style=\\"margin-bottom: 10px\\">
     <input
       type=\\"radio\\"
-      id=\\"black\\"
-      color=\\"black\\"
-      name=\\"demo\\"
-      class=\\"drac-radio drac-radio-black\\"
-    /><label for=\\"black\\" class=\\"drac-text drac-text-white\\">Radio</label>
-  </div>
-  <div style=\\"margin-bottom: 10px\\">
-    <input
-      type=\\"radio\\"
       id=\\"white\\"
       color=\\"white\\"
       name=\\"demo\\"
@@ -158,12 +149,6 @@ Object {
 </div>
 ",
   "react": "<div>
-  <div style={{ marginBottom: 10 }}>
-    <Radio id=\\"black\\" color=\\"black\\" name=\\"demo\\" />
-    <label htmlFor=\\"black\\" className=\\"drac-text drac-text-white\\">
-      Radio
-    </label>
-  </div>
   <div style={{ marginBottom: 10 }}>
     <Radio id=\\"white\\" color=\\"white\\" name=\\"demo\\" />
     <label htmlFor=\\"white\\" className=\\"drac-text drac-text-white\\">

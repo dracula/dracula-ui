@@ -41,17 +41,6 @@ exports[`Site: Tabs Colors 1`] = `
 Object {
   "docs": "",
   "html": "<div style=\\"display: flex; flex-direction: column; padding: 3rem\\">
-  <ul color=\\"black\\" class=\\"drac-tabs drac-tabs-black\\">
-    <li class=\\"drac-tab drac-tab-active\\">
-      <a class=\\"drac-tab-link drac-text\\" href=\\"#\\">Item One</a>
-    </li>
-    <li class=\\"drac-tab\\">
-      <a class=\\"drac-tab-link drac-text\\" href=\\"#\\">Item Two</a>
-    </li>
-    <li class=\\"drac-tab\\">
-      <a class=\\"drac-tab-link drac-text\\" href=\\"#\\">Item Three</a>
-    </li>
-  </ul>
   <ul color=\\"white\\" class=\\"drac-tabs drac-tabs-white\\">
     <li class=\\"drac-tab drac-tab-active\\">
       <a class=\\"drac-tab-link drac-text\\" href=\\"#\\">Item One</a>
@@ -198,23 +187,6 @@ Object {
 </div>
 ",
   "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\", padding: \\"3rem\\" }}>
-  <Tabs color=\\"black\\">
-    <li className=\\"drac-tab drac-tab-active\\">
-      <a className=\\"drac-tab-link drac-text\\" href=\\"#\\">
-        Item One
-      </a>
-    </li>
-    <li className=\\"drac-tab\\">
-      <a className=\\"drac-tab-link drac-text\\" href=\\"#\\">
-        Item Two
-      </a>
-    </li>
-    <li className=\\"drac-tab\\">
-      <a className=\\"drac-tab-link drac-text\\" href=\\"#\\">
-        Item Three
-      </a>
-    </li>
-  </Tabs>
   <Tabs color=\\"white\\">
     <li className=\\"drac-tab drac-tab-active\\">
       <a className=\\"drac-tab-link drac-text\\" href=\\"#\\">
