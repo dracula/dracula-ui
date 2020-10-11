@@ -7,6 +7,12 @@ export const selectVariants = {
   outline: 'drac-select-outline'
 }
 
+export const selectSizes = {
+  large: 'drac-select-lg',
+  medium: 'drac-select',
+  small: 'drac-select-sm'
+}
+
 export const selectColors: ColorMap = {
   white: 'drac-select-white',
   cyan: 'drac-select-cyan',
@@ -29,6 +35,12 @@ export interface SelectProps extends HTMLAttributes<HTMLSelectElement> {
   color?: keyof typeof selectColors
 
   /**
+   * Controls the size of the select based on pre-configured Dracula UI sizes.
+   * Options: `small`, `medium`, `large`
+   */
+  size?: keyof typeof selectSizes
+
+  /**
    * The variation to be used for the Select element.
    * `normal` -> Regular Select component with a light background color.
    * `outline` -> Keeps the accent color, but removes the background.
@@ -49,9 +61,8 @@ export const Select: React.FC<SelectProps> = (props: SelectProps) => {
     ...props,
     className: cx(
       'drac-select',
-      'drac-text',
-      'drac-text-md',
       props.variant && selectVariants[props.variant],
+      props.size && selectSizes[props.size],
       props.color && selectColors[props.color]
     )
   }

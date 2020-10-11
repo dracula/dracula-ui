@@ -3,7 +3,6 @@
   background: var(--blackSecondary);
   border: 0.3rem solid transparent;
   color: var(--white);
-  padding: 20px;
   transition: 0.3s ease-in-out all;
   appearance: none;
   outline: none;
@@ -51,13 +50,13 @@
 .drac-select-arrow {
   position: absolute;
   display: inline-flex;
-  width: 3.6rem;
+  width: var(--spacing-8);
   height: 100%;
   -webkit-box-align: center;
   align-items: center;
   -webkit-box-pack: center;
   justify-content: center;
-  right: 2rem;
+  right: var(--spacing-2);
   top: 50%;
   pointer-events: none;
   z-index: 2;
@@ -114,4 +113,23 @@
 .drac-select-outline.drac-select-yellow:focus,
 .drac-select.drac-select-yellow:focus {
   border-color: var(--yellow);
+}
+
+/* Sizes */
+
+.drac-select.drac-select-sm {
+  height: var(--spacing-8);
+  font-size: var(--font-sm);
+}
+
+.drac-select {
+  height: var(--spacing-10);
+  font-size: var(--font-md);
+  padding-left: var(--spacing-4);
+  padding-right: var(--spacing-8);
+}
+
+.drac-select.drac-select-lg {
+  height: var(--spacing-12);
+  font-size: var(--font-lg);
 }

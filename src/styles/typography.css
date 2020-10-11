@@ -12,6 +12,7 @@
 }
 
 .drac-heading,
+.drac-select,
 .drac-text,
 .drac-btn {
   /* Help prevent overflow of long words/names/URLs */

@@ -6,6 +6,7 @@ import {
 import { siteDocs } from '@/documentation/site-docs'
 import {
   SelectVariants,
+  SelectSizes,
   SelectDisabled,
   SelectColors,
   SelectBasic
@@ -17,6 +18,7 @@ siteDocs(Select, {
   },
   variations() {
     return [
+      buildSnapshot('Sizes', SelectSizes),
       buildSnapshot('Disabled', SelectDisabled),
       buildSnapshot('Colors', SelectColors),
       buildSnapshot('Variants', SelectVariants)

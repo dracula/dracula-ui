@@ -1,5 +1,5 @@
 import React from 'react'
-import { SelectProps, Select, selectVariants, selectColors } from '@/index'
+import { SelectProps, Select, selectVariants, selectColors, selectSizes } from '@/index'
 
 export default {
   title: 'Select'
@@ -17,6 +17,33 @@ export const SelectBasic = () => {
       <option>Morbius</option>
       <option>Van Helsing</option>
     </Select>
+  )
+}
+
+export const SelectSizes = () => {
+  return (
+    <div>
+      {Object.keys(selectSizes).map((size) => {
+        return (
+          <div key={size} style={{ marginBottom: 10 }}>
+            <Select
+              defaultValue="default"
+              size={size as SelectProps['size']}
+              color={'white'}
+            >
+              <option value="default" disabled>
+                Select option
+              </option>
+              <option>Blade</option>
+              <option>Buffy</option>
+              <option>Lincoln</option>
+              <option>Morbius</option>
+              <option>Van Helsing</option>
+            </Select>
+          </div>
+        )
+      })}
+    </div>
   )
 }
 
