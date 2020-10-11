@@ -3,7 +3,6 @@
   outline: none;
   background: var(--blackSecondary);
   border: 0.3rem solid transparent;
-  padding: 20px;
   transition: 0.3s ease-in-out all;
   -webkit-appearance: textfield;
 }
@@ -65,4 +64,24 @@
 .drac-input-outline.drac-input-yellow:focus,
 .drac-input.drac-input-yellow:focus {
   border-color: var(--yellow);
+}
+
+/* Sizes */
+
+.drac-input.drac-input-sm {
+  padding: 0 var(--spacing-3);
+  height: var(--spacing-8);
+  font-size: var(--font-sm);
+}
+
+.drac-input {
+  padding: 0 var(--spacing-4);
+  height: var(--spacing-10);
+  font-size: var(--font-md);
+}
+
+.drac-input.drac-input-lg {
+  padding: 0 var(--spacing-6);
+  height: var(--spacing-12);
+  font-size: var(--font-lg);
 }

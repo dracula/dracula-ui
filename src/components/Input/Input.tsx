@@ -7,6 +7,12 @@ export const inputVariants = {
   outline: 'drac-input-outline'
 }
 
+export const inputSizes = {
+  large: 'drac-input-lg',
+  medium: 'drac-input',
+  small: 'drac-input-sm'
+}
+
 export const inputColors: ColorMap = {
   white: 'drac-input-white drac-text-white',
   cyan: 'drac-input-cyan drac-text-cyan',
@@ -31,6 +37,12 @@ export interface InputProps extends HTMLAttributes<HTMLInputElement> {
   color?: keyof typeof inputColors
 
   /**
+   * Controls the size of the input based on pre-configured Dracula UI sizes.
+   * Options: `small`, `medium`, `large`
+   */
+  size?: keyof typeof inputSizes
+
+  /**
    * Controls the variation the input.
    * `normal` -> Regular Input component with a light background color.
    * `outline` -> Keeps the accent color, but removes the background.
@@ -49,9 +61,8 @@ export const Input: React.FC<InputProps> = (props: InputProps) => {
     ...props,
     className: cx(
       `drac-input`,
-      `drac-text`,
-      `drac-text-md`,
       props.variant && inputVariants[props.variant],
+      props.size && inputSizes[props.size],
       props.color && inputColors[props.color]
     )
   }

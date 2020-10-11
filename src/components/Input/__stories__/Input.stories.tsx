@@ -1,5 +1,5 @@
 import React from 'react'
-import { InputProps, Input, inputVariants, inputColors } from '@/index'
+import { InputProps, Input, inputVariants, inputColors, inputSizes } from '@/index'
 
 export default {
   title: 'Input'
@@ -21,6 +21,24 @@ export const InputVariants = () => {
             color={'white'}
             style={{ marginBottom: 20 }}
           />
+        )
+      })}
+    </div>
+  )
+}
+
+export const InputSizes = () => {
+  return (
+    <div>
+      {Object.keys(inputSizes).map((size) => {
+        return (
+          <div key={size} style={{ marginBottom: 10 }}>
+            <Input
+              placeholder="Placeholder"
+              size={size as InputProps['size']}
+              color={'white'}
+            />
+          </div>
         )
       })}
     </div>
