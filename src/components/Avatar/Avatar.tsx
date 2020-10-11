@@ -2,7 +2,7 @@ import cx from 'classnames'
 import { first, last } from 'lodash'
 import React, { HTMLAttributes } from 'react'
 import { colors as backgroundColors } from '../../base/colors'
-import { Text, TextColors } from '../../components/Typography/Text'
+import { Text, textColors } from '../../components/Typography/Text'
 
 export const AvatarVariants = {
   normal: 'drac-avatar',
@@ -64,7 +64,7 @@ export const Avatar = (props: AvatarProps) => {
   const classes = cx(
     'drac-avatar',
     backgroundClass,
-    TextColors[themeColor ?? 'green'],
+    textColors[themeColor ?? 'green'],
     AvatarVariants[variant ?? 'normal'],
     AvatarBorderVariants[borderVariant ?? 'normal']
   )

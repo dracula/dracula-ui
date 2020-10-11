@@ -2,23 +2,22 @@ import React, { HTMLAttributes } from 'react'
 import { mapValues } from 'lodash'
 import cx from 'classnames'
 import { spacingClasses, SpacingPropType } from '../../base/spacing'
-import { textColors } from '../../base/colors'
+import { baseTextColors } from '../../base/colors'
 
-export const TextSizes = {
+export const textSizes = {
   large: 'drac-text-lg',
-  medium: 'drac-text-md',
-  normal: 'drac-text',
+  medium: 'drac-text',
   small: 'drac-text-sm',
   xsmall: 'drac-text-xs'
 }
 
-export const TextWeights = {
+export const textWeights = {
   normal: 'drac-text',
   semibold: 'drac-text-semibold',
   bold: 'drac-text-bold'
 }
 
-export const TextColors = mapValues(textColors, (className) => {
+export const textColors = mapValues(baseTextColors, (className) => {
   return className.replace('-bg-', '-text-')
 })
 
@@ -26,20 +25,20 @@ export const TextColors = mapValues(textColors, (className) => {
 export interface TextProps extends HTMLAttributes<HTMLSpanElement> {
   /**
    * Controls the size of the text based on pre-configured Dracula UI sizes.
-   * Options: `normal`, `small`, `medium`, `large`
+   * Options: `xsmall`, `small`, `medium`, `large`
    */
-  size?: keyof typeof TextSizes
+  size?: keyof typeof textSizes
 
   /**
    * Controsl the weight of the text.
    * Options: `normal`, `semibold`, `bold`.
    */
-  weight?: keyof typeof TextWeights
+  weight?: keyof typeof textWeights
 
   /**
    * Controls the color of the text
    */
-  color?: keyof typeof TextColors
+  color?: keyof typeof textColors
 
   /**
    * Controls the spacing between the Text component and its parent and siblings.
@@ -63,9 +62,9 @@ export const Text = (props: TextProps) => {
 
     className: cx(
       `drac-text`,
-      TextSizes[props.size ?? 'normal'],
-      TextWeights[props.weight ?? 'normal'],
-      TextColors[props.color ?? 'white'],
+      textSizes[props.size ?? 'medium'],
+      textWeights[props.weight ?? 'normal'],
+      textColors[props.color ?? 'white'],
       spacingClasses(props.spacing)
     )
   }
@@ -85,9 +84,9 @@ export const Paragraph: React.FC<TextProps> = (props: TextProps) => {
 
     className: cx(
       `drac-text`,
-      TextSizes[props.size ?? 'normal'],
-      TextWeights[props.weight ?? 'normal'],
-      TextColors[props.color ?? 'white'],
+      textSizes[props.size ?? 'medium'],
+      textWeights[props.weight ?? 'normal'],
+      textColors[props.color ?? 'white'],
       spacingClasses(props.spacing ?? 'smallY')
     )
   }

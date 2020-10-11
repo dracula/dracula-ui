@@ -1,7 +1,7 @@
 import React, { HTMLAttributes } from 'react'
 import { colors as backgroundColors } from '../../base/colors'
 import cx from 'classnames'
-import { TextColors } from '../../components/Typography/Text'
+import { textColors } from '../../components/Typography/Text'
 
 export const buttonVariants = {
   normal: 'drac-btn',
@@ -51,7 +51,7 @@ export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
   const overrideTextColor = isOutline || isGhost
 
   const textColorClass = overrideTextColor
-    ? TextColors[props.color ?? 'green']
+    ? textColors[props.color ?? 'green']
     : undefined
 
   let backgroundClass = backgroundColors[props.color ?? 'green']

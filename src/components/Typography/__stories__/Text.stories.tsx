@@ -2,61 +2,59 @@ import React from 'react'
 import {
   TextProps,
   Text,
-  TextSizes,
-  TextWeights,
-  TextColors,
-  Box,
-  Heading
+  textSizes,
+  textWeights,
+  textColors
 } from '@/index'
-import { colorname } from '@/story-helpers/random-color'
 
 export default {
   title: 'Text'
 }
 
-export const Texts = () => (
-  <div>
-    {Object.keys(TextSizes).map((size) => {
-      return (
-        <Heading size="heading-2">
-          {size}
+export const TextBasic = () => (
+  <Text>
+    Text
+  </Text>
+)
 
-          {Object.keys(TextWeights).map((weight) => {
-            return (
-              <Box
-                key={`${size}-${weight}`}
-                color={colorname()}
-                style={{ padding: '1rem' }}
-              >
-                <Text
-                  size={size as TextProps['size']}
-                  weight={weight as TextProps['weight']}
-                >
-                  .{TextSizes[size]} .{TextWeights[weight]}
-                </Text>
-              </Box>
-            )
-          })}
-        </Heading>
+export const TextSizes = () => (
+  <div>
+    {Object.keys(textSizes).map((size) => {
+      return (
+        <div key={size} style={{ marginBottom: 20 }}>
+          <Text size={size as TextProps['size']}>
+            {size}
+          </Text>
+        </div>
       )
     })}
   </div>
 )
 
-export const TextWithColors = () => (
+export const TextWeights = () => (
   <div>
-    return (
-    <Heading size="heading-2">
-      Colors
-      {Object.keys(TextColors).map((color) => {
-        return (
-          <Box key={color} style={{ padding: '1rem' }}>
-            <Text color={color as TextProps['color']}>
-              .{TextColors[color]}
-            </Text>
-          </Box>
-        )
-      })}
-    </Heading>
+    {Object.keys(textWeights).map((weight) => {
+      return (
+        <div key={weight} style={{ marginBottom: 20 }}>
+          <Text weight={weight as TextProps['weight']}>
+            {weight}
+          </Text>
+        </div>
+      )
+    })}
+  </div>
+)
+
+export const TextColors = () => (
+  <div>
+    {Object.keys(textColors).map((color) => {
+      return (
+        <div key={color} style={{ marginBottom: 20 }}>
+          <Text color={color as TextProps['color']}>
+            {color}
+          </Text>
+        </div>
+      )
+    })}
   </div>
 )

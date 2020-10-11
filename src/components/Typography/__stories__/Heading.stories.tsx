@@ -2,53 +2,43 @@ import React from 'react'
 import {
   HeadingProps,
   Heading,
-  HeadingSizes,
-  Box,
-  HeadingColors
+  headingSizes,
+  headingColors
 } from '@/index'
-import { colorname } from '@/story-helpers/random-color'
 
 export default {
-  title: 'Headings'
+  title: 'Heading'
 }
 
-export const Headers = () => (
+export const HeadingBasic = () => (
+  <Heading>
+    Heading
+  </Heading>
+)
+
+export const HeadingSizes = () => (
   <div>
-    {Object.keys(HeadingSizes).map((size) => {
+    {Object.keys(headingSizes).map((size) => {
       return (
-        <Box
-          color={colorname()}
-          style={{
-            borderRadius: 20,
-            padding: '1rem 3rem',
-            margin: '1rem'
-          }}
-        >
-          <Heading key={size} size={size as HeadingProps['size']}>
-            .{HeadingSizes[size]}
+        <div key={size} style={{ marginBottom: 20 }}>
+          <Heading color="white" size={size as HeadingProps['size']}>
+            {size}
           </Heading>
-        </Box>
+        </div>
       )
     })}
   </div>
 )
 
-export const HeadersWithColors = () => (
+export const HeadingColors = () => (
   <div>
-    {Object.keys(HeadingColors).map((color) => {
+    {Object.keys(headingColors).map((color) => {
       return (
-        <Box
-          color="black"
-          style={{
-            borderRadius: 20,
-            padding: '1rem 3rem',
-            margin: '1rem'
-          }}
-        >
+        <div key={color} style={{ marginBottom: 20 }}>
           <Heading key={color} color={color as HeadingProps['color']}>
-            .{HeadingColors[color]}
+            {color}
           </Heading>
-        </Box>
+        </div>
       )
     })}
   </div>

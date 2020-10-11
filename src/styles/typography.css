@@ -27,27 +27,27 @@
 
 /* -- Heading -- */
 .drac-heading-1 {
-  font-size: 8rem;
+  font-size: var(--font-3xl);
 }
 
 .drac-heading-2 {
-  font-size: 6rem;
+  font-size: var(--font-2xl);
 }
 
 .drac-heading-3 {
-  font-size: 3rem;
+  font-size: var(--font-xl);
 }
 
 .drac-heading-4 {
-  font-size: 2.4rem;
+  font-size: var(--font-lg);
 }
 
 .drac-heading-5 {
-  font-size: 2rem;
+  font-size: var(--font-md);
 }
 
 .drac-heading-6 {
-  font-size: 1.6rem;
+  font-size: var(--font-sm);
 }
 
 /* -- Text -- */
@@ -60,22 +60,20 @@
   font-weight: 600;
 }
 
+/* -- Sizes -- */
+
 .drac-text {
-  font-size: 1.6rem;
+  font-size: var(--font-md);
 }
 
-.drac-text-lg {
-  font-size: 2.4rem;
+.drac-text.drac-text-lg {
+  font-size: var(--font-lg);
 }
 
-.drac-text-md {
-  font-size: 2rem;
+.drac-text.drac-text-sm {
+  font-size: var(--font-sm);
 }
 
-.drac-text-sm {
-  font-size: 1.2rem;
-}
-
-.drac-text-xs {
-  font-size: 1rem;
+.drac-text.drac-text-xs {
+  font-size: var(--font-xs);
 }

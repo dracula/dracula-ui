@@ -4,7 +4,7 @@ import React, { HTMLAttributes } from 'react'
 import { colors } from '../../base/colors'
 import { spacingClasses, SpacingPropType } from '../../base/spacing'
 
-export const HeadingSizes = {
+export const headingSizes = {
   'heading-1': 'drac-heading-1',
   'heading-2': 'drac-heading-2',
   'heading-3': 'drac-heading-3',
@@ -13,7 +13,7 @@ export const HeadingSizes = {
   'heading-6': 'drac-heading-6'
 }
 
-export const HeadingColors = mapValues(colors, (className) => {
+export const headingColors = mapValues(colors, (className) => {
   return className.replace('-bg-', '-text-')
 })
 
@@ -23,12 +23,12 @@ export interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {
    * The size and type of Heading to be used.
    * Denotes hierarchy.
    */
-  size?: keyof typeof HeadingSizes
+  size?: keyof typeof headingSizes
 
   /**
    * The Dracula UI color to be applied to the Heading.
    */
-  color?: keyof typeof HeadingColors
+  color?: keyof typeof headingColors
 
   /**
    * Controls the spacing between the Heading component and its parent and siblings.
@@ -57,8 +57,8 @@ export const Heading: React.FC<HeadingProps> = (props: HeadingProps) => {
     ...props,
     className: cx(
       `drac-heading`,
-      HeadingSizes[props.size ?? 'heading-1'],
-      props.color && HeadingColors[props.color],
+      headingSizes[props.size ?? 'heading-1'],
+      headingColors[props.color ?? 'white'],
       ...spacingClasses(props.spacing ?? 'none')
     )
   }

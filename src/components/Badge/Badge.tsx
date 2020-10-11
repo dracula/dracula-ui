@@ -1,6 +1,6 @@
 import React, { HTMLAttributes } from 'react'
 import { colors as backgroundColors } from '../../base/colors'
-import { Text, TextColors } from '../../components/Typography/Text'
+import { Text, textColors } from '../../components/Typography/Text'
 import cx from 'classnames'
 
 const variants = {
@@ -37,7 +37,7 @@ export const Badge: React.FC<BadgeProps> = (props: BadgeProps) => {
   const overrideTextColor = isOutline || isSubtle
 
   const textColorClass = overrideTextColor
-    ? TextColors[props.themeColor ?? 'green']
+    ? textColors[props.themeColor ?? 'green']
     : undefined
 
   let backgroundClass = backgroundColors[props.themeColor ?? 'green']
