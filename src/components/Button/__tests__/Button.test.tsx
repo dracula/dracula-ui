@@ -7,6 +7,7 @@ import {
 import { siteDocs } from '@/documentation/site-docs'
 import {
   ButtonVariants,
+  ButtonSizes,
   ButtonColors
 } from '@/components/Button/__stories__/Button.stories'
 
@@ -17,6 +18,7 @@ siteDocs(Button, {
   variations() {
     return [
       buildSnapshot('Variants', ButtonVariants),
+      buildSnapshot('Sizes', ButtonSizes),
       buildSnapshot('Colors', ButtonColors)
     ] as SnapshotBuilder[]
   }
