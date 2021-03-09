@@ -1,20 +1,11 @@
 import React from 'react'
-import {
-  HeadingProps,
-  Heading,
-  headingSizes,
-  headingColors
-} from '@/index'
+import { HeadingProps, Heading, headingSizes, headingColors } from '@/index'
 
 export default {
   title: 'Heading'
 }
 
-export const HeadingBasic = () => (
-  <Heading>
-    Heading
-  </Heading>
-)
+export const HeadingBasic = () => <Heading>Heading</Heading>
 
 export const HeadingSizes = () => (
   <div>

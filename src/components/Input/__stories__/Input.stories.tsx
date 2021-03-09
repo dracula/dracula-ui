@@ -1,5 +1,11 @@
 import React from 'react'
-import { InputProps, Input, inputVariants, inputColors, inputSizes } from '@/index'
+import {
+  InputProps,
+  Input,
+  inputVariants,
+  inputColors,
+  inputSizes
+} from '@/index'
 
 export default {
   title: 'Input'

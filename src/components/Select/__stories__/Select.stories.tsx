@@ -1,5 +1,11 @@
 import React from 'react'
-import { SelectProps, Select, selectVariants, selectColors, selectSizes } from '@/index'
+import {
+  SelectProps,
+  Select,
+  selectVariants,
+  selectColors,
+  selectSizes
+} from '@/index'
 
 export default {
   title: 'Select'

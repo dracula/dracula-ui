@@ -17,7 +17,7 @@ siteDocs(Heading, {
   variations() {
     return [
       buildSnapshot('Sizes', HeadingSizes),
-      buildSnapshot('Colors', HeadingColors),
+      buildSnapshot('Colors', HeadingColors)
     ] as SnapshotBuilder[]
   }
 })

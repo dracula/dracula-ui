@@ -19,7 +19,7 @@ siteDocs(Text, {
     return [
       buildSnapshot('Colors', TextColors),
       buildSnapshot('Weights', TextWeights),
-      buildSnapshot('Sizes', TextSizes),
+      buildSnapshot('Sizes', TextSizes)
     ] as SnapshotBuilder[]
   }
 })
