@@ -19,7 +19,6 @@
     "build": "tsdx build",
     "test": "yarn build && tsdx test && node ./dsp/update.js",
     "lint": "tsdx lint",
-    "prepare": "tsdx build",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -85,10 +84,10 @@
     "tsconfig-paths-webpack-plugin": "^3.3.0",
     "tsdx": "^0.14.0",
     "tslib": "^2.0.1",
-    "typescript": "^4.0.2"
+    "typescript": "^4.0.2",
+    "caniuse-lite": "^1.0.30001197"
   },
   "dependencies": {
-    "caniuse-lite": "^1.0.30001197",
     "classnames": "^2.2.6",
     "lodash": "^4.17.20",
     "lodash-es": "^4.17.15",
