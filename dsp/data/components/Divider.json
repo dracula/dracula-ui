@@ -3,7 +3,7 @@
   "type": "page",
   "id": "Divider",
   "name": "Divider",
-  "last_updated": "2021-03-09T22:24:16.133Z",
+  "last_updated": "2021-03-09T22:39:39.058Z",
   "last_updated_by": "System",
   "description": "Dividers are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
   "related_entity_ids": [],
@@ -42,6 +42,12 @@
         "fileName": "src/components/Divider/Divider.tsx",
         "name": "DividerProps"
       },
+      "declarations": [
+        {
+          "fileName": "src/components/Divider/Divider.tsx",
+          "name": "DividerProps"
+        }
+      ],
       "required": true,
       "type": {
         "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
@@ -49,6 +55,7 @@
     }
   },
   "ext_com_draculaui_docgen": {
+    "tags": {},
     "description": "Dividers are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
     "displayName": "Divider",
     "methods": [],
@@ -61,6 +68,12 @@
           "fileName": "src/components/Divider/Divider.tsx",
           "name": "DividerProps"
         },
+        "declarations": [
+          {
+            "fileName": "src/components/Divider/Divider.tsx",
+            "name": "DividerProps"
+          }
+        ],
         "required": true,
         "type": {
           "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""

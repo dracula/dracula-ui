@@ -3,7 +3,7 @@
   "type": "page",
   "id": "Table",
   "name": "Table",
-  "last_updated": "2021-03-09T22:24:24.977Z",
+  "last_updated": "2021-03-09T22:39:44.222Z",
   "last_updated_by": "System",
   "description": "Tables are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
   "related_entity_ids": [],
@@ -50,6 +50,9 @@
         "fileName": "src/components/Table/Table.tsx",
         "name": "TableProps"
       },
+      "declarations": [
+        { "fileName": "src/components/Table/Table.tsx", "name": "TableProps" }
+      ],
       "required": false,
       "type": {
         "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
@@ -63,11 +66,15 @@
         "fileName": "src/components/Table/Table.tsx",
         "name": "TableProps"
       },
+      "declarations": [
+        { "fileName": "src/components/Table/Table.tsx", "name": "TableProps" }
+      ],
       "required": false,
       "type": { "name": "\"normal\" | \"striped\" | undefined" }
     }
   },
   "ext_com_draculaui_docgen": {
+    "tags": {},
     "description": "Tables are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
     "displayName": "Table",
     "methods": [],
@@ -80,6 +87,9 @@
           "fileName": "src/components/Table/Table.tsx",
           "name": "TableProps"
         },
+        "declarations": [
+          { "fileName": "src/components/Table/Table.tsx", "name": "TableProps" }
+        ],
         "required": false,
         "type": {
           "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
@@ -93,6 +103,9 @@
           "fileName": "src/components/Table/Table.tsx",
           "name": "TableProps"
         },
+        "declarations": [
+          { "fileName": "src/components/Table/Table.tsx", "name": "TableProps" }
+        ],
         "required": false,
         "type": { "name": "\"normal\" | \"striped\" | undefined" }
       }

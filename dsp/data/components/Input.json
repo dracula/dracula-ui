@@ -3,7 +3,7 @@
   "type": "page",
   "id": "Input",
   "name": "Input",
-  "last_updated": "2021-03-09T22:24:23.781Z",
+  "last_updated": "2021-03-09T22:39:42.609Z",
   "last_updated_by": "System",
   "description": "Input is a styled HTML Input.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep inputs accessible.",
   "related_entity_ids": [],
@@ -58,6 +58,9 @@
         "fileName": "src/components/Input/Input.tsx",
         "name": "InputProps"
       },
+      "declarations": [
+        { "fileName": "src/components/Input/Input.tsx", "name": "InputProps" }
+      ],
       "required": false,
       "type": {
         "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
@@ -71,6 +74,9 @@
         "fileName": "src/components/Input/Input.tsx",
         "name": "InputProps"
       },
+      "declarations": [
+        { "fileName": "src/components/Input/Input.tsx", "name": "InputProps" }
+      ],
       "required": false,
       "type": { "name": "\"large\" | \"medium\" | \"small\" | undefined" }
     },
@@ -82,11 +88,15 @@
         "fileName": "src/components/Input/Input.tsx",
         "name": "InputProps"
       },
+      "declarations": [
+        { "fileName": "src/components/Input/Input.tsx", "name": "InputProps" }
+      ],
       "required": false,
       "type": { "name": "\"normal\" | \"outline\" | undefined" }
     }
   },
   "ext_com_draculaui_docgen": {
+    "tags": {},
     "description": "Input is a styled HTML Input.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep inputs accessible.",
     "displayName": "Input",
     "methods": [],
@@ -99,6 +109,9 @@
           "fileName": "src/components/Input/Input.tsx",
           "name": "InputProps"
         },
+        "declarations": [
+          { "fileName": "src/components/Input/Input.tsx", "name": "InputProps" }
+        ],
         "required": false,
         "type": {
           "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
@@ -112,6 +125,9 @@
           "fileName": "src/components/Input/Input.tsx",
           "name": "InputProps"
         },
+        "declarations": [
+          { "fileName": "src/components/Input/Input.tsx", "name": "InputProps" }
+        ],
         "required": false,
         "type": { "name": "\"large\" | \"medium\" | \"small\" | undefined" }
       },
@@ -123,6 +139,9 @@
           "fileName": "src/components/Input/Input.tsx",
           "name": "InputProps"
         },
+        "declarations": [
+          { "fileName": "src/components/Input/Input.tsx", "name": "InputProps" }
+        ],
         "required": false,
         "type": { "name": "\"normal\" | \"outline\" | undefined" }
       }

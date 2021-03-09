@@ -3,7 +3,7 @@
   "type": "page",
   "id": "Avatar",
   "name": "Avatar",
-  "last_updated": "2021-03-09T22:24:24.312Z",
+  "last_updated": "2021-03-09T22:39:43.515Z",
   "last_updated_by": "System",
   "description": "The Avatar component is used to represent a user.\n\nIt displays a profile picture, or falls back to the user's initials\nif a profile pic is not provided.",
   "related_entity_ids": [],
@@ -74,6 +74,12 @@
         "fileName": "src/components/Avatar/Avatar.tsx",
         "name": "AvatarProps"
       },
+      "declarations": [
+        {
+          "fileName": "src/components/Avatar/Avatar.tsx",
+          "name": "AvatarProps"
+        }
+      ],
       "required": true,
       "type": { "name": "string" }
     },
@@ -85,6 +91,12 @@
         "fileName": "src/components/Avatar/Avatar.tsx",
         "name": "AvatarProps"
       },
+      "declarations": [
+        {
+          "fileName": "src/components/Avatar/Avatar.tsx",
+          "name": "AvatarProps"
+        }
+      ],
       "required": false,
       "type": {
         "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
@@ -98,6 +110,12 @@
         "fileName": "src/components/Avatar/Avatar.tsx",
         "name": "AvatarProps"
       },
+      "declarations": [
+        {
+          "fileName": "src/components/Avatar/Avatar.tsx",
+          "name": "AvatarProps"
+        }
+      ],
       "required": false,
       "type": { "name": "\"normal\" | \"subtle\" | undefined" }
     },
@@ -109,6 +127,12 @@
         "fileName": "src/components/Avatar/Avatar.tsx",
         "name": "AvatarProps"
       },
+      "declarations": [
+        {
+          "fileName": "src/components/Avatar/Avatar.tsx",
+          "name": "AvatarProps"
+        }
+      ],
       "required": false,
       "type": { "name": "\"normal\" | \"large\" | \"none\" | undefined" }
     },
@@ -120,11 +144,18 @@
         "fileName": "src/components/Avatar/Avatar.tsx",
         "name": "AvatarProps"
       },
+      "declarations": [
+        {
+          "fileName": "src/components/Avatar/Avatar.tsx",
+          "name": "AvatarProps"
+        }
+      ],
       "required": false,
       "type": { "name": "string | undefined" }
     }
   },
   "ext_com_draculaui_docgen": {
+    "tags": {},
     "description": "The Avatar component is used to represent a user.\n\nIt displays a profile picture, or falls back to the user's initials\nif a profile pic is not provided.",
     "displayName": "Avatar",
     "methods": [],
@@ -137,6 +168,12 @@
           "fileName": "src/components/Avatar/Avatar.tsx",
           "name": "AvatarProps"
         },
+        "declarations": [
+          {
+            "fileName": "src/components/Avatar/Avatar.tsx",
+            "name": "AvatarProps"
+          }
+        ],
         "required": true,
         "type": { "name": "string" }
       },
@@ -148,6 +185,12 @@
           "fileName": "src/components/Avatar/Avatar.tsx",
           "name": "AvatarProps"
         },
+        "declarations": [
+          {
+            "fileName": "src/components/Avatar/Avatar.tsx",
+            "name": "AvatarProps"
+          }
+        ],
         "required": false,
         "type": {
           "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
@@ -161,6 +204,12 @@
           "fileName": "src/components/Avatar/Avatar.tsx",
           "name": "AvatarProps"
         },
+        "declarations": [
+          {
+            "fileName": "src/components/Avatar/Avatar.tsx",
+            "name": "AvatarProps"
+          }
+        ],
         "required": false,
         "type": { "name": "\"normal\" | \"subtle\" | undefined" }
       },
@@ -172,6 +221,12 @@
           "fileName": "src/components/Avatar/Avatar.tsx",
           "name": "AvatarProps"
         },
+        "declarations": [
+          {
+            "fileName": "src/components/Avatar/Avatar.tsx",
+            "name": "AvatarProps"
+          }
+        ],
         "required": false,
         "type": { "name": "\"normal\" | \"large\" | \"none\" | undefined" }
       },
@@ -183,6 +238,12 @@
           "fileName": "src/components/Avatar/Avatar.tsx",
           "name": "AvatarProps"
         },
+        "declarations": [
+          {
+            "fileName": "src/components/Avatar/Avatar.tsx",
+            "name": "AvatarProps"
+          }
+        ],
         "required": false,
         "type": { "name": "string | undefined" }
       }

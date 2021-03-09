@@ -8,7 +8,7 @@
       "type": "page",
       "id": "Avatar",
       "name": "Avatar",
-      "last_updated": "2020-10-10T16:21:31.111Z",
+      "last_updated": "2021-03-09T22:39:43.515Z",
       "last_updated_by": "System",
       "description": "The Avatar component is used to represent a user.\n\nIt displays a profile picture, or falls back to the user's initials\nif a profile pic is not provided.",
       "related_entity_ids": [],
@@ -81,6 +81,12 @@
             "fileName": "src/components/Avatar/Avatar.tsx",
             "name": "AvatarProps"
           },
+          "declarations": [
+            {
+              "fileName": "src/components/Avatar/Avatar.tsx",
+              "name": "AvatarProps"
+            }
+          ],
           "required": true,
           "type": {
             "name": "string"
@@ -94,6 +100,12 @@
             "fileName": "src/components/Avatar/Avatar.tsx",
             "name": "AvatarProps"
           },
+          "declarations": [
+            {
+              "fileName": "src/components/Avatar/Avatar.tsx",
+              "name": "AvatarProps"
+            }
+          ],
           "required": false,
           "type": {
             "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
@@ -107,6 +119,12 @@
             "fileName": "src/components/Avatar/Avatar.tsx",
             "name": "AvatarProps"
           },
+          "declarations": [
+            {
+              "fileName": "src/components/Avatar/Avatar.tsx",
+              "name": "AvatarProps"
+            }
+          ],
           "required": false,
           "type": {
             "name": "\"normal\" | \"subtle\" | undefined"
@@ -120,6 +138,12 @@
             "fileName": "src/components/Avatar/Avatar.tsx",
             "name": "AvatarProps"
           },
+          "declarations": [
+            {
+              "fileName": "src/components/Avatar/Avatar.tsx",
+              "name": "AvatarProps"
+            }
+          ],
           "required": false,
           "type": {
             "name": "\"normal\" | \"large\" | \"none\" | undefined"
@@ -133,6 +157,12 @@
             "fileName": "src/components/Avatar/Avatar.tsx",
             "name": "AvatarProps"
           },
+          "declarations": [
+            {
+              "fileName": "src/components/Avatar/Avatar.tsx",
+              "name": "AvatarProps"
+            }
+          ],
           "required": false,
           "type": {
             "name": "string | undefined"
@@ -140,6 +170,7 @@
         }
       },
       "ext_com_draculaui_docgen": {
+        "tags": {},
         "description": "The Avatar component is used to represent a user.\n\nIt displays a profile picture, or falls back to the user's initials\nif a profile pic is not provided.",
         "displayName": "Avatar",
         "methods": [],
@@ -152,6 +183,12 @@
               "fileName": "src/components/Avatar/Avatar.tsx",
               "name": "AvatarProps"
             },
+            "declarations": [
+              {
+                "fileName": "src/components/Avatar/Avatar.tsx",
+                "name": "AvatarProps"
+              }
+            ],
             "required": true,
             "type": {
               "name": "string"
@@ -165,6 +202,12 @@
               "fileName": "src/components/Avatar/Avatar.tsx",
               "name": "AvatarProps"
             },
+            "declarations": [
+              {
+                "fileName": "src/components/Avatar/Avatar.tsx",
+                "name": "AvatarProps"
+              }
+            ],
             "required": false,
             "type": {
               "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
@@ -178,6 +221,12 @@
               "fileName": "src/components/Avatar/Avatar.tsx",
               "name": "AvatarProps"
             },
+            "declarations": [
+              {
+                "fileName": "src/components/Avatar/Avatar.tsx",
+                "name": "AvatarProps"
+              }
+            ],
             "required": false,
             "type": {
               "name": "\"normal\" | \"subtle\" | undefined"
@@ -191,6 +240,12 @@
               "fileName": "src/components/Avatar/Avatar.tsx",
               "name": "AvatarProps"
             },
+            "declarations": [
+              {
+                "fileName": "src/components/Avatar/Avatar.tsx",
+                "name": "AvatarProps"
+              }
+            ],
             "required": false,
             "type": {
               "name": "\"normal\" | \"large\" | \"none\" | undefined"
@@ -204,6 +259,12 @@
               "fileName": "src/components/Avatar/Avatar.tsx",
               "name": "AvatarProps"
             },
+            "declarations": [
+              {
+                "fileName": "src/components/Avatar/Avatar.tsx",
+                "name": "AvatarProps"
+              }
+            ],
             "required": false,
             "type": {
               "name": "string | undefined"
@@ -217,7 +278,7 @@
       "type": "page",
       "id": "Button",
       "name": "Button",
-      "last_updated": "2020-10-10T16:21:26.255Z",
+      "last_updated": "2021-03-09T22:39:43.247Z",
       "last_updated_by": "System",
       "description": "The Button component triggers actions, behaviors, or events based\non user input.",
       "related_entity_ids": [],
@@ -249,6 +310,14 @@
           "svgData": "./dsp/assets/svgs/ButtonVariants.svg"
         },
         {
+          "title": "Sizes",
+          "html": "<div class=\"drac-box\">\n  <div style=\"margin-bottom: 10px\" class=\"drac-box\">\n    <button class=\"drac-btn drac-bg-purple drac-btn drac-btn-lg\" color=\"purple\">\n      large\n    </button>\n  </div>\n  <div style=\"margin-bottom: 10px\" class=\"drac-box\">\n    <button class=\"drac-btn drac-bg-purple drac-btn drac-btn\" color=\"purple\">\n      medium\n    </button>\n  </div>\n  <div style=\"margin-bottom: 10px\" class=\"drac-box\">\n    <button class=\"drac-btn drac-bg-purple drac-btn drac-btn-sm\" color=\"purple\">\n      small\n    </button>\n  </div>\n  <div style=\"margin-bottom: 10px\" class=\"drac-box\">\n    <button class=\"drac-btn drac-bg-purple drac-btn drac-btn-xs\" color=\"purple\">\n      xsmall\n    </button>\n  </div>\n</div>\n",
+          "react": "<Box>\n  <Box style={{ marginBottom: 10 }}>\n    <Button color=\"purple\" size=\"large\">\n      large\n    </Button>\n  </Box>\n  <Box style={{ marginBottom: 10 }}>\n    <Button color=\"purple\" size=\"medium\">\n      medium\n    </Button>\n  </Box>\n  <Box style={{ marginBottom: 10 }}>\n    <Button color=\"purple\" size=\"small\">\n      small\n    </Button>\n  </Box>\n  <Box style={{ marginBottom: 10 }}>\n    <Button color=\"purple\" size=\"xsmall\">\n      xsmall\n    </Button>\n  </Box>\n</Box>;\n",
+          "docs": "",
+          "screenshot": "./dsp/assets/ButtonSizes.png",
+          "svgData": "./dsp/assets/svgs/ButtonSizes.svg"
+        },
+        {
           "title": "Colors",
           "html": "<div class=\"drac-box\">\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button\n      class=\"drac-btn drac-bg-white drac-btn drac-btn\"\n      color=\"white\"\n      style=\"margin: 1rem\"\n    >\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-white drac-btn-outline drac-btn drac-text-white\"\n      color=\"white\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-white-transparent drac-btn-ghost drac-btn drac-text-white\"\n      color=\"white\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button\n      class=\"drac-btn drac-bg-cyan drac-btn drac-btn\"\n      color=\"cyan\"\n      style=\"margin: 1rem\"\n    >\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-cyan drac-btn-outline drac-btn drac-text-cyan\"\n      color=\"cyan\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-cyan-transparent drac-btn-ghost drac-btn drac-text-cyan\"\n      color=\"cyan\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button\n      class=\"drac-btn drac-bg-green drac-btn drac-btn\"\n      color=\"green\"\n      style=\"margin: 1rem\"\n    >\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-green drac-btn-outline drac-btn drac-text-green\"\n      color=\"green\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-green-transparent drac-btn-ghost drac-btn drac-text-green\"\n      color=\"green\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button\n      class=\"drac-btn drac-bg-orange drac-btn drac-btn\"\n      color=\"orange\"\n      style=\"margin: 1rem\"\n    >\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-orange drac-btn-outline drac-btn drac-text-orange\"\n      color=\"orange\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-orange-transparent drac-btn-ghost drac-btn drac-text-orange\"\n      color=\"orange\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button\n      class=\"drac-btn drac-bg-pink drac-btn drac-btn\"\n      color=\"pink\"\n      style=\"margin: 1rem\"\n    >\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-pink drac-btn-outline drac-btn drac-text-pink\"\n      color=\"pink\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-pink-transparent drac-btn-ghost drac-btn drac-text-pink\"\n      color=\"pink\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button\n      class=\"drac-btn drac-bg-purple drac-btn drac-btn\"\n      color=\"purple\"\n      style=\"margin: 1rem\"\n    >\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-purple drac-btn-outline drac-btn drac-text-purple\"\n      color=\"purple\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-purple-transparent drac-btn-ghost drac-btn drac-text-purple\"\n      color=\"purple\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button\n      class=\"drac-btn drac-bg-red drac-btn drac-btn\"\n      color=\"red\"\n      style=\"margin: 1rem\"\n    >\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-red drac-btn-outline drac-btn drac-text-red\"\n      color=\"red\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-red-transparent drac-btn-ghost drac-btn drac-text-red\"\n      color=\"red\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button\n      class=\"drac-btn drac-bg-yellow drac-btn drac-btn\"\n      color=\"yellow\"\n      style=\"margin: 1rem\"\n    >\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-yellow drac-btn-outline drac-btn drac-text-yellow\"\n      color=\"yellow\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-yellow-transparent drac-btn-ghost drac-btn drac-text-yellow\"\n      color=\"yellow\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button\n      class=\"drac-btn drac-bg-purple-cyan drac-btn drac-btn\"\n      color=\"purpleCyan\"\n      style=\"margin: 1rem\"\n    >\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-purple-cyan drac-btn-outline drac-btn drac-text-purple-cyan\"\n      color=\"purpleCyan\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-purple-cyan-transparent drac-btn-ghost drac-btn drac-text-purple-cyan\"\n      color=\"purpleCyan\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button\n      class=\"drac-btn drac-bg-yellow-pink drac-btn drac-btn\"\n      color=\"yellowPink\"\n      style=\"margin: 1rem\"\n    >\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-yellow-pink drac-btn-outline drac-btn drac-text-yellow-pink\"\n      color=\"yellowPink\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-yellow-pink-transparent drac-btn-ghost drac-btn drac-text-yellow-pink\"\n      color=\"yellowPink\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button\n      class=\"drac-btn drac-bg-cyan-green drac-btn drac-btn\"\n      color=\"cyanGreen\"\n      style=\"margin: 1rem\"\n    >\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-cyan-green drac-btn-outline drac-btn drac-text-cyan-green\"\n      color=\"cyanGreen\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-cyan-green-transparent drac-btn-ghost drac-btn drac-text-cyan-green\"\n      color=\"cyanGreen\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button\n      class=\"drac-btn drac-bg-pink-purple drac-btn drac-btn\"\n      color=\"pinkPurple\"\n      style=\"margin: 1rem\"\n    >\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-pink-purple drac-btn-outline drac-btn drac-text-pink-purple\"\n      color=\"pinkPurple\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-pink-purple-transparent drac-btn-ghost drac-btn drac-text-pink-purple\"\n      color=\"pinkPurple\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button\n      class=\"drac-btn drac-bg-animated drac-btn drac-btn\"\n      color=\"animated\"\n      style=\"margin: 1rem\"\n    >\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-animated drac-btn-outline drac-btn drac-text-animated\"\n      color=\"animated\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-animated-transparent drac-btn-ghost drac-btn drac-text-animated\"\n      color=\"animated\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n</div>\n",
           "react": "<Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"white\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"white\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"white\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"cyan\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"cyan\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"cyan\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"green\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"green\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"green\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"orange\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"orange\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"orange\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"pink\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"pink\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"pink\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"purple\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"purple\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"purple\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"red\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"red\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"red\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"yellow\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"yellow\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"yellow\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"purpleCyan\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"purpleCyan\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"purpleCyan\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"yellowPink\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"yellowPink\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"yellowPink\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"cyanGreen\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"cyanGreen\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"cyanGreen\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"pinkPurple\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"pinkPurple\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"pinkPurple\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"animated\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"animated\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"animated\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n</Box>;\n",
@@ -266,6 +335,12 @@
             "fileName": "src/components/Button/Button.tsx",
             "name": "ButtonProps"
           },
+          "declarations": [
+            {
+              "fileName": "src/components/Button/Button.tsx",
+              "name": "ButtonProps"
+            }
+          ],
           "required": false,
           "type": {
             "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
@@ -279,6 +354,12 @@
             "fileName": "src/components/Button/Button.tsx",
             "name": "ButtonProps"
           },
+          "declarations": [
+            {
+              "fileName": "src/components/Button/Button.tsx",
+              "name": "ButtonProps"
+            }
+          ],
           "required": false,
           "type": {
             "name": "\"large\" | \"medium\" | \"small\" | \"xsmall\" | undefined"
@@ -292,6 +373,12 @@
             "fileName": "src/components/Button/Button.tsx",
             "name": "ButtonProps"
           },
+          "declarations": [
+            {
+              "fileName": "src/components/Button/Button.tsx",
+              "name": "ButtonProps"
+            }
+          ],
           "required": false,
           "type": {
             "name": "\"normal\" | \"outline\" | \"ghost\" | undefined"
@@ -305,6 +392,12 @@
             "fileName": "src/components/Button/Button.tsx",
             "name": "ButtonProps"
           },
+          "declarations": [
+            {
+              "fileName": "src/components/Button/Button.tsx",
+              "name": "ButtonProps"
+            }
+          ],
           "required": false,
           "type": {
             "name": "boolean | undefined"
@@ -312,6 +405,7 @@
         }
       },
       "ext_com_draculaui_docgen": {
+        "tags": {},
         "description": "The Button component triggers actions, behaviors, or events based\non user input.",
         "displayName": "Button",
         "methods": [],
@@ -324,6 +418,12 @@
               "fileName": "src/components/Button/Button.tsx",
               "name": "ButtonProps"
             },
+            "declarations": [
+              {
+                "fileName": "src/components/Button/Button.tsx",
+                "name": "ButtonProps"
+              }
+            ],
             "required": false,
             "type": {
               "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
@@ -337,6 +437,12 @@
               "fileName": "src/components/Button/Button.tsx",
               "name": "ButtonProps"
             },
+            "declarations": [
+              {
+                "fileName": "src/components/Button/Button.tsx",
+                "name": "ButtonProps"
+              }
+            ],
             "required": false,
             "type": {
               "name": "\"large\" | \"medium\" | \"small\" | \"xsmall\" | undefined"
@@ -350,6 +456,12 @@
               "fileName": "src/components/Button/Button.tsx",
               "name": "ButtonProps"
             },
+            "declarations": [
+              {
+                "fileName": "src/components/Button/Button.tsx",
+                "name": "ButtonProps"
+              }
+            ],
             "required": false,
             "type": {
               "name": "\"normal\" | \"outline\" | \"ghost\" | undefined"
@@ -363,6 +475,12 @@
               "fileName": "src/components/Button/Button.tsx",
               "name": "ButtonProps"
             },
+            "declarations": [
+              {
+                "fileName": "src/components/Button/Button.tsx",
+                "name": "ButtonProps"
+              }
+            ],
             "required": false,
             "type": {
               "name": "boolean | undefined"
@@ -376,7 +494,7 @@
       "type": "page",
       "id": "Checkbox",
       "name": "Checkbox",
-      "last_updated": "2020-10-10T16:21:25.676Z",
+      "last_updated": "2021-03-09T22:39:39.424Z",
       "last_updated_by": "System",
       "description": "Checkbox is a styled HTML Input of type checkbox.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep check boxes accessible.",
       "related_entity_ids": [],
@@ -425,6 +543,12 @@
             "fileName": "src/components/Checkbox/Checkbox.tsx",
             "name": "CheckboxProps"
           },
+          "declarations": [
+            {
+              "fileName": "src/components/Checkbox/Checkbox.tsx",
+              "name": "CheckboxProps"
+            }
+          ],
           "required": false,
           "type": {
             "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
@@ -438,6 +562,12 @@
             "fileName": "src/components/Checkbox/Checkbox.tsx",
             "name": "CheckboxProps"
           },
+          "declarations": [
+            {
+              "fileName": "src/components/Checkbox/Checkbox.tsx",
+              "name": "CheckboxProps"
+            }
+          ],
           "required": false,
           "type": {
             "name": "string | undefined"
@@ -451,6 +581,12 @@
             "fileName": "src/components/Checkbox/Checkbox.tsx",
             "name": "CheckboxProps"
           },
+          "declarations": [
+            {
+              "fileName": "src/components/Checkbox/Checkbox.tsx",
+              "name": "CheckboxProps"
+            }
+          ],
           "required": false,
           "type": {
             "name": "boolean | undefined"
@@ -458,6 +594,7 @@
         }
       },
       "ext_com_draculaui_docgen": {
+        "tags": {},
         "description": "Checkbox is a styled HTML Input of type checkbox.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep check boxes accessible.",
         "displayName": "Checkbox",
         "methods": [],
@@ -470,6 +607,12 @@
               "fileName": "src/components/Checkbox/Checkbox.tsx",
               "name": "CheckboxProps"
             },
+            "declarations": [
+              {
+                "fileName": "src/components/Checkbox/Checkbox.tsx",
+                "name": "CheckboxProps"
+              }
+            ],
             "required": false,
             "type": {
               "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
@@ -483,6 +626,12 @@
               "fileName": "src/components/Checkbox/Checkbox.tsx",
               "name": "CheckboxProps"
             },
+            "declarations": [
+              {
+                "fileName": "src/components/Checkbox/Checkbox.tsx",
+                "name": "CheckboxProps"
+              }
+            ],
             "required": false,
             "type": {
               "name": "string | undefined"
@@ -496,6 +645,12 @@
               "fileName": "src/components/Checkbox/Checkbox.tsx",
               "name": "CheckboxProps"
             },
+            "declarations": [
+              {
+                "fileName": "src/components/Checkbox/Checkbox.tsx",
+                "name": "CheckboxProps"
+              }
+            ],
             "required": false,
             "type": {
               "name": "boolean | undefined"
@@ -509,7 +664,7 @@
       "type": "page",
       "id": "Divider",
       "name": "Divider",
-      "last_updated": "2020-10-10T16:21:22.404Z",
+      "last_updated": "2021-03-09T22:39:39.058Z",
       "last_updated_by": "System",
       "description": "Dividers are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
       "related_entity_ids": [],
@@ -550,6 +705,12 @@
             "fileName": "src/components/Divider/Divider.tsx",
             "name": "DividerProps"
           },
+          "declarations": [
+            {
+              "fileName": "src/components/Divider/Divider.tsx",
+              "name": "DividerProps"
+            }
+          ],
           "required": true,
           "type": {
             "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
@@ -557,6 +718,7 @@
         }
       },
       "ext_com_draculaui_docgen": {
+        "tags": {},
         "description": "Dividers are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
         "displayName": "Divider",
         "methods": [],
@@ -569,6 +731,12 @@
               "fileName": "src/components/Divider/Divider.tsx",
               "name": "DividerProps"
             },
+            "declarations": [
+              {
+                "fileName": "src/components/Divider/Divider.tsx",
+                "name": "DividerProps"
+              }
+            ],
             "required": true,
             "type": {
               "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
@@ -582,7 +750,7 @@
       "type": "page",
       "id": "Input",
       "name": "Input",
-      "last_updated": "2020-10-10T16:21:29.020Z",
+      "last_updated": "2021-03-09T22:39:42.609Z",
       "last_updated_by": "System",
       "description": "Input is a styled HTML Input.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep inputs accessible.",
       "related_entity_ids": [],
@@ -593,13 +761,13 @@
         "trigger": "input",
         "languages": {
           "javascriptreact": "<Input placeholder=\"Placeholder\" color=\"white\" />;\n",
-          "html": "<input\n  placeholder=\"Placeholder\"\n  color=\"white\"\n  class=\"drac-input drac-text drac-text-md drac-input-white drac-text-white\"\n/>\n"
+          "html": "<input\n  placeholder=\"Placeholder\"\n  color=\"white\"\n  class=\"drac-input drac-input-white drac-text-white\"\n/>\n"
         }
       },
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
-          "html": "<input\n  placeholder=\"Placeholder\"\n  color=\"white\"\n  class=\"drac-input drac-text drac-text-md drac-input-white drac-text-white\"\n/>\n",
+          "html": "<input\n  placeholder=\"Placeholder\"\n  color=\"white\"\n  class=\"drac-input drac-input-white drac-text-white\"\n/>\n",
           "react": "<Input placeholder=\"Placeholder\" color=\"white\" />;\n",
           "docs": "",
           "screenshot": "./dsp/assets/Input.png",
@@ -607,15 +775,23 @@
         },
         {
           "title": "Colors",
-          "html": "<div style=\"display: flex; flex-direction: column; padding: 3rem\">\n  <input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"white\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-text drac-text-md drac-input-outline drac-input-white drac-text-white\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"cyan\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-text drac-text-md drac-input-outline drac-input-cyan drac-text-cyan\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"green\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-text drac-text-md drac-input-outline drac-input-green drac-text-green\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"orange\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-text drac-text-md drac-input-outline drac-input-orange drac-text-orange\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"pink\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-text drac-text-md drac-input-outline drac-input-pink drac-text-pink\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"purple\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-text drac-text-md drac-input-outline drac-input-purple drac-text-purple\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"red\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-text drac-text-md drac-input-outline drac-input-red drac-text-red\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"yellow\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-text drac-text-md drac-input-outline drac-input-yellow drac-text-yellow\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"animated\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-text drac-text-md drac-input-outline\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"cyanGreen\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-text drac-text-md drac-input-outline\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"pinkPurple\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-text drac-text-md drac-input-outline\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"purpleCyan\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-text drac-text-md drac-input-outline\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"yellowPink\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-text drac-text-md drac-input-outline\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"white\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-text drac-text-md drac-input drac-input-white drac-text-white\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"cyan\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-text drac-text-md drac-input drac-input-cyan drac-text-cyan\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"green\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-text drac-text-md drac-input drac-input-green drac-text-green\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"orange\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-text drac-text-md drac-input drac-input-orange drac-text-orange\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"pink\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-text drac-text-md drac-input drac-input-pink drac-text-pink\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"purple\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-text drac-text-md drac-input drac-input-purple drac-text-purple\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"red\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-text drac-text-md drac-input drac-input-red drac-text-red\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"yellow\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-text drac-text-md drac-input drac-input-yellow drac-text-yellow\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"animated\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-text drac-text-md drac-input\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"cyanGreen\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-text drac-text-md drac-input\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"pinkPurple\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-text drac-text-md drac-input\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"purpleCyan\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-text drac-text-md drac-input\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"yellowPink\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-text drac-text-md drac-input\"\n  />\n</div>\n",
+          "html": "<div style=\"display: flex; flex-direction: column; padding: 3rem\">\n  <input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"white\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-input-outline drac-input-white drac-text-white\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"cyan\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-input-outline drac-input-cyan drac-text-cyan\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"green\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-input-outline drac-input-green drac-text-green\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"orange\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-input-outline drac-input-orange drac-text-orange\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"pink\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-input-outline drac-input-pink drac-text-pink\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"purple\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-input-outline drac-input-purple drac-text-purple\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"red\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-input-outline drac-input-red drac-text-red\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"yellow\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-input-outline drac-input-yellow drac-text-yellow\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"animated\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-input-outline\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"cyanGreen\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-input-outline\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"pinkPurple\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-input-outline\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"purpleCyan\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-input-outline\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"yellowPink\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-input-outline\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"white\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-input drac-input-white drac-text-white\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"cyan\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-input drac-input-cyan drac-text-cyan\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"green\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-input drac-input-green drac-text-green\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"orange\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-input drac-input-orange drac-text-orange\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"pink\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-input drac-input-pink drac-text-pink\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"purple\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-input drac-input-purple drac-text-purple\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"red\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-input drac-input-red drac-text-red\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"yellow\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-input drac-input-yellow drac-text-yellow\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"animated\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-input\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"cyanGreen\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-input\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"pinkPurple\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-input\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"purpleCyan\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-input\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"yellowPink\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-input\"\n  />\n</div>\n",
           "react": "<div style={{ display: \"flex\", flexDirection: \"column\", padding: \"3rem\" }}>\n  <Input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"white\"\n    style={{ marginBottom: 20 }}\n  />\n  <Input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"cyan\"\n    style={{ marginBottom: 20 }}\n  />\n  <Input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"green\"\n    style={{ marginBottom: 20 }}\n  />\n  <Input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"orange\"\n    style={{ marginBottom: 20 }}\n  />\n  <Input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"pink\"\n    style={{ marginBottom: 20 }}\n  />\n  <Input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"purple\"\n    style={{ marginBottom: 20 }}\n  />\n  <Input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"red\"\n    style={{ marginBottom: 20 }}\n  />\n  <Input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"yellow\"\n    style={{ marginBottom: 20 }}\n  />\n  <Input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"animated\"\n    style={{ marginBottom: 20 }}\n  />\n  <Input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"cyanGreen\"\n    style={{ marginBottom: 20 }}\n  />\n  <Input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"pinkPurple\"\n    style={{ marginBottom: 20 }}\n  />\n  <Input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"purpleCyan\"\n    style={{ marginBottom: 20 }}\n  />\n  <Input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"yellowPink\"\n    style={{ marginBottom: 20 }}\n  />\n  <Input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"white\"\n    style={{ marginBottom: 20 }}\n  />\n  <Input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"cyan\"\n    style={{ marginBottom: 20 }}\n  />\n  <Input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"green\"\n    style={{ marginBottom: 20 }}\n  />\n  <Input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"orange\"\n    style={{ marginBottom: 20 }}\n  />\n  <Input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"pink\"\n    style={{ marginBottom: 20 }}\n  />\n  <Input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"purple\"\n    style={{ marginBottom: 20 }}\n  />\n  <Input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"red\"\n    style={{ marginBottom: 20 }}\n  />\n  <Input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"yellow\"\n    style={{ marginBottom: 20 }}\n  />\n  <Input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"animated\"\n    style={{ marginBottom: 20 }}\n  />\n  <Input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"cyanGreen\"\n    style={{ marginBottom: 20 }}\n  />\n  <Input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"pinkPurple\"\n    style={{ marginBottom: 20 }}\n  />\n  <Input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"purpleCyan\"\n    style={{ marginBottom: 20 }}\n  />\n  <Input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"yellowPink\"\n    style={{ marginBottom: 20 }}\n  />\n</div>;\n",
           "docs": "",
           "screenshot": "./dsp/assets/InputColors.png",
           "svgData": "./dsp/assets/svgs/InputColors.svg"
         },
         {
+          "title": "Sizes",
+          "html": "<div>\n  <div style=\"margin-bottom: 10px\">\n    <input\n      placeholder=\"Placeholder\"\n      color=\"white\"\n      class=\"drac-input drac-input-lg drac-input-white drac-text-white\"\n    />\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <input\n      placeholder=\"Placeholder\"\n      color=\"white\"\n      class=\"drac-input drac-input drac-input-white drac-text-white\"\n    />\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <input\n      placeholder=\"Placeholder\"\n      color=\"white\"\n      class=\"drac-input drac-input-sm drac-input-white drac-text-white\"\n    />\n  </div>\n</div>\n",
+          "react": "<div>\n  <div style={{ marginBottom: 10 }}>\n    <Input placeholder=\"Placeholder\" size=\"large\" color=\"white\" />\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Input placeholder=\"Placeholder\" size=\"medium\" color=\"white\" />\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Input placeholder=\"Placeholder\" size=\"small\" color=\"white\" />\n  </div>\n</div>;\n",
+          "docs": "",
+          "screenshot": "./dsp/assets/InputSizes.png",
+          "svgData": "./dsp/assets/svgs/InputSizes.svg"
+        },
+        {
           "title": "Variants",
-          "html": "<div style=\"display: flex; flex-direction: column; padding: 3rem\">\n  <input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"white\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-text drac-text-md drac-input drac-input-white drac-text-white\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"white\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-text drac-text-md drac-input-outline drac-input-white drac-text-white\"\n  />\n</div>\n",
+          "html": "<div style=\"display: flex; flex-direction: column; padding: 3rem\">\n  <input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"white\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-input drac-input-white drac-text-white\"\n  /><input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"white\"\n    style=\"margin-bottom: 20px\"\n    class=\"drac-input drac-input-outline drac-input-white drac-text-white\"\n  />\n</div>\n",
           "react": "<div style={{ display: \"flex\", flexDirection: \"column\", padding: \"3rem\" }}>\n  <Input\n    placeholder=\"Placeholder\"\n    variant=\"normal\"\n    color=\"white\"\n    style={{ marginBottom: 20 }}\n  />\n  <Input\n    placeholder=\"Placeholder\"\n    variant=\"outline\"\n    color=\"white\"\n    style={{ marginBottom: 20 }}\n  />\n</div>;\n",
           "docs": "",
           "screenshot": "./dsp/assets/InputVariants.png",
@@ -631,9 +807,34 @@
             "fileName": "src/components/Input/Input.tsx",
             "name": "InputProps"
           },
+          "declarations": [
+            {
+              "fileName": "src/components/Input/Input.tsx",
+              "name": "InputProps"
+            }
+          ],
           "required": false,
           "type": {
             "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+          }
+        },
+        "size": {
+          "defaultValue": null,
+          "description": "Controls the size of the input based on pre-configured Dracula UI sizes.\nOptions: `small`, `medium`, `large`",
+          "name": "size",
+          "parent": {
+            "fileName": "src/components/Input/Input.tsx",
+            "name": "InputProps"
+          },
+          "declarations": [
+            {
+              "fileName": "src/components/Input/Input.tsx",
+              "name": "InputProps"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"large\" | \"medium\" | \"small\" | undefined"
           }
         },
         "variant": {
@@ -644,6 +845,12 @@
             "fileName": "src/components/Input/Input.tsx",
             "name": "InputProps"
           },
+          "declarations": [
+            {
+              "fileName": "src/components/Input/Input.tsx",
+              "name": "InputProps"
+            }
+          ],
           "required": false,
           "type": {
             "name": "\"normal\" | \"outline\" | undefined"
@@ -651,6 +858,7 @@
         }
       },
       "ext_com_draculaui_docgen": {
+        "tags": {},
         "description": "Input is a styled HTML Input.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep inputs accessible.",
         "displayName": "Input",
         "methods": [],
@@ -663,9 +871,34 @@
               "fileName": "src/components/Input/Input.tsx",
               "name": "InputProps"
             },
+            "declarations": [
+              {
+                "fileName": "src/components/Input/Input.tsx",
+                "name": "InputProps"
+              }
+            ],
             "required": false,
             "type": {
               "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+            }
+          },
+          "size": {
+            "defaultValue": null,
+            "description": "Controls the size of the input based on pre-configured Dracula UI sizes.\nOptions: `small`, `medium`, `large`",
+            "name": "size",
+            "parent": {
+              "fileName": "src/components/Input/Input.tsx",
+              "name": "InputProps"
+            },
+            "declarations": [
+              {
+                "fileName": "src/components/Input/Input.tsx",
+                "name": "InputProps"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"large\" | \"medium\" | \"small\" | undefined"
             }
           },
           "variant": {
@@ -676,6 +909,12 @@
               "fileName": "src/components/Input/Input.tsx",
               "name": "InputProps"
             },
+            "declarations": [
+              {
+                "fileName": "src/components/Input/Input.tsx",
+                "name": "InputProps"
+              }
+            ],
             "required": false,
             "type": {
               "name": "\"normal\" | \"outline\" | undefined"
@@ -689,7 +928,7 @@
       "type": "page",
       "id": "Radio",
       "name": "Radio",
-      "last_updated": "2020-10-10T16:21:25.564Z",
+      "last_updated": "2021-03-09T22:39:39.405Z",
       "last_updated_by": "System",
       "description": "Radio is a styled HTML Input of type radio.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep Radios accessible.",
       "related_entity_ids": [],
@@ -738,6 +977,12 @@
             "fileName": "src/components/Radio/Radio.tsx",
             "name": "RadioProps"
           },
+          "declarations": [
+            {
+              "fileName": "src/components/Radio/Radio.tsx",
+              "name": "RadioProps"
+            }
+          ],
           "required": true,
           "type": {
             "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
@@ -751,6 +996,12 @@
             "fileName": "src/components/Radio/Radio.tsx",
             "name": "RadioProps"
           },
+          "declarations": [
+            {
+              "fileName": "src/components/Radio/Radio.tsx",
+              "name": "RadioProps"
+            }
+          ],
           "required": false,
           "type": {
             "name": "string | undefined"
@@ -758,6 +1009,7 @@
         }
       },
       "ext_com_draculaui_docgen": {
+        "tags": {},
         "description": "Radio is a styled HTML Input of type radio.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep Radios accessible.",
         "displayName": "Radio",
         "methods": [],
@@ -770,6 +1022,12 @@
               "fileName": "src/components/Radio/Radio.tsx",
               "name": "RadioProps"
             },
+            "declarations": [
+              {
+                "fileName": "src/components/Radio/Radio.tsx",
+                "name": "RadioProps"
+              }
+            ],
             "required": true,
             "type": {
               "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
@@ -783,6 +1041,12 @@
               "fileName": "src/components/Radio/Radio.tsx",
               "name": "RadioProps"
             },
+            "declarations": [
+              {
+                "fileName": "src/components/Radio/Radio.tsx",
+                "name": "RadioProps"
+              }
+            ],
             "required": false,
             "type": {
               "name": "string | undefined"
@@ -796,7 +1060,7 @@
       "type": "page",
       "id": "Select",
       "name": "Select",
-      "last_updated": "2020-10-10T16:21:31.982Z",
+      "last_updated": "2021-03-09T22:39:45.366Z",
       "last_updated_by": "System",
       "description": "Select is a styled HTML Select element.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS, and small SVG component in order to keep Selects accessible.",
       "related_entity_ids": [],
@@ -807,21 +1071,29 @@
         "trigger": "select",
         "languages": {
           "javascriptreact": "<Select defaultValue=\"default\" color=\"white\">\n  <option value=\"default\" disabled={true}>\n    Select option\n  </option>\n  <option>Blade</option>\n  <option>Buffy</option>\n  <option>Lincoln</option>\n  <option>Morbius</option>\n  <option>Van Helsing</option>\n</Select>;\n",
-          "html": "<div style=\"position: relative\">\n  <select\n    color=\"white\"\n    class=\"drac-select drac-text drac-text-md drac-select-white\"\n  >\n    <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n    <option>Blade</option>\n    <option>Buffy</option>\n    <option>Lincoln</option>\n    <option>Morbius</option>\n    <option>Van Helsing</option>\n  </select>\n  <div class=\"drac-select-arrow drac-text-white\">\n    <svg\n      viewBox=\"0 0 24 24\"\n      focusable=\"false\"\n      role=\"presentation\"\n      aria-hidden=\"true\"\n    >\n      <path\n        fill=\"currentColor\"\n        d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n      ></path>\n    </svg>\n  </div>\n</div>\n"
+          "html": "<div style=\"position: relative\">\n  <select color=\"white\" class=\"drac-select drac-select-white\">\n    <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n    <option>Blade</option>\n    <option>Buffy</option>\n    <option>Lincoln</option>\n    <option>Morbius</option>\n    <option>Van Helsing</option>\n  </select>\n  <div class=\"drac-select-arrow drac-text-white\">\n    <svg\n      viewBox=\"0 0 24 24\"\n      focusable=\"false\"\n      role=\"presentation\"\n      aria-hidden=\"true\"\n    >\n      <path\n        fill=\"currentColor\"\n        d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n      ></path>\n    </svg>\n  </div>\n</div>\n"
         }
       },
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
-          "html": "<div style=\"position: relative\">\n  <select\n    color=\"white\"\n    class=\"drac-select drac-text drac-text-md drac-select-white\"\n  >\n    <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n    <option>Blade</option>\n    <option>Buffy</option>\n    <option>Lincoln</option>\n    <option>Morbius</option>\n    <option>Van Helsing</option>\n  </select>\n  <div class=\"drac-select-arrow drac-text-white\">\n    <svg\n      viewBox=\"0 0 24 24\"\n      focusable=\"false\"\n      role=\"presentation\"\n      aria-hidden=\"true\"\n    >\n      <path\n        fill=\"currentColor\"\n        d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n      ></path>\n    </svg>\n  </div>\n</div>\n",
+          "html": "<div style=\"position: relative\">\n  <select color=\"white\" class=\"drac-select drac-select-white\">\n    <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n    <option>Blade</option>\n    <option>Buffy</option>\n    <option>Lincoln</option>\n    <option>Morbius</option>\n    <option>Van Helsing</option>\n  </select>\n  <div class=\"drac-select-arrow drac-text-white\">\n    <svg\n      viewBox=\"0 0 24 24\"\n      focusable=\"false\"\n      role=\"presentation\"\n      aria-hidden=\"true\"\n    >\n      <path\n        fill=\"currentColor\"\n        d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n      ></path>\n    </svg>\n  </div>\n</div>\n",
           "react": "<Select defaultValue=\"default\" color=\"white\">\n  <option value=\"default\" disabled={true}>\n    Select option\n  </option>\n  <option>Blade</option>\n  <option>Buffy</option>\n  <option>Lincoln</option>\n  <option>Morbius</option>\n  <option>Van Helsing</option>\n</Select>;\n",
           "docs": "",
           "screenshot": "./dsp/assets/Select.png",
           "svgData": "./dsp/assets/svgs/Select.svg"
         },
         {
+          "title": "Sizes",
+          "html": "<div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        color=\"white\"\n        class=\"drac-select drac-select-lg drac-select-white\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-white\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select color=\"white\" class=\"drac-select drac-select drac-select-white\">\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-white\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        color=\"white\"\n        class=\"drac-select drac-select-sm drac-select-white\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-white\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n</div>\n",
+          "react": "<div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" size=\"large\" color=\"white\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" size=\"medium\" color=\"white\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" size=\"small\" color=\"white\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n</div>;\n",
+          "docs": "",
+          "screenshot": "./dsp/assets/SelectSizes.png",
+          "svgData": "./dsp/assets/svgs/SelectSizes.svg"
+        },
+        {
           "title": "Disabled",
-          "html": "<div style=\"display: flex; flex-direction: column; padding: 3rem\">\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        disabled=\"\"\n        variant=\"normal\"\n        color=\"white\"\n        class=\"drac-select drac-text drac-text-md drac-select drac-select-white\"\n      >\n        <option value=\"default\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-white\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        disabled=\"\"\n        variant=\"outline\"\n        color=\"white\"\n        class=\"drac-select drac-text drac-text-md drac-select-outline drac-select-white\"\n      >\n        <option value=\"default\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-white\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n</div>\n",
+          "html": "<div style=\"display: flex; flex-direction: column; padding: 3rem\">\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        disabled=\"\"\n        variant=\"normal\"\n        color=\"white\"\n        class=\"drac-select drac-select drac-select-white\"\n      >\n        <option value=\"default\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-white\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        disabled=\"\"\n        variant=\"outline\"\n        color=\"white\"\n        class=\"drac-select drac-select-outline drac-select-white\"\n      >\n        <option value=\"default\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-white\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n</div>\n",
           "react": "<div style={{ display: \"flex\", flexDirection: \"column\", padding: \"3rem\" }}>\n  <div style={{ marginBottom: 10 }}>\n    <Select disabled={true} variant=\"normal\" color=\"white\">\n      <option value=\"default\">Select option</option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select disabled={true} variant=\"outline\" color=\"white\">\n      <option value=\"default\">Select option</option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n</div>;\n",
           "docs": "",
           "screenshot": "./dsp/assets/SelectDisabled.png",
@@ -829,7 +1101,7 @@
         },
         {
           "title": "Colors",
-          "html": "<div style=\"display: flex; flex-direction: column; padding: 3rem\">\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"outline\"\n        color=\"white\"\n        class=\"drac-select drac-text drac-text-md drac-select-outline drac-select-white\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-white\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"outline\"\n        color=\"cyan\"\n        class=\"drac-select drac-text drac-text-md drac-select-outline drac-select-cyan\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-cyan\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"outline\"\n        color=\"green\"\n        class=\"drac-select drac-text drac-text-md drac-select-outline drac-select-green\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-green\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"outline\"\n        color=\"orange\"\n        class=\"drac-select drac-text drac-text-md drac-select-outline drac-select-orange\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-orange\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"outline\"\n        color=\"pink\"\n        class=\"drac-select drac-text drac-text-md drac-select-outline drac-select-pink\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-pink\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"outline\"\n        color=\"purple\"\n        class=\"drac-select drac-text drac-text-md drac-select-outline drac-select-purple\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-purple\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"outline\"\n        color=\"red\"\n        class=\"drac-select drac-text drac-text-md drac-select-outline drac-select-red\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-red\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"outline\"\n        color=\"yellow\"\n        class=\"drac-select drac-text drac-text-md drac-select-outline drac-select-yellow\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-yellow\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"outline\"\n        color=\"animated\"\n        class=\"drac-select drac-text drac-text-md drac-select-outline\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-animated\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"outline\"\n        color=\"cyanGreen\"\n        class=\"drac-select drac-text drac-text-md drac-select-outline\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-cyanGreen\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"outline\"\n        color=\"pinkPurple\"\n        class=\"drac-select drac-text drac-text-md drac-select-outline\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-pinkPurple\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"outline\"\n        color=\"purpleCyan\"\n        class=\"drac-select drac-text drac-text-md drac-select-outline\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-purpleCyan\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"outline\"\n        color=\"yellowPink\"\n        class=\"drac-select drac-text drac-text-md drac-select-outline\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-yellowPink\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"normal\"\n        color=\"white\"\n        class=\"drac-select drac-text drac-text-md drac-select drac-select-white\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-white\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"normal\"\n        color=\"cyan\"\n        class=\"drac-select drac-text drac-text-md drac-select drac-select-cyan\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-cyan\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"normal\"\n        color=\"green\"\n        class=\"drac-select drac-text drac-text-md drac-select drac-select-green\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-green\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"normal\"\n        color=\"orange\"\n        class=\"drac-select drac-text drac-text-md drac-select drac-select-orange\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-orange\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"normal\"\n        color=\"pink\"\n        class=\"drac-select drac-text drac-text-md drac-select drac-select-pink\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-pink\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"normal\"\n        color=\"purple\"\n        class=\"drac-select drac-text drac-text-md drac-select drac-select-purple\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-purple\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"normal\"\n        color=\"red\"\n        class=\"drac-select drac-text drac-text-md drac-select drac-select-red\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-red\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"normal\"\n        color=\"yellow\"\n        class=\"drac-select drac-text drac-text-md drac-select drac-select-yellow\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-yellow\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"normal\"\n        color=\"animated\"\n        class=\"drac-select drac-text drac-text-md drac-select\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-animated\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"normal\"\n        color=\"cyanGreen\"\n        class=\"drac-select drac-text drac-text-md drac-select\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-cyanGreen\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"normal\"\n        color=\"pinkPurple\"\n        class=\"drac-select drac-text drac-text-md drac-select\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-pinkPurple\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"normal\"\n        color=\"purpleCyan\"\n        class=\"drac-select drac-text drac-text-md drac-select\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-purpleCyan\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"normal\"\n        color=\"yellowPink\"\n        class=\"drac-select drac-text drac-text-md drac-select\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-yellowPink\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n</div>\n",
+          "html": "<div style=\"display: flex; flex-direction: column; padding: 3rem\">\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"outline\"\n        color=\"white\"\n        class=\"drac-select drac-select-outline drac-select-white\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-white\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"outline\"\n        color=\"cyan\"\n        class=\"drac-select drac-select-outline drac-select-cyan\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-cyan\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"outline\"\n        color=\"green\"\n        class=\"drac-select drac-select-outline drac-select-green\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-green\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"outline\"\n        color=\"orange\"\n        class=\"drac-select drac-select-outline drac-select-orange\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-orange\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"outline\"\n        color=\"pink\"\n        class=\"drac-select drac-select-outline drac-select-pink\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-pink\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"outline\"\n        color=\"purple\"\n        class=\"drac-select drac-select-outline drac-select-purple\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-purple\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"outline\"\n        color=\"red\"\n        class=\"drac-select drac-select-outline drac-select-red\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-red\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"outline\"\n        color=\"yellow\"\n        class=\"drac-select drac-select-outline drac-select-yellow\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-yellow\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"outline\"\n        color=\"animated\"\n        class=\"drac-select drac-select-outline\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-animated\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"outline\"\n        color=\"cyanGreen\"\n        class=\"drac-select drac-select-outline\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-cyanGreen\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"outline\"\n        color=\"pinkPurple\"\n        class=\"drac-select drac-select-outline\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-pinkPurple\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"outline\"\n        color=\"purpleCyan\"\n        class=\"drac-select drac-select-outline\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-purpleCyan\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"outline\"\n        color=\"yellowPink\"\n        class=\"drac-select drac-select-outline\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-yellowPink\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"normal\"\n        color=\"white\"\n        class=\"drac-select drac-select drac-select-white\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-white\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"normal\"\n        color=\"cyan\"\n        class=\"drac-select drac-select drac-select-cyan\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-cyan\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"normal\"\n        color=\"green\"\n        class=\"drac-select drac-select drac-select-green\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-green\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"normal\"\n        color=\"orange\"\n        class=\"drac-select drac-select drac-select-orange\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-orange\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"normal\"\n        color=\"pink\"\n        class=\"drac-select drac-select drac-select-pink\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-pink\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"normal\"\n        color=\"purple\"\n        class=\"drac-select drac-select drac-select-purple\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-purple\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"normal\"\n        color=\"red\"\n        class=\"drac-select drac-select drac-select-red\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-red\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"normal\"\n        color=\"yellow\"\n        class=\"drac-select drac-select drac-select-yellow\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-yellow\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select variant=\"normal\" color=\"animated\" class=\"drac-select drac-select\">\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-animated\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"normal\"\n        color=\"cyanGreen\"\n        class=\"drac-select drac-select\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-cyanGreen\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"normal\"\n        color=\"pinkPurple\"\n        class=\"drac-select drac-select\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-pinkPurple\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"normal\"\n        color=\"purpleCyan\"\n        class=\"drac-select drac-select\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-purpleCyan\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"normal\"\n        color=\"yellowPink\"\n        class=\"drac-select drac-select\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-yellowPink\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n</div>\n",
           "react": "<div style={{ display: \"flex\", flexDirection: \"column\", padding: \"3rem\" }}>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"outline\" color=\"white\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"outline\" color=\"cyan\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"outline\" color=\"green\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"outline\" color=\"orange\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"outline\" color=\"pink\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"outline\" color=\"purple\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"outline\" color=\"red\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"outline\" color=\"yellow\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"outline\" color=\"animated\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"outline\" color=\"cyanGreen\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"outline\" color=\"pinkPurple\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"outline\" color=\"purpleCyan\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"outline\" color=\"yellowPink\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"normal\" color=\"white\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"normal\" color=\"cyan\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"normal\" color=\"green\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"normal\" color=\"orange\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"normal\" color=\"pink\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"normal\" color=\"purple\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"normal\" color=\"red\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"normal\" color=\"yellow\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"normal\" color=\"animated\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"normal\" color=\"cyanGreen\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"normal\" color=\"pinkPurple\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"normal\" color=\"purpleCyan\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"normal\" color=\"yellowPink\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n</div>;\n",
           "docs": "",
           "screenshot": "./dsp/assets/SelectColors.png",
@@ -837,7 +1109,7 @@
         },
         {
           "title": "Variants",
-          "html": "<div style=\"display: flex; flex-direction: column; padding: 3rem\">\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"normal\"\n        color=\"white\"\n        class=\"drac-select drac-text drac-text-md drac-select drac-select-white\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-white\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"outline\"\n        color=\"white\"\n        class=\"drac-select drac-text drac-text-md drac-select-outline drac-select-white\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-white\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n</div>\n",
+          "html": "<div style=\"display: flex; flex-direction: column; padding: 3rem\">\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"normal\"\n        color=\"white\"\n        class=\"drac-select drac-select drac-select-white\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-white\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <div style=\"position: relative\">\n      <select\n        variant=\"outline\"\n        color=\"white\"\n        class=\"drac-select drac-select-outline drac-select-white\"\n      >\n        <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n        <option>Blade</option>\n        <option>Buffy</option>\n        <option>Lincoln</option>\n        <option>Morbius</option>\n        <option>Van Helsing</option>\n      </select>\n      <div class=\"drac-select-arrow drac-text-white\">\n        <svg\n          viewBox=\"0 0 24 24\"\n          focusable=\"false\"\n          role=\"presentation\"\n          aria-hidden=\"true\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n          ></path>\n        </svg>\n      </div>\n    </div>\n  </div>\n</div>\n",
           "react": "<div style={{ display: \"flex\", flexDirection: \"column\", padding: \"3rem\" }}>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"normal\" color=\"white\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Select defaultValue=\"default\" variant=\"outline\" color=\"white\">\n      <option value=\"default\" disabled={true}>\n        Select option\n      </option>\n      <option>Blade</option>\n      <option>Buffy</option>\n      <option>Lincoln</option>\n      <option>Morbius</option>\n      <option>Van Helsing</option>\n    </Select>\n  </div>\n</div>;\n",
           "docs": "",
           "screenshot": "./dsp/assets/SelectVariants.png",
@@ -853,9 +1125,34 @@
             "fileName": "src/components/Select/Select.tsx",
             "name": "SelectProps"
           },
+          "declarations": [
+            {
+              "fileName": "src/components/Select/Select.tsx",
+              "name": "SelectProps"
+            }
+          ],
           "required": false,
           "type": {
             "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+          }
+        },
+        "size": {
+          "defaultValue": null,
+          "description": "Controls the size of the select based on pre-configured Dracula UI sizes.\nOptions: `small`, `medium`, `large`",
+          "name": "size",
+          "parent": {
+            "fileName": "src/components/Select/Select.tsx",
+            "name": "SelectProps"
+          },
+          "declarations": [
+            {
+              "fileName": "src/components/Select/Select.tsx",
+              "name": "SelectProps"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"large\" | \"medium\" | \"small\" | undefined"
           }
         },
         "variant": {
@@ -866,6 +1163,12 @@
             "fileName": "src/components/Select/Select.tsx",
             "name": "SelectProps"
           },
+          "declarations": [
+            {
+              "fileName": "src/components/Select/Select.tsx",
+              "name": "SelectProps"
+            }
+          ],
           "required": false,
           "type": {
             "name": "\"normal\" | \"outline\" | undefined"
@@ -879,6 +1182,12 @@
             "fileName": "src/components/Select/Select.tsx",
             "name": "SelectProps"
           },
+          "declarations": [
+            {
+              "fileName": "src/components/Select/Select.tsx",
+              "name": "SelectProps"
+            }
+          ],
           "required": false,
           "type": {
             "name": "boolean | undefined"
@@ -886,6 +1195,7 @@
         }
       },
       "ext_com_draculaui_docgen": {
+        "tags": {},
         "description": "Select is a styled HTML Select element.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS, and small SVG component in order to keep Selects accessible.",
         "displayName": "Select",
         "methods": [],
@@ -898,9 +1208,34 @@
               "fileName": "src/components/Select/Select.tsx",
               "name": "SelectProps"
             },
+            "declarations": [
+              {
+                "fileName": "src/components/Select/Select.tsx",
+                "name": "SelectProps"
+              }
+            ],
             "required": false,
             "type": {
               "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+            }
+          },
+          "size": {
+            "defaultValue": null,
+            "description": "Controls the size of the select based on pre-configured Dracula UI sizes.\nOptions: `small`, `medium`, `large`",
+            "name": "size",
+            "parent": {
+              "fileName": "src/components/Select/Select.tsx",
+              "name": "SelectProps"
+            },
+            "declarations": [
+              {
+                "fileName": "src/components/Select/Select.tsx",
+                "name": "SelectProps"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"large\" | \"medium\" | \"small\" | undefined"
             }
           },
           "variant": {
@@ -911,6 +1246,12 @@
               "fileName": "src/components/Select/Select.tsx",
               "name": "SelectProps"
             },
+            "declarations": [
+              {
+                "fileName": "src/components/Select/Select.tsx",
+                "name": "SelectProps"
+              }
+            ],
             "required": false,
             "type": {
               "name": "\"normal\" | \"outline\" | undefined"
@@ -924,6 +1265,12 @@
               "fileName": "src/components/Select/Select.tsx",
               "name": "SelectProps"
             },
+            "declarations": [
+              {
+                "fileName": "src/components/Select/Select.tsx",
+                "name": "SelectProps"
+              }
+            ],
             "required": false,
             "type": {
               "name": "boolean | undefined"
@@ -937,7 +1284,7 @@
       "type": "page",
       "id": "Switch",
       "name": "Switch",
-      "last_updated": "2020-10-10T16:21:29.122Z",
+      "last_updated": "2021-03-09T22:39:41.965Z",
       "last_updated_by": "System",
       "description": "Switch is an abstraction pattern that represents toggles.\n\nUse the Switch component as an alternative for Checkboxes or Radios\nwhen options are binary.\n\nSwitches are implemented as Checkboxes under the hood,\nand work normally with forms.",
       "related_entity_ids": [],
@@ -986,6 +1333,12 @@
             "fileName": "src/components/Switch/Switch.tsx",
             "name": "SwitchProps"
           },
+          "declarations": [
+            {
+              "fileName": "src/components/Switch/Switch.tsx",
+              "name": "SwitchProps"
+            }
+          ],
           "required": false,
           "type": {
             "name": "string | undefined"
@@ -999,6 +1352,12 @@
             "fileName": "src/components/Switch/Switch.tsx",
             "name": "SwitchProps"
           },
+          "declarations": [
+            {
+              "fileName": "src/components/Switch/Switch.tsx",
+              "name": "SwitchProps"
+            }
+          ],
           "required": true,
           "type": {
             "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
@@ -1012,6 +1371,12 @@
             "fileName": "src/components/Switch/Switch.tsx",
             "name": "SwitchProps"
           },
+          "declarations": [
+            {
+              "fileName": "src/components/Switch/Switch.tsx",
+              "name": "SwitchProps"
+            }
+          ],
           "required": false,
           "type": {
             "name": "boolean | undefined"
@@ -1019,6 +1384,7 @@
         }
       },
       "ext_com_draculaui_docgen": {
+        "tags": {},
         "description": "Switch is an abstraction pattern that represents toggles.\n\nUse the Switch component as an alternative for Checkboxes or Radios\nwhen options are binary.\n\nSwitches are implemented as Checkboxes under the hood,\nand work normally with forms.",
         "displayName": "Switch",
         "methods": [],
@@ -1031,6 +1397,12 @@
               "fileName": "src/components/Switch/Switch.tsx",
               "name": "SwitchProps"
             },
+            "declarations": [
+              {
+                "fileName": "src/components/Switch/Switch.tsx",
+                "name": "SwitchProps"
+              }
+            ],
             "required": false,
             "type": {
               "name": "string | undefined"
@@ -1044,6 +1416,12 @@
               "fileName": "src/components/Switch/Switch.tsx",
               "name": "SwitchProps"
             },
+            "declarations": [
+              {
+                "fileName": "src/components/Switch/Switch.tsx",
+                "name": "SwitchProps"
+              }
+            ],
             "required": true,
             "type": {
               "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
@@ -1057,6 +1435,12 @@
               "fileName": "src/components/Switch/Switch.tsx",
               "name": "SwitchProps"
             },
+            "declarations": [
+              {
+                "fileName": "src/components/Switch/Switch.tsx",
+                "name": "SwitchProps"
+              }
+            ],
             "required": false,
             "type": {
               "name": "boolean | undefined"
@@ -1070,7 +1454,7 @@
       "type": "page",
       "id": "Table",
       "name": "Table",
-      "last_updated": "2020-10-10T16:21:30.768Z",
+      "last_updated": "2021-03-09T22:39:44.222Z",
       "last_updated_by": "System",
       "description": "Tables are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
       "related_entity_ids": [],
@@ -1119,6 +1503,12 @@
             "fileName": "src/components/Table/Table.tsx",
             "name": "TableProps"
           },
+          "declarations": [
+            {
+              "fileName": "src/components/Table/Table.tsx",
+              "name": "TableProps"
+            }
+          ],
           "required": false,
           "type": {
             "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
@@ -1132,6 +1522,12 @@
             "fileName": "src/components/Table/Table.tsx",
             "name": "TableProps"
           },
+          "declarations": [
+            {
+              "fileName": "src/components/Table/Table.tsx",
+              "name": "TableProps"
+            }
+          ],
           "required": false,
           "type": {
             "name": "\"normal\" | \"striped\" | undefined"
@@ -1139,6 +1535,7 @@
         }
       },
       "ext_com_draculaui_docgen": {
+        "tags": {},
         "description": "Tables are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
         "displayName": "Table",
         "methods": [],
@@ -1151,6 +1548,12 @@
               "fileName": "src/components/Table/Table.tsx",
               "name": "TableProps"
             },
+            "declarations": [
+              {
+                "fileName": "src/components/Table/Table.tsx",
+                "name": "TableProps"
+              }
+            ],
             "required": false,
             "type": {
               "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
@@ -1164,6 +1567,12 @@
               "fileName": "src/components/Table/Table.tsx",
               "name": "TableProps"
             },
+            "declarations": [
+              {
+                "fileName": "src/components/Table/Table.tsx",
+                "name": "TableProps"
+              }
+            ],
             "required": false,
             "type": {
               "name": "\"normal\" | \"striped\" | undefined"
@@ -1177,7 +1586,7 @@
       "type": "page",
       "id": "Tabs",
       "name": "Tabs",
-      "last_updated": "2020-10-10T16:21:22.170Z",
+      "last_updated": "2021-03-09T22:39:40.183Z",
       "last_updated_by": "System",
       "description": "Tabs are horizontal navigation elements used to display\ncontent within the same page.",
       "related_entity_ids": [],
@@ -1218,6 +1627,12 @@
             "fileName": "src/components/Tabs/Tabs.tsx",
             "name": "TabsProps"
           },
+          "declarations": [
+            {
+              "fileName": "src/components/Tabs/Tabs.tsx",
+              "name": "TabsProps"
+            }
+          ],
           "required": true,
           "type": {
             "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
@@ -1225,6 +1640,7 @@
         }
       },
       "ext_com_draculaui_docgen": {
+        "tags": {},
         "description": "Tabs are horizontal navigation elements used to display\ncontent within the same page.",
         "displayName": "Tabs",
         "methods": [],
@@ -1237,6 +1653,12 @@
               "fileName": "src/components/Tabs/Tabs.tsx",
               "name": "TabsProps"
             },
+            "declarations": [
+              {
+                "fileName": "src/components/Tabs/Tabs.tsx",
+                "name": "TabsProps"
+              }
+            ],
             "required": true,
             "type": {
               "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""

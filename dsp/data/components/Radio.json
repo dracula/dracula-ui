@@ -3,7 +3,7 @@
   "type": "page",
   "id": "Radio",
   "name": "Radio",
-  "last_updated": "2021-03-09T22:24:19.757Z",
+  "last_updated": "2021-03-09T22:39:39.405Z",
   "last_updated_by": "System",
   "description": "Radio is a styled HTML Input of type radio.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep Radios accessible.",
   "related_entity_ids": [],
@@ -50,6 +50,9 @@
         "fileName": "src/components/Radio/Radio.tsx",
         "name": "RadioProps"
       },
+      "declarations": [
+        { "fileName": "src/components/Radio/Radio.tsx", "name": "RadioProps" }
+      ],
       "required": true,
       "type": {
         "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
@@ -63,11 +66,15 @@
         "fileName": "src/components/Radio/Radio.tsx",
         "name": "RadioProps"
       },
+      "declarations": [
+        { "fileName": "src/components/Radio/Radio.tsx", "name": "RadioProps" }
+      ],
       "required": false,
       "type": { "name": "string | undefined" }
     }
   },
   "ext_com_draculaui_docgen": {
+    "tags": {},
     "description": "Radio is a styled HTML Input of type radio.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep Radios accessible.",
     "displayName": "Radio",
     "methods": [],
@@ -80,6 +87,9 @@
           "fileName": "src/components/Radio/Radio.tsx",
           "name": "RadioProps"
         },
+        "declarations": [
+          { "fileName": "src/components/Radio/Radio.tsx", "name": "RadioProps" }
+        ],
         "required": true,
         "type": {
           "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
@@ -93,6 +103,9 @@
           "fileName": "src/components/Radio/Radio.tsx",
           "name": "RadioProps"
         },
+        "declarations": [
+          { "fileName": "src/components/Radio/Radio.tsx", "name": "RadioProps" }
+        ],
         "required": false,
         "type": { "name": "string | undefined" }
       }

@@ -3,7 +3,7 @@
   "type": "page",
   "id": "Select",
   "name": "Select",
-  "last_updated": "2021-03-09T22:24:26.544Z",
+  "last_updated": "2021-03-09T22:39:45.366Z",
   "last_updated_by": "System",
   "description": "Select is a styled HTML Select element.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS, and small SVG component in order to keep Selects accessible.",
   "related_entity_ids": [],
@@ -66,6 +66,12 @@
         "fileName": "src/components/Select/Select.tsx",
         "name": "SelectProps"
       },
+      "declarations": [
+        {
+          "fileName": "src/components/Select/Select.tsx",
+          "name": "SelectProps"
+        }
+      ],
       "required": false,
       "type": {
         "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
@@ -79,6 +85,12 @@
         "fileName": "src/components/Select/Select.tsx",
         "name": "SelectProps"
       },
+      "declarations": [
+        {
+          "fileName": "src/components/Select/Select.tsx",
+          "name": "SelectProps"
+        }
+      ],
       "required": false,
       "type": { "name": "\"large\" | \"medium\" | \"small\" | undefined" }
     },
@@ -90,6 +102,12 @@
         "fileName": "src/components/Select/Select.tsx",
         "name": "SelectProps"
       },
+      "declarations": [
+        {
+          "fileName": "src/components/Select/Select.tsx",
+          "name": "SelectProps"
+        }
+      ],
       "required": false,
       "type": { "name": "\"normal\" | \"outline\" | undefined" }
     },
@@ -101,11 +119,18 @@
         "fileName": "src/components/Select/Select.tsx",
         "name": "SelectProps"
       },
+      "declarations": [
+        {
+          "fileName": "src/components/Select/Select.tsx",
+          "name": "SelectProps"
+        }
+      ],
       "required": false,
       "type": { "name": "boolean | undefined" }
     }
   },
   "ext_com_draculaui_docgen": {
+    "tags": {},
     "description": "Select is a styled HTML Select element.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS, and small SVG component in order to keep Selects accessible.",
     "displayName": "Select",
     "methods": [],
@@ -118,6 +143,12 @@
           "fileName": "src/components/Select/Select.tsx",
           "name": "SelectProps"
         },
+        "declarations": [
+          {
+            "fileName": "src/components/Select/Select.tsx",
+            "name": "SelectProps"
+          }
+        ],
         "required": false,
         "type": {
           "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
@@ -131,6 +162,12 @@
           "fileName": "src/components/Select/Select.tsx",
           "name": "SelectProps"
         },
+        "declarations": [
+          {
+            "fileName": "src/components/Select/Select.tsx",
+            "name": "SelectProps"
+          }
+        ],
         "required": false,
         "type": { "name": "\"large\" | \"medium\" | \"small\" | undefined" }
       },
@@ -142,6 +179,12 @@
           "fileName": "src/components/Select/Select.tsx",
           "name": "SelectProps"
         },
+        "declarations": [
+          {
+            "fileName": "src/components/Select/Select.tsx",
+            "name": "SelectProps"
+          }
+        ],
         "required": false,
         "type": { "name": "\"normal\" | \"outline\" | undefined" }
       },
@@ -153,6 +196,12 @@
           "fileName": "src/components/Select/Select.tsx",
           "name": "SelectProps"
         },
+        "declarations": [
+          {
+            "fileName": "src/components/Select/Select.tsx",
+            "name": "SelectProps"
+          }
+        ],
         "required": false,
         "type": { "name": "boolean | undefined" }
       }

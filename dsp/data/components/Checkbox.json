@@ -3,7 +3,7 @@
   "type": "page",
   "id": "Checkbox",
   "name": "Checkbox",
-  "last_updated": "2021-03-09T22:24:22.189Z",
+  "last_updated": "2021-03-09T22:39:39.424Z",
   "last_updated_by": "System",
   "description": "Checkbox is a styled HTML Input of type checkbox.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep check boxes accessible.",
   "related_entity_ids": [],
@@ -50,6 +50,12 @@
         "fileName": "src/components/Checkbox/Checkbox.tsx",
         "name": "CheckboxProps"
       },
+      "declarations": [
+        {
+          "fileName": "src/components/Checkbox/Checkbox.tsx",
+          "name": "CheckboxProps"
+        }
+      ],
       "required": false,
       "type": {
         "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
@@ -63,6 +69,12 @@
         "fileName": "src/components/Checkbox/Checkbox.tsx",
         "name": "CheckboxProps"
       },
+      "declarations": [
+        {
+          "fileName": "src/components/Checkbox/Checkbox.tsx",
+          "name": "CheckboxProps"
+        }
+      ],
       "required": false,
       "type": { "name": "string | undefined" }
     },
@@ -74,11 +86,18 @@
         "fileName": "src/components/Checkbox/Checkbox.tsx",
         "name": "CheckboxProps"
       },
+      "declarations": [
+        {
+          "fileName": "src/components/Checkbox/Checkbox.tsx",
+          "name": "CheckboxProps"
+        }
+      ],
       "required": false,
       "type": { "name": "boolean | undefined" }
     }
   },
   "ext_com_draculaui_docgen": {
+    "tags": {},
     "description": "Checkbox is a styled HTML Input of type checkbox.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep check boxes accessible.",
     "displayName": "Checkbox",
     "methods": [],
@@ -91,6 +110,12 @@
           "fileName": "src/components/Checkbox/Checkbox.tsx",
           "name": "CheckboxProps"
         },
+        "declarations": [
+          {
+            "fileName": "src/components/Checkbox/Checkbox.tsx",
+            "name": "CheckboxProps"
+          }
+        ],
         "required": false,
         "type": {
           "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
@@ -104,6 +129,12 @@
           "fileName": "src/components/Checkbox/Checkbox.tsx",
           "name": "CheckboxProps"
         },
+        "declarations": [
+          {
+            "fileName": "src/components/Checkbox/Checkbox.tsx",
+            "name": "CheckboxProps"
+          }
+        ],
         "required": false,
         "type": { "name": "string | undefined" }
       },
@@ -115,6 +146,12 @@
           "fileName": "src/components/Checkbox/Checkbox.tsx",
           "name": "CheckboxProps"
         },
+        "declarations": [
+          {
+            "fileName": "src/components/Checkbox/Checkbox.tsx",
+            "name": "CheckboxProps"
+          }
+        ],
         "required": false,
         "type": { "name": "boolean | undefined" }
       }

@@ -3,7 +3,7 @@
   "type": "page",
   "id": "Switch",
   "name": "Switch",
-  "last_updated": "2021-03-09T22:24:19.765Z",
+  "last_updated": "2021-03-09T22:39:41.965Z",
   "last_updated_by": "System",
   "description": "Switch is an abstraction pattern that represents toggles.\n\nUse the Switch component as an alternative for Checkboxes or Radios\nwhen options are binary.\n\nSwitches are implemented as Checkboxes under the hood,\nand work normally with forms.",
   "related_entity_ids": [],
@@ -50,6 +50,12 @@
         "fileName": "src/components/Switch/Switch.tsx",
         "name": "SwitchProps"
       },
+      "declarations": [
+        {
+          "fileName": "src/components/Switch/Switch.tsx",
+          "name": "SwitchProps"
+        }
+      ],
       "required": false,
       "type": { "name": "string | undefined" }
     },
@@ -61,6 +67,12 @@
         "fileName": "src/components/Switch/Switch.tsx",
         "name": "SwitchProps"
       },
+      "declarations": [
+        {
+          "fileName": "src/components/Switch/Switch.tsx",
+          "name": "SwitchProps"
+        }
+      ],
       "required": true,
       "type": {
         "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
@@ -74,11 +86,18 @@
         "fileName": "src/components/Switch/Switch.tsx",
         "name": "SwitchProps"
       },
+      "declarations": [
+        {
+          "fileName": "src/components/Switch/Switch.tsx",
+          "name": "SwitchProps"
+        }
+      ],
       "required": false,
       "type": { "name": "boolean | undefined" }
     }
   },
   "ext_com_draculaui_docgen": {
+    "tags": {},
     "description": "Switch is an abstraction pattern that represents toggles.\n\nUse the Switch component as an alternative for Checkboxes or Radios\nwhen options are binary.\n\nSwitches are implemented as Checkboxes under the hood,\nand work normally with forms.",
     "displayName": "Switch",
     "methods": [],
@@ -91,6 +110,12 @@
           "fileName": "src/components/Switch/Switch.tsx",
           "name": "SwitchProps"
         },
+        "declarations": [
+          {
+            "fileName": "src/components/Switch/Switch.tsx",
+            "name": "SwitchProps"
+          }
+        ],
         "required": false,
         "type": { "name": "string | undefined" }
       },
@@ -102,6 +127,12 @@
           "fileName": "src/components/Switch/Switch.tsx",
           "name": "SwitchProps"
         },
+        "declarations": [
+          {
+            "fileName": "src/components/Switch/Switch.tsx",
+            "name": "SwitchProps"
+          }
+        ],
         "required": true,
         "type": {
           "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
@@ -115,6 +146,12 @@
           "fileName": "src/components/Switch/Switch.tsx",
           "name": "SwitchProps"
         },
+        "declarations": [
+          {
+            "fileName": "src/components/Switch/Switch.tsx",
+            "name": "SwitchProps"
+          }
+        ],
         "required": false,
         "type": { "name": "boolean | undefined" }
       }

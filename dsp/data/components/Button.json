@@ -3,7 +3,7 @@
   "type": "page",
   "id": "Button",
   "name": "Button",
-  "last_updated": "2021-03-09T22:24:22.483Z",
+  "last_updated": "2021-03-09T22:39:43.247Z",
   "last_updated_by": "System",
   "description": "The Button component triggers actions, behaviors, or events based\non user input.",
   "related_entity_ids": [],
@@ -58,6 +58,12 @@
         "fileName": "src/components/Button/Button.tsx",
         "name": "ButtonProps"
       },
+      "declarations": [
+        {
+          "fileName": "src/components/Button/Button.tsx",
+          "name": "ButtonProps"
+        }
+      ],
       "required": false,
       "type": {
         "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
@@ -71,6 +77,12 @@
         "fileName": "src/components/Button/Button.tsx",
         "name": "ButtonProps"
       },
+      "declarations": [
+        {
+          "fileName": "src/components/Button/Button.tsx",
+          "name": "ButtonProps"
+        }
+      ],
       "required": false,
       "type": {
         "name": "\"large\" | \"medium\" | \"small\" | \"xsmall\" | undefined"
@@ -84,6 +96,12 @@
         "fileName": "src/components/Button/Button.tsx",
         "name": "ButtonProps"
       },
+      "declarations": [
+        {
+          "fileName": "src/components/Button/Button.tsx",
+          "name": "ButtonProps"
+        }
+      ],
       "required": false,
       "type": { "name": "\"normal\" | \"outline\" | \"ghost\" | undefined" }
     },
@@ -95,11 +113,18 @@
         "fileName": "src/components/Button/Button.tsx",
         "name": "ButtonProps"
       },
+      "declarations": [
+        {
+          "fileName": "src/components/Button/Button.tsx",
+          "name": "ButtonProps"
+        }
+      ],
       "required": false,
       "type": { "name": "boolean | undefined" }
     }
   },
   "ext_com_draculaui_docgen": {
+    "tags": {},
     "description": "The Button component triggers actions, behaviors, or events based\non user input.",
     "displayName": "Button",
     "methods": [],
@@ -112,6 +137,12 @@
           "fileName": "src/components/Button/Button.tsx",
           "name": "ButtonProps"
         },
+        "declarations": [
+          {
+            "fileName": "src/components/Button/Button.tsx",
+            "name": "ButtonProps"
+          }
+        ],
         "required": false,
         "type": {
           "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
@@ -125,6 +156,12 @@
           "fileName": "src/components/Button/Button.tsx",
           "name": "ButtonProps"
         },
+        "declarations": [
+          {
+            "fileName": "src/components/Button/Button.tsx",
+            "name": "ButtonProps"
+          }
+        ],
         "required": false,
         "type": {
           "name": "\"large\" | \"medium\" | \"small\" | \"xsmall\" | undefined"
@@ -138,6 +175,12 @@
           "fileName": "src/components/Button/Button.tsx",
           "name": "ButtonProps"
         },
+        "declarations": [
+          {
+            "fileName": "src/components/Button/Button.tsx",
+            "name": "ButtonProps"
+          }
+        ],
         "required": false,
         "type": { "name": "\"normal\" | \"outline\" | \"ghost\" | undefined" }
       },
@@ -149,6 +192,12 @@
           "fileName": "src/components/Button/Button.tsx",
           "name": "ButtonProps"
         },
+        "declarations": [
+          {
+            "fileName": "src/components/Button/Button.tsx",
+            "name": "ButtonProps"
+          }
+        ],
         "required": false,
         "type": { "name": "boolean | undefined" }
       }

@@ -3,7 +3,7 @@
   "type": "page",
   "id": "Tabs",
   "name": "Tabs",
-  "last_updated": "2021-03-09T22:24:17.882Z",
+  "last_updated": "2021-03-09T22:39:40.183Z",
   "last_updated_by": "System",
   "description": "Tabs are horizontal navigation elements used to display\ncontent within the same page.",
   "related_entity_ids": [],
@@ -42,6 +42,9 @@
         "fileName": "src/components/Tabs/Tabs.tsx",
         "name": "TabsProps"
       },
+      "declarations": [
+        { "fileName": "src/components/Tabs/Tabs.tsx", "name": "TabsProps" }
+      ],
       "required": true,
       "type": {
         "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
@@ -49,6 +52,7 @@
     }
   },
   "ext_com_draculaui_docgen": {
+    "tags": {},
     "description": "Tabs are horizontal navigation elements used to display\ncontent within the same page.",
     "displayName": "Tabs",
     "methods": [],
@@ -61,6 +65,9 @@
           "fileName": "src/components/Tabs/Tabs.tsx",
           "name": "TabsProps"
         },
+        "declarations": [
+          { "fileName": "src/components/Tabs/Tabs.tsx", "name": "TabsProps" }
+        ],
         "required": true,
         "type": {
           "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
