@@ -1,37 +1,261 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Heading heading-1 1`] = `
-<h1
-  className="drac-heading drac-heading-1 drac-spacing-none"
-  size="heading-1"
->
-  Hello World
+exports[`Site: Heading Basic Usage 1`] = `
+Object {
+  "docs": "",
+  "html": "<h1 class=\\"drac-heading drac-heading-1 drac-text-white drac-spacing-none\\">
+  Heading
 </h1>
+",
+  "react": "<Heading>Heading</Heading>;
+",
+  "title": "Usage",
+}
 `;
 
-exports[`Heading heading-2 1`] = `
-<h2
-  className="drac-heading drac-heading-2 drac-spacing-none"
-  size="heading-2"
->
-  Hello World
-</h2>
+exports[`Site: Heading Colors 1`] = `
+Object {
+  "docs": "",
+  "html": "<div>
+  <div style=\\"margin-bottom: 20px\\">
+    <h1
+      color=\\"white\\"
+      class=\\"drac-heading drac-heading-1 drac-text-white drac-spacing-none\\"
+    >
+      white
+    </h1>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <h1
+      color=\\"cyan\\"
+      class=\\"drac-heading drac-heading-1 drac-text-cyan drac-spacing-none\\"
+    >
+      cyan
+    </h1>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <h1
+      color=\\"green\\"
+      class=\\"drac-heading drac-heading-1 drac-text-green drac-spacing-none\\"
+    >
+      green
+    </h1>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <h1
+      color=\\"orange\\"
+      class=\\"drac-heading drac-heading-1 drac-text-orange drac-spacing-none\\"
+    >
+      orange
+    </h1>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <h1
+      color=\\"pink\\"
+      class=\\"drac-heading drac-heading-1 drac-text-pink drac-spacing-none\\"
+    >
+      pink
+    </h1>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <h1
+      color=\\"purple\\"
+      class=\\"drac-heading drac-heading-1 drac-text-purple drac-spacing-none\\"
+    >
+      purple
+    </h1>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <h1
+      color=\\"red\\"
+      class=\\"drac-heading drac-heading-1 drac-text-red drac-spacing-none\\"
+    >
+      red
+    </h1>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <h1
+      color=\\"yellow\\"
+      class=\\"drac-heading drac-heading-1 drac-text-yellow drac-spacing-none\\"
+    >
+      yellow
+    </h1>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <h1
+      color=\\"purpleCyan\\"
+      class=\\"drac-heading drac-heading-1 drac-text-purple-cyan drac-spacing-none\\"
+    >
+      purpleCyan
+    </h1>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <h1
+      color=\\"yellowPink\\"
+      class=\\"drac-heading drac-heading-1 drac-text-yellow-pink drac-spacing-none\\"
+    >
+      yellowPink
+    </h1>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <h1
+      color=\\"cyanGreen\\"
+      class=\\"drac-heading drac-heading-1 drac-text-cyan-green drac-spacing-none\\"
+    >
+      cyanGreen
+    </h1>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <h1
+      color=\\"pinkPurple\\"
+      class=\\"drac-heading drac-heading-1 drac-text-pink-purple drac-spacing-none\\"
+    >
+      pinkPurple
+    </h1>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <h1
+      color=\\"animated\\"
+      class=\\"drac-heading drac-heading-1 drac-text-animated drac-spacing-none\\"
+    >
+      animated
+    </h1>
+  </div>
+</div>
+",
+  "react": "<div>
+  <div style={{ marginBottom: 20 }}>
+    <Heading color=\\"white\\">white</Heading>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Heading color=\\"cyan\\">cyan</Heading>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Heading color=\\"green\\">green</Heading>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Heading color=\\"orange\\">orange</Heading>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Heading color=\\"pink\\">pink</Heading>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Heading color=\\"purple\\">purple</Heading>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Heading color=\\"red\\">red</Heading>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Heading color=\\"yellow\\">yellow</Heading>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Heading color=\\"purpleCyan\\">purpleCyan</Heading>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Heading color=\\"yellowPink\\">yellowPink</Heading>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Heading color=\\"cyanGreen\\">cyanGreen</Heading>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Heading color=\\"pinkPurple\\">pinkPurple</Heading>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Heading color=\\"animated\\">animated</Heading>
+  </div>
+</div>;
+",
+  "title": "Colors",
+}
 `;
 
-exports[`Heading heading-3 1`] = `
-<h3
-  className="drac-heading drac-heading-3 drac-spacing-none"
-  size="heading-3"
->
-  Hello World
-</h3>
-`;
-
-exports[`Heading heading-4 1`] = `
-<h4
-  className="drac-heading drac-heading-4 drac-spacing-none"
-  size="heading-4"
->
-  Hello World
-</h4>
+exports[`Site: Heading Sizes 1`] = `
+Object {
+  "docs": "",
+  "html": "<div>
+  <div style=\\"margin-bottom: 20px\\">
+    <h1
+      color=\\"white\\"
+      class=\\"drac-heading drac-heading-1 drac-text-white drac-spacing-none\\"
+    >
+      heading-1
+    </h1>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <h2
+      color=\\"white\\"
+      class=\\"drac-heading drac-heading-2 drac-text-white drac-spacing-none\\"
+    >
+      heading-2
+    </h2>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <h3
+      color=\\"white\\"
+      class=\\"drac-heading drac-heading-3 drac-text-white drac-spacing-none\\"
+    >
+      heading-3
+    </h3>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <h4
+      color=\\"white\\"
+      class=\\"drac-heading drac-heading-4 drac-text-white drac-spacing-none\\"
+    >
+      heading-4
+    </h4>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <h5
+      color=\\"white\\"
+      class=\\"drac-heading drac-heading-5 drac-text-white drac-spacing-none\\"
+    >
+      heading-5
+    </h5>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <h6
+      color=\\"white\\"
+      class=\\"drac-heading drac-heading-6 drac-text-white drac-spacing-none\\"
+    >
+      heading-6
+    </h6>
+  </div>
+</div>
+",
+  "react": "<div>
+  <div style={{ marginBottom: 20 }}>
+    <Heading color=\\"white\\" size=\\"heading-1\\">
+      heading-1
+    </Heading>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Heading color=\\"white\\" size=\\"heading-2\\">
+      heading-2
+    </Heading>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Heading color=\\"white\\" size=\\"heading-3\\">
+      heading-3
+    </Heading>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Heading color=\\"white\\" size=\\"heading-4\\">
+      heading-4
+    </Heading>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Heading color=\\"white\\" size=\\"heading-5\\">
+      heading-5
+    </Heading>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Heading color=\\"white\\" size=\\"heading-6\\">
+      heading-6
+    </Heading>
+  </div>
+</div>;
+",
+  "title": "Sizes",
+}
 `;

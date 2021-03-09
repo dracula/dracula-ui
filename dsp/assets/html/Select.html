@@ -1866,7 +1866,7 @@
           },
         ]);
       });
-      //# sourceURL=/Users/zeno/Projects/dracula-ui/vendor/html-to-image.js
+      //# sourceURL=/Users/netto.farah/projects/dracula-ui/vendor/html-to-image.js
     </script>
     <style type="text/css">
       :root {
@@ -2223,6 +2223,8 @@
       }
       .drac-btn,
       .drac-heading,
+      .drac-input,
+      .drac-select,
       .drac-text {
         word-break: break-word;
         -webkit-hyphens: auto;
@@ -2257,16 +2259,13 @@
       .drac-text {
         font-size: var(--font-md);
       }
-      .drac-text-lg {
+      .drac-text.drac-text-lg {
         font-size: var(--font-lg);
       }
-      .drac-text-md {
-        font-size: var(--font-md);
-      }
-      .drac-text-sm {
+      .drac-text.drac-text-sm {
         font-size: var(--font-sm);
       }
-      .drac-text-xs {
+      .drac-text.drac-text-xs {
         font-size: var(--font-xs);
       }
       .drac-btn {
@@ -2275,6 +2274,7 @@
         appearance: none;
         border: none;
         border-radius: var(--corner-radius);
+        box-sizing: border-box;
       }
       .drac-btn:active,
       .drac-btn:focus {
@@ -2360,11 +2360,12 @@
         background-color: transparent;
       }
       .drac-input {
-        border-radius: 10px;
+        border-radius: var(--corner-radius);
+        box-sizing: border-box;
+        width: 100%;
         outline: none;
         background: var(--blackSecondary);
         border: 0.3rem solid transparent;
-        padding: 20px;
         transition: all 0.3s ease-in-out;
         -webkit-appearance: textfield;
       }
@@ -2429,12 +2430,27 @@
       .drac-input.drac-input-yellow:focus {
         border-color: var(--yellow);
       }
+      .drac-input.drac-input-sm {
+        padding: 0 var(--spacing-3);
+        height: var(--spacing-8);
+        font-size: var(--font-sm);
+      }
+      .drac-input {
+        padding: 0 var(--spacing-4);
+        height: var(--spacing-10);
+        font-size: var(--font-md);
+      }
+      .drac-input.drac-input-lg {
+        padding: 0 var(--spacing-6);
+        height: var(--spacing-12);
+        font-size: var(--font-lg);
+      }
       .drac-select {
-        border-radius: 10px;
+        border-radius: var(--corner-radius);
         background: var(--blackSecondary);
         border: 0.3rem solid transparent;
+        box-sizing: border-box;
         color: var(--white);
-        padding: 20px;
         transition: all 0.3s ease-in-out;
         -webkit-appearance: none;
         -moz-appearance: none;
@@ -2484,11 +2500,11 @@
       .drac-select-arrow {
         position: absolute;
         display: inline-flex;
-        width: 3.6rem;
+        width: var(--spacing-8);
         height: 100%;
         align-items: center;
         justify-content: center;
-        right: 2rem;
+        right: var(--spacing-2);
         top: 50%;
         pointer-events: none;
         z-index: 2;
@@ -2543,6 +2559,20 @@
       .drac-select-outline.drac-select-yellow:focus,
       .drac-select.drac-select-yellow:focus {
         border-color: var(--yellow);
+      }
+      .drac-select.drac-select-sm {
+        height: var(--spacing-8);
+        font-size: var(--font-sm);
+      }
+      .drac-select {
+        height: var(--spacing-10);
+        font-size: var(--font-md);
+        padding-left: var(--spacing-4);
+        padding-right: var(--spacing-8);
+      }
+      .drac-select.drac-select-lg {
+        height: var(--spacing-12);
+        font-size: var(--font-lg);
       }
       :root {
         --subtle-avatar-shadow: inset 0 0 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
@@ -2954,7 +2984,7 @@
         --spacing-56: 14rem;
         --spacing-64: 16rem;
       }
-      /*# sourceMappingURL=dracula-ui.css.map */ /*# sourceURL=/Users/zeno/Projects/dracula-ui/dist/styles/dracula-ui.css*/
+      /*# sourceMappingURL=dracula-ui.css.map */ /*# sourceURL=/Users/netto.farah/projects/dracula-ui/dist/styles/dracula-ui.css*/
     </style>
     <style type="text/css">
       /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -3308,7 +3338,7 @@
       [hidden] {
         display: none;
       }
-      /*# sourceURL=/Users/zeno/Projects/dracula-ui/node_modules/normalize.css/normalize.css*/
+      /*# sourceURL=/Users/netto.farah/projects/dracula-ui/node_modules/normalize.css/normalize.css*/
     </style>
     <style type="text/css">
       body {
@@ -3326,10 +3356,7 @@
   <body>
     <div id="drac" class="drac">
       <div style="position: relative">
-        <select
-          color="white"
-          class="drac-select drac-text drac-text-md drac-select-white"
-        >
+        <select color="white" class="drac-select drac-select-white">
           <option value="default" disabled="" selected="">Select option</option>
           <option>Blade</option>
           <option>Buffy</option>

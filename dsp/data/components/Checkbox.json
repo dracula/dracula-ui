@@ -3,7 +3,7 @@
   "type": "page",
   "id": "Checkbox",
   "name": "Checkbox",
-  "last_updated": "2020-10-10T16:21:25.676Z",
+  "last_updated": "2021-03-09T22:24:22.189Z",
   "last_updated_by": "System",
   "description": "Checkbox is a styled HTML Input of type checkbox.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep check boxes accessible.",
   "related_entity_ids": [],

@@ -67,9 +67,11 @@ export const Select: React.FC<SelectProps> = (props: SelectProps) => {
     )
   }
 
+  const { size, ...cleanProps } = finalProps
+
   return (
     <div style={{ position: 'relative' }}>
-      <select {...finalProps} />
+      <select {...cleanProps} />
       <div className={`drac-select-arrow drac-text-${props.color}`}>
         <svg
           viewBox="0 0 24 24"

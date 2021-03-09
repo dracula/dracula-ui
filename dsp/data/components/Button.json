@@ -3,7 +3,7 @@
   "type": "page",
   "id": "Button",
   "name": "Button",
-  "last_updated": "2020-10-10T16:21:26.255Z",
+  "last_updated": "2021-03-09T22:24:22.483Z",
   "last_updated_by": "System",
   "description": "The Button component triggers actions, behaviors, or events based\non user input.",
   "related_entity_ids": [],
@@ -31,6 +31,14 @@
       "docs": "",
       "screenshot": "./dsp/assets/ButtonVariants.png",
       "svgData": "./dsp/assets/svgs/ButtonVariants.svg"
+    },
+    {
+      "title": "Sizes",
+      "html": "<div class=\"drac-box\">\n  <div style=\"margin-bottom: 10px\" class=\"drac-box\">\n    <button class=\"drac-btn drac-bg-purple drac-btn drac-btn-lg\" color=\"purple\">\n      large\n    </button>\n  </div>\n  <div style=\"margin-bottom: 10px\" class=\"drac-box\">\n    <button class=\"drac-btn drac-bg-purple drac-btn drac-btn\" color=\"purple\">\n      medium\n    </button>\n  </div>\n  <div style=\"margin-bottom: 10px\" class=\"drac-box\">\n    <button class=\"drac-btn drac-bg-purple drac-btn drac-btn-sm\" color=\"purple\">\n      small\n    </button>\n  </div>\n  <div style=\"margin-bottom: 10px\" class=\"drac-box\">\n    <button class=\"drac-btn drac-bg-purple drac-btn drac-btn-xs\" color=\"purple\">\n      xsmall\n    </button>\n  </div>\n</div>\n",
+      "react": "<Box>\n  <Box style={{ marginBottom: 10 }}>\n    <Button color=\"purple\" size=\"large\">\n      large\n    </Button>\n  </Box>\n  <Box style={{ marginBottom: 10 }}>\n    <Button color=\"purple\" size=\"medium\">\n      medium\n    </Button>\n  </Box>\n  <Box style={{ marginBottom: 10 }}>\n    <Button color=\"purple\" size=\"small\">\n      small\n    </Button>\n  </Box>\n  <Box style={{ marginBottom: 10 }}>\n    <Button color=\"purple\" size=\"xsmall\">\n      xsmall\n    </Button>\n  </Box>\n</Box>;\n",
+      "docs": "",
+      "screenshot": "./dsp/assets/ButtonSizes.png",
+      "svgData": "./dsp/assets/svgs/ButtonSizes.svg"
     },
     {
       "title": "Colors",

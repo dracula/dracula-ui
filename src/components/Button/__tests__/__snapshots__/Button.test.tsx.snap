@@ -468,6 +468,59 @@ Object {
 }
 `;
 
+exports[`Site: Button Sizes 1`] = `
+Object {
+  "docs": "",
+  "html": "<div class=\\"drac-box\\">
+  <div style=\\"margin-bottom: 10px\\" class=\\"drac-box\\">
+    <button class=\\"drac-btn drac-bg-purple drac-btn drac-btn-lg\\" color=\\"purple\\">
+      large
+    </button>
+  </div>
+  <div style=\\"margin-bottom: 10px\\" class=\\"drac-box\\">
+    <button class=\\"drac-btn drac-bg-purple drac-btn drac-btn\\" color=\\"purple\\">
+      medium
+    </button>
+  </div>
+  <div style=\\"margin-bottom: 10px\\" class=\\"drac-box\\">
+    <button class=\\"drac-btn drac-bg-purple drac-btn drac-btn-sm\\" color=\\"purple\\">
+      small
+    </button>
+  </div>
+  <div style=\\"margin-bottom: 10px\\" class=\\"drac-box\\">
+    <button class=\\"drac-btn drac-bg-purple drac-btn drac-btn-xs\\" color=\\"purple\\">
+      xsmall
+    </button>
+  </div>
+</div>
+",
+  "react": "<Box>
+  <Box style={{ marginBottom: 10 }}>
+    <Button color=\\"purple\\" size=\\"large\\">
+      large
+    </Button>
+  </Box>
+  <Box style={{ marginBottom: 10 }}>
+    <Button color=\\"purple\\" size=\\"medium\\">
+      medium
+    </Button>
+  </Box>
+  <Box style={{ marginBottom: 10 }}>
+    <Button color=\\"purple\\" size=\\"small\\">
+      small
+    </Button>
+  </Box>
+  <Box style={{ marginBottom: 10 }}>
+    <Button color=\\"purple\\" size=\\"xsmall\\">
+      xsmall
+    </Button>
+  </Box>
+</Box>;
+",
+  "title": "Sizes",
+}
+`;
+
 exports[`Site: Button Variants 1`] = `
 Object {
   "docs": "",

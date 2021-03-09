@@ -67,7 +67,8 @@ export const Input: React.FC<InputProps> = (props: InputProps) => {
     )
   }
 
-  return <input {...finalProps} />
+  const { size, ...cleanProps } = finalProps
+  return <input {...cleanProps} />
 }
 
 Input.displayName = 'Input'
