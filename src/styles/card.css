@@ -1,0 +1,15 @@
+.drac-card {
+  border-radius: var(--corner-radius);
+  box-shadow: 0px var(--spacing-md) var(--spacing-lg) rgba(255, 255, 255, 0.25);
+}
+
+.drac-card-portrait {
+  max-width: 30rem;
+}
+
+.drac-card-subtle {
+  box-shadow: none;
+  background: none;
+  border-width: 2px;
+  border-style: solid;
+}
