@@ -63,6 +63,7 @@
     "jest-snapshot-serializer-raw": "^1.1.0",
     "jest-transform-css": "^2.1.0",
     "levenary": "^1.1.1",
+    "np": "^7.4.0",
     "parse-data-url": "^3.0.0",
     "postcss": "^8.2.8",
     "postcss-import": "^14.0.0",
