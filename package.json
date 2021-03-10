@@ -18,7 +18,7 @@
     "lint": "echo Linting",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "release": "cp package.json ./dist/ && gh-pages -d ./dist -b alpha"
+    "release": "./scripts/release.sh"
   },
   "peerDependencies": {
     "react": ">=16"
