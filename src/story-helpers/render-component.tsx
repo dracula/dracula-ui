@@ -54,7 +54,7 @@ export function renderSnapshot(
   if (wrapped) {
     // replace wrapper div 😬
     react = react
-      .replace(/^\<div\>\n/, '')
+      .replace(/^<div>\n/, '')
       .replace(/\n<\/div>$/, '')
       .trim()
   }
