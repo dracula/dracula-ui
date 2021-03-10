@@ -1,5 +1,5 @@
 {
-  "version": "0.2.0",
+  "version": "0.2.1-0",
   "license": "MIT",
   "main": "dist/index.js",
   "style": "dist/styles/dracula-ui.css",
@@ -17,7 +17,8 @@
     "test": "yarn build && tsdx test && node ./dsp/update.js",
     "lint": "echo Linting",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "release": "yarn np prerelease --tag=alpha --no-publish --contents=dist/"
   },
   "peerDependencies": {
     "react": ">=16"
