@@ -37,6 +37,7 @@ export async function componentScreenshot(
   await page.addStyleTag({
     path: process.cwd() + '/dist/styles/dracula-ui.css'
   })
+
   await page.addStyleTag({
     path: process.cwd() + '/node_modules/normalize.css/normalize.css'
   })

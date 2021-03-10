@@ -32,11 +32,11 @@ jobs:
           CI: true
 
       - name: Test
-        run: yarn test -u
+        run: yarn build
         env:
           CI: true
 
-      - name: Build
-        run: yarn build
+      - name: Test
+        run: yarn test -u
         env:
           CI: true
