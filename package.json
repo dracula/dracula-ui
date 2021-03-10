@@ -1,9 +1,9 @@
 {
-  "version": "0.2.1-0",
+  "version": "0.2.1-alpha",
   "license": "MIT",
   "main": "dist/index.js",
-  "style": "dist/styles/dracula-ui.css",
-  "typings": "dist/index.d.ts",
+  "style": "styles/dracula-ui.css",
+  "typings": "index.d.ts",
   "files": [
     "dist",
     "dsp"
@@ -14,11 +14,11 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
-    "test": "yarn build && tsdx test && node ./dsp/update.js",
+    "test": "tsdx test && node ./dsp/update.js",
     "lint": "echo Linting",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "release": "yarn np prerelease --tag=alpha --no-publish --contents=dist/"
+    "release": "cp package.json ./dist/ && gh-pages -d ./dist -b alpha"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -31,7 +31,7 @@
   },
   "name": "dracula-ui",
   "author": "Netto Farah & Zeno Rocha",
-  "module": "dist/dracula-ui.esm.js",
+  "module": "dracula-ui.esm.js",
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@storybook/addon-actions": "^6.1.21",
@@ -58,6 +58,7 @@
     "enzyme": "^3.11.0",
     "enzyme-to-json": "^3.5.0",
     "fs-extra": "^9.0.1",
+    "gh-pages": "^3.1.0",
     "globby": "^11.0.1",
     "husky": "^5.1.3",
     "jest": "^26.4.2",
