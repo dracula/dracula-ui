@@ -6,9 +6,6 @@
   "typings": "dist/index.d.ts",
   "files": [
     "dist",
-    "src",
-    "examples",
-    "docs",
     "dsp"
   ],
   "engines": {
