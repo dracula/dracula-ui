@@ -3,7 +3,7 @@
   "type": "page",
   "id": "Switch",
   "name": "Switch",
-  "last_updated": "2021-03-09T22:39:41.965Z",
+  "last_updated": "2021-03-10T01:53:17.158Z",
   "last_updated_by": "System",
   "description": "Switch is an abstraction pattern that represents toggles.\n\nUse the Switch component as an alternative for Checkboxes or Radios\nwhen options are binary.\n\nSwitches are implemented as Checkboxes under the hood,\nand work normally with forms.",
   "related_entity_ids": [],

@@ -28,11 +28,11 @@ export function siteDocs<T>(
   describe(`Site: ${name}`, () => {
     let browser: puppeteer.Browser
 
-    beforeEach(async () => {
+    beforeAll(async () => {
       browser = await puppeteer.launch({ headless: true, devtools: true })
     })
 
-    afterEach(async () => {
+    afterAll(async () => {
       await browser.close()
     })
 
