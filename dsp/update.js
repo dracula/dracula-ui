@@ -19,5 +19,3 @@ fs.writeFileSync(
   `${process.cwd()}/dsp/data/components.json`,
   JSON.stringify(dspComponent, null, '  ')
 )
-
-// rimraf.sync(`${process.cwd()}/dsp/data/components/`)

@@ -16,7 +16,7 @@ declare type Component = {
     };
     ext_com_draculaui_variations: ComponentExample[];
     ext_com_draculaui_props: dg.ComponentDoc['props'];
-    ext_com_draculaui_docgen: dg.ComponentDoc;
+    ext_com_draculaui_docgen?: dg.ComponentDoc;
 };
-export declare function toDSP(name: string, usage: Record<string, ComponentExample>, docs: dg.ComponentDoc): Component;
+export declare function toDSP(name: string, usage: Record<string, ComponentExample>, docs?: dg.ComponentDoc): Component;
 export {};

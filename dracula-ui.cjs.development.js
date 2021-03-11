@@ -611,6 +611,43 @@ var Table = function Table(props) {
 };
 Table.displayName = 'Table';
 
+var listColors = {
+  white: 'drac-list-white',
+  cyan: 'drac-list-cyan',
+  green: 'drac-list-green',
+  orange: 'drac-list-orange',
+  pink: 'drac-list-pink',
+  purple: 'drac-list-purple',
+  red: 'drac-list-red',
+  yellow: 'drac-list-yellow',
+  animated: '',
+  cyanGreen: '',
+  pinkPurple: '',
+  purpleCyan: '',
+  yellowPink: ''
+};
+var listVariants = {
+  unordered: 'drac-list-unordered',
+  ordered: 'drac-list-ordered'
+};
+/**
+ * Lists are horizontal lines used to separate semantic blocks of
+ * content or UI patterns.
+ */
+
+var List = function List(props) {
+  var finalProps = _extends({}, props, {
+    className: cx('drac-list', props.variant && listVariants[props.variant], props.color && listColors[props.color])
+  });
+
+  if (props.variant === 'unordered') {
+    return React.createElement("ul", Object.assign({}, finalProps));
+  }
+
+  return React.createElement("ol", Object.assign({}, finalProps));
+};
+List.displayName = 'List';
+
 exports.Avatar = Avatar;
 exports.AvatarBorderVariants = AvatarBorderVariants;
 exports.AvatarVariants = AvatarVariants;
@@ -622,6 +659,7 @@ exports.Checkbox = Checkbox;
 exports.Divider = Divider;
 exports.Heading = Heading;
 exports.Input = Input;
+exports.List = List;
 exports.Paragraph = Paragraph;
 exports.Radio = Radio;
 exports.Select = Select;
@@ -640,6 +678,8 @@ exports.headingSizes = headingSizes;
 exports.inputColors = inputColors;
 exports.inputSizes = inputSizes;
 exports.inputVariants = inputVariants;
+exports.listColors = listColors;
+exports.listVariants = listVariants;
 exports.radioColors = radioColors;
 exports.selectColors = selectColors;
 exports.selectSizes = selectSizes;

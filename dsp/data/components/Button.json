@@ -3,7 +3,7 @@
   "type": "page",
   "id": "Button",
   "name": "Button",
-  "last_updated": "2021-03-09T22:39:43.247Z",
+  "last_updated": "2021-03-11T04:47:11.278Z",
   "last_updated_by": "System",
   "description": "The Button component triggers actions, behaviors, or events based\non user input.",
   "related_entity_ids": [],

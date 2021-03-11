@@ -3,7 +3,7 @@
   "type": "page",
   "id": "Select",
   "name": "Select",
-  "last_updated": "2021-03-09T22:39:45.366Z",
+  "last_updated": "2021-03-11T04:47:13.737Z",
   "last_updated_by": "System",
   "description": "Select is a styled HTML Select element.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS, and small SVG component in order to keep Selects accessible.",
   "related_entity_ids": [],
