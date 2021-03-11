@@ -26,20 +26,16 @@ exports[`Site: Box Generic Elements 1`] = `
 Object {
   "docs": "",
   "html": "<div>
-  <button
-    is=\\"button\\"
-    color=\\"pinkPurple\\"
-    classname=\\"drac-box drac-bg-pink-purple\\"
-  >
+  <button as=\\"button\\" color=\\"pinkPurple\\" class=\\"drac-box drac-bg-pink-purple\\">
     Button</button
-  ><a is=\\"a\\" color=\\"green\\" href=\\"#\\" classname=\\"drac-box drac-bg-green\\">Link</a>
+  ><a as=\\"a\\" color=\\"green\\" href=\\"#\\" class=\\"drac-box drac-bg-green\\">Link</a>
 </div>
 ",
   "react": "<div>
-  <Box is=\\"button\\" color=\\"pinkPurple\\">
+  <Box as=\\"button\\" color=\\"pinkPurple\\">
     Button
   </Box>
-  <Box is=\\"a\\" color=\\"green\\" href=\\"#\\">
+  <Box as=\\"a\\" color=\\"green\\" href=\\"#\\">
     Link
   </Box>
 </div>;
