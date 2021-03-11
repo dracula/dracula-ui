@@ -27,15 +27,15 @@ export const Boxes = () => {
       </div>
 
       <div>
-        <Box is="button" color="pinkPurple">
+        <Box as="button" color="pinkPurple">
           Button
         </Box>
 
-        <Box is="a" color="green" href="#">
+        <Box as="a" color="green" href="#">
           Link
         </Box>
 
-        <Box is="h4" color="orange">
+        <Box as="h4" color="orange">
           h4
         </Box>
       </div>

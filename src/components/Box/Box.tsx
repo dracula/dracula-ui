@@ -17,7 +17,7 @@ export interface BoxProps<K extends keyof Element = 'div'>
   spacing?: SpacingPropType
 
   /** The HTML element to be used */
-  is?: K
+  as?: K
 }
 
 /**
@@ -39,8 +39,8 @@ export function Box<T extends keyof Element>(props: BoxProps<T>) {
     )
   }
 
-  const is = finalProps.is ?? 'div'
-  return React.createElement(is, finalProps, props.children)
+  const as = finalProps.as ?? 'div'
+  return React.createElement(as, finalProps, props.children)
 }
 
 Box.displayName = 'Box'

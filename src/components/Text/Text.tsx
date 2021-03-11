@@ -22,7 +22,7 @@ export const textColors = mapValues(baseTextColors, (className) => {
 })
 
 /** Text Props */
-export interface TextProps extends Omit<HTMLAttributes<HTMLSpanElement>, 'is'> {
+export interface TextProps extends HTMLAttributes<HTMLSpanElement> {
   /**
    * Controls the size of the text based on pre-configured Dracula UI sizes.
    * Options: `xsmall`, `small`, `medium`, `large`
@@ -45,7 +45,7 @@ export interface TextProps extends Omit<HTMLAttributes<HTMLSpanElement>, 'is'> {
    */
   spacing?: SpacingPropType
 
-  is?: 'a' | 'span' | 'p'
+  as?: 'a' | 'span' | 'p'
 }
 
 /**
@@ -72,7 +72,7 @@ export const Text = (props: TextProps) => {
   }
 
   return React.createElement(
-    finalProps.is ?? 'span',
+    finalProps.as ?? 'span',
     finalProps,
     props.children
   )

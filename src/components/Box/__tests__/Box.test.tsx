@@ -24,11 +24,11 @@ siteDocs(Box, {
       buildSnapshot('Colors', () => <Box color="pinkPurple">Pink Purple</Box>),
       buildSnapshot('Generic Elements', () => (
         <div>
-          <Box is="button" color="pinkPurple">
+          <Box as="button" color="pinkPurple">
             Button
           </Box>
 
-          <Box is="a" color="green" href="#">
+          <Box as="a" color="green" href="#">
             Link
           </Box>
         </div>

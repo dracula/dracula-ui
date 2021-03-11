@@ -68,6 +68,26 @@ export const ButtonDisabled = () => {
   )
 }
 
+export const ButtonLink = () => {
+  return (
+    <Box>
+      {Object.keys(buttonVariants).map((variant) => {
+        return (
+          <Box key={variant} style={{ marginBottom: 10 }}>
+            <Button
+              as="a"
+              variant={variant as ButtonProps['variant']}
+              color={'purple' as ButtonProps['color']}
+            >
+              {variant}
+            </Button>
+          </Box>
+        )
+      })}
+    </Box>
+  )
+}
+
 export const ButtonColors = () => {
   return (
     <Box>

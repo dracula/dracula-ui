@@ -17,8 +17,7 @@ export const buttonSizes = {
 }
 
 /** Button Props */
-export interface ButtonProps
-  extends Omit<HTMLAttributes<HTMLButtonElement>, 'is'> {
+export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   /** A Dracula UI theme color for the Button. */
   color?: keyof typeof backgroundColors
 
@@ -41,7 +40,7 @@ export interface ButtonProps
    */
   disabled?: boolean
 
-  is?: 'button' | 'a' | 'input'
+  as?: 'button' | 'a' | 'input'
 }
 
 /**
@@ -70,10 +69,10 @@ export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
     textColorClass
   )
 
-  return (
-    <button className={classes} {...props}>
-      {props.children}
-    </button>
+  return React.createElement(
+    props.as ?? 'button',
+    { className: classes, ...props },
+    props.children
   )
 }
 
