@@ -109,7 +109,7 @@ var headingColors = /*#__PURE__*/lodash.mapValues(colors, function (className) {
  */
 
 var Heading = function Heading(props) {
-  var _props$size, _props$size2, _props$color, _props$spacing, _finalProps$is;
+  var _props$size, _props$size2, _props$color, _props$spacing, _finalProps$as;
 
   var tag = {
     'heading-1': 'h1',
@@ -125,7 +125,7 @@ var Heading = function Heading(props) {
     className: cx.apply(void 0, ["drac-heading", headingSizes[(_props$size2 = props.size) != null ? _props$size2 : 'heading-1'], headingColors[(_props$color = props.color) != null ? _props$color : 'white']].concat(spacingClasses((_props$spacing = props.spacing) != null ? _props$spacing : 'none')))
   });
 
-  return React.createElement((_finalProps$is = finalProps.is) != null ? _finalProps$is : size, finalProps, props.children);
+  return React.createElement((_finalProps$as = finalProps.as) != null ? _finalProps$as : size, finalProps, props.children);
 };
 Heading.displayName = 'Heading';
 
@@ -155,13 +155,13 @@ var textColors = /*#__PURE__*/lodash.mapValues(baseTextColors, function (classNa
  */
 
 var Text = function Text(props) {
-  var _props$size, _props$weight, _props$color, _finalProps$is;
+  var _props$size, _props$weight, _props$color, _finalProps$as;
 
   var finalProps = _extends({}, props, {
     className: cx("drac-text", textSizes[(_props$size = props.size) != null ? _props$size : 'medium'], textWeights[(_props$weight = props.weight) != null ? _props$weight : 'normal'], textColors[(_props$color = props.color) != null ? _props$color : 'white'], spacingClasses(props.spacing))
   });
 
-  return React.createElement((_finalProps$is = finalProps.is) != null ? _finalProps$is : 'span', finalProps, props.children);
+  return React.createElement((_finalProps$as = finalProps.as) != null ? _finalProps$as : 'span', finalProps, props.children);
 };
 Text.displayName = 'Text';
 
@@ -192,14 +192,14 @@ var Paragraph = function Paragraph(props) {
  */
 
 function Box(props) {
-  var _finalProps$is;
+  var _finalProps$as;
 
   var finalProps = _extends({}, props, {
     className: cx.apply(void 0, ["drac-box", props.color && colors[props.color]].concat(spacingClasses(props.spacing), [props.className]))
   });
 
-  var is = (_finalProps$is = finalProps.is) != null ? _finalProps$is : 'div';
-  return React.createElement(is, finalProps, props.children);
+  var as = (_finalProps$as = finalProps.as) != null ? _finalProps$as : 'div';
+  return React.createElement(as, finalProps, props.children);
 }
 Box.displayName = 'Box';
 
@@ -220,7 +220,7 @@ var buttonSizes = {
  */
 
 var Button = function Button(props) {
-  var _props$color, _props$color2, _props$variant, _props$size;
+  var _props$color, _props$color2, _props$variant, _props$size, _props$as;
 
   var isOutline = props.variant === 'outline';
   var isGhost = props.variant === 'ghost';
@@ -233,7 +233,7 @@ var Button = function Button(props) {
   }
 
   var classes = cx('drac-btn', backgroundClass, buttonVariants[(_props$variant = props.variant) != null ? _props$variant : 'normal'], buttonSizes[(_props$size = props.size) != null ? _props$size : 'medium'], textColorClass);
-  return React.createElement("button", Object.assign({
+  return React.createElement((_props$as = props.as) != null ? _props$as : 'button', _extends({
     className: classes
   }, props), props.children);
 };

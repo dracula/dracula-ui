@@ -12,7 +12,7 @@ export declare const buttonSizes: {
     xsmall: string;
 };
 /** Button Props */
-export interface ButtonProps extends Omit<HTMLAttributes<HTMLButtonElement>, 'is'> {
+export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
     /** A Dracula UI theme color for the Button. */
     color?: keyof typeof backgroundColors;
     /**
@@ -31,7 +31,7 @@ export interface ButtonProps extends Omit<HTMLAttributes<HTMLButtonElement>, 'is
      * Controls the Button state. Mirrors the HTMLButtonElement `disabled` property.
      */
     disabled?: boolean;
-    is?: 'button' | 'a' | 'input';
+    as?: 'button' | 'a' | 'input';
 }
 /**
  * The Button component triggers actions, behaviors, or events based

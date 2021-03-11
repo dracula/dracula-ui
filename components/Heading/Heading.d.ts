@@ -24,7 +24,7 @@ export declare const headingColors: {
     animated: string;
 };
 /** Heading Props */
-export interface HeadingProps extends Omit<HTMLAttributes<HTMLHeadingElement>, 'is'> {
+export interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {
     /**
      * The size and type of Heading to be used.
      * Denotes hierarchy.
@@ -38,7 +38,7 @@ export interface HeadingProps extends Omit<HTMLAttributes<HTMLHeadingElement>, '
      * Controls the spacing between the Heading component and its parent and siblings.
      */
     spacing?: SpacingPropType;
-    is?: keyof HTMLElementTagNameMap;
+    as?: keyof HTMLElementTagNameMap;
 }
 /**
  * Heading is used to display headlines and other forms of hierarchical Text.

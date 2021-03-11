@@ -27,7 +27,7 @@ export declare const textColors: {
     animated: string;
 };
 /** Text Props */
-export interface TextProps extends Omit<HTMLAttributes<HTMLSpanElement>, 'is'> {
+export interface TextProps extends HTMLAttributes<HTMLSpanElement> {
     /**
      * Controls the size of the text based on pre-configured Dracula UI sizes.
      * Options: `xsmall`, `small`, `medium`, `large`
@@ -46,7 +46,7 @@ export interface TextProps extends Omit<HTMLAttributes<HTMLSpanElement>, 'is'> {
      * Controls the spacing between the Text component and its parent and siblings.
      */
     spacing?: SpacingPropType;
-    is?: 'a' | 'span' | 'p';
+    as?: 'a' | 'span' | 'p';
 }
 /**
  * Text is the base component for any sort of text.
@@ -79,7 +79,7 @@ export declare const Text: {
          * Controls the spacing between the Text component and its parent and siblings.
          */
         spacing?: "large" | "medium" | "small" | "none" | "noneX" | "noneY" | "smallX" | "smallY" | "mediumX" | "mediumY" | "largeX" | "largeY" | ("large" | "medium" | "small" | "none" | "noneX" | "noneY" | "smallX" | "smallY" | "mediumX" | "mediumY" | "largeX" | "largeY")[] | undefined;
-        is?: "a" | "span" | "p" | undefined;
+        as?: "a" | "span" | "p" | undefined;
         defaultChecked?: boolean | undefined;
         defaultValue?: string | number | readonly string[] | undefined;
         suppressContentEditableWarning?: boolean | undefined;
@@ -121,6 +121,7 @@ export declare const Text: {
         security?: string | undefined;
         unselectable?: "on" | "off" | undefined;
         inputMode?: "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search" | undefined;
+        is?: string | undefined;
         'aria-activedescendant'?: string | undefined;
         'aria-atomic'?: boolean | "true" | "false" | undefined;
         'aria-autocomplete'?: "none" | "inline" | "list" | "both" | undefined;

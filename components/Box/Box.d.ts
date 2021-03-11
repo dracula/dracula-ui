@@ -11,7 +11,7 @@ export interface BoxProps<K extends keyof Element = 'div'> extends AllHTMLAttrib
     /** Dracula UI standard spacing properties. */
     spacing?: SpacingPropType;
     /** The HTML element to be used */
-    is?: K;
+    as?: K;
 }
 /**
  * Box is the most primitive component of Dracula UI.
@@ -28,14 +28,13 @@ export declare function Box<T extends keyof Element>(props: BoxProps<T>): React.
     /** Dracula UI standard spacing properties. */
     spacing?: "small" | "none" | "noneX" | "noneY" | "smallX" | "smallY" | "medium" | "mediumX" | "mediumY" | "large" | "largeX" | "largeY" | ("small" | "none" | "noneX" | "noneY" | "smallX" | "smallY" | "medium" | "mediumX" | "mediumY" | "large" | "largeX" | "largeY")[] | undefined;
     /** The HTML element to be used */
-    is?: T | undefined;
+    as?: T | undefined;
     accept?: string | undefined;
     acceptCharset?: string | undefined;
     action?: string | undefined;
     allowFullScreen?: boolean | undefined;
     allowTransparency?: boolean | undefined;
     alt?: string | undefined;
-    as?: string | undefined;
     async?: boolean | undefined;
     autoComplete?: string | undefined;
     autoFocus?: boolean | undefined;
@@ -175,6 +174,7 @@ export declare function Box<T extends keyof Element>(props: BoxProps<T>): React.
     security?: string | undefined;
     unselectable?: "on" | "off" | undefined;
     inputMode?: "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search" | undefined;
+    is?: string | undefined;
     'aria-activedescendant'?: string | undefined;
     'aria-atomic'?: boolean | "true" | "false" | undefined;
     'aria-autocomplete'?: "none" | "inline" | "list" | "both" | undefined;
