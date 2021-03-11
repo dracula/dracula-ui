@@ -18,7 +18,8 @@ export const headingColors = mapValues(colors, (className) => {
 })
 
 /** Heading Props */
-export interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {
+export interface HeadingProps
+  extends Omit<HTMLAttributes<HTMLHeadingElement>, 'is'> {
   /**
    * The size and type of Heading to be used.
    * Denotes hierarchy.
@@ -34,6 +35,8 @@ export interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {
    * Controls the spacing between the Heading component and its parent and siblings.
    */
   spacing?: SpacingPropType
+
+  is?: keyof HTMLElementTagNameMap
 }
 
 /**
@@ -63,7 +66,7 @@ export const Heading: React.FC<HeadingProps> = (props: HeadingProps) => {
     )
   }
 
-  return React.createElement(size, finalProps, props.children)
+  return React.createElement(finalProps.is ?? size, finalProps, props.children)
 }
 
 Heading.displayName = 'Heading'

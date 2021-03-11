@@ -22,7 +22,7 @@ export const textColors = mapValues(baseTextColors, (className) => {
 })
 
 /** Text Props */
-export interface TextProps extends HTMLAttributes<HTMLSpanElement> {
+export interface TextProps extends Omit<HTMLAttributes<HTMLSpanElement>, 'is'> {
   /**
    * Controls the size of the text based on pre-configured Dracula UI sizes.
    * Options: `xsmall`, `small`, `medium`, `large`
@@ -44,6 +44,8 @@ export interface TextProps extends HTMLAttributes<HTMLSpanElement> {
    * Controls the spacing between the Text component and its parent and siblings.
    */
   spacing?: SpacingPropType
+
+  is?: 'a' | 'span' | 'p'
 }
 
 /**
@@ -69,29 +71,11 @@ export const Text = (props: TextProps) => {
     )
   }
 
-  return <span {...finalProps}>{props.children}</span>
-}
-
-/**
- * Paragraph is a semantic component used for blocks of text with
- * semantic meaning.
- *
- * Paragraph accepts all the same customization options as Text.
- */
-export const Paragraph: React.FC<TextProps> = (props: TextProps) => {
-  const finalProps = {
-    ...props,
-
-    className: cx(
-      `drac-text`,
-      textSizes[props.size ?? 'medium'],
-      textWeights[props.weight ?? 'normal'],
-      textColors[props.color ?? 'white'],
-      spacingClasses(props.spacing ?? 'smallY')
-    )
-  }
-
-  return <p {...finalProps}>{props.children}</p>
+  return React.createElement(
+    finalProps.is ?? 'span',
+    finalProps,
+    props.children
+  )
 }
 
 Text.displayName = 'Text'

@@ -1,7 +1,7 @@
 import React from 'react'
 import { colors } from '@/base/colors'
 import { Box } from '@/components/Box/Box'
-import { Text } from '@/components/Typography/Text'
+import { Text } from '@/components/Text/Text'
 import { Badge, BadgeProps, Heading } from '@/index'
 
 export default {
