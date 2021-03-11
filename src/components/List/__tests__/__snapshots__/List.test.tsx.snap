@@ -1,0 +1,352 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Site: List Basic Usage 1`] = `
+Object {
+  "docs": "",
+  "html": "<div style=\\"display: flex; flex-direction: column; padding: 3rem\\">
+  <ol color=\\"purple\\" class=\\"drac-list drac-list-purple\\">
+    <li class=\\"drac-text drac-text-white\\">Blade</li>
+    <li class=\\"drac-text drac-text-white\\">Buffy</li>
+    <li class=\\"drac-text drac-text-white\\">Morbius</li>
+  </ol>
+</div>
+",
+  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\", padding: \\"3rem\\" }}>
+  <List color=\\"purple\\">
+    <li className=\\"drac-text drac-text-white\\">Blade</li>
+    <li className=\\"drac-text drac-text-white\\">Buffy</li>
+    <li className=\\"drac-text drac-text-white\\">Morbius</li>
+  </List>
+</div>;
+",
+  "title": "Usage",
+}
+`;
+
+exports[`Site: List Colors 1`] = `
+Object {
+  "docs": "",
+  "html": "<div style=\\"display: flex; flex-direction: column; padding: 3rem\\">
+  <div>
+    <ol
+      variant=\\"ordered\\"
+      color=\\"white\\"
+      class=\\"drac-list drac-list-ordered drac-list-white\\"
+    >
+      <li class=\\"drac-text drac-text-white\\">Blade</li>
+      <li class=\\"drac-text drac-text-white\\">Buffy</li>
+      <li class=\\"drac-text drac-text-white\\">Morbius</li>
+    </ol>
+  </div>
+  <div>
+    <ol
+      variant=\\"ordered\\"
+      color=\\"cyan\\"
+      class=\\"drac-list drac-list-ordered drac-list-cyan\\"
+    >
+      <li class=\\"drac-text drac-text-white\\">Blade</li>
+      <li class=\\"drac-text drac-text-white\\">Buffy</li>
+      <li class=\\"drac-text drac-text-white\\">Morbius</li>
+    </ol>
+  </div>
+  <div>
+    <ol
+      variant=\\"ordered\\"
+      color=\\"green\\"
+      class=\\"drac-list drac-list-ordered drac-list-green\\"
+    >
+      <li class=\\"drac-text drac-text-white\\">Blade</li>
+      <li class=\\"drac-text drac-text-white\\">Buffy</li>
+      <li class=\\"drac-text drac-text-white\\">Morbius</li>
+    </ol>
+  </div>
+  <div>
+    <ol
+      variant=\\"ordered\\"
+      color=\\"orange\\"
+      class=\\"drac-list drac-list-ordered drac-list-orange\\"
+    >
+      <li class=\\"drac-text drac-text-white\\">Blade</li>
+      <li class=\\"drac-text drac-text-white\\">Buffy</li>
+      <li class=\\"drac-text drac-text-white\\">Morbius</li>
+    </ol>
+  </div>
+  <div>
+    <ol
+      variant=\\"ordered\\"
+      color=\\"pink\\"
+      class=\\"drac-list drac-list-ordered drac-list-pink\\"
+    >
+      <li class=\\"drac-text drac-text-white\\">Blade</li>
+      <li class=\\"drac-text drac-text-white\\">Buffy</li>
+      <li class=\\"drac-text drac-text-white\\">Morbius</li>
+    </ol>
+  </div>
+  <div>
+    <ol
+      variant=\\"ordered\\"
+      color=\\"purple\\"
+      class=\\"drac-list drac-list-ordered drac-list-purple\\"
+    >
+      <li class=\\"drac-text drac-text-white\\">Blade</li>
+      <li class=\\"drac-text drac-text-white\\">Buffy</li>
+      <li class=\\"drac-text drac-text-white\\">Morbius</li>
+    </ol>
+  </div>
+  <div>
+    <ol
+      variant=\\"ordered\\"
+      color=\\"red\\"
+      class=\\"drac-list drac-list-ordered drac-list-red\\"
+    >
+      <li class=\\"drac-text drac-text-white\\">Blade</li>
+      <li class=\\"drac-text drac-text-white\\">Buffy</li>
+      <li class=\\"drac-text drac-text-white\\">Morbius</li>
+    </ol>
+  </div>
+  <div>
+    <ol
+      variant=\\"ordered\\"
+      color=\\"yellow\\"
+      class=\\"drac-list drac-list-ordered drac-list-yellow\\"
+    >
+      <li class=\\"drac-text drac-text-white\\">Blade</li>
+      <li class=\\"drac-text drac-text-white\\">Buffy</li>
+      <li class=\\"drac-text drac-text-white\\">Morbius</li>
+    </ol>
+  </div>
+  <div>
+    <ol variant=\\"ordered\\" color=\\"animated\\" class=\\"drac-list drac-list-ordered\\">
+      <li class=\\"drac-text drac-text-white\\">Blade</li>
+      <li class=\\"drac-text drac-text-white\\">Buffy</li>
+      <li class=\\"drac-text drac-text-white\\">Morbius</li>
+    </ol>
+  </div>
+  <div>
+    <ol variant=\\"ordered\\" color=\\"cyanGreen\\" class=\\"drac-list drac-list-ordered\\">
+      <li class=\\"drac-text drac-text-white\\">Blade</li>
+      <li class=\\"drac-text drac-text-white\\">Buffy</li>
+      <li class=\\"drac-text drac-text-white\\">Morbius</li>
+    </ol>
+  </div>
+  <div>
+    <ol
+      variant=\\"ordered\\"
+      color=\\"pinkPurple\\"
+      class=\\"drac-list drac-list-ordered\\"
+    >
+      <li class=\\"drac-text drac-text-white\\">Blade</li>
+      <li class=\\"drac-text drac-text-white\\">Buffy</li>
+      <li class=\\"drac-text drac-text-white\\">Morbius</li>
+    </ol>
+  </div>
+  <div>
+    <ol
+      variant=\\"ordered\\"
+      color=\\"purpleCyan\\"
+      class=\\"drac-list drac-list-ordered\\"
+    >
+      <li class=\\"drac-text drac-text-white\\">Blade</li>
+      <li class=\\"drac-text drac-text-white\\">Buffy</li>
+      <li class=\\"drac-text drac-text-white\\">Morbius</li>
+    </ol>
+  </div>
+  <div>
+    <ol
+      variant=\\"ordered\\"
+      color=\\"yellowPink\\"
+      class=\\"drac-list drac-list-ordered\\"
+    >
+      <li class=\\"drac-text drac-text-white\\">Blade</li>
+      <li class=\\"drac-text drac-text-white\\">Buffy</li>
+      <li class=\\"drac-text drac-text-white\\">Morbius</li>
+    </ol>
+  </div>
+</div>
+",
+  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\", padding: \\"3rem\\" }}>
+  <div>
+    <List variant=\\"ordered\\" color=\\"white\\">
+      <li className=\\"drac-text drac-text-white\\">Blade</li>
+      <li className=\\"drac-text drac-text-white\\">Buffy</li>
+      <li className=\\"drac-text drac-text-white\\">Morbius</li>
+    </List>
+  </div>
+  <div>
+    <List variant=\\"ordered\\" color=\\"cyan\\">
+      <li className=\\"drac-text drac-text-white\\">Blade</li>
+      <li className=\\"drac-text drac-text-white\\">Buffy</li>
+      <li className=\\"drac-text drac-text-white\\">Morbius</li>
+    </List>
+  </div>
+  <div>
+    <List variant=\\"ordered\\" color=\\"green\\">
+      <li className=\\"drac-text drac-text-white\\">Blade</li>
+      <li className=\\"drac-text drac-text-white\\">Buffy</li>
+      <li className=\\"drac-text drac-text-white\\">Morbius</li>
+    </List>
+  </div>
+  <div>
+    <List variant=\\"ordered\\" color=\\"orange\\">
+      <li className=\\"drac-text drac-text-white\\">Blade</li>
+      <li className=\\"drac-text drac-text-white\\">Buffy</li>
+      <li className=\\"drac-text drac-text-white\\">Morbius</li>
+    </List>
+  </div>
+  <div>
+    <List variant=\\"ordered\\" color=\\"pink\\">
+      <li className=\\"drac-text drac-text-white\\">Blade</li>
+      <li className=\\"drac-text drac-text-white\\">Buffy</li>
+      <li className=\\"drac-text drac-text-white\\">Morbius</li>
+    </List>
+  </div>
+  <div>
+    <List variant=\\"ordered\\" color=\\"purple\\">
+      <li className=\\"drac-text drac-text-white\\">Blade</li>
+      <li className=\\"drac-text drac-text-white\\">Buffy</li>
+      <li className=\\"drac-text drac-text-white\\">Morbius</li>
+    </List>
+  </div>
+  <div>
+    <List variant=\\"ordered\\" color=\\"red\\">
+      <li className=\\"drac-text drac-text-white\\">Blade</li>
+      <li className=\\"drac-text drac-text-white\\">Buffy</li>
+      <li className=\\"drac-text drac-text-white\\">Morbius</li>
+    </List>
+  </div>
+  <div>
+    <List variant=\\"ordered\\" color=\\"yellow\\">
+      <li className=\\"drac-text drac-text-white\\">Blade</li>
+      <li className=\\"drac-text drac-text-white\\">Buffy</li>
+      <li className=\\"drac-text drac-text-white\\">Morbius</li>
+    </List>
+  </div>
+  <div>
+    <List variant=\\"ordered\\" color=\\"animated\\">
+      <li className=\\"drac-text drac-text-white\\">Blade</li>
+      <li className=\\"drac-text drac-text-white\\">Buffy</li>
+      <li className=\\"drac-text drac-text-white\\">Morbius</li>
+    </List>
+  </div>
+  <div>
+    <List variant=\\"ordered\\" color=\\"cyanGreen\\">
+      <li className=\\"drac-text drac-text-white\\">Blade</li>
+      <li className=\\"drac-text drac-text-white\\">Buffy</li>
+      <li className=\\"drac-text drac-text-white\\">Morbius</li>
+    </List>
+  </div>
+  <div>
+    <List variant=\\"ordered\\" color=\\"pinkPurple\\">
+      <li className=\\"drac-text drac-text-white\\">Blade</li>
+      <li className=\\"drac-text drac-text-white\\">Buffy</li>
+      <li className=\\"drac-text drac-text-white\\">Morbius</li>
+    </List>
+  </div>
+  <div>
+    <List variant=\\"ordered\\" color=\\"purpleCyan\\">
+      <li className=\\"drac-text drac-text-white\\">Blade</li>
+      <li className=\\"drac-text drac-text-white\\">Buffy</li>
+      <li className=\\"drac-text drac-text-white\\">Morbius</li>
+    </List>
+  </div>
+  <div>
+    <List variant=\\"ordered\\" color=\\"yellowPink\\">
+      <li className=\\"drac-text drac-text-white\\">Blade</li>
+      <li className=\\"drac-text drac-text-white\\">Buffy</li>
+      <li className=\\"drac-text drac-text-white\\">Morbius</li>
+    </List>
+  </div>
+</div>;
+",
+  "title": "Colors",
+}
+`;
+
+exports[`Site: List Variants 1`] = `
+Object {
+  "docs": "",
+  "html": "<div style=\\"display: flex; flex-direction: column; padding: 3rem\\">
+  <div>
+    <ul
+      variant=\\"unordered\\"
+      color=\\"purple\\"
+      class=\\"drac-list drac-list-unordered drac-list-purple\\"
+    >
+      <li class=\\"drac-text drac-text-white\\">This is the first item</li>
+      <li class=\\"drac-text drac-text-white\\">This is the second item</li>
+      <li class=\\"drac-text drac-text-white\\">This is the third item</li>
+      <li class=\\"drac-text drac-text-white\\">This is the fourth item</li>
+      <li class=\\"drac-text drac-text-white\\">This is the fifth item</li>
+      <li class=\\"drac-text drac-text-white\\">This is the sixth item</li>
+      <li class=\\"drac-text drac-text-white\\">This is the seventh item</li>
+      <li class=\\"drac-text drac-text-white\\">This is the eighth item</li>
+      <li class=\\"drac-text drac-text-white\\">This is the ninth item</li>
+      <li class=\\"drac-text drac-text-white\\">
+        This is the tenth item (showing how numbers align and wrapping looks by
+        default)
+      </li>
+    </ul>
+  </div>
+  <div>
+    <ol
+      variant=\\"ordered\\"
+      color=\\"purple\\"
+      class=\\"drac-list drac-list-ordered drac-list-purple\\"
+    >
+      <li class=\\"drac-text drac-text-white\\">This is the first item</li>
+      <li class=\\"drac-text drac-text-white\\">This is the second item</li>
+      <li class=\\"drac-text drac-text-white\\">This is the third item</li>
+      <li class=\\"drac-text drac-text-white\\">This is the fourth item</li>
+      <li class=\\"drac-text drac-text-white\\">This is the fifth item</li>
+      <li class=\\"drac-text drac-text-white\\">This is the sixth item</li>
+      <li class=\\"drac-text drac-text-white\\">This is the seventh item</li>
+      <li class=\\"drac-text drac-text-white\\">This is the eighth item</li>
+      <li class=\\"drac-text drac-text-white\\">This is the ninth item</li>
+      <li class=\\"drac-text drac-text-white\\">
+        This is the tenth item (showing how numbers align and wrapping looks by
+        default)
+      </li>
+    </ol>
+  </div>
+</div>
+",
+  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\", padding: \\"3rem\\" }}>
+  <div>
+    <List variant=\\"unordered\\" color=\\"purple\\">
+      <li className=\\"drac-text drac-text-white\\">This is the first item</li>
+      <li className=\\"drac-text drac-text-white\\">This is the second item</li>
+      <li className=\\"drac-text drac-text-white\\">This is the third item</li>
+      <li className=\\"drac-text drac-text-white\\">This is the fourth item</li>
+      <li className=\\"drac-text drac-text-white\\">This is the fifth item</li>
+      <li className=\\"drac-text drac-text-white\\">This is the sixth item</li>
+      <li className=\\"drac-text drac-text-white\\">This is the seventh item</li>
+      <li className=\\"drac-text drac-text-white\\">This is the eighth item</li>
+      <li className=\\"drac-text drac-text-white\\">This is the ninth item</li>
+      <li className=\\"drac-text drac-text-white\\">
+        This is the tenth item (showing how numbers align and wrapping looks by
+        default)
+      </li>
+    </List>
+  </div>
+  <div>
+    <List variant=\\"ordered\\" color=\\"purple\\">
+      <li className=\\"drac-text drac-text-white\\">This is the first item</li>
+      <li className=\\"drac-text drac-text-white\\">This is the second item</li>
+      <li className=\\"drac-text drac-text-white\\">This is the third item</li>
+      <li className=\\"drac-text drac-text-white\\">This is the fourth item</li>
+      <li className=\\"drac-text drac-text-white\\">This is the fifth item</li>
+      <li className=\\"drac-text drac-text-white\\">This is the sixth item</li>
+      <li className=\\"drac-text drac-text-white\\">This is the seventh item</li>
+      <li className=\\"drac-text drac-text-white\\">This is the eighth item</li>
+      <li className=\\"drac-text drac-text-white\\">This is the ninth item</li>
+      <li className=\\"drac-text drac-text-white\\">
+        This is the tenth item (showing how numbers align and wrapping looks by
+        default)
+      </li>
+    </List>
+  </div>
+</div>;
+",
+  "title": "Variants",
+}
+`;
