@@ -3,7 +3,7 @@
   "type": "page",
   "id": "Avatar",
   "name": "Avatar",
-  "last_updated": "2021-03-11T15:26:07.655Z",
+  "last_updated": "2021-03-11T15:27:59.759Z",
   "last_updated_by": "System",
   "description": "The Avatar component is used to represent a user.\n\nIt displays a profile picture, or falls back to the user's initials\nif a profile pic is not provided.",
   "related_entity_ids": [],
