@@ -8,7 +8,7 @@
       "type": "page",
       "id": "Avatar",
       "name": "Avatar",
-      "last_updated": "2021-03-11T04:40:22.269Z",
+      "last_updated": "2021-03-11T04:47:06.549Z",
       "last_updated_by": "System",
       "description": "The Avatar component is used to represent a user.\n\nIt displays a profile picture, or falls back to the user's initials\nif a profile pic is not provided.",
       "related_entity_ids": [],
@@ -278,7 +278,7 @@
       "type": "page",
       "id": "Button",
       "name": "Button",
-      "last_updated": "2021-03-11T04:40:21.629Z",
+      "last_updated": "2021-03-11T04:47:11.278Z",
       "last_updated_by": "System",
       "description": "The Button component triggers actions, behaviors, or events based\non user input.",
       "related_entity_ids": [],
@@ -494,7 +494,7 @@
       "type": "page",
       "id": "Checkbox",
       "name": "Checkbox",
-      "last_updated": "2021-03-11T04:40:19.220Z",
+      "last_updated": "2021-03-11T04:47:09.182Z",
       "last_updated_by": "System",
       "description": "Checkbox is a styled HTML Input of type checkbox.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep check boxes accessible.",
       "related_entity_ids": [],
@@ -664,7 +664,7 @@
       "type": "page",
       "id": "Divider",
       "name": "Divider",
-      "last_updated": "2021-03-11T04:40:16.529Z",
+      "last_updated": "2021-03-11T04:47:07.624Z",
       "last_updated_by": "System",
       "description": "Dividers are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
       "related_entity_ids": [],
@@ -750,9 +750,9 @@
       "type": "page",
       "id": "Heading",
       "name": "Heading",
-      "last_updated": "2021-03-11T04:40:19.097Z",
+      "last_updated": "2021-03-11T04:47:13.712Z",
       "last_updated_by": "System",
-      "description": "undefined",
+      "description": "Heading is used to display headlines and other forms of hierarchical Text.\n\nHeadings are similar to the base Text component, but restricted to certain\nsizes and font weight.",
       "related_entity_ids": [],
       "tags": [
         "component"
@@ -790,14 +790,137 @@
           "svgData": "./dsp/assets/svgs/HeadingColors.svg"
         }
       ],
-      "ext_com_draculaui_props": {}
+      "ext_com_draculaui_props": {
+        "size": {
+          "defaultValue": null,
+          "description": "The size and type of Heading to be used.\nDenotes hierarchy.",
+          "name": "size",
+          "parent": {
+            "fileName": "src/components/Heading/Heading.tsx",
+            "name": "HeadingProps"
+          },
+          "declarations": [
+            {
+              "fileName": "src/components/Heading/Heading.tsx",
+              "name": "HeadingProps"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"heading-1\" | \"heading-2\" | \"heading-3\" | \"heading-4\" | \"heading-5\" | \"heading-6\" | undefined"
+          }
+        },
+        "color": {
+          "defaultValue": null,
+          "description": "The Dracula UI color to be applied to the Heading.",
+          "name": "color",
+          "parent": {
+            "fileName": "src/components/Heading/Heading.tsx",
+            "name": "HeadingProps"
+          },
+          "declarations": [
+            {
+              "fileName": "src/components/Heading/Heading.tsx",
+              "name": "HeadingProps"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+          }
+        },
+        "spacing": {
+          "defaultValue": null,
+          "description": "Controls the spacing between the Heading component and its parent and siblings.",
+          "name": "spacing",
+          "parent": {
+            "fileName": "src/components/Heading/Heading.tsx",
+            "name": "HeadingProps"
+          },
+          "declarations": [
+            {
+              "fileName": "src/components/Heading/Heading.tsx",
+              "name": "HeadingProps"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "SpacingPropType | undefined"
+          }
+        }
+      },
+      "ext_com_draculaui_docgen": {
+        "tags": {},
+        "description": "Heading is used to display headlines and other forms of hierarchical Text.\n\nHeadings are similar to the base Text component, but restricted to certain\nsizes and font weight.",
+        "displayName": "Heading",
+        "methods": [],
+        "props": {
+          "size": {
+            "defaultValue": null,
+            "description": "The size and type of Heading to be used.\nDenotes hierarchy.",
+            "name": "size",
+            "parent": {
+              "fileName": "src/components/Heading/Heading.tsx",
+              "name": "HeadingProps"
+            },
+            "declarations": [
+              {
+                "fileName": "src/components/Heading/Heading.tsx",
+                "name": "HeadingProps"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"heading-1\" | \"heading-2\" | \"heading-3\" | \"heading-4\" | \"heading-5\" | \"heading-6\" | undefined"
+            }
+          },
+          "color": {
+            "defaultValue": null,
+            "description": "The Dracula UI color to be applied to the Heading.",
+            "name": "color",
+            "parent": {
+              "fileName": "src/components/Heading/Heading.tsx",
+              "name": "HeadingProps"
+            },
+            "declarations": [
+              {
+                "fileName": "src/components/Heading/Heading.tsx",
+                "name": "HeadingProps"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+            }
+          },
+          "spacing": {
+            "defaultValue": null,
+            "description": "Controls the spacing between the Heading component and its parent and siblings.",
+            "name": "spacing",
+            "parent": {
+              "fileName": "src/components/Heading/Heading.tsx",
+              "name": "HeadingProps"
+            },
+            "declarations": [
+              {
+                "fileName": "src/components/Heading/Heading.tsx",
+                "name": "HeadingProps"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "SpacingPropType | undefined"
+            }
+          }
+        }
+      }
     },
     {
       "class": "component",
       "type": "page",
       "id": "Input",
       "name": "Input",
-      "last_updated": "2021-03-11T04:40:21.356Z",
+      "last_updated": "2021-03-11T04:47:11.158Z",
       "last_updated_by": "System",
       "description": "Input is a styled HTML Input.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep inputs accessible.",
       "related_entity_ids": [],
@@ -973,9 +1096,141 @@
     {
       "class": "component",
       "type": "page",
+      "id": "List",
+      "name": "List",
+      "last_updated": "2021-03-11T04:47:18.280Z",
+      "last_updated_by": "System",
+      "description": "Lists are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "list",
+        "languages": {
+          "javascriptreact": "<div style={{ display: \"flex\", flexDirection: \"column\", padding: \"3rem\" }}>\n  <List color=\"purple\">\n    <li className=\"drac-text drac-text-white\">Blade</li>\n    <li className=\"drac-text drac-text-white\">Buffy</li>\n    <li className=\"drac-text drac-text-white\">Morbius</li>\n  </List>\n</div>;\n",
+          "html": "<div style=\"display: flex; flex-direction: column; padding: 3rem\">\n  <ol color=\"purple\" class=\"drac-list drac-list-purple\">\n    <li class=\"drac-text drac-text-white\">Blade</li>\n    <li class=\"drac-text drac-text-white\">Buffy</li>\n    <li class=\"drac-text drac-text-white\">Morbius</li>\n  </ol>\n</div>\n"
+        }
+      },
+      "ext_com_draculaui_variations": [
+        {
+          "title": "Usage",
+          "html": "<div style=\"display: flex; flex-direction: column; padding: 3rem\">\n  <ol color=\"purple\" class=\"drac-list drac-list-purple\">\n    <li class=\"drac-text drac-text-white\">Blade</li>\n    <li class=\"drac-text drac-text-white\">Buffy</li>\n    <li class=\"drac-text drac-text-white\">Morbius</li>\n  </ol>\n</div>\n",
+          "react": "<div style={{ display: \"flex\", flexDirection: \"column\", padding: \"3rem\" }}>\n  <List color=\"purple\">\n    <li className=\"drac-text drac-text-white\">Blade</li>\n    <li className=\"drac-text drac-text-white\">Buffy</li>\n    <li className=\"drac-text drac-text-white\">Morbius</li>\n  </List>\n</div>;\n",
+          "docs": "",
+          "screenshot": "./dsp/assets/List.png",
+          "svgData": "./dsp/assets/svgs/List.svg"
+        },
+        {
+          "title": "Colors",
+          "html": "<div style=\"display: flex; flex-direction: column; padding: 3rem\">\n  <div>\n    <ol\n      variant=\"ordered\"\n      color=\"white\"\n      class=\"drac-list drac-list-ordered drac-list-white\"\n    >\n      <li class=\"drac-text drac-text-white\">Blade</li>\n      <li class=\"drac-text drac-text-white\">Buffy</li>\n      <li class=\"drac-text drac-text-white\">Morbius</li>\n    </ol>\n  </div>\n  <div>\n    <ol\n      variant=\"ordered\"\n      color=\"cyan\"\n      class=\"drac-list drac-list-ordered drac-list-cyan\"\n    >\n      <li class=\"drac-text drac-text-white\">Blade</li>\n      <li class=\"drac-text drac-text-white\">Buffy</li>\n      <li class=\"drac-text drac-text-white\">Morbius</li>\n    </ol>\n  </div>\n  <div>\n    <ol\n      variant=\"ordered\"\n      color=\"green\"\n      class=\"drac-list drac-list-ordered drac-list-green\"\n    >\n      <li class=\"drac-text drac-text-white\">Blade</li>\n      <li class=\"drac-text drac-text-white\">Buffy</li>\n      <li class=\"drac-text drac-text-white\">Morbius</li>\n    </ol>\n  </div>\n  <div>\n    <ol\n      variant=\"ordered\"\n      color=\"orange\"\n      class=\"drac-list drac-list-ordered drac-list-orange\"\n    >\n      <li class=\"drac-text drac-text-white\">Blade</li>\n      <li class=\"drac-text drac-text-white\">Buffy</li>\n      <li class=\"drac-text drac-text-white\">Morbius</li>\n    </ol>\n  </div>\n  <div>\n    <ol\n      variant=\"ordered\"\n      color=\"pink\"\n      class=\"drac-list drac-list-ordered drac-list-pink\"\n    >\n      <li class=\"drac-text drac-text-white\">Blade</li>\n      <li class=\"drac-text drac-text-white\">Buffy</li>\n      <li class=\"drac-text drac-text-white\">Morbius</li>\n    </ol>\n  </div>\n  <div>\n    <ol\n      variant=\"ordered\"\n      color=\"purple\"\n      class=\"drac-list drac-list-ordered drac-list-purple\"\n    >\n      <li class=\"drac-text drac-text-white\">Blade</li>\n      <li class=\"drac-text drac-text-white\">Buffy</li>\n      <li class=\"drac-text drac-text-white\">Morbius</li>\n    </ol>\n  </div>\n  <div>\n    <ol\n      variant=\"ordered\"\n      color=\"red\"\n      class=\"drac-list drac-list-ordered drac-list-red\"\n    >\n      <li class=\"drac-text drac-text-white\">Blade</li>\n      <li class=\"drac-text drac-text-white\">Buffy</li>\n      <li class=\"drac-text drac-text-white\">Morbius</li>\n    </ol>\n  </div>\n  <div>\n    <ol\n      variant=\"ordered\"\n      color=\"yellow\"\n      class=\"drac-list drac-list-ordered drac-list-yellow\"\n    >\n      <li class=\"drac-text drac-text-white\">Blade</li>\n      <li class=\"drac-text drac-text-white\">Buffy</li>\n      <li class=\"drac-text drac-text-white\">Morbius</li>\n    </ol>\n  </div>\n  <div>\n    <ol variant=\"ordered\" color=\"animated\" class=\"drac-list drac-list-ordered\">\n      <li class=\"drac-text drac-text-white\">Blade</li>\n      <li class=\"drac-text drac-text-white\">Buffy</li>\n      <li class=\"drac-text drac-text-white\">Morbius</li>\n    </ol>\n  </div>\n  <div>\n    <ol variant=\"ordered\" color=\"cyanGreen\" class=\"drac-list drac-list-ordered\">\n      <li class=\"drac-text drac-text-white\">Blade</li>\n      <li class=\"drac-text drac-text-white\">Buffy</li>\n      <li class=\"drac-text drac-text-white\">Morbius</li>\n    </ol>\n  </div>\n  <div>\n    <ol\n      variant=\"ordered\"\n      color=\"pinkPurple\"\n      class=\"drac-list drac-list-ordered\"\n    >\n      <li class=\"drac-text drac-text-white\">Blade</li>\n      <li class=\"drac-text drac-text-white\">Buffy</li>\n      <li class=\"drac-text drac-text-white\">Morbius</li>\n    </ol>\n  </div>\n  <div>\n    <ol\n      variant=\"ordered\"\n      color=\"purpleCyan\"\n      class=\"drac-list drac-list-ordered\"\n    >\n      <li class=\"drac-text drac-text-white\">Blade</li>\n      <li class=\"drac-text drac-text-white\">Buffy</li>\n      <li class=\"drac-text drac-text-white\">Morbius</li>\n    </ol>\n  </div>\n  <div>\n    <ol\n      variant=\"ordered\"\n      color=\"yellowPink\"\n      class=\"drac-list drac-list-ordered\"\n    >\n      <li class=\"drac-text drac-text-white\">Blade</li>\n      <li class=\"drac-text drac-text-white\">Buffy</li>\n      <li class=\"drac-text drac-text-white\">Morbius</li>\n    </ol>\n  </div>\n</div>\n",
+          "react": "<div style={{ display: \"flex\", flexDirection: \"column\", padding: \"3rem\" }}>\n  <div>\n    <List variant=\"ordered\" color=\"white\">\n      <li className=\"drac-text drac-text-white\">Blade</li>\n      <li className=\"drac-text drac-text-white\">Buffy</li>\n      <li className=\"drac-text drac-text-white\">Morbius</li>\n    </List>\n  </div>\n  <div>\n    <List variant=\"ordered\" color=\"cyan\">\n      <li className=\"drac-text drac-text-white\">Blade</li>\n      <li className=\"drac-text drac-text-white\">Buffy</li>\n      <li className=\"drac-text drac-text-white\">Morbius</li>\n    </List>\n  </div>\n  <div>\n    <List variant=\"ordered\" color=\"green\">\n      <li className=\"drac-text drac-text-white\">Blade</li>\n      <li className=\"drac-text drac-text-white\">Buffy</li>\n      <li className=\"drac-text drac-text-white\">Morbius</li>\n    </List>\n  </div>\n  <div>\n    <List variant=\"ordered\" color=\"orange\">\n      <li className=\"drac-text drac-text-white\">Blade</li>\n      <li className=\"drac-text drac-text-white\">Buffy</li>\n      <li className=\"drac-text drac-text-white\">Morbius</li>\n    </List>\n  </div>\n  <div>\n    <List variant=\"ordered\" color=\"pink\">\n      <li className=\"drac-text drac-text-white\">Blade</li>\n      <li className=\"drac-text drac-text-white\">Buffy</li>\n      <li className=\"drac-text drac-text-white\">Morbius</li>\n    </List>\n  </div>\n  <div>\n    <List variant=\"ordered\" color=\"purple\">\n      <li className=\"drac-text drac-text-white\">Blade</li>\n      <li className=\"drac-text drac-text-white\">Buffy</li>\n      <li className=\"drac-text drac-text-white\">Morbius</li>\n    </List>\n  </div>\n  <div>\n    <List variant=\"ordered\" color=\"red\">\n      <li className=\"drac-text drac-text-white\">Blade</li>\n      <li className=\"drac-text drac-text-white\">Buffy</li>\n      <li className=\"drac-text drac-text-white\">Morbius</li>\n    </List>\n  </div>\n  <div>\n    <List variant=\"ordered\" color=\"yellow\">\n      <li className=\"drac-text drac-text-white\">Blade</li>\n      <li className=\"drac-text drac-text-white\">Buffy</li>\n      <li className=\"drac-text drac-text-white\">Morbius</li>\n    </List>\n  </div>\n  <div>\n    <List variant=\"ordered\" color=\"animated\">\n      <li className=\"drac-text drac-text-white\">Blade</li>\n      <li className=\"drac-text drac-text-white\">Buffy</li>\n      <li className=\"drac-text drac-text-white\">Morbius</li>\n    </List>\n  </div>\n  <div>\n    <List variant=\"ordered\" color=\"cyanGreen\">\n      <li className=\"drac-text drac-text-white\">Blade</li>\n      <li className=\"drac-text drac-text-white\">Buffy</li>\n      <li className=\"drac-text drac-text-white\">Morbius</li>\n    </List>\n  </div>\n  <div>\n    <List variant=\"ordered\" color=\"pinkPurple\">\n      <li className=\"drac-text drac-text-white\">Blade</li>\n      <li className=\"drac-text drac-text-white\">Buffy</li>\n      <li className=\"drac-text drac-text-white\">Morbius</li>\n    </List>\n  </div>\n  <div>\n    <List variant=\"ordered\" color=\"purpleCyan\">\n      <li className=\"drac-text drac-text-white\">Blade</li>\n      <li className=\"drac-text drac-text-white\">Buffy</li>\n      <li className=\"drac-text drac-text-white\">Morbius</li>\n    </List>\n  </div>\n  <div>\n    <List variant=\"ordered\" color=\"yellowPink\">\n      <li className=\"drac-text drac-text-white\">Blade</li>\n      <li className=\"drac-text drac-text-white\">Buffy</li>\n      <li className=\"drac-text drac-text-white\">Morbius</li>\n    </List>\n  </div>\n</div>;\n",
+          "docs": "",
+          "screenshot": "./dsp/assets/ListColors.png",
+          "svgData": "./dsp/assets/svgs/ListColors.svg"
+        },
+        {
+          "title": "Variants",
+          "html": "<div style=\"display: flex; flex-direction: column; padding: 3rem\">\n  <div>\n    <ul\n      variant=\"unordered\"\n      color=\"purple\"\n      class=\"drac-list drac-list-unordered drac-list-purple\"\n    >\n      <li class=\"drac-text drac-text-white\">This is the first item</li>\n      <li class=\"drac-text drac-text-white\">This is the second item</li>\n      <li class=\"drac-text drac-text-white\">This is the third item</li>\n      <li class=\"drac-text drac-text-white\">This is the fourth item</li>\n      <li class=\"drac-text drac-text-white\">This is the fifth item</li>\n      <li class=\"drac-text drac-text-white\">This is the sixth item</li>\n      <li class=\"drac-text drac-text-white\">This is the seventh item</li>\n      <li class=\"drac-text drac-text-white\">This is the eighth item</li>\n      <li class=\"drac-text drac-text-white\">This is the ninth item</li>\n      <li class=\"drac-text drac-text-white\">\n        This is the tenth item (showing how numbers align and wrapping looks by\n        default)\n      </li>\n    </ul>\n  </div>\n  <div>\n    <ol\n      variant=\"ordered\"\n      color=\"purple\"\n      class=\"drac-list drac-list-ordered drac-list-purple\"\n    >\n      <li class=\"drac-text drac-text-white\">This is the first item</li>\n      <li class=\"drac-text drac-text-white\">This is the second item</li>\n      <li class=\"drac-text drac-text-white\">This is the third item</li>\n      <li class=\"drac-text drac-text-white\">This is the fourth item</li>\n      <li class=\"drac-text drac-text-white\">This is the fifth item</li>\n      <li class=\"drac-text drac-text-white\">This is the sixth item</li>\n      <li class=\"drac-text drac-text-white\">This is the seventh item</li>\n      <li class=\"drac-text drac-text-white\">This is the eighth item</li>\n      <li class=\"drac-text drac-text-white\">This is the ninth item</li>\n      <li class=\"drac-text drac-text-white\">\n        This is the tenth item (showing how numbers align and wrapping looks by\n        default)\n      </li>\n    </ol>\n  </div>\n</div>\n",
+          "react": "<div style={{ display: \"flex\", flexDirection: \"column\", padding: \"3rem\" }}>\n  <div>\n    <List variant=\"unordered\" color=\"purple\">\n      <li className=\"drac-text drac-text-white\">This is the first item</li>\n      <li className=\"drac-text drac-text-white\">This is the second item</li>\n      <li className=\"drac-text drac-text-white\">This is the third item</li>\n      <li className=\"drac-text drac-text-white\">This is the fourth item</li>\n      <li className=\"drac-text drac-text-white\">This is the fifth item</li>\n      <li className=\"drac-text drac-text-white\">This is the sixth item</li>\n      <li className=\"drac-text drac-text-white\">This is the seventh item</li>\n      <li className=\"drac-text drac-text-white\">This is the eighth item</li>\n      <li className=\"drac-text drac-text-white\">This is the ninth item</li>\n      <li className=\"drac-text drac-text-white\">\n        This is the tenth item (showing how numbers align and wrapping looks by\n        default)\n      </li>\n    </List>\n  </div>\n  <div>\n    <List variant=\"ordered\" color=\"purple\">\n      <li className=\"drac-text drac-text-white\">This is the first item</li>\n      <li className=\"drac-text drac-text-white\">This is the second item</li>\n      <li className=\"drac-text drac-text-white\">This is the third item</li>\n      <li className=\"drac-text drac-text-white\">This is the fourth item</li>\n      <li className=\"drac-text drac-text-white\">This is the fifth item</li>\n      <li className=\"drac-text drac-text-white\">This is the sixth item</li>\n      <li className=\"drac-text drac-text-white\">This is the seventh item</li>\n      <li className=\"drac-text drac-text-white\">This is the eighth item</li>\n      <li className=\"drac-text drac-text-white\">This is the ninth item</li>\n      <li className=\"drac-text drac-text-white\">\n        This is the tenth item (showing how numbers align and wrapping looks by\n        default)\n      </li>\n    </List>\n  </div>\n</div>;\n",
+          "docs": "",
+          "screenshot": "./dsp/assets/ListVariants.png",
+          "svgData": "./dsp/assets/svgs/ListVariants.svg"
+        }
+      ],
+      "ext_com_draculaui_props": {
+        "color": {
+          "defaultValue": null,
+          "description": "The Dracula UI color for the List.",
+          "name": "color",
+          "parent": {
+            "fileName": "src/components/List/List.tsx",
+            "name": "ListProps"
+          },
+          "declarations": [
+            {
+              "fileName": "src/components/List/List.tsx",
+              "name": "ListProps"
+            }
+          ],
+          "required": true,
+          "type": {
+            "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
+          }
+        },
+        "variant": {
+          "defaultValue": null,
+          "description": "The variation to be used for the List element.\n`unordered` -> Display list in dashes as an `<ul>`\n`ordered` -> Display list in numbers as an `<ol>`",
+          "name": "variant",
+          "parent": {
+            "fileName": "src/components/List/List.tsx",
+            "name": "ListProps"
+          },
+          "declarations": [
+            {
+              "fileName": "src/components/List/List.tsx",
+              "name": "ListProps"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"unordered\" | \"ordered\" | undefined"
+          }
+        }
+      },
+      "ext_com_draculaui_docgen": {
+        "tags": {},
+        "description": "Lists are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
+        "displayName": "List",
+        "methods": [],
+        "props": {
+          "color": {
+            "defaultValue": null,
+            "description": "The Dracula UI color for the List.",
+            "name": "color",
+            "parent": {
+              "fileName": "src/components/List/List.tsx",
+              "name": "ListProps"
+            },
+            "declarations": [
+              {
+                "fileName": "src/components/List/List.tsx",
+                "name": "ListProps"
+              }
+            ],
+            "required": true,
+            "type": {
+              "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
+            }
+          },
+          "variant": {
+            "defaultValue": null,
+            "description": "The variation to be used for the List element.\n`unordered` -> Display list in dashes as an `<ul>`\n`ordered` -> Display list in numbers as an `<ol>`",
+            "name": "variant",
+            "parent": {
+              "fileName": "src/components/List/List.tsx",
+              "name": "ListProps"
+            },
+            "declarations": [
+              {
+                "fileName": "src/components/List/List.tsx",
+                "name": "ListProps"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"unordered\" | \"ordered\" | undefined"
+            }
+          }
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
       "id": "Radio",
       "name": "Radio",
-      "last_updated": "2021-03-11T04:40:18.802Z",
+      "last_updated": "2021-03-11T04:47:01.379Z",
       "last_updated_by": "System",
       "description": "Radio is a styled HTML Input of type radio.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep Radios accessible.",
       "related_entity_ids": [],
@@ -1107,7 +1362,7 @@
       "type": "page",
       "id": "Select",
       "name": "Select",
-      "last_updated": "2021-03-11T04:40:23.816Z",
+      "last_updated": "2021-03-11T04:47:13.737Z",
       "last_updated_by": "System",
       "description": "Select is a styled HTML Select element.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS, and small SVG component in order to keep Selects accessible.",
       "related_entity_ids": [],
@@ -1331,7 +1586,7 @@
       "type": "page",
       "id": "Switch",
       "name": "Switch",
-      "last_updated": "2021-03-11T04:40:19.382Z",
+      "last_updated": "2021-03-11T04:47:10.205Z",
       "last_updated_by": "System",
       "description": "Switch is an abstraction pattern that represents toggles.\n\nUse the Switch component as an alternative for Checkboxes or Radios\nwhen options are binary.\n\nSwitches are implemented as Checkboxes under the hood,\nand work normally with forms.",
       "related_entity_ids": [],
@@ -1501,7 +1756,7 @@
       "type": "page",
       "id": "Table",
       "name": "Table",
-      "last_updated": "2021-03-11T04:40:23.370Z",
+      "last_updated": "2021-03-11T04:47:13.509Z",
       "last_updated_by": "System",
       "description": "Tables are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
       "related_entity_ids": [],
@@ -1633,7 +1888,7 @@
       "type": "page",
       "id": "Tabs",
       "name": "Tabs",
-      "last_updated": "2021-03-11T04:40:25.013Z",
+      "last_updated": "2021-03-11T04:47:07.603Z",
       "last_updated_by": "System",
       "description": "Tabs are horizontal navigation elements used to display\ncontent within the same page.",
       "related_entity_ids": [],
@@ -1719,9 +1974,9 @@
       "type": "page",
       "id": "Text",
       "name": "Text",
-      "last_updated": "2021-03-11T04:40:20.849Z",
+      "last_updated": "2021-03-11T04:47:10.741Z",
       "last_updated_by": "System",
-      "description": "undefined",
+      "description": "Text is the base component for any sort of text.\n\nConsumers of this component can control, the color, size,\nweight, and spacing of Text.\n\nUse this component for generic, and non-hierarchical text that is\nto be displayed on a page, or as part of other complex components\nor UI patterns",
       "related_entity_ids": [],
       "tags": [
         "component"
@@ -1767,7 +2022,168 @@
           "svgData": "./dsp/assets/svgs/TextSizes.svg"
         }
       ],
-      "ext_com_draculaui_props": {}
+      "ext_com_draculaui_props": {
+        "size": {
+          "defaultValue": null,
+          "description": "Controls the size of the text based on pre-configured Dracula UI sizes.\nOptions: `xsmall`, `small`, `medium`, `large`",
+          "name": "size",
+          "parent": {
+            "fileName": "src/components/Text/Text.tsx",
+            "name": "TextProps"
+          },
+          "declarations": [
+            {
+              "fileName": "src/components/Text/Text.tsx",
+              "name": "TextProps"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"large\" | \"medium\" | \"small\" | \"xsmall\" | undefined"
+          }
+        },
+        "weight": {
+          "defaultValue": null,
+          "description": "Controsl the weight of the text.\nOptions: `normal`, `semibold`, `bold`.",
+          "name": "weight",
+          "parent": {
+            "fileName": "src/components/Text/Text.tsx",
+            "name": "TextProps"
+          },
+          "declarations": [
+            {
+              "fileName": "src/components/Text/Text.tsx",
+              "name": "TextProps"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"normal\" | \"semibold\" | \"bold\" | undefined"
+          }
+        },
+        "color": {
+          "defaultValue": null,
+          "description": "Controls the color of the text",
+          "name": "color",
+          "parent": {
+            "fileName": "src/components/Text/Text.tsx",
+            "name": "TextProps"
+          },
+          "declarations": [
+            {
+              "fileName": "src/components/Text/Text.tsx",
+              "name": "TextProps"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+          }
+        },
+        "spacing": {
+          "defaultValue": null,
+          "description": "Controls the spacing between the Text component and its parent and siblings.",
+          "name": "spacing",
+          "parent": {
+            "fileName": "src/components/Text/Text.tsx",
+            "name": "TextProps"
+          },
+          "declarations": [
+            {
+              "fileName": "src/components/Text/Text.tsx",
+              "name": "TextProps"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "SpacingPropType | undefined"
+          }
+        }
+      },
+      "ext_com_draculaui_docgen": {
+        "tags": {},
+        "description": "Text is the base component for any sort of text.\n\nConsumers of this component can control, the color, size,\nweight, and spacing of Text.\n\nUse this component for generic, and non-hierarchical text that is\nto be displayed on a page, or as part of other complex components\nor UI patterns",
+        "displayName": "Text",
+        "methods": [],
+        "props": {
+          "size": {
+            "defaultValue": null,
+            "description": "Controls the size of the text based on pre-configured Dracula UI sizes.\nOptions: `xsmall`, `small`, `medium`, `large`",
+            "name": "size",
+            "parent": {
+              "fileName": "src/components/Text/Text.tsx",
+              "name": "TextProps"
+            },
+            "declarations": [
+              {
+                "fileName": "src/components/Text/Text.tsx",
+                "name": "TextProps"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"large\" | \"medium\" | \"small\" | \"xsmall\" | undefined"
+            }
+          },
+          "weight": {
+            "defaultValue": null,
+            "description": "Controsl the weight of the text.\nOptions: `normal`, `semibold`, `bold`.",
+            "name": "weight",
+            "parent": {
+              "fileName": "src/components/Text/Text.tsx",
+              "name": "TextProps"
+            },
+            "declarations": [
+              {
+                "fileName": "src/components/Text/Text.tsx",
+                "name": "TextProps"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"normal\" | \"semibold\" | \"bold\" | undefined"
+            }
+          },
+          "color": {
+            "defaultValue": null,
+            "description": "Controls the color of the text",
+            "name": "color",
+            "parent": {
+              "fileName": "src/components/Text/Text.tsx",
+              "name": "TextProps"
+            },
+            "declarations": [
+              {
+                "fileName": "src/components/Text/Text.tsx",
+                "name": "TextProps"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+            }
+          },
+          "spacing": {
+            "defaultValue": null,
+            "description": "Controls the spacing between the Text component and its parent and siblings.",
+            "name": "spacing",
+            "parent": {
+              "fileName": "src/components/Text/Text.tsx",
+              "name": "TextProps"
+            },
+            "declarations": [
+              {
+                "fileName": "src/components/Text/Text.tsx",
+                "name": "TextProps"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "SpacingPropType | undefined"
+            }
+          }
+        }
+      }
     }
   ]
 }
