@@ -3,7 +3,7 @@
   "type": "page",
   "id": "Heading",
   "name": "Heading",
-  "last_updated": "2021-03-11T04:57:52.322Z",
+  "last_updated": "2021-03-11T06:21:44.092Z",
   "last_updated_by": "System",
   "description": "Heading is used to display headlines and other forms of hierarchical Text.\n\nHeadings are similar to the base Text component, but restricted to certain\nsizes and font weight.",
   "related_entity_ids": [],
@@ -96,6 +96,23 @@
       ],
       "required": false,
       "type": { "name": "SpacingPropType | undefined" }
+    },
+    "is": {
+      "defaultValue": null,
+      "description": "",
+      "name": "is",
+      "parent": {
+        "fileName": "src/components/Heading/Heading.tsx",
+        "name": "HeadingProps"
+      },
+      "declarations": [
+        {
+          "fileName": "src/components/Heading/Heading.tsx",
+          "name": "HeadingProps"
+        }
+      ],
+      "required": false,
+      "type": { "name": "keyof HTMLElementTagNameMap | undefined" }
     }
   },
   "ext_com_draculaui_docgen": {
@@ -158,6 +175,23 @@
         ],
         "required": false,
         "type": { "name": "SpacingPropType | undefined" }
+      },
+      "is": {
+        "defaultValue": null,
+        "description": "",
+        "name": "is",
+        "parent": {
+          "fileName": "src/components/Heading/Heading.tsx",
+          "name": "HeadingProps"
+        },
+        "declarations": [
+          {
+            "fileName": "src/components/Heading/Heading.tsx",
+            "name": "HeadingProps"
+          }
+        ],
+        "required": false,
+        "type": { "name": "keyof HTMLElementTagNameMap | undefined" }
       }
     }
   }
