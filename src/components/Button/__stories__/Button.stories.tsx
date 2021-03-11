@@ -10,6 +10,26 @@ export const ButtonNormal = () => {
   return <Button color={'purple' as ButtonProps['color']}>Normal</Button>
 }
 
+export const ButtonAsAnchor = () => {
+  return (
+    <Box>
+      {Object.keys(buttonSizes).map((size) => {
+        return (
+          <Box key={size} style={{ marginBottom: 10 }}>
+            <Button
+              as="a"
+              color={'purple' as ButtonProps['color']}
+              size={size as ButtonProps['size']}
+            >
+              {size}
+            </Button>
+          </Box>
+        )
+      })}
+    </Box>
+  )
+}
+
 export const ButtonSizes = () => {
   return (
     <Box>

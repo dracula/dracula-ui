@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DSP in Action</title>
+    <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="../src/styles/dracula-ui.css" />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body class="drac drac-bg-black drac-spacing-md">
+    <h1 class="drac-heading-1 drac-text drac-text-white">DSP In Action</h1>
+    <form action="">
+      <input
+        placeholder="Placeholder"
+        color="white"
+        class="drac-input drac-text drac-text-sm drac-input-white drac-text-white"
+      />
+
+      <div style="position: relative">
+        <select
+          color="white"
+          class="drac-select drac-text drac-text-sm drac-select-white"
+        >
+          <option value="default" disabled="" selected="">Select option</option>
+          <option>Blade</option>
+          <option>Buffy</option>
+          <option>Lincoln</option>
+          <option>Morbius</option>
+          <option>Van Helsing</option>
+        </select>
+        <div class="drac-select-arrow drac-text-white">
+          <svg
+            viewBox="0 0 24 24"
+            focusable="false"
+            role="presentation"
+            aria-hidden="true"
+          >
+            <path
+              fill="currentColor"
+              d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+
+      <div>
+        <input
+          type="checkbox"
+          id="one"
+          color="purple"
+          name="demo"
+          class="drac-checkbox drac-checkbox-purple"
+          checked=""
+        /><label for="one" class="drac-text drac-text-white">Checked</label>
+      </div>
+
+      <button class="drac-btn drac-bg-purple drac-btn" color="purple">
+        <span class="drac-text drac-text drac-text drac-text-white"
+          >Submit</span
+        >
+      </button>
+    </form>
+  </body>
+</html>
