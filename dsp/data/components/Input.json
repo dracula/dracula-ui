@@ -3,7 +3,7 @@
   "type": "page",
   "id": "Input",
   "name": "Input",
-  "last_updated": "2021-03-11T04:57:47.356Z",
+  "last_updated": "2021-03-11T06:21:36.967Z",
   "last_updated_by": "System",
   "description": "Input is a styled HTML Input.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep inputs accessible.",
   "related_entity_ids": [],

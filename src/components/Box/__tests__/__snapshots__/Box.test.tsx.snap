@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Site: Box Basic Usage 1`] = `
+Object {
+  "docs": "",
+  "html": "<div color=\\"purple\\" class=\\"drac-box drac-bg-purple\\">Dracula</div>
+",
+  "react": "<Box color=\\"purple\\">Dracula</Box>;
+",
+  "title": "Usage",
+}
+`;
+
+exports[`Site: Box Colors 1`] = `
+Object {
+  "docs": "",
+  "html": "<div color=\\"pinkPurple\\" class=\\"drac-box drac-bg-pink-purple\\">Pink Purple</div>
+",
+  "react": "<Box color=\\"pinkPurple\\">Pink Purple</Box>;
+",
+  "title": "Colors",
+}
+`;
+
+exports[`Site: Box Generic Elements 1`] = `
+Object {
+  "docs": "",
+  "html": "<div>
+  <button
+    is=\\"button\\"
+    color=\\"pinkPurple\\"
+    classname=\\"drac-box drac-bg-pink-purple\\"
+  >
+    Button</button
+  ><a is=\\"a\\" color=\\"green\\" href=\\"#\\" classname=\\"drac-box drac-bg-green\\">Link</a>
+</div>
+",
+  "react": "<div>
+  <Box is=\\"button\\" color=\\"pinkPurple\\">
+    Button
+  </Box>
+  <Box is=\\"a\\" color=\\"green\\" href=\\"#\\">
+    Link
+  </Box>
+</div>;
+",
+  "title": "Generic Elements",
+}
+`;

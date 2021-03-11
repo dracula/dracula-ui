@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-  ParagraphProps,
+  TextProps,
   Paragraph,
   textSizes,
   textWeights,
@@ -18,7 +18,7 @@ export const ParagraphSizes = () => (
     {Object.keys(textSizes).map((size) => {
       return (
         <div key={size} style={{ marginBottom: 20 }}>
-          <Paragraph size={size as ParagraphProps['size']}>{size}</Paragraph>
+          <Paragraph size={size as TextProps['size']}>{size}</Paragraph>
         </div>
       )
     })}
@@ -30,9 +30,7 @@ export const ParagraphWeights = () => (
     {Object.keys(textWeights).map((weight) => {
       return (
         <div key={weight} style={{ marginBottom: 20 }}>
-          <Paragraph weight={weight as ParagraphProps['weight']}>
-            {weight}
-          </Paragraph>
+          <Paragraph weight={weight as TextProps['weight']}>{weight}</Paragraph>
         </div>
       )
     })}
@@ -44,9 +42,7 @@ export const ParagraphColors = () => (
     {Object.keys(textColors).map((color) => {
       return (
         <div key={color} style={{ marginBottom: 20 }}>
-          <Paragraph color={color as ParagraphProps['color']}>
-            {color}
-          </Paragraph>
+          <Paragraph color={color as TextProps['color']}>{color}</Paragraph>
         </div>
       )
     })}

@@ -1,0 +1,221 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Site: Paragraph Basic Usage 1`] = `
+Object {
+  "docs": "",
+  "html": "<p class=\\"drac-text drac-text-white drac-spacing-sm-y\\">Paragraph</p>
+",
+  "react": "<Paragraph>Paragraph</Paragraph>;
+",
+  "title": "Usage",
+}
+`;
+
+exports[`Site: Paragraph Colors 1`] = `
+Object {
+  "docs": "",
+  "html": "<div>
+  <div style=\\"margin-bottom: 20px\\">
+    <p color=\\"white\\" class=\\"drac-text drac-text-white drac-spacing-sm-y\\">
+      white
+    </p>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <p color=\\"cyan\\" class=\\"drac-text drac-text-cyan drac-spacing-sm-y\\">cyan</p>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <p color=\\"green\\" class=\\"drac-text drac-text-green drac-spacing-sm-y\\">
+      green
+    </p>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <p color=\\"orange\\" class=\\"drac-text drac-text-orange drac-spacing-sm-y\\">
+      orange
+    </p>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <p color=\\"pink\\" class=\\"drac-text drac-text-pink drac-spacing-sm-y\\">pink</p>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <p color=\\"purple\\" class=\\"drac-text drac-text-purple drac-spacing-sm-y\\">
+      purple
+    </p>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <p color=\\"red\\" class=\\"drac-text drac-text-red drac-spacing-sm-y\\">red</p>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <p color=\\"yellow\\" class=\\"drac-text drac-text-yellow drac-spacing-sm-y\\">
+      yellow
+    </p>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <p
+      color=\\"purpleCyan\\"
+      class=\\"drac-text drac-text-purple-cyan drac-spacing-sm-y\\"
+    >
+      purpleCyan
+    </p>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <p
+      color=\\"yellowPink\\"
+      class=\\"drac-text drac-text-yellow-pink drac-spacing-sm-y\\"
+    >
+      yellowPink
+    </p>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <p
+      color=\\"cyanGreen\\"
+      class=\\"drac-text drac-text-cyan-green drac-spacing-sm-y\\"
+    >
+      cyanGreen
+    </p>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <p
+      color=\\"pinkPurple\\"
+      class=\\"drac-text drac-text-pink-purple drac-spacing-sm-y\\"
+    >
+      pinkPurple
+    </p>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <p color=\\"animated\\" class=\\"drac-text drac-text-animated drac-spacing-sm-y\\">
+      animated
+    </p>
+  </div>
+</div>
+",
+  "react": "<div>
+  <div style={{ marginBottom: 20 }}>
+    <Paragraph color=\\"white\\">white</Paragraph>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Paragraph color=\\"cyan\\">cyan</Paragraph>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Paragraph color=\\"green\\">green</Paragraph>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Paragraph color=\\"orange\\">orange</Paragraph>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Paragraph color=\\"pink\\">pink</Paragraph>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Paragraph color=\\"purple\\">purple</Paragraph>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Paragraph color=\\"red\\">red</Paragraph>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Paragraph color=\\"yellow\\">yellow</Paragraph>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Paragraph color=\\"purpleCyan\\">purpleCyan</Paragraph>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Paragraph color=\\"yellowPink\\">yellowPink</Paragraph>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Paragraph color=\\"cyanGreen\\">cyanGreen</Paragraph>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Paragraph color=\\"pinkPurple\\">pinkPurple</Paragraph>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Paragraph color=\\"animated\\">animated</Paragraph>
+  </div>
+</div>;
+",
+  "title": "Colors",
+}
+`;
+
+exports[`Site: Paragraph Sizes 1`] = `
+Object {
+  "docs": "",
+  "html": "<div>
+  <div style=\\"margin-bottom: 20px\\">
+    <p class=\\"drac-text drac-text-lg drac-text-white drac-spacing-sm-y\\">
+      large
+    </p>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <p class=\\"drac-text drac-text-white drac-spacing-sm-y\\">medium</p>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <p class=\\"drac-text drac-text-sm drac-text-white drac-spacing-sm-y\\">
+      small
+    </p>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <p class=\\"drac-text drac-text-xs drac-text-white drac-spacing-sm-y\\">
+      xsmall
+    </p>
+  </div>
+</div>
+",
+  "react": "<div>
+  <div style={{ marginBottom: 20 }}>
+    <Paragraph size=\\"large\\">large</Paragraph>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Paragraph size=\\"medium\\">medium</Paragraph>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Paragraph size=\\"small\\">small</Paragraph>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Paragraph size=\\"xsmall\\">xsmall</Paragraph>
+  </div>
+</div>;
+",
+  "title": "Sizes",
+}
+`;
+
+exports[`Site: Paragraph Weights 1`] = `
+Object {
+  "docs": "",
+  "html": "<div>
+  <div style=\\"margin-bottom: 20px\\">
+    <p weight=\\"normal\\" class=\\"drac-text drac-text-white drac-spacing-sm-y\\">
+      normal
+    </p>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <p
+      weight=\\"semibold\\"
+      class=\\"drac-text drac-text-semibold drac-text-white drac-spacing-sm-y\\"
+    >
+      semibold
+    </p>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <p
+      weight=\\"bold\\"
+      class=\\"drac-text drac-text-bold drac-text-white drac-spacing-sm-y\\"
+    >
+      bold
+    </p>
+  </div>
+</div>
+",
+  "react": "<div>
+  <div style={{ marginBottom: 20 }}>
+    <Paragraph weight=\\"normal\\">normal</Paragraph>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Paragraph weight=\\"semibold\\">semibold</Paragraph>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Paragraph weight=\\"bold\\">bold</Paragraph>
+  </div>
+</div>;
+",
+  "title": "Weights",
+}
+`;
