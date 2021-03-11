@@ -2984,6 +2984,64 @@
         --spacing-56: 14rem;
         --spacing-64: 16rem;
       }
+      .drac-list {
+        list-style: none;
+      }
+      .drac-list-unordered li:before {
+        content: "—";
+        padding-right: 10px;
+      }
+      .drac-list-ordered {
+        counter-reset: li;
+      }
+      .drac-list-ordered li {
+        counter-increment: li;
+        margin-left: -30px;
+      }
+      .drac-list-ordered li:before {
+        content: counter(li) ".";
+        display: inline-block;
+        margin-left: 15px;
+        padding-right: 5px;
+        text-align: right;
+        width: 30px;
+      }
+      .drac-list-black.drac-list-ordered li:before,
+      .drac-list-black.drac-list-unordered li:before {
+        color: var(--black);
+      }
+      .drac-list-white.drac-list-ordered li:before,
+      .drac-list-white.drac-list-unordered li:before {
+        color: var(--white);
+      }
+      .drac-list-cyan.drac-list-ordered li:before,
+      .drac-list-cyan.drac-list-unordered li:before {
+        color: var(--cyan);
+      }
+      .drac-list-green.drac-list-ordered li:before,
+      .drac-list-green.drac-list-unordered li:before {
+        color: var(--green);
+      }
+      .drac-list-orange.drac-list-ordered li:before,
+      .drac-list-orange.drac-list-unordered li:before {
+        color: var(--orange);
+      }
+      .drac-list-pink.drac-list-ordered li:before,
+      .drac-list-pink.drac-list-unordered li:before {
+        color: var(--pink);
+      }
+      .drac-list-purple.drac-list-ordered li:before,
+      .drac-list-purple.drac-list-unordered li:before {
+        color: var(--purple);
+      }
+      .drac-list-red.drac-list-ordered li:before,
+      .drac-list-red.drac-list-unordered li:before {
+        color: var(--red);
+      }
+      .drac-list-yellow.drac-list-ordered li:before,
+      .drac-list-yellow.drac-list-unordered li:before {
+        color: var(--yellow);
+      }
       /*# sourceMappingURL=dracula-ui.css.map */ /*# sourceURL=/Users/netto.farah/projects/dracula-ui/dist/styles/dracula-ui.css*/
     </style>
     <style type="text/css">
@@ -3361,20 +3419,20 @@
           class="drac-box"
         >
           <button
-            class="drac-btn drac-bg-white drac-btn drac-btn"
+            class="drac-btn drac-bg-white"
             color="white"
             style="margin: 1rem"
           >
             Normal</button
           ><button
-            class="drac-btn drac-bg-white drac-btn-outline drac-btn drac-text-white"
+            class="drac-btn drac-bg-white drac-btn-outline drac-text-white"
             color="white"
             style="margin: 1rem"
             variant="outline"
           >
             Outline</button
           ><button
-            class="drac-btn drac-bg-white-transparent drac-btn-ghost drac-btn drac-text-white"
+            class="drac-btn drac-bg-white-transparent drac-btn-ghost drac-text-white"
             color="white"
             style="margin: 1rem"
             variant="ghost"
@@ -3387,20 +3445,20 @@
           class="drac-box"
         >
           <button
-            class="drac-btn drac-bg-cyan drac-btn drac-btn"
+            class="drac-btn drac-bg-cyan"
             color="cyan"
             style="margin: 1rem"
           >
             Normal</button
           ><button
-            class="drac-btn drac-bg-cyan drac-btn-outline drac-btn drac-text-cyan"
+            class="drac-btn drac-bg-cyan drac-btn-outline drac-text-cyan"
             color="cyan"
             style="margin: 1rem"
             variant="outline"
           >
             Outline</button
           ><button
-            class="drac-btn drac-bg-cyan-transparent drac-btn-ghost drac-btn drac-text-cyan"
+            class="drac-btn drac-bg-cyan-transparent drac-btn-ghost drac-text-cyan"
             color="cyan"
             style="margin: 1rem"
             variant="ghost"
@@ -3413,20 +3471,20 @@
           class="drac-box"
         >
           <button
-            class="drac-btn drac-bg-green drac-btn drac-btn"
+            class="drac-btn drac-bg-green"
             color="green"
             style="margin: 1rem"
           >
             Normal</button
           ><button
-            class="drac-btn drac-bg-green drac-btn-outline drac-btn drac-text-green"
+            class="drac-btn drac-bg-green drac-btn-outline drac-text-green"
             color="green"
             style="margin: 1rem"
             variant="outline"
           >
             Outline</button
           ><button
-            class="drac-btn drac-bg-green-transparent drac-btn-ghost drac-btn drac-text-green"
+            class="drac-btn drac-bg-green-transparent drac-btn-ghost drac-text-green"
             color="green"
             style="margin: 1rem"
             variant="ghost"
@@ -3439,20 +3497,20 @@
           class="drac-box"
         >
           <button
-            class="drac-btn drac-bg-orange drac-btn drac-btn"
+            class="drac-btn drac-bg-orange"
             color="orange"
             style="margin: 1rem"
           >
             Normal</button
           ><button
-            class="drac-btn drac-bg-orange drac-btn-outline drac-btn drac-text-orange"
+            class="drac-btn drac-bg-orange drac-btn-outline drac-text-orange"
             color="orange"
             style="margin: 1rem"
             variant="outline"
           >
             Outline</button
           ><button
-            class="drac-btn drac-bg-orange-transparent drac-btn-ghost drac-btn drac-text-orange"
+            class="drac-btn drac-bg-orange-transparent drac-btn-ghost drac-text-orange"
             color="orange"
             style="margin: 1rem"
             variant="ghost"
@@ -3465,20 +3523,20 @@
           class="drac-box"
         >
           <button
-            class="drac-btn drac-bg-pink drac-btn drac-btn"
+            class="drac-btn drac-bg-pink"
             color="pink"
             style="margin: 1rem"
           >
             Normal</button
           ><button
-            class="drac-btn drac-bg-pink drac-btn-outline drac-btn drac-text-pink"
+            class="drac-btn drac-bg-pink drac-btn-outline drac-text-pink"
             color="pink"
             style="margin: 1rem"
             variant="outline"
           >
             Outline</button
           ><button
-            class="drac-btn drac-bg-pink-transparent drac-btn-ghost drac-btn drac-text-pink"
+            class="drac-btn drac-bg-pink-transparent drac-btn-ghost drac-text-pink"
             color="pink"
             style="margin: 1rem"
             variant="ghost"
@@ -3491,20 +3549,20 @@
           class="drac-box"
         >
           <button
-            class="drac-btn drac-bg-purple drac-btn drac-btn"
+            class="drac-btn drac-bg-purple"
             color="purple"
             style="margin: 1rem"
           >
             Normal</button
           ><button
-            class="drac-btn drac-bg-purple drac-btn-outline drac-btn drac-text-purple"
+            class="drac-btn drac-bg-purple drac-btn-outline drac-text-purple"
             color="purple"
             style="margin: 1rem"
             variant="outline"
           >
             Outline</button
           ><button
-            class="drac-btn drac-bg-purple-transparent drac-btn-ghost drac-btn drac-text-purple"
+            class="drac-btn drac-bg-purple-transparent drac-btn-ghost drac-text-purple"
             color="purple"
             style="margin: 1rem"
             variant="ghost"
@@ -3516,21 +3574,17 @@
           style="display: flex; justify-content: space-around"
           class="drac-box"
         >
-          <button
-            class="drac-btn drac-bg-red drac-btn drac-btn"
-            color="red"
-            style="margin: 1rem"
-          >
+          <button class="drac-btn drac-bg-red" color="red" style="margin: 1rem">
             Normal</button
           ><button
-            class="drac-btn drac-bg-red drac-btn-outline drac-btn drac-text-red"
+            class="drac-btn drac-bg-red drac-btn-outline drac-text-red"
             color="red"
             style="margin: 1rem"
             variant="outline"
           >
             Outline</button
           ><button
-            class="drac-btn drac-bg-red-transparent drac-btn-ghost drac-btn drac-text-red"
+            class="drac-btn drac-bg-red-transparent drac-btn-ghost drac-text-red"
             color="red"
             style="margin: 1rem"
             variant="ghost"
@@ -3543,20 +3597,20 @@
           class="drac-box"
         >
           <button
-            class="drac-btn drac-bg-yellow drac-btn drac-btn"
+            class="drac-btn drac-bg-yellow"
             color="yellow"
             style="margin: 1rem"
           >
             Normal</button
           ><button
-            class="drac-btn drac-bg-yellow drac-btn-outline drac-btn drac-text-yellow"
+            class="drac-btn drac-bg-yellow drac-btn-outline drac-text-yellow"
             color="yellow"
             style="margin: 1rem"
             variant="outline"
           >
             Outline</button
           ><button
-            class="drac-btn drac-bg-yellow-transparent drac-btn-ghost drac-btn drac-text-yellow"
+            class="drac-btn drac-bg-yellow-transparent drac-btn-ghost drac-text-yellow"
             color="yellow"
             style="margin: 1rem"
             variant="ghost"
@@ -3569,20 +3623,20 @@
           class="drac-box"
         >
           <button
-            class="drac-btn drac-bg-purple-cyan drac-btn drac-btn"
+            class="drac-btn drac-bg-purple-cyan"
             color="purpleCyan"
             style="margin: 1rem"
           >
             Normal</button
           ><button
-            class="drac-btn drac-bg-purple-cyan drac-btn-outline drac-btn drac-text-purple-cyan"
+            class="drac-btn drac-bg-purple-cyan drac-btn-outline drac-text-purple-cyan"
             color="purpleCyan"
             style="margin: 1rem"
             variant="outline"
           >
             Outline</button
           ><button
-            class="drac-btn drac-bg-purple-cyan-transparent drac-btn-ghost drac-btn drac-text-purple-cyan"
+            class="drac-btn drac-bg-purple-cyan-transparent drac-btn-ghost drac-text-purple-cyan"
             color="purpleCyan"
             style="margin: 1rem"
             variant="ghost"
@@ -3595,20 +3649,20 @@
           class="drac-box"
         >
           <button
-            class="drac-btn drac-bg-yellow-pink drac-btn drac-btn"
+            class="drac-btn drac-bg-yellow-pink"
             color="yellowPink"
             style="margin: 1rem"
           >
             Normal</button
           ><button
-            class="drac-btn drac-bg-yellow-pink drac-btn-outline drac-btn drac-text-yellow-pink"
+            class="drac-btn drac-bg-yellow-pink drac-btn-outline drac-text-yellow-pink"
             color="yellowPink"
             style="margin: 1rem"
             variant="outline"
           >
             Outline</button
           ><button
-            class="drac-btn drac-bg-yellow-pink-transparent drac-btn-ghost drac-btn drac-text-yellow-pink"
+            class="drac-btn drac-bg-yellow-pink-transparent drac-btn-ghost drac-text-yellow-pink"
             color="yellowPink"
             style="margin: 1rem"
             variant="ghost"
@@ -3621,20 +3675,20 @@
           class="drac-box"
         >
           <button
-            class="drac-btn drac-bg-cyan-green drac-btn drac-btn"
+            class="drac-btn drac-bg-cyan-green"
             color="cyanGreen"
             style="margin: 1rem"
           >
             Normal</button
           ><button
-            class="drac-btn drac-bg-cyan-green drac-btn-outline drac-btn drac-text-cyan-green"
+            class="drac-btn drac-bg-cyan-green drac-btn-outline drac-text-cyan-green"
             color="cyanGreen"
             style="margin: 1rem"
             variant="outline"
           >
             Outline</button
           ><button
-            class="drac-btn drac-bg-cyan-green-transparent drac-btn-ghost drac-btn drac-text-cyan-green"
+            class="drac-btn drac-bg-cyan-green-transparent drac-btn-ghost drac-text-cyan-green"
             color="cyanGreen"
             style="margin: 1rem"
             variant="ghost"
@@ -3647,20 +3701,20 @@
           class="drac-box"
         >
           <button
-            class="drac-btn drac-bg-pink-purple drac-btn drac-btn"
+            class="drac-btn drac-bg-pink-purple"
             color="pinkPurple"
             style="margin: 1rem"
           >
             Normal</button
           ><button
-            class="drac-btn drac-bg-pink-purple drac-btn-outline drac-btn drac-text-pink-purple"
+            class="drac-btn drac-bg-pink-purple drac-btn-outline drac-text-pink-purple"
             color="pinkPurple"
             style="margin: 1rem"
             variant="outline"
           >
             Outline</button
           ><button
-            class="drac-btn drac-bg-pink-purple-transparent drac-btn-ghost drac-btn drac-text-pink-purple"
+            class="drac-btn drac-bg-pink-purple-transparent drac-btn-ghost drac-text-pink-purple"
             color="pinkPurple"
             style="margin: 1rem"
             variant="ghost"
@@ -3673,20 +3727,20 @@
           class="drac-box"
         >
           <button
-            class="drac-btn drac-bg-animated drac-btn drac-btn"
+            class="drac-btn drac-bg-animated"
             color="animated"
             style="margin: 1rem"
           >
             Normal</button
           ><button
-            class="drac-btn drac-bg-animated drac-btn-outline drac-btn drac-text-animated"
+            class="drac-btn drac-bg-animated drac-btn-outline drac-text-animated"
             color="animated"
             style="margin: 1rem"
             variant="outline"
           >
             Outline</button
           ><button
-            class="drac-btn drac-bg-animated-transparent drac-btn-ghost drac-btn drac-text-animated"
+            class="drac-btn drac-bg-animated-transparent drac-btn-ghost drac-text-animated"
             color="animated"
             style="margin: 1rem"
             variant="ghost"

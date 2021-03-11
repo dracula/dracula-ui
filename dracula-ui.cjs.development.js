@@ -4,7 +4,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-var cx = _interopDefault(require('classnames'));
+var cx = _interopDefault(require('classnames/dedupe'));
 var lodash = require('lodash');
 var React = _interopDefault(require('react'));
 

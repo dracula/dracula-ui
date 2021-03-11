@@ -2984,6 +2984,64 @@
         --spacing-56: 14rem;
         --spacing-64: 16rem;
       }
+      .drac-list {
+        list-style: none;
+      }
+      .drac-list-unordered li:before {
+        content: "—";
+        padding-right: 10px;
+      }
+      .drac-list-ordered {
+        counter-reset: li;
+      }
+      .drac-list-ordered li {
+        counter-increment: li;
+        margin-left: -30px;
+      }
+      .drac-list-ordered li:before {
+        content: counter(li) ".";
+        display: inline-block;
+        margin-left: 15px;
+        padding-right: 5px;
+        text-align: right;
+        width: 30px;
+      }
+      .drac-list-black.drac-list-ordered li:before,
+      .drac-list-black.drac-list-unordered li:before {
+        color: var(--black);
+      }
+      .drac-list-white.drac-list-ordered li:before,
+      .drac-list-white.drac-list-unordered li:before {
+        color: var(--white);
+      }
+      .drac-list-cyan.drac-list-ordered li:before,
+      .drac-list-cyan.drac-list-unordered li:before {
+        color: var(--cyan);
+      }
+      .drac-list-green.drac-list-ordered li:before,
+      .drac-list-green.drac-list-unordered li:before {
+        color: var(--green);
+      }
+      .drac-list-orange.drac-list-ordered li:before,
+      .drac-list-orange.drac-list-unordered li:before {
+        color: var(--orange);
+      }
+      .drac-list-pink.drac-list-ordered li:before,
+      .drac-list-pink.drac-list-unordered li:before {
+        color: var(--pink);
+      }
+      .drac-list-purple.drac-list-ordered li:before,
+      .drac-list-purple.drac-list-unordered li:before {
+        color: var(--purple);
+      }
+      .drac-list-red.drac-list-ordered li:before,
+      .drac-list-red.drac-list-unordered li:before {
+        color: var(--red);
+      }
+      .drac-list-yellow.drac-list-ordered li:before,
+      .drac-list-yellow.drac-list-unordered li:before {
+        color: var(--yellow);
+      }
       /*# sourceMappingURL=dracula-ui.css.map */ /*# sourceURL=/Users/netto.farah/projects/dracula-ui/dist/styles/dracula-ui.css*/
     </style>
     <style type="text/css">
@@ -3356,12 +3414,8 @@
   <body>
     <div id="drac" class="drac">
       <span
-        class="drac-avatar drac-bg-green-transparent drac-text-green drac-avatar drac-avatar-lg-stroke"
-        ><span
-          color="white"
-          class="drac-text drac-text drac-text drac-text-white"
-          >NF</span
-        ></span
+        class="drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-lg-stroke"
+        ><span color="white" class="drac-text drac-text-white">NF</span></span
       >
     </div>
   </body>

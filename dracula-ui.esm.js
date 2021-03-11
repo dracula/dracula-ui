@@ -1,4 +1,4 @@
-import cx from 'classnames';
+import cx from 'classnames/dedupe';
 import { mapValues, first, last } from 'lodash-es';
 import React from 'react';
 
