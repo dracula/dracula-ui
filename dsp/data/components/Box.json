@@ -3,7 +3,7 @@
   "type": "page",
   "id": "Box",
   "name": "Box",
-  "last_updated": "2021-03-11T06:21:32.433Z",
+  "last_updated": "2021-03-11T15:27:54.297Z",
   "last_updated_by": "System",
   "description": "Box is the most primitive component of Dracula UI.\nUsing Box allows for consumers of the components library to compose\nmore complex patterns, components, and UIs.\n\nBox includes built-in Color and Spacing properties that make building\ncomplex components convenient and consistent.",
   "related_entity_ids": [],
@@ -34,8 +34,8 @@
     },
     {
       "title": "Generic Elements",
-      "html": "<div>\n  <button\n    is=\"button\"\n    color=\"pinkPurple\"\n    classname=\"drac-box drac-bg-pink-purple\"\n  >\n    Button</button\n  ><a is=\"a\" color=\"green\" href=\"#\" classname=\"drac-box drac-bg-green\">Link</a>\n</div>\n",
-      "react": "<div>\n  <Box is=\"button\" color=\"pinkPurple\">\n    Button\n  </Box>\n  <Box is=\"a\" color=\"green\" href=\"#\">\n    Link\n  </Box>\n</div>;\n",
+      "html": "<div>\n  <button as=\"button\" color=\"pinkPurple\" class=\"drac-box drac-bg-pink-purple\">\n    Button</button\n  ><a as=\"a\" color=\"green\" href=\"#\" class=\"drac-box drac-bg-green\">Link</a>\n</div>\n",
+      "react": "<div>\n  <Box as=\"button\" color=\"pinkPurple\">\n    Button\n  </Box>\n  <Box as=\"a\" color=\"green\" href=\"#\">\n    Link\n  </Box>\n</div>;\n",
       "docs": "",
       "screenshot": "./dsp/assets/BoxGeneric Elements.png",
       "svgData": "./dsp/assets/svgs/BoxGeneric Elements.svg"
@@ -72,10 +72,10 @@
       "required": false,
       "type": { "name": "SpacingPropType | undefined" }
     },
-    "is": {
+    "as": {
       "defaultValue": null,
       "description": "The HTML element to be used",
-      "name": "is",
+      "name": "as",
       "parent": {
         "fileName": "src/components/Box/Box.tsx",
         "name": "BoxProps"
@@ -123,10 +123,10 @@
         "required": false,
         "type": { "name": "SpacingPropType | undefined" }
       },
-      "is": {
+      "as": {
         "defaultValue": null,
         "description": "The HTML element to be used",
-        "name": "is",
+        "name": "as",
         "parent": {
           "fileName": "src/components/Box/Box.tsx",
           "name": "BoxProps"
