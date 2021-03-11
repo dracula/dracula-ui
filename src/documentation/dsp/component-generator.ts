@@ -17,13 +17,13 @@ type Component = {
   }
   ext_com_draculaui_variations: ComponentExample[]
   ext_com_draculaui_props: dg.ComponentDoc['props']
-  ext_com_draculaui_docgen: dg.ComponentDoc
+  ext_com_draculaui_docgen?: dg.ComponentDoc
 }
 
 export function toDSP(
   name: string,
   usage: Record<string, ComponentExample>,
-  docs: dg.ComponentDoc
+  docs?: dg.ComponentDoc
 ) {
   const { basic: basicUsage } = usage
 
@@ -34,7 +34,7 @@ export function toDSP(
     name,
     last_updated: new Date(),
     last_updated_by: 'System',
-    description: `${docs.description}`,
+    description: `${docs?.description}`,
     related_entity_ids: [],
     tags: ['component'],
     snippets: {
@@ -45,7 +45,7 @@ export function toDSP(
       }
     },
     ext_com_draculaui_variations: Object.values(usage),
-    ext_com_draculaui_props: docs.props,
+    ext_com_draculaui_props: docs?.props ?? {},
     ext_com_draculaui_docgen: docs
   }
 

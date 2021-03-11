@@ -1,7 +1,7 @@
 import './styles/dracula-ui.css'
 
-export * from './components/Typography/Heading'
-export * from './components/Typography/Text'
+export * from './components/Heading/Heading'
+export * from './components/Text/Text'
 export * from './components/Box/Box'
 export * from './components/Button/Button'
 export * from './components/Badge/Badge'

@@ -1,4 +1,4 @@
-import { Text } from '@/components/Typography/Text'
+import { Text } from '@/components/Text/Text'
 import {
   buildSnapshot,
   SnapshotBuilder
@@ -9,7 +9,7 @@ import {
   TextBasic,
   TextWeights,
   TextColors
-} from '@/components/Typography/__stories__/Text.stories'
+} from '@/components/Text/__stories__/Text.stories'
 
 siteDocs(Text, {
   basicUsage() {

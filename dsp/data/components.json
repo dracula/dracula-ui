@@ -8,7 +8,7 @@
       "type": "page",
       "id": "Avatar",
       "name": "Avatar",
-      "last_updated": "2021-03-10T01:53:19.417Z",
+      "last_updated": "2021-03-11T04:40:22.269Z",
       "last_updated_by": "System",
       "description": "The Avatar component is used to represent a user.\n\nIt displays a profile picture, or falls back to the user's initials\nif a profile pic is not provided.",
       "related_entity_ids": [],
@@ -278,7 +278,7 @@
       "type": "page",
       "id": "Button",
       "name": "Button",
-      "last_updated": "2021-03-10T01:53:19.242Z",
+      "last_updated": "2021-03-11T04:40:21.629Z",
       "last_updated_by": "System",
       "description": "The Button component triggers actions, behaviors, or events based\non user input.",
       "related_entity_ids": [],
@@ -494,7 +494,7 @@
       "type": "page",
       "id": "Checkbox",
       "name": "Checkbox",
-      "last_updated": "2021-03-10T01:53:17.195Z",
+      "last_updated": "2021-03-11T04:40:19.220Z",
       "last_updated_by": "System",
       "description": "Checkbox is a styled HTML Input of type checkbox.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep check boxes accessible.",
       "related_entity_ids": [],
@@ -664,7 +664,7 @@
       "type": "page",
       "id": "Divider",
       "name": "Divider",
-      "last_updated": "2021-03-10T01:53:13.108Z",
+      "last_updated": "2021-03-11T04:40:16.529Z",
       "last_updated_by": "System",
       "description": "Dividers are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
       "related_entity_ids": [],
@@ -748,9 +748,56 @@
     {
       "class": "component",
       "type": "page",
+      "id": "Heading",
+      "name": "Heading",
+      "last_updated": "2021-03-11T04:40:19.097Z",
+      "last_updated_by": "System",
+      "description": "undefined",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "heading",
+        "languages": {
+          "javascriptreact": "<Heading>Heading</Heading>;\n",
+          "html": "<h1 class=\"drac-heading drac-heading-1 drac-text-white drac-spacing-none\">\n  Heading\n</h1>\n"
+        }
+      },
+      "ext_com_draculaui_variations": [
+        {
+          "title": "Usage",
+          "html": "<h1 class=\"drac-heading drac-heading-1 drac-text-white drac-spacing-none\">\n  Heading\n</h1>\n",
+          "react": "<Heading>Heading</Heading>;\n",
+          "docs": "",
+          "screenshot": "./dsp/assets/Heading.png",
+          "svgData": "./dsp/assets/svgs/Heading.svg"
+        },
+        {
+          "title": "Sizes",
+          "html": "<div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"white\"\n      class=\"drac-heading drac-heading-1 drac-text-white drac-spacing-none\"\n    >\n      heading-1\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h2\n      color=\"white\"\n      class=\"drac-heading drac-heading-2 drac-text-white drac-spacing-none\"\n    >\n      heading-2\n    </h2>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h3\n      color=\"white\"\n      class=\"drac-heading drac-heading-3 drac-text-white drac-spacing-none\"\n    >\n      heading-3\n    </h3>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h4\n      color=\"white\"\n      class=\"drac-heading drac-heading-4 drac-text-white drac-spacing-none\"\n    >\n      heading-4\n    </h4>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h5\n      color=\"white\"\n      class=\"drac-heading drac-heading-5 drac-text-white drac-spacing-none\"\n    >\n      heading-5\n    </h5>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h6\n      color=\"white\"\n      class=\"drac-heading drac-heading-6 drac-text-white drac-spacing-none\"\n    >\n      heading-6\n    </h6>\n  </div>\n</div>\n",
+          "react": "<div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"white\" size=\"heading-1\">\n      heading-1\n    </Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"white\" size=\"heading-2\">\n      heading-2\n    </Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"white\" size=\"heading-3\">\n      heading-3\n    </Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"white\" size=\"heading-4\">\n      heading-4\n    </Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"white\" size=\"heading-5\">\n      heading-5\n    </Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"white\" size=\"heading-6\">\n      heading-6\n    </Heading>\n  </div>\n</div>;\n",
+          "docs": "",
+          "screenshot": "./dsp/assets/HeadingSizes.png",
+          "svgData": "./dsp/assets/svgs/HeadingSizes.svg"
+        },
+        {
+          "title": "Colors",
+          "html": "<div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"white\"\n      class=\"drac-heading drac-heading-1 drac-text-white drac-spacing-none\"\n    >\n      white\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"cyan\"\n      class=\"drac-heading drac-heading-1 drac-text-cyan drac-spacing-none\"\n    >\n      cyan\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"green\"\n      class=\"drac-heading drac-heading-1 drac-text-green drac-spacing-none\"\n    >\n      green\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"orange\"\n      class=\"drac-heading drac-heading-1 drac-text-orange drac-spacing-none\"\n    >\n      orange\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"pink\"\n      class=\"drac-heading drac-heading-1 drac-text-pink drac-spacing-none\"\n    >\n      pink\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"purple\"\n      class=\"drac-heading drac-heading-1 drac-text-purple drac-spacing-none\"\n    >\n      purple\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"red\"\n      class=\"drac-heading drac-heading-1 drac-text-red drac-spacing-none\"\n    >\n      red\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"yellow\"\n      class=\"drac-heading drac-heading-1 drac-text-yellow drac-spacing-none\"\n    >\n      yellow\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"purpleCyan\"\n      class=\"drac-heading drac-heading-1 drac-text-purple-cyan drac-spacing-none\"\n    >\n      purpleCyan\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"yellowPink\"\n      class=\"drac-heading drac-heading-1 drac-text-yellow-pink drac-spacing-none\"\n    >\n      yellowPink\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"cyanGreen\"\n      class=\"drac-heading drac-heading-1 drac-text-cyan-green drac-spacing-none\"\n    >\n      cyanGreen\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"pinkPurple\"\n      class=\"drac-heading drac-heading-1 drac-text-pink-purple drac-spacing-none\"\n    >\n      pinkPurple\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"animated\"\n      class=\"drac-heading drac-heading-1 drac-text-animated drac-spacing-none\"\n    >\n      animated\n    </h1>\n  </div>\n</div>\n",
+          "react": "<div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"white\">white</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"cyan\">cyan</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"green\">green</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"orange\">orange</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"pink\">pink</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"purple\">purple</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"red\">red</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"yellow\">yellow</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"purpleCyan\">purpleCyan</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"yellowPink\">yellowPink</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"cyanGreen\">cyanGreen</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"pinkPurple\">pinkPurple</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"animated\">animated</Heading>\n  </div>\n</div>;\n",
+          "docs": "",
+          "screenshot": "./dsp/assets/HeadingColors.png",
+          "svgData": "./dsp/assets/svgs/HeadingColors.svg"
+        }
+      ],
+      "ext_com_draculaui_props": {}
+    },
+    {
+      "class": "component",
+      "type": "page",
       "id": "Input",
       "name": "Input",
-      "last_updated": "2021-03-10T01:53:18.578Z",
+      "last_updated": "2021-03-11T04:40:21.356Z",
       "last_updated_by": "System",
       "description": "Input is a styled HTML Input.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep inputs accessible.",
       "related_entity_ids": [],
@@ -928,7 +975,7 @@
       "type": "page",
       "id": "Radio",
       "name": "Radio",
-      "last_updated": "2021-03-10T01:53:15.815Z",
+      "last_updated": "2021-03-11T04:40:18.802Z",
       "last_updated_by": "System",
       "description": "Radio is a styled HTML Input of type radio.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep Radios accessible.",
       "related_entity_ids": [],
@@ -1060,7 +1107,7 @@
       "type": "page",
       "id": "Select",
       "name": "Select",
-      "last_updated": "2021-03-10T01:53:21.480Z",
+      "last_updated": "2021-03-11T04:40:23.816Z",
       "last_updated_by": "System",
       "description": "Select is a styled HTML Select element.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS, and small SVG component in order to keep Selects accessible.",
       "related_entity_ids": [],
@@ -1284,7 +1331,7 @@
       "type": "page",
       "id": "Switch",
       "name": "Switch",
-      "last_updated": "2021-03-10T01:53:17.158Z",
+      "last_updated": "2021-03-11T04:40:19.382Z",
       "last_updated_by": "System",
       "description": "Switch is an abstraction pattern that represents toggles.\n\nUse the Switch component as an alternative for Checkboxes or Radios\nwhen options are binary.\n\nSwitches are implemented as Checkboxes under the hood,\nand work normally with forms.",
       "related_entity_ids": [],
@@ -1454,7 +1501,7 @@
       "type": "page",
       "id": "Table",
       "name": "Table",
-      "last_updated": "2021-03-10T01:53:20.898Z",
+      "last_updated": "2021-03-11T04:40:23.370Z",
       "last_updated_by": "System",
       "description": "Tables are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
       "related_entity_ids": [],
@@ -1586,7 +1633,7 @@
       "type": "page",
       "id": "Tabs",
       "name": "Tabs",
-      "last_updated": "2021-03-10T01:53:22.648Z",
+      "last_updated": "2021-03-11T04:40:25.013Z",
       "last_updated_by": "System",
       "description": "Tabs are horizontal navigation elements used to display\ncontent within the same page.",
       "related_entity_ids": [],
@@ -1666,6 +1713,61 @@
           }
         }
       }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": "Text",
+      "name": "Text",
+      "last_updated": "2021-03-11T04:40:20.849Z",
+      "last_updated_by": "System",
+      "description": "undefined",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "text",
+        "languages": {
+          "javascriptreact": "<Text>Text</Text>;\n",
+          "html": "<span class=\"drac-text drac-text drac-text drac-text-white\">Text</span>\n"
+        }
+      },
+      "ext_com_draculaui_variations": [
+        {
+          "title": "Usage",
+          "html": "<span class=\"drac-text drac-text drac-text drac-text-white\">Text</span>\n",
+          "react": "<Text>Text</Text>;\n",
+          "docs": "",
+          "screenshot": "./dsp/assets/Text.png",
+          "svgData": "./dsp/assets/svgs/Text.svg"
+        },
+        {
+          "title": "Colors",
+          "html": "<div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"white\" class=\"drac-text drac-text drac-text drac-text-white\"\n      >white</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"cyan\" class=\"drac-text drac-text drac-text drac-text-cyan\"\n      >cyan</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"green\" class=\"drac-text drac-text drac-text drac-text-green\"\n      >green</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"orange\" class=\"drac-text drac-text drac-text drac-text-orange\"\n      >orange</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"pink\" class=\"drac-text drac-text drac-text drac-text-pink\"\n      >pink</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"purple\" class=\"drac-text drac-text drac-text drac-text-purple\"\n      >purple</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"red\" class=\"drac-text drac-text drac-text drac-text-red\"\n      >red</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"yellow\" class=\"drac-text drac-text drac-text drac-text-yellow\"\n      >yellow</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span\n      color=\"purpleCyan\"\n      class=\"drac-text drac-text drac-text drac-text-purple-cyan\"\n      >purpleCyan</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span\n      color=\"yellowPink\"\n      class=\"drac-text drac-text drac-text drac-text-yellow-pink\"\n      >yellowPink</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span\n      color=\"cyanGreen\"\n      class=\"drac-text drac-text drac-text drac-text-cyan-green\"\n      >cyanGreen</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span\n      color=\"pinkPurple\"\n      class=\"drac-text drac-text drac-text drac-text-pink-purple\"\n      >pinkPurple</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span\n      color=\"animated\"\n      class=\"drac-text drac-text drac-text drac-text-animated\"\n      >animated</span\n    >\n  </div>\n</div>\n",
+          "react": "<div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"white\">white</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"cyan\">cyan</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"green\">green</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"orange\">orange</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"pink\">pink</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"purple\">purple</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"red\">red</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"yellow\">yellow</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"purpleCyan\">purpleCyan</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"yellowPink\">yellowPink</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"cyanGreen\">cyanGreen</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"pinkPurple\">pinkPurple</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"animated\">animated</Text>\n  </div>\n</div>;\n",
+          "docs": "",
+          "screenshot": "./dsp/assets/TextColors.png",
+          "svgData": "./dsp/assets/svgs/TextColors.svg"
+        },
+        {
+          "title": "Weights",
+          "html": "<div>\n  <div style=\"margin-bottom: 20px\">\n    <span weight=\"normal\" class=\"drac-text drac-text drac-text drac-text-white\"\n      >normal</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span\n      weight=\"semibold\"\n      class=\"drac-text drac-text drac-text-semibold drac-text-white\"\n      >semibold</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span\n      weight=\"bold\"\n      class=\"drac-text drac-text drac-text-bold drac-text-white\"\n      >bold</span\n    >\n  </div>\n</div>\n",
+          "react": "<div>\n  <div style={{ marginBottom: 20 }}>\n    <Text weight=\"normal\">normal</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text weight=\"semibold\">semibold</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text weight=\"bold\">bold</Text>\n  </div>\n</div>;\n",
+          "docs": "",
+          "screenshot": "./dsp/assets/TextWeights.png",
+          "svgData": "./dsp/assets/svgs/TextWeights.svg"
+        },
+        {
+          "title": "Sizes",
+          "html": "<div>\n  <div style=\"margin-bottom: 20px\">\n    <span class=\"drac-text drac-text-lg drac-text drac-text-white\">large</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span class=\"drac-text drac-text drac-text drac-text-white\">medium</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span class=\"drac-text drac-text-sm drac-text drac-text-white\">small</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span class=\"drac-text drac-text-xs drac-text drac-text-white\">xsmall</span>\n  </div>\n</div>\n",
+          "react": "<div>\n  <div style={{ marginBottom: 20 }}>\n    <Text size=\"large\">large</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text size=\"medium\">medium</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text size=\"small\">small</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text size=\"xsmall\">xsmall</Text>\n  </div>\n</div>;\n",
+          "docs": "",
+          "screenshot": "./dsp/assets/TextSizes.png",
+          "svgData": "./dsp/assets/svgs/TextSizes.svg"
+        }
+      ],
+      "ext_com_draculaui_props": {}
     }
   ]
 }

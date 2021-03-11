@@ -1,4 +1,4 @@
-import { Heading } from '@/components/Typography/Heading'
+import { Heading } from '@/components/Heading/Heading'
 import {
   buildSnapshot,
   SnapshotBuilder
@@ -8,7 +8,7 @@ import {
   HeadingSizes,
   HeadingBasic,
   HeadingColors
-} from '@/components/Typography/__stories__/Heading.stories'
+} from '@/components/Heading/__stories__/Heading.stories'
 
 siteDocs(Heading, {
   basicUsage() {

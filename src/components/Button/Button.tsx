@@ -1,7 +1,7 @@
 import React, { HTMLAttributes } from 'react'
 import { colors as backgroundColors } from '../../base/colors'
 import cx from 'classnames'
-import { textColors } from '../../components/Typography/Text'
+import { textColors } from '../../components/Text/Text'
 
 export const buttonVariants = {
   normal: 'drac-btn',
