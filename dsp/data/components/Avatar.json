@@ -3,7 +3,7 @@
   "type": "page",
   "id": "Avatar",
   "name": "Avatar",
-  "last_updated": "2021-03-11T04:47:06.549Z",
+  "last_updated": "2021-03-11T04:57:48.644Z",
   "last_updated_by": "System",
   "description": "The Avatar component is used to represent a user.\n\nIt displays a profile picture, or falls back to the user's initials\nif a profile pic is not provided.",
   "related_entity_ids": [],
@@ -12,13 +12,13 @@
     "trigger": "avatar",
     "languages": {
       "javascriptreact": "<Avatar\n  title=\"Netto Farah\"\n  src=\"https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg\"\n/>;\n",
-      "html": "<span\n  class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar\"\n  style=\"\n    background-image: url(https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg);\n  \"\n></span>\n"
+      "html": "<span\n  class=\"drac-avatar drac-bg-green-transparent drac-text-green\"\n  style=\"\n    background-image: url(https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg);\n  \"\n></span>\n"
     }
   },
   "ext_com_draculaui_variations": [
     {
       "title": "basic usage",
-      "html": "<span\n  class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar\"\n  style=\"\n    background-image: url(https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg);\n  \"\n></span>\n",
+      "html": "<span\n  class=\"drac-avatar drac-bg-green-transparent drac-text-green\"\n  style=\"\n    background-image: url(https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg);\n  \"\n></span>\n",
       "react": "<Avatar\n  title=\"Netto Farah\"\n  src=\"https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg\"\n/>;\n",
       "docs": "",
       "screenshot": "./dsp/assets/Avatar.png",
@@ -26,7 +26,7 @@
     },
     {
       "title": "border: normal",
-      "html": "<span class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar\"\n  ><span color=\"white\" class=\"drac-text drac-text drac-text drac-text-white\"\n    >NF</span\n  ></span\n>\n",
+      "html": "<span class=\"drac-avatar drac-bg-green-transparent drac-text-green\"\n  ><span color=\"white\" class=\"drac-text drac-text-white\">NF</span></span\n>\n",
       "react": "<Avatar title=\"Netto Farah\" borderVariant=\"normal\" />;\n",
       "docs": "",
       "screenshot": "./dsp/assets/Avatarborder: normal.png",
@@ -34,7 +34,7 @@
     },
     {
       "title": "border: large",
-      "html": "<span\n  class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar drac-avatar-lg-stroke\"\n  ><span color=\"white\" class=\"drac-text drac-text drac-text drac-text-white\"\n    >NF</span\n  ></span\n>\n",
+      "html": "<span\n  class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-lg-stroke\"\n  ><span color=\"white\" class=\"drac-text drac-text-white\">NF</span></span\n>\n",
       "react": "<Avatar title=\"Netto Farah\" borderVariant=\"large\" />;\n",
       "docs": "",
       "screenshot": "./dsp/assets/Avatarborder: large.png",
@@ -42,7 +42,7 @@
     },
     {
       "title": "border: none",
-      "html": "<span\n  class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar drac-avatar-no-border\"\n  ><span color=\"white\" class=\"drac-text drac-text drac-text drac-text-white\"\n    >NF</span\n  ></span\n>\n",
+      "html": "<span\n  class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-no-border\"\n  ><span color=\"white\" class=\"drac-text drac-text-white\">NF</span></span\n>\n",
       "react": "<Avatar title=\"Netto Farah\" borderVariant=\"none\" />;\n",
       "docs": "",
       "screenshot": "./dsp/assets/Avatarborder: none.png",
@@ -50,7 +50,7 @@
     },
     {
       "title": "Custom variants",
-      "html": "<div>\n  <span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar\"\n    ><span color=\"white\" class=\"drac-text drac-text drac-text drac-text-white\"\n      >NF</span\n    ></span\n  ><span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-subtle\"\n    ><span color=\"white\" class=\"drac-text drac-text drac-text drac-text-white\"\n      >ZR</span\n    ></span\n  >\n</div>\n",
+      "html": "<div>\n  <span class=\"drac-avatar drac-bg-green-transparent drac-text-green\"\n    ><span color=\"white\" class=\"drac-text drac-text-white\">NF</span></span\n  ><span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-subtle\"\n    ><span color=\"white\" class=\"drac-text drac-text-white\">ZR</span></span\n  >\n</div>\n",
       "react": "<div>\n  <Avatar title=\"Netto Farah\" variant=\"normal\" />\n  <Avatar title=\"Zeno Rocha\" variant=\"subtle\" />\n</div>;\n",
       "docs": "Avatars accept multiple variants, like in the example below...",
       "screenshot": "./dsp/assets/AvatarCustom variants.png",
@@ -58,7 +58,7 @@
     },
     {
       "title": "Custom colors",
-      "html": "<div>\n  <span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar\"\n    color=\"black\"\n    ><span color=\"white\" class=\"drac-text drac-text drac-text drac-text-white\"\n      >NF</span\n    ></span\n  ><span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar\"\n    color=\"cyan\"\n    ><span color=\"white\" class=\"drac-text drac-text drac-text drac-text-white\"\n      >NF</span\n    ></span\n  >\n</div>\n",
+      "html": "<div>\n  <span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green\"\n    color=\"black\"\n    ><span color=\"white\" class=\"drac-text drac-text-white\">NF</span></span\n  ><span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green\"\n    color=\"cyan\"\n    ><span color=\"white\" class=\"drac-text drac-text-white\">NF</span></span\n  >\n</div>\n",
       "react": "<div>\n  <Avatar title=\"Netto Farah\" color=\"black\" />\n  <Avatar title=\"Netto Farah\" color=\"cyan\" />\n</div>;\n",
       "docs": "Avatars accept colors, like in the example below...",
       "screenshot": "./dsp/assets/AvatarCustom colors.png",

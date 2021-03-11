@@ -1,6 +1,6 @@
 import React, { HTMLAttributes } from 'react'
 import { mapValues } from 'lodash'
-import cx from 'classnames'
+import cx from 'classnames/dedupe'
 import { spacingClasses, SpacingPropType } from '../../base/spacing'
 import { baseTextColors } from '../../base/colors'
 

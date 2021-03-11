@@ -102,79 +102,79 @@ Object {
     variant=\\"normal\\"
     color=\\"white\\"
     style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input drac-input-white drac-text-white\\"
+    class=\\"drac-input drac-input-white drac-text-white\\"
   /><input
     placeholder=\\"Placeholder\\"
     variant=\\"normal\\"
     color=\\"cyan\\"
     style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input drac-input-cyan drac-text-cyan\\"
+    class=\\"drac-input drac-input-cyan drac-text-cyan\\"
   /><input
     placeholder=\\"Placeholder\\"
     variant=\\"normal\\"
     color=\\"green\\"
     style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input drac-input-green drac-text-green\\"
+    class=\\"drac-input drac-input-green drac-text-green\\"
   /><input
     placeholder=\\"Placeholder\\"
     variant=\\"normal\\"
     color=\\"orange\\"
     style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input drac-input-orange drac-text-orange\\"
+    class=\\"drac-input drac-input-orange drac-text-orange\\"
   /><input
     placeholder=\\"Placeholder\\"
     variant=\\"normal\\"
     color=\\"pink\\"
     style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input drac-input-pink drac-text-pink\\"
+    class=\\"drac-input drac-input-pink drac-text-pink\\"
   /><input
     placeholder=\\"Placeholder\\"
     variant=\\"normal\\"
     color=\\"purple\\"
     style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input drac-input-purple drac-text-purple\\"
+    class=\\"drac-input drac-input-purple drac-text-purple\\"
   /><input
     placeholder=\\"Placeholder\\"
     variant=\\"normal\\"
     color=\\"red\\"
     style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input drac-input-red drac-text-red\\"
+    class=\\"drac-input drac-input-red drac-text-red\\"
   /><input
     placeholder=\\"Placeholder\\"
     variant=\\"normal\\"
     color=\\"yellow\\"
     style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input drac-input-yellow drac-text-yellow\\"
+    class=\\"drac-input drac-input-yellow drac-text-yellow\\"
   /><input
     placeholder=\\"Placeholder\\"
     variant=\\"normal\\"
     color=\\"animated\\"
     style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input\\"
+    class=\\"drac-input\\"
   /><input
     placeholder=\\"Placeholder\\"
     variant=\\"normal\\"
     color=\\"cyanGreen\\"
     style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input\\"
+    class=\\"drac-input\\"
   /><input
     placeholder=\\"Placeholder\\"
     variant=\\"normal\\"
     color=\\"pinkPurple\\"
     style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input\\"
+    class=\\"drac-input\\"
   /><input
     placeholder=\\"Placeholder\\"
     variant=\\"normal\\"
     color=\\"purpleCyan\\"
     style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input\\"
+    class=\\"drac-input\\"
   /><input
     placeholder=\\"Placeholder\\"
     variant=\\"normal\\"
     color=\\"yellowPink\\"
     style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input\\"
+    class=\\"drac-input\\"
   />
 </div>
 ",
@@ -356,7 +356,7 @@ Object {
     <input
       placeholder=\\"Placeholder\\"
       color=\\"white\\"
-      class=\\"drac-input drac-input drac-input-white drac-text-white\\"
+      class=\\"drac-input drac-input-white drac-text-white\\"
     />
   </div>
   <div style=\\"margin-bottom: 10px\\">
@@ -393,7 +393,7 @@ Object {
     variant=\\"normal\\"
     color=\\"white\\"
     style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input drac-input-white drac-text-white\\"
+    class=\\"drac-input drac-input-white drac-text-white\\"
   /><input
     placeholder=\\"Placeholder\\"
     variant=\\"outline\\"

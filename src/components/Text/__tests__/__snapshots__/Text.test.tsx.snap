@@ -3,7 +3,7 @@
 exports[`Site: Text Basic Usage 1`] = `
 Object {
   "docs": "",
-  "html": "<span class=\\"drac-text drac-text drac-text drac-text-white\\">Text</span>
+  "html": "<span class=\\"drac-text drac-text-white\\">Text</span>
 ",
   "react": "<Text>Text</Text>;
 ",
@@ -16,79 +16,51 @@ Object {
   "docs": "",
   "html": "<div>
   <div style=\\"margin-bottom: 20px\\">
-    <span color=\\"white\\" class=\\"drac-text drac-text drac-text drac-text-white\\"
-      >white</span
-    >
+    <span color=\\"white\\" class=\\"drac-text drac-text-white\\">white</span>
   </div>
   <div style=\\"margin-bottom: 20px\\">
-    <span color=\\"cyan\\" class=\\"drac-text drac-text drac-text drac-text-cyan\\"
-      >cyan</span
-    >
+    <span color=\\"cyan\\" class=\\"drac-text drac-text-cyan\\">cyan</span>
   </div>
   <div style=\\"margin-bottom: 20px\\">
-    <span color=\\"green\\" class=\\"drac-text drac-text drac-text drac-text-green\\"
-      >green</span
-    >
+    <span color=\\"green\\" class=\\"drac-text drac-text-green\\">green</span>
   </div>
   <div style=\\"margin-bottom: 20px\\">
-    <span color=\\"orange\\" class=\\"drac-text drac-text drac-text drac-text-orange\\"
-      >orange</span
-    >
+    <span color=\\"orange\\" class=\\"drac-text drac-text-orange\\">orange</span>
   </div>
   <div style=\\"margin-bottom: 20px\\">
-    <span color=\\"pink\\" class=\\"drac-text drac-text drac-text drac-text-pink\\"
-      >pink</span
-    >
+    <span color=\\"pink\\" class=\\"drac-text drac-text-pink\\">pink</span>
   </div>
   <div style=\\"margin-bottom: 20px\\">
-    <span color=\\"purple\\" class=\\"drac-text drac-text drac-text drac-text-purple\\"
-      >purple</span
-    >
+    <span color=\\"purple\\" class=\\"drac-text drac-text-purple\\">purple</span>
   </div>
   <div style=\\"margin-bottom: 20px\\">
-    <span color=\\"red\\" class=\\"drac-text drac-text drac-text drac-text-red\\"
-      >red</span
-    >
+    <span color=\\"red\\" class=\\"drac-text drac-text-red\\">red</span>
   </div>
   <div style=\\"margin-bottom: 20px\\">
-    <span color=\\"yellow\\" class=\\"drac-text drac-text drac-text drac-text-yellow\\"
-      >yellow</span
-    >
+    <span color=\\"yellow\\" class=\\"drac-text drac-text-yellow\\">yellow</span>
   </div>
   <div style=\\"margin-bottom: 20px\\">
-    <span
-      color=\\"purpleCyan\\"
-      class=\\"drac-text drac-text drac-text drac-text-purple-cyan\\"
+    <span color=\\"purpleCyan\\" class=\\"drac-text drac-text-purple-cyan\\"
       >purpleCyan</span
     >
   </div>
   <div style=\\"margin-bottom: 20px\\">
-    <span
-      color=\\"yellowPink\\"
-      class=\\"drac-text drac-text drac-text drac-text-yellow-pink\\"
+    <span color=\\"yellowPink\\" class=\\"drac-text drac-text-yellow-pink\\"
       >yellowPink</span
     >
   </div>
   <div style=\\"margin-bottom: 20px\\">
-    <span
-      color=\\"cyanGreen\\"
-      class=\\"drac-text drac-text drac-text drac-text-cyan-green\\"
+    <span color=\\"cyanGreen\\" class=\\"drac-text drac-text-cyan-green\\"
       >cyanGreen</span
     >
   </div>
   <div style=\\"margin-bottom: 20px\\">
-    <span
-      color=\\"pinkPurple\\"
-      class=\\"drac-text drac-text drac-text drac-text-pink-purple\\"
+    <span color=\\"pinkPurple\\" class=\\"drac-text drac-text-pink-purple\\"
       >pinkPurple</span
     >
   </div>
   <div style=\\"margin-bottom: 20px\\">
-    <span
-      color=\\"animated\\"
-      class=\\"drac-text drac-text drac-text drac-text-animated\\"
-      >animated</span
-    >
+    <span color=\\"animated\\" class=\\"drac-text drac-text-animated\\">animated</span>
   </div>
 </div>
 ",
@@ -143,16 +115,16 @@ Object {
   "docs": "",
   "html": "<div>
   <div style=\\"margin-bottom: 20px\\">
-    <span class=\\"drac-text drac-text-lg drac-text drac-text-white\\">large</span>
+    <span class=\\"drac-text drac-text-lg drac-text-white\\">large</span>
   </div>
   <div style=\\"margin-bottom: 20px\\">
-    <span class=\\"drac-text drac-text drac-text drac-text-white\\">medium</span>
+    <span class=\\"drac-text drac-text-white\\">medium</span>
   </div>
   <div style=\\"margin-bottom: 20px\\">
-    <span class=\\"drac-text drac-text-sm drac-text drac-text-white\\">small</span>
+    <span class=\\"drac-text drac-text-sm drac-text-white\\">small</span>
   </div>
   <div style=\\"margin-bottom: 20px\\">
-    <span class=\\"drac-text drac-text-xs drac-text drac-text-white\\">xsmall</span>
+    <span class=\\"drac-text drac-text-xs drac-text-white\\">xsmall</span>
   </div>
 </div>
 ",
@@ -180,21 +152,15 @@ Object {
   "docs": "",
   "html": "<div>
   <div style=\\"margin-bottom: 20px\\">
-    <span weight=\\"normal\\" class=\\"drac-text drac-text drac-text drac-text-white\\"
-      >normal</span
-    >
+    <span weight=\\"normal\\" class=\\"drac-text drac-text-white\\">normal</span>
   </div>
   <div style=\\"margin-bottom: 20px\\">
-    <span
-      weight=\\"semibold\\"
-      class=\\"drac-text drac-text drac-text-semibold drac-text-white\\"
+    <span weight=\\"semibold\\" class=\\"drac-text drac-text-semibold drac-text-white\\"
       >semibold</span
     >
   </div>
   <div style=\\"margin-bottom: 20px\\">
-    <span
-      weight=\\"bold\\"
-      class=\\"drac-text drac-text drac-text-bold drac-text-white\\"
+    <span weight=\\"bold\\" class=\\"drac-text drac-text-bold drac-text-white\\"
       >bold</span
     >
   </div>

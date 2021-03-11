@@ -1,6 +1,6 @@
 import { ColorMap } from '../../base/colors'
 import React, { HTMLAttributes } from 'react'
-import cx from 'classnames'
+import cx from 'classnames/dedupe'
 
 export const listColors: ColorMap = {
   white: 'drac-list-white',

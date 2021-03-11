@@ -1119,7 +1119,7 @@ Object {
   "docs": "",
   "html": "<div style=\\"display: flex; flex-direction: column; padding: 3rem\\">
   <div style=\\"margin-bottom: 50px\\">
-    <table variant=\\"normal\\" class=\\"drac-table drac-table\\">
+    <table variant=\\"normal\\" class=\\"drac-table\\">
       <thead>
         <tr>
           <th class=\\"drac-text drac-text-white\\">Name</th>

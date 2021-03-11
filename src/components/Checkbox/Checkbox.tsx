@@ -1,5 +1,5 @@
 import React, { HTMLAttributes } from 'react'
-import cx from 'classnames'
+import cx from 'classnames/dedupe'
 import { ColorMap } from '../../base/colors'
 
 export const checkboxColors: ColorMap = {

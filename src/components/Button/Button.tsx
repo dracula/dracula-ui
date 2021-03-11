@@ -1,6 +1,6 @@
 import React, { HTMLAttributes } from 'react'
 import { colors as backgroundColors } from '../../base/colors'
-import cx from 'classnames'
+import cx from 'classnames/dedupe'
 import { textColors } from '../../components/Text/Text'
 
 export const buttonVariants = {

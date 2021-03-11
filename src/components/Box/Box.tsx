@@ -1,5 +1,5 @@
 import React, { HTMLAttributes } from 'react'
-import cx from 'classnames'
+import cx from 'classnames/dedupe'
 import { spacingClasses, SpacingPropType } from '../../base/spacing'
 import { colors } from '../../base/colors'
 

@@ -428,7 +428,7 @@ Object {
       <select
         variant=\\"normal\\"
         color=\\"white\\"
-        class=\\"drac-select drac-select drac-select-white\\"
+        class=\\"drac-select drac-select-white\\"
       >
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
@@ -457,7 +457,7 @@ Object {
       <select
         variant=\\"normal\\"
         color=\\"cyan\\"
-        class=\\"drac-select drac-select drac-select-cyan\\"
+        class=\\"drac-select drac-select-cyan\\"
       >
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
@@ -486,7 +486,7 @@ Object {
       <select
         variant=\\"normal\\"
         color=\\"green\\"
-        class=\\"drac-select drac-select drac-select-green\\"
+        class=\\"drac-select drac-select-green\\"
       >
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
@@ -515,7 +515,7 @@ Object {
       <select
         variant=\\"normal\\"
         color=\\"orange\\"
-        class=\\"drac-select drac-select drac-select-orange\\"
+        class=\\"drac-select drac-select-orange\\"
       >
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
@@ -544,7 +544,7 @@ Object {
       <select
         variant=\\"normal\\"
         color=\\"pink\\"
-        class=\\"drac-select drac-select drac-select-pink\\"
+        class=\\"drac-select drac-select-pink\\"
       >
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
@@ -573,7 +573,7 @@ Object {
       <select
         variant=\\"normal\\"
         color=\\"purple\\"
-        class=\\"drac-select drac-select drac-select-purple\\"
+        class=\\"drac-select drac-select-purple\\"
       >
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
@@ -599,11 +599,7 @@ Object {
   </div>
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
-      <select
-        variant=\\"normal\\"
-        color=\\"red\\"
-        class=\\"drac-select drac-select drac-select-red\\"
-      >
+      <select variant=\\"normal\\" color=\\"red\\" class=\\"drac-select drac-select-red\\">
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
         <option>Buffy</option>
@@ -631,7 +627,7 @@ Object {
       <select
         variant=\\"normal\\"
         color=\\"yellow\\"
-        class=\\"drac-select drac-select drac-select-yellow\\"
+        class=\\"drac-select drac-select-yellow\\"
       >
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
@@ -657,7 +653,7 @@ Object {
   </div>
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
-      <select variant=\\"normal\\" color=\\"animated\\" class=\\"drac-select drac-select\\">
+      <select variant=\\"normal\\" color=\\"animated\\" class=\\"drac-select\\">
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
         <option>Buffy</option>
@@ -682,11 +678,7 @@ Object {
   </div>
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
-      <select
-        variant=\\"normal\\"
-        color=\\"cyanGreen\\"
-        class=\\"drac-select drac-select\\"
-      >
+      <select variant=\\"normal\\" color=\\"cyanGreen\\" class=\\"drac-select\\">
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
         <option>Buffy</option>
@@ -711,11 +703,7 @@ Object {
   </div>
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
-      <select
-        variant=\\"normal\\"
-        color=\\"pinkPurple\\"
-        class=\\"drac-select drac-select\\"
-      >
+      <select variant=\\"normal\\" color=\\"pinkPurple\\" class=\\"drac-select\\">
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
         <option>Buffy</option>
@@ -740,11 +728,7 @@ Object {
   </div>
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
-      <select
-        variant=\\"normal\\"
-        color=\\"purpleCyan\\"
-        class=\\"drac-select drac-select\\"
-      >
+      <select variant=\\"normal\\" color=\\"purpleCyan\\" class=\\"drac-select\\">
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
         <option>Buffy</option>
@@ -769,11 +753,7 @@ Object {
   </div>
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
-      <select
-        variant=\\"normal\\"
-        color=\\"yellowPink\\"
-        class=\\"drac-select drac-select\\"
-      >
+      <select variant=\\"normal\\" color=\\"yellowPink\\" class=\\"drac-select\\">
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
         <option>Buffy</option>
@@ -1127,7 +1107,7 @@ Object {
         disabled=\\"\\"
         variant=\\"normal\\"
         color=\\"white\\"
-        class=\\"drac-select drac-select drac-select-white\\"
+        class=\\"drac-select drac-select-white\\"
       >
         <option value=\\"default\\">Select option</option>
         <option>Blade</option>
@@ -1244,7 +1224,7 @@ Object {
   </div>
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
-      <select color=\\"white\\" class=\\"drac-select drac-select drac-select-white\\">
+      <select color=\\"white\\" class=\\"drac-select drac-select-white\\">
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
         <option>Buffy</option>
@@ -1349,7 +1329,7 @@ Object {
       <select
         variant=\\"normal\\"
         color=\\"white\\"
-        class=\\"drac-select drac-select drac-select-white\\"
+        class=\\"drac-select drac-select-white\\"
       >
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>

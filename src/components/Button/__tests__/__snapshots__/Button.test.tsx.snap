@@ -3,9 +3,7 @@
 exports[`Site: Button Basic Usage 1`] = `
 Object {
   "docs": "",
-  "html": "<button class=\\"drac-btn drac-bg-purple drac-btn drac-btn\\" color=\\"purple\\">
-  Dracula
-</button>
+  "html": "<button class=\\"drac-btn drac-bg-purple\\" color=\\"purple\\">Dracula</button>
 ",
   "react": "<Button color=\\"purple\\">Dracula</Button>;
 ",
@@ -18,21 +16,17 @@ Object {
   "docs": "",
   "html": "<div class=\\"drac-box\\">
   <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
-    <button
-      class=\\"drac-btn drac-bg-white drac-btn drac-btn\\"
-      color=\\"white\\"
-      style=\\"margin: 1rem\\"
-    >
+    <button class=\\"drac-btn drac-bg-white\\" color=\\"white\\" style=\\"margin: 1rem\\">
       Normal</button
     ><button
-      class=\\"drac-btn drac-bg-white drac-btn-outline drac-btn drac-text-white\\"
+      class=\\"drac-btn drac-bg-white drac-btn-outline drac-text-white\\"
       color=\\"white\\"
       style=\\"margin: 1rem\\"
       variant=\\"outline\\"
     >
       Outline</button
     ><button
-      class=\\"drac-btn drac-bg-white-transparent drac-btn-ghost drac-btn drac-text-white\\"
+      class=\\"drac-btn drac-bg-white-transparent drac-btn-ghost drac-text-white\\"
       color=\\"white\\"
       style=\\"margin: 1rem\\"
       variant=\\"ghost\\"
@@ -41,21 +35,17 @@ Object {
     </button>
   </div>
   <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
-    <button
-      class=\\"drac-btn drac-bg-cyan drac-btn drac-btn\\"
-      color=\\"cyan\\"
-      style=\\"margin: 1rem\\"
-    >
+    <button class=\\"drac-btn drac-bg-cyan\\" color=\\"cyan\\" style=\\"margin: 1rem\\">
       Normal</button
     ><button
-      class=\\"drac-btn drac-bg-cyan drac-btn-outline drac-btn drac-text-cyan\\"
+      class=\\"drac-btn drac-bg-cyan drac-btn-outline drac-text-cyan\\"
       color=\\"cyan\\"
       style=\\"margin: 1rem\\"
       variant=\\"outline\\"
     >
       Outline</button
     ><button
-      class=\\"drac-btn drac-bg-cyan-transparent drac-btn-ghost drac-btn drac-text-cyan\\"
+      class=\\"drac-btn drac-bg-cyan-transparent drac-btn-ghost drac-text-cyan\\"
       color=\\"cyan\\"
       style=\\"margin: 1rem\\"
       variant=\\"ghost\\"
@@ -64,21 +54,17 @@ Object {
     </button>
   </div>
   <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
-    <button
-      class=\\"drac-btn drac-bg-green drac-btn drac-btn\\"
-      color=\\"green\\"
-      style=\\"margin: 1rem\\"
-    >
+    <button class=\\"drac-btn drac-bg-green\\" color=\\"green\\" style=\\"margin: 1rem\\">
       Normal</button
     ><button
-      class=\\"drac-btn drac-bg-green drac-btn-outline drac-btn drac-text-green\\"
+      class=\\"drac-btn drac-bg-green drac-btn-outline drac-text-green\\"
       color=\\"green\\"
       style=\\"margin: 1rem\\"
       variant=\\"outline\\"
     >
       Outline</button
     ><button
-      class=\\"drac-btn drac-bg-green-transparent drac-btn-ghost drac-btn drac-text-green\\"
+      class=\\"drac-btn drac-bg-green-transparent drac-btn-ghost drac-text-green\\"
       color=\\"green\\"
       style=\\"margin: 1rem\\"
       variant=\\"ghost\\"
@@ -87,21 +73,17 @@ Object {
     </button>
   </div>
   <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
-    <button
-      class=\\"drac-btn drac-bg-orange drac-btn drac-btn\\"
-      color=\\"orange\\"
-      style=\\"margin: 1rem\\"
-    >
+    <button class=\\"drac-btn drac-bg-orange\\" color=\\"orange\\" style=\\"margin: 1rem\\">
       Normal</button
     ><button
-      class=\\"drac-btn drac-bg-orange drac-btn-outline drac-btn drac-text-orange\\"
+      class=\\"drac-btn drac-bg-orange drac-btn-outline drac-text-orange\\"
       color=\\"orange\\"
       style=\\"margin: 1rem\\"
       variant=\\"outline\\"
     >
       Outline</button
     ><button
-      class=\\"drac-btn drac-bg-orange-transparent drac-btn-ghost drac-btn drac-text-orange\\"
+      class=\\"drac-btn drac-bg-orange-transparent drac-btn-ghost drac-text-orange\\"
       color=\\"orange\\"
       style=\\"margin: 1rem\\"
       variant=\\"ghost\\"
@@ -110,21 +92,17 @@ Object {
     </button>
   </div>
   <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
-    <button
-      class=\\"drac-btn drac-bg-pink drac-btn drac-btn\\"
-      color=\\"pink\\"
-      style=\\"margin: 1rem\\"
-    >
+    <button class=\\"drac-btn drac-bg-pink\\" color=\\"pink\\" style=\\"margin: 1rem\\">
       Normal</button
     ><button
-      class=\\"drac-btn drac-bg-pink drac-btn-outline drac-btn drac-text-pink\\"
+      class=\\"drac-btn drac-bg-pink drac-btn-outline drac-text-pink\\"
       color=\\"pink\\"
       style=\\"margin: 1rem\\"
       variant=\\"outline\\"
     >
       Outline</button
     ><button
-      class=\\"drac-btn drac-bg-pink-transparent drac-btn-ghost drac-btn drac-text-pink\\"
+      class=\\"drac-btn drac-bg-pink-transparent drac-btn-ghost drac-text-pink\\"
       color=\\"pink\\"
       style=\\"margin: 1rem\\"
       variant=\\"ghost\\"
@@ -133,21 +111,17 @@ Object {
     </button>
   </div>
   <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
-    <button
-      class=\\"drac-btn drac-bg-purple drac-btn drac-btn\\"
-      color=\\"purple\\"
-      style=\\"margin: 1rem\\"
-    >
+    <button class=\\"drac-btn drac-bg-purple\\" color=\\"purple\\" style=\\"margin: 1rem\\">
       Normal</button
     ><button
-      class=\\"drac-btn drac-bg-purple drac-btn-outline drac-btn drac-text-purple\\"
+      class=\\"drac-btn drac-bg-purple drac-btn-outline drac-text-purple\\"
       color=\\"purple\\"
       style=\\"margin: 1rem\\"
       variant=\\"outline\\"
     >
       Outline</button
     ><button
-      class=\\"drac-btn drac-bg-purple-transparent drac-btn-ghost drac-btn drac-text-purple\\"
+      class=\\"drac-btn drac-bg-purple-transparent drac-btn-ghost drac-text-purple\\"
       color=\\"purple\\"
       style=\\"margin: 1rem\\"
       variant=\\"ghost\\"
@@ -156,21 +130,17 @@ Object {
     </button>
   </div>
   <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
-    <button
-      class=\\"drac-btn drac-bg-red drac-btn drac-btn\\"
-      color=\\"red\\"
-      style=\\"margin: 1rem\\"
-    >
+    <button class=\\"drac-btn drac-bg-red\\" color=\\"red\\" style=\\"margin: 1rem\\">
       Normal</button
     ><button
-      class=\\"drac-btn drac-bg-red drac-btn-outline drac-btn drac-text-red\\"
+      class=\\"drac-btn drac-bg-red drac-btn-outline drac-text-red\\"
       color=\\"red\\"
       style=\\"margin: 1rem\\"
       variant=\\"outline\\"
     >
       Outline</button
     ><button
-      class=\\"drac-btn drac-bg-red-transparent drac-btn-ghost drac-btn drac-text-red\\"
+      class=\\"drac-btn drac-bg-red-transparent drac-btn-ghost drac-text-red\\"
       color=\\"red\\"
       style=\\"margin: 1rem\\"
       variant=\\"ghost\\"
@@ -179,21 +149,17 @@ Object {
     </button>
   </div>
   <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
-    <button
-      class=\\"drac-btn drac-bg-yellow drac-btn drac-btn\\"
-      color=\\"yellow\\"
-      style=\\"margin: 1rem\\"
-    >
+    <button class=\\"drac-btn drac-bg-yellow\\" color=\\"yellow\\" style=\\"margin: 1rem\\">
       Normal</button
     ><button
-      class=\\"drac-btn drac-bg-yellow drac-btn-outline drac-btn drac-text-yellow\\"
+      class=\\"drac-btn drac-bg-yellow drac-btn-outline drac-text-yellow\\"
       color=\\"yellow\\"
       style=\\"margin: 1rem\\"
       variant=\\"outline\\"
     >
       Outline</button
     ><button
-      class=\\"drac-btn drac-bg-yellow-transparent drac-btn-ghost drac-btn drac-text-yellow\\"
+      class=\\"drac-btn drac-bg-yellow-transparent drac-btn-ghost drac-text-yellow\\"
       color=\\"yellow\\"
       style=\\"margin: 1rem\\"
       variant=\\"ghost\\"
@@ -203,20 +169,20 @@ Object {
   </div>
   <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
     <button
-      class=\\"drac-btn drac-bg-purple-cyan drac-btn drac-btn\\"
+      class=\\"drac-btn drac-bg-purple-cyan\\"
       color=\\"purpleCyan\\"
       style=\\"margin: 1rem\\"
     >
       Normal</button
     ><button
-      class=\\"drac-btn drac-bg-purple-cyan drac-btn-outline drac-btn drac-text-purple-cyan\\"
+      class=\\"drac-btn drac-bg-purple-cyan drac-btn-outline drac-text-purple-cyan\\"
       color=\\"purpleCyan\\"
       style=\\"margin: 1rem\\"
       variant=\\"outline\\"
     >
       Outline</button
     ><button
-      class=\\"drac-btn drac-bg-purple-cyan-transparent drac-btn-ghost drac-btn drac-text-purple-cyan\\"
+      class=\\"drac-btn drac-bg-purple-cyan-transparent drac-btn-ghost drac-text-purple-cyan\\"
       color=\\"purpleCyan\\"
       style=\\"margin: 1rem\\"
       variant=\\"ghost\\"
@@ -226,20 +192,20 @@ Object {
   </div>
   <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
     <button
-      class=\\"drac-btn drac-bg-yellow-pink drac-btn drac-btn\\"
+      class=\\"drac-btn drac-bg-yellow-pink\\"
       color=\\"yellowPink\\"
       style=\\"margin: 1rem\\"
     >
       Normal</button
     ><button
-      class=\\"drac-btn drac-bg-yellow-pink drac-btn-outline drac-btn drac-text-yellow-pink\\"
+      class=\\"drac-btn drac-bg-yellow-pink drac-btn-outline drac-text-yellow-pink\\"
       color=\\"yellowPink\\"
       style=\\"margin: 1rem\\"
       variant=\\"outline\\"
     >
       Outline</button
     ><button
-      class=\\"drac-btn drac-bg-yellow-pink-transparent drac-btn-ghost drac-btn drac-text-yellow-pink\\"
+      class=\\"drac-btn drac-bg-yellow-pink-transparent drac-btn-ghost drac-text-yellow-pink\\"
       color=\\"yellowPink\\"
       style=\\"margin: 1rem\\"
       variant=\\"ghost\\"
@@ -249,20 +215,20 @@ Object {
   </div>
   <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
     <button
-      class=\\"drac-btn drac-bg-cyan-green drac-btn drac-btn\\"
+      class=\\"drac-btn drac-bg-cyan-green\\"
       color=\\"cyanGreen\\"
       style=\\"margin: 1rem\\"
     >
       Normal</button
     ><button
-      class=\\"drac-btn drac-bg-cyan-green drac-btn-outline drac-btn drac-text-cyan-green\\"
+      class=\\"drac-btn drac-bg-cyan-green drac-btn-outline drac-text-cyan-green\\"
       color=\\"cyanGreen\\"
       style=\\"margin: 1rem\\"
       variant=\\"outline\\"
     >
       Outline</button
     ><button
-      class=\\"drac-btn drac-bg-cyan-green-transparent drac-btn-ghost drac-btn drac-text-cyan-green\\"
+      class=\\"drac-btn drac-bg-cyan-green-transparent drac-btn-ghost drac-text-cyan-green\\"
       color=\\"cyanGreen\\"
       style=\\"margin: 1rem\\"
       variant=\\"ghost\\"
@@ -272,20 +238,20 @@ Object {
   </div>
   <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
     <button
-      class=\\"drac-btn drac-bg-pink-purple drac-btn drac-btn\\"
+      class=\\"drac-btn drac-bg-pink-purple\\"
       color=\\"pinkPurple\\"
       style=\\"margin: 1rem\\"
     >
       Normal</button
     ><button
-      class=\\"drac-btn drac-bg-pink-purple drac-btn-outline drac-btn drac-text-pink-purple\\"
+      class=\\"drac-btn drac-bg-pink-purple drac-btn-outline drac-text-pink-purple\\"
       color=\\"pinkPurple\\"
       style=\\"margin: 1rem\\"
       variant=\\"outline\\"
     >
       Outline</button
     ><button
-      class=\\"drac-btn drac-bg-pink-purple-transparent drac-btn-ghost drac-btn drac-text-pink-purple\\"
+      class=\\"drac-btn drac-bg-pink-purple-transparent drac-btn-ghost drac-text-pink-purple\\"
       color=\\"pinkPurple\\"
       style=\\"margin: 1rem\\"
       variant=\\"ghost\\"
@@ -295,20 +261,20 @@ Object {
   </div>
   <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
     <button
-      class=\\"drac-btn drac-bg-animated drac-btn drac-btn\\"
+      class=\\"drac-btn drac-bg-animated\\"
       color=\\"animated\\"
       style=\\"margin: 1rem\\"
     >
       Normal</button
     ><button
-      class=\\"drac-btn drac-bg-animated drac-btn-outline drac-btn drac-text-animated\\"
+      class=\\"drac-btn drac-bg-animated drac-btn-outline drac-text-animated\\"
       color=\\"animated\\"
       style=\\"margin: 1rem\\"
       variant=\\"outline\\"
     >
       Outline</button
     ><button
-      class=\\"drac-btn drac-bg-animated-transparent drac-btn-ghost drac-btn drac-text-animated\\"
+      class=\\"drac-btn drac-bg-animated-transparent drac-btn-ghost drac-text-animated\\"
       color=\\"animated\\"
       style=\\"margin: 1rem\\"
       variant=\\"ghost\\"
@@ -473,22 +439,20 @@ Object {
   "docs": "",
   "html": "<div class=\\"drac-box\\">
   <div style=\\"margin-bottom: 10px\\" class=\\"drac-box\\">
-    <button class=\\"drac-btn drac-bg-purple drac-btn drac-btn-lg\\" color=\\"purple\\">
+    <button class=\\"drac-btn drac-bg-purple drac-btn-lg\\" color=\\"purple\\">
       large
     </button>
   </div>
   <div style=\\"margin-bottom: 10px\\" class=\\"drac-box\\">
-    <button class=\\"drac-btn drac-bg-purple drac-btn drac-btn\\" color=\\"purple\\">
-      medium
-    </button>
+    <button class=\\"drac-btn drac-bg-purple\\" color=\\"purple\\">medium</button>
   </div>
   <div style=\\"margin-bottom: 10px\\" class=\\"drac-box\\">
-    <button class=\\"drac-btn drac-bg-purple drac-btn drac-btn-sm\\" color=\\"purple\\">
+    <button class=\\"drac-btn drac-bg-purple drac-btn-sm\\" color=\\"purple\\">
       small
     </button>
   </div>
   <div style=\\"margin-bottom: 10px\\" class=\\"drac-box\\">
-    <button class=\\"drac-btn drac-bg-purple drac-btn drac-btn-xs\\" color=\\"purple\\">
+    <button class=\\"drac-btn drac-bg-purple drac-btn-xs\\" color=\\"purple\\">
       xsmall
     </button>
   </div>
@@ -526,17 +490,13 @@ Object {
   "docs": "",
   "html": "<div class=\\"drac-box\\">
   <div style=\\"margin-bottom: 10px\\" class=\\"drac-box\\">
-    <button
-      class=\\"drac-btn drac-bg-purple drac-btn drac-btn\\"
-      variant=\\"normal\\"
-      color=\\"purple\\"
-    >
+    <button class=\\"drac-btn drac-bg-purple\\" variant=\\"normal\\" color=\\"purple\\">
       normal
     </button>
   </div>
   <div style=\\"margin-bottom: 10px\\" class=\\"drac-box\\">
     <button
-      class=\\"drac-btn drac-bg-purple drac-btn-outline drac-btn drac-text-purple\\"
+      class=\\"drac-btn drac-bg-purple drac-btn-outline drac-text-purple\\"
       variant=\\"outline\\"
       color=\\"purple\\"
     >
@@ -545,7 +505,7 @@ Object {
   </div>
   <div style=\\"margin-bottom: 10px\\" class=\\"drac-box\\">
     <button
-      class=\\"drac-btn drac-bg-purple-transparent drac-btn-ghost drac-btn drac-text-purple\\"
+      class=\\"drac-btn drac-bg-purple-transparent drac-btn-ghost drac-text-purple\\"
       variant=\\"ghost\\"
       color=\\"purple\\"
     >

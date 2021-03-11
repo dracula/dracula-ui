@@ -1,4 +1,4 @@
-import cx from 'classnames'
+import cx from 'classnames/dedupe'
 import { mapValues } from 'lodash'
 import React, { HTMLAttributes } from 'react'
 import { colors } from '../../base/colors'

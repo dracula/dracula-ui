@@ -1,4 +1,4 @@
-import cx from 'classnames'
+import cx from 'classnames/dedupe'
 import { first, last } from 'lodash'
 import React, { HTMLAttributes } from 'react'
 import { colors as backgroundColors } from '../../base/colors'
