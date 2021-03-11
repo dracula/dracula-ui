@@ -3,7 +3,7 @@
   "type": "page",
   "id": "Button",
   "name": "Button",
-  "last_updated": "2021-03-11T06:21:38.009Z",
+  "last_updated": "2021-03-11T06:43:38.763Z",
   "last_updated_by": "System",
   "description": "The Button component triggers actions, behaviors, or events based\non user input.",
   "related_entity_ids": [],
@@ -122,10 +122,10 @@
       "required": false,
       "type": { "name": "boolean | undefined" }
     },
-    "is": {
+    "as": {
       "defaultValue": null,
       "description": "",
-      "name": "is",
+      "name": "as",
       "parent": {
         "fileName": "src/components/Button/Button.tsx",
         "name": "ButtonProps"
@@ -218,10 +218,10 @@
         "required": false,
         "type": { "name": "boolean | undefined" }
       },
-      "is": {
+      "as": {
         "defaultValue": null,
         "description": "",
-        "name": "is",
+        "name": "as",
         "parent": {
           "fileName": "src/components/Button/Button.tsx",
           "name": "ButtonProps"

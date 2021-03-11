@@ -4,6 +4,7 @@ declare const _default: {
 };
 export default _default;
 export declare const ButtonNormal: () => JSX.Element;
+export declare const ButtonAsAnchor: () => JSX.Element;
 export declare const ButtonSizes: () => JSX.Element;
 export declare const ButtonVariants: () => JSX.Element;
 export declare const ButtonDisabled: () => JSX.Element;
