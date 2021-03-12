@@ -4,4 +4,6 @@ node_modules
 .cache
 dist
 
-/dsp/assets/
+/dsp/assets/svgs/*
+/dsp/assets/html/*
+/dsp/assets/*.png
