@@ -18,6 +18,8 @@ interface Documentation {
 
 jest.setTimeout(10000)
 
+const RECORDING = process.env.RECORDING
+
 export function siteDocs<T>(
   componentClass: React.FunctionComponent<T>,
   documentation: Documentation
@@ -29,18 +31,21 @@ export function siteDocs<T>(
     let browser: puppeteer.Browser
 
     beforeAll(async () => {
-      if (process.env.SCREENSHOT) {
-        browser = await puppeteer.launch({ headless: true, devtools: true })
+      if (!RECORDING) {
+        return
       }
-    })
 
-    afterAll(() => {
-      browser && browser.close()
+      browser = await puppeteer.launch({ headless: true, devtools: true })
     })
 
     let examples: Record<string, ComponentExample> = {}
 
     afterAll(async () => {
+      if (!RECORDING) {
+        return
+      }
+
+      await browser.close()
       const docGen = getDocGen(name)
       const dsp = toDSP(name, examples, docGen)
 
@@ -61,7 +66,7 @@ export function siteDocs<T>(
       )
       expect(snapshot).toMatchSnapshot()
 
-      if (process.env.SCREENSHOT) {
+      if (RECORDING) {
         const [screenshot, svg] = await componentScreenshot(
           browser,
           snapshot,
@@ -90,7 +95,7 @@ export function siteDocs<T>(
         )
         expect(snapshot).toMatchSnapshot()
 
-        if (process.env.SCREENSHOT) {
+        if (RECORDING) {
           const [screenshot, svg] = await componentScreenshot(
             browser,
             snapshot,

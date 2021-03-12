@@ -8,7 +8,7 @@
       "type": "page",
       "id": "Avatar",
       "name": "Avatar",
-      "last_updated": "2021-03-11T15:27:59.759Z",
+      "last_updated": "2021-03-12T05:15:33.214Z",
       "last_updated_by": "System",
       "description": "The Avatar component is used to represent a user.\n\nIt displays a profile picture, or falls back to the user's initials\nif a profile pic is not provided.",
       "related_entity_ids": [],
@@ -278,7 +278,7 @@
       "type": "page",
       "id": "Box",
       "name": "Box",
-      "last_updated": "2021-03-11T15:27:54.297Z",
+      "last_updated": "2021-03-12T05:15:30.183Z",
       "last_updated_by": "System",
       "description": "Box is the most primitive component of Dracula UI.\nUsing Box allows for consumers of the components library to compose\nmore complex patterns, components, and UIs.\n\nBox includes built-in Color and Spacing properties that make building\ncomplex components convenient and consistent.",
       "related_entity_ids": [],
@@ -310,6 +310,14 @@
           "svgData": "./dsp/assets/svgs/BoxColors.svg"
         },
         {
+          "title": "Rounded",
+          "html": "<div style=\"display: flex; flex-direction: row\">\n  <div\n    color=\"purple\"\n    rounded=\"none\"\n    style=\"width: 250px; height: 250px; margin-right: 20px\"\n    class=\"drac-box drac-bg-purple drac-rounded-none\"\n  ></div>\n  <div\n    color=\"purple\"\n    rounded=\"sm\"\n    style=\"width: 250px; height: 250px; margin-right: 20px\"\n    class=\"drac-box drac-bg-purple drac-rounded-sm\"\n  ></div>\n  <div\n    color=\"purple\"\n    rounded=\"base\"\n    style=\"width: 250px; height: 250px; margin-right: 20px\"\n    class=\"drac-box drac-bg-purple drac-rounded\"\n  ></div>\n  <div\n    color=\"purple\"\n    rounded=\"lg\"\n    style=\"width: 250px; height: 250px; margin-right: 20px\"\n    class=\"drac-box drac-bg-purple drac-rounded-lg\"\n  ></div>\n  <div\n    color=\"purple\"\n    rounded=\"xl\"\n    style=\"width: 250px; height: 250px; margin-right: 20px\"\n    class=\"drac-box drac-bg-purple drac-rounded-xl\"\n  ></div>\n  <div\n    color=\"purple\"\n    rounded=\"2xl\"\n    style=\"width: 250px; height: 250px; margin-right: 20px\"\n    class=\"drac-box drac-bg-purple drac-rounded-2xl\"\n  ></div>\n  <div\n    color=\"purple\"\n    rounded=\"3xl\"\n    style=\"width: 250px; height: 250px; margin-right: 20px\"\n    class=\"drac-box drac-bg-purple drac-rounded-3xl\"\n  ></div>\n  <div\n    color=\"purple\"\n    rounded=\"full\"\n    style=\"width: 250px; height: 250px; margin-right: 20px\"\n    class=\"drac-box drac-bg-purple drac-rounded-full\"\n  ></div>\n</div>\n",
+          "react": "<div style={{ display: \"flex\", flexDirection: \"row\" }}>\n  <Box\n    color=\"purple\"\n    rounded=\"none\"\n    style={{ width: 250, height: 250, marginRight: 20 }}\n  />\n  <Box\n    color=\"purple\"\n    rounded=\"sm\"\n    style={{ width: 250, height: 250, marginRight: 20 }}\n  />\n  <Box\n    color=\"purple\"\n    rounded=\"base\"\n    style={{ width: 250, height: 250, marginRight: 20 }}\n  />\n  <Box\n    color=\"purple\"\n    rounded=\"lg\"\n    style={{ width: 250, height: 250, marginRight: 20 }}\n  />\n  <Box\n    color=\"purple\"\n    rounded=\"xl\"\n    style={{ width: 250, height: 250, marginRight: 20 }}\n  />\n  <Box\n    color=\"purple\"\n    rounded=\"2xl\"\n    style={{ width: 250, height: 250, marginRight: 20 }}\n  />\n  <Box\n    color=\"purple\"\n    rounded=\"3xl\"\n    style={{ width: 250, height: 250, marginRight: 20 }}\n  />\n  <Box\n    color=\"purple\"\n    rounded=\"full\"\n    style={{ width: 250, height: 250, marginRight: 20 }}\n  />\n</div>;\n",
+          "docs": "",
+          "screenshot": "./dsp/assets/BoxRounded.png",
+          "svgData": "./dsp/assets/svgs/BoxRounded.svg"
+        },
+        {
           "title": "Generic Elements",
           "html": "<div>\n  <button as=\"button\" color=\"pinkPurple\" class=\"drac-box drac-bg-pink-purple\">\n    Button</button\n  ><a as=\"a\" color=\"green\" href=\"#\" class=\"drac-box drac-bg-green\">Link</a>\n</div>\n",
           "react": "<div>\n  <Box as=\"button\" color=\"pinkPurple\">\n    Button\n  </Box>\n  <Box as=\"a\" color=\"green\" href=\"#\">\n    Link\n  </Box>\n</div>;\n",
@@ -336,6 +344,25 @@
           "required": false,
           "type": {
             "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+          }
+        },
+        "rounded": {
+          "defaultValue": null,
+          "description": "The border radius.",
+          "name": "rounded",
+          "parent": {
+            "fileName": "src/components/Box/Box.tsx",
+            "name": "BoxProps"
+          },
+          "declarations": [
+            {
+              "fileName": "src/components/Box/Box.tsx",
+              "name": "BoxProps"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"none\" | \"sm\" | \"base\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"full\" | undefined"
           }
         },
         "spacing": {
@@ -402,6 +429,25 @@
               "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
             }
           },
+          "rounded": {
+            "defaultValue": null,
+            "description": "The border radius.",
+            "name": "rounded",
+            "parent": {
+              "fileName": "src/components/Box/Box.tsx",
+              "name": "BoxProps"
+            },
+            "declarations": [
+              {
+                "fileName": "src/components/Box/Box.tsx",
+                "name": "BoxProps"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"none\" | \"sm\" | \"base\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"full\" | undefined"
+            }
+          },
           "spacing": {
             "defaultValue": null,
             "description": "Dracula UI standard spacing properties.",
@@ -448,7 +494,7 @@
       "type": "page",
       "id": "Button",
       "name": "Button",
-      "last_updated": "2021-03-11T15:28:04.286Z",
+      "last_updated": "2021-03-12T05:15:32.221Z",
       "last_updated_by": "System",
       "description": "The Button component triggers actions, behaviors, or events based\non user input.",
       "related_entity_ids": [],
@@ -702,7 +748,7 @@
       "type": "page",
       "id": "Checkbox",
       "name": "Checkbox",
-      "last_updated": "2021-03-11T15:27:56.062Z",
+      "last_updated": "2021-03-12T05:15:29.141Z",
       "last_updated_by": "System",
       "description": "Checkbox is a styled HTML Input of type checkbox.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep check boxes accessible.",
       "related_entity_ids": [],
@@ -872,7 +918,7 @@
       "type": "page",
       "id": "Divider",
       "name": "Divider",
-      "last_updated": "2021-03-11T15:28:05.041Z",
+      "last_updated": "2021-03-12T05:15:37.928Z",
       "last_updated_by": "System",
       "description": "Dividers are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
       "related_entity_ids": [],
@@ -958,7 +1004,7 @@
       "type": "page",
       "id": "Heading",
       "name": "Heading",
-      "last_updated": "2021-03-11T15:28:05.763Z",
+      "last_updated": "2021-03-12T05:15:39.078Z",
       "last_updated_by": "System",
       "description": "Heading is used to display headlines and other forms of hierarchical Text.\n\nHeadings are similar to the base Text component, but restricted to certain\nsizes and font weight.",
       "related_entity_ids": [],
@@ -1166,7 +1212,7 @@
       "type": "page",
       "id": "Input",
       "name": "Input",
-      "last_updated": "2021-03-11T15:27:58.421Z",
+      "last_updated": "2021-03-12T05:15:31.074Z",
       "last_updated_by": "System",
       "description": "Input is a styled HTML Input.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep inputs accessible.",
       "related_entity_ids": [],
@@ -1344,7 +1390,7 @@
       "type": "page",
       "id": "List",
       "name": "List",
-      "last_updated": "2021-03-11T15:28:06.082Z",
+      "last_updated": "2021-03-12T05:15:37.684Z",
       "last_updated_by": "System",
       "description": "Lists are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
       "related_entity_ids": [],
@@ -1476,7 +1522,7 @@
       "type": "page",
       "id": "Paragraph",
       "name": "Paragraph",
-      "last_updated": "2021-03-11T15:28:06.361Z",
+      "last_updated": "2021-03-12T05:15:40.043Z",
       "last_updated_by": "System",
       "description": "Paragraph is a semantic component used for blocks of text with\nsemantic meaning.\n\nParagraph accepts all the same customization options as Text.",
       "related_entity_ids": [],
@@ -1730,7 +1776,7 @@
       "type": "page",
       "id": "Radio",
       "name": "Radio",
-      "last_updated": "2021-03-11T15:27:55.132Z",
+      "last_updated": "2021-03-12T05:15:28.543Z",
       "last_updated_by": "System",
       "description": "Radio is a styled HTML Input of type radio.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep Radios accessible.",
       "related_entity_ids": [],
@@ -1862,7 +1908,7 @@
       "type": "page",
       "id": "Select",
       "name": "Select",
-      "last_updated": "2021-03-11T15:28:02.898Z",
+      "last_updated": "2021-03-12T05:15:35.644Z",
       "last_updated_by": "System",
       "description": "Select is a styled HTML Select element.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS, and small SVG component in order to keep Selects accessible.",
       "related_entity_ids": [],
@@ -2086,7 +2132,7 @@
       "type": "page",
       "id": "Switch",
       "name": "Switch",
-      "last_updated": "2021-03-11T15:27:56.251Z",
+      "last_updated": "2021-03-12T05:15:29.554Z",
       "last_updated_by": "System",
       "description": "Switch is an abstraction pattern that represents toggles.\n\nUse the Switch component as an alternative for Checkboxes or Radios\nwhen options are binary.\n\nSwitches are implemented as Checkboxes under the hood,\nand work normally with forms.",
       "related_entity_ids": [],
@@ -2256,7 +2302,7 @@
       "type": "page",
       "id": "Table",
       "name": "Table",
-      "last_updated": "2021-03-11T15:28:01.864Z",
+      "last_updated": "2021-03-12T05:15:34.404Z",
       "last_updated_by": "System",
       "description": "Tables are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
       "related_entity_ids": [],
@@ -2388,7 +2434,7 @@
       "type": "page",
       "id": "Tabs",
       "name": "Tabs",
-      "last_updated": "2021-03-11T15:27:55.093Z",
+      "last_updated": "2021-03-12T05:15:26.151Z",
       "last_updated_by": "System",
       "description": "Tabs are horizontal navigation elements used to display\ncontent within the same page.",
       "related_entity_ids": [],
@@ -2474,7 +2520,7 @@
       "type": "page",
       "id": "Text",
       "name": "Text",
-      "last_updated": "2021-03-11T15:27:58.805Z",
+      "last_updated": "2021-03-12T05:15:31.200Z",
       "last_updated_by": "System",
       "description": "Text is the base component for any sort of text.\n\nConsumers of this component can control, the color, size,\nweight, and spacing of Text.\n\nUse this component for generic, and non-hierarchical text that is\nto be displayed on a page, or as part of other complex components\nor UI patterns",
       "related_entity_ids": [],

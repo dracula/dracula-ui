@@ -3,7 +3,7 @@
   "type": "page",
   "id": "Paragraph",
   "name": "Paragraph",
-  "last_updated": "2021-03-11T15:28:06.361Z",
+  "last_updated": "2021-03-12T05:15:40.043Z",
   "last_updated_by": "System",
   "description": "Paragraph is a semantic component used for blocks of text with\nsemantic meaning.\n\nParagraph accepts all the same customization options as Text.",
   "related_entity_ids": [],

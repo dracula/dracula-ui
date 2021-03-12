@@ -7,6 +7,12 @@ module.exports = {
     '.+\\.(css|styl|less|sass|scss)$': 'jest-transform-css'
   },
 
+  globals: {
+    'ts-jest': {
+      isolatedModules: true
+    }
+  },
+
   moduleNameMapper: {
     '@/(.+)': '<rootdir>/../../src/$1'
   }
