@@ -1,5 +1,5 @@
 .drac-input {
-  border-radius: var(--corner-radius);
+  border-radius: var(--rounded-lg);
   box-sizing: border-box;
   width: 100%;
   outline: none;

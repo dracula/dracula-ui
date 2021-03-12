@@ -1,7 +1,7 @@
 .drac-btn {
   appearance: none;
   border: none;
-  border-radius: var(--corner-radius);
+  border-radius: var(--rounded-lg);
   box-sizing: border-box;
   display: inline-block;
 }

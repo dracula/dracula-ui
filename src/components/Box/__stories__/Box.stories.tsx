@@ -1,5 +1,5 @@
 import React from 'react'
-import { BoxProps, Box } from '@/index'
+import { BoxProps, Box, roundedBorders } from '@/index'
 import { colors } from '@/base/colors'
 
 export default {
@@ -39,6 +39,27 @@ export const Boxes = () => {
           h4
         </Box>
       </div>
+    </div>
+  )
+}
+
+export const BoxRounded = () => {
+  return (
+    <div style={{ display: 'flex', flexDirection: 'row' }}>
+      {Object.keys(roundedBorders).map((rounded) => {
+        return (
+          <Box
+            key={rounded}
+            color={"purple" as BoxProps['color']}
+            rounded={rounded as BoxProps['rounded']}
+            style={{
+              width: 250,
+              height: 250,
+              marginRight: 20
+            }}
+          />
+        )
+      })}
     </div>
   )
 }

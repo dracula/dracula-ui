@@ -1,5 +1,5 @@
 .drac-select {
-  border-radius: var(--corner-radius);
+  border-radius: var(--rounded-lg);
   background: var(--blackSecondary);
   border: 0.3rem solid transparent;
   box-sizing: border-box;

@@ -6,6 +6,9 @@ import {
   buildSnapshot,
   SnapshotBuilder
 } from '../../../story-helpers/render-component'
+import {
+  BoxRounded
+} from '@/components/Box/__stories__/Box.stories'
 
 describe('Box', () => {
   it('renders without crashing', () => {
@@ -22,6 +25,7 @@ siteDocs(Box, {
   variations() {
     return [
       buildSnapshot('Colors', () => <Box color="pinkPurple">Pink Purple</Box>),
+      buildSnapshot('Rounded', BoxRounded),
       buildSnapshot('Generic Elements', () => (
         <div>
           <Box as="button" color="pinkPurple">

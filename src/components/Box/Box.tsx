@@ -5,6 +5,17 @@ import { spacingClasses, SpacingPropType } from '../../base/spacing'
 
 type Element = HTMLElementTagNameMap
 
+export const roundedBorders = {
+  none: 'drac-rounded-none',
+  sm: 'drac-rounded-sm',
+  base: 'drac-rounded',
+  lg: 'drac-rounded-lg',
+  xl: 'drac-rounded-xl',
+  '2xl': 'drac-rounded-2xl',
+  '3xl': 'drac-rounded-3xl',
+  full: 'drac-rounded-full',
+}
+
 /**
  * Box Props
  */
@@ -12,6 +23,9 @@ export interface BoxProps<K extends keyof Element = 'div'>
   extends AllHTMLAttributes<K> {
   /** The background color. */
   color?: keyof typeof colors
+
+  /** The border radius. */
+  rounded?: keyof typeof roundedBorders
 
   /** Dracula UI standard spacing properties. */
   spacing?: SpacingPropType
@@ -34,6 +48,7 @@ export function Box<T extends keyof Element>(props: BoxProps<T>) {
     className: cx(
       `drac-box`,
       props.color && colors[props.color],
+      props.rounded && roundedBorders[props.rounded],
       ...spacingClasses(props.spacing),
       props.className
     )

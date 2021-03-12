@@ -43,3 +43,104 @@ Object {
   "title": "Generic Elements",
 }
 `;
+
+exports[`Site: Box Rounded 1`] = `
+Object {
+  "docs": "",
+  "html": "<div style=\\"display: flex; flex-direction: row\\">
+  <div
+    color=\\"purple\\"
+    rounded=\\"none\\"
+    style=\\"width: 250px; height: 250px; margin-right: 20px\\"
+    class=\\"drac-box drac-bg-purple drac-rounded-none\\"
+  ></div>
+  <div
+    color=\\"purple\\"
+    rounded=\\"sm\\"
+    style=\\"width: 250px; height: 250px; margin-right: 20px\\"
+    class=\\"drac-box drac-bg-purple drac-rounded-sm\\"
+  ></div>
+  <div
+    color=\\"purple\\"
+    rounded=\\"base\\"
+    style=\\"width: 250px; height: 250px; margin-right: 20px\\"
+    class=\\"drac-box drac-bg-purple drac-rounded\\"
+  ></div>
+  <div
+    color=\\"purple\\"
+    rounded=\\"lg\\"
+    style=\\"width: 250px; height: 250px; margin-right: 20px\\"
+    class=\\"drac-box drac-bg-purple drac-rounded-lg\\"
+  ></div>
+  <div
+    color=\\"purple\\"
+    rounded=\\"xl\\"
+    style=\\"width: 250px; height: 250px; margin-right: 20px\\"
+    class=\\"drac-box drac-bg-purple drac-rounded-xl\\"
+  ></div>
+  <div
+    color=\\"purple\\"
+    rounded=\\"2xl\\"
+    style=\\"width: 250px; height: 250px; margin-right: 20px\\"
+    class=\\"drac-box drac-bg-purple drac-rounded-2xl\\"
+  ></div>
+  <div
+    color=\\"purple\\"
+    rounded=\\"3xl\\"
+    style=\\"width: 250px; height: 250px; margin-right: 20px\\"
+    class=\\"drac-box drac-bg-purple drac-rounded-3xl\\"
+  ></div>
+  <div
+    color=\\"purple\\"
+    rounded=\\"full\\"
+    style=\\"width: 250px; height: 250px; margin-right: 20px\\"
+    class=\\"drac-box drac-bg-purple drac-rounded-full\\"
+  ></div>
+</div>
+",
+  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"row\\" }}>
+  <Box
+    color=\\"purple\\"
+    rounded=\\"none\\"
+    style={{ width: 250, height: 250, marginRight: 20 }}
+  />
+  <Box
+    color=\\"purple\\"
+    rounded=\\"sm\\"
+    style={{ width: 250, height: 250, marginRight: 20 }}
+  />
+  <Box
+    color=\\"purple\\"
+    rounded=\\"base\\"
+    style={{ width: 250, height: 250, marginRight: 20 }}
+  />
+  <Box
+    color=\\"purple\\"
+    rounded=\\"lg\\"
+    style={{ width: 250, height: 250, marginRight: 20 }}
+  />
+  <Box
+    color=\\"purple\\"
+    rounded=\\"xl\\"
+    style={{ width: 250, height: 250, marginRight: 20 }}
+  />
+  <Box
+    color=\\"purple\\"
+    rounded=\\"2xl\\"
+    style={{ width: 250, height: 250, marginRight: 20 }}
+  />
+  <Box
+    color=\\"purple\\"
+    rounded=\\"3xl\\"
+    style={{ width: 250, height: 250, marginRight: 20 }}
+  />
+  <Box
+    color=\\"purple\\"
+    rounded=\\"full\\"
+    style={{ width: 250, height: 250, marginRight: 20 }}
+  />
+</div>;
+",
+  "title": "Rounded",
+}
+`;

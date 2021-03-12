@@ -4,7 +4,7 @@
 
 .drac-avatar {
   box-sizing: border-box;
-  border-radius: 100%;
+  border-radius: var(--rounded-full);
   border-style: solid;
   border-width: 1px;
 
