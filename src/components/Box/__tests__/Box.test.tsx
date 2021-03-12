@@ -1,42 +1,24 @@
 import { Box } from '@/components/Box/Box'
+import { BoxRounded } from '@/components/Box/__stories__/Box.stories'
 import React from 'react'
-import * as ReactDOM from 'react-dom'
-import { siteDocs } from '../../../documentation/site-docs'
-import {
-  buildSnapshot,
-  SnapshotBuilder
-} from '../../../story-helpers/render-component'
-import {
-  BoxRounded
-} from '@/components/Box/__stories__/Box.stories'
+import { snapshot } from '../../../documentation/render-component'
+import { docs } from '../../../documentation/site-docs'
 
-describe('Box', () => {
-  it('renders without crashing', () => {
-    const div = document.createElement('div')
-    ReactDOM.render(<Box is="button" color="white" />, div)
-    ReactDOM.unmountComponentAtNode(div)
-  })
-})
+docs(Box, {
+  basic: () => snapshot('Usage', () => <Box color="purple">Dracula</Box>),
+  variations: () => [
+    snapshot('Colors', () => <Box color="pinkPurple">Pink Purple</Box>),
+    snapshot('Rounded', BoxRounded),
+    snapshot('Generic Elements', () => (
+      <div>
+        <Box as="button" color="pinkPurple">
+          Button
+        </Box>
 
-siteDocs(Box, {
-  basicUsage() {
-    return buildSnapshot('Usage', () => <Box color="purple">Dracula</Box>)
-  },
-  variations() {
-    return [
-      buildSnapshot('Colors', () => <Box color="pinkPurple">Pink Purple</Box>),
-      buildSnapshot('Rounded', BoxRounded),
-      buildSnapshot('Generic Elements', () => (
-        <div>
-          <Box as="button" color="pinkPurple">
-            Button
-          </Box>
-
-          <Box as="a" color="green" href="#">
-            Link
-          </Box>
-        </div>
-      ))
-    ] as SnapshotBuilder[]
-  }
+        <Box as="a" color="green" href="#">
+          Link
+        </Box>
+      </div>
+    ))
+  ]
 })

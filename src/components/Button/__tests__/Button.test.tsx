@@ -1,25 +1,18 @@
-import React from 'react'
-import { Button } from '../Button'
 import {
-  buildSnapshot,
-  SnapshotBuilder
-} from '@/story-helpers/render-component'
-import { siteDocs } from '@/documentation/site-docs'
-import {
-  ButtonVariants,
+  ButtonColors,
   ButtonSizes,
-  ButtonColors
+  ButtonVariants
 } from '@/components/Button/__stories__/Button.stories'
+import { docs } from '@/documentation/site-docs'
+import React from 'react'
+import { snapshot } from '../../../documentation/render-component'
+import { Button } from '../Button'
 
-siteDocs(Button, {
-  basicUsage() {
-    return buildSnapshot('Usage', () => <Button color="purple">Dracula</Button>)
-  },
-  variations() {
-    return [
-      buildSnapshot('Variants', ButtonVariants),
-      buildSnapshot('Sizes', ButtonSizes),
-      buildSnapshot('Colors', ButtonColors)
-    ] as SnapshotBuilder[]
-  }
+docs(Button, {
+  basic: () => snapshot('Usage', () => <Button color="purple">Dracula</Button>),
+  variations: () => [
+    snapshot('Variants', ButtonVariants),
+    snapshot('Sizes', ButtonSizes),
+    snapshot('Colors', ButtonColors)
+  ]
 })

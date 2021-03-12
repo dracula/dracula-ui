@@ -1,19 +1,16 @@
 import { Divider } from '@/components/Divider/Divider'
 import {
-  buildSnapshot,
-  SnapshotBuilder
-} from '@/story-helpers/render-component'
-import { siteDocs } from '@/documentation/site-docs'
-import {
-  DividerNormal,
-  DividerColors
+  DividerColors,
+  DividerNormal
 } from '@/components/Divider/__stories__/Divider.stories'
+import { docs } from '@/documentation/site-docs'
+import { snapshot } from '../../../documentation/render-component'
 
-siteDocs(Divider, {
-  basicUsage() {
-    return buildSnapshot('Usage', DividerNormal)
+docs(Divider, {
+  basic() {
+    return snapshot('Usage', DividerNormal)
   },
   variations() {
-    return [buildSnapshot('Colors', DividerColors)] as SnapshotBuilder[]
+    return [snapshot('Colors', DividerColors)]
   }
 })

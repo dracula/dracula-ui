@@ -2,25 +2,25 @@ import {
   ComponentExample,
   renderSnapshot,
   SnapshotBuilder
-} from '../story-helpers/render-component'
+} from './render-component'
 import React from 'react'
 import fs from 'fs-extra'
-import { pretty } from '../story-helpers/pretty'
+import { pretty } from './pretty'
 import { getDocGen } from '../documentation/docgen/doc-generator'
 import { toDSP } from '../documentation/dsp/component-generator'
 import puppeteer from 'puppeteer'
 import { componentScreenshot } from './screenshots/component-screenshot'
 
 interface Documentation {
-  basicUsage: () => SnapshotBuilder
-  variations: () => Array<SnapshotBuilder>
+  basic: () => SnapshotBuilder
+  variations: () => Array<SnapshotBuilder> | SnapshotBuilder
 }
 
 jest.setTimeout(10000)
 
 const RECORDING = process.env.RECORDING
 
-export function siteDocs<T>(
+export function docs<T>(
   componentClass: React.FunctionComponent<T>,
   documentation: Documentation
 ) {
@@ -58,7 +58,7 @@ export function siteDocs<T>(
     })
 
     test('Basic Usage', async () => {
-      const variation = documentation.basicUsage()
+      const variation = documentation.basic()
       const snapshot = renderSnapshot(
         variation.title,
         variation.comp,
@@ -84,7 +84,9 @@ export function siteDocs<T>(
       }
     })
 
-    const variations = documentation.variations()
+    const variations: SnapshotBuilder[] = ([] as SnapshotBuilder[]).concat(
+      documentation.variations()
+    )
 
     variations.forEach((variation) => {
       test(variation.title, async () => {

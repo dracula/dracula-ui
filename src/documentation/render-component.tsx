@@ -20,7 +20,7 @@ export type SnapshotBuilder = {
   title: string
 }
 
-export function buildSnapshot(
+export function snapshot(
   title: string,
   comp: () => React.ReactElement,
   docs: string = ''

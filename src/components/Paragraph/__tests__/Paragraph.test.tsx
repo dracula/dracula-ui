@@ -1,25 +1,22 @@
 import { Paragraph } from '@/components/Paragraph/Paragraph'
 import {
-  buildSnapshot,
-  SnapshotBuilder
-} from '@/story-helpers/render-component'
-import { siteDocs } from '@/documentation/site-docs'
-import {
-  ParagraphSizes,
   ParagraphBasic,
-  ParagraphWeights,
-  ParagraphColors
+  ParagraphColors,
+  ParagraphSizes,
+  ParagraphWeights
 } from '@/components/Paragraph/__stories__/Paragraph.stories'
+import { docs } from '@/documentation/site-docs'
+import { snapshot } from '../../../documentation/render-component'
 
-siteDocs(Paragraph, {
-  basicUsage() {
-    return buildSnapshot('Usage', ParagraphBasic)
+docs(Paragraph, {
+  basic() {
+    return snapshot('Usage', ParagraphBasic)
   },
   variations() {
     return [
-      buildSnapshot('Colors', ParagraphColors),
-      buildSnapshot('Weights', ParagraphWeights),
-      buildSnapshot('Sizes', ParagraphSizes)
-    ] as SnapshotBuilder[]
+      snapshot('Colors', ParagraphColors),
+      snapshot('Weights', ParagraphWeights),
+      snapshot('Sizes', ParagraphSizes)
+    ]
   }
 })

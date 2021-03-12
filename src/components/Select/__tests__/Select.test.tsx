@@ -1,9 +1,5 @@
 import { Select } from '@/components/Select/Select'
-import {
-  buildSnapshot,
-  SnapshotBuilder
-} from '@/story-helpers/render-component'
-import { siteDocs } from '@/documentation/site-docs'
+import { docs } from '@/documentation/site-docs'
 import {
   SelectVariants,
   SelectSizes,
@@ -11,17 +7,18 @@ import {
   SelectColors,
   SelectBasic
 } from '@/components/Select/__stories__/Select.stories'
+import { snapshot } from '../../../documentation/render-component'
 
-siteDocs(Select, {
-  basicUsage() {
-    return buildSnapshot('Usage', SelectBasic)
+docs(Select, {
+  basic() {
+    return snapshot('Usage', SelectBasic)
   },
   variations() {
     return [
-      buildSnapshot('Sizes', SelectSizes),
-      buildSnapshot('Disabled', SelectDisabled),
-      buildSnapshot('Colors', SelectColors),
-      buildSnapshot('Variants', SelectVariants)
-    ] as SnapshotBuilder[]
+      snapshot('Sizes', SelectSizes),
+      snapshot('Disabled', SelectDisabled),
+      snapshot('Colors', SelectColors),
+      snapshot('Variants', SelectVariants)
+    ]
   }
 })

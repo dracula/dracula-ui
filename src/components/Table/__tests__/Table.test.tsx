@@ -1,23 +1,20 @@
 import { Table } from '@/components/Table/Table'
 import {
-  buildSnapshot,
-  SnapshotBuilder
-} from '@/story-helpers/render-component'
-import { siteDocs } from '@/documentation/site-docs'
-import {
-  TableVariants,
+  TableBasic,
   TableColors,
-  TableBasic
+  TableVariants
 } from '@/components/Table/__stories__/Table.stories'
+import { docs } from '@/documentation/site-docs'
+import { snapshot } from '../../../documentation/render-component'
 
-siteDocs(Table, {
-  basicUsage() {
-    return buildSnapshot('Usage', TableBasic)
+docs(Table, {
+  basic() {
+    return snapshot('Usage', TableBasic)
   },
   variations() {
     return [
-      buildSnapshot('Colors', TableColors),
-      buildSnapshot('Variants', TableVariants)
-    ] as SnapshotBuilder[]
+      snapshot('Colors', TableColors),
+      snapshot('Variants', TableVariants)
+    ]
   }
 })

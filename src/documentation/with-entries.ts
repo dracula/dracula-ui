@@ -1,4 +1,4 @@
-import { SnapshotBuilder } from '../story-helpers/render-component'
+import { SnapshotBuilder } from './render-component'
 
 export function withEntries<T>(
   map: T,

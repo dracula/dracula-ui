@@ -1,25 +1,22 @@
 import { Input } from '@/components/Input/Input'
 import {
-  buildSnapshot,
-  SnapshotBuilder
-} from '@/story-helpers/render-component'
-import { siteDocs } from '@/documentation/site-docs'
-import {
-  InputVariants,
-  InputSizes,
+  InputBasic,
   InputColors,
-  InputBasic
+  InputSizes,
+  InputVariants
 } from '@/components/Input/__stories__/Input.stories'
+import { docs } from '@/documentation/site-docs'
+import { snapshot } from '../../../documentation/render-component'
 
-siteDocs(Input, {
-  basicUsage() {
-    return buildSnapshot('Usage', InputBasic)
+docs(Input, {
+  basic() {
+    return snapshot('Usage', InputBasic)
   },
   variations() {
     return [
-      buildSnapshot('Colors', InputColors),
-      buildSnapshot('Sizes', InputSizes),
-      buildSnapshot('Variants', InputVariants)
-    ] as SnapshotBuilder[]
+      snapshot('Colors', InputColors),
+      snapshot('Sizes', InputSizes),
+      snapshot('Variants', InputVariants)
+    ]
   }
 })

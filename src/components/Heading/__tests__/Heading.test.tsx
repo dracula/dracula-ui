@@ -1,23 +1,17 @@
 import { Heading } from '@/components/Heading/Heading'
 import {
-  buildSnapshot,
-  SnapshotBuilder
-} from '@/story-helpers/render-component'
-import { siteDocs } from '@/documentation/site-docs'
-import {
-  HeadingSizes,
   HeadingBasic,
-  HeadingColors
+  HeadingColors,
+  HeadingSizes
 } from '@/components/Heading/__stories__/Heading.stories'
+import { docs } from '@/documentation/site-docs'
+import { snapshot } from '../../../documentation/render-component'
 
-siteDocs(Heading, {
-  basicUsage() {
-    return buildSnapshot('Usage', HeadingBasic)
+docs(Heading, {
+  basic() {
+    return snapshot('Usage', HeadingBasic)
   },
   variations() {
-    return [
-      buildSnapshot('Sizes', HeadingSizes),
-      buildSnapshot('Colors', HeadingColors)
-    ] as SnapshotBuilder[]
+    return [snapshot('Sizes', HeadingSizes), snapshot('Colors', HeadingColors)]
   }
 })

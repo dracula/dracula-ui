@@ -1,23 +1,19 @@
 import { Avatar, AvatarBorderVariants } from '@/components/Avatar/Avatar'
-import {
-  buildSnapshot,
-  SnapshotBuilder
-} from '@/story-helpers/render-component'
-import { siteDocs } from '@/documentation/site-docs'
-import { withEntries } from '@/story-helpers/with-entries'
+import { docs } from '@/documentation/site-docs'
 import React from 'react'
+import { snapshot } from '../../../documentation/render-component'
+import { withEntries } from '../../../documentation/with-entries'
 
-siteDocs(Avatar, {
-  basicUsage() {
-    return buildSnapshot('basic usage', () => (
+docs(Avatar, {
+  basic: () =>
+    snapshot('basic usage', () => (
       <Avatar
         title="Netto Farah"
         src="https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg"
       />
-    ))
-  },
+    )),
   variations() {
-    const snap = buildSnapshot(
+    const snap = snapshot(
       'Custom colors',
       () => (
         <div>
@@ -30,7 +26,7 @@ siteDocs(Avatar, {
     `
     )
 
-    const variants = buildSnapshot(
+    const variants = snapshot(
       'Custom variants',
       () => (
         <div>
@@ -44,11 +40,11 @@ siteDocs(Avatar, {
     )
 
     const borders = withEntries(AvatarBorderVariants, (variant) => {
-      return buildSnapshot(`border: ${variant}`, () => (
+      return snapshot(`border: ${variant}`, () => (
         <Avatar title="Netto Farah" borderVariant={variant} />
       ))
     })
 
-    return [...borders, variants, snap] as SnapshotBuilder[]
+    return [...borders, variants, snap]
   }
 })

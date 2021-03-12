@@ -1,23 +1,17 @@
 import { List } from '@/components/List/List'
-import {
-  buildSnapshot,
-  SnapshotBuilder
-} from '@/story-helpers/render-component'
-import { siteDocs } from '@/documentation/site-docs'
+import { docs } from '@/documentation/site-docs'
 import {
   ListNormal,
   ListColors,
-  ListVariants,
+  ListVariants
 } from '@/components/List/__stories__/List.stories'
+import { snapshot } from '../../../documentation/render-component'
 
-siteDocs(List, {
-  basicUsage() {
-    return buildSnapshot('Usage', ListNormal)
+docs(List, {
+  basic() {
+    return snapshot('Usage', ListNormal)
   },
   variations() {
-    return [
-      buildSnapshot('Colors', ListColors),
-      buildSnapshot('Variants', ListVariants)
-    ] as SnapshotBuilder[]
+    return [snapshot('Colors', ListColors), snapshot('Variants', ListVariants)]
   }
 })

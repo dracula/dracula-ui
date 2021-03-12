@@ -1,23 +1,20 @@
 import { Radio } from '@/components/Radio/Radio'
-import {
-  buildSnapshot,
-  SnapshotBuilder
-} from '@/story-helpers/render-component'
-import { siteDocs } from '@/documentation/site-docs'
+import { docs } from '@/documentation/site-docs'
 import {
   RadioNormal,
   RadioDisabled,
   RadioColors
 } from '@/components/Radio/__stories__/Radio.stories'
+import { snapshot } from '../../../documentation/render-component'
 
-siteDocs(Radio, {
-  basicUsage() {
-    return buildSnapshot('Usage', RadioNormal)
+docs(Radio, {
+  basic() {
+    return snapshot('Usage', RadioNormal)
   },
   variations() {
     return [
-      buildSnapshot('Disabled', RadioDisabled),
-      buildSnapshot('Colors', RadioColors)
-    ] as SnapshotBuilder[]
+      snapshot('Disabled', RadioDisabled),
+      snapshot('Colors', RadioColors)
+    ]
   }
 })

@@ -1,23 +1,20 @@
 import { Switch } from '@/components/Switch/Switch'
 import {
-  buildSnapshot,
-  SnapshotBuilder
-} from '@/story-helpers/render-component'
-import { siteDocs } from '@/documentation/site-docs'
-import {
-  SwitchNormal,
+  SwitchColors,
   SwitchDisabled,
-  SwitchColors
+  SwitchNormal
 } from '@/components/Switch/__stories__/Switch.stories'
+import { docs } from '@/documentation/site-docs'
+import { snapshot } from '../../../documentation/render-component'
 
-siteDocs(Switch, {
-  basicUsage() {
-    return buildSnapshot('Usage', SwitchNormal)
+docs(Switch, {
+  basic() {
+    return snapshot('Usage', SwitchNormal)
   },
   variations() {
     return [
-      buildSnapshot('Disabled', SwitchDisabled),
-      buildSnapshot('Colors', SwitchColors)
-    ] as SnapshotBuilder[]
+      snapshot('Disabled', SwitchDisabled),
+      snapshot('Colors', SwitchColors)
+    ]
   }
 })

@@ -1,19 +1,12 @@
 import { Tabs } from '@/components/Tabs/Tabs'
 import {
-  buildSnapshot,
-  SnapshotBuilder
-} from '@/story-helpers/render-component'
-import { siteDocs } from '@/documentation/site-docs'
-import {
-  TabsNormal,
-  TabsColors
+  TabsColors,
+  TabsNormal
 } from '@/components/Tabs/__stories__/Tabs.stories'
+import { docs } from '@/documentation/site-docs'
+import { snapshot } from '../../../documentation/render-component'
 
-siteDocs(Tabs, {
-  basicUsage() {
-    return buildSnapshot('Usage', TabsNormal)
-  },
-  variations() {
-    return [buildSnapshot('Colors', TabsColors)] as SnapshotBuilder[]
-  }
+docs(Tabs, {
+  basic: () => snapshot('Usage', TabsNormal),
+  variations: () => snapshot('Colors', TabsColors)
 })

@@ -1,14 +1,11 @@
 import puppeteer from 'puppeteer'
-import {
-  ComponentExample,
-  SnapshotBuilder
-} from '../../story-helpers/render-component'
+import { ComponentExample, SnapshotBuilder } from '../render-component'
 
 // @ts-ignore
 import parseData from 'parse-data-url'
 
 import fs from 'fs-extra'
-import { pretty } from '../../story-helpers/pretty'
+import { pretty } from '../pretty'
 
 export async function componentScreenshot(
   browser: puppeteer.Browser,
