@@ -182,6 +182,16 @@ var Paragraph = function Paragraph(props) {
   return React.createElement("p", Object.assign({}, finalProps), props.children);
 };
 
+var roundedBorders = {
+  none: 'drac-rounded-none',
+  sm: 'drac-rounded-sm',
+  base: 'drac-rounded',
+  lg: 'drac-rounded-lg',
+  xl: 'drac-rounded-xl',
+  '2xl': 'drac-rounded-2xl',
+  '3xl': 'drac-rounded-3xl',
+  full: 'drac-rounded-full'
+};
 /**
  * Box is the most primitive component of Dracula UI.
  * Using Box allows for consumers of the components library to compose
@@ -195,7 +205,7 @@ function Box(props) {
   var _finalProps$as;
 
   var finalProps = _extends({}, props, {
-    className: cx.apply(void 0, ["drac-box", props.color && colors[props.color]].concat(spacingClasses(props.spacing), [props.className]))
+    className: cx.apply(void 0, ["drac-box", props.color && colors[props.color], props.rounded && roundedBorders[props.rounded]].concat(spacingClasses(props.spacing), [props.className]))
   });
 
   var as = (_finalProps$as = finalProps.as) != null ? _finalProps$as : 'div';
@@ -685,6 +695,7 @@ exports.inputVariants = inputVariants;
 exports.listColors = listColors;
 exports.listVariants = listVariants;
 exports.radioColors = radioColors;
+exports.roundedBorders = roundedBorders;
 exports.selectColors = selectColors;
 exports.selectSizes = selectSizes;
 exports.selectVariants = selectVariants;

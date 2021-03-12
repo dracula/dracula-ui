@@ -176,6 +176,16 @@ var Paragraph = function Paragraph(props) {
   return React.createElement("p", Object.assign({}, finalProps), props.children);
 };
 
+var roundedBorders = {
+  none: 'drac-rounded-none',
+  sm: 'drac-rounded-sm',
+  base: 'drac-rounded',
+  lg: 'drac-rounded-lg',
+  xl: 'drac-rounded-xl',
+  '2xl': 'drac-rounded-2xl',
+  '3xl': 'drac-rounded-3xl',
+  full: 'drac-rounded-full'
+};
 /**
  * Box is the most primitive component of Dracula UI.
  * Using Box allows for consumers of the components library to compose
@@ -189,7 +199,7 @@ function Box(props) {
   var _finalProps$as;
 
   var finalProps = _extends({}, props, {
-    className: cx.apply(void 0, ["drac-box", props.color && colors[props.color]].concat(spacingClasses(props.spacing), [props.className]))
+    className: cx.apply(void 0, ["drac-box", props.color && colors[props.color], props.rounded && roundedBorders[props.rounded]].concat(spacingClasses(props.spacing), [props.className]))
   });
 
   var as = (_finalProps$as = finalProps.as) != null ? _finalProps$as : 'div';
@@ -646,5 +656,5 @@ var List = function List(props) {
 };
 List.displayName = 'List';
 
-export { Avatar, AvatarBorderVariants, AvatarVariants, Badge, Box, Button, Card, Checkbox, Divider, Heading, Input, List, Paragraph, Radio, Select, Switch, Table, Tabs, Text, buttonSizes, buttonVariants, cardOrientations, cardVariants, checkboxColors, dividerColors, headingColors, headingSizes, inputColors, inputSizes, inputVariants, listColors, listVariants, radioColors, selectColors, selectSizes, selectVariants, switchColors, tableColors, tableVariants, tabsColors, textColors, textSizes, textWeights };
+export { Avatar, AvatarBorderVariants, AvatarVariants, Badge, Box, Button, Card, Checkbox, Divider, Heading, Input, List, Paragraph, Radio, Select, Switch, Table, Tabs, Text, buttonSizes, buttonVariants, cardOrientations, cardVariants, checkboxColors, dividerColors, headingColors, headingSizes, inputColors, inputSizes, inputVariants, listColors, listVariants, radioColors, roundedBorders, selectColors, selectSizes, selectVariants, switchColors, tableColors, tableVariants, tabsColors, textColors, textSizes, textWeights };
 //# sourceMappingURL=dracula-ui.esm.js.map

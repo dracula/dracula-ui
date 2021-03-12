@@ -2,12 +2,24 @@ import React, { AllHTMLAttributes } from 'react';
 import { colors } from '../../base/colors';
 import { SpacingPropType } from '../../base/spacing';
 declare type Element = HTMLElementTagNameMap;
+export declare const roundedBorders: {
+    none: string;
+    sm: string;
+    base: string;
+    lg: string;
+    xl: string;
+    '2xl': string;
+    '3xl': string;
+    full: string;
+};
 /**
  * Box Props
  */
 export interface BoxProps<K extends keyof Element = 'div'> extends AllHTMLAttributes<K> {
     /** The background color. */
     color?: keyof typeof colors;
+    /** The border radius. */
+    rounded?: keyof typeof roundedBorders;
     /** Dracula UI standard spacing properties. */
     spacing?: SpacingPropType;
     /** The HTML element to be used */
@@ -25,6 +37,8 @@ export declare function Box<T extends keyof Element>(props: BoxProps<T>): React.
     className: string;
     /** The background color. */
     color?: "white" | "cyan" | "green" | "orange" | "pink" | "purple" | "red" | "yellow" | "purpleCyan" | "yellowPink" | "cyanGreen" | "pinkPurple" | "animated" | undefined;
+    /** The border radius. */
+    rounded?: "base" | "none" | "sm" | "lg" | "xl" | "2xl" | "3xl" | "full" | undefined;
     /** Dracula UI standard spacing properties. */
     spacing?: "small" | "none" | "noneX" | "noneY" | "smallX" | "smallY" | "medium" | "mediumX" | "mediumY" | "large" | "largeX" | "largeY" | ("small" | "none" | "noneX" | "noneY" | "smallX" | "smallY" | "medium" | "mediumX" | "mediumY" | "large" | "largeX" | "largeY")[] | undefined;
     /** The HTML element to be used */
