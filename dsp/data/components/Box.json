@@ -3,7 +3,7 @@
   "type": "page",
   "id": "Box",
   "name": "Box",
-  "last_updated": "2021-03-12T03:12:52.240Z",
+  "last_updated": "2021-03-12T05:16:35.497Z",
   "last_updated_by": "System",
   "description": "Box is the most primitive component of Dracula UI.\nUsing Box allows for consumers of the components library to compose\nmore complex patterns, components, and UIs.\n\nBox includes built-in Color and Spacing properties that make building\ncomplex components convenient and consistent.",
   "related_entity_ids": [],
