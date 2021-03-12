@@ -29,11 +29,13 @@ export function siteDocs<T>(
     let browser: puppeteer.Browser
 
     beforeAll(async () => {
-      browser = await puppeteer.launch({ headless: true, devtools: true })
+      if (process.env.SCREENSHOT) {
+        browser = await puppeteer.launch({ headless: true, devtools: true })
+      }
     })
 
-    afterAll(async () => {
-      await browser.close()
+    afterAll(() => {
+      browser && browser.close()
     })
 
     let examples: Record<string, ComponentExample> = {}
@@ -59,15 +61,17 @@ export function siteDocs<T>(
       )
       expect(snapshot).toMatchSnapshot()
 
-      const [screenshot, svg] = await componentScreenshot(
-        browser,
-        snapshot,
-        null,
-        name
-      )
+      if (process.env.SCREENSHOT) {
+        const [screenshot, svg] = await componentScreenshot(
+          browser,
+          snapshot,
+          null,
+          name
+        )
 
-      snapshot.screenshot = screenshot
-      snapshot.svgData = svg
+        snapshot.screenshot = screenshot
+        snapshot.svgData = svg
+      }
 
       examples = {
         ...examples,
@@ -85,15 +89,18 @@ export function siteDocs<T>(
           variation.docs
         )
         expect(snapshot).toMatchSnapshot()
-        const [screenshot, svg] = await componentScreenshot(
-          browser,
-          snapshot,
-          variation,
-          name
-        )
 
-        snapshot.screenshot = screenshot
-        snapshot.svgData = svg
+        if (process.env.SCREENSHOT) {
+          const [screenshot, svg] = await componentScreenshot(
+            browser,
+            snapshot,
+            variation,
+            name
+          )
+
+          snapshot.screenshot = screenshot
+          snapshot.svgData = svg
+        }
 
         examples = {
           ...examples,
