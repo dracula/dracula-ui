@@ -20,7 +20,8 @@ export const listColors: ColorMap = {
 
 export const listVariants = {
   unordered: 'drac-list-unordered',
-  ordered: 'drac-list-ordered'
+  ordered: 'drac-list-ordered',
+  none: 'drac-list-none'
 }
 
 /**

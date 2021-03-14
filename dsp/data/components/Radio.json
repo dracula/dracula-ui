@@ -3,7 +3,7 @@
   "type": "page",
   "id": "Radio",
   "name": "Radio",
-  "last_updated": "2021-03-12T05:24:54.575Z",
+  "last_updated": "2021-03-13T21:18:43.425Z",
   "last_updated_by": "System",
   "description": "Radio is a styled HTML Input of type radio.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep Radios accessible.",
   "related_entity_ids": [],

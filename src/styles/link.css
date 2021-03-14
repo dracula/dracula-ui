@@ -1,0 +1,92 @@
+.drac-link {
+  text-decoration: none;
+}
+
+.drac-text-black--hover:hover {
+  color: var(--black);
+}
+.drac-text-white--hover:hover {
+  color: var(--white);
+}
+.drac-text-cyan--hover:hover {
+  color: var(--cyan);
+}
+.drac-text-green--hover:hover {
+  color: var(--green);
+}
+.drac-text-orange--hover:hover {
+  color: var(--orange);
+}
+.drac-text-pink--hover:hover {
+  color: var(--pink);
+}
+.drac-text-purple--hover:hover {
+  color: var(--purple);
+}
+.drac-text-red--hover:hover {
+  color: var(--red);
+}
+.drac-text-yellow--hover:hover {
+  color: var(--yellow);
+}
+.drac-text-purple-cyan--hover:hover {
+  background-image: linear-gradient(
+    var(--gradientDegree),
+    var(--purple) 0%,
+    var(--cyan) 100%
+  );
+
+  background-size: 100%;
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.drac-text-yellow-pink--hover:hover {
+  background-image: linear-gradient(
+    var(--gradientDegree),
+    var(--yellow) 0%,
+    var(--pink) 100%
+  );
+
+  background-size: 100%;
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.drac-text-cyan-green--hover:hover {
+  background-image: linear-gradient(
+    var(--gradientDegree),
+    var(--cyan) 0%,
+    var(--green) 100%
+  );
+
+  background-size: 100%;
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.drac-text-pink-purple--hover:hover {
+  background-image: linear-gradient(
+    var(--gradientDegree),
+    var(--pink) 0%,
+    var(--purple) 100%
+  );
+
+  background-size: 100%;
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}

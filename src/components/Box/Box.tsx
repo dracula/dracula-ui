@@ -1,7 +1,7 @@
 import cx from 'classnames/dedupe'
 import React, { AllHTMLAttributes } from 'react'
 import { colors } from '../../base/colors'
-import { spacingClasses, SpacingPropType } from '../../base/spacing'
+import { spacingClasses, SpacingPropType, marginClasses, MarginPropType } from '../../base/spacing'
 
 type Element = HTMLElementTagNameMap
 
@@ -30,6 +30,9 @@ export interface BoxProps<K extends keyof Element = 'div'>
   /** Dracula UI standard spacing properties. */
   spacing?: SpacingPropType
 
+  /** Dracula UI standard margin properties. */
+  margin?: MarginPropType
+
   /** The HTML element to be used */
   as?: K
 }
@@ -50,6 +53,7 @@ export function Box<T extends keyof Element>(props: BoxProps<T>) {
       props.color && colors[props.color],
       props.rounded && roundedBorders[props.rounded],
       ...spacingClasses(props.spacing),
+      ...marginClasses(props.margin),
       props.className
     )
   }

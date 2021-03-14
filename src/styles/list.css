@@ -69,3 +69,9 @@
 .drac-list-yellow.drac-list-ordered li::before {
   color: var(--yellow);
 }
+
+.drac-list-none {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}

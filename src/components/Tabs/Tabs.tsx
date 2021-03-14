@@ -1,6 +1,7 @@
-import { ColorMap } from '../../base/colors'
-import React, { HTMLAttributes } from 'react'
 import cx from 'classnames/dedupe'
+import React, { HTMLAttributes } from 'react'
+import { ColorMap } from '../../base/colors'
+import { marginClasses, MarginPropType, spacingClasses, SpacingPropType } from '../../base/spacing'
 
 export const tabsColors: ColorMap = {
   white: 'drac-tabs-white',
@@ -24,6 +25,12 @@ export const tabsColors: ColorMap = {
 export interface TabsProps extends HTMLAttributes<HTMLUListElement> {
   /** The Dracula UI color for the Tabs. */
   color: keyof typeof tabsColors
+
+  /** Dracula UI standard spacing properties. */
+  spacing?: SpacingPropType
+
+  /** Dracula UI standard margin properties. */
+  margin?: MarginPropType
 }
 
 /**
@@ -33,7 +40,12 @@ export interface TabsProps extends HTMLAttributes<HTMLUListElement> {
 export const Tabs: React.FC<TabsProps> = (props: TabsProps) => {
   const finalProps = {
     ...props,
-    className: cx('drac-tabs', props.color && tabsColors[props.color])
+    className: cx(
+      'drac-tabs',
+      props.color && tabsColors[props.color],
+      ...spacingClasses(props.spacing),
+      ...marginClasses(props.margin)
+    )
   }
 
   return <ul {...finalProps} />

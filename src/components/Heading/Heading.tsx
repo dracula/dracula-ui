@@ -2,7 +2,7 @@ import cx from 'classnames/dedupe'
 import { mapValues } from 'lodash'
 import React, { HTMLAttributes } from 'react'
 import { colors } from '../../base/colors'
-import { spacingClasses, SpacingPropType } from '../../base/spacing'
+import { marginClasses, MarginPropType, spacingClasses, SpacingPropType } from '../../base/spacing'
 
 export const headingSizes = {
   'heading-1': 'drac-heading-1',
@@ -35,6 +35,9 @@ export interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {
    */
   spacing?: SpacingPropType
 
+  /** Dracula UI standard margin properties. */
+  margin?: MarginPropType
+
   as?: keyof HTMLElementTagNameMap
 }
 
@@ -61,7 +64,8 @@ export const Heading: React.FC<HeadingProps> = (props: HeadingProps) => {
       `drac-heading`,
       headingSizes[props.size ?? 'heading-1'],
       headingColors[props.color ?? 'white'],
-      ...spacingClasses(props.spacing ?? 'none')
+      ...spacingClasses(props.spacing ?? 'none'),
+      ...marginClasses(props.margin ?? 'none')
     )
   }
 
