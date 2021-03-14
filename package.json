@@ -13,6 +13,7 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
+    "dev": "yarn build && concurrently \"yarn start\" \"cd dracula-ui.com && yarn dev\" ",
     "test": "tsdx test",
     "docs": "RECORDING=true tsdx test -u && node ./dsp/update.js",
     "lint": "echo Linting",
@@ -54,6 +55,7 @@
     "autoprefixer": "^10.2.5",
     "babel-loader": "^8.1.0",
     "caniuse-lite": "^1.0.30001197",
+    "concurrently": "^6.0.0",
     "cssnano": "^4.1.10",
     "enzyme": "^3.11.0",
     "enzyme-to-json": "^3.5.0",

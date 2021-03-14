@@ -1,4 +1,4 @@
-import { Box, Heading, Link, Paragraph, Text } from "../../dist"
+import { Box, Card, Heading, Link, Paragraph, Text } from "../../dist"
 import Head from "next/head"
 import React from "react"
 import Navigation from "../components/Navigation"
@@ -17,6 +17,94 @@ export async function getStaticProps({ params }) {
   return { props: { query } }
 }
 
+function Properties({ docGenProps }) {
+  return (
+    <>
+      <Link id="properties" href="#properties" color="black">
+        <Heading size="heading-2">Properties</Heading>
+      </Link>
+      <Box color="purpleCyan" style={{ height: 2, marginTop: "0.5rem" }}></Box>
+
+      <Box className={styles.usage} spacing={["mediumX"]}>
+        <Box spacing="mediumY">
+          <PropsTable props={docGenProps} />
+        </Box>
+      </Box>
+    </>
+  )
+}
+
+function DocsOverview({ sections }) {
+  return (
+    <Box as="ul" style={{ position: "fixed", right: 80 }} spacing="medium">
+      <Text weight="semibold" style={{ textTransform: "uppercase" }}>
+        On this page
+      </Text>
+      <Box color="pinkPurple" style={{ height: 2 }} margin="xsY" />
+
+      {sections.map((section) => {
+        return (
+          <Box key={section.title} spacing="xxsY">
+            <Link
+              size="small"
+              color="blackSecondary"
+              href={`#${section.title.toLowerCase()}`}
+              hoverColor="pinkPurple"
+            >
+              {section.title}
+            </Link>
+          </Box>
+        )
+      })}
+
+      <Box key="properties" margin="xxsY">
+        <Link
+          size="small"
+          href="#properties"
+          hoverColor="pinkPurple"
+          color="blackSecondary"
+        >
+          Properties
+        </Link>
+      </Box>
+    </Box>
+  )
+}
+
+function Section({ section, selectedTab, onChangeSelectedTab }) {
+  return (
+    <Card spacing="medium">
+      <Link
+        id={section.title.toLowerCase()}
+        href={`#${section.title.toLowerCase()}`}
+      >
+        <Heading size="heading-2" margin="smallY">
+          {section.title}
+        </Heading>
+      </Link>
+
+      <Box color="pinkPurple" style={{ height: 2 }} margin="smallY" />
+
+      {section.description && (
+        <Paragraph size="small">{section.description}</Paragraph>
+      )}
+
+      <Box
+        className={styles.usage}
+        spacing="small"
+        dangerouslySetInnerHTML={{ __html: section.code }}
+        style={{ overflow: "auto", maxHeight: 300 }}
+      />
+
+      <Tabs
+        selectedTab={selectedTab}
+        onChangeSelectedTab={onChangeSelectedTab}
+        section={section}
+      />
+    </Card>
+  )
+}
+
 class Guide extends React.Component {
   state = {
     selectedTab: 0
@@ -26,43 +114,6 @@ class Guide extends React.Component {
     this.setState({ selectedTab: index })
   }
 
-  renderSections() {
-    return (this.props.query.sections ?? []).map((section) => {
-      return (
-        <>
-          <Box key={section.title} spacing="mediumY">
-            <Link
-              id={section.title.toLowerCase()}
-              href={`#${section.title.toLowerCase()}`}
-            >
-              <Heading size="heading-2" spacing="smallY">
-                {section.title}
-              </Heading>
-            </Link>
-
-            <Box color="pinkPurple" style={{ height: 2 }} />
-
-            {section.description && (
-              <Paragraph size="small">{section.description}</Paragraph>
-            )}
-
-            <Box
-              className={styles.usage}
-              spacing="small"
-              dangerouslySetInnerHTML={{ __html: section.code }}
-              style={{ overflow: "auto", maxHeight: 300 }}
-            />
-
-            <Tabs
-              selectedTab={this.state.selectedTab}
-              onChangeSelectedTab={this.onChangeSelectedTab.bind(this)}
-              section={section}
-            />
-          </Box>
-        </>
-      )
-    })
-  }
   render() {
     const title = `${this.props.query.title} — Dracula UI`
     const description = "A dark-first collection of UI patterns and components"
@@ -83,65 +134,35 @@ class Guide extends React.Component {
         <Box className={styles.container} style={{ minHeight: "100vh" }}>
           <Navigation />
 
-          <Box
-            as="ul"
-            style={{ position: "fixed", right: 80 }}
-            spacing="medium"
-          >
-            <Text weight="semibold" style={{ textTransform: "uppercase" }}>
-              On this page
-            </Text>
-            <Box color="pinkPurple" style={{ height: 2 }} margin="xsY" />
-
-            {(this.props.query.sections ?? []).map((section) => {
-              return (
-                <Box key={section.title} spacing="xxsY">
-                  <Link
-                    size="small"
-                    color="blackSecondary"
-                    href={`#${section.title.toLowerCase()}`}
-                    hoverColor="pinkPurple"
-                  >
-                    {section.title}
-                  </Link>
-                </Box>
-              )
-            })}
-
-            <Box key="properties" spacing="xxsY">
-              <Link
-                size="small"
-                href="#properties"
-                hoverColor="pinkPurple"
-                color="blackSecondary"
-              >
-                Properties
-              </Link>
-            </Box>
-          </Box>
-
           <Box className={styles.content} spacing="mediumY">
             <main className={styles.center}>
+              <DocsOverview sections={this.props.query.sections} />
               <Box>
                 <Heading color="purpleCyan" size="heading-1">
                   {this.props.query.title}
                 </Heading>
-                <Paragraph size="small">{this.props.query.description}</Paragraph>
+                <Paragraph size="small">
+                  {this.props.query.description}
+                </Paragraph>
 
-                {this.renderSections()}
-
-                <Box spacing="mediumY">
-                  <Link id="properties" href="#properties" color="black">
-                    <Heading size="heading-2">Properties</Heading>
-                  </Link>
-                  <Box color="purpleCyan" style={{height: 2, marginTop: '0.5rem'}}></Box>
-
-                  <Box className={styles.usage} spacing={["mediumX"]}>
-                    <Box spacing="mediumY">
-                      <PropsTable props={this.props.query.docgen.props} />
+                {this.props.query.sections.map((section) => {
+                  return (
+                    <Box key={section.title} margin="largeY">
+                      <Section
+                        key={section.title}
+                        section={section}
+                        onChangeSelectedTab={this.onChangeSelectedTab.bind(
+                          this
+                        )}
+                        selectedTab={this.state.selectedTab}
+                      />
                     </Box>
-                  </Box>
-                </Box>
+                  )
+                })}
+
+                <Card spacing="medium" color="black">
+                  <Properties docGenProps={this.props.query.docgen.props} />
+                </Card>
               </Box>
             </main>
           </Box>

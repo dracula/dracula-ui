@@ -25,6 +25,10 @@
   font-family: 'Fira Code', monospace;
 }
 
+p.drac-text {
+  line-height: 1.375rem;
+}
+
 /* -- Heading -- */
 .drac-heading-1 {
   font-size: var(--font-3xl);
