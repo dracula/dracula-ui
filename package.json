@@ -14,7 +14,7 @@
     "start": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test",
-    "docs": "RECORDING=true tsdx test && node ./dsp/update.js",
+    "docs": "RECORDING=true tsdx test -u && node ./dsp/update.js",
     "lint": "echo Linting",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",

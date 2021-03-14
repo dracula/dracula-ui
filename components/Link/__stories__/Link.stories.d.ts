@@ -4,6 +4,6 @@ declare const _default: {
 };
 export default _default;
 export declare const LinkBasic: () => JSX.Element;
-export declare const LinkSizes: () => JSX.Element;
+export declare const LinkSizings: () => JSX.Element;
 export declare const LinkWeights: () => JSX.Element;
 export declare const LinkColors: () => JSX.Element;
