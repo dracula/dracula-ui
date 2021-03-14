@@ -14,9 +14,141 @@ Object {
 exports[`Site: Link Colors 1`] = `
 Object {
   "docs": "",
-  "html": "<div></div>
+  "html": "<div>
+  <div style=\\"margin-bottom: 20px\\">
+    <a
+      color=\\"white\\"
+      class=\\"drac-link drac-text drac-text-white drac-text-white--hover\\"
+      >white</a
+    >
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <a
+      color=\\"cyan\\"
+      class=\\"drac-link drac-text drac-text-cyan drac-text-white--hover\\"
+      >cyan</a
+    >
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <a
+      color=\\"green\\"
+      class=\\"drac-link drac-text drac-text-green drac-text-white--hover\\"
+      >green</a
+    >
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <a
+      color=\\"orange\\"
+      class=\\"drac-link drac-text drac-text-orange drac-text-white--hover\\"
+      >orange</a
+    >
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <a
+      color=\\"pink\\"
+      class=\\"drac-link drac-text drac-text-pink drac-text-white--hover\\"
+      >pink</a
+    >
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <a
+      color=\\"purple\\"
+      class=\\"drac-link drac-text drac-text-purple drac-text-white--hover\\"
+      >purple</a
+    >
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <a
+      color=\\"red\\"
+      class=\\"drac-link drac-text drac-text-red drac-text-white--hover\\"
+      >red</a
+    >
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <a
+      color=\\"yellow\\"
+      class=\\"drac-link drac-text drac-text-yellow drac-text-white--hover\\"
+      >yellow</a
+    >
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <a
+      color=\\"purpleCyan\\"
+      class=\\"drac-link drac-text drac-text-purple-cyan drac-text-white--hover\\"
+      >purpleCyan</a
+    >
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <a
+      color=\\"yellowPink\\"
+      class=\\"drac-link drac-text drac-text-yellow-pink drac-text-white--hover\\"
+      >yellowPink</a
+    >
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <a
+      color=\\"cyanGreen\\"
+      class=\\"drac-link drac-text drac-text-cyan-green drac-text-white--hover\\"
+      >cyanGreen</a
+    >
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <a
+      color=\\"pinkPurple\\"
+      class=\\"drac-link drac-text drac-text-pink-purple drac-text-white--hover\\"
+      >pinkPurple</a
+    >
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <a
+      color=\\"animated\\"
+      class=\\"drac-link drac-text drac-text-animated drac-text-white--hover\\"
+      >animated</a
+    >
+  </div>
+</div>
 ",
-  "react": "<div />;
+  "react": "<div>
+  <div style={{ marginBottom: 20 }}>
+    <Link color=\\"white\\">white</Link>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Link color=\\"cyan\\">cyan</Link>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Link color=\\"green\\">green</Link>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Link color=\\"orange\\">orange</Link>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Link color=\\"pink\\">pink</Link>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Link color=\\"purple\\">purple</Link>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Link color=\\"red\\">red</Link>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Link color=\\"yellow\\">yellow</Link>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Link color=\\"purpleCyan\\">purpleCyan</Link>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Link color=\\"yellowPink\\">yellowPink</Link>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Link color=\\"cyanGreen\\">cyanGreen</Link>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Link color=\\"pinkPurple\\">pinkPurple</Link>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Link color=\\"animated\\">animated</Link>
+  </div>
+</div>;
 ",
   "title": "Colors",
 }
@@ -25,9 +157,46 @@ Object {
 exports[`Site: Link Sizes 1`] = `
 Object {
   "docs": "",
-  "html": "<div></div>
+  "html": "<div>
+  <div style=\\"margin-bottom: 20px\\">
+    <a
+      class=\\"drac-link drac-text drac-text-lg drac-text-white drac-text-white--hover\\"
+      >large</a
+    >
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <a class=\\"drac-link drac-text drac-text-white drac-text-white--hover\\"
+      >medium</a
+    >
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <a
+      class=\\"drac-link drac-text drac-text-sm drac-text-white drac-text-white--hover\\"
+      >small</a
+    >
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <a
+      class=\\"drac-link drac-text drac-text-xs drac-text-white drac-text-white--hover\\"
+      >xsmall</a
+    >
+  </div>
+</div>
 ",
-  "react": "<div />;
+  "react": "<div>
+  <div style={{ marginBottom: 20 }}>
+    <Link size=\\"large\\">large</Link>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Link size=\\"medium\\">medium</Link>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Link size=\\"small\\">small</Link>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Link size=\\"xsmall\\">xsmall</Link>
+  </div>
+</div>;
 ",
   "title": "Sizes",
 }
@@ -36,9 +205,41 @@ Object {
 exports[`Site: Link Weights 1`] = `
 Object {
   "docs": "",
-  "html": "<div></div>
+  "html": "<div>
+  <div style=\\"margin-bottom: 20px\\">
+    <a
+      weight=\\"normal\\"
+      class=\\"drac-link drac-text drac-text-white drac-text-white--hover\\"
+      >normal</a
+    >
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <a
+      weight=\\"semibold\\"
+      class=\\"drac-link drac-text drac-text-semibold drac-text-white drac-text-white--hover\\"
+      >semibold</a
+    >
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <a
+      weight=\\"bold\\"
+      class=\\"drac-link drac-text drac-text-bold drac-text-white drac-text-white--hover\\"
+      >bold</a
+    >
+  </div>
+</div>
 ",
-  "react": "<div />;
+  "react": "<div>
+  <div style={{ marginBottom: 20 }}>
+    <Link weight=\\"normal\\">normal</Link>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Link weight=\\"semibold\\">semibold</Link>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Link weight=\\"bold\\">bold</Link>
+  </div>
+</div>;
 ",
   "title": "Weights",
 }
