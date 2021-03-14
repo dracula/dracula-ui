@@ -78,7 +78,7 @@ export declare const Text: {
         /**
          * Controls the spacing between the Text component and its parent and siblings.
          */
-        spacing?: "large" | "medium" | "small" | "none" | "noneX" | "noneY" | "smallX" | "smallY" | "mediumX" | "mediumY" | "largeX" | "largeY" | ("large" | "medium" | "small" | "none" | "noneX" | "noneY" | "smallX" | "smallY" | "mediumX" | "mediumY" | "largeX" | "largeY")[] | undefined;
+        spacing?: "large" | "medium" | "small" | "none" | "noneX" | "noneY" | "xs" | "xsX" | "xsY" | "smallX" | "smallY" | "mediumX" | "mediumY" | "largeX" | "largeY" | ("large" | "medium" | "small" | "none" | "noneX" | "noneY" | "xs" | "xsX" | "xsY" | "smallX" | "smallY" | "mediumX" | "mediumY" | "largeX" | "largeY")[] | undefined;
         as?: "a" | "span" | "p" | undefined;
         defaultChecked?: boolean | undefined;
         defaultValue?: string | number | readonly string[] | undefined;

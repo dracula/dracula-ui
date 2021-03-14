@@ -1,6 +1,7 @@
 import './styles/dracula-ui.css';
 export * from './components/Heading/Heading';
 export * from './components/Text/Text';
+export * from './components/Link/Link';
 export * from './components/Paragraph/Paragraph';
 export * from './components/Box/Box';
 export * from './components/Button/Button';

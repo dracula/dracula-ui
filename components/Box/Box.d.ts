@@ -1,6 +1,6 @@
 import React, { AllHTMLAttributes } from 'react';
 import { colors } from '../../base/colors';
-import { SpacingPropType } from '../../base/spacing';
+import { SpacingPropType, MarginPropType } from '../../base/spacing';
 declare type Element = HTMLElementTagNameMap;
 export declare const roundedBorders: {
     none: string;
@@ -22,6 +22,8 @@ export interface BoxProps<K extends keyof Element = 'div'> extends AllHTMLAttrib
     rounded?: keyof typeof roundedBorders;
     /** Dracula UI standard spacing properties. */
     spacing?: SpacingPropType;
+    /** Dracula UI standard margin properties. */
+    margin?: MarginPropType;
     /** The HTML element to be used */
     as?: K;
 }
@@ -40,7 +42,9 @@ export declare function Box<T extends keyof Element>(props: BoxProps<T>): React.
     /** The border radius. */
     rounded?: "base" | "none" | "sm" | "lg" | "xl" | "2xl" | "3xl" | "full" | undefined;
     /** Dracula UI standard spacing properties. */
-    spacing?: "small" | "none" | "noneX" | "noneY" | "smallX" | "smallY" | "medium" | "mediumX" | "mediumY" | "large" | "largeX" | "largeY" | ("small" | "none" | "noneX" | "noneY" | "smallX" | "smallY" | "medium" | "mediumX" | "mediumY" | "large" | "largeX" | "largeY")[] | undefined;
+    spacing?: "small" | "none" | "noneX" | "noneY" | "xs" | "xsX" | "xsY" | "smallX" | "smallY" | "medium" | "mediumX" | "mediumY" | "large" | "largeX" | "largeY" | ("small" | "none" | "noneX" | "noneY" | "xs" | "xsX" | "xsY" | "smallX" | "smallY" | "medium" | "mediumX" | "mediumY" | "large" | "largeX" | "largeY")[] | undefined;
+    /** Dracula UI standard margin properties. */
+    margin?: "small" | "none" | "noneX" | "noneY" | "xs" | "xsX" | "xsY" | "smallX" | "smallY" | "medium" | "mediumX" | "mediumY" | "large" | "largeX" | "largeY" | ("small" | "none" | "noneX" | "noneY" | "xs" | "xsX" | "xsY" | "smallX" | "smallY" | "medium" | "mediumX" | "mediumY" | "large" | "largeX" | "largeY")[] | undefined;
     /** The HTML element to be used */
     as?: T | undefined;
     accept?: string | undefined;

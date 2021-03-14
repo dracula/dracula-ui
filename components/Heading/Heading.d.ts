@@ -1,5 +1,5 @@
 import React, { HTMLAttributes } from 'react';
-import { SpacingPropType } from '../../base/spacing';
+import { MarginPropType, SpacingPropType } from '../../base/spacing';
 export declare const headingSizes: {
     'heading-1': string;
     'heading-2': string;
@@ -38,6 +38,8 @@ export interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {
      * Controls the spacing between the Heading component and its parent and siblings.
      */
     spacing?: SpacingPropType;
+    /** Dracula UI standard margin properties. */
+    margin?: MarginPropType;
     as?: keyof HTMLElementTagNameMap;
 }
 /**

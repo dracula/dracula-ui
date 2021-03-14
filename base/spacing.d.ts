@@ -2,6 +2,26 @@ export declare const spacing: {
     none: string;
     noneX: string;
     noneY: string;
+    xs: string;
+    xsX: string;
+    xsY: string;
+    small: string;
+    smallX: string;
+    smallY: string;
+    medium: string;
+    mediumX: string;
+    mediumY: string;
+    large: string;
+    largeX: string;
+    largeY: string;
+};
+export declare const margin: {
+    none: string;
+    noneX: string;
+    noneY: string;
+    xs: string;
+    xsX: string;
+    xsY: string;
     small: string;
     smallX: string;
     smallY: string;
@@ -13,4 +33,6 @@ export declare const spacing: {
     largeY: string;
 };
 export declare type SpacingPropType = keyof typeof spacing | Array<keyof typeof spacing>;
+export declare type MarginPropType = keyof typeof margin | Array<keyof typeof margin>;
 export declare function spacingClasses(input?: SpacingPropType): string[];
+export declare function marginClasses(input?: MarginPropType): string[];

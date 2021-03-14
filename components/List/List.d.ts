@@ -4,6 +4,7 @@ export declare const listColors: ColorMap;
 export declare const listVariants: {
     unordered: string;
     ordered: string;
+    none: string;
 };
 /**
  * List Props

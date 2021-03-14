@@ -12,5 +12,5 @@ export declare type SnapshotBuilder = {
     docs: string;
     title: string;
 };
-export declare function buildSnapshot(title: string, comp: () => React.ReactElement, docs?: string): SnapshotBuilder;
+export declare function snapshot(title: string, comp: () => React.ReactElement, docs?: string): SnapshotBuilder;
 export declare function renderSnapshot(title: string, comp: () => React.ReactElement, docs?: string): ComponentExample;

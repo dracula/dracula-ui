@@ -1870,8 +1870,7 @@
     </script>
     <style type="text/css">
       :root {
-        --corner-radius: 0.5rem;
-        --border-size: 0.1rem;
+        --spacing-xs: 0.5rem;
         --spacing-sm: 1rem;
         --spacing-md: 2rem;
         --spacing-lg: 4rem;
@@ -1887,7 +1886,17 @@
       }
       .drac-spacing-none {
         padding: 0;
-        margin: 0;
+      }
+      .drac-spacing-xs {
+        padding: var(--spacing-xs);
+      }
+      .drac-spacing-xs-x {
+        padding-left: var(--spacing-xs);
+        padding-right: var(--spacing-xs);
+      }
+      .drac-spacing-xs-y {
+        padding-top: var(--spacing-xs);
+        padding-bottom: var(--spacing-xs);
       }
       .drac-spacing-sm {
         padding: var(--spacing-sm);
@@ -1921,6 +1930,53 @@
       .drac-spacing-lg-y {
         padding-top: var(--spacing-lg);
         padding-bottom: var(--spacing-lg);
+      }
+      .drac-margin-none {
+        margin: 0;
+      }
+      .drac-margin-xs {
+        margin: var(--spacing-xs);
+      }
+      .drac-margin-xs-x {
+        margin-left: var(--spacing-xs);
+        margin-right: var(--spacing-xs);
+      }
+      .drac-margin-xs-y {
+        margin-top: var(--spacing-xs);
+        margin-bottom: var(--spacing-xs);
+      }
+      .drac-margin-sm {
+        margin: var(--spacing-sm);
+      }
+      .drac-margin-sm-x {
+        margin-left: var(--spacing-sm);
+        margin-right: var(--spacing-sm);
+      }
+      .drac-margin-sm-y {
+        margin-top: var(--spacing-sm);
+        margin-bottom: var(--spacing-sm);
+      }
+      .drac-margin-md {
+        margin: var(--spacing-md);
+      }
+      .drac-margin-md-x {
+        margin-left: var(--spacing-md);
+        margin-right: var(--spacing-md);
+      }
+      .drac-margin-md-y {
+        margin-top: var(--spacing-md);
+        margin-bottom: var(--spacing-md);
+      }
+      .drac-margin-lg {
+        margin: var(--spacing-lg);
+      }
+      .drac-margin-lg-x {
+        margin-left: var(--spacing-lg);
+        margin-right: var(--spacing-lg);
+      }
+      .drac-margin-lg-y {
+        margin-top: var(--spacing-lg);
+        margin-bottom: var(--spacing-lg);
       }
       :root {
         --black: #21222c;
@@ -2182,6 +2238,18 @@
           var(--purple)
         );
       }
+      :root {
+        --border-size: 0.1rem;
+        --rounded-none: 0;
+        --rounded-sm: 0.125rem;
+        --rounded: 0.25rem;
+        --rounded-md: 0.375rem;
+        --rounded-lg: 0.5rem;
+        --rounded-xl: 0.75rem;
+        --rounded-2xl: 1rem;
+        --rounded-3xl: 1.5rem;
+        --rounded-full: 9999px;
+      }
       .drac-border-black {
         border-color: var(--black);
       }
@@ -2208,6 +2276,33 @@
       }
       .drac-border-yellow {
         border-color: var(--yellow);
+      }
+      .drac-rounded-none {
+        border-radius: var(--rounded-none);
+      }
+      .drac-rounded-sm {
+        border-radius: var(--rounded-sm);
+      }
+      .drac-rounded {
+        border-radius: var(--rounded);
+      }
+      .drac-rounded-md {
+        border-radius: var(--rounded-md);
+      }
+      .drac-rounded-lg {
+        border-radius: var(--rounded-lg);
+      }
+      .drac-rounded-xl {
+        border-radius: var(--rounded-xl);
+      }
+      .drac-rounded-2xl {
+        border-radius: var(--rounded-2xl);
+      }
+      .drac-rounded-3xl {
+        border-radius: var(--rounded-3xl);
+      }
+      .drac-rounded-full {
+        border-radius: var(--rounded-full);
       }
       :root {
         --font-xs: 0.75rem;
@@ -2273,7 +2368,7 @@
         -moz-appearance: none;
         appearance: none;
         border: none;
-        border-radius: var(--corner-radius);
+        border-radius: var(--rounded-lg);
         box-sizing: border-box;
         display: inline-block;
       }
@@ -2350,7 +2445,7 @@
       .drac-badge {
         padding: 1rem 1.5rem;
         border: none;
-        border-radius: var(--corner-radius);
+        border-radius: var(--rounded-lg);
       }
       .drac-badge,
       .drac-badge .drac-text {
@@ -2365,7 +2460,7 @@
         background-color: transparent;
       }
       .drac-input {
-        border-radius: var(--corner-radius);
+        border-radius: var(--rounded-lg);
         box-sizing: border-box;
         width: 100%;
         outline: none;
@@ -2451,7 +2546,7 @@
         font-size: var(--font-lg);
       }
       .drac-select {
-        border-radius: var(--corner-radius);
+        border-radius: var(--rounded-lg);
         background: var(--blackSecondary);
         border: 0.3rem solid transparent;
         box-sizing: border-box;
@@ -2584,7 +2679,7 @@
       }
       .drac-avatar {
         box-sizing: border-box;
-        border-radius: 100%;
+        border-radius: var(--rounded-full);
         border-style: solid;
         border-width: 1px;
         text-transform: uppercase;
@@ -2818,7 +2913,7 @@
         --border-hover: var(--yellow);
       }
       .drac-card {
-        border-radius: var(--corner-radius);
+        border-radius: var(--rounded-lg);
         box-shadow: 0 var(--spacing-md) var(--spacing-lg)
           hsla(0, 0%, 100%, 0.25);
       }
@@ -3046,6 +3141,87 @@
       .drac-list-yellow.drac-list-ordered li:before,
       .drac-list-yellow.drac-list-unordered li:before {
         color: var(--yellow);
+      }
+      .drac-list-none {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+      }
+      .drac-link {
+        text-decoration: none;
+      }
+      .drac-text-black--hover:hover {
+        color: var(--black);
+      }
+      .drac-text-white--hover:hover {
+        color: var(--white);
+      }
+      .drac-text-cyan--hover:hover {
+        color: var(--cyan);
+      }
+      .drac-text-green--hover:hover {
+        color: var(--green);
+      }
+      .drac-text-orange--hover:hover {
+        color: var(--orange);
+      }
+      .drac-text-pink--hover:hover {
+        color: var(--pink);
+      }
+      .drac-text-purple--hover:hover {
+        color: var(--purple);
+      }
+      .drac-text-red--hover:hover {
+        color: var(--red);
+      }
+      .drac-text-yellow--hover:hover {
+        color: var(--yellow);
+      }
+      .drac-text-purple-cyan--hover:hover {
+        background-image: linear-gradient(
+          var(--gradientDegree),
+          var(--purple),
+          var(--cyan)
+        );
+      }
+      .drac-text-purple-cyan--hover:hover,
+      .drac-text-yellow-pink--hover:hover {
+        background-size: 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+      }
+      .drac-text-yellow-pink--hover:hover {
+        background-image: linear-gradient(
+          var(--gradientDegree),
+          var(--yellow),
+          var(--pink)
+        );
+      }
+      .drac-text-cyan-green--hover:hover {
+        background-image: linear-gradient(
+          var(--gradientDegree),
+          var(--cyan),
+          var(--green)
+        );
+      }
+      .drac-text-cyan-green--hover:hover,
+      .drac-text-pink-purple--hover:hover {
+        background-size: 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+      }
+      .drac-text-pink-purple--hover:hover {
+        background-image: linear-gradient(
+          var(--gradientDegree),
+          var(--pink),
+          var(--purple)
+        );
       }
       /*# sourceMappingURL=dracula-ui.css.map */ /*# sourceURL=/Users/netto.farah/projects/dracula-ui/dist/styles/dracula-ui.css*/
     </style>
@@ -3418,7 +3594,9 @@
   </head>
   <body>
     <div id="drac" class="drac">
-      <h1 class="drac-heading drac-heading-1 drac-text-white drac-spacing-none">
+      <h1
+        class="drac-heading drac-heading-1 drac-text-white drac-spacing-none drac-margin-none"
+      >
         Heading
       </h1>
     </div>

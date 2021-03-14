@@ -1,5 +1,5 @@
 import * as dg from 'react-docgen-typescript';
-import { ComponentExample } from '../../story-helpers/render-component';
+import { ComponentExample } from '../render-component';
 declare type Component = {
     class: 'component';
     type: string;
