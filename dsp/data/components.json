@@ -8,7 +8,7 @@
       "type": "page",
       "id": "Avatar",
       "name": "Avatar",
-      "last_updated": "2021-03-12T05:24:59.184Z",
+      "last_updated": "2021-03-14T00:11:53.372Z",
       "last_updated_by": "System",
       "description": "The Avatar component is used to represent a user.\n\nIt displays a profile picture, or falls back to the user's initials\nif a profile pic is not provided.",
       "related_entity_ids": [],
@@ -278,7 +278,7 @@
       "type": "page",
       "id": "Box",
       "name": "Box",
-      "last_updated": "2021-03-12T05:24:57.452Z",
+      "last_updated": "2021-03-14T00:12:03.613Z",
       "last_updated_by": "System",
       "description": "Box is the most primitive component of Dracula UI.\nUsing Box allows for consumers of the components library to compose\nmore complex patterns, components, and UIs.\n\nBox includes built-in Color and Spacing properties that make building\ncomplex components convenient and consistent.",
       "related_entity_ids": [],
@@ -384,6 +384,25 @@
             "name": "SpacingPropType | undefined"
           }
         },
+        "margin": {
+          "defaultValue": null,
+          "description": "Dracula UI standard margin properties.",
+          "name": "margin",
+          "parent": {
+            "fileName": "src/components/Box/Box.tsx",
+            "name": "BoxProps"
+          },
+          "declarations": [
+            {
+              "fileName": "src/components/Box/Box.tsx",
+              "name": "BoxProps"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "MarginPropType | undefined"
+          }
+        },
         "as": {
           "defaultValue": null,
           "description": "The HTML element to be used",
@@ -467,6 +486,25 @@
               "name": "SpacingPropType | undefined"
             }
           },
+          "margin": {
+            "defaultValue": null,
+            "description": "Dracula UI standard margin properties.",
+            "name": "margin",
+            "parent": {
+              "fileName": "src/components/Box/Box.tsx",
+              "name": "BoxProps"
+            },
+            "declarations": [
+              {
+                "fileName": "src/components/Box/Box.tsx",
+                "name": "BoxProps"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "MarginPropType | undefined"
+            }
+          },
           "as": {
             "defaultValue": null,
             "description": "The HTML element to be used",
@@ -494,7 +532,7 @@
       "type": "page",
       "id": "Button",
       "name": "Button",
-      "last_updated": "2021-03-12T05:24:58.356Z",
+      "last_updated": "2021-03-14T00:11:52.712Z",
       "last_updated_by": "System",
       "description": "The Button component triggers actions, behaviors, or events based\non user input.",
       "related_entity_ids": [],
@@ -748,7 +786,7 @@
       "type": "page",
       "id": "Checkbox",
       "name": "Checkbox",
-      "last_updated": "2021-03-12T05:24:55.532Z",
+      "last_updated": "2021-03-14T00:11:49.844Z",
       "last_updated_by": "System",
       "description": "Checkbox is a styled HTML Input of type checkbox.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep check boxes accessible.",
       "related_entity_ids": [],
@@ -918,7 +956,7 @@
       "type": "page",
       "id": "Divider",
       "name": "Divider",
-      "last_updated": "2021-03-12T05:25:04.766Z",
+      "last_updated": "2021-03-14T00:11:45.938Z",
       "last_updated_by": "System",
       "description": "Dividers are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
       "related_entity_ids": [],
@@ -1004,7 +1042,7 @@
       "type": "page",
       "id": "Heading",
       "name": "Heading",
-      "last_updated": "2021-03-12T05:25:05.375Z",
+      "last_updated": "2021-03-14T00:11:50.252Z",
       "last_updated_by": "System",
       "description": "Heading is used to display headlines and other forms of hierarchical Text.\n\nHeadings are similar to the base Text component, but restricted to certain\nsizes and font weight.",
       "related_entity_ids": [],
@@ -1015,13 +1053,13 @@
         "trigger": "heading",
         "languages": {
           "javascriptreact": "<Heading>Heading</Heading>;\n",
-          "html": "<h1 class=\"drac-heading drac-heading-1 drac-text-white drac-spacing-none\">\n  Heading\n</h1>\n"
+          "html": "<h1\n  class=\"drac-heading drac-heading-1 drac-text-white drac-spacing-none drac-margin-none\"\n>\n  Heading\n</h1>\n"
         }
       },
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
-          "html": "<h1 class=\"drac-heading drac-heading-1 drac-text-white drac-spacing-none\">\n  Heading\n</h1>\n",
+          "html": "<h1\n  class=\"drac-heading drac-heading-1 drac-text-white drac-spacing-none drac-margin-none\"\n>\n  Heading\n</h1>\n",
           "react": "<Heading>Heading</Heading>;\n",
           "docs": "",
           "screenshot": "./dsp/assets/Heading.png",
@@ -1029,7 +1067,7 @@
         },
         {
           "title": "Sizes",
-          "html": "<div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"white\"\n      class=\"drac-heading drac-heading-1 drac-text-white drac-spacing-none\"\n    >\n      heading-1\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h2\n      color=\"white\"\n      class=\"drac-heading drac-heading-2 drac-text-white drac-spacing-none\"\n    >\n      heading-2\n    </h2>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h3\n      color=\"white\"\n      class=\"drac-heading drac-heading-3 drac-text-white drac-spacing-none\"\n    >\n      heading-3\n    </h3>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h4\n      color=\"white\"\n      class=\"drac-heading drac-heading-4 drac-text-white drac-spacing-none\"\n    >\n      heading-4\n    </h4>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h5\n      color=\"white\"\n      class=\"drac-heading drac-heading-5 drac-text-white drac-spacing-none\"\n    >\n      heading-5\n    </h5>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h6\n      color=\"white\"\n      class=\"drac-heading drac-heading-6 drac-text-white drac-spacing-none\"\n    >\n      heading-6\n    </h6>\n  </div>\n</div>\n",
+          "html": "<div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"white\"\n      class=\"drac-heading drac-heading-1 drac-text-white drac-spacing-none drac-margin-none\"\n    >\n      heading-1\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h2\n      color=\"white\"\n      class=\"drac-heading drac-heading-2 drac-text-white drac-spacing-none drac-margin-none\"\n    >\n      heading-2\n    </h2>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h3\n      color=\"white\"\n      class=\"drac-heading drac-heading-3 drac-text-white drac-spacing-none drac-margin-none\"\n    >\n      heading-3\n    </h3>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h4\n      color=\"white\"\n      class=\"drac-heading drac-heading-4 drac-text-white drac-spacing-none drac-margin-none\"\n    >\n      heading-4\n    </h4>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h5\n      color=\"white\"\n      class=\"drac-heading drac-heading-5 drac-text-white drac-spacing-none drac-margin-none\"\n    >\n      heading-5\n    </h5>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h6\n      color=\"white\"\n      class=\"drac-heading drac-heading-6 drac-text-white drac-spacing-none drac-margin-none\"\n    >\n      heading-6\n    </h6>\n  </div>\n</div>\n",
           "react": "<div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"white\" size=\"heading-1\">\n      heading-1\n    </Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"white\" size=\"heading-2\">\n      heading-2\n    </Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"white\" size=\"heading-3\">\n      heading-3\n    </Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"white\" size=\"heading-4\">\n      heading-4\n    </Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"white\" size=\"heading-5\">\n      heading-5\n    </Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"white\" size=\"heading-6\">\n      heading-6\n    </Heading>\n  </div>\n</div>;\n",
           "docs": "",
           "screenshot": "./dsp/assets/HeadingSizes.png",
@@ -1037,7 +1075,7 @@
         },
         {
           "title": "Colors",
-          "html": "<div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"white\"\n      class=\"drac-heading drac-heading-1 drac-text-white drac-spacing-none\"\n    >\n      white\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"cyan\"\n      class=\"drac-heading drac-heading-1 drac-text-cyan drac-spacing-none\"\n    >\n      cyan\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"green\"\n      class=\"drac-heading drac-heading-1 drac-text-green drac-spacing-none\"\n    >\n      green\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"orange\"\n      class=\"drac-heading drac-heading-1 drac-text-orange drac-spacing-none\"\n    >\n      orange\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"pink\"\n      class=\"drac-heading drac-heading-1 drac-text-pink drac-spacing-none\"\n    >\n      pink\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"purple\"\n      class=\"drac-heading drac-heading-1 drac-text-purple drac-spacing-none\"\n    >\n      purple\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"red\"\n      class=\"drac-heading drac-heading-1 drac-text-red drac-spacing-none\"\n    >\n      red\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"yellow\"\n      class=\"drac-heading drac-heading-1 drac-text-yellow drac-spacing-none\"\n    >\n      yellow\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"purpleCyan\"\n      class=\"drac-heading drac-heading-1 drac-text-purple-cyan drac-spacing-none\"\n    >\n      purpleCyan\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"yellowPink\"\n      class=\"drac-heading drac-heading-1 drac-text-yellow-pink drac-spacing-none\"\n    >\n      yellowPink\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"cyanGreen\"\n      class=\"drac-heading drac-heading-1 drac-text-cyan-green drac-spacing-none\"\n    >\n      cyanGreen\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"pinkPurple\"\n      class=\"drac-heading drac-heading-1 drac-text-pink-purple drac-spacing-none\"\n    >\n      pinkPurple\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"animated\"\n      class=\"drac-heading drac-heading-1 drac-text-animated drac-spacing-none\"\n    >\n      animated\n    </h1>\n  </div>\n</div>\n",
+          "html": "<div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"white\"\n      class=\"drac-heading drac-heading-1 drac-text-white drac-spacing-none drac-margin-none\"\n    >\n      white\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"cyan\"\n      class=\"drac-heading drac-heading-1 drac-text-cyan drac-spacing-none drac-margin-none\"\n    >\n      cyan\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"green\"\n      class=\"drac-heading drac-heading-1 drac-text-green drac-spacing-none drac-margin-none\"\n    >\n      green\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"orange\"\n      class=\"drac-heading drac-heading-1 drac-text-orange drac-spacing-none drac-margin-none\"\n    >\n      orange\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"pink\"\n      class=\"drac-heading drac-heading-1 drac-text-pink drac-spacing-none drac-margin-none\"\n    >\n      pink\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"purple\"\n      class=\"drac-heading drac-heading-1 drac-text-purple drac-spacing-none drac-margin-none\"\n    >\n      purple\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"red\"\n      class=\"drac-heading drac-heading-1 drac-text-red drac-spacing-none drac-margin-none\"\n    >\n      red\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"yellow\"\n      class=\"drac-heading drac-heading-1 drac-text-yellow drac-spacing-none drac-margin-none\"\n    >\n      yellow\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"purpleCyan\"\n      class=\"drac-heading drac-heading-1 drac-text-purple-cyan drac-spacing-none drac-margin-none\"\n    >\n      purpleCyan\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"yellowPink\"\n      class=\"drac-heading drac-heading-1 drac-text-yellow-pink drac-spacing-none drac-margin-none\"\n    >\n      yellowPink\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"cyanGreen\"\n      class=\"drac-heading drac-heading-1 drac-text-cyan-green drac-spacing-none drac-margin-none\"\n    >\n      cyanGreen\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"pinkPurple\"\n      class=\"drac-heading drac-heading-1 drac-text-pink-purple drac-spacing-none drac-margin-none\"\n    >\n      pinkPurple\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"animated\"\n      class=\"drac-heading drac-heading-1 drac-text-animated drac-spacing-none drac-margin-none\"\n    >\n      animated\n    </h1>\n  </div>\n</div>\n",
           "react": "<div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"white\">white</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"cyan\">cyan</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"green\">green</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"orange\">orange</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"pink\">pink</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"purple\">purple</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"red\">red</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"yellow\">yellow</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"purpleCyan\">purpleCyan</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"yellowPink\">yellowPink</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"cyanGreen\">cyanGreen</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"pinkPurple\">pinkPurple</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"animated\">animated</Heading>\n  </div>\n</div>;\n",
           "docs": "",
           "screenshot": "./dsp/assets/HeadingColors.png",
@@ -1100,6 +1138,25 @@
           "required": false,
           "type": {
             "name": "SpacingPropType | undefined"
+          }
+        },
+        "margin": {
+          "defaultValue": null,
+          "description": "Dracula UI standard margin properties.",
+          "name": "margin",
+          "parent": {
+            "fileName": "src/components/Heading/Heading.tsx",
+            "name": "HeadingProps"
+          },
+          "declarations": [
+            {
+              "fileName": "src/components/Heading/Heading.tsx",
+              "name": "HeadingProps"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "MarginPropType | undefined"
           }
         },
         "as": {
@@ -1185,6 +1242,25 @@
               "name": "SpacingPropType | undefined"
             }
           },
+          "margin": {
+            "defaultValue": null,
+            "description": "Dracula UI standard margin properties.",
+            "name": "margin",
+            "parent": {
+              "fileName": "src/components/Heading/Heading.tsx",
+              "name": "HeadingProps"
+            },
+            "declarations": [
+              {
+                "fileName": "src/components/Heading/Heading.tsx",
+                "name": "HeadingProps"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "MarginPropType | undefined"
+            }
+          },
           "as": {
             "defaultValue": null,
             "description": "",
@@ -1212,7 +1288,7 @@
       "type": "page",
       "id": "Input",
       "name": "Input",
-      "last_updated": "2021-03-12T05:24:58.212Z",
+      "last_updated": "2021-03-14T00:12:02.609Z",
       "last_updated_by": "System",
       "description": "Input is a styled HTML Input.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep inputs accessible.",
       "related_entity_ids": [],
@@ -1388,9 +1464,263 @@
     {
       "class": "component",
       "type": "page",
+      "id": "Link",
+      "name": "Link",
+      "last_updated": "2021-03-14T00:11:50.371Z",
+      "last_updated_by": "System",
+      "description": "Text is the base component for any sort of text.\n\nConsumers of this component can control, the color, size,\nweight, and spacing of Text.\n\nUse this component for generic, and non-hierarchical text that is\nto be displayed on a page, or as part of other complex components\nor UI patterns",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "link",
+        "languages": {
+          "javascriptreact": "<Link>Link</Link>;\n",
+          "html": "<a class=\"drac-link drac-text drac-text-white drac-text-white--hover\">Link</a>\n"
+        }
+      },
+      "ext_com_draculaui_variations": [
+        {
+          "title": "Usage",
+          "html": "<a class=\"drac-link drac-text drac-text-white drac-text-white--hover\">Link</a>\n",
+          "react": "<Link>Link</Link>;\n",
+          "docs": "",
+          "screenshot": "./dsp/assets/Link.png",
+          "svgData": "./dsp/assets/svgs/Link.svg"
+        },
+        {
+          "title": "Colors",
+          "html": "<div></div>\n",
+          "react": "<div />;\n",
+          "docs": "",
+          "screenshot": "./dsp/assets/LinkColors.png",
+          "svgData": "./dsp/assets/svgs/LinkColors.svg"
+        },
+        {
+          "title": "Weights",
+          "html": "<div></div>\n",
+          "react": "<div />;\n",
+          "docs": "",
+          "screenshot": "./dsp/assets/LinkWeights.png",
+          "svgData": "./dsp/assets/svgs/LinkWeights.svg"
+        },
+        {
+          "title": "Sizes",
+          "html": "<div></div>\n",
+          "react": "<div />;\n",
+          "docs": "",
+          "screenshot": "./dsp/assets/LinkSizes.png",
+          "svgData": "./dsp/assets/svgs/LinkSizes.svg"
+        }
+      ],
+      "ext_com_draculaui_props": {
+        "size": {
+          "defaultValue": null,
+          "description": "Controls the size of the link based on pre-configured Dracula UI sizes.\nOptions: `xsmall`, `small`, `medium`, `large`",
+          "name": "size",
+          "parent": {
+            "fileName": "src/components/Link/Link.tsx",
+            "name": "LinkProps"
+          },
+          "declarations": [
+            {
+              "fileName": "src/components/Link/Link.tsx",
+              "name": "LinkProps"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"large\" | \"medium\" | \"small\" | \"xsmall\" | undefined"
+          }
+        },
+        "weight": {
+          "defaultValue": null,
+          "description": "Controls the weight of the link.\nOptions: `normal`, `semibold`, `bold`.",
+          "name": "weight",
+          "parent": {
+            "fileName": "src/components/Link/Link.tsx",
+            "name": "LinkProps"
+          },
+          "declarations": [
+            {
+              "fileName": "src/components/Link/Link.tsx",
+              "name": "LinkProps"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"normal\" | \"semibold\" | \"bold\" | undefined"
+          }
+        },
+        "color": {
+          "defaultValue": null,
+          "description": "Controls the color of the link",
+          "name": "color",
+          "parent": {
+            "fileName": "src/components/Link/Link.tsx",
+            "name": "LinkProps"
+          },
+          "declarations": [
+            {
+              "fileName": "src/components/Link/Link.tsx",
+              "name": "LinkProps"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+          }
+        },
+        "hoverColor": {
+          "defaultValue": null,
+          "description": "Controls the color of the link on hover",
+          "name": "hoverColor",
+          "parent": {
+            "fileName": "src/components/Link/Link.tsx",
+            "name": "LinkProps"
+          },
+          "declarations": [
+            {
+              "fileName": "src/components/Link/Link.tsx",
+              "name": "LinkProps"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+          }
+        },
+        "spacing": {
+          "defaultValue": null,
+          "description": "Controls the spacing between the Link component and its parent and siblings.",
+          "name": "spacing",
+          "parent": {
+            "fileName": "src/components/Link/Link.tsx",
+            "name": "LinkProps"
+          },
+          "declarations": [
+            {
+              "fileName": "src/components/Link/Link.tsx",
+              "name": "LinkProps"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "SpacingPropType | undefined"
+          }
+        }
+      },
+      "ext_com_draculaui_docgen": {
+        "tags": {},
+        "description": "Text is the base component for any sort of text.\n\nConsumers of this component can control, the color, size,\nweight, and spacing of Text.\n\nUse this component for generic, and non-hierarchical text that is\nto be displayed on a page, or as part of other complex components\nor UI patterns",
+        "displayName": "Link",
+        "methods": [],
+        "props": {
+          "size": {
+            "defaultValue": null,
+            "description": "Controls the size of the link based on pre-configured Dracula UI sizes.\nOptions: `xsmall`, `small`, `medium`, `large`",
+            "name": "size",
+            "parent": {
+              "fileName": "src/components/Link/Link.tsx",
+              "name": "LinkProps"
+            },
+            "declarations": [
+              {
+                "fileName": "src/components/Link/Link.tsx",
+                "name": "LinkProps"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"large\" | \"medium\" | \"small\" | \"xsmall\" | undefined"
+            }
+          },
+          "weight": {
+            "defaultValue": null,
+            "description": "Controls the weight of the link.\nOptions: `normal`, `semibold`, `bold`.",
+            "name": "weight",
+            "parent": {
+              "fileName": "src/components/Link/Link.tsx",
+              "name": "LinkProps"
+            },
+            "declarations": [
+              {
+                "fileName": "src/components/Link/Link.tsx",
+                "name": "LinkProps"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"normal\" | \"semibold\" | \"bold\" | undefined"
+            }
+          },
+          "color": {
+            "defaultValue": null,
+            "description": "Controls the color of the link",
+            "name": "color",
+            "parent": {
+              "fileName": "src/components/Link/Link.tsx",
+              "name": "LinkProps"
+            },
+            "declarations": [
+              {
+                "fileName": "src/components/Link/Link.tsx",
+                "name": "LinkProps"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+            }
+          },
+          "hoverColor": {
+            "defaultValue": null,
+            "description": "Controls the color of the link on hover",
+            "name": "hoverColor",
+            "parent": {
+              "fileName": "src/components/Link/Link.tsx",
+              "name": "LinkProps"
+            },
+            "declarations": [
+              {
+                "fileName": "src/components/Link/Link.tsx",
+                "name": "LinkProps"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+            }
+          },
+          "spacing": {
+            "defaultValue": null,
+            "description": "Controls the spacing between the Link component and its parent and siblings.",
+            "name": "spacing",
+            "parent": {
+              "fileName": "src/components/Link/Link.tsx",
+              "name": "LinkProps"
+            },
+            "declarations": [
+              {
+                "fileName": "src/components/Link/Link.tsx",
+                "name": "LinkProps"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "SpacingPropType | undefined"
+            }
+          }
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
       "id": "List",
       "name": "List",
-      "last_updated": "2021-03-12T05:25:05.318Z",
+      "last_updated": "2021-03-14T00:11:49.805Z",
       "last_updated_by": "System",
       "description": "Lists are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
       "related_entity_ids": [],
@@ -1423,8 +1753,8 @@
         },
         {
           "title": "Variants",
-          "html": "<div style=\"display: flex; flex-direction: column; padding: 3rem\">\n  <div>\n    <ul\n      variant=\"unordered\"\n      color=\"purple\"\n      class=\"drac-list drac-list-unordered drac-list-purple\"\n    >\n      <li class=\"drac-text drac-text-white\">This is the first item</li>\n      <li class=\"drac-text drac-text-white\">This is the second item</li>\n      <li class=\"drac-text drac-text-white\">This is the third item</li>\n      <li class=\"drac-text drac-text-white\">This is the fourth item</li>\n      <li class=\"drac-text drac-text-white\">This is the fifth item</li>\n      <li class=\"drac-text drac-text-white\">This is the sixth item</li>\n      <li class=\"drac-text drac-text-white\">This is the seventh item</li>\n      <li class=\"drac-text drac-text-white\">This is the eighth item</li>\n      <li class=\"drac-text drac-text-white\">This is the ninth item</li>\n      <li class=\"drac-text drac-text-white\">\n        This is the tenth item (showing how numbers align and wrapping looks by\n        default)\n      </li>\n    </ul>\n  </div>\n  <div>\n    <ol\n      variant=\"ordered\"\n      color=\"purple\"\n      class=\"drac-list drac-list-ordered drac-list-purple\"\n    >\n      <li class=\"drac-text drac-text-white\">This is the first item</li>\n      <li class=\"drac-text drac-text-white\">This is the second item</li>\n      <li class=\"drac-text drac-text-white\">This is the third item</li>\n      <li class=\"drac-text drac-text-white\">This is the fourth item</li>\n      <li class=\"drac-text drac-text-white\">This is the fifth item</li>\n      <li class=\"drac-text drac-text-white\">This is the sixth item</li>\n      <li class=\"drac-text drac-text-white\">This is the seventh item</li>\n      <li class=\"drac-text drac-text-white\">This is the eighth item</li>\n      <li class=\"drac-text drac-text-white\">This is the ninth item</li>\n      <li class=\"drac-text drac-text-white\">\n        This is the tenth item (showing how numbers align and wrapping looks by\n        default)\n      </li>\n    </ol>\n  </div>\n</div>\n",
-          "react": "<div style={{ display: \"flex\", flexDirection: \"column\", padding: \"3rem\" }}>\n  <div>\n    <List variant=\"unordered\" color=\"purple\">\n      <li className=\"drac-text drac-text-white\">This is the first item</li>\n      <li className=\"drac-text drac-text-white\">This is the second item</li>\n      <li className=\"drac-text drac-text-white\">This is the third item</li>\n      <li className=\"drac-text drac-text-white\">This is the fourth item</li>\n      <li className=\"drac-text drac-text-white\">This is the fifth item</li>\n      <li className=\"drac-text drac-text-white\">This is the sixth item</li>\n      <li className=\"drac-text drac-text-white\">This is the seventh item</li>\n      <li className=\"drac-text drac-text-white\">This is the eighth item</li>\n      <li className=\"drac-text drac-text-white\">This is the ninth item</li>\n      <li className=\"drac-text drac-text-white\">\n        This is the tenth item (showing how numbers align and wrapping looks by\n        default)\n      </li>\n    </List>\n  </div>\n  <div>\n    <List variant=\"ordered\" color=\"purple\">\n      <li className=\"drac-text drac-text-white\">This is the first item</li>\n      <li className=\"drac-text drac-text-white\">This is the second item</li>\n      <li className=\"drac-text drac-text-white\">This is the third item</li>\n      <li className=\"drac-text drac-text-white\">This is the fourth item</li>\n      <li className=\"drac-text drac-text-white\">This is the fifth item</li>\n      <li className=\"drac-text drac-text-white\">This is the sixth item</li>\n      <li className=\"drac-text drac-text-white\">This is the seventh item</li>\n      <li className=\"drac-text drac-text-white\">This is the eighth item</li>\n      <li className=\"drac-text drac-text-white\">This is the ninth item</li>\n      <li className=\"drac-text drac-text-white\">\n        This is the tenth item (showing how numbers align and wrapping looks by\n        default)\n      </li>\n    </List>\n  </div>\n</div>;\n",
+          "html": "<div style=\"display: flex; flex-direction: column; padding: 3rem\">\n  <div>\n    <ul\n      variant=\"unordered\"\n      color=\"purple\"\n      class=\"drac-list drac-list-unordered drac-list-purple\"\n    >\n      <li class=\"drac-text drac-text-white\">This is the first item</li>\n      <li class=\"drac-text drac-text-white\">This is the second item</li>\n      <li class=\"drac-text drac-text-white\">This is the third item</li>\n      <li class=\"drac-text drac-text-white\">This is the fourth item</li>\n      <li class=\"drac-text drac-text-white\">This is the fifth item</li>\n      <li class=\"drac-text drac-text-white\">This is the sixth item</li>\n      <li class=\"drac-text drac-text-white\">This is the seventh item</li>\n      <li class=\"drac-text drac-text-white\">This is the eighth item</li>\n      <li class=\"drac-text drac-text-white\">This is the ninth item</li>\n      <li class=\"drac-text drac-text-white\">\n        This is the tenth item (showing how numbers align and wrapping looks by\n        default)\n      </li>\n    </ul>\n  </div>\n  <div>\n    <ol\n      variant=\"ordered\"\n      color=\"purple\"\n      class=\"drac-list drac-list-ordered drac-list-purple\"\n    >\n      <li class=\"drac-text drac-text-white\">This is the first item</li>\n      <li class=\"drac-text drac-text-white\">This is the second item</li>\n      <li class=\"drac-text drac-text-white\">This is the third item</li>\n      <li class=\"drac-text drac-text-white\">This is the fourth item</li>\n      <li class=\"drac-text drac-text-white\">This is the fifth item</li>\n      <li class=\"drac-text drac-text-white\">This is the sixth item</li>\n      <li class=\"drac-text drac-text-white\">This is the seventh item</li>\n      <li class=\"drac-text drac-text-white\">This is the eighth item</li>\n      <li class=\"drac-text drac-text-white\">This is the ninth item</li>\n      <li class=\"drac-text drac-text-white\">\n        This is the tenth item (showing how numbers align and wrapping looks by\n        default)\n      </li>\n    </ol>\n  </div>\n  <div>\n    <ol\n      variant=\"none\"\n      color=\"purple\"\n      class=\"drac-list drac-list-none drac-list-purple\"\n    >\n      <li class=\"drac-text drac-text-white\">This is the first item</li>\n      <li class=\"drac-text drac-text-white\">This is the second item</li>\n      <li class=\"drac-text drac-text-white\">This is the third item</li>\n      <li class=\"drac-text drac-text-white\">This is the fourth item</li>\n      <li class=\"drac-text drac-text-white\">This is the fifth item</li>\n      <li class=\"drac-text drac-text-white\">This is the sixth item</li>\n      <li class=\"drac-text drac-text-white\">This is the seventh item</li>\n      <li class=\"drac-text drac-text-white\">This is the eighth item</li>\n      <li class=\"drac-text drac-text-white\">This is the ninth item</li>\n      <li class=\"drac-text drac-text-white\">\n        This is the tenth item (showing how numbers align and wrapping looks by\n        default)\n      </li>\n    </ol>\n  </div>\n</div>\n",
+          "react": "<div style={{ display: \"flex\", flexDirection: \"column\", padding: \"3rem\" }}>\n  <div>\n    <List variant=\"unordered\" color=\"purple\">\n      <li className=\"drac-text drac-text-white\">This is the first item</li>\n      <li className=\"drac-text drac-text-white\">This is the second item</li>\n      <li className=\"drac-text drac-text-white\">This is the third item</li>\n      <li className=\"drac-text drac-text-white\">This is the fourth item</li>\n      <li className=\"drac-text drac-text-white\">This is the fifth item</li>\n      <li className=\"drac-text drac-text-white\">This is the sixth item</li>\n      <li className=\"drac-text drac-text-white\">This is the seventh item</li>\n      <li className=\"drac-text drac-text-white\">This is the eighth item</li>\n      <li className=\"drac-text drac-text-white\">This is the ninth item</li>\n      <li className=\"drac-text drac-text-white\">\n        This is the tenth item (showing how numbers align and wrapping looks by\n        default)\n      </li>\n    </List>\n  </div>\n  <div>\n    <List variant=\"ordered\" color=\"purple\">\n      <li className=\"drac-text drac-text-white\">This is the first item</li>\n      <li className=\"drac-text drac-text-white\">This is the second item</li>\n      <li className=\"drac-text drac-text-white\">This is the third item</li>\n      <li className=\"drac-text drac-text-white\">This is the fourth item</li>\n      <li className=\"drac-text drac-text-white\">This is the fifth item</li>\n      <li className=\"drac-text drac-text-white\">This is the sixth item</li>\n      <li className=\"drac-text drac-text-white\">This is the seventh item</li>\n      <li className=\"drac-text drac-text-white\">This is the eighth item</li>\n      <li className=\"drac-text drac-text-white\">This is the ninth item</li>\n      <li className=\"drac-text drac-text-white\">\n        This is the tenth item (showing how numbers align and wrapping looks by\n        default)\n      </li>\n    </List>\n  </div>\n  <div>\n    <List variant=\"none\" color=\"purple\">\n      <li className=\"drac-text drac-text-white\">This is the first item</li>\n      <li className=\"drac-text drac-text-white\">This is the second item</li>\n      <li className=\"drac-text drac-text-white\">This is the third item</li>\n      <li className=\"drac-text drac-text-white\">This is the fourth item</li>\n      <li className=\"drac-text drac-text-white\">This is the fifth item</li>\n      <li className=\"drac-text drac-text-white\">This is the sixth item</li>\n      <li className=\"drac-text drac-text-white\">This is the seventh item</li>\n      <li className=\"drac-text drac-text-white\">This is the eighth item</li>\n      <li className=\"drac-text drac-text-white\">This is the ninth item</li>\n      <li className=\"drac-text drac-text-white\">\n        This is the tenth item (showing how numbers align and wrapping looks by\n        default)\n      </li>\n    </List>\n  </div>\n</div>;\n",
           "docs": "",
           "screenshot": "./dsp/assets/ListVariants.png",
           "svgData": "./dsp/assets/svgs/ListVariants.svg"
@@ -1466,7 +1796,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"unordered\" | \"ordered\" | undefined"
+            "name": "\"unordered\" | \"ordered\" | \"none\" | undefined"
           }
         }
       },
@@ -1511,7 +1841,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"unordered\" | \"ordered\" | undefined"
+              "name": "\"unordered\" | \"ordered\" | \"none\" | undefined"
             }
           }
         }
@@ -1522,7 +1852,7 @@
       "type": "page",
       "id": "Paragraph",
       "name": "Paragraph",
-      "last_updated": "2021-03-12T05:25:05.621Z",
+      "last_updated": "2021-03-14T00:12:03.568Z",
       "last_updated_by": "System",
       "description": "Paragraph is a semantic component used for blocks of text with\nsemantic meaning.\n\nParagraph accepts all the same customization options as Text.",
       "related_entity_ids": [],
@@ -1776,7 +2106,7 @@
       "type": "page",
       "id": "Radio",
       "name": "Radio",
-      "last_updated": "2021-03-12T05:24:54.575Z",
+      "last_updated": "2021-03-14T00:12:03.041Z",
       "last_updated_by": "System",
       "description": "Radio is a styled HTML Input of type radio.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep Radios accessible.",
       "related_entity_ids": [],
@@ -1908,7 +2238,7 @@
       "type": "page",
       "id": "Select",
       "name": "Select",
-      "last_updated": "2021-03-12T05:25:02.089Z",
+      "last_updated": "2021-03-14T00:11:57.224Z",
       "last_updated_by": "System",
       "description": "Select is a styled HTML Select element.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS, and small SVG component in order to keep Selects accessible.",
       "related_entity_ids": [],
@@ -2132,7 +2462,7 @@
       "type": "page",
       "id": "Switch",
       "name": "Switch",
-      "last_updated": "2021-03-12T05:24:56.013Z",
+      "last_updated": "2021-03-14T00:11:49.082Z",
       "last_updated_by": "System",
       "description": "Switch is an abstraction pattern that represents toggles.\n\nUse the Switch component as an alternative for Checkboxes or Radios\nwhen options are binary.\n\nSwitches are implemented as Checkboxes under the hood,\nand work normally with forms.",
       "related_entity_ids": [],
@@ -2302,7 +2632,7 @@
       "type": "page",
       "id": "Table",
       "name": "Table",
-      "last_updated": "2021-03-12T05:25:01.274Z",
+      "last_updated": "2021-03-14T00:11:56.331Z",
       "last_updated_by": "System",
       "description": "Tables are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
       "related_entity_ids": [],
@@ -2434,7 +2764,7 @@
       "type": "page",
       "id": "Tabs",
       "name": "Tabs",
-      "last_updated": "2021-03-12T05:24:53.573Z",
+      "last_updated": "2021-03-14T00:12:02.435Z",
       "last_updated_by": "System",
       "description": "Tabs are horizontal navigation elements used to display\ncontent within the same page.",
       "related_entity_ids": [],
@@ -2485,6 +2815,44 @@
           "type": {
             "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
           }
+        },
+        "spacing": {
+          "defaultValue": null,
+          "description": "Dracula UI standard spacing properties.",
+          "name": "spacing",
+          "parent": {
+            "fileName": "src/components/Tabs/Tabs.tsx",
+            "name": "TabsProps"
+          },
+          "declarations": [
+            {
+              "fileName": "src/components/Tabs/Tabs.tsx",
+              "name": "TabsProps"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "SpacingPropType | undefined"
+          }
+        },
+        "margin": {
+          "defaultValue": null,
+          "description": "Dracula UI standard margin properties.",
+          "name": "margin",
+          "parent": {
+            "fileName": "src/components/Tabs/Tabs.tsx",
+            "name": "TabsProps"
+          },
+          "declarations": [
+            {
+              "fileName": "src/components/Tabs/Tabs.tsx",
+              "name": "TabsProps"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "MarginPropType | undefined"
+          }
         }
       },
       "ext_com_draculaui_docgen": {
@@ -2511,6 +2879,44 @@
             "type": {
               "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
             }
+          },
+          "spacing": {
+            "defaultValue": null,
+            "description": "Dracula UI standard spacing properties.",
+            "name": "spacing",
+            "parent": {
+              "fileName": "src/components/Tabs/Tabs.tsx",
+              "name": "TabsProps"
+            },
+            "declarations": [
+              {
+                "fileName": "src/components/Tabs/Tabs.tsx",
+                "name": "TabsProps"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "SpacingPropType | undefined"
+            }
+          },
+          "margin": {
+            "defaultValue": null,
+            "description": "Dracula UI standard margin properties.",
+            "name": "margin",
+            "parent": {
+              "fileName": "src/components/Tabs/Tabs.tsx",
+              "name": "TabsProps"
+            },
+            "declarations": [
+              {
+                "fileName": "src/components/Tabs/Tabs.tsx",
+                "name": "TabsProps"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "MarginPropType | undefined"
+            }
           }
         }
       }
@@ -2520,7 +2926,7 @@
       "type": "page",
       "id": "Text",
       "name": "Text",
-      "last_updated": "2021-03-12T05:24:57.369Z",
+      "last_updated": "2021-03-14T00:11:50.688Z",
       "last_updated_by": "System",
       "description": "Text is the base component for any sort of text.\n\nConsumers of this component can control, the color, size,\nweight, and spacing of Text.\n\nUse this component for generic, and non-hierarchical text that is\nto be displayed on a page, or as part of other complex components\nor UI patterns",
       "related_entity_ids": [],
