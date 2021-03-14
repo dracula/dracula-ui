@@ -3,7 +3,7 @@
   "type": "page",
   "id": "Box",
   "name": "Box",
-  "last_updated": "2021-03-13T21:18:35.098Z",
+  "last_updated": "2021-03-14T00:08:30.329Z",
   "last_updated_by": "System",
   "description": "Box is the most primitive component of Dracula UI.\nUsing Box allows for consumers of the components library to compose\nmore complex patterns, components, and UIs.\n\nBox includes built-in Color and Spacing properties that make building\ncomplex components convenient and consistent.",
   "related_entity_ids": [],
@@ -96,6 +96,20 @@
       "required": false,
       "type": { "name": "SpacingPropType | undefined" }
     },
+    "margin": {
+      "defaultValue": null,
+      "description": "Dracula UI standard margin properties.",
+      "name": "margin",
+      "parent": {
+        "fileName": "src/components/Box/Box.tsx",
+        "name": "BoxProps"
+      },
+      "declarations": [
+        { "fileName": "src/components/Box/Box.tsx", "name": "BoxProps" }
+      ],
+      "required": false,
+      "type": { "name": "MarginPropType | undefined" }
+    },
     "as": {
       "defaultValue": null,
       "description": "The HTML element to be used",
@@ -162,6 +176,20 @@
         ],
         "required": false,
         "type": { "name": "SpacingPropType | undefined" }
+      },
+      "margin": {
+        "defaultValue": null,
+        "description": "Dracula UI standard margin properties.",
+        "name": "margin",
+        "parent": {
+          "fileName": "src/components/Box/Box.tsx",
+          "name": "BoxProps"
+        },
+        "declarations": [
+          { "fileName": "src/components/Box/Box.tsx", "name": "BoxProps" }
+        ],
+        "required": false,
+        "type": { "name": "MarginPropType | undefined" }
       },
       "as": {
         "defaultValue": null,

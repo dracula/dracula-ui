@@ -1,0 +1,214 @@
+{
+  "class": "component",
+  "type": "page",
+  "id": "Link",
+  "name": "Link",
+  "last_updated": "2021-03-14T00:08:42.532Z",
+  "last_updated_by": "System",
+  "description": "Text is the base component for any sort of text.\n\nConsumers of this component can control, the color, size,\nweight, and spacing of Text.\n\nUse this component for generic, and non-hierarchical text that is\nto be displayed on a page, or as part of other complex components\nor UI patterns",
+  "related_entity_ids": [],
+  "tags": ["component"],
+  "snippets": {
+    "trigger": "link",
+    "languages": {
+      "javascriptreact": "<Link>Link</Link>;\n",
+      "html": "<a class=\"drac-link drac-text drac-text-white drac-text-white--hover\">Link</a>\n"
+    }
+  },
+  "ext_com_draculaui_variations": [
+    {
+      "title": "Usage",
+      "html": "<a class=\"drac-link drac-text drac-text-white drac-text-white--hover\">Link</a>\n",
+      "react": "<Link>Link</Link>;\n",
+      "docs": "",
+      "screenshot": "./dsp/assets/Link.png",
+      "svgData": "./dsp/assets/svgs/Link.svg"
+    },
+    {
+      "title": "Colors",
+      "html": "<div></div>\n",
+      "react": "<div />;\n",
+      "docs": "",
+      "screenshot": "./dsp/assets/LinkColors.png",
+      "svgData": "./dsp/assets/svgs/LinkColors.svg"
+    },
+    {
+      "title": "Weights",
+      "html": "<div></div>\n",
+      "react": "<div />;\n",
+      "docs": "",
+      "screenshot": "./dsp/assets/LinkWeights.png",
+      "svgData": "./dsp/assets/svgs/LinkWeights.svg"
+    },
+    {
+      "title": "Sizes",
+      "html": "<div></div>\n",
+      "react": "<div />;\n",
+      "docs": "",
+      "screenshot": "./dsp/assets/LinkSizes.png",
+      "svgData": "./dsp/assets/svgs/LinkSizes.svg"
+    }
+  ],
+  "ext_com_draculaui_props": {
+    "size": {
+      "defaultValue": null,
+      "description": "Controls the size of the link based on pre-configured Dracula UI sizes.\nOptions: `xsmall`, `small`, `medium`, `large`",
+      "name": "size",
+      "parent": {
+        "fileName": "src/components/Link/Link.tsx",
+        "name": "LinkProps"
+      },
+      "declarations": [
+        { "fileName": "src/components/Link/Link.tsx", "name": "LinkProps" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"large\" | \"medium\" | \"small\" | \"xsmall\" | undefined"
+      }
+    },
+    "weight": {
+      "defaultValue": null,
+      "description": "Controls the weight of the link.\nOptions: `normal`, `semibold`, `bold`.",
+      "name": "weight",
+      "parent": {
+        "fileName": "src/components/Link/Link.tsx",
+        "name": "LinkProps"
+      },
+      "declarations": [
+        { "fileName": "src/components/Link/Link.tsx", "name": "LinkProps" }
+      ],
+      "required": false,
+      "type": { "name": "\"normal\" | \"semibold\" | \"bold\" | undefined" }
+    },
+    "color": {
+      "defaultValue": null,
+      "description": "Controls the color of the link",
+      "name": "color",
+      "parent": {
+        "fileName": "src/components/Link/Link.tsx",
+        "name": "LinkProps"
+      },
+      "declarations": [
+        { "fileName": "src/components/Link/Link.tsx", "name": "LinkProps" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+      }
+    },
+    "hoverColor": {
+      "defaultValue": null,
+      "description": "Controls the color of the link on hover",
+      "name": "hoverColor",
+      "parent": {
+        "fileName": "src/components/Link/Link.tsx",
+        "name": "LinkProps"
+      },
+      "declarations": [
+        { "fileName": "src/components/Link/Link.tsx", "name": "LinkProps" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+      }
+    },
+    "spacing": {
+      "defaultValue": null,
+      "description": "Controls the spacing between the Link component and its parent and siblings.",
+      "name": "spacing",
+      "parent": {
+        "fileName": "src/components/Link/Link.tsx",
+        "name": "LinkProps"
+      },
+      "declarations": [
+        { "fileName": "src/components/Link/Link.tsx", "name": "LinkProps" }
+      ],
+      "required": false,
+      "type": { "name": "SpacingPropType | undefined" }
+    }
+  },
+  "ext_com_draculaui_docgen": {
+    "tags": {},
+    "description": "Text is the base component for any sort of text.\n\nConsumers of this component can control, the color, size,\nweight, and spacing of Text.\n\nUse this component for generic, and non-hierarchical text that is\nto be displayed on a page, or as part of other complex components\nor UI patterns",
+    "displayName": "Link",
+    "methods": [],
+    "props": {
+      "size": {
+        "defaultValue": null,
+        "description": "Controls the size of the link based on pre-configured Dracula UI sizes.\nOptions: `xsmall`, `small`, `medium`, `large`",
+        "name": "size",
+        "parent": {
+          "fileName": "src/components/Link/Link.tsx",
+          "name": "LinkProps"
+        },
+        "declarations": [
+          { "fileName": "src/components/Link/Link.tsx", "name": "LinkProps" }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"large\" | \"medium\" | \"small\" | \"xsmall\" | undefined"
+        }
+      },
+      "weight": {
+        "defaultValue": null,
+        "description": "Controls the weight of the link.\nOptions: `normal`, `semibold`, `bold`.",
+        "name": "weight",
+        "parent": {
+          "fileName": "src/components/Link/Link.tsx",
+          "name": "LinkProps"
+        },
+        "declarations": [
+          { "fileName": "src/components/Link/Link.tsx", "name": "LinkProps" }
+        ],
+        "required": false,
+        "type": { "name": "\"normal\" | \"semibold\" | \"bold\" | undefined" }
+      },
+      "color": {
+        "defaultValue": null,
+        "description": "Controls the color of the link",
+        "name": "color",
+        "parent": {
+          "fileName": "src/components/Link/Link.tsx",
+          "name": "LinkProps"
+        },
+        "declarations": [
+          { "fileName": "src/components/Link/Link.tsx", "name": "LinkProps" }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+        }
+      },
+      "hoverColor": {
+        "defaultValue": null,
+        "description": "Controls the color of the link on hover",
+        "name": "hoverColor",
+        "parent": {
+          "fileName": "src/components/Link/Link.tsx",
+          "name": "LinkProps"
+        },
+        "declarations": [
+          { "fileName": "src/components/Link/Link.tsx", "name": "LinkProps" }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+        }
+      },
+      "spacing": {
+        "defaultValue": null,
+        "description": "Controls the spacing between the Link component and its parent and siblings.",
+        "name": "spacing",
+        "parent": {
+          "fileName": "src/components/Link/Link.tsx",
+          "name": "LinkProps"
+        },
+        "declarations": [
+          { "fileName": "src/components/Link/Link.tsx", "name": "LinkProps" }
+        ],
+        "required": false,
+        "type": { "name": "SpacingPropType | undefined" }
+      }
+    }
+  }
+}

@@ -308,6 +308,27 @@ Object {
       </li>
     </ol>
   </div>
+  <div>
+    <ol
+      variant=\\"none\\"
+      color=\\"purple\\"
+      class=\\"drac-list drac-list-none drac-list-purple\\"
+    >
+      <li class=\\"drac-text drac-text-white\\">This is the first item</li>
+      <li class=\\"drac-text drac-text-white\\">This is the second item</li>
+      <li class=\\"drac-text drac-text-white\\">This is the third item</li>
+      <li class=\\"drac-text drac-text-white\\">This is the fourth item</li>
+      <li class=\\"drac-text drac-text-white\\">This is the fifth item</li>
+      <li class=\\"drac-text drac-text-white\\">This is the sixth item</li>
+      <li class=\\"drac-text drac-text-white\\">This is the seventh item</li>
+      <li class=\\"drac-text drac-text-white\\">This is the eighth item</li>
+      <li class=\\"drac-text drac-text-white\\">This is the ninth item</li>
+      <li class=\\"drac-text drac-text-white\\">
+        This is the tenth item (showing how numbers align and wrapping looks by
+        default)
+      </li>
+    </ol>
+  </div>
 </div>
 ",
   "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\", padding: \\"3rem\\" }}>
@@ -330,6 +351,23 @@ Object {
   </div>
   <div>
     <List variant=\\"ordered\\" color=\\"purple\\">
+      <li className=\\"drac-text drac-text-white\\">This is the first item</li>
+      <li className=\\"drac-text drac-text-white\\">This is the second item</li>
+      <li className=\\"drac-text drac-text-white\\">This is the third item</li>
+      <li className=\\"drac-text drac-text-white\\">This is the fourth item</li>
+      <li className=\\"drac-text drac-text-white\\">This is the fifth item</li>
+      <li className=\\"drac-text drac-text-white\\">This is the sixth item</li>
+      <li className=\\"drac-text drac-text-white\\">This is the seventh item</li>
+      <li className=\\"drac-text drac-text-white\\">This is the eighth item</li>
+      <li className=\\"drac-text drac-text-white\\">This is the ninth item</li>
+      <li className=\\"drac-text drac-text-white\\">
+        This is the tenth item (showing how numbers align and wrapping looks by
+        default)
+      </li>
+    </List>
+  </div>
+  <div>
+    <List variant=\\"none\\" color=\\"purple\\">
       <li className=\\"drac-text drac-text-white\\">This is the first item</li>
       <li className=\\"drac-text drac-text-white\\">This is the second item</li>
       <li className=\\"drac-text drac-text-white\\">This is the third item</li>
