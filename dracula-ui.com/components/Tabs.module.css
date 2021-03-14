@@ -1,0 +1,18 @@
+.tab {
+  cursor: pointer;
+  composes: drac-tab from global;
+}
+
+.tabActive {
+  cursor: pointer;
+  composes: drac-tab from global;
+  composes: drac-tab-active from global;
+}
+
+.tabPanel {
+  display: none;
+}
+
+.tabPanelActive {
+  display: block;
+}

@@ -1,9 +1,14 @@
 import cx from 'classnames/dedupe'
 import React, { HTMLAttributes } from 'react'
 import { ColorMap } from '../../base/colors'
-import { marginClasses, MarginPropType, spacingClasses, SpacingPropType } from '../../base/spacing'
+import {
+  marginClasses,
+  MarginPropType,
+  spacingClasses,
+  SpacingPropType
+} from '../../base/spacing'
 
-export const tabsColors: ColorMap = {
+export const tabsColors: Partial<ColorMap> = {
   white: 'drac-tabs-white',
   cyan: 'drac-tabs-cyan',
   green: 'drac-tabs-green',
@@ -11,12 +16,7 @@ export const tabsColors: ColorMap = {
   pink: 'drac-tabs-pink',
   purple: 'drac-tabs-purple',
   red: 'drac-tabs-red',
-  yellow: 'drac-tabs-yellow',
-  animated: '',
-  cyanGreen: '',
-  pinkPurple: '',
-  purpleCyan: '',
-  yellowPink: ''
+  yellow: 'drac-tabs-yellow'
 }
 
 /**

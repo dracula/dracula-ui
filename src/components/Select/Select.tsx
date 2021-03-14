@@ -13,7 +13,7 @@ export const selectSizes = {
   small: 'drac-select-sm'
 }
 
-export const selectColors: ColorMap = {
+export const selectColors: Partial<ColorMap> = {
   white: 'drac-select-white',
   cyan: 'drac-select-cyan',
   green: 'drac-select-green',
@@ -21,12 +21,7 @@ export const selectColors: ColorMap = {
   pink: 'drac-select-pink',
   purple: 'drac-select-purple',
   red: 'drac-select-red',
-  yellow: 'drac-select-yellow',
-  animated: '',
-  cyanGreen: '',
-  pinkPurple: '',
-  purpleCyan: '',
-  yellowPink: ''
+  yellow: 'drac-select-yellow'
 }
 
 /** Select Props */

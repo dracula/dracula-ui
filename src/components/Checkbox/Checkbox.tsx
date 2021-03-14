@@ -2,7 +2,7 @@ import React, { HTMLAttributes } from 'react'
 import cx from 'classnames/dedupe'
 import { ColorMap } from '../../base/colors'
 
-export const checkboxColors: ColorMap = {
+export const checkboxColors: Partial<ColorMap> = {
   white: 'drac-checkbox-white',
   cyan: 'drac-checkbox-cyan',
   green: 'drac-checkbox-green',
@@ -10,12 +10,7 @@ export const checkboxColors: ColorMap = {
   pink: 'drac-checkbox-pink',
   purple: 'drac-checkbox-purple',
   red: 'drac-checkbox-red',
-  yellow: 'drac-checkbox-yellow',
-  animated: '',
-  cyanGreen: '',
-  pinkPurple: '',
-  purpleCyan: '',
-  yellowPink: ''
+  yellow: 'drac-checkbox-yellow'
 }
 
 /** Checkbox Props */

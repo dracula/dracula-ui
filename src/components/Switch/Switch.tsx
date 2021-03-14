@@ -1,7 +1,7 @@
 import { ColorMap } from '../../base/colors'
 import React, { HTMLAttributes } from 'react'
 
-export const switchColors: ColorMap = {
+export const switchColors: Partial<ColorMap> = {
   white: 'drac-switch-white',
   cyan: 'drac-switch-cyan',
   green: 'drac-switch-green',
@@ -9,12 +9,7 @@ export const switchColors: ColorMap = {
   pink: 'drac-switch-pink',
   purple: 'drac-switch-purple',
   red: 'drac-switch-red',
-  yellow: 'drac-switch-yellow',
-  animated: '',
-  cyanGreen: '',
-  pinkPurple: '',
-  purpleCyan: '',
-  yellowPink: ''
+  yellow: 'drac-switch-yellow'
 }
 
 /** Switch Props. */

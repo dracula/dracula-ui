@@ -2,7 +2,7 @@ import { ColorMap } from '../../base/colors'
 import React, { HTMLAttributes } from 'react'
 import cx from 'classnames/dedupe'
 
-export const listColors: ColorMap = {
+export const listColors: Partial<ColorMap> = {
   white: 'drac-list-white',
   cyan: 'drac-list-cyan',
   green: 'drac-list-green',
@@ -10,12 +10,7 @@ export const listColors: ColorMap = {
   pink: 'drac-list-pink',
   purple: 'drac-list-purple',
   red: 'drac-list-red',
-  yellow: 'drac-list-yellow',
-  animated: '',
-  cyanGreen: '',
-  pinkPurple: '',
-  purpleCyan: '',
-  yellowPink: ''
+  yellow: 'drac-list-yellow'
 }
 
 export const listVariants = {

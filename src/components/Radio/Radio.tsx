@@ -1,7 +1,7 @@
 import { ColorMap } from '../../base/colors'
 import React, { HTMLAttributes } from 'react'
 
-export const radioColors: ColorMap = {
+export const radioColors: Partial<ColorMap> = {
   white: 'drac-radio-white',
   cyan: 'drac-radio-cyan',
   green: 'drac-radio-green',
@@ -9,12 +9,7 @@ export const radioColors: ColorMap = {
   pink: 'drac-radio-pink',
   purple: 'drac-radio-purple',
   red: 'drac-radio-red',
-  yellow: 'drac-radio-yellow',
-  animated: '',
-  cyanGreen: '',
-  pinkPurple: '',
-  purpleCyan: '',
-  yellowPink: ''
+  yellow: 'drac-radio-yellow'
 }
 
 /** Radio Props */

@@ -13,7 +13,7 @@ export const inputSizes = {
   small: 'drac-input-sm'
 }
 
-export const inputColors: ColorMap = {
+export const inputColors: Partial<ColorMap> = {
   white: 'drac-input-white drac-text-white',
   cyan: 'drac-input-cyan drac-text-cyan',
   green: 'drac-input-green drac-text-green',
@@ -21,12 +21,7 @@ export const inputColors: ColorMap = {
   pink: 'drac-input-pink drac-text-pink',
   purple: 'drac-input-purple drac-text-purple',
   red: 'drac-input-red drac-text-red',
-  yellow: 'drac-input-yellow drac-text-yellow',
-  animated: '',
-  cyanGreen: '',
-  pinkPurple: '',
-  purpleCyan: '',
-  yellowPink: ''
+  yellow: 'drac-input-yellow drac-text-yellow'
 }
 
 /** Input Props */

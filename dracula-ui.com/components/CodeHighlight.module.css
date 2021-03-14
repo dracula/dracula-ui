@@ -1,0 +1,6 @@
+.pre {
+  padding: 1rem;
+  overflow: scroll;
+  composes: drac-text from global;
+  margin: 0;
+}
