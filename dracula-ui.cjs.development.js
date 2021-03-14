@@ -43,6 +43,9 @@ function _objectWithoutPropertiesLoose(source, excluded) {
 
 var colors = {
   white: 'drac-bg-white',
+  black: 'drac-bg-black',
+  blackSecondary: 'drac-bg-black-secondary',
+  blackLight: 'drac-bg-black-light',
   cyan: 'drac-bg-cyan',
   green: 'drac-bg-green',
   orange: 'drac-bg-orange',

@@ -1,5 +1,8 @@
 export declare const colors: {
     white: string;
+    black: string;
+    blackSecondary: string;
+    blackLight: string;
     cyan: string;
     green: string;
     orange: string;
