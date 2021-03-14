@@ -2,15 +2,23 @@ export const spacing = {
   none: 'drac-spacing-none',
   noneX: 'drac-spacing-none-x',
   noneY: 'drac-spacing-none-y',
-  xs: 'drac-spacing-tn',
+
+  xxs: 'drac-spacing-xxs',
+  xxsY: 'drac-spacing-xxs-y',
+  xxsX: 'drac-spacing-xxs-x',
+
+  xs: 'drac-spacing-xs',
   xsX: 'drac-spacing-xs-x',
   xsY: 'drac-spacing-xs-y',
+
   small: 'drac-spacing-sm',
   smallX: 'drac-spacing-sm-x',
   smallY: 'drac-spacing-sm-y',
+
   medium: 'drac-spacing-md',
   mediumX: 'drac-spacing-md-x',
   mediumY: 'drac-spacing-md-y',
+
   large: 'drac-spacing-lg',
   largeX: 'drac-spacing-lg-x',
   largeY: 'drac-spacing-lg-y'
@@ -20,15 +28,23 @@ export const margin = {
   none: 'drac-margin-none',
   noneX: 'drac-margin-none-x',
   noneY: 'drac-margin-none-y',
+
+  xxs: 'drac-margin-xxs',
+  xxsY: 'drac-margin-xxs-y',
+  xxsX: 'drac-margin-xxs-x',
+
   xs: 'drac-margin-tn',
   xsX: 'drac-margin-xs-x',
   xsY: 'drac-margin-xs-y',
+
   small: 'drac-margin-sm',
   smallX: 'drac-margin-sm-x',
   smallY: 'drac-margin-sm-y',
+
   medium: 'drac-margin-md',
   mediumX: 'drac-margin-md-x',
   mediumY: 'drac-margin-md-y',
+
   large: 'drac-margin-lg',
   largeX: 'drac-margin-lg-x',
   largeY: 'drac-margin-lg-y'
