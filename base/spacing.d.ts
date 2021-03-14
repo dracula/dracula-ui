@@ -2,6 +2,9 @@ export declare const spacing: {
     none: string;
     noneX: string;
     noneY: string;
+    xxs: string;
+    xxsY: string;
+    xxsX: string;
     xs: string;
     xsX: string;
     xsY: string;
@@ -19,6 +22,9 @@ export declare const margin: {
     none: string;
     noneX: string;
     noneY: string;
+    xxs: string;
+    xxsY: string;
+    xxsX: string;
     xs: string;
     xsX: string;
     xsY: string;
