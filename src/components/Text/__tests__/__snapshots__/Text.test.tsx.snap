@@ -19,6 +19,19 @@ Object {
     <span color=\\"white\\" class=\\"drac-text drac-text-white\\">white</span>
   </div>
   <div style=\\"margin-bottom: 20px\\">
+    <span color=\\"black\\" class=\\"drac-text drac-text-black\\">black</span>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <span color=\\"blackSecondary\\" class=\\"drac-text drac-text-black-secondary\\"
+      >blackSecondary</span
+    >
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <span color=\\"blackLight\\" class=\\"drac-text drac-text-black-light\\"
+      >blackLight</span
+    >
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
     <span color=\\"cyan\\" class=\\"drac-text drac-text-cyan\\">cyan</span>
   </div>
   <div style=\\"margin-bottom: 20px\\">
@@ -67,6 +80,15 @@ Object {
   "react": "<div>
   <div style={{ marginBottom: 20 }}>
     <Text color=\\"white\\">white</Text>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Text color=\\"black\\">black</Text>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Text color=\\"blackSecondary\\">blackSecondary</Text>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Text color=\\"blackLight\\">blackLight</Text>
   </div>
   <div style={{ marginBottom: 20 }}>
     <Text color=\\"cyan\\">cyan</Text>

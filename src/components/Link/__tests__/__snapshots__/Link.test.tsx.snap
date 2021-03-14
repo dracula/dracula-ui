@@ -24,6 +24,27 @@ Object {
   </div>
   <div style=\\"margin-bottom: 20px\\">
     <a
+      color=\\"black\\"
+      class=\\"drac-link drac-text drac-text-black drac-text-white--hover\\"
+      >black</a
+    >
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <a
+      color=\\"blackSecondary\\"
+      class=\\"drac-link drac-text drac-text-black-secondary drac-text-white--hover\\"
+      >blackSecondary</a
+    >
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <a
+      color=\\"blackLight\\"
+      class=\\"drac-link drac-text drac-text-black-light drac-text-white--hover\\"
+      >blackLight</a
+    >
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <a
       color=\\"cyan\\"
       class=\\"drac-link drac-text drac-text-cyan drac-text-white--hover\\"
       >cyan</a
@@ -111,6 +132,15 @@ Object {
   "react": "<div>
   <div style={{ marginBottom: 20 }}>
     <Link color=\\"white\\">white</Link>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Link color=\\"black\\">black</Link>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Link color=\\"blackSecondary\\">blackSecondary</Link>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Link color=\\"blackLight\\">blackLight</Link>
   </div>
   <div style={{ marginBottom: 20 }}>
     <Link color=\\"cyan\\">cyan</Link>

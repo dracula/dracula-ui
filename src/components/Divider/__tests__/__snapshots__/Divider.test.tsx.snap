@@ -16,6 +16,16 @@ Object {
   "docs": "",
   "html": "<div style=\\"display: flex; flex-direction: column; padding: 3rem\\">
   <div><hr color=\\"white\\" class=\\"drac-divider drac-border-white\\" /></div>
+  <div><hr color=\\"black\\" class=\\"drac-divider drac-border-black\\" /></div>
+  <div>
+    <hr
+      color=\\"blackSecondary\\"
+      class=\\"drac-divider drac-border-black-secondary\\"
+    />
+  </div>
+  <div>
+    <hr color=\\"blackLight\\" class=\\"drac-divider drac-border-black-light\\" />
+  </div>
   <div><hr color=\\"cyan\\" class=\\"drac-divider drac-border-cyan\\" /></div>
   <div><hr color=\\"green\\" class=\\"drac-divider drac-border-green\\" /></div>
   <div><hr color=\\"orange\\" class=\\"drac-divider drac-border-orange\\" /></div>
@@ -41,6 +51,15 @@ Object {
   "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\", padding: \\"3rem\\" }}>
   <div>
     <Divider color=\\"white\\" />
+  </div>
+  <div>
+    <Divider color=\\"black\\" />
+  </div>
+  <div>
+    <Divider color=\\"blackSecondary\\" />
+  </div>
+  <div>
+    <Divider color=\\"blackLight\\" />
   </div>
   <div>
     <Divider color=\\"cyan\\" />

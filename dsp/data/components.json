@@ -8,7 +8,7 @@
       "type": "page",
       "id": "Avatar",
       "name": "Avatar",
-      "last_updated": "2021-03-14T01:20:12.975Z",
+      "last_updated": "2021-03-14T22:06:14.521Z",
       "last_updated_by": "System",
       "description": "The Avatar component is used to represent a user.\n\nIt displays a profile picture, or falls back to the user's initials\nif a profile pic is not provided.",
       "related_entity_ids": [],
@@ -108,7 +108,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+            "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
           }
         },
         "variant": {
@@ -210,7 +210,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+              "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
             }
           },
           "variant": {
@@ -278,7 +278,7 @@
       "type": "page",
       "id": "Box",
       "name": "Box",
-      "last_updated": "2021-03-14T01:20:21.753Z",
+      "last_updated": "2021-03-14T22:06:22.528Z",
       "last_updated_by": "System",
       "description": "Box is the most primitive component of Dracula UI.\nUsing Box allows for consumers of the components library to compose\nmore complex patterns, components, and UIs.\n\nBox includes built-in Color and Spacing properties that make building\ncomplex components convenient and consistent.",
       "related_entity_ids": [],
@@ -343,7 +343,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+            "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
           }
         },
         "rounded": {
@@ -445,7 +445,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+              "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
             }
           },
           "rounded": {
@@ -532,7 +532,7 @@
       "type": "page",
       "id": "Button",
       "name": "Button",
-      "last_updated": "2021-03-14T01:20:11.783Z",
+      "last_updated": "2021-03-14T22:06:13.730Z",
       "last_updated_by": "System",
       "description": "The Button component triggers actions, behaviors, or events based\non user input.",
       "related_entity_ids": [],
@@ -573,8 +573,8 @@
         },
         {
           "title": "Colors",
-          "html": "<div class=\"drac-box\">\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button class=\"drac-btn drac-bg-white\" color=\"white\" style=\"margin: 1rem\">\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-white drac-btn-outline drac-text-white\"\n      color=\"white\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-white-transparent drac-btn-ghost drac-text-white\"\n      color=\"white\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button class=\"drac-btn drac-bg-cyan\" color=\"cyan\" style=\"margin: 1rem\">\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-cyan drac-btn-outline drac-text-cyan\"\n      color=\"cyan\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-cyan-transparent drac-btn-ghost drac-text-cyan\"\n      color=\"cyan\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button class=\"drac-btn drac-bg-green\" color=\"green\" style=\"margin: 1rem\">\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-green drac-btn-outline drac-text-green\"\n      color=\"green\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-green-transparent drac-btn-ghost drac-text-green\"\n      color=\"green\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button class=\"drac-btn drac-bg-orange\" color=\"orange\" style=\"margin: 1rem\">\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-orange drac-btn-outline drac-text-orange\"\n      color=\"orange\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-orange-transparent drac-btn-ghost drac-text-orange\"\n      color=\"orange\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button class=\"drac-btn drac-bg-pink\" color=\"pink\" style=\"margin: 1rem\">\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-pink drac-btn-outline drac-text-pink\"\n      color=\"pink\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-pink-transparent drac-btn-ghost drac-text-pink\"\n      color=\"pink\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button class=\"drac-btn drac-bg-purple\" color=\"purple\" style=\"margin: 1rem\">\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-purple drac-btn-outline drac-text-purple\"\n      color=\"purple\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-purple-transparent drac-btn-ghost drac-text-purple\"\n      color=\"purple\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button class=\"drac-btn drac-bg-red\" color=\"red\" style=\"margin: 1rem\">\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-red drac-btn-outline drac-text-red\"\n      color=\"red\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-red-transparent drac-btn-ghost drac-text-red\"\n      color=\"red\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button class=\"drac-btn drac-bg-yellow\" color=\"yellow\" style=\"margin: 1rem\">\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-yellow drac-btn-outline drac-text-yellow\"\n      color=\"yellow\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-yellow-transparent drac-btn-ghost drac-text-yellow\"\n      color=\"yellow\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button\n      class=\"drac-btn drac-bg-purple-cyan\"\n      color=\"purpleCyan\"\n      style=\"margin: 1rem\"\n    >\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-purple-cyan drac-btn-outline drac-text-purple-cyan\"\n      color=\"purpleCyan\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-purple-cyan-transparent drac-btn-ghost drac-text-purple-cyan\"\n      color=\"purpleCyan\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button\n      class=\"drac-btn drac-bg-yellow-pink\"\n      color=\"yellowPink\"\n      style=\"margin: 1rem\"\n    >\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-yellow-pink drac-btn-outline drac-text-yellow-pink\"\n      color=\"yellowPink\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-yellow-pink-transparent drac-btn-ghost drac-text-yellow-pink\"\n      color=\"yellowPink\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button\n      class=\"drac-btn drac-bg-cyan-green\"\n      color=\"cyanGreen\"\n      style=\"margin: 1rem\"\n    >\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-cyan-green drac-btn-outline drac-text-cyan-green\"\n      color=\"cyanGreen\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-cyan-green-transparent drac-btn-ghost drac-text-cyan-green\"\n      color=\"cyanGreen\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button\n      class=\"drac-btn drac-bg-pink-purple\"\n      color=\"pinkPurple\"\n      style=\"margin: 1rem\"\n    >\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-pink-purple drac-btn-outline drac-text-pink-purple\"\n      color=\"pinkPurple\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-pink-purple-transparent drac-btn-ghost drac-text-pink-purple\"\n      color=\"pinkPurple\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button\n      class=\"drac-btn drac-bg-animated\"\n      color=\"animated\"\n      style=\"margin: 1rem\"\n    >\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-animated drac-btn-outline drac-text-animated\"\n      color=\"animated\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-animated-transparent drac-btn-ghost drac-text-animated\"\n      color=\"animated\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n</div>\n",
-          "react": "<Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"white\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"white\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"white\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"cyan\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"cyan\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"cyan\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"green\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"green\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"green\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"orange\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"orange\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"orange\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"pink\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"pink\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"pink\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"purple\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"purple\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"purple\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"red\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"red\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"red\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"yellow\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"yellow\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"yellow\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"purpleCyan\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"purpleCyan\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"purpleCyan\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"yellowPink\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"yellowPink\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"yellowPink\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"cyanGreen\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"cyanGreen\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"cyanGreen\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"pinkPurple\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"pinkPurple\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"pinkPurple\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"animated\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"animated\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"animated\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n</Box>;\n",
+          "html": "<div class=\"drac-box\">\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button class=\"drac-btn drac-bg-white\" color=\"white\" style=\"margin: 1rem\">\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-white drac-btn-outline drac-text-white\"\n      color=\"white\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-white-transparent drac-btn-ghost drac-text-white\"\n      color=\"white\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button class=\"drac-btn drac-bg-black\" color=\"black\" style=\"margin: 1rem\">\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-black drac-btn-outline drac-text-black\"\n      color=\"black\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-black-transparent drac-btn-ghost drac-text-black\"\n      color=\"black\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button\n      class=\"drac-btn drac-bg-black-secondary\"\n      color=\"blackSecondary\"\n      style=\"margin: 1rem\"\n    >\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-black-secondary drac-btn-outline drac-text-black-secondary\"\n      color=\"blackSecondary\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-black-secondary-transparent drac-btn-ghost drac-text-black-secondary\"\n      color=\"blackSecondary\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button\n      class=\"drac-btn drac-bg-black-light\"\n      color=\"blackLight\"\n      style=\"margin: 1rem\"\n    >\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-black-light drac-btn-outline drac-text-black-light\"\n      color=\"blackLight\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-black-light-transparent drac-btn-ghost drac-text-black-light\"\n      color=\"blackLight\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button class=\"drac-btn drac-bg-cyan\" color=\"cyan\" style=\"margin: 1rem\">\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-cyan drac-btn-outline drac-text-cyan\"\n      color=\"cyan\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-cyan-transparent drac-btn-ghost drac-text-cyan\"\n      color=\"cyan\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button class=\"drac-btn drac-bg-green\" color=\"green\" style=\"margin: 1rem\">\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-green drac-btn-outline drac-text-green\"\n      color=\"green\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-green-transparent drac-btn-ghost drac-text-green\"\n      color=\"green\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button class=\"drac-btn drac-bg-orange\" color=\"orange\" style=\"margin: 1rem\">\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-orange drac-btn-outline drac-text-orange\"\n      color=\"orange\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-orange-transparent drac-btn-ghost drac-text-orange\"\n      color=\"orange\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button class=\"drac-btn drac-bg-pink\" color=\"pink\" style=\"margin: 1rem\">\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-pink drac-btn-outline drac-text-pink\"\n      color=\"pink\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-pink-transparent drac-btn-ghost drac-text-pink\"\n      color=\"pink\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button class=\"drac-btn drac-bg-purple\" color=\"purple\" style=\"margin: 1rem\">\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-purple drac-btn-outline drac-text-purple\"\n      color=\"purple\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-purple-transparent drac-btn-ghost drac-text-purple\"\n      color=\"purple\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button class=\"drac-btn drac-bg-red\" color=\"red\" style=\"margin: 1rem\">\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-red drac-btn-outline drac-text-red\"\n      color=\"red\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-red-transparent drac-btn-ghost drac-text-red\"\n      color=\"red\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button class=\"drac-btn drac-bg-yellow\" color=\"yellow\" style=\"margin: 1rem\">\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-yellow drac-btn-outline drac-text-yellow\"\n      color=\"yellow\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-yellow-transparent drac-btn-ghost drac-text-yellow\"\n      color=\"yellow\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button\n      class=\"drac-btn drac-bg-purple-cyan\"\n      color=\"purpleCyan\"\n      style=\"margin: 1rem\"\n    >\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-purple-cyan drac-btn-outline drac-text-purple-cyan\"\n      color=\"purpleCyan\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-purple-cyan-transparent drac-btn-ghost drac-text-purple-cyan\"\n      color=\"purpleCyan\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button\n      class=\"drac-btn drac-bg-yellow-pink\"\n      color=\"yellowPink\"\n      style=\"margin: 1rem\"\n    >\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-yellow-pink drac-btn-outline drac-text-yellow-pink\"\n      color=\"yellowPink\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-yellow-pink-transparent drac-btn-ghost drac-text-yellow-pink\"\n      color=\"yellowPink\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button\n      class=\"drac-btn drac-bg-cyan-green\"\n      color=\"cyanGreen\"\n      style=\"margin: 1rem\"\n    >\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-cyan-green drac-btn-outline drac-text-cyan-green\"\n      color=\"cyanGreen\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-cyan-green-transparent drac-btn-ghost drac-text-cyan-green\"\n      color=\"cyanGreen\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button\n      class=\"drac-btn drac-bg-pink-purple\"\n      color=\"pinkPurple\"\n      style=\"margin: 1rem\"\n    >\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-pink-purple drac-btn-outline drac-text-pink-purple\"\n      color=\"pinkPurple\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-pink-purple-transparent drac-btn-ghost drac-text-pink-purple\"\n      color=\"pinkPurple\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n  <div style=\"display: flex; justify-content: space-around\" class=\"drac-box\">\n    <button\n      class=\"drac-btn drac-bg-animated\"\n      color=\"animated\"\n      style=\"margin: 1rem\"\n    >\n      Normal</button\n    ><button\n      class=\"drac-btn drac-bg-animated drac-btn-outline drac-text-animated\"\n      color=\"animated\"\n      style=\"margin: 1rem\"\n      variant=\"outline\"\n    >\n      Outline</button\n    ><button\n      class=\"drac-btn drac-bg-animated-transparent drac-btn-ghost drac-text-animated\"\n      color=\"animated\"\n      style=\"margin: 1rem\"\n      variant=\"ghost\"\n    >\n      Ghost\n    </button>\n  </div>\n</div>\n",
+          "react": "<Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"white\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"white\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"white\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"black\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"black\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"black\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"blackSecondary\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"blackSecondary\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"blackSecondary\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"blackLight\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"blackLight\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"blackLight\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"cyan\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"cyan\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"cyan\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"green\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"green\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"green\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"orange\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"orange\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"orange\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"pink\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"pink\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"pink\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"purple\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"purple\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"purple\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"red\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"red\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"red\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"yellow\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"yellow\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"yellow\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"purpleCyan\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"purpleCyan\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"purpleCyan\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"yellowPink\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"yellowPink\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"yellowPink\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"cyanGreen\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"cyanGreen\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"cyanGreen\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"pinkPurple\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"pinkPurple\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"pinkPurple\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n  <Box style={{ display: \"flex\", justifyContent: \"space-around\" }}>\n    <Button color=\"animated\" style={{ margin: \"1rem\" }}>\n      Normal\n    </Button>\n    <Button color=\"animated\" style={{ margin: \"1rem\" }} variant=\"outline\">\n      Outline\n    </Button>\n    <Button color=\"animated\" style={{ margin: \"1rem\" }} variant=\"ghost\">\n      Ghost\n    </Button>\n  </Box>\n</Box>;\n",
           "docs": "",
           "screenshot": "./dsp/assets/ButtonColors.png",
           "svgData": "./dsp/assets/svgs/ButtonColors.svg"
@@ -597,7 +597,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+            "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
           }
         },
         "size": {
@@ -699,7 +699,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+              "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
             }
           },
           "size": {
@@ -786,7 +786,7 @@
       "type": "page",
       "id": "Checkbox",
       "name": "Checkbox",
-      "last_updated": "2021-03-14T01:20:08.005Z",
+      "last_updated": "2021-03-14T22:06:10.371Z",
       "last_updated_by": "System",
       "description": "Checkbox is a styled HTML Input of type checkbox.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep check boxes accessible.",
       "related_entity_ids": [],
@@ -843,7 +843,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+            "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
           }
         },
         "name": {
@@ -907,7 +907,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+              "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
             }
           },
           "name": {
@@ -956,7 +956,7 @@
       "type": "page",
       "id": "Divider",
       "name": "Divider",
-      "last_updated": "2021-03-14T01:20:05.101Z",
+      "last_updated": "2021-03-14T22:06:08.408Z",
       "last_updated_by": "System",
       "description": "Dividers are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
       "related_entity_ids": [],
@@ -981,8 +981,8 @@
         },
         {
           "title": "Colors",
-          "html": "<div style=\"display: flex; flex-direction: column; padding: 3rem\">\n  <div><hr color=\"white\" class=\"drac-divider drac-border-white\" /></div>\n  <div><hr color=\"cyan\" class=\"drac-divider drac-border-cyan\" /></div>\n  <div><hr color=\"green\" class=\"drac-divider drac-border-green\" /></div>\n  <div><hr color=\"orange\" class=\"drac-divider drac-border-orange\" /></div>\n  <div><hr color=\"pink\" class=\"drac-divider drac-border-pink\" /></div>\n  <div><hr color=\"purple\" class=\"drac-divider drac-border-purple\" /></div>\n  <div><hr color=\"red\" class=\"drac-divider drac-border-red\" /></div>\n  <div><hr color=\"yellow\" class=\"drac-divider drac-border-yellow\" /></div>\n  <div>\n    <hr color=\"purpleCyan\" class=\"drac-divider drac-border-purple-cyan\" />\n  </div>\n  <div>\n    <hr color=\"yellowPink\" class=\"drac-divider drac-border-yellow-pink\" />\n  </div>\n  <div>\n    <hr color=\"cyanGreen\" class=\"drac-divider drac-border-cyan-green\" />\n  </div>\n  <div>\n    <hr color=\"pinkPurple\" class=\"drac-divider drac-border-pink-purple\" />\n  </div>\n  <div><hr color=\"animated\" class=\"drac-divider drac-border-animated\" /></div>\n</div>\n",
-          "react": "<div style={{ display: \"flex\", flexDirection: \"column\", padding: \"3rem\" }}>\n  <div>\n    <Divider color=\"white\" />\n  </div>\n  <div>\n    <Divider color=\"cyan\" />\n  </div>\n  <div>\n    <Divider color=\"green\" />\n  </div>\n  <div>\n    <Divider color=\"orange\" />\n  </div>\n  <div>\n    <Divider color=\"pink\" />\n  </div>\n  <div>\n    <Divider color=\"purple\" />\n  </div>\n  <div>\n    <Divider color=\"red\" />\n  </div>\n  <div>\n    <Divider color=\"yellow\" />\n  </div>\n  <div>\n    <Divider color=\"purpleCyan\" />\n  </div>\n  <div>\n    <Divider color=\"yellowPink\" />\n  </div>\n  <div>\n    <Divider color=\"cyanGreen\" />\n  </div>\n  <div>\n    <Divider color=\"pinkPurple\" />\n  </div>\n  <div>\n    <Divider color=\"animated\" />\n  </div>\n</div>;\n",
+          "html": "<div style=\"display: flex; flex-direction: column; padding: 3rem\">\n  <div><hr color=\"white\" class=\"drac-divider drac-border-white\" /></div>\n  <div><hr color=\"black\" class=\"drac-divider drac-border-black\" /></div>\n  <div>\n    <hr\n      color=\"blackSecondary\"\n      class=\"drac-divider drac-border-black-secondary\"\n    />\n  </div>\n  <div>\n    <hr color=\"blackLight\" class=\"drac-divider drac-border-black-light\" />\n  </div>\n  <div><hr color=\"cyan\" class=\"drac-divider drac-border-cyan\" /></div>\n  <div><hr color=\"green\" class=\"drac-divider drac-border-green\" /></div>\n  <div><hr color=\"orange\" class=\"drac-divider drac-border-orange\" /></div>\n  <div><hr color=\"pink\" class=\"drac-divider drac-border-pink\" /></div>\n  <div><hr color=\"purple\" class=\"drac-divider drac-border-purple\" /></div>\n  <div><hr color=\"red\" class=\"drac-divider drac-border-red\" /></div>\n  <div><hr color=\"yellow\" class=\"drac-divider drac-border-yellow\" /></div>\n  <div>\n    <hr color=\"purpleCyan\" class=\"drac-divider drac-border-purple-cyan\" />\n  </div>\n  <div>\n    <hr color=\"yellowPink\" class=\"drac-divider drac-border-yellow-pink\" />\n  </div>\n  <div>\n    <hr color=\"cyanGreen\" class=\"drac-divider drac-border-cyan-green\" />\n  </div>\n  <div>\n    <hr color=\"pinkPurple\" class=\"drac-divider drac-border-pink-purple\" />\n  </div>\n  <div><hr color=\"animated\" class=\"drac-divider drac-border-animated\" /></div>\n</div>\n",
+          "react": "<div style={{ display: \"flex\", flexDirection: \"column\", padding: \"3rem\" }}>\n  <div>\n    <Divider color=\"white\" />\n  </div>\n  <div>\n    <Divider color=\"black\" />\n  </div>\n  <div>\n    <Divider color=\"blackSecondary\" />\n  </div>\n  <div>\n    <Divider color=\"blackLight\" />\n  </div>\n  <div>\n    <Divider color=\"cyan\" />\n  </div>\n  <div>\n    <Divider color=\"green\" />\n  </div>\n  <div>\n    <Divider color=\"orange\" />\n  </div>\n  <div>\n    <Divider color=\"pink\" />\n  </div>\n  <div>\n    <Divider color=\"purple\" />\n  </div>\n  <div>\n    <Divider color=\"red\" />\n  </div>\n  <div>\n    <Divider color=\"yellow\" />\n  </div>\n  <div>\n    <Divider color=\"purpleCyan\" />\n  </div>\n  <div>\n    <Divider color=\"yellowPink\" />\n  </div>\n  <div>\n    <Divider color=\"cyanGreen\" />\n  </div>\n  <div>\n    <Divider color=\"pinkPurple\" />\n  </div>\n  <div>\n    <Divider color=\"animated\" />\n  </div>\n</div>;\n",
           "docs": "",
           "screenshot": "./dsp/assets/DividerColors.png",
           "svgData": "./dsp/assets/svgs/DividerColors.svg"
@@ -1005,7 +1005,7 @@
           ],
           "required": true,
           "type": {
-            "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
+            "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
           }
         }
       },
@@ -1031,7 +1031,7 @@
             ],
             "required": true,
             "type": {
-              "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
+              "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
             }
           }
         }
@@ -1042,7 +1042,7 @@
       "type": "page",
       "id": "Heading",
       "name": "Heading",
-      "last_updated": "2021-03-14T01:20:08.194Z",
+      "last_updated": "2021-03-14T22:06:11.234Z",
       "last_updated_by": "System",
       "description": "Heading is used to display headlines and other forms of hierarchical Text.\n\nHeadings are similar to the base Text component, but restricted to certain\nsizes and font weight.",
       "related_entity_ids": [],
@@ -1075,8 +1075,8 @@
         },
         {
           "title": "Colors",
-          "html": "<div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"white\"\n      class=\"drac-heading drac-heading-1 drac-text-white drac-spacing-none drac-margin-none\"\n    >\n      white\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"cyan\"\n      class=\"drac-heading drac-heading-1 drac-text-cyan drac-spacing-none drac-margin-none\"\n    >\n      cyan\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"green\"\n      class=\"drac-heading drac-heading-1 drac-text-green drac-spacing-none drac-margin-none\"\n    >\n      green\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"orange\"\n      class=\"drac-heading drac-heading-1 drac-text-orange drac-spacing-none drac-margin-none\"\n    >\n      orange\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"pink\"\n      class=\"drac-heading drac-heading-1 drac-text-pink drac-spacing-none drac-margin-none\"\n    >\n      pink\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"purple\"\n      class=\"drac-heading drac-heading-1 drac-text-purple drac-spacing-none drac-margin-none\"\n    >\n      purple\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"red\"\n      class=\"drac-heading drac-heading-1 drac-text-red drac-spacing-none drac-margin-none\"\n    >\n      red\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"yellow\"\n      class=\"drac-heading drac-heading-1 drac-text-yellow drac-spacing-none drac-margin-none\"\n    >\n      yellow\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"purpleCyan\"\n      class=\"drac-heading drac-heading-1 drac-text-purple-cyan drac-spacing-none drac-margin-none\"\n    >\n      purpleCyan\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"yellowPink\"\n      class=\"drac-heading drac-heading-1 drac-text-yellow-pink drac-spacing-none drac-margin-none\"\n    >\n      yellowPink\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"cyanGreen\"\n      class=\"drac-heading drac-heading-1 drac-text-cyan-green drac-spacing-none drac-margin-none\"\n    >\n      cyanGreen\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"pinkPurple\"\n      class=\"drac-heading drac-heading-1 drac-text-pink-purple drac-spacing-none drac-margin-none\"\n    >\n      pinkPurple\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"animated\"\n      class=\"drac-heading drac-heading-1 drac-text-animated drac-spacing-none drac-margin-none\"\n    >\n      animated\n    </h1>\n  </div>\n</div>\n",
-          "react": "<div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"white\">white</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"cyan\">cyan</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"green\">green</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"orange\">orange</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"pink\">pink</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"purple\">purple</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"red\">red</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"yellow\">yellow</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"purpleCyan\">purpleCyan</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"yellowPink\">yellowPink</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"cyanGreen\">cyanGreen</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"pinkPurple\">pinkPurple</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"animated\">animated</Heading>\n  </div>\n</div>;\n",
+          "html": "<div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"white\"\n      class=\"drac-heading drac-heading-1 drac-text-white drac-spacing-none drac-margin-none\"\n    >\n      white\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"black\"\n      class=\"drac-heading drac-heading-1 drac-text-black drac-spacing-none drac-margin-none\"\n    >\n      black\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"blackSecondary\"\n      class=\"drac-heading drac-heading-1 drac-text-black-secondary drac-spacing-none drac-margin-none\"\n    >\n      blackSecondary\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"blackLight\"\n      class=\"drac-heading drac-heading-1 drac-text-black-light drac-spacing-none drac-margin-none\"\n    >\n      blackLight\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"cyan\"\n      class=\"drac-heading drac-heading-1 drac-text-cyan drac-spacing-none drac-margin-none\"\n    >\n      cyan\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"green\"\n      class=\"drac-heading drac-heading-1 drac-text-green drac-spacing-none drac-margin-none\"\n    >\n      green\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"orange\"\n      class=\"drac-heading drac-heading-1 drac-text-orange drac-spacing-none drac-margin-none\"\n    >\n      orange\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"pink\"\n      class=\"drac-heading drac-heading-1 drac-text-pink drac-spacing-none drac-margin-none\"\n    >\n      pink\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"purple\"\n      class=\"drac-heading drac-heading-1 drac-text-purple drac-spacing-none drac-margin-none\"\n    >\n      purple\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"red\"\n      class=\"drac-heading drac-heading-1 drac-text-red drac-spacing-none drac-margin-none\"\n    >\n      red\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"yellow\"\n      class=\"drac-heading drac-heading-1 drac-text-yellow drac-spacing-none drac-margin-none\"\n    >\n      yellow\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"purpleCyan\"\n      class=\"drac-heading drac-heading-1 drac-text-purple-cyan drac-spacing-none drac-margin-none\"\n    >\n      purpleCyan\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"yellowPink\"\n      class=\"drac-heading drac-heading-1 drac-text-yellow-pink drac-spacing-none drac-margin-none\"\n    >\n      yellowPink\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"cyanGreen\"\n      class=\"drac-heading drac-heading-1 drac-text-cyan-green drac-spacing-none drac-margin-none\"\n    >\n      cyanGreen\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"pinkPurple\"\n      class=\"drac-heading drac-heading-1 drac-text-pink-purple drac-spacing-none drac-margin-none\"\n    >\n      pinkPurple\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"animated\"\n      class=\"drac-heading drac-heading-1 drac-text-animated drac-spacing-none drac-margin-none\"\n    >\n      animated\n    </h1>\n  </div>\n</div>\n",
+          "react": "<div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"white\">white</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"black\">black</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"blackSecondary\">blackSecondary</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"blackLight\">blackLight</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"cyan\">cyan</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"green\">green</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"orange\">orange</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"pink\">pink</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"purple\">purple</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"red\">red</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"yellow\">yellow</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"purpleCyan\">purpleCyan</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"yellowPink\">yellowPink</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"cyanGreen\">cyanGreen</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"pinkPurple\">pinkPurple</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"animated\">animated</Heading>\n  </div>\n</div>;\n",
           "docs": "",
           "screenshot": "./dsp/assets/HeadingColors.png",
           "svgData": "./dsp/assets/svgs/HeadingColors.svg"
@@ -1118,7 +1118,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+            "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
           }
         },
         "spacing": {
@@ -1220,7 +1220,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+              "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
             }
           },
           "spacing": {
@@ -1288,7 +1288,7 @@
       "type": "page",
       "id": "Input",
       "name": "Input",
-      "last_updated": "2021-03-14T01:20:20.536Z",
+      "last_updated": "2021-03-14T22:06:22.392Z",
       "last_updated_by": "System",
       "description": "Input is a styled HTML Input.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep inputs accessible.",
       "related_entity_ids": [],
@@ -1353,7 +1353,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+            "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
           }
         },
         "size": {
@@ -1417,7 +1417,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+              "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
             }
           },
           "size": {
@@ -1466,7 +1466,7 @@
       "type": "page",
       "id": "Link",
       "name": "Link",
-      "last_updated": "2021-03-14T01:20:11.219Z",
+      "last_updated": "2021-03-14T22:06:12.962Z",
       "last_updated_by": "System",
       "description": "Text is the base component for any sort of text.\n\nConsumers of this component can control, the color, size,\nweight, and spacing of Text.\n\nUse this component for generic, and non-hierarchical text that is\nto be displayed on a page, or as part of other complex components\nor UI patterns",
       "related_entity_ids": [],
@@ -1491,8 +1491,8 @@
         },
         {
           "title": "Colors",
-          "html": "<div>\n  <div style=\"margin-bottom: 20px\">\n    <a\n      color=\"white\"\n      class=\"drac-link drac-text drac-text-white drac-text-white--hover\"\n      >white</a\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <a\n      color=\"cyan\"\n      class=\"drac-link drac-text drac-text-cyan drac-text-white--hover\"\n      >cyan</a\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <a\n      color=\"green\"\n      class=\"drac-link drac-text drac-text-green drac-text-white--hover\"\n      >green</a\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <a\n      color=\"orange\"\n      class=\"drac-link drac-text drac-text-orange drac-text-white--hover\"\n      >orange</a\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <a\n      color=\"pink\"\n      class=\"drac-link drac-text drac-text-pink drac-text-white--hover\"\n      >pink</a\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <a\n      color=\"purple\"\n      class=\"drac-link drac-text drac-text-purple drac-text-white--hover\"\n      >purple</a\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <a\n      color=\"red\"\n      class=\"drac-link drac-text drac-text-red drac-text-white--hover\"\n      >red</a\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <a\n      color=\"yellow\"\n      class=\"drac-link drac-text drac-text-yellow drac-text-white--hover\"\n      >yellow</a\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <a\n      color=\"purpleCyan\"\n      class=\"drac-link drac-text drac-text-purple-cyan drac-text-white--hover\"\n      >purpleCyan</a\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <a\n      color=\"yellowPink\"\n      class=\"drac-link drac-text drac-text-yellow-pink drac-text-white--hover\"\n      >yellowPink</a\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <a\n      color=\"cyanGreen\"\n      class=\"drac-link drac-text drac-text-cyan-green drac-text-white--hover\"\n      >cyanGreen</a\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <a\n      color=\"pinkPurple\"\n      class=\"drac-link drac-text drac-text-pink-purple drac-text-white--hover\"\n      >pinkPurple</a\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <a\n      color=\"animated\"\n      class=\"drac-link drac-text drac-text-animated drac-text-white--hover\"\n      >animated</a\n    >\n  </div>\n</div>\n",
-          "react": "<div>\n  <div style={{ marginBottom: 20 }}>\n    <Link color=\"white\">white</Link>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Link color=\"cyan\">cyan</Link>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Link color=\"green\">green</Link>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Link color=\"orange\">orange</Link>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Link color=\"pink\">pink</Link>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Link color=\"purple\">purple</Link>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Link color=\"red\">red</Link>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Link color=\"yellow\">yellow</Link>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Link color=\"purpleCyan\">purpleCyan</Link>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Link color=\"yellowPink\">yellowPink</Link>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Link color=\"cyanGreen\">cyanGreen</Link>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Link color=\"pinkPurple\">pinkPurple</Link>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Link color=\"animated\">animated</Link>\n  </div>\n</div>;\n",
+          "html": "<div>\n  <div style=\"margin-bottom: 20px\">\n    <a\n      color=\"white\"\n      class=\"drac-link drac-text drac-text-white drac-text-white--hover\"\n      >white</a\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <a\n      color=\"black\"\n      class=\"drac-link drac-text drac-text-black drac-text-white--hover\"\n      >black</a\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <a\n      color=\"blackSecondary\"\n      class=\"drac-link drac-text drac-text-black-secondary drac-text-white--hover\"\n      >blackSecondary</a\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <a\n      color=\"blackLight\"\n      class=\"drac-link drac-text drac-text-black-light drac-text-white--hover\"\n      >blackLight</a\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <a\n      color=\"cyan\"\n      class=\"drac-link drac-text drac-text-cyan drac-text-white--hover\"\n      >cyan</a\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <a\n      color=\"green\"\n      class=\"drac-link drac-text drac-text-green drac-text-white--hover\"\n      >green</a\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <a\n      color=\"orange\"\n      class=\"drac-link drac-text drac-text-orange drac-text-white--hover\"\n      >orange</a\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <a\n      color=\"pink\"\n      class=\"drac-link drac-text drac-text-pink drac-text-white--hover\"\n      >pink</a\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <a\n      color=\"purple\"\n      class=\"drac-link drac-text drac-text-purple drac-text-white--hover\"\n      >purple</a\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <a\n      color=\"red\"\n      class=\"drac-link drac-text drac-text-red drac-text-white--hover\"\n      >red</a\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <a\n      color=\"yellow\"\n      class=\"drac-link drac-text drac-text-yellow drac-text-white--hover\"\n      >yellow</a\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <a\n      color=\"purpleCyan\"\n      class=\"drac-link drac-text drac-text-purple-cyan drac-text-white--hover\"\n      >purpleCyan</a\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <a\n      color=\"yellowPink\"\n      class=\"drac-link drac-text drac-text-yellow-pink drac-text-white--hover\"\n      >yellowPink</a\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <a\n      color=\"cyanGreen\"\n      class=\"drac-link drac-text drac-text-cyan-green drac-text-white--hover\"\n      >cyanGreen</a\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <a\n      color=\"pinkPurple\"\n      class=\"drac-link drac-text drac-text-pink-purple drac-text-white--hover\"\n      >pinkPurple</a\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <a\n      color=\"animated\"\n      class=\"drac-link drac-text drac-text-animated drac-text-white--hover\"\n      >animated</a\n    >\n  </div>\n</div>\n",
+          "react": "<div>\n  <div style={{ marginBottom: 20 }}>\n    <Link color=\"white\">white</Link>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Link color=\"black\">black</Link>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Link color=\"blackSecondary\">blackSecondary</Link>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Link color=\"blackLight\">blackLight</Link>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Link color=\"cyan\">cyan</Link>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Link color=\"green\">green</Link>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Link color=\"orange\">orange</Link>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Link color=\"pink\">pink</Link>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Link color=\"purple\">purple</Link>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Link color=\"red\">red</Link>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Link color=\"yellow\">yellow</Link>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Link color=\"purpleCyan\">purpleCyan</Link>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Link color=\"yellowPink\">yellowPink</Link>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Link color=\"cyanGreen\">cyanGreen</Link>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Link color=\"pinkPurple\">pinkPurple</Link>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Link color=\"animated\">animated</Link>\n  </div>\n</div>;\n",
           "docs": "",
           "screenshot": "./dsp/assets/LinkColors.png",
           "svgData": "./dsp/assets/svgs/LinkColors.svg"
@@ -1569,7 +1569,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+            "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
           }
         },
         "hoverColor": {
@@ -1588,7 +1588,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+            "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
           }
         },
         "spacing": {
@@ -1671,7 +1671,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+              "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
             }
           },
           "hoverColor": {
@@ -1690,7 +1690,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+              "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
             }
           },
           "spacing": {
@@ -1720,7 +1720,7 @@
       "type": "page",
       "id": "List",
       "name": "List",
-      "last_updated": "2021-03-14T01:20:09.300Z",
+      "last_updated": "2021-03-14T22:06:11.036Z",
       "last_updated_by": "System",
       "description": "Lists are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
       "related_entity_ids": [],
@@ -1777,7 +1777,7 @@
           ],
           "required": true,
           "type": {
-            "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
+            "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
           }
         },
         "variant": {
@@ -1822,7 +1822,7 @@
             ],
             "required": true,
             "type": {
-              "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
+              "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
             }
           },
           "variant": {
@@ -1852,7 +1852,7 @@
       "type": "page",
       "id": "Paragraph",
       "name": "Paragraph",
-      "last_updated": "2021-03-14T01:20:21.179Z",
+      "last_updated": "2021-03-14T22:06:21.734Z",
       "last_updated_by": "System",
       "description": "Paragraph is a semantic component used for blocks of text with\nsemantic meaning.\n\nParagraph accepts all the same customization options as Text.",
       "related_entity_ids": [],
@@ -1877,8 +1877,8 @@
         },
         {
           "title": "Colors",
-          "html": "<div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"white\" class=\"drac-text drac-text-white drac-spacing-sm-y\">\n      white\n    </p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"cyan\" class=\"drac-text drac-text-cyan drac-spacing-sm-y\">cyan</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"green\" class=\"drac-text drac-text-green drac-spacing-sm-y\">\n      green\n    </p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"orange\" class=\"drac-text drac-text-orange drac-spacing-sm-y\">\n      orange\n    </p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"pink\" class=\"drac-text drac-text-pink drac-spacing-sm-y\">pink</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"purple\" class=\"drac-text drac-text-purple drac-spacing-sm-y\">\n      purple\n    </p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"red\" class=\"drac-text drac-text-red drac-spacing-sm-y\">red</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"yellow\" class=\"drac-text drac-text-yellow drac-spacing-sm-y\">\n      yellow\n    </p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p\n      color=\"purpleCyan\"\n      class=\"drac-text drac-text-purple-cyan drac-spacing-sm-y\"\n    >\n      purpleCyan\n    </p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p\n      color=\"yellowPink\"\n      class=\"drac-text drac-text-yellow-pink drac-spacing-sm-y\"\n    >\n      yellowPink\n    </p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p\n      color=\"cyanGreen\"\n      class=\"drac-text drac-text-cyan-green drac-spacing-sm-y\"\n    >\n      cyanGreen\n    </p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p\n      color=\"pinkPurple\"\n      class=\"drac-text drac-text-pink-purple drac-spacing-sm-y\"\n    >\n      pinkPurple\n    </p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"animated\" class=\"drac-text drac-text-animated drac-spacing-sm-y\">\n      animated\n    </p>\n  </div>\n</div>\n",
-          "react": "<div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"white\">white</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"cyan\">cyan</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"green\">green</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"orange\">orange</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"pink\">pink</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"purple\">purple</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"red\">red</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"yellow\">yellow</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"purpleCyan\">purpleCyan</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"yellowPink\">yellowPink</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"cyanGreen\">cyanGreen</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"pinkPurple\">pinkPurple</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"animated\">animated</Paragraph>\n  </div>\n</div>;\n",
+          "html": "<div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"white\" class=\"drac-text drac-text-white drac-spacing-sm-y\">\n      white\n    </p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"black\" class=\"drac-text drac-text-black drac-spacing-sm-y\">\n      black\n    </p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p\n      color=\"blackSecondary\"\n      class=\"drac-text drac-text-black-secondary drac-spacing-sm-y\"\n    >\n      blackSecondary\n    </p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p\n      color=\"blackLight\"\n      class=\"drac-text drac-text-black-light drac-spacing-sm-y\"\n    >\n      blackLight\n    </p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"cyan\" class=\"drac-text drac-text-cyan drac-spacing-sm-y\">cyan</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"green\" class=\"drac-text drac-text-green drac-spacing-sm-y\">\n      green\n    </p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"orange\" class=\"drac-text drac-text-orange drac-spacing-sm-y\">\n      orange\n    </p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"pink\" class=\"drac-text drac-text-pink drac-spacing-sm-y\">pink</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"purple\" class=\"drac-text drac-text-purple drac-spacing-sm-y\">\n      purple\n    </p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"red\" class=\"drac-text drac-text-red drac-spacing-sm-y\">red</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"yellow\" class=\"drac-text drac-text-yellow drac-spacing-sm-y\">\n      yellow\n    </p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p\n      color=\"purpleCyan\"\n      class=\"drac-text drac-text-purple-cyan drac-spacing-sm-y\"\n    >\n      purpleCyan\n    </p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p\n      color=\"yellowPink\"\n      class=\"drac-text drac-text-yellow-pink drac-spacing-sm-y\"\n    >\n      yellowPink\n    </p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p\n      color=\"cyanGreen\"\n      class=\"drac-text drac-text-cyan-green drac-spacing-sm-y\"\n    >\n      cyanGreen\n    </p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p\n      color=\"pinkPurple\"\n      class=\"drac-text drac-text-pink-purple drac-spacing-sm-y\"\n    >\n      pinkPurple\n    </p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"animated\" class=\"drac-text drac-text-animated drac-spacing-sm-y\">\n      animated\n    </p>\n  </div>\n</div>\n",
+          "react": "<div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"white\">white</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"black\">black</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"blackSecondary\">blackSecondary</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"blackLight\">blackLight</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"cyan\">cyan</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"green\">green</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"orange\">orange</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"pink\">pink</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"purple\">purple</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"red\">red</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"yellow\">yellow</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"purpleCyan\">purpleCyan</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"yellowPink\">yellowPink</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"cyanGreen\">cyanGreen</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"pinkPurple\">pinkPurple</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"animated\">animated</Paragraph>\n  </div>\n</div>;\n",
           "docs": "",
           "screenshot": "./dsp/assets/ParagraphColors.png",
           "svgData": "./dsp/assets/svgs/ParagraphColors.svg"
@@ -1955,7 +1955,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+            "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
           }
         },
         "spacing": {
@@ -2057,7 +2057,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+              "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
             }
           },
           "spacing": {
@@ -2106,7 +2106,7 @@
       "type": "page",
       "id": "Radio",
       "name": "Radio",
-      "last_updated": "2021-03-14T01:20:20.445Z",
+      "last_updated": "2021-03-14T22:06:21.277Z",
       "last_updated_by": "System",
       "description": "Radio is a styled HTML Input of type radio.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep Radios accessible.",
       "related_entity_ids": [],
@@ -2163,7 +2163,7 @@
           ],
           "required": true,
           "type": {
-            "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
+            "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
           }
         },
         "name": {
@@ -2208,7 +2208,7 @@
             ],
             "required": true,
             "type": {
-              "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
+              "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
             }
           },
           "name": {
@@ -2238,7 +2238,7 @@
       "type": "page",
       "id": "Select",
       "name": "Select",
-      "last_updated": "2021-03-14T01:20:15.683Z",
+      "last_updated": "2021-03-14T22:06:16.824Z",
       "last_updated_by": "System",
       "description": "Select is a styled HTML Select element.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS, and small SVG component in order to keep Selects accessible.",
       "related_entity_ids": [],
@@ -2311,7 +2311,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+            "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
           }
         },
         "size": {
@@ -2394,7 +2394,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+              "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
             }
           },
           "size": {
@@ -2462,7 +2462,7 @@
       "type": "page",
       "id": "Switch",
       "name": "Switch",
-      "last_updated": "2021-03-14T01:20:08.052Z",
+      "last_updated": "2021-03-14T22:06:10.417Z",
       "last_updated_by": "System",
       "description": "Switch is an abstraction pattern that represents toggles.\n\nUse the Switch component as an alternative for Checkboxes or Radios\nwhen options are binary.\n\nSwitches are implemented as Checkboxes under the hood,\nand work normally with forms.",
       "related_entity_ids": [],
@@ -2538,7 +2538,7 @@
           ],
           "required": true,
           "type": {
-            "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
+            "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
           }
         },
         "disabled": {
@@ -2602,7 +2602,7 @@
             ],
             "required": true,
             "type": {
-              "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
+              "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
             }
           },
           "disabled": {
@@ -2632,7 +2632,7 @@
       "type": "page",
       "id": "Table",
       "name": "Table",
-      "last_updated": "2021-03-14T01:20:16.026Z",
+      "last_updated": "2021-03-14T22:06:15.574Z",
       "last_updated_by": "System",
       "description": "Tables are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
       "related_entity_ids": [],
@@ -2689,7 +2689,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+            "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
           }
         },
         "variant": {
@@ -2734,7 +2734,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+              "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
             }
           },
           "variant": {
@@ -2764,7 +2764,7 @@
       "type": "page",
       "id": "Tabs",
       "name": "Tabs",
-      "last_updated": "2021-03-14T01:20:20.705Z",
+      "last_updated": "2021-03-14T22:06:21.283Z",
       "last_updated_by": "System",
       "description": "Tabs are horizontal navigation elements used to display\ncontent within the same page.",
       "related_entity_ids": [],
@@ -2813,7 +2813,7 @@
           ],
           "required": true,
           "type": {
-            "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
+            "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
           }
         },
         "spacing": {
@@ -2877,7 +2877,7 @@
             ],
             "required": true,
             "type": {
-              "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
+              "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
             }
           },
           "spacing": {
@@ -2926,7 +2926,7 @@
       "type": "page",
       "id": "Text",
       "name": "Text",
-      "last_updated": "2021-03-14T01:20:10.153Z",
+      "last_updated": "2021-03-14T22:06:11.768Z",
       "last_updated_by": "System",
       "description": "Text is the base component for any sort of text.\n\nConsumers of this component can control, the color, size,\nweight, and spacing of Text.\n\nUse this component for generic, and non-hierarchical text that is\nto be displayed on a page, or as part of other complex components\nor UI patterns",
       "related_entity_ids": [],
@@ -2951,8 +2951,8 @@
         },
         {
           "title": "Colors",
-          "html": "<div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"white\" class=\"drac-text drac-text-white\">white</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"cyan\" class=\"drac-text drac-text-cyan\">cyan</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"green\" class=\"drac-text drac-text-green\">green</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"orange\" class=\"drac-text drac-text-orange\">orange</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"pink\" class=\"drac-text drac-text-pink\">pink</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"purple\" class=\"drac-text drac-text-purple\">purple</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"red\" class=\"drac-text drac-text-red\">red</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"yellow\" class=\"drac-text drac-text-yellow\">yellow</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"purpleCyan\" class=\"drac-text drac-text-purple-cyan\"\n      >purpleCyan</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"yellowPink\" class=\"drac-text drac-text-yellow-pink\"\n      >yellowPink</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"cyanGreen\" class=\"drac-text drac-text-cyan-green\"\n      >cyanGreen</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"pinkPurple\" class=\"drac-text drac-text-pink-purple\"\n      >pinkPurple</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"animated\" class=\"drac-text drac-text-animated\">animated</span>\n  </div>\n</div>\n",
-          "react": "<div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"white\">white</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"cyan\">cyan</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"green\">green</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"orange\">orange</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"pink\">pink</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"purple\">purple</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"red\">red</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"yellow\">yellow</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"purpleCyan\">purpleCyan</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"yellowPink\">yellowPink</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"cyanGreen\">cyanGreen</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"pinkPurple\">pinkPurple</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"animated\">animated</Text>\n  </div>\n</div>;\n",
+          "html": "<div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"white\" class=\"drac-text drac-text-white\">white</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"black\" class=\"drac-text drac-text-black\">black</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"blackSecondary\" class=\"drac-text drac-text-black-secondary\"\n      >blackSecondary</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"blackLight\" class=\"drac-text drac-text-black-light\"\n      >blackLight</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"cyan\" class=\"drac-text drac-text-cyan\">cyan</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"green\" class=\"drac-text drac-text-green\">green</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"orange\" class=\"drac-text drac-text-orange\">orange</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"pink\" class=\"drac-text drac-text-pink\">pink</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"purple\" class=\"drac-text drac-text-purple\">purple</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"red\" class=\"drac-text drac-text-red\">red</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"yellow\" class=\"drac-text drac-text-yellow\">yellow</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"purpleCyan\" class=\"drac-text drac-text-purple-cyan\"\n      >purpleCyan</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"yellowPink\" class=\"drac-text drac-text-yellow-pink\"\n      >yellowPink</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"cyanGreen\" class=\"drac-text drac-text-cyan-green\"\n      >cyanGreen</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"pinkPurple\" class=\"drac-text drac-text-pink-purple\"\n      >pinkPurple</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"animated\" class=\"drac-text drac-text-animated\">animated</span>\n  </div>\n</div>\n",
+          "react": "<div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"white\">white</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"black\">black</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"blackSecondary\">blackSecondary</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"blackLight\">blackLight</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"cyan\">cyan</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"green\">green</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"orange\">orange</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"pink\">pink</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"purple\">purple</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"red\">red</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"yellow\">yellow</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"purpleCyan\">purpleCyan</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"yellowPink\">yellowPink</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"cyanGreen\">cyanGreen</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"pinkPurple\">pinkPurple</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"animated\">animated</Text>\n  </div>\n</div>;\n",
           "docs": "",
           "screenshot": "./dsp/assets/TextColors.png",
           "svgData": "./dsp/assets/svgs/TextColors.svg"
@@ -3029,7 +3029,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+            "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
           }
         },
         "spacing": {
@@ -3131,7 +3131,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"white\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+              "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
             }
           },
           "spacing": {

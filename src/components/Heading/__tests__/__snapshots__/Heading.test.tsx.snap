@@ -29,6 +29,30 @@ Object {
   </div>
   <div style=\\"margin-bottom: 20px\\">
     <h1
+      color=\\"black\\"
+      class=\\"drac-heading drac-heading-1 drac-text-black drac-spacing-none drac-margin-none\\"
+    >
+      black
+    </h1>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <h1
+      color=\\"blackSecondary\\"
+      class=\\"drac-heading drac-heading-1 drac-text-black-secondary drac-spacing-none drac-margin-none\\"
+    >
+      blackSecondary
+    </h1>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <h1
+      color=\\"blackLight\\"
+      class=\\"drac-heading drac-heading-1 drac-text-black-light drac-spacing-none drac-margin-none\\"
+    >
+      blackLight
+    </h1>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <h1
       color=\\"cyan\\"
       class=\\"drac-heading drac-heading-1 drac-text-cyan drac-spacing-none drac-margin-none\\"
     >
@@ -128,6 +152,15 @@ Object {
   "react": "<div>
   <div style={{ marginBottom: 20 }}>
     <Heading color=\\"white\\">white</Heading>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Heading color=\\"black\\">black</Heading>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Heading color=\\"blackSecondary\\">blackSecondary</Heading>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Heading color=\\"blackLight\\">blackLight</Heading>
   </div>
   <div style={{ marginBottom: 20 }}>
     <Heading color=\\"cyan\\">cyan</Heading>

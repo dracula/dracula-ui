@@ -35,6 +35,71 @@ Object {
     </button>
   </div>
   <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
+    <button class=\\"drac-btn drac-bg-black\\" color=\\"black\\" style=\\"margin: 1rem\\">
+      Normal</button
+    ><button
+      class=\\"drac-btn drac-bg-black drac-btn-outline drac-text-black\\"
+      color=\\"black\\"
+      style=\\"margin: 1rem\\"
+      variant=\\"outline\\"
+    >
+      Outline</button
+    ><button
+      class=\\"drac-btn drac-bg-black-transparent drac-btn-ghost drac-text-black\\"
+      color=\\"black\\"
+      style=\\"margin: 1rem\\"
+      variant=\\"ghost\\"
+    >
+      Ghost
+    </button>
+  </div>
+  <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
+    <button
+      class=\\"drac-btn drac-bg-black-secondary\\"
+      color=\\"blackSecondary\\"
+      style=\\"margin: 1rem\\"
+    >
+      Normal</button
+    ><button
+      class=\\"drac-btn drac-bg-black-secondary drac-btn-outline drac-text-black-secondary\\"
+      color=\\"blackSecondary\\"
+      style=\\"margin: 1rem\\"
+      variant=\\"outline\\"
+    >
+      Outline</button
+    ><button
+      class=\\"drac-btn drac-bg-black-secondary-transparent drac-btn-ghost drac-text-black-secondary\\"
+      color=\\"blackSecondary\\"
+      style=\\"margin: 1rem\\"
+      variant=\\"ghost\\"
+    >
+      Ghost
+    </button>
+  </div>
+  <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
+    <button
+      class=\\"drac-btn drac-bg-black-light\\"
+      color=\\"blackLight\\"
+      style=\\"margin: 1rem\\"
+    >
+      Normal</button
+    ><button
+      class=\\"drac-btn drac-bg-black-light drac-btn-outline drac-text-black-light\\"
+      color=\\"blackLight\\"
+      style=\\"margin: 1rem\\"
+      variant=\\"outline\\"
+    >
+      Outline</button
+    ><button
+      class=\\"drac-btn drac-bg-black-light-transparent drac-btn-ghost drac-text-black-light\\"
+      color=\\"blackLight\\"
+      style=\\"margin: 1rem\\"
+      variant=\\"ghost\\"
+    >
+      Ghost
+    </button>
+  </div>
+  <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
     <button class=\\"drac-btn drac-bg-cyan\\" color=\\"cyan\\" style=\\"margin: 1rem\\">
       Normal</button
     ><button
@@ -293,6 +358,39 @@ Object {
       Outline
     </Button>
     <Button color=\\"white\\" style={{ margin: \\"1rem\\" }} variant=\\"ghost\\">
+      Ghost
+    </Button>
+  </Box>
+  <Box style={{ display: \\"flex\\", justifyContent: \\"space-around\\" }}>
+    <Button color=\\"black\\" style={{ margin: \\"1rem\\" }}>
+      Normal
+    </Button>
+    <Button color=\\"black\\" style={{ margin: \\"1rem\\" }} variant=\\"outline\\">
+      Outline
+    </Button>
+    <Button color=\\"black\\" style={{ margin: \\"1rem\\" }} variant=\\"ghost\\">
+      Ghost
+    </Button>
+  </Box>
+  <Box style={{ display: \\"flex\\", justifyContent: \\"space-around\\" }}>
+    <Button color=\\"blackSecondary\\" style={{ margin: \\"1rem\\" }}>
+      Normal
+    </Button>
+    <Button color=\\"blackSecondary\\" style={{ margin: \\"1rem\\" }} variant=\\"outline\\">
+      Outline
+    </Button>
+    <Button color=\\"blackSecondary\\" style={{ margin: \\"1rem\\" }} variant=\\"ghost\\">
+      Ghost
+    </Button>
+  </Box>
+  <Box style={{ display: \\"flex\\", justifyContent: \\"space-around\\" }}>
+    <Button color=\\"blackLight\\" style={{ margin: \\"1rem\\" }}>
+      Normal
+    </Button>
+    <Button color=\\"blackLight\\" style={{ margin: \\"1rem\\" }} variant=\\"outline\\">
+      Outline
+    </Button>
+    <Button color=\\"blackLight\\" style={{ margin: \\"1rem\\" }} variant=\\"ghost\\">
       Ghost
     </Button>
   </Box>

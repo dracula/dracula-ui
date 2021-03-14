@@ -21,6 +21,27 @@ Object {
     </p>
   </div>
   <div style=\\"margin-bottom: 20px\\">
+    <p color=\\"black\\" class=\\"drac-text drac-text-black drac-spacing-sm-y\\">
+      black
+    </p>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <p
+      color=\\"blackSecondary\\"
+      class=\\"drac-text drac-text-black-secondary drac-spacing-sm-y\\"
+    >
+      blackSecondary
+    </p>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
+    <p
+      color=\\"blackLight\\"
+      class=\\"drac-text drac-text-black-light drac-spacing-sm-y\\"
+    >
+      blackLight
+    </p>
+  </div>
+  <div style=\\"margin-bottom: 20px\\">
     <p color=\\"cyan\\" class=\\"drac-text drac-text-cyan drac-spacing-sm-y\\">cyan</p>
   </div>
   <div style=\\"margin-bottom: 20px\\">
@@ -91,6 +112,15 @@ Object {
   "react": "<div>
   <div style={{ marginBottom: 20 }}>
     <Paragraph color=\\"white\\">white</Paragraph>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Paragraph color=\\"black\\">black</Paragraph>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Paragraph color=\\"blackSecondary\\">blackSecondary</Paragraph>
+  </div>
+  <div style={{ marginBottom: 20 }}>
+    <Paragraph color=\\"blackLight\\">blackLight</Paragraph>
   </div>
   <div style={{ marginBottom: 20 }}>
     <Paragraph color=\\"cyan\\">cyan</Paragraph>
