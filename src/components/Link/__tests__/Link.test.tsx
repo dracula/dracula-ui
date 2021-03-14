@@ -1,7 +1,7 @@
 import { Link } from '@/components/Link/Link'
 import { docs } from '@/documentation/site-docs'
 import {
-  LinkSizes,
+  LinkSizings,
   LinkBasic,
   LinkWeights,
   LinkColors
@@ -16,7 +16,7 @@ docs(Link, {
     return [
       snapshot('Colors', LinkColors),
       snapshot('Weights', LinkWeights),
-      snapshot('Sizes', LinkSizes)
+      snapshot('Sizes', LinkSizings)
     ]
   }
 })

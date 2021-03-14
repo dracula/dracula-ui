@@ -1,5 +1,5 @@
 import React from 'react'
-import { LinkProps, Link, LinkSizes, LinkWeights, LinkColors } from '@/index'
+import { LinkProps, Link, textSizes, textWeights, textColors } from '@/index'
 
 export default {
   title: 'Link'
@@ -7,9 +7,9 @@ export default {
 
 export const LinkBasic = () => <Link>Link</Link>
 
-export const LinkSizes = () => (
+export const LinkSizings = () => (
   <div>
-    {Object.keys(LinkSizes).map((size) => {
+    {Object.keys(textSizes).map((size) => {
       return (
         <div key={size} style={{ marginBottom: 20 }}>
           <Link size={size as LinkProps['size']}>{size}</Link>
@@ -21,7 +21,7 @@ export const LinkSizes = () => (
 
 export const LinkWeights = () => (
   <div>
-    {Object.keys(LinkWeights).map((weight) => {
+    {Object.keys(textWeights).map((weight) => {
       return (
         <div key={weight} style={{ marginBottom: 20 }}>
           <Link weight={weight as LinkProps['weight']}>{weight}</Link>
@@ -33,7 +33,7 @@ export const LinkWeights = () => (
 
 export const LinkColors = () => (
   <div>
-    {Object.keys(LinkColors).map((color) => {
+    {Object.keys(textColors).map((color) => {
       return (
         <div key={color} style={{ marginBottom: 20 }}>
           <Link color={color as LinkProps['color']}>{color}</Link>
