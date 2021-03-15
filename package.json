@@ -72,6 +72,7 @@
     "postcss": "^8.2.8",
     "postcss-each": "^1.0.0",
     "postcss-import": "^14.0.0",
+    "postcss-prefixer": "^2.1.2",
     "prettier": "^2.1.1",
     "puppeteer": "^8.0.0",
     "react": "^17.0.1",

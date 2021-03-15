@@ -2,7 +2,7 @@
   --subtle-avatar-shadow: inset 0 0 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 
-.drac-avatar {
+.avatar {
   box-sizing: border-box;
   border-radius: var(--rounded-full);
   border-style: solid;
@@ -22,21 +22,21 @@
   background-size: cover;
 }
 
-.drac-avatar-lg-stroke {
+.avatar-lg-stroke {
   border-width: 3px;
 }
 
-.drac-avatar-no-border {
+.avatar-no-border {
   border-width: 0;
   box-shadow: var(--subtle-avatar-shadow);
 }
 
-.drac-avatar-subtle {
+.avatar-subtle {
   filter: grayscale(100%);
   box-shadow: var(--subtle-avatar-shadow);
 }
 
-.drac-avatar .drac-text {
+.avatar .text {
   text-transform: uppercase;
 
   /* Fira code is adding 1px to the bottom of the span */

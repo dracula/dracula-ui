@@ -13,10 +13,13 @@ module.exports = {
           cssnano({
             preset: 'default'
           }),
-          require('postcss-each')
+          require('postcss-each'),
+          require('postcss-prefixer')({
+            prefix: 'drac-'
+          })
         ],
         sourceMap: true,
-        extract: 'styles/dracula-ui.css'
+        extract: 'styles/dracula-ui.css',
       })
     )
     return config

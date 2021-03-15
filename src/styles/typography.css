@@ -11,11 +11,11 @@
   --font-6xl: 4rem; /* 64px */
 }
 
-.drac-heading,
-.drac-select,
-.drac-input,
-.drac-text,
-.drac-btn {
+.heading,
+.select,
+.input,
+.text,
+.btn {
   /* Help prevent overflow of long words/names/URLs */
   word-break: break-word;
   /* Optional, not supported for all languages */
@@ -25,59 +25,59 @@
   font-family: 'Fira Code', monospace;
 }
 
-p.drac-text {
+p.text {
   line-height: 1.375rem;
 }
 
 /* -- Heading -- */
-.drac-heading-1 {
+.heading-1 {
   font-size: var(--font-5xl);
 }
 
-.drac-heading-2 {
+.heading-2 {
   font-size: var(--font-2xl);
 }
 
-.drac-heading-3 {
+.heading-3 {
   font-size: var(--font-xl);
 }
 
-.drac-heading-4 {
+.heading-4 {
   font-size: var(--font-lg);
 }
 
-.drac-heading-5 {
+.heading-5 {
   font-size: var(--font-md);
 }
 
-.drac-heading-6 {
+.heading-6 {
   font-size: var(--font-sm);
 }
 
 /* -- Text -- */
 
-.drac-text-bold {
+.text-bold {
   font-weight: bold;
 }
 
-.drac-text-semibold {
+.text-semibold {
   font-weight: 600;
 }
 
 /* -- Sizes -- */
 
-.drac-text {
+.text {
   font-size: var(--font-md);
 }
 
-.drac-text.drac-text-lg {
+.text.text-lg {
   font-size: var(--font-lg);
 }
 
-.drac-text.drac-text-sm {
+.text.text-sm {
   font-size: var(--font-sm);
 }
 
-.drac-text.drac-text-xs {
+.text.text-xs {
   font-size: var(--font-xs);
 }

@@ -11,74 +11,74 @@
   --rounded-full: 9999px;
 }
 
-.drac-border-black {
+.border-black {
   border-color: var(--black);
 }
 
-.drac-border-white {
+.border-white {
   border-color: var(--white);
 }
 
-.drac-border-cyan {
+.border-cyan {
   border-color: var(--cyan);
 }
 
-.drac-border-green {
+.border-green {
   border-color: var(--green);
 }
 
-.drac-border-orange {
+.border-orange {
   border-color: var(--orange);
 }
 
-.drac-border-pink {
+.border-pink {
   border-color: var(--pink);
 }
 
-.drac-border-purple {
+.border-purple {
   border-color: var(--purple);
 }
 
-.drac-border-red {
+.border-red {
   border-color: var(--red);
 }
 
-.drac-border-yellow {
+.border-yellow {
   border-color: var(--yellow);
 }
 
-.drac-rounded-none {
+.rounded-none {
   border-radius: var(--rounded-none);
 }
 
-.drac-rounded-sm {
+.rounded-sm {
   border-radius: var(--rounded-sm);
 }
 
-.drac-rounded {
+.rounded {
   border-radius: var(--rounded);
 }
 
-.drac-rounded-md {
+.rounded-md {
   border-radius: var(--rounded-md);
 }
 
-.drac-rounded-lg {
+.rounded-lg {
   border-radius: var(--rounded-lg);
 }
 
-.drac-rounded-xl {
+.rounded-xl {
   border-radius: var(--rounded-xl);
 }
 
-.drac-rounded-2xl {
+.rounded-2xl {
   border-radius: var(--rounded-2xl);
 }
 
-.drac-rounded-3xl {
+.rounded-3xl {
   border-radius: var(--rounded-3xl);
 }
 
-.drac-rounded-full {
+.rounded-full {
   border-radius: var(--rounded-full);
 }

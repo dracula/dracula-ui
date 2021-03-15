@@ -1,19 +1,19 @@
-.drac-link {
+.link {
   text-decoration: none;
 }
 
 @each $color in black, white, cyan, green, orange, pink, purple, red, yellow {
-  .drac-text-$(color)--hover:hover {
+  .text-$(color)--hover:hover {
     color: var(--$(color));
   }
 
-  .drac-text-$(color)-secondary--hover:hover {
+  .text-$(color)-secondary--hover:hover {
     color: var(--$(color)Secondary);
   }
 }
 
 @each $from, $to in (purple, yellow, cyan, pink), (cyan, pink,  green, purple) {
-  .drac-text-$(from)-$(to)--hover:hover {
+  .text-$(from)-$(to)--hover:hover {
     background-image: linear-gradient(
       var(--gradientDegree),
       var(--$(from)) 0%,

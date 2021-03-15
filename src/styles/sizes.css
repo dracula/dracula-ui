@@ -9,46 +9,46 @@
   --glow-spacing-y: var(--spacing-lg);
 }
 
-.drac-box {
+.box {
   box-sizing: border-box;
 }
 
-.drac-box h1,
-.drac-box h2,
-.drac-box h3,
-.drac-box h4 {
+.box h1,
+.box h2,
+.box h3,
+.box h4 {
   margin: 0;
 }
 
 
 @each $size in none, xxs, xs, sm, md, lg {
-  .drac-p-$(size) {
+  .p-$(size) {
     padding: var(--spacing-$(size));
   }
 
-  .drac-px-$(size) {
+  .px-$(size) {
     padding-left: var(--spacing-$(size));
     padding-right: var(--spacing-$(size));
   }
 
-  .drac-py-$(size) {
+  .py-$(size) {
     padding-top: var(--spacing-$(size));
     padding-bottom: var(--spacing-$(size));
   }
 
-  .drac-pl-$(size) {
+  .pl-$(size) {
     padding-left: var(--spacing-$(size));
   }
 
-  .drac-pr-$(size) {
+  .pr-$(size) {
     padding-right: var(--spacing-$(size));
   }
 
-  .drac-pt-$(size) {
+  .pt-$(size) {
     padding-top: var(--spacing-$(size));
   }
 
-  .drac-pb-$(size) {
+  .pb-$(size) {
     padding-bottom: var(--spacing-$(size));
   }
 }
@@ -56,33 +56,33 @@
 
 
 @each $size in none, xxs, xs, sm, md, lg {
-  .drac-m-$(size) {
+  .m-$(size) {
     margin: var(--spacing-$(size));
   }
 
-  .drac-mx-$(size) {
+  .mx-$(size) {
     margin-left: var(--spacing-$(size));
     margin-right: var(--spacing-$(size));
   }
 
-  .drac-my-$(size) {
+  .my-$(size) {
     margin-top: var(--spacing-$(size));
     margin-bottom: var(--spacing-$(size));
   }
 
-  .drac-ml-$(size) {
+  .ml-$(size) {
     margin-left: var(--spacing-$(size));
   }
 
-  .drac-mr-$(size) {
+  .mr-$(size) {
     margin-right: var(--spacing-$(size));
   }
 
-  .drac-mt-$(size) {
+  .mt-$(size) {
     margin-top: var(--spacing-$(size));
   }
 
-  .drac-mb-$(size) {
+  .mb-$(size) {
     margin-bottom: var(--spacing-$(size));
   }
 }

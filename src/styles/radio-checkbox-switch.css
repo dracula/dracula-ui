@@ -1,5 +1,5 @@
-.drac-checkbox,
-.drac-radio {
+.checkbox,
+.radio {
   --active-inner: var(--white);
   --background: var(--white);
   --disabled: var(--blackSecondary);
@@ -17,8 +17,8 @@
   transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
 }
 
-.drac-checkbox:after,
-.drac-radio:after {
+.checkbox:after,
+.radio:after {
   content: '';
   display: block;
   left: 0;
@@ -29,8 +29,8 @@
     opacity var(--local-opacity-speed, 0.2s);
 }
 
-.drac-checkbox:checked,
-.drac-radio:checked {
+.checkbox:checked,
+.radio:checked {
   --local-bg: var(--active);
   --local-bg-color: var(--active);
   --local-opacity-speed: 0.3s;
@@ -38,51 +38,51 @@
   --local-transform-effect: cubic-bezier(0.2, 0.85, 0.32, 1.2);
 }
 
-.drac-checkbox:disabled,
-.drac-radio:disabled {
+.checkbox:disabled,
+.radio:disabled {
   --local-bg: var(--disabled);
   cursor: not-allowed;
   opacity: 0.9;
 }
 
-.drac-checkbox:disabled:checked,
-.drac-radio:disabled:checked {
+.checkbox:disabled:checked,
+.radio:disabled:checked {
   --local-bg: var(--disabled-inner);
   --local-bg-color: var(--border);
 }
 
-.drac-checkbox:disabled + label,
-.drac-radio:disabled + label {
+.checkbox:disabled + label,
+.radio:disabled + label {
   cursor: not-allowed;
 }
 
-.drac-checkbox:hover:not(:checked):not(:disabled),
-.drac-radio:hover:not(:checked):not(:disabled) {
+.checkbox:hover:not(:checked):not(:disabled),
+.radio:hover:not(:checked):not(:disabled) {
   --local-bg-color: var(--border-hover);
 }
 
-.drac-checkbox:focus,
-.drac-radio:focus {
+.checkbox:focus,
+.radio:focus {
   box-shadow: 0 0 0 var(--focus);
 }
 
-.drac-checkbox:not(.drac-switch),
-.drac-radio:not(.drac-switch) {
+.checkbox:not(.switch),
+.radio:not(.switch) {
   width: 21px;
 }
 
-.drac-checkbox:not(.drac-switch):after,
-.drac-radio:not(.drac-switch):after {
+.checkbox:not(.switch):after,
+.radio:not(.switch):after {
   opacity: var(--local-opacity, 0);
 }
 
-.drac-checkbox:not(.drac-switch):checked,
-.drac-radio:not(.drac-switch):checked {
+.checkbox:not(.switch):checked,
+.radio:not(.switch):checked {
   --local-opacity: 1;
 }
 
-.drac-checkbox + label,
-.drac-radio + label {
+.checkbox + label,
+.radio + label {
   font-size: 14px;
   line-height: 21px;
   display: inline-block;
@@ -91,11 +91,11 @@
   margin-left: 4px;
 }
 
-.drac-checkbox:not(.drac-switch) {
+.checkbox:not(.switch) {
   border-radius: 7px;
 }
 
-.drac-checkbox:not(.drac-switch):after {
+.checkbox:not(.switch):after {
   width: 5px;
   height: 9px;
   border: 2px solid var(--black);
@@ -106,16 +106,16 @@
   transform: rotate(var(--local-rotation, 20deg));
 }
 
-.drac-checkbox:not(.drac-switch):checked {
+.checkbox:not(.switch):checked {
   --local-rotation: 43deg;
 }
 
-.drac-checkbox.drac-switch {
+.checkbox.switch {
   width: 38px;
   border-radius: 11px;
 }
 
-.drac-checkbox.drac-switch:after {
+.checkbox.switch:after {
   left: 2px;
   top: 2px;
   border-radius: 50%;
@@ -125,20 +125,20 @@
   transform: translateX(var(--x, 0));
 }
 
-.drac-checkbox.drac-switch:checked {
+.checkbox.switch:checked {
   --ab: var(--active-inner);
   --x: 17px;
 }
 
-.drac-checkbox.drac-switch:disabled:not(:checked):after {
+.checkbox.switch:disabled:not(:checked):after {
   opacity: 0.6;
 }
 
-.drac-radio {
+.radio {
   border-radius: 50%;
 }
 
-.drac-radio:after {
+.radio:after {
   width: 19px;
   height: 19px;
   border-radius: 50%;
@@ -147,85 +147,85 @@
   transform: scale(var(--s, 0.7));
 }
 
-.drac-radio:checked {
+.radio:checked {
   --s: 0.5;
 }
 
-.drac-radio-black,
-.drac-switch-black,
-.drac-checkbox-black {
+.radio-black,
+.switch-black,
+.checkbox-black {
   --active: var(--black);
   --focus: var(--blackSecondary);
   --border: var(--blackSecondary);
   --border-hover: var(--black);
 }
 
-.drac-radio-white,
-.drac-switch-white,
-.drac-checkbox-white {
+.radio-white,
+.switch-white,
+.checkbox-white {
   --active: var(--white);
   --focus: var(--whiteSecondary);
   --border: var(--whiteSecondary);
   --border-hover: var(--white);
 }
 
-.drac-radio-cyan,
-.drac-switch-cyan,
-.drac-checkbox-cyan {
+.radio-cyan,
+.switch-cyan,
+.checkbox-cyan {
   --active: var(--cyan);
   --focus: var(--cyanSecondary);
   --border: var(--cyanSecondary);
   --border-hover: var(--cyan);
 }
 
-.drac-radio-green,
-.drac-switch-green,
-.drac-checkbox-green {
+.radio-green,
+.switch-green,
+.checkbox-green {
   --active: var(--green);
   --focus: var(--greenSecondary);
   --border: var(--greenSecondary);
   --border-hover: var(--green);
 }
 
-.drac-radio-orange,
-.drac-switch-orange,
-.drac-checkbox-orange {
+.radio-orange,
+.switch-orange,
+.checkbox-orange {
   --active: var(--orange);
   --focus: var(--orangeSecondary);
   --border: var(--orangeSecondary);
   --border-hover: var(--orange);
 }
 
-.drac-radio-pink,
-.drac-switch-pink,
-.drac-checkbox-pink {
+.radio-pink,
+.switch-pink,
+.checkbox-pink {
   --active: var(--pink);
   --focus: var(--pinkSecondary);
   --border: var(--pinkSecondary);
   --border-hover: var(--pink);
 }
 
-.drac-radio-purple,
-.drac-switch-purple,
-.drac-checkbox-purple {
+.radio-purple,
+.switch-purple,
+.checkbox-purple {
   --active: var(--purple);
   --focus: var(--purpleSecondary);
   --border: var(--purpleSecondary);
   --border-hover: var(--purple);
 }
 
-.drac-radio-red,
-.drac-switch-red,
-.drac-checkbox-red {
+.radio-red,
+.switch-red,
+.checkbox-red {
   --active: var(--red);
   --focus: var(--redSecondary);
   --border: var(--redSecondary);
   --border-hover: var(--red);
 }
 
-.drac-radio-yellow,
-.drac-switch-yellow,
-.drac-checkbox-yellow {
+.radio-yellow,
+.switch-yellow,
+.checkbox-yellow {
   --active: var(--yellow);
   --focus: var(--yellowSecondary);
   --border: var(--yellowSecondary);

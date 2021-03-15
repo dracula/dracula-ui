@@ -5377,7 +5377,7 @@ css-select@^3.1.2:
     domutils "^2.4.3"
     nth-check "^2.0.0"
 
-css-selector-tokenizer@^0.7.0:
+css-selector-tokenizer@^0.7.0, css-selector-tokenizer@^0.7.1:
   version "0.7.3"
   resolved "https://registry.yarnpkg.com/css-selector-tokenizer/-/css-selector-tokenizer-0.7.3.tgz#735f26186e67c749aaf275783405cf0661fae8f1"
   integrity sha512-jWQv3oCEL5kMErj4wRnK/OPoBi0D+P1FR2cDCKYPaMeD2eW3/mttav8HT4hT1CKopiJI/psEULjkClhvJo4Lvg==
@@ -12335,6 +12335,14 @@ postcss-ordered-values@^4.1.2:
     cssnano-util-get-arguments "^4.0.0"
     postcss "^7.0.0"
     postcss-value-parser "^3.0.0"
+
+postcss-prefixer@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/postcss-prefixer/-/postcss-prefixer-2.1.2.tgz#e2e72e6d478a78c55b0bfbc322691252bab70cc5"
+  integrity sha512-UQ9lvldlOvRFnW0zZfoYwr11LEaxuW+oqqTmb+NlFC0+hfkd7kPxAmI2kzci3L3gAERm+tngpyVdDx5XWTam8g==
+  dependencies:
+    css-selector-tokenizer "^0.7.1"
+    postcss "^7.0.14"
 
 postcss-reduce-initial@^4.0.3:
   version "4.0.3"

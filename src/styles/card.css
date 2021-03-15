@@ -1,13 +1,13 @@
-.drac-card {
+.card {
   border-radius: var(--rounded-lg);
   box-shadow: -2px var(--glow-spacing-x) var(--glow-spacing-y) var(--glowColor);
 }
 
-.drac-card-portrait {
+.card-portrait {
   max-width: 30rem;
 }
 
-.drac-card-subtle {
+.card-subtle {
   box-shadow: none;
   background: none;
   border-width: 2px;

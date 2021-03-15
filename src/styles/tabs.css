@@ -1,27 +1,27 @@
-.drac-tabs {
+.tabs {
   list-style: none;
   display: flex;
   padding: 0;
 }
 
-.drac-tab {
+.tab {
   border-bottom-color: var(--disabled);
   border-bottom-width: 0.2rem;
   border-bottom-style: solid;
   padding: 1rem;
 }
 
-.drac-tab-link {
+.tab-link {
   color: var(--white);
   text-decoration: none;
 }
 
 @each $color in black, white, cyan, green, orange, pink, purple, red, yellow {
-  .drac-tabs-$(color) .drac-tab-active {
+  .tabs-$(color) .tab-active {
     border-color: var(--$(color));
   }
 
-  .drac-tabs-$(color) .drac-tab-active .drac-tab-link {
+  .tabs-$(color) .tab-active .tab-link {
     color: var(--$(color));
   }
 }

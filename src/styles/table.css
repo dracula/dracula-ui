@@ -1,16 +1,16 @@
-.drac-table {
+.table {
   border-collapse: collapse;
   width: 100%;
 }
 
-.drac-table th {
+.table th {
   font-weight: 500;
   text-align: left;
   text-transform: uppercase;
   padding-bottom: .2rem;
 }
 
-.drac-table td {
+.table td {
   border-color: var(--disabled);
   border-width: 0.1rem;
   border-style: solid;
@@ -19,15 +19,15 @@
 
 @each $color in black, white, cyan, green, orange, pink, purple, red, yellow {
 
-  .drac-table.drac-table-$(color) td {
+  .table.table-$(color) td {
     border-color: var(--$(color));
   }
 
-  .drac-table-striped.drac-table-$(color) tr:nth-child(even) {
+  .table-striped.table-$(color) tr:nth-child(even) {
     background-color: var(--$(color)Light);
   }
 }
 
-.drac-table.drac-table-striped tr:nth-child(even) {
+.table.table-striped tr:nth-child(even) {
   background-color: var(--whiteLight);
 }

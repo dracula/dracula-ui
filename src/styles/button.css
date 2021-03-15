@@ -1,4 +1,4 @@
-.drac-btn {
+.btn {
   appearance: none;
   border: none;
   border-radius: var(--rounded-lg);
@@ -6,65 +6,65 @@
   display: inline-block;
 }
 
-.drac-btn:active,
-.drac-btn:focus {
+.btn:active,
+.btn:focus {
   opacity: 0.75;
   box-shadow: -4px -4px 1px rgba(255, 255, 255, 0.3) inset;
   outline: 0;
 }
 
-.drac-btn:disabled {
+.btn:disabled {
   background-color: var(--disabled);
 }
 
-.drac-btn:hover {
+.btn:hover {
   opacity: 0.75;
   box-shadow: 4px 4px rgba(255, 255, 255, 0.1);
 }
 
-.drac-btn:disabled:hover {
+.btn:disabled:hover {
   box-shadow: none;
 }
 
-.drac-btn-outline {
+.btn-outline {
   border-width: var(--border-size);
   border-style: solid;
   background-color: transparent;
 }
 
-.drac-btn-outline:disabled {
+.btn-outline:disabled {
   background-color: transparent;
   border-color: var(--disabled);
   color: var(--disabled);
 }
 
-.drac-btn-outline:disabled .drac-text {
+.btn-outline:disabled .text {
   color: var(--disabled);
 }
 
-.drac-btn-ghost:hover {
+.btn-ghost:hover {
   background-color: rgba(255, 255, 255, 0.1);
   box-shadow: none;
 }
 
-.drac-btn-ghost:active,
-.drac-btn-ghost:focus {
+.btn-ghost:active,
+.btn-ghost:focus {
   background-color: rgba(255, 255, 255, 0.1);
   box-shadow: none;
 }
 
-.drac-btn-ghost:disabled {
+.btn-ghost:disabled {
   background-color: var(--disabled);
   color: var(--black);
 }
 
-.drac-btn-ghost:disabled .drac-text {
+.btn-ghost:disabled .text {
   color: var(--black);
 }
 
 /* Sizes */
 
-.drac-btn.drac-btn-xs {
+.btn.btn-xs {
   padding: 0 var(--spacing-2);
   line-height: var(--spacing-6);
   height: var(--spacing-6);
@@ -72,7 +72,7 @@
   font-size: var(--font-xs);
 }
 
-.drac-btn.drac-btn-sm {
+.btn.btn-sm {
   padding: 0 var(--spacing-3);
   line-height: var(--spacing-8);
   height: var(--spacing-8);
@@ -80,7 +80,7 @@
   font-size: var(--font-sm);
 }
 
-.drac-btn {
+.btn {
   padding: 0 var(--spacing-4);
   line-height: var(--spacing-10);
   height: var(--spacing-10);
@@ -88,7 +88,7 @@
   font-size: var(--font-md);
 }
 
-.drac-btn.drac-btn-lg {
+.btn.btn-lg {
   padding: 0 var(--spacing-6);
   line-height: var(--spacing-12);
   height: var(--spacing-12);

@@ -1,20 +1,20 @@
-.drac-badge {
+.badge {
   padding: 1rem 1.5rem;
   border: none;
   border-radius: var(--rounded-lg);
   text-transform: uppercase;
 }
 
-.drac-badge .drac-text {
+.badge .text {
   text-transform: uppercase;
 }
 
-.drac-badge-subtle {
+.badge-subtle {
   border-width: var(--border-size);
   border-style: solid;
 }
 
-.drac-badge-outline {
+.badge-outline {
   border-width: var(--border-size);
   border-style: solid;
   background-color: transparent;
