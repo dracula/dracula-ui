@@ -1,5 +1,12 @@
-import { ColorMap } from '../../base/colors'
+import classNamesDedupe from 'classnames/dedupe'
 import React, { HTMLAttributes } from 'react'
+import { ColorMap } from '../../base/colors'
+import {
+  marginMixin,
+  MarginMixin,
+  paddingMixin,
+  PaddingMixin
+} from '../../base/spacing'
 
 export const radioColors: Partial<ColorMap> = {
   white: 'drac-radio-white',
@@ -13,7 +20,10 @@ export const radioColors: Partial<ColorMap> = {
 }
 
 /** Radio Props */
-export interface RadioProps extends HTMLAttributes<HTMLInputElement> {
+export interface RadioProps
+  extends HTMLAttributes<HTMLInputElement>,
+    PaddingMixin,
+    MarginMixin {
   /** The Dracula UI theme color for the radio button. */
   color: keyof typeof radioColors
 
@@ -30,7 +40,11 @@ export interface RadioProps extends HTMLAttributes<HTMLInputElement> {
 export const Radio: React.FC<RadioProps> = (props: RadioProps) => {
   const finalProps = {
     ...props,
-    className: `drac-radio ${radioColors[props.color]}`
+    className: classNamesDedupe(
+      `drac-radio ${radioColors[props.color]}`,
+      ...paddingMixin(props),
+      ...marginMixin(props)
+    )
   }
 
   return <input type="radio" {...finalProps} />

@@ -12,7 +12,8 @@ module.exports = {
           autoprefixer(),
           cssnano({
             preset: 'default'
-          })
+          }),
+          require('postcss-each')
         ],
         sourceMap: true,
         extract: 'styles/dracula-ui.css'

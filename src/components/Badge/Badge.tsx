@@ -2,6 +2,12 @@ import React, { HTMLAttributes } from 'react'
 import { colors as backgroundColors } from '../../base/colors'
 import { Text, textColors } from '../../components/Text/Text'
 import cx from 'classnames/dedupe'
+import {
+  MarginMixin,
+  marginMixin,
+  PaddingMixin,
+  paddingMixin
+} from '../../base/spacing'
 
 const variants = {
   normal: 'drac-badge',
@@ -12,7 +18,10 @@ const variants = {
 /**
  * Badge Props
  */
-export interface BadgeProps extends HTMLAttributes<HTMLSpanElement> {
+export interface BadgeProps
+  extends HTMLAttributes<HTMLSpanElement>,
+    PaddingMixin,
+    MarginMixin {
   /**
    * The theme variation color for a badge.
    */
@@ -49,7 +58,9 @@ export const Badge: React.FC<BadgeProps> = (props: BadgeProps) => {
     'drac-badge',
     backgroundClass,
     variants[props.variant ?? 'normal'],
-    textColorClass
+    textColorClass,
+    ...marginMixin(props),
+    ...paddingMixin(props)
   )
 
   return (

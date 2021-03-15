@@ -43,11 +43,8 @@ const Navigation = ({ selected }) => {
       <Topbar />
       {items.map((item) => {
         return (
-          <Box key={item.title} spacing={["mediumX", "smallY"]}>
-            <Heading
-              size="heading-4"
-              color="pinkPurple"
-            >
+          <Box key={item.title} px="md" py="sm">
+            <Heading size="heading-4" color="pinkPurple">
               {item.title}
             </Heading>
             <List variant="none">
@@ -56,17 +53,18 @@ const Navigation = ({ selected }) => {
                 const isSelected = item.pages[index] === selected
 
                 return (
-                  <Box as="li" key={index} spacing="xxsY">
+                  <Box as="li" key={index} py="xxs">
                     <NextLink href={path}>
                       <Link
                         href={path}
                         style={{ textDecoration: "none" }}
                         color={isSelected ? "white" : "blackSecondary"}
                         weight={isSelected ? "bold" : "normal"}
-                        size={isSelected ? 'normal': 'small'}
+                        size={isSelected ? "normal" : "small"}
                         hoverColor="white"
                       >
-                        {isSelected && '> ' }{item.pages[index]}
+                        {isSelected && "> "}
+                        {item.pages[index]}
                       </Link>
                     </NextLink>
                   </Box>

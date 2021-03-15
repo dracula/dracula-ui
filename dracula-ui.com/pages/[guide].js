@@ -32,13 +32,13 @@ function Properties({ docGenProps }) {
 
 function DocsOverview({ sections }) {
   return (
-    <Box as="ul" style={{ position: "fixed", right: 80 }} spacing="medium">
+    <Box as="ul" style={{ position: "fixed", right: 80 }} p="md">
       <Text weight="semibold" style={{ textTransform: "uppercase" }}>
         On this page
       </Text>
-      <Box color="pinkPurple" style={{ height: 2 }} margin="xsY" />
+      <Box color="pinkPurple" style={{ height: 2 }} my="xs" />
 
-      <Box key="properties" margin="xxsY">
+      <Box key="properties" my="xxs">
         <Link
           size="small"
           href="#properties"
@@ -51,7 +51,7 @@ function DocsOverview({ sections }) {
 
       {sections.map((section) => {
         return (
-          <Box key={section.title} spacing="xxsY">
+          <Box key={section.title} py="xxs">
             <Link
               size="small"
               color="blackSecondary"
@@ -69,17 +69,17 @@ function DocsOverview({ sections }) {
 
 function Section({ section, selectedTab, onChangeSelectedTab }) {
   return (
-    <Card spacing="medium">
+    <Card p="md">
       <Link
         id={section.title.toLowerCase()}
         href={`#${section.title.toLowerCase()}`}
       >
-        <Heading size="heading-2" margin="smallY">
+        <Heading size="heading-2" my="small">
           {section.title}
         </Heading>
       </Link>
 
-      <Box color="pinkPurple" style={{ height: 2 }} margin="smallY" />
+      <Box color="pinkPurple" style={{ height: 2 }} my="s" />
 
       {section.description && (
         <Paragraph size="small">{section.description}</Paragraph>
@@ -87,12 +87,13 @@ function Section({ section, selectedTab, onChangeSelectedTab }) {
 
       <Box
         className={styles.usage}
-        spacing="small"
+        p="sm"
+        mt="sm"
         dangerouslySetInnerHTML={{ __html: section.code }}
         style={{ overflow: "auto", maxHeight: 300 }}
       />
 
-      <Box spacing="smallY">
+      <Box py="sm">
         <details>
           <summary style={{ outline: 'none' }}>
             <Text>code</Text>
@@ -137,7 +138,7 @@ class Guide extends React.Component {
         <Box className={styles.container} style={{ minHeight: "100vh" }}>
           <Navigation selected={this.props.query.title} />
 
-          <Box className={styles.content} spacing="mediumY">
+          <Box className={styles.content} py="md">
             <main className={styles.center}>
               <DocsOverview sections={this.props.query.sections} />
 
@@ -149,13 +150,13 @@ class Guide extends React.Component {
                   {this.props.query.description}
                 </Paragraph>
 
-                <Card spacing="medium">
+                <Card p="md" mt="lg">
                   <Properties docGenProps={this.props.query.docgen.props} />
                 </Card>
 
                 {this.props.query.sections.map((section) => {
                   return (
-                    <Box key={section.title} margin="largeY">
+                    <Box key={section.title} my="lg">
                       <Section
                         key={section.title}
                         section={section}

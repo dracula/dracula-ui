@@ -1,8 +1,13 @@
-import React, { HTMLAttributes } from 'react'
-import { mapValues } from 'lodash'
 import cx from 'classnames/dedupe'
-import { spacingClasses, SpacingPropType } from '../../base/spacing'
+import { mapValues } from 'lodash'
+import React, { HTMLAttributes } from 'react'
 import { baseTextColors } from '../../base/colors'
+import {
+  marginMixin,
+  MarginMixin,
+  paddingMixin,
+  PaddingMixin
+} from '../../base/spacing'
 
 export const textSizes = {
   large: 'drac-text-lg',
@@ -22,7 +27,10 @@ export const textColors = mapValues(baseTextColors, (className) => {
 })
 
 /** Text Props */
-export interface TextProps extends HTMLAttributes<HTMLSpanElement> {
+export interface TextProps
+  extends HTMLAttributes<HTMLSpanElement>,
+    PaddingMixin,
+    MarginMixin {
   /**
    * Controls the size of the text based on pre-configured Dracula UI sizes.
    * Options: `xsmall`, `small`, `medium`, `large`
@@ -39,11 +47,6 @@ export interface TextProps extends HTMLAttributes<HTMLSpanElement> {
    * Controls the color of the text
    */
   color?: keyof typeof textColors
-
-  /**
-   * Controls the spacing between the Text component and its parent and siblings.
-   */
-  spacing?: SpacingPropType
 
   as?: 'a' | 'span' | 'p'
 }
@@ -67,7 +70,8 @@ export const Text = (props: TextProps) => {
       textSizes[props.size ?? 'medium'],
       textWeights[props.weight ?? 'normal'],
       textColors[props.color ?? 'white'],
-      spacingClasses(props.spacing)
+      ...paddingMixin(props),
+      ...marginMixin(props)
     )
   }
 

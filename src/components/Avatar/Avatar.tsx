@@ -2,6 +2,12 @@ import cx from 'classnames/dedupe'
 import { first, last } from 'lodash'
 import React, { HTMLAttributes } from 'react'
 import { colors as backgroundColors } from '../../base/colors'
+import {
+  MarginMixin,
+  marginMixin,
+  PaddingMixin,
+  paddingMixin
+} from '../../base/spacing'
 import { Text, textColors } from '../../components/Text/Text'
 
 export const AvatarVariants = {
@@ -17,7 +23,9 @@ export const AvatarBorderVariants = {
 
 /** Avatar Props */
 export interface AvatarProps
-  extends HTMLAttributes<HTMLSpanElement & HTMLImageElement> {
+  extends HTMLAttributes<HTMLSpanElement & HTMLImageElement>,
+    PaddingMixin,
+    MarginMixin {
   /**
    * The title or name to be used in the avatar.
    */
@@ -66,7 +74,9 @@ export const Avatar = (props: AvatarProps) => {
     backgroundClass,
     textColors[themeColor ?? 'green'],
     AvatarVariants[variant ?? 'normal'],
-    AvatarBorderVariants[borderVariant ?? 'normal']
+    AvatarBorderVariants[borderVariant ?? 'normal'],
+    ...paddingMixin(props),
+    ...marginMixin(props)
   )
   const names = props.title.split(' ')
 

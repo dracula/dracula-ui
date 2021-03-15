@@ -1,6 +1,12 @@
-import { ColorMap } from '../../base/colors'
-import React, { HTMLAttributes } from 'react'
 import cx from 'classnames/dedupe'
+import React, { HTMLAttributes } from 'react'
+import { ColorMap } from '../../base/colors'
+import {
+  marginMixin,
+  MarginMixin,
+  paddingMixin,
+  PaddingMixin
+} from '../../base/spacing'
 
 export const tableColors: Partial<ColorMap> = {
   white: 'drac-table-white',
@@ -21,7 +27,10 @@ export const tableVariants = {
 /**
  * Table Props
  */
-export interface TableProps extends HTMLAttributes<HTMLTableElement> {
+export interface TableProps
+  extends HTMLAttributes<HTMLTableElement>,
+    PaddingMixin,
+    MarginMixin {
   /** The Dracula UI color for the Table. */
   color?: keyof typeof tableColors
 
@@ -43,7 +52,9 @@ export const Table: React.FC<TableProps> = (props: TableProps) => {
     className: cx(
       'drac-table',
       props.variant && tableVariants[props.variant],
-      props.color && tableColors[props.color]
+      props.color && tableColors[props.color],
+      ...paddingMixin(props),
+      ...marginMixin(props)
     )
   }
 

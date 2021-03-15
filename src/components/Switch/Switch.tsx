@@ -1,5 +1,12 @@
 import { ColorMap } from '../../base/colors'
 import React, { HTMLAttributes } from 'react'
+import {
+  marginMixin,
+  MarginMixin,
+  paddingMixin,
+  PaddingMixin
+} from '../../base/spacing'
+import classNamesDedupe from 'classnames/dedupe'
 
 export const switchColors: Partial<ColorMap> = {
   white: 'drac-switch-white',
@@ -13,7 +20,10 @@ export const switchColors: Partial<ColorMap> = {
 }
 
 /** Switch Props. */
-export interface SwitchProps extends HTMLAttributes<HTMLInputElement> {
+export interface SwitchProps
+  extends HTMLAttributes<HTMLInputElement>,
+    PaddingMixin,
+    MarginMixin {
   /** The name of the form element. */
   name?: string
 
@@ -37,7 +47,11 @@ export interface SwitchProps extends HTMLAttributes<HTMLInputElement> {
 export const Switch: React.FC<SwitchProps> = (props: SwitchProps) => {
   const finalProps = {
     ...props,
-    className: `drac-switch drac-checkbox ${switchColors[props.color]}`
+    className: classNamesDedupe(
+      `drac-switch drac-checkbox ${switchColors[props.color]}`,
+      ...paddingMixin(props),
+      ...marginMixin(props)
+    )
   }
 
   return <input type="checkbox" {...finalProps} />

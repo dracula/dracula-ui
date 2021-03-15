@@ -1,6 +1,12 @@
-import { ColorMap } from '../../base/colors'
-import React, { HTMLAttributes } from 'react'
 import cx from 'classnames/dedupe'
+import React, { HTMLAttributes } from 'react'
+import { ColorMap } from '../../base/colors'
+import {
+  marginMixin,
+  MarginMixin,
+  paddingMixin,
+  PaddingMixin
+} from '../../base/spacing'
 
 export const listColors: Partial<ColorMap> = {
   white: 'drac-list-white',
@@ -22,7 +28,10 @@ export const listVariants = {
 /**
  * List Props
  */
-export interface ListProps extends HTMLAttributes<HTMLOListElement> {
+export interface ListProps
+  extends HTMLAttributes<HTMLOListElement>,
+    PaddingMixin,
+    MarginMixin {
   /** The Dracula UI color for the List. */
   color: keyof typeof listColors
 
@@ -44,7 +53,9 @@ export const List: React.FC<ListProps> = (props: ListProps) => {
     className: cx(
       'drac-list',
       props.variant && listVariants[props.variant],
-      props.color && listColors[props.color]
+      props.color && listColors[props.color],
+      ...paddingMixin(props),
+      ...marginMixin(props)
     )
   }
 

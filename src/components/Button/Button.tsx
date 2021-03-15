@@ -2,6 +2,12 @@ import React, { HTMLAttributes } from 'react'
 import { colors as backgroundColors } from '../../base/colors'
 import cx from 'classnames/dedupe'
 import { textColors } from '../../components/Text/Text'
+import {
+  marginMixin,
+  MarginMixin,
+  paddingMixin,
+  PaddingMixin
+} from '../../base/spacing'
 
 export const buttonVariants = {
   normal: 'drac-btn',
@@ -17,7 +23,10 @@ export const buttonSizes = {
 }
 
 /** Button Props */
-export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps
+  extends HTMLAttributes<HTMLButtonElement>,
+    PaddingMixin,
+    MarginMixin {
   /** A Dracula UI theme color for the Button. */
   color?: keyof typeof backgroundColors
 
@@ -66,7 +75,9 @@ export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
     backgroundClass,
     buttonVariants[props.variant ?? 'normal'],
     buttonSizes[props.size ?? 'medium'],
-    textColorClass
+    textColorClass,
+    ...paddingMixin(props),
+    ...marginMixin(props)
   )
 
   return React.createElement(

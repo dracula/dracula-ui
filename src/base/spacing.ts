@@ -1,82 +1,129 @@
-export const spacing = {
-  none: 'drac-spacing-none',
-  noneX: 'drac-spacing-none-x',
-  noneY: 'drac-spacing-none-y',
+import { mapValues } from 'lodash'
 
-  xxs: 'drac-spacing-xxs',
-  xxsY: 'drac-spacing-xxs-y',
-  xxsX: 'drac-spacing-xxs-x',
-
-  xs: 'drac-spacing-xs',
-  xsX: 'drac-spacing-xs-x',
-  xsY: 'drac-spacing-xs-y',
-
-  small: 'drac-spacing-sm',
-  smallX: 'drac-spacing-sm-x',
-  smallY: 'drac-spacing-sm-y',
-
-  medium: 'drac-spacing-md',
-  mediumX: 'drac-spacing-md-x',
-  mediumY: 'drac-spacing-md-y',
-
-  large: 'drac-spacing-lg',
-  largeX: 'drac-spacing-lg-x',
-  largeY: 'drac-spacing-lg-y'
+const padding = {
+  none: 'drac-p-none',
+  xxs: 'drac-p-xxs',
+  xs: 'drac-p-xs',
+  sm: 'drac-p-sm',
+  md: 'drac-p-md',
+  lg: 'drac-p-lg'
 }
 
-export const margin = {
-  none: 'drac-margin-none',
-  noneX: 'drac-margin-none-x',
-  noneY: 'drac-margin-none-y',
+const paddingLeft = mapValues(padding, (clz) => clz.replace('-p-', '-pl-'))
+const paddingRight = mapValues(padding, (clz) => clz.replace('-p-', '-pr-'))
+const paddingTop = mapValues(padding, (clz) => clz.replace('-p-', '-pt-'))
+const paddingBottom = mapValues(padding, (clz) => clz.replace('-p-', '-pb-'))
+const paddingX = mapValues(padding, (clz) => clz.replace('-p-', '-px-'))
+const paddingY = mapValues(padding, (clz) => clz.replace('-p-', '-py-'))
 
-  xxs: 'drac-margin-xxs',
-  xxsY: 'drac-margin-xxs-y',
-  xxsX: 'drac-margin-xxs-x',
+type paddingType = keyof typeof padding
+export type PaddingMixin = {
+  p?: paddingType
 
-  xs: 'drac-margin-tn',
-  xsX: 'drac-margin-xs-x',
-  xsY: 'drac-margin-xs-y',
+  py?: paddingType
+  px?: paddingType
 
-  small: 'drac-margin-sm',
-  smallX: 'drac-margin-sm-x',
-  smallY: 'drac-margin-sm-y',
+  pt?: paddingType
+  pb?: paddingType
 
-  medium: 'drac-margin-md',
-  mediumX: 'drac-margin-md-x',
-  mediumY: 'drac-margin-md-y',
-
-  large: 'drac-margin-lg',
-  largeX: 'drac-margin-lg-x',
-  largeY: 'drac-margin-lg-y'
+  pl?: paddingType
+  pr?: paddingType
 }
 
-export type SpacingPropType = keyof typeof spacing | Array<keyof typeof spacing>
-export type MarginPropType = keyof typeof margin | Array<keyof typeof margin>
+export function paddingMixin(mixin: PaddingMixin) {
+  let classes: string[] = []
 
-export function spacingClasses(input?: SpacingPropType): string[] {
-  let spacingInput = input ?? []
-
-  if (!Array.isArray(spacingInput)) {
-    spacingInput = [spacingInput]
+  if (mixin.p) {
+    classes.push(padding[mixin.p])
   }
 
-  spacingInput = spacingInput as Array<keyof typeof spacing>
-
-  return spacingInput.map((spc) => {
-    return spacing[spc]
-  })
-}
-
-export function marginClasses(input?: MarginPropType): string[] {
-  let marginInput = input ?? []
-
-  if (!Array.isArray(marginInput)) {
-    marginInput = [marginInput]
+  if (mixin.py) {
+    classes.push(paddingY[mixin.py])
   }
 
-  marginInput = marginInput as Array<keyof typeof margin>
+  if (mixin.px) {
+    classes.push(paddingX[mixin.px])
+  }
 
-  return marginInput.map((spc) => {
-    return margin[spc]
-  })
+  if (mixin.pt) {
+    classes.push(paddingTop[mixin.pt])
+  }
+
+  if (mixin.pb) {
+    classes.push(paddingBottom[mixin.pb])
+  }
+
+  if (mixin.pl) {
+    classes.push(paddingLeft[mixin.pl])
+  }
+
+  if (mixin.pr) {
+    classes.push(paddingRight[mixin.pr])
+  }
+
+  return classes
+}
+
+const m = {
+  none: 'drac-m-none',
+  xxs: 'drac-m-xxs',
+  xs: 'drac-m-xs',
+  sm: 'drac-m-sm',
+  md: 'drac-m-md',
+  lg: 'drac-m-lg'
+}
+
+const mLeft = mapValues(m, (clz) => clz.replace('-m-', '-ml-'))
+const mRight = mapValues(m, (clz) => clz.replace('-m-', '-mr-'))
+const mTop = mapValues(m, (clz) => clz.replace('-m-', '-mt-'))
+const mBottom = mapValues(m, (clz) => clz.replace('-m-', '-mb-'))
+const mX = mapValues(m, (clz) => clz.replace('-m-', '-mx-'))
+const mY = mapValues(m, (clz) => clz.replace('-m-', '-my-'))
+
+type marginType = keyof typeof m
+export type MarginMixin = {
+  m?: marginType
+
+  my?: marginType
+  mx?: marginType
+
+  mt?: marginType
+  mb?: marginType
+
+  ml?: marginType
+  mr?: marginType
+}
+
+export function marginMixin(mixin: MarginMixin) {
+  let classes: string[] = []
+
+  if (mixin.m) {
+    classes.push(m[mixin.m])
+  }
+
+  if (mixin.my) {
+    classes.push(mY[mixin.my])
+  }
+
+  if (mixin.mx) {
+    classes.push(mX[mixin.mx])
+  }
+
+  if (mixin.mt) {
+    classes.push(mTop[mixin.mt])
+  }
+
+  if (mixin.mb) {
+    classes.push(mBottom[mixin.mb])
+  }
+
+  if (mixin.ml) {
+    classes.push(mLeft[mixin.ml])
+  }
+
+  if (mixin.mr) {
+    classes.push(mRight[mixin.mr])
+  }
+
+  return classes
 }

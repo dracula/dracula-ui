@@ -27,17 +27,12 @@ const Crd: React.FC<CardProps & {}> = ({ color, ...props }) => {
   }
 
   return (
-    <Card
-      color={color}
-      spacing={['small']}
-      style={{ margin: '2rem' }}
-      {...props}
-    >
-      <Heading color={accentColor} size="heading-3" spacing="medium">
+    <Card color={color} p="sm" style={{ margin: '2rem' }} {...props}>
+      <Heading color={accentColor} size="heading-3" p="md">
         How to kill Vampires
       </Heading>
 
-      <Box spacing="mediumX">
+      <Box px="md">
         <Paragraph color={accentColor} style={{ paddingBottom: 0 }}>
           {`A half-mortal, half-immortal is out to avenge his mother's death and
           rid the world of vampires. The modern-day technologically advanced
@@ -51,17 +46,14 @@ const Crd: React.FC<CardProps & {}> = ({ color, ...props }) => {
         </Paragraph>
       </Box>
 
-      <Box spacing="medium" style={{ display: 'flex', alignItems: 'center' }}>
+      <Box p="md" style={{ display: 'flex', alignItems: 'center' }}>
         <Avatar
           title="Wesley Snipes"
           src="https://img1.looper.com/img/gallery/wesley-snipes-has-something-to-say-about-the-latest-blade-news/intro-1563907716.jpg"
           themeColor={accentColor}
         />
 
-        <Box
-          spacing="small"
-          style={{ display: 'flex', flexDirection: 'column' }}
-        >
+        <Box p="sm" style={{ display: 'flex', flexDirection: 'column' }}>
           <Text color={accentColor}>Author</Text>
           <Text color={accentColor} weight="semibold">
             Wesley Snipes
@@ -74,11 +66,7 @@ const Crd: React.FC<CardProps & {}> = ({ color, ...props }) => {
 
 export const Cards = () => {
   return (
-    <Box
-      color="black"
-      spacing="large"
-      style={{ display: 'flex', flexWrap: 'wrap' }}
-    >
+    <Box color="black" p="lg" style={{ display: 'flex', flexWrap: 'wrap' }}>
       {Object.keys(colors).map((color) => (
         <Crd
           style={{ width: '600px', margin: '2rem' }}
@@ -92,11 +80,7 @@ export const Cards = () => {
 
 export const Portrait = () => {
   return (
-    <Box
-      color="black"
-      spacing="large"
-      style={{ display: 'flex', flexWrap: 'wrap' }}
-    >
+    <Box color="black" p="lg" style={{ display: 'flex', flexWrap: 'wrap' }}>
       {Object.keys(colors).map((color) => (
         <Crd color={color as BoxProps['color']} orientation="portrait" />
       ))}
@@ -106,11 +90,7 @@ export const Portrait = () => {
 
 export const Subtle = () => {
   return (
-    <Box
-      color="black"
-      spacing="large"
-      style={{ display: 'flex', flexWrap: 'wrap' }}
-    >
+    <Box color="black" p="lg" style={{ display: 'flex', flexWrap: 'wrap' }}>
       {Object.keys(colors).map((color) => (
         <Crd
           style={{ width: '600px', margin: '2rem' }}

@@ -1,6 +1,12 @@
-import { ColorMap } from '../../base/colors'
-import React, { HTMLAttributes } from 'react'
 import cx from 'classnames/dedupe'
+import React, { HTMLAttributes } from 'react'
+import { ColorMap } from '../../base/colors'
+import {
+  marginMixin,
+  MarginMixin,
+  paddingMixin,
+  PaddingMixin
+} from '../../base/spacing'
 
 export const selectVariants = {
   normal: 'drac-select',
@@ -25,7 +31,10 @@ export const selectColors: Partial<ColorMap> = {
 }
 
 /** Select Props */
-export interface SelectProps extends HTMLAttributes<HTMLSelectElement> {
+export interface SelectProps
+  extends HTMLAttributes<HTMLSelectElement>,
+    PaddingMixin,
+    MarginMixin {
   /** The Dracula UI theme color for the Select. */
   color?: keyof typeof selectColors
 
@@ -58,7 +67,9 @@ export const Select: React.FC<SelectProps> = (props: SelectProps) => {
       'drac-select',
       props.variant && selectVariants[props.variant],
       props.size && selectSizes[props.size],
-      props.color && selectColors[props.color]
+      props.color && selectColors[props.color],
+      ...paddingMixin(props),
+      ...marginMixin(props)
     )
   }
 

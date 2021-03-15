@@ -1,6 +1,12 @@
-import { ColorMap } from '../../base/colors'
-import React, { HTMLAttributes } from 'react'
 import cx from 'classnames/dedupe'
+import React, { HTMLAttributes } from 'react'
+import { ColorMap } from '../../base/colors'
+import {
+  marginMixin,
+  MarginMixin,
+  paddingMixin,
+  PaddingMixin
+} from '../../base/spacing'
 
 export const inputVariants = {
   normal: 'drac-input',
@@ -25,7 +31,10 @@ export const inputColors: Partial<ColorMap> = {
 }
 
 /** Input Props */
-export interface InputProps extends HTMLAttributes<HTMLInputElement> {
+export interface InputProps
+  extends HTMLAttributes<HTMLInputElement>,
+    PaddingMixin,
+    MarginMixin {
   /**
    * The Dracula UI theme color to be used
    */
@@ -58,7 +67,9 @@ export const Input: React.FC<InputProps> = (props: InputProps) => {
       `drac-input`,
       props.variant && inputVariants[props.variant],
       props.size && inputSizes[props.size],
-      props.color && inputColors[props.color]
+      props.color && inputColors[props.color],
+      ...paddingMixin(props),
+      ...marginMixin(props)
     )
   }
 

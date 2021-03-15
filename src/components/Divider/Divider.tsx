@@ -1,12 +1,22 @@
-import { borderColors } from '../../base/colors'
+import classNamesDedupe from 'classnames/dedupe'
 import React, { HTMLAttributes } from 'react'
+import { borderColors } from '../../base/colors'
+import {
+  MarginMixin,
+  marginMixin,
+  PaddingMixin,
+  paddingMixin
+} from '../../base/spacing'
 
 export const dividerColors = borderColors
 
 /**
  * Divider Props
  */
-export interface DividerProps extends HTMLAttributes<HTMLDivElement> {
+export interface DividerProps
+  extends HTMLAttributes<HTMLDivElement>,
+    PaddingMixin,
+    MarginMixin {
   /** The Dracula UI color for the Divider. */
   color: keyof typeof dividerColors
 }
@@ -18,7 +28,11 @@ export interface DividerProps extends HTMLAttributes<HTMLDivElement> {
 export const Divider: React.FC<DividerProps> = (props: DividerProps) => {
   const finalProps = {
     ...props,
-    className: `drac-divider ${dividerColors[props.color]}`
+    className: classNamesDedupe(
+      `drac-divider ${dividerColors[props.color]}`,
+      ...paddingMixin(props),
+      ...marginMixin(props)
+    )
   }
 
   return <hr {...finalProps} />

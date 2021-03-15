@@ -1,6 +1,6 @@
 import cx from 'classnames/dedupe'
 import React from 'react'
-import { spacingClasses } from '../../base/spacing'
+import { marginMixin, paddingMixin } from '../../base/spacing'
 import { textColors, TextProps, textSizes, textWeights } from '../Text/Text'
 
 /**
@@ -18,7 +18,8 @@ export const Paragraph: React.FC<TextProps> = (props: TextProps) => {
       textSizes[props.size ?? 'medium'],
       textWeights[props.weight ?? 'normal'],
       textColors[props.color ?? 'white'],
-      spacingClasses(props.spacing ?? 'smallY')
+      ...paddingMixin(props),
+      ...marginMixin(props)
     )
   }
 

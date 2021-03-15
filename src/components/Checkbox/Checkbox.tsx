@@ -1,6 +1,12 @@
 import React, { HTMLAttributes } from 'react'
 import cx from 'classnames/dedupe'
 import { ColorMap } from '../../base/colors'
+import {
+  marginMixin,
+  MarginMixin,
+  paddingMixin,
+  PaddingMixin
+} from '../../base/spacing'
 
 export const checkboxColors: Partial<ColorMap> = {
   white: 'drac-checkbox-white',
@@ -14,7 +20,10 @@ export const checkboxColors: Partial<ColorMap> = {
 }
 
 /** Checkbox Props */
-export interface CheckboxProps extends HTMLAttributes<HTMLInputElement> {
+export interface CheckboxProps
+  extends HTMLAttributes<HTMLInputElement>,
+    PaddingMixin,
+    MarginMixin {
   /** The Dracula UI theme color for the checkbox. */
   color?: keyof typeof checkboxColors
   /** The name of the checkbox. Mirrors the name HTML attribute. */
@@ -32,7 +41,12 @@ export interface CheckboxProps extends HTMLAttributes<HTMLInputElement> {
 export const Checkbox: React.FC<CheckboxProps> = (props: CheckboxProps) => {
   const finalProps = {
     ...props,
-    className: cx(`drac-checkbox`, props.color && checkboxColors[props.color])
+    className: cx(
+      `drac-checkbox`,
+      props.color && checkboxColors[props.color],
+      ...paddingMixin(props),
+      ...marginMixin(props)
+    )
   }
 
   return <input type="checkbox" {...finalProps} />

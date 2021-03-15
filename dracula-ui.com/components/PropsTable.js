@@ -7,14 +7,14 @@ const PropsTable = ({ props }) => {
   return (
     <>
       {propList.map((prop) => (
-        <Box margin="mediumY">
+        <Box my="md">
           <Box>
             <Text color="pink" weight="semibold">{prop.name}</Text>
             <Text size="xsmall" color="pink"> {prop.required ? "(required)" : ""}</Text>
           </Box>
 
           <Box>
-            <Paragraph spacing="none" size="small">{prop.description}</Paragraph>
+            <Paragraph p="none" size="small">{prop.description}</Paragraph>
           </Box>
 
           <Box>

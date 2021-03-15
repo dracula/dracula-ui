@@ -2,10 +2,10 @@ import cx from 'classnames/dedupe'
 import React, { HTMLAttributes } from 'react'
 import { ColorMap } from '../../base/colors'
 import {
-  marginClasses,
-  MarginPropType,
-  spacingClasses,
-  SpacingPropType
+  MarginMixin,
+  marginMixin,
+  PaddingMixin,
+  paddingMixin
 } from '../../base/spacing'
 
 export const tabsColors: Partial<ColorMap> = {
@@ -22,15 +22,12 @@ export const tabsColors: Partial<ColorMap> = {
 /**
  * Tabs Props
  */
-export interface TabsProps extends HTMLAttributes<HTMLUListElement> {
+export interface TabsProps
+  extends HTMLAttributes<HTMLUListElement>,
+    PaddingMixin,
+    MarginMixin {
   /** The Dracula UI color for the Tabs. */
   color: keyof typeof tabsColors
-
-  /** Dracula UI standard spacing properties. */
-  spacing?: SpacingPropType
-
-  /** Dracula UI standard margin properties. */
-  margin?: MarginPropType
 }
 
 /**
@@ -43,8 +40,8 @@ export const Tabs: React.FC<TabsProps> = (props: TabsProps) => {
     className: cx(
       'drac-tabs',
       props.color && tabsColors[props.color],
-      ...spacingClasses(props.spacing),
-      ...marginClasses(props.margin)
+      ...paddingMixin(props),
+      ...marginMixin(props)
     )
   }
 

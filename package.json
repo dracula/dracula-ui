@@ -70,6 +70,7 @@
     "np": "^7.4.0",
     "parse-data-url": "^3.0.0",
     "postcss": "^8.2.8",
+    "postcss-each": "^1.0.0",
     "postcss-import": "^14.0.0",
     "prettier": "^2.1.1",
     "puppeteer": "^8.0.0",

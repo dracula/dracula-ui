@@ -1,15 +1,23 @@
 import cx from 'classnames/dedupe'
 import { mapValues } from 'lodash'
 import React, { HTMLAttributes } from 'react'
-import { spacingClasses, SpacingPropType } from '../../base/spacing'
+import {
+  marginMixin,
+  MarginMixin,
+  paddingMixin,
+  PaddingMixin
+} from '../../base/spacing'
 import { textColors, textSizes, textWeights } from '../Text/Text'
 
-export const linkHoverColors = mapValues(textColors, classname => {
+export const linkHoverColors = mapValues(textColors, (classname) => {
   return `${classname}--hover`
 })
 
 /** Link Props */
-export interface LinkProps extends HTMLAttributes<HTMLAnchorElement> {
+export interface LinkProps
+  extends HTMLAttributes<HTMLAnchorElement>,
+    PaddingMixin,
+    MarginMixin {
   /**
    * Controls the size of the link based on pre-configured Dracula UI sizes.
    * Options: `xsmall`, `small`, `medium`, `large`
@@ -31,11 +39,6 @@ export interface LinkProps extends HTMLAttributes<HTMLAnchorElement> {
    * Controls the color of the link on hover
    */
   hoverColor?: keyof typeof linkHoverColors
-
-  /**
-   * Controls the spacing between the Link component and its parent and siblings.
-   */
-  spacing?: SpacingPropType
 }
 
 /**
@@ -59,15 +62,12 @@ export const Link = (props: LinkProps) => {
       textWeights[props.weight ?? 'normal'],
       textColors[props.color ?? 'white'],
       linkHoverColors[props.hoverColor ?? 'white'],
-      spacingClasses(props.spacing)
+      ...paddingMixin(props),
+      ...marginMixin(props)
     )
   }
 
-  return React.createElement(
-    'a',
-    finalProps,
-    props.children
-  )
+  return React.createElement('a', finalProps, props.children)
 }
 
 Link.displayName = 'Link'

@@ -2,10 +2,10 @@ import cx from 'classnames/dedupe'
 import React, { AllHTMLAttributes } from 'react'
 import { colors, glowColors } from '../../base/colors'
 import {
-  spacingClasses,
-  SpacingPropType,
-  marginClasses,
-  MarginPropType
+  PaddingMixin,
+  paddingMixin,
+  marginMixin,
+  MarginMixin
 } from '../../base/spacing'
 
 type Element = HTMLElementTagNameMap
@@ -25,7 +25,9 @@ export const roundedBorders = {
  * Box Props
  */
 export interface BoxProps<K extends keyof Element = 'div'>
-  extends AllHTMLAttributes<K> {
+  extends AllHTMLAttributes<K>,
+    PaddingMixin,
+    MarginMixin {
   /** The background color. */
   color?: keyof typeof colors
 
@@ -34,12 +36,6 @@ export interface BoxProps<K extends keyof Element = 'div'>
 
   /** The border radius. */
   rounded?: keyof typeof roundedBorders
-
-  /** Dracula UI standard spacing properties. */
-  spacing?: SpacingPropType
-
-  /** Dracula UI standard margin properties. */
-  margin?: MarginPropType
 
   /** The HTML element to be used */
   as?: K
@@ -61,8 +57,8 @@ export function Box<T extends keyof Element>(props: BoxProps<T>) {
       props.color && colors[props.color],
       props.glowColor && glowColors[props.glowColor],
       props.rounded && roundedBorders[props.rounded],
-      ...spacingClasses(props.spacing),
-      ...marginClasses(props.margin),
+      ...paddingMixin(props),
+      ...marginMixin(props),
       props.className
     )
   }
