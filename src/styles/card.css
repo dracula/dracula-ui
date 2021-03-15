@@ -1,6 +1,6 @@
 .drac-card {
   border-radius: var(--rounded-lg);
-  box-shadow: 0px var(--spacing-md) var(--spacing-lg) rgba(255, 255, 255, 0.25);
+  box-shadow: -2px var(--glow-spacing-x) var(--glow-spacing-y) var(--glowColor);
 }
 
 .drac-card-portrait {

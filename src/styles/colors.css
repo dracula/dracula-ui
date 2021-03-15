@@ -46,6 +46,8 @@
 
   --disabled: hsl(230, 15%, 50%);
   --gradientDegree: 135deg;
+
+  --glowColor: rgba(255, 255, 255, 0.25);
 }
 
 .drac-bg-black {
@@ -292,4 +294,41 @@
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+}
+
+.drac-glow-black {
+  --glowColor: var(--black);
+}
+
+.drac-glow-black-secondary {
+  --glowColor: var(--black);
+}
+
+.drac-glow-black-light {
+  --glowColor: var(--blackLight);
+}
+
+.drac-glow-white {
+  --glowColor: var(--white);
+}
+.drac-glow-cyan {
+  --glowColor: var(--cyan-transparent);
+}
+.drac-glow-green {
+  --glowColor: var(--green-transparent);
+}
+.drac-glow-orange {
+  --glowColor: var(--orange-transparent);
+}
+.drac-glow-pink {
+  --glowColor: var(--pink-transparent);
+}
+.drac-glow-purple {
+  --glowColor: var(--purple-transparent);
+}
+.drac-glow-red {
+  --glowColor: var(--red-transparent);
+}
+.drac-glow-yellow {
+  --glowColor: var(--yellow-transparent);
 }

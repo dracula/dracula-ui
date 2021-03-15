@@ -4,6 +4,9 @@
   --spacing-sm: 1rem;
   --spacing-md: 2rem;
   --spacing-lg: 4rem;
+
+  --glow-spacing-x: var(--spacing-md);
+  --glow-spacing-y: var(--spacing-lg);
 }
 
 .drac-box {

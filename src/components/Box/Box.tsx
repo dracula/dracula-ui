@@ -1,7 +1,12 @@
 import cx from 'classnames/dedupe'
 import React, { AllHTMLAttributes } from 'react'
-import { colors } from '../../base/colors'
-import { spacingClasses, SpacingPropType, marginClasses, MarginPropType } from '../../base/spacing'
+import { colors, glowColors } from '../../base/colors'
+import {
+  spacingClasses,
+  SpacingPropType,
+  marginClasses,
+  MarginPropType
+} from '../../base/spacing'
 
 type Element = HTMLElementTagNameMap
 
@@ -13,7 +18,7 @@ export const roundedBorders = {
   xl: 'drac-rounded-xl',
   '2xl': 'drac-rounded-2xl',
   '3xl': 'drac-rounded-3xl',
-  full: 'drac-rounded-full',
+  full: 'drac-rounded-full'
 }
 
 /**
@@ -23,6 +28,9 @@ export interface BoxProps<K extends keyof Element = 'div'>
   extends AllHTMLAttributes<K> {
   /** The background color. */
   color?: keyof typeof colors
+
+  /** The glow color. */
+  glowColor?: keyof typeof glowColors
 
   /** The border radius. */
   rounded?: keyof typeof roundedBorders
@@ -51,6 +59,7 @@ export function Box<T extends keyof Element>(props: BoxProps<T>) {
     className: cx(
       `drac-box`,
       props.color && colors[props.color],
+      props.glowColor && glowColors[props.glowColor],
       props.rounded && roundedBorders[props.rounded],
       ...spacingClasses(props.spacing),
       ...marginClasses(props.margin),

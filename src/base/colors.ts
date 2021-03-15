@@ -26,6 +26,10 @@ export const borderColors: ColorMap = mapValues(colors, (className) =>
   className.replace('-bg-', '-border-')
 )
 
+export const glowColors: ColorMap = mapValues(colors, (className) =>
+  className.replace('-bg-', '-glow-')
+)
+
 export const baseTextColors: ColorMap = mapValues(colors, (className) => {
   return className.replace('-bg-', '-text-')
 })
