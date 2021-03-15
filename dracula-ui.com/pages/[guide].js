@@ -1,4 +1,4 @@
-import { Box, Card, Heading, Link, Paragraph, Text } from "../../dist"
+import { Box, Button, Card, Heading, Link, Paragraph, Text } from "../../dist"
 import Head from "next/head"
 import React from "react"
 import Navigation from "../components/Navigation"
@@ -135,7 +135,7 @@ class Guide extends React.Component {
         </Head>
 
         <Box className={styles.container} style={{ minHeight: "100vh" }}>
-          <Navigation />
+          <Navigation selected={this.props.query.title} />
 
           <Box className={styles.content} spacing="mediumY">
             <main className={styles.center}>

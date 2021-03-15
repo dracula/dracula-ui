@@ -8,7 +8,7 @@ const pages = dspComponents.entities.map((entity) => {
   return entity.name
 })
 
-const Navigation = () => {
+const Navigation = ({ selected }) => {
   const items = [
     {
       title: "Intro",
@@ -46,23 +46,27 @@ const Navigation = () => {
           <Box key={item.title} spacing={["mediumX", "smallY"]}>
             <Heading
               size="heading-4"
-              color="purpleCyan"
-              style={{ textTransform: "uppercase" }}
+              color="pinkPurple"
             >
               {item.title}
             </Heading>
             <List variant="none">
               {Object.keys(item.pages).map((index) => {
                 const path = `/${item.pages[index].toLowerCase()}`
+                const isSelected = item.pages[index] === selected
+
                 return (
                   <Box as="li" key={index} spacing="xxsY">
                     <NextLink href={path}>
                       <Link
                         href={path}
                         style={{ textDecoration: "none" }}
-                        hoverColor="purpleCyan"
+                        color={isSelected ? "white" : "blackSecondary"}
+                        weight={isSelected ? "bold" : "normal"}
+                        size={isSelected ? 'normal': 'small'}
+                        hoverColor="white"
                       >
-                        {item.pages[index]}
+                        {isSelected && '> ' }{item.pages[index]}
                       </Link>
                     </NextLink>
                   </Box>
