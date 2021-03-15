@@ -25,11 +25,7 @@ function Properties({ docGenProps }) {
       </Link>
       <Box color="purpleCyan" style={{ height: 2, marginTop: "0.5rem" }}></Box>
 
-      <Box className={styles.usage} spacing={["mediumX"]}>
-        <Box spacing="mediumY">
-          <PropsTable props={docGenProps} />
-        </Box>
-      </Box>
+      <PropsTable props={docGenProps} />
     </>
   )
 }
@@ -41,6 +37,17 @@ function DocsOverview({ sections }) {
         On this page
       </Text>
       <Box color="pinkPurple" style={{ height: 2 }} margin="xsY" />
+
+      <Box key="properties" margin="xxsY">
+        <Link
+          size="small"
+          href="#properties"
+          hoverColor="pinkPurple"
+          color="blackSecondary"
+        >
+          Properties
+        </Link>
+      </Box>
 
       {sections.map((section) => {
         return (
@@ -56,17 +63,6 @@ function DocsOverview({ sections }) {
           </Box>
         )
       })}
-
-      <Box key="properties" margin="xxsY">
-        <Link
-          size="small"
-          href="#properties"
-          hoverColor="pinkPurple"
-          color="blackSecondary"
-        >
-          Properties
-        </Link>
-      </Box>
     </Box>
   )
 }
@@ -96,11 +92,18 @@ function Section({ section, selectedTab, onChangeSelectedTab }) {
         style={{ overflow: "auto", maxHeight: 300 }}
       />
 
-      <Tabs
-        selectedTab={selectedTab}
-        onChangeSelectedTab={onChangeSelectedTab}
-        section={section}
-      />
+      <Box spacing="smallY">
+        <details>
+          <summary style={{ outline: 'none' }}>
+            <Text>code</Text>
+          </summary>
+          <Tabs
+            selectedTab={selectedTab}
+            onChangeSelectedTab={onChangeSelectedTab}
+            section={section}
+          />
+        </details>
+      </Box>
     </Card>
   )
 }
@@ -137,6 +140,7 @@ class Guide extends React.Component {
           <Box className={styles.content} spacing="mediumY">
             <main className={styles.center}>
               <DocsOverview sections={this.props.query.sections} />
+
               <Box>
                 <Heading color="purpleCyan" size="heading-1">
                   {this.props.query.title}
@@ -144,6 +148,10 @@ class Guide extends React.Component {
                 <Paragraph size="small">
                   {this.props.query.description}
                 </Paragraph>
+
+                <Card spacing="medium">
+                  <Properties docGenProps={this.props.query.docgen.props} />
+                </Card>
 
                 {this.props.query.sections.map((section) => {
                   return (
@@ -159,10 +167,6 @@ class Guide extends React.Component {
                     </Box>
                   )
                 })}
-
-                <Card spacing="medium" color="black">
-                  <Properties docGenProps={this.props.query.docgen.props} />
-                </Card>
               </Box>
             </main>
           </Box>

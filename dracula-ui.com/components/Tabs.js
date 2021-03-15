@@ -55,7 +55,7 @@ class Tabs extends Component {
   render() {
     return (
       <div>
-        <ul className="drac-tabs drac-tabs-purple drac-margin-xs-y">
+        <ul className="drac-tabs drac-tabs-purple">
           {this.renderLabels()}
         </ul>
         <Box style={{ maxHeight: 300, overflow: "auto" }}>

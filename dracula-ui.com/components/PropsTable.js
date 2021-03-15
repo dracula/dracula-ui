@@ -1,28 +1,32 @@
-import { Table } from "dracula-ui";
-import React from "react";
+import React from "react"
+import { Box, Paragraph, Text } from "../../dist"
 
 const PropsTable = ({ props }) => {
-  const propList = Object.values(props);
+  const propList = Object.values(props)
 
   return (
-    <Table color="yellowPink">
-      <tbody>
-        {propList.map((prop) => (
-          <tr key={prop.name}>
-            <td className="drac-text drac-text-sm drac-text-pink drac-text-semibold">
-              {prop.name}
-            </td>
-            <td className="drac-text drac-text-green drac-text-xs" style={{ maxWidth: 200 }}>
-              {prop.type.name} {prop.required ? "*" : ""}
-            </td>
-            <td className="drac-text drac-text-white drac-text-xs" style={{ maxWidth: 200 }}>
-              {prop.description}
-            </td>
-          </tr>
-        ))}
-      </tbody>
-    </Table>
-  );
-};
+    <>
+      {propList.map((prop) => (
+        <Box margin="mediumY">
+          <Box>
+            <Text color="pink" weight="semibold">{prop.name}</Text>
+            <Text size="xsmall" color="pink"> {prop.required ? "(required)" : ""}</Text>
+          </Box>
 
-export default PropsTable;
+          <Box>
+            <Paragraph spacing="none" size="small">{prop.description}</Paragraph>
+          </Box>
+
+          <Box>
+            <Text color="green" weight="semibold">values: </Text><br />
+            <Text color="green" size="xsmall">
+              {prop.type.name}
+            </Text>
+          </Box>
+        </Box>
+      ))}
+    </>
+  )
+}
+
+export default PropsTable

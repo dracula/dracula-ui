@@ -31,7 +31,7 @@ p.drac-text {
 
 /* -- Heading -- */
 .drac-heading-1 {
-  font-size: var(--font-3xl);
+  font-size: var(--font-5xl);
 }
 
 .drac-heading-2 {
