@@ -1,17 +1,23 @@
 import { mapValues } from 'lodash'
 
-export const colors = {
+export const supportColors = {
   white: 'drac-bg-white',
   black: 'drac-bg-black',
   blackSecondary: 'drac-bg-black-secondary',
-  blackLight: 'drac-bg-black-light',
+  blackLight: 'drac-bg-black-light'
+}
+
+export const baseColors = {
   cyan: 'drac-bg-cyan',
   green: 'drac-bg-green',
   orange: 'drac-bg-orange',
   pink: 'drac-bg-pink',
   purple: 'drac-bg-purple',
   red: 'drac-bg-red',
-  yellow: 'drac-bg-yellow',
+  yellow: 'drac-bg-yellow'
+}
+
+export const gradientColors = {
   purpleCyan: 'drac-bg-purple-cyan',
   yellowPink: 'drac-bg-yellow-pink',
   cyanGreen: 'drac-bg-cyan-green',
@@ -19,14 +25,30 @@ export const colors = {
   animated: 'drac-bg-animated'
 }
 
+export const colors = {
+  ...supportColors,
+  ...baseColors,
+  ...gradientColors
+}
+
 export type ColorNames = keyof typeof colors
 export type ColorMap = Record<ColorNames, string>
 
-export const borderColors: ColorMap = mapValues(colors, (className) =>
-  className.replace('-bg-', '-border-')
+export type SupportColorNames = keyof typeof supportColors
+export type SupportColorMap = Record<SupportColorNames, string>
+
+export type BaseColorNames = keyof typeof baseColors
+export type BaseColorMap = Record<BaseColorNames, string>
+
+export type GradientColorNames = keyof typeof gradientColors
+export type GradientBaseColorMap = Record<GradientColorNames, string>
+
+export const borderColors: GradientBaseColorMap = mapValues(
+  colors,
+  (className) => className.replace('-bg-', '-border-')
 )
 
-export const glowColors: ColorMap = mapValues(colors, (className) =>
+export const glowColors: BaseColorMap = mapValues(colors, (className) =>
   className.replace('-bg-', '-glow-')
 )
 

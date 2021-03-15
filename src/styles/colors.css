@@ -48,71 +48,44 @@
   --gradientDegree: 135deg;
 
   --glowColor: rgba(255, 255, 255, 0.25);
+
+  @each $opacity in 10, 20, 30, 40, 50, 60, 70, 80, 90 {
+    --cyan-$(opacity)0: hsl(170, 100%, 75%, 0.$(opacity));
+    --green-$(opacity)0: hsl(115, 100%, 75%, 0.$(opacity));
+    --orange-$(opacity)0: hsl(35, 100%, 75%, 0.$(opacity));
+    --pink-$(opacity)0: hsl(330, 100%, 75%, 0.$(opacity));
+    --purple-$(opacity)0: hsl(250, 100%, 75%, 0.$(opacity));
+    --red-$(opacity)0: hsl(10, 100%, 75%, 0.$(opacity));
+    --yellow-$(opacity)0: hsl(60, 100%, 75%, 0.$(opacity));
+  }
 }
 
-.drac-bg-black {
-  background: var(--black);
-}
 
-.drac-bg-black-secondary {
-  background: var(--blackSecondary);
-}
+@each $color in black, white, cyan, green, orange, pink, purple, red, yellow {
+  .drac-bg-$(color) {
+    background: var(--$(color));
+  }
 
-.drac-bg-black-light {
-  background: var(--blackLight);
-}
+  .drac-bg-$(color)-secondary {
+    background: var(--$(color)Secondary);
+  }
 
-.drac-bg-white {
-  background: var(--white);
-}
-.drac-bg-cyan {
-  background: var(--cyan);
-}
-.drac-bg-green {
-  background: var(--green);
-}
-.drac-bg-orange {
-  background: var(--orange);
-}
-.drac-bg-pink {
-  background: var(--pink);
-}
-.drac-bg-purple {
-  background: var(--purple);
-}
-.drac-bg-red {
-  background: var(--red);
-}
-.drac-bg-yellow {
-  background: var(--yellow);
-}
+  .drac-bg-$(color)-transparent {
+    background: var(--$(color)-transparent);
+  }
 
-.drac-bg-black-transparent {
-  background: var(--black-transparent);
-}
-.drac-bg-white-transparent {
-  background: var(--white-transparent);
-}
-.drac-bg-cyan-transparent {
-  background: var(--cyan-transparent);
-}
-.drac-bg-green-transparent {
-  background: var(--green-transparent);
-}
-.drac-bg-orange-transparent {
-  background: var(--orange-transparent);
-}
-.drac-bg-pink-transparent {
-  background: var(--pink-transparent);
-}
-.drac-bg-purple-transparent {
-  background: var(--purple-transparent);
-}
-.drac-bg-red-transparent {
-  background: var(--red-transparent);
-}
-.drac-bg-yellow-transparent {
-  background: var(--yellow-transparent);
+  .drac-text-$(color) {
+    color: var(--$(color));
+  }
+
+  .drac-text-$(color)-secondary {
+    color: var(--$(color)Secondary);
+  }
+
+  .drac-glow-$(color) {
+    background: var(--$(color));
+    --glowColor: var(--$(color));
+  }
 }
 
 .drac-bg-purple-cyan {
@@ -201,39 +174,6 @@
   }
 }
 
-.drac-text-black {
-  color: var(--black);
-}
-.drac-text-black-secondary {
-  color: var(--blackSecondary);
-}
-.drac-text-black-light {
-  color: var(--blackLight);
-}
-.drac-text-white {
-  color: var(--white);
-}
-.drac-text-cyan {
-  color: var(--cyan);
-}
-.drac-text-green {
-  color: var(--green);
-}
-.drac-text-orange {
-  color: var(--orange);
-}
-.drac-text-pink {
-  color: var(--pink);
-}
-.drac-text-purple {
-  color: var(--purple);
-}
-.drac-text-red {
-  color: var(--red);
-}
-.drac-text-yellow {
-  color: var(--yellow);
-}
 .drac-text-purple-cyan {
   background-image: linear-gradient(
     var(--gradientDegree),
@@ -294,41 +234,4 @@
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-}
-
-.drac-glow-black {
-  --glowColor: var(--black);
-}
-
-.drac-glow-black-secondary {
-  --glowColor: var(--black);
-}
-
-.drac-glow-black-light {
-  --glowColor: var(--blackLight);
-}
-
-.drac-glow-white {
-  --glowColor: var(--white);
-}
-.drac-glow-cyan {
-  --glowColor: var(--cyan-transparent);
-}
-.drac-glow-green {
-  --glowColor: var(--green-transparent);
-}
-.drac-glow-orange {
-  --glowColor: var(--orange-transparent);
-}
-.drac-glow-pink {
-  --glowColor: var(--pink-transparent);
-}
-.drac-glow-purple {
-  --glowColor: var(--purple-transparent);
-}
-.drac-glow-red {
-  --glowColor: var(--red-transparent);
-}
-.drac-glow-yellow {
-  --glowColor: var(--yellow-transparent);
 }

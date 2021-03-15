@@ -1,7 +1,7 @@
 import cx from 'classnames/dedupe'
 import { mapValues } from 'lodash'
 import React, { HTMLAttributes } from 'react'
-import { baseTextColors } from '../../base/colors'
+import { colors } from '../../base/colors'
 import {
   marginMixin,
   MarginMixin,
@@ -22,7 +22,7 @@ export const textWeights = {
   bold: 'drac-text-bold'
 }
 
-export const textColors = mapValues(baseTextColors, (className) => {
+export const textColors = mapValues(colors, (className) => {
   return className.replace('-bg-', '-text-')
 })
 
