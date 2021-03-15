@@ -16,74 +16,12 @@
   text-decoration: none;
 }
 
-.drac-tabs-black .drac-tab-active {
-  border-color: var(--black);
-}
+@each $color in black, white, cyan, green, orange, pink, purple, red, yellow {
+  .drac-tabs-$(color) .drac-tab-active {
+    border-color: var(--$(color));
+  }
 
-.drac-tabs-black .drac-tab-active .drac-tab-link {
-  color: var(--black);
-}
-
-.drac-tabs-white .drac-tab-active {
-  border-color: var(--white);
-}
-
-.drac-tabs-white .drac-tab-active .drac-tab-link {
-  color: var(--white);
-}
-
-.drac-tabs-cyan .drac-tab-active {
-  border-color: var(--cyan);
-}
-
-.drac-tabs-cyan .drac-tab-active .drac-tab-link {
-  color: var(--cyan);
-}
-
-.drac-tabs-green .drac-tab-active {
-  border-color: var(--green);
-}
-
-.drac-tabs-green .drac-tab-active .drac-tab-link {
-  color: var(--green);
-}
-
-.drac-tabs-orange .drac-tab-active {
-  border-color: var(--orange);
-}
-
-.drac-tabs-orange .drac-tab-active .drac-tab-link {
-  color: var(--orange);
-}
-
-.drac-tabs-pink .drac-tab-active {
-  border-color: var(--pink);
-}
-
-.drac-tabs-pink .drac-tab-active .drac-tab-link {
-  color: var(--pink);
-}
-
-.drac-tabs-purple .drac-tab-active {
-  border-color: var(--purple);
-}
-
-.drac-tabs-purple .drac-tab-active .drac-tab-link {
-  color: var(--purple);
-}
-
-.drac-tabs-red .drac-tab-active {
-  border-color: var(--red);
-}
-
-.drac-tabs-red .drac-tab-active .drac-tab-link {
-  color: var(--red);
-}
-
-.drac-tabs-yellow .drac-tab-active {
-  border-color: var(--yellow);
-}
-
-.drac-tabs-yellow .drac-tab-active .drac-tab-link {
-  color: var(--yellow);
+  .drac-tabs-$(color) .drac-tab-active .drac-tab-link {
+    color: var(--$(color));
+  }
 }

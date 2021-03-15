@@ -17,78 +17,17 @@
   padding: 0.5rem;
 }
 
+@each $color in black, white, cyan, green, orange, pink, purple, red, yellow {
+
+  .drac-table.drac-table-$(color) td {
+    border-color: var(--$(color));
+  }
+
+  .drac-table-striped.drac-table-$(color) tr:nth-child(even) {
+    background-color: var(--$(color)Light);
+  }
+}
+
 .drac-table.drac-table-striped tr:nth-child(even) {
   background-color: var(--whiteLight);
-}
-
-.drac-table.drac-table-black td {
-  border-color: var(--black);
-}
-
-.drac-table-striped.drac-table-black tr:nth-child(even) {
-  background-color: var(--blackLight);
-}
-
-.drac-table.drac-table-white td {
-  border-color: var(--white);
-}
-
-.drac-table-striped.drac-table-white tr:nth-child(even) {
-  background-color: var(--whiteLight);
-}
-
-.drac-table.drac-table-cyan td {
-  border-color: var(--cyan);
-}
-
-.drac-table-striped.drac-table-cyan tr:nth-child(even) {
-  background-color: var(--cyanLight);
-}
-
-.drac-table.drac-table-green td {
-  border-color: var(--green);
-}
-
-.drac-table-striped.drac-table-green tr:nth-child(even) {
-  background-color: var(--greenLight);
-}
-
-.drac-table.drac-table-orange td {
-  border-color: var(--orange);
-}
-
-.drac-table-striped.drac-table-orange tr:nth-child(even) {
-  background-color: var(--orangeLight);
-}
-
-.drac-table.drac-table-pink td {
-  border-color: var(--pink);
-}
-
-.drac-table-striped.drac-table-pink tr:nth-child(even) {
-  background-color: var(--pinkLight);
-}
-
-.drac-table.drac-table-purple td {
-  border-color: var(--purple);
-}
-
-.drac-table-striped.drac-table-purple tr:nth-child(even) {
-  background-color: var(--purpleLight);
-}
-
-.drac-table.drac-table-red td {
-  border-color: var(--red);
-}
-
-.drac-table-striped.drac-table-red tr:nth-child(even) {
-  background-color: var(--redLight);
-}
-
-.drac-table.drac-table-yellow td {
-  border-color: var(--yellow);
-}
-
-.drac-table-striped.drac-table-yellow tr:nth-child(even) {
-  background-color: var(--yellowLight);
 }

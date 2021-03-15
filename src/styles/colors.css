@@ -92,22 +92,6 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
   }
-
-  .drac-text-$(from)-$(to)--hover:hover {
-    background-image: linear-gradient(
-      var(--gradientDegree),
-      var(--$(from)) 0%,
-      var(--$(to)) 100%
-    );
-
-    background-size: 100%;
-    background-clip: text;
-
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-  }
 }
 
 @each $color in black, white, cyan, green, orange, pink, purple, red, yellow {
@@ -127,15 +111,7 @@
     color: var(--$(color));
   }
 
-  .drac-text-$(color)--hover:hover {
-    color: var(--$(color));
-  }
-
   .drac-text-$(color)-secondary {
-    color: var(--$(color)Secondary);
-  }
-
-  .drac-text-$(color)-secondary--hover:hover {
     color: var(--$(color)Secondary);
   }
 
