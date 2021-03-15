@@ -60,6 +60,55 @@
   }
 }
 
+@each $from, $to in (purple, yellow, cyan, pink), (cyan, pink,  green, purple) {
+  .drac-bg-$(from)-$(to) {
+    background: linear-gradient(
+      var(--gradientDegree),
+      var(--$(from)) 0%,
+      var(--$(to)) 100%
+    );
+  }
+
+  .drac-bg-$(from)-$(to)-transparent {
+    background: linear-gradient(
+      var(--gradientDegree),
+      var(--$(from)-transparent) 0%,
+      var(--$(to)-transparent) 100%
+    );
+  }
+
+  .drac-text-$(from)-$(to) {
+    background-image: linear-gradient(
+      var(--gradientDegree),
+      var(--$(from)) 0%,
+      var(--$(to)) 100%
+    );
+
+    background-size: 100%;
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+
+  .drac-text-$(from)-$(to)--hover:hover {
+    background-image: linear-gradient(
+      var(--gradientDegree),
+      var(--$(from)) 0%,
+      var(--$(to)) 100%
+    );
+
+    background-size: 100%;
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+}
 
 @each $color in black, white, cyan, green, orange, pink, purple, red, yellow {
   .drac-bg-$(color) {
@@ -78,7 +127,15 @@
     color: var(--$(color));
   }
 
+  .drac-text-$(color)--hover:hover {
+    color: var(--$(color));
+  }
+
   .drac-text-$(color)-secondary {
+    color: var(--$(color)Secondary);
+  }
+
+  .drac-text-$(color)-secondary--hover:hover {
     color: var(--$(color)Secondary);
   }
 
@@ -88,63 +145,6 @@
   }
 }
 
-.drac-bg-purple-cyan {
-  background: linear-gradient(
-    var(--gradientDegree),
-    var(--purple) 0%,
-    var(--cyan) 100%
-  );
-}
-.drac-bg-yellow-pink {
-  background: linear-gradient(
-    var(--gradientDegree),
-    var(--yellow) 0%,
-    var(--pink) 100%
-  );
-}
-.drac-bg-cyan-green {
-  background: linear-gradient(
-    var(--gradientDegree),
-    var(--cyan) 0%,
-    var(--green) 100%
-  );
-}
-.drac-bg-pink-purple {
-  background: linear-gradient(
-    var(--gradientDegree),
-    var(--pink) 0%,
-    var(--purple) 100%
-  );
-}
-
-.drac-bg-purple-cyan-transparent {
-  background: linear-gradient(
-    var(--gradientDegree),
-    var(--purple-transparent) 0%,
-    var(--cyan-transparent) 100%
-  );
-}
-.drac-bg-yellow-pink-transparent {
-  background: linear-gradient(
-    var(--gradientDegree),
-    var(--yellow-transparent) 0%,
-    var(--pink-transparent) 100%
-  );
-}
-.drac-bg-cyan-green-transparent {
-  background: linear-gradient(
-    var(--gradientDegree),
-    var(--cyan-transparent) 0%,
-    var(--green-transparent) 100%
-  );
-}
-.drac-bg-pink-purple-transparent {
-  background: linear-gradient(
-    var(--gradientDegree),
-    var(--pink-transparent) 0%,
-    var(--purple-transparent) 100%
-  );
-}
 
 .drac-bg-animated {
   content: '';
@@ -172,66 +172,4 @@
   to {
     background-position: 0 50%;
   }
-}
-
-.drac-text-purple-cyan {
-  background-image: linear-gradient(
-    var(--gradientDegree),
-    var(--purple) 0%,
-    var(--cyan) 100%
-  );
-
-  background-size: 100%;
-  background-clip: text;
-
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-
-.drac-text-yellow-pink {
-  background-image: linear-gradient(
-    var(--gradientDegree),
-    var(--yellow) 0%,
-    var(--pink) 100%
-  );
-
-  background-size: 100%;
-  background-clip: text;
-
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-.drac-text-cyan-green {
-  background-image: linear-gradient(
-    var(--gradientDegree),
-    var(--cyan) 0%,
-    var(--green) 100%
-  );
-
-  background-size: 100%;
-  background-clip: text;
-
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-.drac-text-pink-purple {
-  background-image: linear-gradient(
-    var(--gradientDegree),
-    var(--pink) 0%,
-    var(--purple) 100%
-  );
-
-  background-size: 100%;
-  background-clip: text;
-
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
