@@ -3,7 +3,7 @@
   "type": "page",
   "id": "Heading",
   "name": "Heading",
-  "last_updated": "2021-03-15T00:46:13.310Z",
+  "last_updated": "2021-03-15T05:45:21.419Z",
   "last_updated_by": "System",
   "description": "Heading is used to display headlines and other forms of hierarchical Text.\n\nHeadings are similar to the base Text component, but restricted to certain\nsizes and font weight.",
   "related_entity_ids": [],
@@ -12,13 +12,13 @@
     "trigger": "heading",
     "languages": {
       "javascriptreact": "<Heading>Heading</Heading>;\n",
-      "html": "<h1\n  class=\"drac-heading drac-heading-1 drac-text-white drac-spacing-none drac-margin-none\"\n>\n  Heading\n</h1>\n"
+      "html": "<h1 class=\"drac-heading drac-heading-1 drac-text-white\">Heading</h1>\n"
     }
   },
   "ext_com_draculaui_variations": [
     {
       "title": "Usage",
-      "html": "<h1\n  class=\"drac-heading drac-heading-1 drac-text-white drac-spacing-none drac-margin-none\"\n>\n  Heading\n</h1>\n",
+      "html": "<h1 class=\"drac-heading drac-heading-1 drac-text-white\">Heading</h1>\n",
       "react": "<Heading>Heading</Heading>;\n",
       "docs": "",
       "screenshot": "./dsp/assets/Heading.png",
@@ -26,7 +26,7 @@
     },
     {
       "title": "Sizes",
-      "html": "<div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"white\"\n      class=\"drac-heading drac-heading-1 drac-text-white drac-spacing-none drac-margin-none\"\n    >\n      heading-1\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h2\n      color=\"white\"\n      class=\"drac-heading drac-heading-2 drac-text-white drac-spacing-none drac-margin-none\"\n    >\n      heading-2\n    </h2>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h3\n      color=\"white\"\n      class=\"drac-heading drac-heading-3 drac-text-white drac-spacing-none drac-margin-none\"\n    >\n      heading-3\n    </h3>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h4\n      color=\"white\"\n      class=\"drac-heading drac-heading-4 drac-text-white drac-spacing-none drac-margin-none\"\n    >\n      heading-4\n    </h4>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h5\n      color=\"white\"\n      class=\"drac-heading drac-heading-5 drac-text-white drac-spacing-none drac-margin-none\"\n    >\n      heading-5\n    </h5>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h6\n      color=\"white\"\n      class=\"drac-heading drac-heading-6 drac-text-white drac-spacing-none drac-margin-none\"\n    >\n      heading-6\n    </h6>\n  </div>\n</div>\n",
+      "html": "<div>\n  <div style=\"margin-bottom: 20px\">\n    <h1 color=\"white\" class=\"drac-heading drac-heading-1 drac-text-white\">\n      heading-1\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h2 color=\"white\" class=\"drac-heading drac-heading-2 drac-text-white\">\n      heading-2\n    </h2>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h3 color=\"white\" class=\"drac-heading drac-heading-3 drac-text-white\">\n      heading-3\n    </h3>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h4 color=\"white\" class=\"drac-heading drac-heading-4 drac-text-white\">\n      heading-4\n    </h4>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h5 color=\"white\" class=\"drac-heading drac-heading-5 drac-text-white\">\n      heading-5\n    </h5>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h6 color=\"white\" class=\"drac-heading drac-heading-6 drac-text-white\">\n      heading-6\n    </h6>\n  </div>\n</div>\n",
       "react": "<div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"white\" size=\"heading-1\">\n      heading-1\n    </Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"white\" size=\"heading-2\">\n      heading-2\n    </Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"white\" size=\"heading-3\">\n      heading-3\n    </Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"white\" size=\"heading-4\">\n      heading-4\n    </Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"white\" size=\"heading-5\">\n      heading-5\n    </Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"white\" size=\"heading-6\">\n      heading-6\n    </Heading>\n  </div>\n</div>;\n",
       "docs": "",
       "screenshot": "./dsp/assets/HeadingSizes.png",
@@ -34,7 +34,7 @@
     },
     {
       "title": "Colors",
-      "html": "<div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"white\"\n      class=\"drac-heading drac-heading-1 drac-text-white drac-spacing-none drac-margin-none\"\n    >\n      white\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"black\"\n      class=\"drac-heading drac-heading-1 drac-text-black drac-spacing-none drac-margin-none\"\n    >\n      black\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"blackSecondary\"\n      class=\"drac-heading drac-heading-1 drac-text-black-secondary drac-spacing-none drac-margin-none\"\n    >\n      blackSecondary\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"blackLight\"\n      class=\"drac-heading drac-heading-1 drac-text-black-light drac-spacing-none drac-margin-none\"\n    >\n      blackLight\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"cyan\"\n      class=\"drac-heading drac-heading-1 drac-text-cyan drac-spacing-none drac-margin-none\"\n    >\n      cyan\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"green\"\n      class=\"drac-heading drac-heading-1 drac-text-green drac-spacing-none drac-margin-none\"\n    >\n      green\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"orange\"\n      class=\"drac-heading drac-heading-1 drac-text-orange drac-spacing-none drac-margin-none\"\n    >\n      orange\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"pink\"\n      class=\"drac-heading drac-heading-1 drac-text-pink drac-spacing-none drac-margin-none\"\n    >\n      pink\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"purple\"\n      class=\"drac-heading drac-heading-1 drac-text-purple drac-spacing-none drac-margin-none\"\n    >\n      purple\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"red\"\n      class=\"drac-heading drac-heading-1 drac-text-red drac-spacing-none drac-margin-none\"\n    >\n      red\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"yellow\"\n      class=\"drac-heading drac-heading-1 drac-text-yellow drac-spacing-none drac-margin-none\"\n    >\n      yellow\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"purpleCyan\"\n      class=\"drac-heading drac-heading-1 drac-text-purple-cyan drac-spacing-none drac-margin-none\"\n    >\n      purpleCyan\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"yellowPink\"\n      class=\"drac-heading drac-heading-1 drac-text-yellow-pink drac-spacing-none drac-margin-none\"\n    >\n      yellowPink\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"cyanGreen\"\n      class=\"drac-heading drac-heading-1 drac-text-cyan-green drac-spacing-none drac-margin-none\"\n    >\n      cyanGreen\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"pinkPurple\"\n      class=\"drac-heading drac-heading-1 drac-text-pink-purple drac-spacing-none drac-margin-none\"\n    >\n      pinkPurple\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"animated\"\n      class=\"drac-heading drac-heading-1 drac-text-animated drac-spacing-none drac-margin-none\"\n    >\n      animated\n    </h1>\n  </div>\n</div>\n",
+      "html": "<div>\n  <div style=\"margin-bottom: 20px\">\n    <h1 color=\"white\" class=\"drac-heading drac-heading-1 drac-text-white\">\n      white\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1 color=\"black\" class=\"drac-heading drac-heading-1 drac-text-black\">\n      black\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"blackSecondary\"\n      class=\"drac-heading drac-heading-1 drac-text-black-secondary\"\n    >\n      blackSecondary\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"blackLight\"\n      class=\"drac-heading drac-heading-1 drac-text-black-light\"\n    >\n      blackLight\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1 color=\"cyan\" class=\"drac-heading drac-heading-1 drac-text-cyan\">\n      cyan\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1 color=\"green\" class=\"drac-heading drac-heading-1 drac-text-green\">\n      green\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1 color=\"orange\" class=\"drac-heading drac-heading-1 drac-text-orange\">\n      orange\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1 color=\"pink\" class=\"drac-heading drac-heading-1 drac-text-pink\">\n      pink\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1 color=\"purple\" class=\"drac-heading drac-heading-1 drac-text-purple\">\n      purple\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1 color=\"red\" class=\"drac-heading drac-heading-1 drac-text-red\">red</h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1 color=\"yellow\" class=\"drac-heading drac-heading-1 drac-text-yellow\">\n      yellow\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"purpleCyan\"\n      class=\"drac-heading drac-heading-1 drac-text-purple-cyan\"\n    >\n      purpleCyan\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"yellowPink\"\n      class=\"drac-heading drac-heading-1 drac-text-yellow-pink\"\n    >\n      yellowPink\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"cyanGreen\"\n      class=\"drac-heading drac-heading-1 drac-text-cyan-green\"\n    >\n      cyanGreen\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1\n      color=\"pinkPurple\"\n      class=\"drac-heading drac-heading-1 drac-text-pink-purple\"\n    >\n      pinkPurple\n    </h1>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <h1 color=\"animated\" class=\"drac-heading drac-heading-1 drac-text-animated\">\n      animated\n    </h1>\n  </div>\n</div>\n",
       "react": "<div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"white\">white</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"black\">black</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"blackSecondary\">blackSecondary</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"blackLight\">blackLight</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"cyan\">cyan</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"green\">green</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"orange\">orange</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"pink\">pink</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"purple\">purple</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"red\">red</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"yellow\">yellow</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"purpleCyan\">purpleCyan</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"yellowPink\">yellowPink</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"cyanGreen\">cyanGreen</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"pinkPurple\">pinkPurple</Heading>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Heading color=\"animated\">animated</Heading>\n  </div>\n</div>;\n",
       "docs": "",
       "screenshot": "./dsp/assets/HeadingColors.png",
@@ -77,42 +77,8 @@
       ],
       "required": false,
       "type": {
-        "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+        "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
       }
-    },
-    "spacing": {
-      "defaultValue": null,
-      "description": "Controls the spacing between the Heading component and its parent and siblings.",
-      "name": "spacing",
-      "parent": {
-        "fileName": "src/components/Heading/Heading.tsx",
-        "name": "HeadingProps"
-      },
-      "declarations": [
-        {
-          "fileName": "src/components/Heading/Heading.tsx",
-          "name": "HeadingProps"
-        }
-      ],
-      "required": false,
-      "type": { "name": "SpacingPropType | undefined" }
-    },
-    "margin": {
-      "defaultValue": null,
-      "description": "Dracula UI standard margin properties.",
-      "name": "margin",
-      "parent": {
-        "fileName": "src/components/Heading/Heading.tsx",
-        "name": "HeadingProps"
-      },
-      "declarations": [
-        {
-          "fileName": "src/components/Heading/Heading.tsx",
-          "name": "HeadingProps"
-        }
-      ],
-      "required": false,
-      "type": { "name": "MarginPropType | undefined" }
     },
     "as": {
       "defaultValue": null,
@@ -130,6 +96,174 @@
       ],
       "required": false,
       "type": { "name": "keyof HTMLElementTagNameMap | undefined" }
+    },
+    "m": {
+      "defaultValue": null,
+      "description": "",
+      "name": "m",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+      }
+    },
+    "my": {
+      "defaultValue": null,
+      "description": "",
+      "name": "my",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+      }
+    },
+    "mx": {
+      "defaultValue": null,
+      "description": "",
+      "name": "mx",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+      }
+    },
+    "mt": {
+      "defaultValue": null,
+      "description": "",
+      "name": "mt",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+      }
+    },
+    "mb": {
+      "defaultValue": null,
+      "description": "",
+      "name": "mb",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+      }
+    },
+    "ml": {
+      "defaultValue": null,
+      "description": "",
+      "name": "ml",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+      }
+    },
+    "mr": {
+      "defaultValue": null,
+      "description": "",
+      "name": "mr",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+      }
+    },
+    "p": {
+      "defaultValue": null,
+      "description": "",
+      "name": "p",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+      }
+    },
+    "py": {
+      "defaultValue": null,
+      "description": "",
+      "name": "py",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+      }
+    },
+    "px": {
+      "defaultValue": null,
+      "description": "",
+      "name": "px",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+      }
+    },
+    "pt": {
+      "defaultValue": null,
+      "description": "",
+      "name": "pt",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+      }
+    },
+    "pb": {
+      "defaultValue": null,
+      "description": "",
+      "name": "pb",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+      }
+    },
+    "pl": {
+      "defaultValue": null,
+      "description": "",
+      "name": "pl",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+      }
+    },
+    "pr": {
+      "defaultValue": null,
+      "description": "",
+      "name": "pr",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+      }
     }
   },
   "ext_com_draculaui_docgen": {
@@ -173,42 +307,8 @@
         ],
         "required": false,
         "type": {
-          "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+          "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
         }
-      },
-      "spacing": {
-        "defaultValue": null,
-        "description": "Controls the spacing between the Heading component and its parent and siblings.",
-        "name": "spacing",
-        "parent": {
-          "fileName": "src/components/Heading/Heading.tsx",
-          "name": "HeadingProps"
-        },
-        "declarations": [
-          {
-            "fileName": "src/components/Heading/Heading.tsx",
-            "name": "HeadingProps"
-          }
-        ],
-        "required": false,
-        "type": { "name": "SpacingPropType | undefined" }
-      },
-      "margin": {
-        "defaultValue": null,
-        "description": "Dracula UI standard margin properties.",
-        "name": "margin",
-        "parent": {
-          "fileName": "src/components/Heading/Heading.tsx",
-          "name": "HeadingProps"
-        },
-        "declarations": [
-          {
-            "fileName": "src/components/Heading/Heading.tsx",
-            "name": "HeadingProps"
-          }
-        ],
-        "required": false,
-        "type": { "name": "MarginPropType | undefined" }
       },
       "as": {
         "defaultValue": null,
@@ -226,6 +326,216 @@
         ],
         "required": false,
         "type": { "name": "keyof HTMLElementTagNameMap | undefined" }
+      },
+      "m": {
+        "defaultValue": null,
+        "description": "",
+        "name": "m",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+        }
+      },
+      "my": {
+        "defaultValue": null,
+        "description": "",
+        "name": "my",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+        }
+      },
+      "mx": {
+        "defaultValue": null,
+        "description": "",
+        "name": "mx",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+        }
+      },
+      "mt": {
+        "defaultValue": null,
+        "description": "",
+        "name": "mt",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+        }
+      },
+      "mb": {
+        "defaultValue": null,
+        "description": "",
+        "name": "mb",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+        }
+      },
+      "ml": {
+        "defaultValue": null,
+        "description": "",
+        "name": "ml",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+        }
+      },
+      "mr": {
+        "defaultValue": null,
+        "description": "",
+        "name": "mr",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+        }
+      },
+      "p": {
+        "defaultValue": null,
+        "description": "",
+        "name": "p",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+        }
+      },
+      "py": {
+        "defaultValue": null,
+        "description": "",
+        "name": "py",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+        }
+      },
+      "px": {
+        "defaultValue": null,
+        "description": "",
+        "name": "px",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+        }
+      },
+      "pt": {
+        "defaultValue": null,
+        "description": "",
+        "name": "pt",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+        }
+      },
+      "pb": {
+        "defaultValue": null,
+        "description": "",
+        "name": "pb",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+        }
+      },
+      "pl": {
+        "defaultValue": null,
+        "description": "",
+        "name": "pl",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+        }
+      },
+      "pr": {
+        "defaultValue": null,
+        "description": "",
+        "name": "pr",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+        }
       }
     }
   }

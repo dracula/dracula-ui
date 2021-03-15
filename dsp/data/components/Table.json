@@ -3,7 +3,7 @@
   "type": "page",
   "id": "Table",
   "name": "Table",
-  "last_updated": "2021-03-15T00:46:18.513Z",
+  "last_updated": "2021-03-15T05:45:22.840Z",
   "last_updated_by": "System",
   "description": "Tables are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
   "related_entity_ids": [],
@@ -55,7 +55,7 @@
       ],
       "required": false,
       "type": {
-        "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+        "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
       }
     },
     "variant": {
@@ -71,6 +71,174 @@
       ],
       "required": false,
       "type": { "name": "\"normal\" | \"striped\" | undefined" }
+    },
+    "p": {
+      "defaultValue": null,
+      "description": "",
+      "name": "p",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+      }
+    },
+    "py": {
+      "defaultValue": null,
+      "description": "",
+      "name": "py",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+      }
+    },
+    "px": {
+      "defaultValue": null,
+      "description": "",
+      "name": "px",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+      }
+    },
+    "pt": {
+      "defaultValue": null,
+      "description": "",
+      "name": "pt",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+      }
+    },
+    "pb": {
+      "defaultValue": null,
+      "description": "",
+      "name": "pb",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+      }
+    },
+    "pl": {
+      "defaultValue": null,
+      "description": "",
+      "name": "pl",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+      }
+    },
+    "pr": {
+      "defaultValue": null,
+      "description": "",
+      "name": "pr",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+      }
+    },
+    "m": {
+      "defaultValue": null,
+      "description": "",
+      "name": "m",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+      }
+    },
+    "my": {
+      "defaultValue": null,
+      "description": "",
+      "name": "my",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+      }
+    },
+    "mx": {
+      "defaultValue": null,
+      "description": "",
+      "name": "mx",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+      }
+    },
+    "mt": {
+      "defaultValue": null,
+      "description": "",
+      "name": "mt",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+      }
+    },
+    "mb": {
+      "defaultValue": null,
+      "description": "",
+      "name": "mb",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+      }
+    },
+    "ml": {
+      "defaultValue": null,
+      "description": "",
+      "name": "ml",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+      }
+    },
+    "mr": {
+      "defaultValue": null,
+      "description": "",
+      "name": "mr",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+      }
     }
   },
   "ext_com_draculaui_docgen": {
@@ -92,7 +260,7 @@
         ],
         "required": false,
         "type": {
-          "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+          "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
         }
       },
       "variant": {
@@ -108,6 +276,216 @@
         ],
         "required": false,
         "type": { "name": "\"normal\" | \"striped\" | undefined" }
+      },
+      "p": {
+        "defaultValue": null,
+        "description": "",
+        "name": "p",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+        }
+      },
+      "py": {
+        "defaultValue": null,
+        "description": "",
+        "name": "py",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+        }
+      },
+      "px": {
+        "defaultValue": null,
+        "description": "",
+        "name": "px",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+        }
+      },
+      "pt": {
+        "defaultValue": null,
+        "description": "",
+        "name": "pt",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+        }
+      },
+      "pb": {
+        "defaultValue": null,
+        "description": "",
+        "name": "pb",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+        }
+      },
+      "pl": {
+        "defaultValue": null,
+        "description": "",
+        "name": "pl",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+        }
+      },
+      "pr": {
+        "defaultValue": null,
+        "description": "",
+        "name": "pr",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+        }
+      },
+      "m": {
+        "defaultValue": null,
+        "description": "",
+        "name": "m",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+        }
+      },
+      "my": {
+        "defaultValue": null,
+        "description": "",
+        "name": "my",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+        }
+      },
+      "mx": {
+        "defaultValue": null,
+        "description": "",
+        "name": "mx",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+        }
+      },
+      "mt": {
+        "defaultValue": null,
+        "description": "",
+        "name": "mt",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+        }
+      },
+      "mb": {
+        "defaultValue": null,
+        "description": "",
+        "name": "mb",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+        }
+      },
+      "ml": {
+        "defaultValue": null,
+        "description": "",
+        "name": "ml",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+        }
+      },
+      "mr": {
+        "defaultValue": null,
+        "description": "",
+        "name": "mr",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+        }
       }
     }
   }

@@ -3,11 +3,7 @@
 exports[`Site: Heading Basic Usage 1`] = `
 Object {
   "docs": "",
-  "html": "<h1
-  class=\\"drac-heading drac-heading-1 drac-text-white drac-spacing-none drac-margin-none\\"
->
-  Heading
-</h1>
+  "html": "<h1 class=\\"drac-heading drac-heading-1 drac-text-white\\">Heading</h1>
 ",
   "react": "<Heading>Heading</Heading>;
 ",
@@ -20,25 +16,19 @@ Object {
   "docs": "",
   "html": "<div>
   <div style=\\"margin-bottom: 20px\\">
-    <h1
-      color=\\"white\\"
-      class=\\"drac-heading drac-heading-1 drac-text-white drac-spacing-none drac-margin-none\\"
-    >
+    <h1 color=\\"white\\" class=\\"drac-heading drac-heading-1 drac-text-white\\">
       white
     </h1>
   </div>
   <div style=\\"margin-bottom: 20px\\">
-    <h1
-      color=\\"black\\"
-      class=\\"drac-heading drac-heading-1 drac-text-black drac-spacing-none drac-margin-none\\"
-    >
+    <h1 color=\\"black\\" class=\\"drac-heading drac-heading-1 drac-text-black\\">
       black
     </h1>
   </div>
   <div style=\\"margin-bottom: 20px\\">
     <h1
       color=\\"blackSecondary\\"
-      class=\\"drac-heading drac-heading-1 drac-text-black-secondary drac-spacing-none drac-margin-none\\"
+      class=\\"drac-heading drac-heading-1 drac-text-black-secondary\\"
     >
       blackSecondary
     </h1>
@@ -46,71 +36,48 @@ Object {
   <div style=\\"margin-bottom: 20px\\">
     <h1
       color=\\"blackLight\\"
-      class=\\"drac-heading drac-heading-1 drac-text-black-light drac-spacing-none drac-margin-none\\"
+      class=\\"drac-heading drac-heading-1 drac-text-black-light\\"
     >
       blackLight
     </h1>
   </div>
   <div style=\\"margin-bottom: 20px\\">
-    <h1
-      color=\\"cyan\\"
-      class=\\"drac-heading drac-heading-1 drac-text-cyan drac-spacing-none drac-margin-none\\"
-    >
+    <h1 color=\\"cyan\\" class=\\"drac-heading drac-heading-1 drac-text-cyan\\">
       cyan
     </h1>
   </div>
   <div style=\\"margin-bottom: 20px\\">
-    <h1
-      color=\\"green\\"
-      class=\\"drac-heading drac-heading-1 drac-text-green drac-spacing-none drac-margin-none\\"
-    >
+    <h1 color=\\"green\\" class=\\"drac-heading drac-heading-1 drac-text-green\\">
       green
     </h1>
   </div>
   <div style=\\"margin-bottom: 20px\\">
-    <h1
-      color=\\"orange\\"
-      class=\\"drac-heading drac-heading-1 drac-text-orange drac-spacing-none drac-margin-none\\"
-    >
+    <h1 color=\\"orange\\" class=\\"drac-heading drac-heading-1 drac-text-orange\\">
       orange
     </h1>
   </div>
   <div style=\\"margin-bottom: 20px\\">
-    <h1
-      color=\\"pink\\"
-      class=\\"drac-heading drac-heading-1 drac-text-pink drac-spacing-none drac-margin-none\\"
-    >
+    <h1 color=\\"pink\\" class=\\"drac-heading drac-heading-1 drac-text-pink\\">
       pink
     </h1>
   </div>
   <div style=\\"margin-bottom: 20px\\">
-    <h1
-      color=\\"purple\\"
-      class=\\"drac-heading drac-heading-1 drac-text-purple drac-spacing-none drac-margin-none\\"
-    >
+    <h1 color=\\"purple\\" class=\\"drac-heading drac-heading-1 drac-text-purple\\">
       purple
     </h1>
   </div>
   <div style=\\"margin-bottom: 20px\\">
-    <h1
-      color=\\"red\\"
-      class=\\"drac-heading drac-heading-1 drac-text-red drac-spacing-none drac-margin-none\\"
-    >
-      red
-    </h1>
+    <h1 color=\\"red\\" class=\\"drac-heading drac-heading-1 drac-text-red\\">red</h1>
   </div>
   <div style=\\"margin-bottom: 20px\\">
-    <h1
-      color=\\"yellow\\"
-      class=\\"drac-heading drac-heading-1 drac-text-yellow drac-spacing-none drac-margin-none\\"
-    >
+    <h1 color=\\"yellow\\" class=\\"drac-heading drac-heading-1 drac-text-yellow\\">
       yellow
     </h1>
   </div>
   <div style=\\"margin-bottom: 20px\\">
     <h1
       color=\\"purpleCyan\\"
-      class=\\"drac-heading drac-heading-1 drac-text-purple-cyan drac-spacing-none drac-margin-none\\"
+      class=\\"drac-heading drac-heading-1 drac-text-purple-cyan\\"
     >
       purpleCyan
     </h1>
@@ -118,7 +85,7 @@ Object {
   <div style=\\"margin-bottom: 20px\\">
     <h1
       color=\\"yellowPink\\"
-      class=\\"drac-heading drac-heading-1 drac-text-yellow-pink drac-spacing-none drac-margin-none\\"
+      class=\\"drac-heading drac-heading-1 drac-text-yellow-pink\\"
     >
       yellowPink
     </h1>
@@ -126,7 +93,7 @@ Object {
   <div style=\\"margin-bottom: 20px\\">
     <h1
       color=\\"cyanGreen\\"
-      class=\\"drac-heading drac-heading-1 drac-text-cyan-green drac-spacing-none drac-margin-none\\"
+      class=\\"drac-heading drac-heading-1 drac-text-cyan-green\\"
     >
       cyanGreen
     </h1>
@@ -134,16 +101,13 @@ Object {
   <div style=\\"margin-bottom: 20px\\">
     <h1
       color=\\"pinkPurple\\"
-      class=\\"drac-heading drac-heading-1 drac-text-pink-purple drac-spacing-none drac-margin-none\\"
+      class=\\"drac-heading drac-heading-1 drac-text-pink-purple\\"
     >
       pinkPurple
     </h1>
   </div>
   <div style=\\"margin-bottom: 20px\\">
-    <h1
-      color=\\"animated\\"
-      class=\\"drac-heading drac-heading-1 drac-text-animated drac-spacing-none drac-margin-none\\"
-    >
+    <h1 color=\\"animated\\" class=\\"drac-heading drac-heading-1 drac-text-animated\\">
       animated
     </h1>
   </div>
@@ -209,50 +173,32 @@ Object {
   "docs": "",
   "html": "<div>
   <div style=\\"margin-bottom: 20px\\">
-    <h1
-      color=\\"white\\"
-      class=\\"drac-heading drac-heading-1 drac-text-white drac-spacing-none drac-margin-none\\"
-    >
+    <h1 color=\\"white\\" class=\\"drac-heading drac-heading-1 drac-text-white\\">
       heading-1
     </h1>
   </div>
   <div style=\\"margin-bottom: 20px\\">
-    <h2
-      color=\\"white\\"
-      class=\\"drac-heading drac-heading-2 drac-text-white drac-spacing-none drac-margin-none\\"
-    >
+    <h2 color=\\"white\\" class=\\"drac-heading drac-heading-2 drac-text-white\\">
       heading-2
     </h2>
   </div>
   <div style=\\"margin-bottom: 20px\\">
-    <h3
-      color=\\"white\\"
-      class=\\"drac-heading drac-heading-3 drac-text-white drac-spacing-none drac-margin-none\\"
-    >
+    <h3 color=\\"white\\" class=\\"drac-heading drac-heading-3 drac-text-white\\">
       heading-3
     </h3>
   </div>
   <div style=\\"margin-bottom: 20px\\">
-    <h4
-      color=\\"white\\"
-      class=\\"drac-heading drac-heading-4 drac-text-white drac-spacing-none drac-margin-none\\"
-    >
+    <h4 color=\\"white\\" class=\\"drac-heading drac-heading-4 drac-text-white\\">
       heading-4
     </h4>
   </div>
   <div style=\\"margin-bottom: 20px\\">
-    <h5
-      color=\\"white\\"
-      class=\\"drac-heading drac-heading-5 drac-text-white drac-spacing-none drac-margin-none\\"
-    >
+    <h5 color=\\"white\\" class=\\"drac-heading drac-heading-5 drac-text-white\\">
       heading-5
     </h5>
   </div>
   <div style=\\"margin-bottom: 20px\\">
-    <h6
-      color=\\"white\\"
-      class=\\"drac-heading drac-heading-6 drac-text-white drac-spacing-none drac-margin-none\\"
-    >
+    <h6 color=\\"white\\" class=\\"drac-heading drac-heading-6 drac-text-white\\">
       heading-6
     </h6>
   </div>
