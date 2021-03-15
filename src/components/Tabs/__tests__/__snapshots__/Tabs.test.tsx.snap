@@ -40,7 +40,7 @@ Object {
 exports[`Site: Tabs Colors 1`] = `
 Object {
   "docs": "",
-  "html": "<div style=\\"display: flex; flex-direction: column; padding: 3rem\\">
+  "html": "<div style=\\"display: flex; flex-direction: column\\">
   <ul color=\\"white\\" class=\\"drac-tabs drac-tabs-white\\">
     <li class=\\"drac-tab drac-tab-active\\">
       <a class=\\"drac-tab-link drac-text\\" href=\\"#\\">Item One</a>
@@ -129,64 +129,9 @@ Object {
       <a class=\\"drac-tab-link drac-text\\" href=\\"#\\">Item Three</a>
     </li>
   </ul>
-  <ul color=\\"animated\\" class=\\"drac-tabs\\">
-    <li class=\\"drac-tab drac-tab-active\\">
-      <a class=\\"drac-tab-link drac-text\\" href=\\"#\\">Item One</a>
-    </li>
-    <li class=\\"drac-tab\\">
-      <a class=\\"drac-tab-link drac-text\\" href=\\"#\\">Item Two</a>
-    </li>
-    <li class=\\"drac-tab\\">
-      <a class=\\"drac-tab-link drac-text\\" href=\\"#\\">Item Three</a>
-    </li>
-  </ul>
-  <ul color=\\"cyanGreen\\" class=\\"drac-tabs\\">
-    <li class=\\"drac-tab drac-tab-active\\">
-      <a class=\\"drac-tab-link drac-text\\" href=\\"#\\">Item One</a>
-    </li>
-    <li class=\\"drac-tab\\">
-      <a class=\\"drac-tab-link drac-text\\" href=\\"#\\">Item Two</a>
-    </li>
-    <li class=\\"drac-tab\\">
-      <a class=\\"drac-tab-link drac-text\\" href=\\"#\\">Item Three</a>
-    </li>
-  </ul>
-  <ul color=\\"pinkPurple\\" class=\\"drac-tabs\\">
-    <li class=\\"drac-tab drac-tab-active\\">
-      <a class=\\"drac-tab-link drac-text\\" href=\\"#\\">Item One</a>
-    </li>
-    <li class=\\"drac-tab\\">
-      <a class=\\"drac-tab-link drac-text\\" href=\\"#\\">Item Two</a>
-    </li>
-    <li class=\\"drac-tab\\">
-      <a class=\\"drac-tab-link drac-text\\" href=\\"#\\">Item Three</a>
-    </li>
-  </ul>
-  <ul color=\\"purpleCyan\\" class=\\"drac-tabs\\">
-    <li class=\\"drac-tab drac-tab-active\\">
-      <a class=\\"drac-tab-link drac-text\\" href=\\"#\\">Item One</a>
-    </li>
-    <li class=\\"drac-tab\\">
-      <a class=\\"drac-tab-link drac-text\\" href=\\"#\\">Item Two</a>
-    </li>
-    <li class=\\"drac-tab\\">
-      <a class=\\"drac-tab-link drac-text\\" href=\\"#\\">Item Three</a>
-    </li>
-  </ul>
-  <ul color=\\"yellowPink\\" class=\\"drac-tabs\\">
-    <li class=\\"drac-tab drac-tab-active\\">
-      <a class=\\"drac-tab-link drac-text\\" href=\\"#\\">Item One</a>
-    </li>
-    <li class=\\"drac-tab\\">
-      <a class=\\"drac-tab-link drac-text\\" href=\\"#\\">Item Two</a>
-    </li>
-    <li class=\\"drac-tab\\">
-      <a class=\\"drac-tab-link drac-text\\" href=\\"#\\">Item Three</a>
-    </li>
-  </ul>
 </div>
 ",
-  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\", padding: \\"3rem\\" }}>
+  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\" }}>
   <Tabs color=\\"white\\">
     <li className=\\"drac-tab drac-tab-active\\">
       <a className=\\"drac-tab-link drac-text\\" href=\\"#\\">
@@ -307,91 +252,6 @@ Object {
     </li>
   </Tabs>
   <Tabs color=\\"yellow\\">
-    <li className=\\"drac-tab drac-tab-active\\">
-      <a className=\\"drac-tab-link drac-text\\" href=\\"#\\">
-        Item One
-      </a>
-    </li>
-    <li className=\\"drac-tab\\">
-      <a className=\\"drac-tab-link drac-text\\" href=\\"#\\">
-        Item Two
-      </a>
-    </li>
-    <li className=\\"drac-tab\\">
-      <a className=\\"drac-tab-link drac-text\\" href=\\"#\\">
-        Item Three
-      </a>
-    </li>
-  </Tabs>
-  <Tabs color=\\"animated\\">
-    <li className=\\"drac-tab drac-tab-active\\">
-      <a className=\\"drac-tab-link drac-text\\" href=\\"#\\">
-        Item One
-      </a>
-    </li>
-    <li className=\\"drac-tab\\">
-      <a className=\\"drac-tab-link drac-text\\" href=\\"#\\">
-        Item Two
-      </a>
-    </li>
-    <li className=\\"drac-tab\\">
-      <a className=\\"drac-tab-link drac-text\\" href=\\"#\\">
-        Item Three
-      </a>
-    </li>
-  </Tabs>
-  <Tabs color=\\"cyanGreen\\">
-    <li className=\\"drac-tab drac-tab-active\\">
-      <a className=\\"drac-tab-link drac-text\\" href=\\"#\\">
-        Item One
-      </a>
-    </li>
-    <li className=\\"drac-tab\\">
-      <a className=\\"drac-tab-link drac-text\\" href=\\"#\\">
-        Item Two
-      </a>
-    </li>
-    <li className=\\"drac-tab\\">
-      <a className=\\"drac-tab-link drac-text\\" href=\\"#\\">
-        Item Three
-      </a>
-    </li>
-  </Tabs>
-  <Tabs color=\\"pinkPurple\\">
-    <li className=\\"drac-tab drac-tab-active\\">
-      <a className=\\"drac-tab-link drac-text\\" href=\\"#\\">
-        Item One
-      </a>
-    </li>
-    <li className=\\"drac-tab\\">
-      <a className=\\"drac-tab-link drac-text\\" href=\\"#\\">
-        Item Two
-      </a>
-    </li>
-    <li className=\\"drac-tab\\">
-      <a className=\\"drac-tab-link drac-text\\" href=\\"#\\">
-        Item Three
-      </a>
-    </li>
-  </Tabs>
-  <Tabs color=\\"purpleCyan\\">
-    <li className=\\"drac-tab drac-tab-active\\">
-      <a className=\\"drac-tab-link drac-text\\" href=\\"#\\">
-        Item One
-      </a>
-    </li>
-    <li className=\\"drac-tab\\">
-      <a className=\\"drac-tab-link drac-text\\" href=\\"#\\">
-        Item Two
-      </a>
-    </li>
-    <li className=\\"drac-tab\\">
-      <a className=\\"drac-tab-link drac-text\\" href=\\"#\\">
-        Item Three
-      </a>
-    </li>
-  </Tabs>
-  <Tabs color=\\"yellowPink\\">
     <li className=\\"drac-tab drac-tab-active\\">
       <a className=\\"drac-tab-link drac-text\\" href=\\"#\\">
         Item One

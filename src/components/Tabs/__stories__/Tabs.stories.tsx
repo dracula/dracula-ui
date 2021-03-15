@@ -30,7 +30,7 @@ export const TabsNormal = () => {
 
 export const TabsColors = () => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}>
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
       {Object.keys(tabsColors).map((color) => {
         return (
           <Tabs key={color} color={color as TabsProps['color']}>

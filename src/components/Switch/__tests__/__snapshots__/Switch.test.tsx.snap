@@ -27,7 +27,7 @@ Object {
 exports[`Site: Switch Colors 1`] = `
 Object {
   "docs": "",
-  "html": "<div style=\\"display: flex; flex-direction: column; padding: 3rem\\">
+  "html": "<div style=\\"display: flex; flex-direction: column\\">
   <div style=\\"margin-bottom: 10px\\">
     <input
       type=\\"checkbox\\"
@@ -108,59 +108,9 @@ Object {
       checked=\\"\\"
     /><label for=\\"yellow\\" class=\\"drac-text drac-text-white\\">Switch</label>
   </div>
-  <div style=\\"margin-bottom: 10px\\">
-    <input
-      type=\\"checkbox\\"
-      id=\\"animated\\"
-      color=\\"animated\\"
-      name=\\"demo\\"
-      class=\\"drac-switch drac-checkbox\\"
-      checked=\\"\\"
-    /><label for=\\"animated\\" class=\\"drac-text drac-text-white\\">Switch</label>
-  </div>
-  <div style=\\"margin-bottom: 10px\\">
-    <input
-      type=\\"checkbox\\"
-      id=\\"cyanGreen\\"
-      color=\\"cyanGreen\\"
-      name=\\"demo\\"
-      class=\\"drac-switch drac-checkbox\\"
-      checked=\\"\\"
-    /><label for=\\"cyanGreen\\" class=\\"drac-text drac-text-white\\">Switch</label>
-  </div>
-  <div style=\\"margin-bottom: 10px\\">
-    <input
-      type=\\"checkbox\\"
-      id=\\"pinkPurple\\"
-      color=\\"pinkPurple\\"
-      name=\\"demo\\"
-      class=\\"drac-switch drac-checkbox\\"
-      checked=\\"\\"
-    /><label for=\\"pinkPurple\\" class=\\"drac-text drac-text-white\\">Switch</label>
-  </div>
-  <div style=\\"margin-bottom: 10px\\">
-    <input
-      type=\\"checkbox\\"
-      id=\\"purpleCyan\\"
-      color=\\"purpleCyan\\"
-      name=\\"demo\\"
-      class=\\"drac-switch drac-checkbox\\"
-      checked=\\"\\"
-    /><label for=\\"purpleCyan\\" class=\\"drac-text drac-text-white\\">Switch</label>
-  </div>
-  <div style=\\"margin-bottom: 10px\\">
-    <input
-      type=\\"checkbox\\"
-      id=\\"yellowPink\\"
-      color=\\"yellowPink\\"
-      name=\\"demo\\"
-      class=\\"drac-switch drac-checkbox\\"
-      checked=\\"\\"
-    /><label for=\\"yellowPink\\" class=\\"drac-text drac-text-white\\">Switch</label>
-  </div>
 </div>
 ",
-  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\", padding: \\"3rem\\" }}>
+  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\" }}>
   <div style={{ marginBottom: 10 }}>
     <Switch id=\\"white\\" defaultChecked={true} color=\\"white\\" name=\\"demo\\" />
     <label htmlFor=\\"white\\" className=\\"drac-text drac-text-white\\">
@@ -209,56 +159,6 @@ Object {
       Switch
     </label>
   </div>
-  <div style={{ marginBottom: 10 }}>
-    <Switch id=\\"animated\\" defaultChecked={true} color=\\"animated\\" name=\\"demo\\" />
-    <label htmlFor=\\"animated\\" className=\\"drac-text drac-text-white\\">
-      Switch
-    </label>
-  </div>
-  <div style={{ marginBottom: 10 }}>
-    <Switch
-      id=\\"cyanGreen\\"
-      defaultChecked={true}
-      color=\\"cyanGreen\\"
-      name=\\"demo\\"
-    />
-    <label htmlFor=\\"cyanGreen\\" className=\\"drac-text drac-text-white\\">
-      Switch
-    </label>
-  </div>
-  <div style={{ marginBottom: 10 }}>
-    <Switch
-      id=\\"pinkPurple\\"
-      defaultChecked={true}
-      color=\\"pinkPurple\\"
-      name=\\"demo\\"
-    />
-    <label htmlFor=\\"pinkPurple\\" className=\\"drac-text drac-text-white\\">
-      Switch
-    </label>
-  </div>
-  <div style={{ marginBottom: 10 }}>
-    <Switch
-      id=\\"purpleCyan\\"
-      defaultChecked={true}
-      color=\\"purpleCyan\\"
-      name=\\"demo\\"
-    />
-    <label htmlFor=\\"purpleCyan\\" className=\\"drac-text drac-text-white\\">
-      Switch
-    </label>
-  </div>
-  <div style={{ marginBottom: 10 }}>
-    <Switch
-      id=\\"yellowPink\\"
-      defaultChecked={true}
-      color=\\"yellowPink\\"
-      name=\\"demo\\"
-    />
-    <label htmlFor=\\"yellowPink\\" className=\\"drac-text drac-text-white\\">
-      Switch
-    </label>
-  </div>
 </div>;
 ",
   "title": "Colors",
@@ -268,7 +168,7 @@ Object {
 exports[`Site: Switch Disabled 1`] = `
 Object {
   "docs": "",
-  "html": "<div style=\\"display: flex; flex-direction: column; padding: 3rem\\">
+  "html": "<div style=\\"display: flex; flex-direction: column\\">
   <div style=\\"margin-bottom: 10px\\">
     <input
       type=\\"checkbox\\"
@@ -292,7 +192,7 @@ Object {
   </div>
 </div>
 ",
-  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\", padding: \\"3rem\\" }}>
+  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\" }}>
   <div style={{ marginBottom: 10 }}>
     <Switch
       id=\\"one\\"

@@ -11,7 +11,7 @@ export const DividerNormal = () => {
 
 export const DividerColors = () => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}>
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
       {Object.keys(dividerColors).map((color) => {
         return (
           <div key={color}>

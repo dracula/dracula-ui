@@ -17,7 +17,7 @@ export const InputBasic = () => {
 
 export const InputVariants = () => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}>
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
       {Object.keys(inputVariants).map((variant) => {
         return (
           <Input
@@ -53,7 +53,7 @@ export const InputSizes = () => {
 
 export const InputColors = () => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}>
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
       {Object.keys(inputColors).map((color) => {
         return (
           <Input

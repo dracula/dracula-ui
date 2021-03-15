@@ -18,7 +18,7 @@ export const SwitchNormal = () => {
 
 export const SwitchDisabled = () => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}>
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
       <div style={{ marginBottom: 10 }}>
         <Switch
           id="one"
@@ -50,7 +50,7 @@ export const SwitchDisabled = () => {
 
 export const SwitchColors = () => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}>
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
       {Object.keys(switchColors).map((color) => {
         return (
           <div key={color} style={{ marginBottom: 10 }}>

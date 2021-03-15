@@ -23,7 +23,7 @@ export const CheckboxNormal = () => {
 
 export const CheckboxDisabled = () => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}>
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
       <div style={{ marginBottom: 10 }}>
         <Checkbox
           id="one"
@@ -55,7 +55,7 @@ export const CheckboxDisabled = () => {
 
 export const CheckboxColors = () => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}>
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
       {Object.keys(checkboxColors).map((color) => {
         return (
           <div key={color} style={{ marginBottom: 10 }}>

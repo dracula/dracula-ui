@@ -81,7 +81,7 @@ export const TableBasic = () => (
 
 export const TableVariants = () => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}>
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
       {Object.keys(tableVariants).map((variant) => {
         return (
           <div key={variant} style={{ marginBottom: 50 }}>
@@ -135,7 +135,7 @@ export const TableVariants = () => {
 
 export const TableColors = () => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}>
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
       {Object.keys(tableColors).map((color) => {
         return (
           <div key={color} style={{ marginBottom: 50 }}>

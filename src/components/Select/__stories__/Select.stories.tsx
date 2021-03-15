@@ -55,7 +55,7 @@ export const SelectSizes = () => {
 
 export const SelectVariants = () => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}>
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
       {Object.keys(selectVariants).map((variant) => {
         return (
           <div key={variant} style={{ marginBottom: 10 }}>
@@ -82,7 +82,7 @@ export const SelectVariants = () => {
 
 export const SelectDisabled = () => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}>
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
       {Object.keys(selectVariants).map((variant) => {
         return (
           <div key={variant} style={{ marginBottom: 10 }}>
@@ -107,7 +107,7 @@ export const SelectDisabled = () => {
 
 export const SelectColors = () => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', padding: '3rem' }}>
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
       {Object.keys(selectColors).map((color) => {
         return (
           <div key={color} style={{ marginBottom: 10 }}>

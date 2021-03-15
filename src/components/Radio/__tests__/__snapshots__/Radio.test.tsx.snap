@@ -101,51 +101,6 @@ Object {
       class=\\"drac-radio drac-radio-yellow\\"
     /><label for=\\"yellow\\" class=\\"drac-text drac-text-white\\">Radio</label>
   </div>
-  <div style=\\"margin-bottom: 10px\\">
-    <input
-      type=\\"radio\\"
-      id=\\"animated\\"
-      color=\\"animated\\"
-      name=\\"demo\\"
-      class=\\"drac-radio\\"
-    /><label for=\\"animated\\" class=\\"drac-text drac-text-white\\">Radio</label>
-  </div>
-  <div style=\\"margin-bottom: 10px\\">
-    <input
-      type=\\"radio\\"
-      id=\\"cyanGreen\\"
-      color=\\"cyanGreen\\"
-      name=\\"demo\\"
-      class=\\"drac-radio\\"
-    /><label for=\\"cyanGreen\\" class=\\"drac-text drac-text-white\\">Radio</label>
-  </div>
-  <div style=\\"margin-bottom: 10px\\">
-    <input
-      type=\\"radio\\"
-      id=\\"pinkPurple\\"
-      color=\\"pinkPurple\\"
-      name=\\"demo\\"
-      class=\\"drac-radio\\"
-    /><label for=\\"pinkPurple\\" class=\\"drac-text drac-text-white\\">Radio</label>
-  </div>
-  <div style=\\"margin-bottom: 10px\\">
-    <input
-      type=\\"radio\\"
-      id=\\"purpleCyan\\"
-      color=\\"purpleCyan\\"
-      name=\\"demo\\"
-      class=\\"drac-radio\\"
-    /><label for=\\"purpleCyan\\" class=\\"drac-text drac-text-white\\">Radio</label>
-  </div>
-  <div style=\\"margin-bottom: 10px\\">
-    <input
-      type=\\"radio\\"
-      id=\\"yellowPink\\"
-      color=\\"yellowPink\\"
-      name=\\"demo\\"
-      class=\\"drac-radio\\"
-    /><label for=\\"yellowPink\\" class=\\"drac-text drac-text-white\\">Radio</label>
-  </div>
 </div>
 ",
   "react": "<div>
@@ -194,36 +149,6 @@ Object {
   <div style={{ marginBottom: 10 }}>
     <Radio id=\\"yellow\\" color=\\"yellow\\" name=\\"demo\\" />
     <label htmlFor=\\"yellow\\" className=\\"drac-text drac-text-white\\">
-      Radio
-    </label>
-  </div>
-  <div style={{ marginBottom: 10 }}>
-    <Radio id=\\"animated\\" color=\\"animated\\" name=\\"demo\\" />
-    <label htmlFor=\\"animated\\" className=\\"drac-text drac-text-white\\">
-      Radio
-    </label>
-  </div>
-  <div style={{ marginBottom: 10 }}>
-    <Radio id=\\"cyanGreen\\" color=\\"cyanGreen\\" name=\\"demo\\" />
-    <label htmlFor=\\"cyanGreen\\" className=\\"drac-text drac-text-white\\">
-      Radio
-    </label>
-  </div>
-  <div style={{ marginBottom: 10 }}>
-    <Radio id=\\"pinkPurple\\" color=\\"pinkPurple\\" name=\\"demo\\" />
-    <label htmlFor=\\"pinkPurple\\" className=\\"drac-text drac-text-white\\">
-      Radio
-    </label>
-  </div>
-  <div style={{ marginBottom: 10 }}>
-    <Radio id=\\"purpleCyan\\" color=\\"purpleCyan\\" name=\\"demo\\" />
-    <label htmlFor=\\"purpleCyan\\" className=\\"drac-text drac-text-white\\">
-      Radio
-    </label>
-  </div>
-  <div style={{ marginBottom: 10 }}>
-    <Radio id=\\"yellowPink\\" color=\\"yellowPink\\" name=\\"demo\\" />
-    <label htmlFor=\\"yellowPink\\" className=\\"drac-text drac-text-white\\">
       Radio
     </label>
   </div>

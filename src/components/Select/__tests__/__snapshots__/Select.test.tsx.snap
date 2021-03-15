@@ -45,7 +45,7 @@ Object {
 exports[`Site: Select Colors 1`] = `
 Object {
   "docs": "",
-  "html": "<div style=\\"display: flex; flex-direction: column; padding: 3rem\\">
+  "html": "<div style=\\"display: flex; flex-direction: column\\">
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
       <select
@@ -264,151 +264,6 @@ Object {
         <option>Van Helsing</option>
       </select>
       <div class=\\"drac-select-arrow drac-text-yellow\\">
-        <svg
-          viewBox=\\"0 0 24 24\\"
-          focusable=\\"false\\"
-          role=\\"presentation\\"
-          aria-hidden=\\"true\\"
-        >
-          <path
-            fill=\\"currentColor\\"
-            d=\\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\\"
-          ></path>
-        </svg>
-      </div>
-    </div>
-  </div>
-  <div style=\\"margin-bottom: 10px\\">
-    <div style=\\"position: relative\\">
-      <select
-        variant=\\"outline\\"
-        color=\\"animated\\"
-        class=\\"drac-select drac-select-outline\\"
-      >
-        <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
-        <option>Blade</option>
-        <option>Buffy</option>
-        <option>Lincoln</option>
-        <option>Morbius</option>
-        <option>Van Helsing</option>
-      </select>
-      <div class=\\"drac-select-arrow drac-text-animated\\">
-        <svg
-          viewBox=\\"0 0 24 24\\"
-          focusable=\\"false\\"
-          role=\\"presentation\\"
-          aria-hidden=\\"true\\"
-        >
-          <path
-            fill=\\"currentColor\\"
-            d=\\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\\"
-          ></path>
-        </svg>
-      </div>
-    </div>
-  </div>
-  <div style=\\"margin-bottom: 10px\\">
-    <div style=\\"position: relative\\">
-      <select
-        variant=\\"outline\\"
-        color=\\"cyanGreen\\"
-        class=\\"drac-select drac-select-outline\\"
-      >
-        <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
-        <option>Blade</option>
-        <option>Buffy</option>
-        <option>Lincoln</option>
-        <option>Morbius</option>
-        <option>Van Helsing</option>
-      </select>
-      <div class=\\"drac-select-arrow drac-text-cyanGreen\\">
-        <svg
-          viewBox=\\"0 0 24 24\\"
-          focusable=\\"false\\"
-          role=\\"presentation\\"
-          aria-hidden=\\"true\\"
-        >
-          <path
-            fill=\\"currentColor\\"
-            d=\\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\\"
-          ></path>
-        </svg>
-      </div>
-    </div>
-  </div>
-  <div style=\\"margin-bottom: 10px\\">
-    <div style=\\"position: relative\\">
-      <select
-        variant=\\"outline\\"
-        color=\\"pinkPurple\\"
-        class=\\"drac-select drac-select-outline\\"
-      >
-        <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
-        <option>Blade</option>
-        <option>Buffy</option>
-        <option>Lincoln</option>
-        <option>Morbius</option>
-        <option>Van Helsing</option>
-      </select>
-      <div class=\\"drac-select-arrow drac-text-pinkPurple\\">
-        <svg
-          viewBox=\\"0 0 24 24\\"
-          focusable=\\"false\\"
-          role=\\"presentation\\"
-          aria-hidden=\\"true\\"
-        >
-          <path
-            fill=\\"currentColor\\"
-            d=\\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\\"
-          ></path>
-        </svg>
-      </div>
-    </div>
-  </div>
-  <div style=\\"margin-bottom: 10px\\">
-    <div style=\\"position: relative\\">
-      <select
-        variant=\\"outline\\"
-        color=\\"purpleCyan\\"
-        class=\\"drac-select drac-select-outline\\"
-      >
-        <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
-        <option>Blade</option>
-        <option>Buffy</option>
-        <option>Lincoln</option>
-        <option>Morbius</option>
-        <option>Van Helsing</option>
-      </select>
-      <div class=\\"drac-select-arrow drac-text-purpleCyan\\">
-        <svg
-          viewBox=\\"0 0 24 24\\"
-          focusable=\\"false\\"
-          role=\\"presentation\\"
-          aria-hidden=\\"true\\"
-        >
-          <path
-            fill=\\"currentColor\\"
-            d=\\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\\"
-          ></path>
-        </svg>
-      </div>
-    </div>
-  </div>
-  <div style=\\"margin-bottom: 10px\\">
-    <div style=\\"position: relative\\">
-      <select
-        variant=\\"outline\\"
-        color=\\"yellowPink\\"
-        class=\\"drac-select drac-select-outline\\"
-      >
-        <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
-        <option>Blade</option>
-        <option>Buffy</option>
-        <option>Lincoln</option>
-        <option>Morbius</option>
-        <option>Van Helsing</option>
-      </select>
-      <div class=\\"drac-select-arrow drac-text-yellowPink\\">
         <svg
           viewBox=\\"0 0 24 24\\"
           focusable=\\"false\\"
@@ -651,134 +506,9 @@ Object {
       </div>
     </div>
   </div>
-  <div style=\\"margin-bottom: 10px\\">
-    <div style=\\"position: relative\\">
-      <select variant=\\"normal\\" color=\\"animated\\" class=\\"drac-select\\">
-        <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
-        <option>Blade</option>
-        <option>Buffy</option>
-        <option>Lincoln</option>
-        <option>Morbius</option>
-        <option>Van Helsing</option>
-      </select>
-      <div class=\\"drac-select-arrow drac-text-animated\\">
-        <svg
-          viewBox=\\"0 0 24 24\\"
-          focusable=\\"false\\"
-          role=\\"presentation\\"
-          aria-hidden=\\"true\\"
-        >
-          <path
-            fill=\\"currentColor\\"
-            d=\\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\\"
-          ></path>
-        </svg>
-      </div>
-    </div>
-  </div>
-  <div style=\\"margin-bottom: 10px\\">
-    <div style=\\"position: relative\\">
-      <select variant=\\"normal\\" color=\\"cyanGreen\\" class=\\"drac-select\\">
-        <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
-        <option>Blade</option>
-        <option>Buffy</option>
-        <option>Lincoln</option>
-        <option>Morbius</option>
-        <option>Van Helsing</option>
-      </select>
-      <div class=\\"drac-select-arrow drac-text-cyanGreen\\">
-        <svg
-          viewBox=\\"0 0 24 24\\"
-          focusable=\\"false\\"
-          role=\\"presentation\\"
-          aria-hidden=\\"true\\"
-        >
-          <path
-            fill=\\"currentColor\\"
-            d=\\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\\"
-          ></path>
-        </svg>
-      </div>
-    </div>
-  </div>
-  <div style=\\"margin-bottom: 10px\\">
-    <div style=\\"position: relative\\">
-      <select variant=\\"normal\\" color=\\"pinkPurple\\" class=\\"drac-select\\">
-        <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
-        <option>Blade</option>
-        <option>Buffy</option>
-        <option>Lincoln</option>
-        <option>Morbius</option>
-        <option>Van Helsing</option>
-      </select>
-      <div class=\\"drac-select-arrow drac-text-pinkPurple\\">
-        <svg
-          viewBox=\\"0 0 24 24\\"
-          focusable=\\"false\\"
-          role=\\"presentation\\"
-          aria-hidden=\\"true\\"
-        >
-          <path
-            fill=\\"currentColor\\"
-            d=\\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\\"
-          ></path>
-        </svg>
-      </div>
-    </div>
-  </div>
-  <div style=\\"margin-bottom: 10px\\">
-    <div style=\\"position: relative\\">
-      <select variant=\\"normal\\" color=\\"purpleCyan\\" class=\\"drac-select\\">
-        <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
-        <option>Blade</option>
-        <option>Buffy</option>
-        <option>Lincoln</option>
-        <option>Morbius</option>
-        <option>Van Helsing</option>
-      </select>
-      <div class=\\"drac-select-arrow drac-text-purpleCyan\\">
-        <svg
-          viewBox=\\"0 0 24 24\\"
-          focusable=\\"false\\"
-          role=\\"presentation\\"
-          aria-hidden=\\"true\\"
-        >
-          <path
-            fill=\\"currentColor\\"
-            d=\\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\\"
-          ></path>
-        </svg>
-      </div>
-    </div>
-  </div>
-  <div style=\\"margin-bottom: 10px\\">
-    <div style=\\"position: relative\\">
-      <select variant=\\"normal\\" color=\\"yellowPink\\" class=\\"drac-select\\">
-        <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
-        <option>Blade</option>
-        <option>Buffy</option>
-        <option>Lincoln</option>
-        <option>Morbius</option>
-        <option>Van Helsing</option>
-      </select>
-      <div class=\\"drac-select-arrow drac-text-yellowPink\\">
-        <svg
-          viewBox=\\"0 0 24 24\\"
-          focusable=\\"false\\"
-          role=\\"presentation\\"
-          aria-hidden=\\"true\\"
-        >
-          <path
-            fill=\\"currentColor\\"
-            d=\\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\\"
-          ></path>
-        </svg>
-      </div>
-    </div>
-  </div>
 </div>
 ",
-  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\", padding: \\"3rem\\" }}>
+  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\" }}>
   <div style={{ marginBottom: 10 }}>
     <Select defaultValue=\\"default\\" variant=\\"outline\\" color=\\"white\\">
       <option value=\\"default\\" disabled={true}>
@@ -865,66 +595,6 @@ Object {
   </div>
   <div style={{ marginBottom: 10 }}>
     <Select defaultValue=\\"default\\" variant=\\"outline\\" color=\\"yellow\\">
-      <option value=\\"default\\" disabled={true}>
-        Select option
-      </option>
-      <option>Blade</option>
-      <option>Buffy</option>
-      <option>Lincoln</option>
-      <option>Morbius</option>
-      <option>Van Helsing</option>
-    </Select>
-  </div>
-  <div style={{ marginBottom: 10 }}>
-    <Select defaultValue=\\"default\\" variant=\\"outline\\" color=\\"animated\\">
-      <option value=\\"default\\" disabled={true}>
-        Select option
-      </option>
-      <option>Blade</option>
-      <option>Buffy</option>
-      <option>Lincoln</option>
-      <option>Morbius</option>
-      <option>Van Helsing</option>
-    </Select>
-  </div>
-  <div style={{ marginBottom: 10 }}>
-    <Select defaultValue=\\"default\\" variant=\\"outline\\" color=\\"cyanGreen\\">
-      <option value=\\"default\\" disabled={true}>
-        Select option
-      </option>
-      <option>Blade</option>
-      <option>Buffy</option>
-      <option>Lincoln</option>
-      <option>Morbius</option>
-      <option>Van Helsing</option>
-    </Select>
-  </div>
-  <div style={{ marginBottom: 10 }}>
-    <Select defaultValue=\\"default\\" variant=\\"outline\\" color=\\"pinkPurple\\">
-      <option value=\\"default\\" disabled={true}>
-        Select option
-      </option>
-      <option>Blade</option>
-      <option>Buffy</option>
-      <option>Lincoln</option>
-      <option>Morbius</option>
-      <option>Van Helsing</option>
-    </Select>
-  </div>
-  <div style={{ marginBottom: 10 }}>
-    <Select defaultValue=\\"default\\" variant=\\"outline\\" color=\\"purpleCyan\\">
-      <option value=\\"default\\" disabled={true}>
-        Select option
-      </option>
-      <option>Blade</option>
-      <option>Buffy</option>
-      <option>Lincoln</option>
-      <option>Morbius</option>
-      <option>Van Helsing</option>
-    </Select>
-  </div>
-  <div style={{ marginBottom: 10 }}>
-    <Select defaultValue=\\"default\\" variant=\\"outline\\" color=\\"yellowPink\\">
       <option value=\\"default\\" disabled={true}>
         Select option
       </option>
@@ -1031,66 +701,6 @@ Object {
       <option>Van Helsing</option>
     </Select>
   </div>
-  <div style={{ marginBottom: 10 }}>
-    <Select defaultValue=\\"default\\" variant=\\"normal\\" color=\\"animated\\">
-      <option value=\\"default\\" disabled={true}>
-        Select option
-      </option>
-      <option>Blade</option>
-      <option>Buffy</option>
-      <option>Lincoln</option>
-      <option>Morbius</option>
-      <option>Van Helsing</option>
-    </Select>
-  </div>
-  <div style={{ marginBottom: 10 }}>
-    <Select defaultValue=\\"default\\" variant=\\"normal\\" color=\\"cyanGreen\\">
-      <option value=\\"default\\" disabled={true}>
-        Select option
-      </option>
-      <option>Blade</option>
-      <option>Buffy</option>
-      <option>Lincoln</option>
-      <option>Morbius</option>
-      <option>Van Helsing</option>
-    </Select>
-  </div>
-  <div style={{ marginBottom: 10 }}>
-    <Select defaultValue=\\"default\\" variant=\\"normal\\" color=\\"pinkPurple\\">
-      <option value=\\"default\\" disabled={true}>
-        Select option
-      </option>
-      <option>Blade</option>
-      <option>Buffy</option>
-      <option>Lincoln</option>
-      <option>Morbius</option>
-      <option>Van Helsing</option>
-    </Select>
-  </div>
-  <div style={{ marginBottom: 10 }}>
-    <Select defaultValue=\\"default\\" variant=\\"normal\\" color=\\"purpleCyan\\">
-      <option value=\\"default\\" disabled={true}>
-        Select option
-      </option>
-      <option>Blade</option>
-      <option>Buffy</option>
-      <option>Lincoln</option>
-      <option>Morbius</option>
-      <option>Van Helsing</option>
-    </Select>
-  </div>
-  <div style={{ marginBottom: 10 }}>
-    <Select defaultValue=\\"default\\" variant=\\"normal\\" color=\\"yellowPink\\">
-      <option value=\\"default\\" disabled={true}>
-        Select option
-      </option>
-      <option>Blade</option>
-      <option>Buffy</option>
-      <option>Lincoln</option>
-      <option>Morbius</option>
-      <option>Van Helsing</option>
-    </Select>
-  </div>
 </div>;
 ",
   "title": "Colors",
@@ -1100,7 +710,7 @@ Object {
 exports[`Site: Select Disabled 1`] = `
 Object {
   "docs": "",
-  "html": "<div style=\\"display: flex; flex-direction: column; padding: 3rem\\">
+  "html": "<div style=\\"display: flex; flex-direction: column\\">
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
       <select
@@ -1163,7 +773,7 @@ Object {
   </div>
 </div>
 ",
-  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\", padding: \\"3rem\\" }}>
+  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\" }}>
   <div style={{ marginBottom: 10 }}>
     <Select disabled={true} variant=\\"normal\\" color=\\"white\\">
       <option value=\\"default\\">Select option</option>
@@ -1323,7 +933,7 @@ Object {
 exports[`Site: Select Variants 1`] = `
 Object {
   "docs": "",
-  "html": "<div style=\\"display: flex; flex-direction: column; padding: 3rem\\">
+  "html": "<div style=\\"display: flex; flex-direction: column\\">
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
       <select
@@ -1384,7 +994,7 @@ Object {
   </div>
 </div>
 ",
-  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\", padding: \\"3rem\\" }}>
+  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\" }}>
   <div style={{ marginBottom: 10 }}>
     <Select defaultValue=\\"default\\" variant=\\"normal\\" color=\\"white\\">
       <option value=\\"default\\" disabled={true}>

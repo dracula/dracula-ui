@@ -3,7 +3,7 @@
 exports[`Site: List Basic Usage 1`] = `
 Object {
   "docs": "",
-  "html": "<div style=\\"display: flex; flex-direction: column; padding: 3rem\\">
+  "html": "<div style=\\"display: flex; flex-direction: column\\">
   <ol color=\\"purple\\" class=\\"drac-list drac-list-purple\\">
     <li class=\\"drac-text drac-text-white\\">Blade</li>
     <li class=\\"drac-text drac-text-white\\">Buffy</li>
@@ -11,7 +11,7 @@ Object {
   </ol>
 </div>
 ",
-  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\", padding: \\"3rem\\" }}>
+  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\" }}>
   <List color=\\"purple\\">
     <li className=\\"drac-text drac-text-white\\">Blade</li>
     <li className=\\"drac-text drac-text-white\\">Buffy</li>
@@ -26,7 +26,7 @@ Object {
 exports[`Site: List Colors 1`] = `
 Object {
   "docs": "",
-  "html": "<div style=\\"display: flex; flex-direction: column; padding: 3rem\\">
+  "html": "<div style=\\"display: flex; flex-direction: column\\">
   <div>
     <ol
       variant=\\"ordered\\"
@@ -115,56 +115,9 @@ Object {
       <li class=\\"drac-text drac-text-white\\">Morbius</li>
     </ol>
   </div>
-  <div>
-    <ol variant=\\"ordered\\" color=\\"animated\\" class=\\"drac-list drac-list-ordered\\">
-      <li class=\\"drac-text drac-text-white\\">Blade</li>
-      <li class=\\"drac-text drac-text-white\\">Buffy</li>
-      <li class=\\"drac-text drac-text-white\\">Morbius</li>
-    </ol>
-  </div>
-  <div>
-    <ol variant=\\"ordered\\" color=\\"cyanGreen\\" class=\\"drac-list drac-list-ordered\\">
-      <li class=\\"drac-text drac-text-white\\">Blade</li>
-      <li class=\\"drac-text drac-text-white\\">Buffy</li>
-      <li class=\\"drac-text drac-text-white\\">Morbius</li>
-    </ol>
-  </div>
-  <div>
-    <ol
-      variant=\\"ordered\\"
-      color=\\"pinkPurple\\"
-      class=\\"drac-list drac-list-ordered\\"
-    >
-      <li class=\\"drac-text drac-text-white\\">Blade</li>
-      <li class=\\"drac-text drac-text-white\\">Buffy</li>
-      <li class=\\"drac-text drac-text-white\\">Morbius</li>
-    </ol>
-  </div>
-  <div>
-    <ol
-      variant=\\"ordered\\"
-      color=\\"purpleCyan\\"
-      class=\\"drac-list drac-list-ordered\\"
-    >
-      <li class=\\"drac-text drac-text-white\\">Blade</li>
-      <li class=\\"drac-text drac-text-white\\">Buffy</li>
-      <li class=\\"drac-text drac-text-white\\">Morbius</li>
-    </ol>
-  </div>
-  <div>
-    <ol
-      variant=\\"ordered\\"
-      color=\\"yellowPink\\"
-      class=\\"drac-list drac-list-ordered\\"
-    >
-      <li class=\\"drac-text drac-text-white\\">Blade</li>
-      <li class=\\"drac-text drac-text-white\\">Buffy</li>
-      <li class=\\"drac-text drac-text-white\\">Morbius</li>
-    </ol>
-  </div>
 </div>
 ",
-  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\", padding: \\"3rem\\" }}>
+  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\" }}>
   <div>
     <List variant=\\"ordered\\" color=\\"white\\">
       <li className=\\"drac-text drac-text-white\\">Blade</li>
@@ -221,41 +174,6 @@ Object {
       <li className=\\"drac-text drac-text-white\\">Morbius</li>
     </List>
   </div>
-  <div>
-    <List variant=\\"ordered\\" color=\\"animated\\">
-      <li className=\\"drac-text drac-text-white\\">Blade</li>
-      <li className=\\"drac-text drac-text-white\\">Buffy</li>
-      <li className=\\"drac-text drac-text-white\\">Morbius</li>
-    </List>
-  </div>
-  <div>
-    <List variant=\\"ordered\\" color=\\"cyanGreen\\">
-      <li className=\\"drac-text drac-text-white\\">Blade</li>
-      <li className=\\"drac-text drac-text-white\\">Buffy</li>
-      <li className=\\"drac-text drac-text-white\\">Morbius</li>
-    </List>
-  </div>
-  <div>
-    <List variant=\\"ordered\\" color=\\"pinkPurple\\">
-      <li className=\\"drac-text drac-text-white\\">Blade</li>
-      <li className=\\"drac-text drac-text-white\\">Buffy</li>
-      <li className=\\"drac-text drac-text-white\\">Morbius</li>
-    </List>
-  </div>
-  <div>
-    <List variant=\\"ordered\\" color=\\"purpleCyan\\">
-      <li className=\\"drac-text drac-text-white\\">Blade</li>
-      <li className=\\"drac-text drac-text-white\\">Buffy</li>
-      <li className=\\"drac-text drac-text-white\\">Morbius</li>
-    </List>
-  </div>
-  <div>
-    <List variant=\\"ordered\\" color=\\"yellowPink\\">
-      <li className=\\"drac-text drac-text-white\\">Blade</li>
-      <li className=\\"drac-text drac-text-white\\">Buffy</li>
-      <li className=\\"drac-text drac-text-white\\">Morbius</li>
-    </List>
-  </div>
 </div>;
 ",
   "title": "Colors",
@@ -265,7 +183,7 @@ Object {
 exports[`Site: List Variants 1`] = `
 Object {
   "docs": "",
-  "html": "<div style=\\"display: flex; flex-direction: column; padding: 3rem\\">
+  "html": "<div style=\\"display: flex; flex-direction: column\\">
   <div>
     <ul
       variant=\\"unordered\\"
@@ -331,7 +249,7 @@ Object {
   </div>
 </div>
 ",
-  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\", padding: \\"3rem\\" }}>
+  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\" }}>
   <div>
     <List variant=\\"unordered\\" color=\\"purple\\">
       <li className=\\"drac-text drac-text-white\\">This is the first item</li>

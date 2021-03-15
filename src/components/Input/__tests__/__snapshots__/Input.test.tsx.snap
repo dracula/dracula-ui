@@ -18,7 +18,7 @@ Object {
 exports[`Site: Input Colors 1`] = `
 Object {
   "docs": "",
-  "html": "<div style=\\"display: flex; flex-direction: column; padding: 3rem\\">
+  "html": "<div style=\\"display: flex; flex-direction: column\\">
   <input
     placeholder=\\"Placeholder\\"
     variant=\\"outline\\"
@@ -69,36 +69,6 @@ Object {
     class=\\"drac-input drac-input-outline drac-input-yellow drac-text-yellow\\"
   /><input
     placeholder=\\"Placeholder\\"
-    variant=\\"outline\\"
-    color=\\"animated\\"
-    style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input-outline\\"
-  /><input
-    placeholder=\\"Placeholder\\"
-    variant=\\"outline\\"
-    color=\\"cyanGreen\\"
-    style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input-outline\\"
-  /><input
-    placeholder=\\"Placeholder\\"
-    variant=\\"outline\\"
-    color=\\"pinkPurple\\"
-    style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input-outline\\"
-  /><input
-    placeholder=\\"Placeholder\\"
-    variant=\\"outline\\"
-    color=\\"purpleCyan\\"
-    style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input-outline\\"
-  /><input
-    placeholder=\\"Placeholder\\"
-    variant=\\"outline\\"
-    color=\\"yellowPink\\"
-    style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input-outline\\"
-  /><input
-    placeholder=\\"Placeholder\\"
     variant=\\"normal\\"
     color=\\"white\\"
     style=\\"margin-bottom: 20px\\"
@@ -145,40 +115,10 @@ Object {
     color=\\"yellow\\"
     style=\\"margin-bottom: 20px\\"
     class=\\"drac-input drac-input-yellow drac-text-yellow\\"
-  /><input
-    placeholder=\\"Placeholder\\"
-    variant=\\"normal\\"
-    color=\\"animated\\"
-    style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input\\"
-  /><input
-    placeholder=\\"Placeholder\\"
-    variant=\\"normal\\"
-    color=\\"cyanGreen\\"
-    style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input\\"
-  /><input
-    placeholder=\\"Placeholder\\"
-    variant=\\"normal\\"
-    color=\\"pinkPurple\\"
-    style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input\\"
-  /><input
-    placeholder=\\"Placeholder\\"
-    variant=\\"normal\\"
-    color=\\"purpleCyan\\"
-    style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input\\"
-  /><input
-    placeholder=\\"Placeholder\\"
-    variant=\\"normal\\"
-    color=\\"yellowPink\\"
-    style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input\\"
   />
 </div>
 ",
-  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\", padding: \\"3rem\\" }}>
+  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\" }}>
   <Input
     placeholder=\\"Placeholder\\"
     variant=\\"outline\\"
@@ -229,36 +169,6 @@ Object {
   />
   <Input
     placeholder=\\"Placeholder\\"
-    variant=\\"outline\\"
-    color=\\"animated\\"
-    style={{ marginBottom: 20 }}
-  />
-  <Input
-    placeholder=\\"Placeholder\\"
-    variant=\\"outline\\"
-    color=\\"cyanGreen\\"
-    style={{ marginBottom: 20 }}
-  />
-  <Input
-    placeholder=\\"Placeholder\\"
-    variant=\\"outline\\"
-    color=\\"pinkPurple\\"
-    style={{ marginBottom: 20 }}
-  />
-  <Input
-    placeholder=\\"Placeholder\\"
-    variant=\\"outline\\"
-    color=\\"purpleCyan\\"
-    style={{ marginBottom: 20 }}
-  />
-  <Input
-    placeholder=\\"Placeholder\\"
-    variant=\\"outline\\"
-    color=\\"yellowPink\\"
-    style={{ marginBottom: 20 }}
-  />
-  <Input
-    placeholder=\\"Placeholder\\"
     variant=\\"normal\\"
     color=\\"white\\"
     style={{ marginBottom: 20 }}
@@ -303,36 +213,6 @@ Object {
     placeholder=\\"Placeholder\\"
     variant=\\"normal\\"
     color=\\"yellow\\"
-    style={{ marginBottom: 20 }}
-  />
-  <Input
-    placeholder=\\"Placeholder\\"
-    variant=\\"normal\\"
-    color=\\"animated\\"
-    style={{ marginBottom: 20 }}
-  />
-  <Input
-    placeholder=\\"Placeholder\\"
-    variant=\\"normal\\"
-    color=\\"cyanGreen\\"
-    style={{ marginBottom: 20 }}
-  />
-  <Input
-    placeholder=\\"Placeholder\\"
-    variant=\\"normal\\"
-    color=\\"pinkPurple\\"
-    style={{ marginBottom: 20 }}
-  />
-  <Input
-    placeholder=\\"Placeholder\\"
-    variant=\\"normal\\"
-    color=\\"purpleCyan\\"
-    style={{ marginBottom: 20 }}
-  />
-  <Input
-    placeholder=\\"Placeholder\\"
-    variant=\\"normal\\"
-    color=\\"yellowPink\\"
     style={{ marginBottom: 20 }}
   />
 </div>;
@@ -387,7 +267,7 @@ Object {
 exports[`Site: Input Variants 1`] = `
 Object {
   "docs": "",
-  "html": "<div style=\\"display: flex; flex-direction: column; padding: 3rem\\">
+  "html": "<div style=\\"display: flex; flex-direction: column\\">
   <input
     placeholder=\\"Placeholder\\"
     variant=\\"normal\\"
@@ -403,7 +283,7 @@ Object {
   />
 </div>
 ",
-  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\", padding: \\"3rem\\" }}>
+  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\" }}>
   <Input
     placeholder=\\"Placeholder\\"
     variant=\\"normal\\"

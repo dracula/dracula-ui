@@ -3,7 +3,7 @@
   "type": "page",
   "id": "Link",
   "name": "Link",
-  "last_updated": "2021-03-14T22:34:31.187Z",
+  "last_updated": "2021-03-15T00:46:15.242Z",
   "last_updated_by": "System",
   "description": "Text is the base component for any sort of text.\n\nConsumers of this component can control, the color, size,\nweight, and spacing of Text.\n\nUse this component for generic, and non-hierarchical text that is\nto be displayed on a page, or as part of other complex components\nor UI patterns",
   "related_entity_ids": [],

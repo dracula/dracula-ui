@@ -3,7 +3,7 @@
   "type": "page",
   "id": "Box",
   "name": "Box",
-  "last_updated": "2021-03-14T22:34:41.638Z",
+  "last_updated": "2021-03-15T00:46:28.286Z",
   "last_updated_by": "System",
   "description": "Box is the most primitive component of Dracula UI.\nUsing Box allows for consumers of the components library to compose\nmore complex patterns, components, and UIs.\n\nBox includes built-in Color and Spacing properties that make building\ncomplex components convenient and consistent.",
   "related_entity_ids": [],
@@ -54,6 +54,22 @@
       "defaultValue": null,
       "description": "The background color.",
       "name": "color",
+      "parent": {
+        "fileName": "src/components/Box/Box.tsx",
+        "name": "BoxProps"
+      },
+      "declarations": [
+        { "fileName": "src/components/Box/Box.tsx", "name": "BoxProps" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+      }
+    },
+    "glowColor": {
+      "defaultValue": null,
+      "description": "The glow color.",
+      "name": "glowColor",
       "parent": {
         "fileName": "src/components/Box/Box.tsx",
         "name": "BoxProps"
@@ -135,6 +151,22 @@
         "defaultValue": null,
         "description": "The background color.",
         "name": "color",
+        "parent": {
+          "fileName": "src/components/Box/Box.tsx",
+          "name": "BoxProps"
+        },
+        "declarations": [
+          { "fileName": "src/components/Box/Box.tsx", "name": "BoxProps" }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+        }
+      },
+      "glowColor": {
+        "defaultValue": null,
+        "description": "The glow color.",
+        "name": "glowColor",
         "parent": {
           "fileName": "src/components/Box/Box.tsx",
           "name": "BoxProps"
