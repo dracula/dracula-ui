@@ -1,7 +1,7 @@
 import { Component } from "react"
 import styles from "./Tabs.module.css"
 import CodeHighlight from "./CodeHighlight"
-import { Box } from "dracula-ui"
+import { Box } from "../../dist"
 
 class Tabs extends Component {
   constructor(props) {
@@ -55,9 +55,7 @@ class Tabs extends Component {
   render() {
     return (
       <div>
-        <ul className="drac-tabs drac-tabs-purple">
-          {this.renderLabels()}
-        </ul>
+        <ul className="drac-tabs drac-tabs-purple">{this.renderLabels()}</ul>
         <Box style={{ maxHeight: 300, overflow: "auto" }}>
           {this.renderPanels()}
         </Box>

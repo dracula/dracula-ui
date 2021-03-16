@@ -43,6 +43,7 @@ export const Card: React.FC<CardProps> = (props: CardProps) => {
     props.orientation && cardOrientations[props.orientation],
     props.variant && cardVariants[props.variant],
     // apply border color based on theme color
+    // @ts-ignore TODO: make sure border and background colors match
     props.color && props.variant && borderColors[props.color],
     props.glowColor && glowColors[props.glowColor]
   )
