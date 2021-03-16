@@ -2,7 +2,7 @@
 
 exports[`Site: Avatar Basic Usage 1`] = `
 Object {
-  "docs": "",
+  "docs": "The most basic instance of an Avatar requires a src image and a title to be used for accessibility or as a fallback in case the image can't be loaded.",
   "html": "<span
   class=\\"drac-avatar drac-bg-green-transparent drac-text-green\\"
   style=\\"
@@ -21,13 +21,9 @@ Object {
 
 exports[`Site: Avatar Custom colors 1`] = `
 Object {
-  "docs": "Avatars accept colors, like in the example below...",
+  "docs": "The Avatar component accepts a *color* param that allows for customizing the background and accent color for an Avatar.",
   "html": "<div>
   <span
-    class=\\"drac-avatar drac-bg-green-transparent drac-text-green\\"
-    color=\\"black\\"
-    ><span color=\\"white\\" class=\\"drac-text drac-text-white\\">NF</span></span
-  ><span
     class=\\"drac-avatar drac-bg-green-transparent drac-text-green\\"
     color=\\"cyan\\"
     ><span color=\\"white\\" class=\\"drac-text drac-text-white\\">NF</span></span
@@ -35,7 +31,6 @@ Object {
 </div>
 ",
   "react": "<div>
-  <Avatar title=\\"Netto Farah\\" color=\\"black\\" />
   <Avatar title=\\"Netto Farah\\" color=\\"cyan\\" />
 </div>;
 ",
@@ -45,19 +40,19 @@ Object {
 
 exports[`Site: Avatar Custom variants 1`] = `
 Object {
-  "docs": "Avatars accept multiple variants, like in the example below...",
+  "docs": "Avatars accept multiple variants, which can be used to render a more subtle variation of the Avatar component.",
   "html": "<div>
-  <span class=\\"drac-avatar drac-bg-green-transparent drac-text-green\\"
-    ><span color=\\"white\\" class=\\"drac-text drac-text-white\\">NF</span></span
-  ><span
+  <span
     class=\\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-subtle\\"
     ><span color=\\"white\\" class=\\"drac-text drac-text-white\\">ZR</span></span
+  ><span class=\\"drac-avatar drac-bg-green-transparent drac-text-green\\"
+    ><span color=\\"white\\" class=\\"drac-text drac-text-white\\">NF</span></span
   >
 </div>
 ",
   "react": "<div>
-  <Avatar title=\\"Netto Farah\\" variant=\\"normal\\" />
   <Avatar title=\\"Zeno Rocha\\" variant=\\"subtle\\" />
+  <Avatar title=\\"Netto Farah\\" variant=\\"normal\\" />
 </div>;
 ",
   "title": "Custom variants",
@@ -66,7 +61,7 @@ Object {
 
 exports[`Site: Avatar border: large 1`] = `
 Object {
-  "docs": "",
+  "docs": "A border variant allows for customization of the border width of an Avatar, or for an Avatar to be rendered without a border.",
   "html": "<span
   class=\\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-lg-stroke\\"
   ><span color=\\"white\\" class=\\"drac-text drac-text-white\\">NF</span></span
@@ -80,7 +75,7 @@ Object {
 
 exports[`Site: Avatar border: none 1`] = `
 Object {
-  "docs": "",
+  "docs": "A border variant allows for customization of the border width of an Avatar, or for an Avatar to be rendered without a border.",
   "html": "<span
   class=\\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-no-border\\"
   ><span color=\\"white\\" class=\\"drac-text drac-text-white\\">NF</span></span
@@ -94,7 +89,7 @@ Object {
 
 exports[`Site: Avatar border: normal 1`] = `
 Object {
-  "docs": "",
+  "docs": "A border variant allows for customization of the border width of an Avatar, or for an Avatar to be rendered without a border.",
   "html": "<span class=\\"drac-avatar drac-bg-green-transparent drac-text-green\\"
   ><span color=\\"white\\" class=\\"drac-text drac-text-white\\">NF</span></span
 >
