@@ -3,7 +3,7 @@
   "type": "page",
   "id": "Heading",
   "name": "Heading",
-  "last_updated": "2021-03-16T23:04:11.885Z",
+  "last_updated": "2021-03-16T23:04:59.083Z",
   "last_updated_by": "System",
   "description": "Heading is used to display headlines and other forms of hierarchical Text.\n\nHeadings are similar to the base Text component, but restricted to certain\nsizes and font weight.",
   "related_entity_ids": [],
