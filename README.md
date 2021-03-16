@@ -1,172 +1,111 @@
-# TSDX React w/ Storybook User Guide
+# Dracula UI (Early Access)
 
-Congrats! You just saved yourself hours of work by bootstrapping this project with TSDX. Let’s get you oriented with what’s here and how to use it.
+> A dark-first collection of UI patterns and components.
 
-> This TSDX setup is meant for developing React component libraries (not apps!) that can be published to NPM. If you’re looking to build a React-based app, you should use `create-react-app`, `razzle`, `nextjs`, `gatsby`, or `react-static`.
+![Dracula UI](https://user-images.githubusercontent.com/398893/111241824-24571f00-85bb-11eb-86fc-15836ac703c6.png)
 
-> If you’re new to TypeScript and React, checkout [this handy cheatsheet](https://github.com/sw-yx/react-typescript-cheatsheet/)
+## :thinking: Why
 
-## Commands
+Most templates are built using light colors and later on adapted to dark colors. Dark themes shouldn't be an afterthought, they should be a top priority.
 
-TSDX scaffolds your new library inside `/src`, and also sets up a [Parcel-based](https://parceljs.org) playground for it inside `/example`.
+Our mission is to unleash the creative potential in every developer. We do that by providing modular components that can be used to build modern sites faster.
 
-The recommended workflow is to run TSDX in one terminal:
+## :book: Documentation
 
-```bash
-npm start # or yarn start
-```
+During the alpha phase, our documentation can only be accessed locally.
 
-This builds to `/dist` and runs the project in watch mode so any edits you save inside `src` causes a rebuild to `/dist`.
-
-Then run either Storybook or the example playground:
-
-### Storybook
-
-Run inside another terminal:
+To do that, you first need to install all dependencies:
 
 ```bash
-yarn storybook
+npm install
 ```
 
-This loads the stories from `./stories`.
-
-> NOTE: Stories should reference the components as if using the library, similar to the example playground. This means importing from the root project directory. This has been aliased in the tsconfig and the storybook webpack config as a helper.
-
-### Example
-
-Then run the example inside another:
+And then run:
 
 ```bash
-cd example
-npm i # or yarn to install dependencies
-npm start # or yarn start
+npm run dev
 ```
 
-The default example imports and live reloads whatever is in `/dist`, so if you are seeing an out of date component, make sure TSDX is running in watch mode like we recommend above. **No symlinking required**, we use [Parcel's aliasing](https://parceljs.org/module_resolution.html#aliases).
+Now you can open `localhost:3000` in your browser.
 
-To do a one-off build, use `npm run build` or `yarn build`.
+## :package: Install
 
-To run tests, use `npm test` or `yarn test`.
+You can install Dracula UI via npm or yarn.
 
-## Configuration
+```bash
+npm install dracula/dracula-ui#alpha
 
-Code quality is set up for you with `prettier`, `husky`, and `lint-staged`. Adjust the respective fields in `package.json` accordingly.
-
-### Jest
-
-Jest tests are set up to run with `npm test` or `yarn test`.
-
-#### Setup Files
-
-This is the folder structure we set up for you:
-
-```txt
-/example
-  index.html
-  index.tsx       # test your component here in a demo app
-  package.json
-  tsconfig.json
-/src
-  index.tsx       # EDIT THIS
-/test
-  blah.test.tsx   # EDIT THIS
-.gitignore
-package.json
-README.md         # EDIT THIS
-tsconfig.json
+yarn add dracula/dracula-ui#alpha
 ```
 
-#### React Testing Library
+If you're not into package managers, just [download a ZIP](https://github.com/dracula/dracula-ui/archive/master.zip) file.
 
-We do not set up `react-testing-library` for you yet, we welcome contributions and documentation on this.
+## :zap: Using with HTML
 
-### Rollup
+You can use Dracula UI with plain HTML by importing the CSS file.
 
-TSDX uses [Rollup](https://rollupjs.org) as a bundler and generates multiple rollup configs for various module formats and build settings. See [Optimizations](#optimizations) for details.
+```html
+<link rel="stylesheet" href="node_modules/dracula-ui/styles/dracula-ui.css" />
+```
 
-### TypeScript
+Now you can take advantage of all the classes, for example:
 
-`tsconfig.json` is set up to interpret `dom` and `esnext` types, as well as `react` for `jsx`. Adjust according to your needs.
+```html
+<body class="drac-bg-black">
+```
 
-## Continuous Integration
+## :sparkles: Using with React
 
-### GitHub Actions
-
-A simple action is included that runs these steps on all pushes:
-
-- Installs deps w/ cache
-- Lints, tests, and builds
-
-## Optimizations
-
-Please see the main `tsdx` [optimizations docs](https://github.com/palmerhq/tsdx#optimizations). In particular, know that you can take advantage of development-only optimizations:
+You can also use Dracula UI with React by importing the JS package.
 
 ```js
-// ./types/index.d.ts
-declare var __DEV__: boolean;
+import { Component } from 'react';
+import { Paragraph } from 'dracula-ui';
 
-// inside your code...
-if (__DEV__) {
-  console.log('foo');
+class Footer extends Component {
+  render() {
+    return <Paragraph>Made using Dracula</Paragraph>
+  }
 }
+
+export default Footer;
 ```
 
-You can also choose to install and use [invariant](https://github.com/palmerhq/tsdx#invariant) and [warning](https://github.com/palmerhq/tsdx#warning) functions.
+## :rocket: Using with Next.js
 
-## Module Formats
+First, you need to import the CSS globally.
 
-CJS, ESModules, and UMD module formats are supported.
+Go to `pages/_app.js` (or create this file if it doesn't exist yet) and add the CSS import:
 
-The appropriate paths are configured in `package.json` and `dist/index.js` accordingly. Please report if any issues are found.
+```jsx
+import "dracula-ui/styles/dracula-ui.css";
 
-## Deploying the Example Playground
+function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />
+}
 
-The Playground is just a simple [Parcel](https://parceljs.org) app, you can deploy it anywhere you would normally deploy that. Here are some guidelines for **manually** deploying with the Netlify CLI (`npm i -g netlify-cli`):
-
-```bash
-cd example # if not already in the example folder
-npm run build # builds to dist
-netlify deploy # deploy the dist folder
+export default MyApp
 ```
 
-Alternatively, if you already have a git repo connected, you can set up continuous deployment with Netlify:
+Then you can import Dracula UI and use all React components.
 
-```bash
-netlify init
-# build command: yarn build && cd example && yarn && yarn build
-# directory to deploy: example/dist
-# pick yes for netlify.toml
+```jsx
+import { Component } from 'react';
+import { Paragraph } from 'dracula-ui';
+
+class Footer extends Component {
+  render() {
+    return <Paragraph>Made using Dracula</Paragraph>
+  }
+}
+
+export default Footer;
 ```
 
-## Named Exports
+## :bulb: Ideas
 
-Per Palmer Group guidelines, [always use named exports.](https://github.com/palmerhq/typescript#exports) Code split inside your React app instead of your React library.
+You can suggest new ideas using [GitHub Discussions](https://github.com/dracula/dracula-ui/discussions).
 
-## Including Styles
+## :wave: Questions
 
-There are many ways to ship styles, including with CSS-in-JS. TSDX has no opinion on this, configure how you like.
-
-For vanilla CSS, you can include it at the root directory and add it to the `files` section in your `package.json`, so that it can be imported separately by your users and run through their bundler's loader.
-
-## Publishing to NPM
-
-We recommend using [np](https://github.com/sindresorhus/np).
-
-## Usage with Lerna
-
-When creating a new package with TSDX within a project set up with Lerna, you might encounter a `Cannot resolve dependency` error when trying to run the `example` project. To fix that you will need to make changes to the `package.json` file _inside the `example` directory_.
-
-The problem is that due to the nature of how dependencies are installed in Lerna projects, the aliases in the example project's `package.json` might not point to the right place, as those dependencies might have been installed in the root of your Lerna project.
-
-Change the `alias` to point to where those packages are actually installed. This depends on the directory structure of your Lerna project, so the actual path might be different from the diff below.
-
-```diff
-   "alias": {
--    "react": "../node_modules/react",
--    "react-dom": "../node_modules/react-dom"
-+    "react": "../../../node_modules/react",
-+    "react-dom": "../../../node_modules/react-dom"
-   },
-```
-
-An alternative to fixing this problem would be to remove aliases altogether and define the dependencies referenced as aliases as dev dependencies instead. [However, that might cause other problems.](https://github.com/palmerhq/tsdx/issues/64)
+If you find a problem, feel free to open new [GitHub Issues](https://github.com/dracula/dracula-ui/issues).
