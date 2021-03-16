@@ -65,6 +65,7 @@ export const Input: React.FC<InputProps> = (props: InputProps) => {
     ...props,
     className: cx(
       `drac-input`,
+      props.className,
       props.variant && inputVariants[props.variant],
       props.size && inputSizes[props.size],
       props.color && inputColors[props.color],

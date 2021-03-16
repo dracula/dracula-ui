@@ -62,6 +62,7 @@ export const Heading: React.FC<HeadingProps> = (props: HeadingProps) => {
     ...props,
     className: cx(
       `drac-heading`,
+      props.className,
       headingSizes[props.size ?? 'heading-1'],
       headingColors[props.color ?? 'white'],
       ...paddingMixin(props),

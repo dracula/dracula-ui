@@ -67,6 +67,7 @@ export const Text = (props: TextProps) => {
 
     className: cx(
       `drac-text`,
+      props.className,
       textSizes[props.size ?? 'medium'],
       textWeights[props.weight ?? 'normal'],
       textColors[props.color ?? 'white'],

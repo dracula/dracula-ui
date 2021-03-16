@@ -41,7 +41,9 @@ export const Radio: React.FC<RadioProps> = (props: RadioProps) => {
   const finalProps = {
     ...props,
     className: classNamesDedupe(
-      `drac-radio ${radioColors[props.color]}`,
+      `drac-radio`,
+      props.className,
+      radioColors[props.color],
       ...paddingMixin(props),
       ...marginMixin(props)
     )

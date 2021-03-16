@@ -51,6 +51,7 @@ export const Table: React.FC<TableProps> = (props: TableProps) => {
     ...props,
     className: cx(
       'drac-table',
+      props.className,
       props.variant && tableVariants[props.variant],
       props.color && tableColors[props.color],
       ...paddingMixin(props),

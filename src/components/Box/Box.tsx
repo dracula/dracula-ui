@@ -54,12 +54,12 @@ export function Box<T extends keyof Element>(props: BoxProps<T>) {
     ...props,
     className: cx(
       `drac-box`,
+      props.className,
       props.color && colors[props.color],
       props.glowColor && glowColors[props.glowColor],
       props.rounded && roundedBorders[props.rounded],
       ...paddingMixin(props),
-      ...marginMixin(props),
-      props.className
+      ...marginMixin(props)
     )
   }
 

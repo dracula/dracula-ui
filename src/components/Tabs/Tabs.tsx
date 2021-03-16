@@ -39,6 +39,7 @@ export const Tabs: React.FC<TabsProps> = (props: TabsProps) => {
     ...props,
     className: cx(
       'drac-tabs',
+      props.className,
       props.color && tabsColors[props.color],
       ...paddingMixin(props),
       ...marginMixin(props)

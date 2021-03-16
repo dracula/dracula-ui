@@ -29,7 +29,9 @@ export const Divider: React.FC<DividerProps> = (props: DividerProps) => {
   const finalProps = {
     ...props,
     className: classNamesDedupe(
-      `drac-divider ${dividerColors[props.color]}`,
+      `drac-divider`,
+      props.className,
+      dividerColors[props.color],
       ...paddingMixin(props),
       ...marginMixin(props)
     )

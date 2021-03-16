@@ -43,6 +43,7 @@ export const Checkbox: React.FC<CheckboxProps> = (props: CheckboxProps) => {
     ...props,
     className: cx(
       `drac-checkbox`,
+      props.className,
       props.color && checkboxColors[props.color],
       ...paddingMixin(props),
       ...marginMixin(props)

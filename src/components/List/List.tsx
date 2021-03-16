@@ -52,6 +52,7 @@ export const List: React.FC<ListProps> = (props: ListProps) => {
     ...props,
     className: cx(
       'drac-list',
+      props.className,
       props.variant && listVariants[props.variant],
       props.color && listColors[props.color],
       ...paddingMixin(props),

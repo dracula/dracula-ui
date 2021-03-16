@@ -71,6 +71,7 @@ export const Avatar = (props: AvatarProps) => {
 
   const classes = cx(
     'drac-avatar',
+    props.className,
     backgroundClass,
     textColors[themeColor ?? 'green'],
     AvatarVariants[variant ?? 'normal'],

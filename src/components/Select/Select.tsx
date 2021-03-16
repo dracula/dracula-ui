@@ -65,6 +65,7 @@ export const Select: React.FC<SelectProps> = (props: SelectProps) => {
     ...props,
     className: cx(
       'drac-select',
+      props.className,
       props.variant && selectVariants[props.variant],
       props.size && selectSizes[props.size],
       props.color && selectColors[props.color],

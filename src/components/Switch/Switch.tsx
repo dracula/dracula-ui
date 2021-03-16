@@ -48,7 +48,10 @@ export const Switch: React.FC<SwitchProps> = (props: SwitchProps) => {
   const finalProps = {
     ...props,
     className: classNamesDedupe(
-      `drac-switch drac-checkbox ${switchColors[props.color]}`,
+      `drac-switch`,
+      'drac-checkbox',
+      props.className,
+      switchColors[props.color],
       ...paddingMixin(props),
       ...marginMixin(props)
     )

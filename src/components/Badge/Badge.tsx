@@ -56,6 +56,7 @@ export const Badge: React.FC<BadgeProps> = (props: BadgeProps) => {
 
   const classes = cx(
     'drac-badge',
+    props.className,
     backgroundClass,
     variants[props.variant ?? 'normal'],
     textColorClass,

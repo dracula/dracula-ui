@@ -72,6 +72,7 @@ export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
 
   const classes = cx(
     'drac-btn',
+    props.className,
     backgroundClass,
     buttonVariants[props.variant ?? 'normal'],
     buttonSizes[props.size ?? 'medium'],
