@@ -10,6 +10,7 @@ import { getDocGen } from '../documentation/docgen/doc-generator'
 import { toDSP } from '../documentation/dsp/component-generator'
 import puppeteer from 'puppeteer'
 import { componentScreenshot } from './screenshots/component-screenshot'
+import os from 'os'
 
 interface Documentation {
   basic: () => SnapshotBuilder
@@ -35,7 +36,16 @@ export function docs<T>(
         return
       }
 
-      browser = await puppeteer.launch({ headless: true, devtools: true })
+      let executablePath = undefined
+      if (os.arch() === 'arm64') {
+        executablePath = '/Applications/Chromium.app/Contents/MacOS/Chromium'
+      }
+
+      browser = await puppeteer.launch({
+        headless: true,
+        devtools: true,
+        executablePath
+      })
     })
 
     let examples: Record<string, ComponentExample> = {}
