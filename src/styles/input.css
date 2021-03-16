@@ -22,50 +22,12 @@
   border-color: var(--blackTernary);
 }
 
-.input-outline.input-black,
-.input-outline.input-black:focus,
-.input.input-black:focus {
-  border-color: var(--blackSecondary);
-}
-.input-outline.input-white,
-.input-outline.input-white:focus,
-.input.input-white:focus {
-  border-color: var(--white);
-}
-.input-outline.input-cyan,
-.input-outline.input-cyan:focus,
-.input.input-cyan:focus {
-  border-color: var(--cyan);
-}
-.input-outline.input-green,
-.input-outline.input-green:focus,
-.input.input-green:focus {
-  border-color: var(--green);
-}
-.input-outline.input-orange,
-.input-outline.input-orange:focus,
-.input.input-orange:focus {
-  border-color: var(--orange);
-}
-.input-outline.input-pink,
-.input-outline.input-pink:focus,
-.input.input-pink:focus {
-  border-color: var(--pink);
-}
-.input-outline.input-purple,
-.input-outline.input-purple:focus,
-.input.input-purple:focus {
-  border-color: var(--purple);
-}
-.input-outline.input-red,
-.input-outline.input-red:focus,
-.input.input-red:focus {
-  border-color: var(--red);
-}
-.input-outline.input-yellow,
-.input-outline.input-yellow:focus,
-.input.input-yellow:focus {
-  border-color: var(--yellow);
+@each $color in black, blackSecondary, white, cyan, green, orange, pink, purple, red, yellow {
+  .input-outline.input-$(color),
+  .input-outline.input-$(color):focus,
+  .input.input-$(color):focus {
+    border-color: var(--$(color));
+  }
 }
 
 /* Sizes */

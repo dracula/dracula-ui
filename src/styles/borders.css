@@ -11,40 +11,10 @@
   --rounded-full: 9999px;
 }
 
-.border-black {
-  border-color: var(--black);
-}
-
-.border-white {
-  border-color: var(--white);
-}
-
-.border-cyan {
-  border-color: var(--cyan);
-}
-
-.border-green {
-  border-color: var(--green);
-}
-
-.border-orange {
-  border-color: var(--orange);
-}
-
-.border-pink {
-  border-color: var(--pink);
-}
-
-.border-purple {
-  border-color: var(--purple);
-}
-
-.border-red {
-  border-color: var(--red);
-}
-
-.border-yellow {
-  border-color: var(--yellow);
+@each $color in black, white, cyan, green, orange, pink, purple, red, yellow {
+  .border-$(color) {
+    border-color: var(--$(color));
+  }
 }
 
 .rounded-none {

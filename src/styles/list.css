@@ -25,49 +25,11 @@
   width: 30px;
 }
 
-.list-black.list-unordered li::before,
-.list-black.list-ordered li::before {
-  color: var(--black);
-}
-
-.list-white.list-unordered li::before,
-.list-white.list-ordered li::before {
-  color: var(--white);
-}
-
-.list-cyan.list-unordered li::before,
-.list-cyan.list-ordered li::before {
-  color: var(--cyan);
-}
-
-.list-green.list-unordered li::before,
-.list-green.list-ordered li::before {
-  color: var(--green);
-}
-
-.list-orange.list-unordered li::before,
-.list-orange.list-ordered li::before {
-  color: var(--orange);
-}
-
-.list-pink.list-unordered li::before,
-.list-pink.list-ordered li::before {
-  color: var(--pink);
-}
-
-.list-purple.list-unordered li::before,
-.list-purple.list-ordered li::before {
-  color: var(--purple);
-}
-
-.list-red.list-unordered li::before,
-.list-red.list-ordered li::before {
-  color: var(--red);
-}
-
-.list-yellow.list-unordered li::before,
-.list-yellow.list-ordered li::before {
-  color: var(--yellow);
+@each $color in black, blackSecondary, white, cyan, green, orange, pink, purple, red, yellow {
+  .list-$(color).list-unordered li::before,
+  .list-$(color).list-ordered li::before {
+    color: var(--$(color));
+  }
 }
 
 .list-none {
