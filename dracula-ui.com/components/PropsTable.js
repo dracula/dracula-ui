@@ -1,12 +1,18 @@
 import React from "react"
 import { Box, Paragraph, Text } from "../../dist"
 
+const spacingProps = [
+  'p', 'py', 'px', 'pb', 'pt', 'pl', 'pr',
+  'm', 'my', 'mx', 'mb', 'mt', 'ml', 'mr',
+]
+
 const PropsTable = ({ props }) => {
   const propList = Object.values(props)
+  const ownProps = propList.filter(p => !spacingProps.includes(p.name))
 
   return (
     <>
-      {propList.map((prop) => (
+      {ownProps.map((prop) => (
         <Box my="md">
           <Box>
             <Text color="pink" weight="semibold">{prop.name}</Text>

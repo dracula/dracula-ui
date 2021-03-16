@@ -64,7 +64,7 @@ export function paddingMixin(mixin: PaddingMixin) {
   return classes
 }
 
-const m = {
+const margin = {
   none: 'drac-m-none',
   xxs: 'drac-m-xxs',
   xs: 'drac-m-xs',
@@ -73,14 +73,14 @@ const m = {
   lg: 'drac-m-lg'
 }
 
-const mLeft = mapValues(m, (clz) => clz.replace('-m-', '-ml-'))
-const mRight = mapValues(m, (clz) => clz.replace('-m-', '-mr-'))
-const mTop = mapValues(m, (clz) => clz.replace('-m-', '-mt-'))
-const mBottom = mapValues(m, (clz) => clz.replace('-m-', '-mb-'))
-const mX = mapValues(m, (clz) => clz.replace('-m-', '-mx-'))
-const mY = mapValues(m, (clz) => clz.replace('-m-', '-my-'))
+const mLeft = mapValues(margin, (clz) => clz.replace('-m-', '-ml-'))
+const mRight = mapValues(margin, (clz) => clz.replace('-m-', '-mr-'))
+const mTop = mapValues(margin, (clz) => clz.replace('-m-', '-mt-'))
+const mBottom = mapValues(margin, (clz) => clz.replace('-m-', '-mb-'))
+const mX = mapValues(margin, (clz) => clz.replace('-m-', '-mx-'))
+const mY = mapValues(margin, (clz) => clz.replace('-m-', '-my-'))
 
-type marginType = keyof typeof m
+type marginType = keyof typeof margin
 export type MarginMixin = {
   m?: marginType
 
@@ -98,7 +98,7 @@ export function marginMixin(mixin: MarginMixin) {
   let classes: string[] = []
 
   if (mixin.m) {
-    classes.push(m[mixin.m])
+    classes.push(margin[mixin.m])
   }
 
   if (mixin.my) {
