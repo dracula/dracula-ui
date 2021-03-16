@@ -1,6 +1,9 @@
 .pre {
   padding: 1rem;
   overflow: scroll;
-  composes: drac-text from global;
-  margin: 0;
+  composes: drac-text-xs from global;
+  border-radius: var(--rounded-md);
+  margin: 0 0 40px;
+  font-family: 'Fira Code', monospace;
+  line-height: 24px;
 }

@@ -17,13 +17,13 @@ During the alpha phase, our documentation can only be accessed locally.
 To do that, you first need to install all dependencies:
 
 ```bash
-npm install
+yarn install
 ```
 
 And then run:
 
 ```bash
-npm run dev
+yarn run dev
 ```
 
 Now you can open `localhost:3000` in your browser.
@@ -59,8 +59,8 @@ Now you can take advantage of all the classes, for example:
 You can also use Dracula UI with React by importing the JS package.
 
 ```js
-import { Component } from 'react';
-import { Paragraph } from 'dracula-ui';
+import { Component } from 'react'
+import { Paragraph } from 'dracula-ui'
 
 class Footer extends Component {
   render() {
@@ -68,7 +68,7 @@ class Footer extends Component {
   }
 }
 
-export default Footer;
+export default Footer
 ```
 
 ## :rocket: Using with Next.js
@@ -78,7 +78,7 @@ First, you need to import the CSS globally.
 Go to `pages/_app.js` (or create this file if it doesn't exist yet) and add the CSS import:
 
 ```jsx
-import "dracula-ui/styles/dracula-ui.css";
+import "dracula-ui/styles/dracula-ui.css"
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
@@ -90,8 +90,8 @@ export default MyApp
 Then you can import Dracula UI and use all React components.
 
 ```jsx
-import { Component } from 'react';
-import { Paragraph } from 'dracula-ui';
+import { Component } from 'react'
+import { Paragraph } from 'dracula-ui'
 
 class Footer extends Component {
   render() {
@@ -99,7 +99,7 @@ class Footer extends Component {
   }
 }
 
-export default Footer;
+export default Footer
 ```
 
 ## :bulb: Ideas

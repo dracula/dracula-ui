@@ -1,0 +1,19 @@
+.title {
+  text-decoration: none;
+  padding-left: 12px;
+}
+
+.text {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Abril Text";
+}
+
+@font-face {
+  font-family: 'Abril Text';
+  src: url('/static/fonts/AbrilText-Bold.woff2') format('woff2'),
+       url('/static/fonts/AbrilText-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

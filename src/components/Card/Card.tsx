@@ -1,6 +1,6 @@
 import cx from 'classnames/dedupe'
 import React from 'react'
-import { borderColors, glowColors } from '../../base/colors'
+// import { glowColors } from '../../base/colors'
 import { Box, BoxProps } from '../../components/Box/Box'
 
 export const cardOrientations = {
@@ -44,8 +44,8 @@ export const Card: React.FC<CardProps> = (props: CardProps) => {
     props.variant && cardVariants[props.variant],
     // apply border color based on theme color
     // @ts-ignore TODO: make sure border and background colors match
-    props.color && props.variant && borderColors[props.color],
-    props.glowColor && glowColors[props.glowColor]
+    // props.color && props.variant && borderColors[props.color],
+    // props.glowColor && glowColors[props.glowColor]
   )
 
   return (

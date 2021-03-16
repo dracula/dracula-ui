@@ -46,7 +46,7 @@ class Tabs extends Component {
               : styles.tabPanel
           }
         >
-          <CodeHighlight code={option.panel} language="html" />
+          <CodeHighlight code={option.panel} language={index === 0 ? "html" : "jsx"} />
         </div>
       )
     })

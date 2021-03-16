@@ -1,5 +1,6 @@
 .container {
   display: flex;
+  min-height: 100vh;
 }
 
 .wrapper {
@@ -18,6 +19,10 @@
   margin: 0 auto;
   max-width: 46rem;
   padding: 0 1rem;
+}
+
+.description {
+  color: #8a8f98;
 }
 
 .usage {

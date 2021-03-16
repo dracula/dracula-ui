@@ -7,31 +7,31 @@
 const theme = {
   plain: {
     color: "#F8F8F2",
-    backgroundColor: "#282A36",
+    backgroundColor: "#282a36",
   },
   styles: [
     {
       types: ["prolog", "constant", "builtin"],
       style: {
-        color: "rgb(189, 147, 249)",
+        color: "hsl(250, 100%, 75%)",
       },
     },
     {
       types: ["inserted", "function"],
       style: {
-        color: "rgb(80, 250, 123)",
+        color: "hsl(115, 100%, 75%)",
       },
     },
     {
       types: ["deleted"],
       style: {
-        color: "rgb(255, 85, 85)",
+        color: "hsl(10, 100%, 75%)",
       },
     },
     {
       types: ["changed"],
       style: {
-        color: "rgb(255, 184, 108)",
+        color: "hsl(35, 100%, 75%)",
       },
     },
     {
@@ -41,36 +41,41 @@ const theme = {
       },
     },
     {
-      types: ["string", "char", "tag", "selector"],
+      types: ["string", "char", "selector", "attr-value"],
       style: {
-        color: "rgb(255, 121, 198)",
+        color: "hsl(60, 100%, 75%)",
       },
     },
     {
-      types: ["keyword", "variable"],
+      types: ["keyword", "variable", "tag"],
       style: {
-        color: "rgb(189, 147, 249)",
-        fontStyle: "italic",
+        color: "hsl(330, 100%, 75%)",
       },
     },
     {
       types: ["comment"],
       style: {
-        color: "rgb(98, 114, 164)",
+        color: "hsl(250, 25%, 55%)",
       },
     },
     {
       types: ["attr-name"],
       style: {
-        color: "rgb(80, 250, 123)",
+        color: "hsl(115, 100%, 75%)",
       },
     },
-    {
-      types: ["attr-value"],
-      style: {
-        color: "rgb(241, 250, 140)",
-      },
-    },
+    // {
+    //   types: ["tag"],
+    //   style: {
+    //     color: "hsl(170, 100%, 75%)",
+    //   },
+    // },
+    // {
+    //   types: ["attr-value"],
+    //   style: {
+    //     color: "hsl(250, 100%, 75%)",
+    //   },
+    // },
   ],
 };
 

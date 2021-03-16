@@ -1,6 +1,6 @@
 export default ({ children }) => {
   return (
-    <div className="drac-bg-black">
+    <div style={{ background: '#1d1e26' }}>
       <div>{children}</div>
     </div>
   )
