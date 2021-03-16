@@ -13,7 +13,7 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
-    "dev": "yarn build && concurrently \"yarn start\" \"cd dracula-ui.com && yarn dev\" ",
+    "dev": "yarn build && concurrently \"yarn start\" \"cd website && yarn dev\" ",
     "test": "tsdx test",
     "docs": "RECORDING=true tsdx test -u && node ./dsp/update.js",
     "lint": "echo Linting",
