@@ -116,7 +116,7 @@ function Guide({ query }) {
               {sections.map((section) => {
                 return (
                   <Box key={section.title} my="lg">
-                    <Section key={section.title} section={section} />
+                    <Section key={section.title + title} section={section} />
                   </Box>
                 )
               })}
