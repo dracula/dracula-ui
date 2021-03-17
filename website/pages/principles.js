@@ -69,10 +69,10 @@ class Principles extends React.Component {
                   <Paragraph>We live in a portable world, so why user interfaces should be any different? We are starting small, but we believe that Dracula UI should be available everywhere.</Paragraph>
                 </Box>
               </Box>
-            </main >
-          </Box >
-        </Box >
-      </div >
+            </main>
+          </Box>
+        </Box>
+      </div>
     )
   }
 }

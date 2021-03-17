@@ -47,7 +47,29 @@ class Installation extends React.Component {
 yarn add dracula/dracula-ui#alpha`} />
                 </Box>
                 <Box my="lg">
-                  <Heading size="heading-2">Adding to Next.js</Heading>
+                  <Heading size="heading-2">Using with HTML</Heading>
+                  <Paragraph>You can use Dracula UI with plain HTML by importing the CSS file.</Paragraph>
+                  <CodeHighlight language="html" code={`<link rel="stylesheet" href="node_modules/dracula-ui/styles/dracula-ui.css" />`} />
+                  <Paragraph>Now you can take advantage of all the classes, for example:</Paragraph>
+                  <CodeHighlight language="html" code={`<body class="drac-bg-black">`} />
+                </Box>
+                <Box my="lg">
+                  <Heading size="heading-2">Using with React</Heading>
+                  <Paragraph>You can also use Dracula UI with React by importing the JS package.</Paragraph>
+                  <CodeHighlight language="jsx" code={`import { Component } from 'react'
+import { Paragraph } from 'dracula-ui'
+
+class Footer extends Component {
+  render() {
+    return <Paragraph>Made using Dracula</Paragraph>
+  }
+}
+
+export default Footer`} />
+                </Box>
+                <Box my="lg">
+                  <Heading size="heading-2">Using with Next.js</Heading>
+                  <Paragraph>First, you need to import the CSS globally.</Paragraph>
                   <Paragraph>Go to <code>pages/_app.js</code> (or create this file if it doesn't exist yet) and add the CSS import:</Paragraph>
                   <CodeHighlight language="jsx" code={`import "dracula-ui/styles/dracula-ui.css"
 
