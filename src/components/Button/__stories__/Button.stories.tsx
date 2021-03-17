@@ -1,3 +1,4 @@
+import '../../../../dist/styles/dracula-ui.css'
 import React from 'react'
 import { Button, ButtonProps, buttonSizes, buttonVariants, Box } from '@/index'
 import { colors } from '@/base/colors'

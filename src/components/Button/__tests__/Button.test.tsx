@@ -1,18 +1,73 @@
-import {
-  ButtonColors,
-  ButtonSizes,
-  ButtonVariants
-} from '@/components/Button/__stories__/Button.stories'
 import { docs } from '@/documentation/site-docs'
 import React from 'react'
 import { snapshot } from '../../../documentation/render-component'
+import { Box } from '../../Box/Box'
 import { Button } from '../Button'
 
 docs(Button, {
-  basic: () => snapshot('Usage', () => <Button color="purple">Dracula</Button>),
+  basic: () =>
+    snapshot(
+      'Usage',
+      () => <Button color="purple">Dracula</Button>,
+      'A Dracula UI button behaves like regular HTML buttons and accepts the same contents and properties.'
+    ),
   variations: () => [
-    snapshot('Variants', ButtonVariants),
-    snapshot('Sizes', ButtonSizes),
-    snapshot('Colors', ButtonColors)
+    snapshot(
+      'Colors',
+      () => (
+        <div>
+          <Button color="purple" m="sm">
+            Purple
+          </Button>
+          <Button color="purpleCyan" m="sm">
+            Purple Cyan
+          </Button>
+        </div>
+      ),
+      'Buttons can be customized to use any of the Dracula UI theme colors, including all solid, gradient, and animated colors.'
+    ),
+    snapshot(
+      'Variants',
+      () => (
+        <Box>
+          <Button color="purple" m="sm">
+            Normal
+          </Button>
+
+          <Button variant="ghost" color="purple" m="sm">
+            Ghost
+          </Button>
+
+          <Button variant="outline" color="purple" m="sm">
+            Outline
+          </Button>
+        </Box>
+      ),
+      'Dracula UI ships with three distinct button variations that allow for different levels of hierarchy and usage.'
+    ),
+
+    snapshot(
+      'Sizes',
+      () => (
+        <Box>
+          <Button color="purple" size="xsmall" m="sm">
+            xsmall
+          </Button>
+
+          <Button color="purple" size="small" m="sm">
+            xsmall
+          </Button>
+
+          <Button color="purple" size="medium" m="sm">
+            medium
+          </Button>
+
+          <Button color="purple" size="large" m="sm">
+            large
+          </Button>
+        </Box>
+      ),
+      'Button sizes range from xsmall to large using the Dracula UI size scale.'
+    )
   ]
 })

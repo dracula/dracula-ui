@@ -2,7 +2,7 @@
 
 exports[`Site: Button Basic Usage 1`] = `
 Object {
-  "docs": "",
+  "docs": "A Dracula UI button behaves like regular HTML buttons and accepts the same contents and properties.",
   "html": "<button class=\\"drac-btn drac-bg-purple\\" color=\\"purple\\">Dracula</button>
 ",
   "react": "<Button color=\\"purple\\">Dracula</Button>;
@@ -13,520 +13,27 @@ Object {
 
 exports[`Site: Button Colors 1`] = `
 Object {
-  "docs": "",
-  "html": "<div class=\\"drac-box\\">
-  <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
-    <button class=\\"drac-btn drac-bg-white\\" color=\\"white\\" style=\\"margin: 1rem\\">
-      Normal</button
-    ><button
-      class=\\"drac-btn drac-bg-white drac-btn-outline drac-text-white\\"
-      color=\\"white\\"
-      style=\\"margin: 1rem\\"
-      variant=\\"outline\\"
-    >
-      Outline</button
-    ><button
-      class=\\"drac-btn drac-bg-white-transparent drac-btn-ghost drac-text-white\\"
-      color=\\"white\\"
-      style=\\"margin: 1rem\\"
-      variant=\\"ghost\\"
-    >
-      Ghost
-    </button>
-  </div>
-  <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
-    <button class=\\"drac-btn drac-bg-black\\" color=\\"black\\" style=\\"margin: 1rem\\">
-      Normal</button
-    ><button
-      class=\\"drac-btn drac-bg-black drac-btn-outline drac-text-black\\"
-      color=\\"black\\"
-      style=\\"margin: 1rem\\"
-      variant=\\"outline\\"
-    >
-      Outline</button
-    ><button
-      class=\\"drac-btn drac-bg-black-transparent drac-btn-ghost drac-text-black\\"
-      color=\\"black\\"
-      style=\\"margin: 1rem\\"
-      variant=\\"ghost\\"
-    >
-      Ghost
-    </button>
-  </div>
-  <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
-    <button
-      class=\\"drac-btn drac-bg-black-secondary\\"
-      color=\\"blackSecondary\\"
-      style=\\"margin: 1rem\\"
-    >
-      Normal</button
-    ><button
-      class=\\"drac-btn drac-bg-black-secondary drac-btn-outline drac-text-black-secondary\\"
-      color=\\"blackSecondary\\"
-      style=\\"margin: 1rem\\"
-      variant=\\"outline\\"
-    >
-      Outline</button
-    ><button
-      class=\\"drac-btn drac-bg-black-secondary-transparent drac-btn-ghost drac-text-black-secondary\\"
-      color=\\"blackSecondary\\"
-      style=\\"margin: 1rem\\"
-      variant=\\"ghost\\"
-    >
-      Ghost
-    </button>
-  </div>
-  <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
-    <button
-      class=\\"drac-btn drac-bg-black-light\\"
-      color=\\"blackLight\\"
-      style=\\"margin: 1rem\\"
-    >
-      Normal</button
-    ><button
-      class=\\"drac-btn drac-bg-black-light drac-btn-outline drac-text-black-light\\"
-      color=\\"blackLight\\"
-      style=\\"margin: 1rem\\"
-      variant=\\"outline\\"
-    >
-      Outline</button
-    ><button
-      class=\\"drac-btn drac-bg-black-light-transparent drac-btn-ghost drac-text-black-light\\"
-      color=\\"blackLight\\"
-      style=\\"margin: 1rem\\"
-      variant=\\"ghost\\"
-    >
-      Ghost
-    </button>
-  </div>
-  <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
-    <button class=\\"drac-btn drac-bg-cyan\\" color=\\"cyan\\" style=\\"margin: 1rem\\">
-      Normal</button
-    ><button
-      class=\\"drac-btn drac-bg-cyan drac-btn-outline drac-text-cyan\\"
-      color=\\"cyan\\"
-      style=\\"margin: 1rem\\"
-      variant=\\"outline\\"
-    >
-      Outline</button
-    ><button
-      class=\\"drac-btn drac-bg-cyan-transparent drac-btn-ghost drac-text-cyan\\"
-      color=\\"cyan\\"
-      style=\\"margin: 1rem\\"
-      variant=\\"ghost\\"
-    >
-      Ghost
-    </button>
-  </div>
-  <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
-    <button class=\\"drac-btn drac-bg-green\\" color=\\"green\\" style=\\"margin: 1rem\\">
-      Normal</button
-    ><button
-      class=\\"drac-btn drac-bg-green drac-btn-outline drac-text-green\\"
-      color=\\"green\\"
-      style=\\"margin: 1rem\\"
-      variant=\\"outline\\"
-    >
-      Outline</button
-    ><button
-      class=\\"drac-btn drac-bg-green-transparent drac-btn-ghost drac-text-green\\"
-      color=\\"green\\"
-      style=\\"margin: 1rem\\"
-      variant=\\"ghost\\"
-    >
-      Ghost
-    </button>
-  </div>
-  <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
-    <button class=\\"drac-btn drac-bg-orange\\" color=\\"orange\\" style=\\"margin: 1rem\\">
-      Normal</button
-    ><button
-      class=\\"drac-btn drac-bg-orange drac-btn-outline drac-text-orange\\"
-      color=\\"orange\\"
-      style=\\"margin: 1rem\\"
-      variant=\\"outline\\"
-    >
-      Outline</button
-    ><button
-      class=\\"drac-btn drac-bg-orange-transparent drac-btn-ghost drac-text-orange\\"
-      color=\\"orange\\"
-      style=\\"margin: 1rem\\"
-      variant=\\"ghost\\"
-    >
-      Ghost
-    </button>
-  </div>
-  <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
-    <button class=\\"drac-btn drac-bg-pink\\" color=\\"pink\\" style=\\"margin: 1rem\\">
-      Normal</button
-    ><button
-      class=\\"drac-btn drac-bg-pink drac-btn-outline drac-text-pink\\"
-      color=\\"pink\\"
-      style=\\"margin: 1rem\\"
-      variant=\\"outline\\"
-    >
-      Outline</button
-    ><button
-      class=\\"drac-btn drac-bg-pink-transparent drac-btn-ghost drac-text-pink\\"
-      color=\\"pink\\"
-      style=\\"margin: 1rem\\"
-      variant=\\"ghost\\"
-    >
-      Ghost
-    </button>
-  </div>
-  <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
-    <button class=\\"drac-btn drac-bg-purple\\" color=\\"purple\\" style=\\"margin: 1rem\\">
-      Normal</button
-    ><button
-      class=\\"drac-btn drac-bg-purple drac-btn-outline drac-text-purple\\"
-      color=\\"purple\\"
-      style=\\"margin: 1rem\\"
-      variant=\\"outline\\"
-    >
-      Outline</button
-    ><button
-      class=\\"drac-btn drac-bg-purple-transparent drac-btn-ghost drac-text-purple\\"
-      color=\\"purple\\"
-      style=\\"margin: 1rem\\"
-      variant=\\"ghost\\"
-    >
-      Ghost
-    </button>
-  </div>
-  <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
-    <button class=\\"drac-btn drac-bg-red\\" color=\\"red\\" style=\\"margin: 1rem\\">
-      Normal</button
-    ><button
-      class=\\"drac-btn drac-bg-red drac-btn-outline drac-text-red\\"
-      color=\\"red\\"
-      style=\\"margin: 1rem\\"
-      variant=\\"outline\\"
-    >
-      Outline</button
-    ><button
-      class=\\"drac-btn drac-bg-red-transparent drac-btn-ghost drac-text-red\\"
-      color=\\"red\\"
-      style=\\"margin: 1rem\\"
-      variant=\\"ghost\\"
-    >
-      Ghost
-    </button>
-  </div>
-  <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
-    <button class=\\"drac-btn drac-bg-yellow\\" color=\\"yellow\\" style=\\"margin: 1rem\\">
-      Normal</button
-    ><button
-      class=\\"drac-btn drac-bg-yellow drac-btn-outline drac-text-yellow\\"
-      color=\\"yellow\\"
-      style=\\"margin: 1rem\\"
-      variant=\\"outline\\"
-    >
-      Outline</button
-    ><button
-      class=\\"drac-btn drac-bg-yellow-transparent drac-btn-ghost drac-text-yellow\\"
-      color=\\"yellow\\"
-      style=\\"margin: 1rem\\"
-      variant=\\"ghost\\"
-    >
-      Ghost
-    </button>
-  </div>
-  <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
-    <button
-      class=\\"drac-btn drac-bg-purple-cyan\\"
-      color=\\"purpleCyan\\"
-      style=\\"margin: 1rem\\"
-    >
-      Normal</button
-    ><button
-      class=\\"drac-btn drac-bg-purple-cyan drac-btn-outline drac-text-purple-cyan\\"
-      color=\\"purpleCyan\\"
-      style=\\"margin: 1rem\\"
-      variant=\\"outline\\"
-    >
-      Outline</button
-    ><button
-      class=\\"drac-btn drac-bg-purple-cyan-transparent drac-btn-ghost drac-text-purple-cyan\\"
-      color=\\"purpleCyan\\"
-      style=\\"margin: 1rem\\"
-      variant=\\"ghost\\"
-    >
-      Ghost
-    </button>
-  </div>
-  <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
-    <button
-      class=\\"drac-btn drac-bg-yellow-pink\\"
-      color=\\"yellowPink\\"
-      style=\\"margin: 1rem\\"
-    >
-      Normal</button
-    ><button
-      class=\\"drac-btn drac-bg-yellow-pink drac-btn-outline drac-text-yellow-pink\\"
-      color=\\"yellowPink\\"
-      style=\\"margin: 1rem\\"
-      variant=\\"outline\\"
-    >
-      Outline</button
-    ><button
-      class=\\"drac-btn drac-bg-yellow-pink-transparent drac-btn-ghost drac-text-yellow-pink\\"
-      color=\\"yellowPink\\"
-      style=\\"margin: 1rem\\"
-      variant=\\"ghost\\"
-    >
-      Ghost
-    </button>
-  </div>
-  <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
-    <button
-      class=\\"drac-btn drac-bg-cyan-green\\"
-      color=\\"cyanGreen\\"
-      style=\\"margin: 1rem\\"
-    >
-      Normal</button
-    ><button
-      class=\\"drac-btn drac-bg-cyan-green drac-btn-outline drac-text-cyan-green\\"
-      color=\\"cyanGreen\\"
-      style=\\"margin: 1rem\\"
-      variant=\\"outline\\"
-    >
-      Outline</button
-    ><button
-      class=\\"drac-btn drac-bg-cyan-green-transparent drac-btn-ghost drac-text-cyan-green\\"
-      color=\\"cyanGreen\\"
-      style=\\"margin: 1rem\\"
-      variant=\\"ghost\\"
-    >
-      Ghost
-    </button>
-  </div>
-  <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
-    <button
-      class=\\"drac-btn drac-bg-pink-purple\\"
-      color=\\"pinkPurple\\"
-      style=\\"margin: 1rem\\"
-    >
-      Normal</button
-    ><button
-      class=\\"drac-btn drac-bg-pink-purple drac-btn-outline drac-text-pink-purple\\"
-      color=\\"pinkPurple\\"
-      style=\\"margin: 1rem\\"
-      variant=\\"outline\\"
-    >
-      Outline</button
-    ><button
-      class=\\"drac-btn drac-bg-pink-purple-transparent drac-btn-ghost drac-text-pink-purple\\"
-      color=\\"pinkPurple\\"
-      style=\\"margin: 1rem\\"
-      variant=\\"ghost\\"
-    >
-      Ghost
-    </button>
-  </div>
-  <div style=\\"display: flex; justify-content: space-around\\" class=\\"drac-box\\">
-    <button
-      class=\\"drac-btn drac-bg-animated\\"
-      color=\\"animated\\"
-      style=\\"margin: 1rem\\"
-    >
-      Normal</button
-    ><button
-      class=\\"drac-btn drac-bg-animated drac-btn-outline drac-text-animated\\"
-      color=\\"animated\\"
-      style=\\"margin: 1rem\\"
-      variant=\\"outline\\"
-    >
-      Outline</button
-    ><button
-      class=\\"drac-btn drac-bg-animated-transparent drac-btn-ghost drac-text-animated\\"
-      color=\\"animated\\"
-      style=\\"margin: 1rem\\"
-      variant=\\"ghost\\"
-    >
-      Ghost
-    </button>
-  </div>
+  "docs": "Buttons can be customized to use any of the Dracula UI theme colors, including all solid, gradient, and animated colors.",
+  "html": "<div>
+  <button class=\\"drac-btn drac-bg-purple drac-m-sm\\" color=\\"purple\\" m=\\"sm\\">
+    Purple</button
+  ><button
+    class=\\"drac-btn drac-bg-purple-cyan drac-m-sm\\"
+    color=\\"purpleCyan\\"
+    m=\\"sm\\"
+  >
+    Purple Cyan
+  </button>
 </div>
 ",
-  "react": "<Box>
-  <Box style={{ display: \\"flex\\", justifyContent: \\"space-around\\" }}>
-    <Button color=\\"white\\" style={{ margin: \\"1rem\\" }}>
-      Normal
-    </Button>
-    <Button color=\\"white\\" style={{ margin: \\"1rem\\" }} variant=\\"outline\\">
-      Outline
-    </Button>
-    <Button color=\\"white\\" style={{ margin: \\"1rem\\" }} variant=\\"ghost\\">
-      Ghost
-    </Button>
-  </Box>
-  <Box style={{ display: \\"flex\\", justifyContent: \\"space-around\\" }}>
-    <Button color=\\"black\\" style={{ margin: \\"1rem\\" }}>
-      Normal
-    </Button>
-    <Button color=\\"black\\" style={{ margin: \\"1rem\\" }} variant=\\"outline\\">
-      Outline
-    </Button>
-    <Button color=\\"black\\" style={{ margin: \\"1rem\\" }} variant=\\"ghost\\">
-      Ghost
-    </Button>
-  </Box>
-  <Box style={{ display: \\"flex\\", justifyContent: \\"space-around\\" }}>
-    <Button color=\\"blackSecondary\\" style={{ margin: \\"1rem\\" }}>
-      Normal
-    </Button>
-    <Button color=\\"blackSecondary\\" style={{ margin: \\"1rem\\" }} variant=\\"outline\\">
-      Outline
-    </Button>
-    <Button color=\\"blackSecondary\\" style={{ margin: \\"1rem\\" }} variant=\\"ghost\\">
-      Ghost
-    </Button>
-  </Box>
-  <Box style={{ display: \\"flex\\", justifyContent: \\"space-around\\" }}>
-    <Button color=\\"blackLight\\" style={{ margin: \\"1rem\\" }}>
-      Normal
-    </Button>
-    <Button color=\\"blackLight\\" style={{ margin: \\"1rem\\" }} variant=\\"outline\\">
-      Outline
-    </Button>
-    <Button color=\\"blackLight\\" style={{ margin: \\"1rem\\" }} variant=\\"ghost\\">
-      Ghost
-    </Button>
-  </Box>
-  <Box style={{ display: \\"flex\\", justifyContent: \\"space-around\\" }}>
-    <Button color=\\"cyan\\" style={{ margin: \\"1rem\\" }}>
-      Normal
-    </Button>
-    <Button color=\\"cyan\\" style={{ margin: \\"1rem\\" }} variant=\\"outline\\">
-      Outline
-    </Button>
-    <Button color=\\"cyan\\" style={{ margin: \\"1rem\\" }} variant=\\"ghost\\">
-      Ghost
-    </Button>
-  </Box>
-  <Box style={{ display: \\"flex\\", justifyContent: \\"space-around\\" }}>
-    <Button color=\\"green\\" style={{ margin: \\"1rem\\" }}>
-      Normal
-    </Button>
-    <Button color=\\"green\\" style={{ margin: \\"1rem\\" }} variant=\\"outline\\">
-      Outline
-    </Button>
-    <Button color=\\"green\\" style={{ margin: \\"1rem\\" }} variant=\\"ghost\\">
-      Ghost
-    </Button>
-  </Box>
-  <Box style={{ display: \\"flex\\", justifyContent: \\"space-around\\" }}>
-    <Button color=\\"orange\\" style={{ margin: \\"1rem\\" }}>
-      Normal
-    </Button>
-    <Button color=\\"orange\\" style={{ margin: \\"1rem\\" }} variant=\\"outline\\">
-      Outline
-    </Button>
-    <Button color=\\"orange\\" style={{ margin: \\"1rem\\" }} variant=\\"ghost\\">
-      Ghost
-    </Button>
-  </Box>
-  <Box style={{ display: \\"flex\\", justifyContent: \\"space-around\\" }}>
-    <Button color=\\"pink\\" style={{ margin: \\"1rem\\" }}>
-      Normal
-    </Button>
-    <Button color=\\"pink\\" style={{ margin: \\"1rem\\" }} variant=\\"outline\\">
-      Outline
-    </Button>
-    <Button color=\\"pink\\" style={{ margin: \\"1rem\\" }} variant=\\"ghost\\">
-      Ghost
-    </Button>
-  </Box>
-  <Box style={{ display: \\"flex\\", justifyContent: \\"space-around\\" }}>
-    <Button color=\\"purple\\" style={{ margin: \\"1rem\\" }}>
-      Normal
-    </Button>
-    <Button color=\\"purple\\" style={{ margin: \\"1rem\\" }} variant=\\"outline\\">
-      Outline
-    </Button>
-    <Button color=\\"purple\\" style={{ margin: \\"1rem\\" }} variant=\\"ghost\\">
-      Ghost
-    </Button>
-  </Box>
-  <Box style={{ display: \\"flex\\", justifyContent: \\"space-around\\" }}>
-    <Button color=\\"red\\" style={{ margin: \\"1rem\\" }}>
-      Normal
-    </Button>
-    <Button color=\\"red\\" style={{ margin: \\"1rem\\" }} variant=\\"outline\\">
-      Outline
-    </Button>
-    <Button color=\\"red\\" style={{ margin: \\"1rem\\" }} variant=\\"ghost\\">
-      Ghost
-    </Button>
-  </Box>
-  <Box style={{ display: \\"flex\\", justifyContent: \\"space-around\\" }}>
-    <Button color=\\"yellow\\" style={{ margin: \\"1rem\\" }}>
-      Normal
-    </Button>
-    <Button color=\\"yellow\\" style={{ margin: \\"1rem\\" }} variant=\\"outline\\">
-      Outline
-    </Button>
-    <Button color=\\"yellow\\" style={{ margin: \\"1rem\\" }} variant=\\"ghost\\">
-      Ghost
-    </Button>
-  </Box>
-  <Box style={{ display: \\"flex\\", justifyContent: \\"space-around\\" }}>
-    <Button color=\\"purpleCyan\\" style={{ margin: \\"1rem\\" }}>
-      Normal
-    </Button>
-    <Button color=\\"purpleCyan\\" style={{ margin: \\"1rem\\" }} variant=\\"outline\\">
-      Outline
-    </Button>
-    <Button color=\\"purpleCyan\\" style={{ margin: \\"1rem\\" }} variant=\\"ghost\\">
-      Ghost
-    </Button>
-  </Box>
-  <Box style={{ display: \\"flex\\", justifyContent: \\"space-around\\" }}>
-    <Button color=\\"yellowPink\\" style={{ margin: \\"1rem\\" }}>
-      Normal
-    </Button>
-    <Button color=\\"yellowPink\\" style={{ margin: \\"1rem\\" }} variant=\\"outline\\">
-      Outline
-    </Button>
-    <Button color=\\"yellowPink\\" style={{ margin: \\"1rem\\" }} variant=\\"ghost\\">
-      Ghost
-    </Button>
-  </Box>
-  <Box style={{ display: \\"flex\\", justifyContent: \\"space-around\\" }}>
-    <Button color=\\"cyanGreen\\" style={{ margin: \\"1rem\\" }}>
-      Normal
-    </Button>
-    <Button color=\\"cyanGreen\\" style={{ margin: \\"1rem\\" }} variant=\\"outline\\">
-      Outline
-    </Button>
-    <Button color=\\"cyanGreen\\" style={{ margin: \\"1rem\\" }} variant=\\"ghost\\">
-      Ghost
-    </Button>
-  </Box>
-  <Box style={{ display: \\"flex\\", justifyContent: \\"space-around\\" }}>
-    <Button color=\\"pinkPurple\\" style={{ margin: \\"1rem\\" }}>
-      Normal
-    </Button>
-    <Button color=\\"pinkPurple\\" style={{ margin: \\"1rem\\" }} variant=\\"outline\\">
-      Outline
-    </Button>
-    <Button color=\\"pinkPurple\\" style={{ margin: \\"1rem\\" }} variant=\\"ghost\\">
-      Ghost
-    </Button>
-  </Box>
-  <Box style={{ display: \\"flex\\", justifyContent: \\"space-around\\" }}>
-    <Button color=\\"animated\\" style={{ margin: \\"1rem\\" }}>
-      Normal
-    </Button>
-    <Button color=\\"animated\\" style={{ margin: \\"1rem\\" }} variant=\\"outline\\">
-      Outline
-    </Button>
-    <Button color=\\"animated\\" style={{ margin: \\"1rem\\" }} variant=\\"ghost\\">
-      Ghost
-    </Button>
-  </Box>
-</Box>;
+  "react": "<div>
+  <Button color=\\"purple\\" m=\\"sm\\">
+    Purple
+  </Button>
+  <Button color=\\"purpleCyan\\" m=\\"sm\\">
+    Purple Cyan
+  </Button>
+</div>;
 ",
   "title": "Colors",
 }
@@ -534,49 +41,44 @@ Object {
 
 exports[`Site: Button Sizes 1`] = `
 Object {
-  "docs": "",
+  "docs": "Button sizes range from xsmall to large using the Dracula UI size scale.",
   "html": "<div class=\\"drac-box\\">
-  <div style=\\"margin-bottom: 10px\\" class=\\"drac-box\\">
-    <button class=\\"drac-btn drac-bg-purple drac-btn-lg\\" color=\\"purple\\">
-      large
-    </button>
-  </div>
-  <div style=\\"margin-bottom: 10px\\" class=\\"drac-box\\">
-    <button class=\\"drac-btn drac-bg-purple\\" color=\\"purple\\">medium</button>
-  </div>
-  <div style=\\"margin-bottom: 10px\\" class=\\"drac-box\\">
-    <button class=\\"drac-btn drac-bg-purple drac-btn-sm\\" color=\\"purple\\">
-      small
-    </button>
-  </div>
-  <div style=\\"margin-bottom: 10px\\" class=\\"drac-box\\">
-    <button class=\\"drac-btn drac-bg-purple drac-btn-xs\\" color=\\"purple\\">
-      xsmall
-    </button>
-  </div>
+  <button
+    class=\\"drac-btn drac-bg-purple drac-btn-xs drac-m-sm\\"
+    color=\\"purple\\"
+    m=\\"sm\\"
+  >
+    xsmall</button
+  ><button
+    class=\\"drac-btn drac-bg-purple drac-btn-sm drac-m-sm\\"
+    color=\\"purple\\"
+    m=\\"sm\\"
+  >
+    xsmall</button
+  ><button class=\\"drac-btn drac-bg-purple drac-m-sm\\" color=\\"purple\\" m=\\"sm\\">
+    medium</button
+  ><button
+    class=\\"drac-btn drac-bg-purple drac-btn-lg drac-m-sm\\"
+    color=\\"purple\\"
+    m=\\"sm\\"
+  >
+    large
+  </button>
 </div>
 ",
   "react": "<Box>
-  <Box style={{ marginBottom: 10 }}>
-    <Button color=\\"purple\\" size=\\"large\\">
-      large
-    </Button>
-  </Box>
-  <Box style={{ marginBottom: 10 }}>
-    <Button color=\\"purple\\" size=\\"medium\\">
-      medium
-    </Button>
-  </Box>
-  <Box style={{ marginBottom: 10 }}>
-    <Button color=\\"purple\\" size=\\"small\\">
-      small
-    </Button>
-  </Box>
-  <Box style={{ marginBottom: 10 }}>
-    <Button color=\\"purple\\" size=\\"xsmall\\">
-      xsmall
-    </Button>
-  </Box>
+  <Button color=\\"purple\\" size=\\"xsmall\\" m=\\"sm\\">
+    xsmall
+  </Button>
+  <Button color=\\"purple\\" size=\\"small\\" m=\\"sm\\">
+    xsmall
+  </Button>
+  <Button color=\\"purple\\" size=\\"medium\\" m=\\"sm\\">
+    medium
+  </Button>
+  <Button color=\\"purple\\" size=\\"large\\" m=\\"sm\\">
+    large
+  </Button>
 </Box>;
 ",
   "title": "Sizes",
@@ -585,49 +87,37 @@ Object {
 
 exports[`Site: Button Variants 1`] = `
 Object {
-  "docs": "",
+  "docs": "Dracula UI ships with three distinct button variations that allow for different levels of hierarchy and usage.",
   "html": "<div class=\\"drac-box\\">
-  <div style=\\"margin-bottom: 10px\\" class=\\"drac-box\\">
-    <button class=\\"drac-btn drac-bg-purple\\" variant=\\"normal\\" color=\\"purple\\">
-      normal
-    </button>
-  </div>
-  <div style=\\"margin-bottom: 10px\\" class=\\"drac-box\\">
-    <button
-      class=\\"drac-btn drac-bg-purple drac-btn-outline drac-text-purple\\"
-      variant=\\"outline\\"
-      color=\\"purple\\"
-    >
-      outline
-    </button>
-  </div>
-  <div style=\\"margin-bottom: 10px\\" class=\\"drac-box\\">
-    <button
-      class=\\"drac-btn drac-bg-purple-transparent drac-btn-ghost drac-text-purple\\"
-      variant=\\"ghost\\"
-      color=\\"purple\\"
-    >
-      ghost
-    </button>
-  </div>
+  <button class=\\"drac-btn drac-bg-purple drac-m-sm\\" color=\\"purple\\" m=\\"sm\\">
+    Normal</button
+  ><button
+    class=\\"drac-btn drac-bg-purple-transparent drac-btn-ghost drac-text-purple drac-m-sm\\"
+    variant=\\"ghost\\"
+    color=\\"purple\\"
+    m=\\"sm\\"
+  >
+    Ghost</button
+  ><button
+    class=\\"drac-btn drac-bg-purple drac-btn-outline drac-text-purple drac-m-sm\\"
+    variant=\\"outline\\"
+    color=\\"purple\\"
+    m=\\"sm\\"
+  >
+    Outline
+  </button>
 </div>
 ",
   "react": "<Box>
-  <Box style={{ marginBottom: 10 }}>
-    <Button variant=\\"normal\\" color=\\"purple\\">
-      normal
-    </Button>
-  </Box>
-  <Box style={{ marginBottom: 10 }}>
-    <Button variant=\\"outline\\" color=\\"purple\\">
-      outline
-    </Button>
-  </Box>
-  <Box style={{ marginBottom: 10 }}>
-    <Button variant=\\"ghost\\" color=\\"purple\\">
-      ghost
-    </Button>
-  </Box>
+  <Button color=\\"purple\\" m=\\"sm\\">
+    Normal
+  </Button>
+  <Button variant=\\"ghost\\" color=\\"purple\\" m=\\"sm\\">
+    Ghost
+  </Button>
+  <Button variant=\\"outline\\" color=\\"purple\\" m=\\"sm\\">
+    Outline
+  </Button>
 </Box>;
 ",
   "title": "Variants",
