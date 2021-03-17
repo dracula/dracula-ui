@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Site: Card Basic Usage 1`] = `
+Object {
+  "docs": "A Card is analogous to an HTML div and can contain any other component. Use Cards when you want to add hierarchy or highlight parts of your content.",
+  "html": "<div color=\\"purple\\" p=\\"sm\\" class=\\"drac-box drac-card drac-bg-purple drac-p-sm\\">
+  <span class=\\"drac-text drac-text-white\\">Dracula</span>
+</div>
+",
+  "react": "<Card color=\\"purple\\" p=\\"sm\\">
+  <Text>Dracula</Text>
+</Card>;
+",
+  "title": "Usage",
+}
+`;
+
+exports[`Site: Card Colors 1`] = `
+Object {
+  "docs": "Cards can be customized to use any of the Dracula UI theme colors, including all solid, gradient, and animated colors.",
+  "html": "<div
+  color=\\"pinkPurple\\"
+  p=\\"sm\\"
+  class=\\"drac-box drac-card drac-bg-pink-purple drac-p-sm\\"
+>
+  <span class=\\"drac-text drac-text-white\\">Pink Purple</span>
+</div>
+",
+  "react": "<Card color=\\"pinkPurple\\" p=\\"sm\\">
+  <Text>Pink Purple</Text>
+</Card>;
+",
+  "title": "Colors",
+}
+`;
+
+exports[`Site: Card Spacing 1`] = `
+Object {
+  "docs": "Cards come with pre defined spacing primitives for padding and margin that allow for customizing the spacing inside and around Cardes.",
+  "html": "<div>
+  <div
+    color=\\"yellowPink\\"
+    p=\\"xs\\"
+    class=\\"drac-box drac-card drac-bg-yellow-pink drac-p-xs\\"
+  >
+    <span color=\\"black\\" class=\\"drac-text drac-text-black\\">xs padding</span>
+  </div>
+  <div
+    color=\\"purpleCyan\\"
+    p=\\"sm\\"
+    class=\\"drac-box drac-card drac-bg-purple-cyan drac-p-sm\\"
+  >
+    <span color=\\"black\\" class=\\"drac-text drac-text-black\\">sm padding</span>
+  </div>
+  <div
+    color=\\"pinkPurple\\"
+    p=\\"md\\"
+    class=\\"drac-box drac-card drac-bg-pink-purple drac-p-md\\"
+  >
+    <span color=\\"black\\" class=\\"drac-text drac-text-black\\">medium padding</span>
+  </div>
+  <div
+    color=\\"yellowPink\\"
+    m=\\"xs\\"
+    class=\\"drac-box drac-card drac-bg-yellow-pink drac-m-xs\\"
+  >
+    <span color=\\"black\\" class=\\"drac-text drac-text-black\\">xs margin</span>
+  </div>
+  <div
+    color=\\"purpleCyan\\"
+    m=\\"sm\\"
+    class=\\"drac-box drac-card drac-bg-purple-cyan drac-m-sm\\"
+  >
+    <span color=\\"black\\" class=\\"drac-text drac-text-black\\">sm margin</span>
+  </div>
+  <div
+    color=\\"pinkPurple\\"
+    m=\\"md\\"
+    class=\\"drac-box drac-card drac-bg-pink-purple drac-m-md\\"
+  >
+    <span color=\\"black\\" class=\\"drac-text drac-text-black\\">medium margin</span>
+  </div>
+</div>
+",
+  "react": "<div>
+  <Card color=\\"yellowPink\\" p=\\"xs\\">
+    <Text color=\\"black\\">xs padding</Text>
+  </Card>
+  <Card color=\\"purpleCyan\\" p=\\"sm\\">
+    <Text color=\\"black\\">sm padding</Text>
+  </Card>
+  <Card color=\\"pinkPurple\\" p=\\"md\\">
+    <Text color=\\"black\\">medium padding</Text>
+  </Card>
+  <Card color=\\"yellowPink\\" m=\\"xs\\">
+    <Text color=\\"black\\">xs margin</Text>
+  </Card>
+  <Card color=\\"purpleCyan\\" m=\\"sm\\">
+    <Text color=\\"black\\">sm margin</Text>
+  </Card>
+  <Card color=\\"pinkPurple\\" m=\\"md\\">
+    <Text color=\\"black\\">medium margin</Text>
+  </Card>
+</div>;
+",
+  "title": "Spacing",
+}
+`;
+
+exports[`Site: Card Variants: subtle 1`] = `
+Object {
+  "docs": "Use variant=\\"subtle\\" to create discrete or secondary cards",
+  "html": "<div>
+  <div
+    variant=\\"subtle\\"
+    color=\\"pink\\"
+    p=\\"md\\"
+    m=\\"md\\"
+    class=\\"drac-box drac-card drac-card-subtle drac-border-pink drac-bg-pink drac-p-md drac-m-md\\"
+  >
+    <span color=\\"pink\\" class=\\"drac-text drac-text-pink\\">Subtle Card</span>
+  </div>
+</div>
+",
+  "react": "<div>
+  <Card variant=\\"subtle\\" color=\\"pink\\" p=\\"md\\" m=\\"md\\">
+    <Text color=\\"pink\\">Subtle Card</Text>
+  </Card>
+</div>;
+",
+  "title": "Variants: subtle",
+}
+`;

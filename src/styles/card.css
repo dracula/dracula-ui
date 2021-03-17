@@ -1,11 +1,6 @@
 .card {
   border-radius: var(--rounded-lg);
-  /* box-shadow: -2px var(--glow-spacing-x) var(--glow-spacing-y) var(--glowColor); */
-  background: #16181d;
-}
-
-.card-portrait {
-  max-width: 30rem;
+  box-shadow: -2px var(--glow-spacing-x) var(--glow-spacing-y) var(--glowColor);
 }
 
 .card-subtle {

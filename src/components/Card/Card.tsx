@@ -1,6 +1,6 @@
 import cx from 'classnames/dedupe'
 import React from 'react'
-// import { glowColors } from '../../base/colors'
+import { borderColors, colors, glowColors } from '../../base/colors'
 import { Box, BoxProps } from '../../components/Box/Box'
 
 export const cardOrientations = {
@@ -18,13 +18,6 @@ export type CardVariantProps = keyof typeof cardVariants
 /** Card Props */
 export interface CardProps extends BoxProps {
   /**
-   * Shortcut property that makes it convenient to orient a card vertically or horizontally.
-   * `normal` -> Orients the Card horizontally in landscape format.
-   * `portrait` -> Orients the Card vertically.
-   */
-  orientation?: CardOrientationProps
-
-  /**
    * The Card display variant.
    * `normal` -> Applies the chosen background color with dark text.
    * `subtle` -> Inverts the theme color, and adds a slight glow to the Card. Use this when you don't want all your cards to stand out.
@@ -40,12 +33,14 @@ export const Card: React.FC<CardProps> = (props: CardProps) => {
   const classNames = cx(
     'drac-card',
     props.className,
-    props.orientation && cardOrientations[props.orientation],
     props.variant && cardVariants[props.variant],
+
     // apply border color based on theme color
     // @ts-ignore TODO: make sure border and background colors match
-    // props.color && props.variant && borderColors[props.color],
-    // props.glowColor && glowColors[props.glowColor]
+    props.color && props.variant !== 'subtle' && colors[props.color],
+    // @ts-ignore TODO: make sure border and background colors match
+    props.color && props.variant === 'subtle' && borderColors[props.color],
+    props.glowColor && glowColors[props.glowColor]
   )
 
   return (
