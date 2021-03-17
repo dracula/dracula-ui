@@ -12,8 +12,13 @@ class Tabs extends Component {
         { label: "Preview", panel: this.props.section.html },
         { label: "HTML", panel: this.props.section.html },
         { label: "React", panel: this.props.section.react }
-      ]
+      ],
+      selectedTab: 0
     }
+  }
+
+  onChangeSelectedTab(index) {
+    this.setState({ selectedTab: index })
   }
 
   renderLabels() {
@@ -22,12 +27,12 @@ class Tabs extends Component {
         <li
           key={index}
           className={
-            this.props.selectedTab === index ? styles.tabActive : styles.tab
+            this.state.selectedTab === index ? styles.tabActive : styles.tab
           }
         >
           <a
             className="drac-tab-link drac-text"
-            onClick={() => this.props.onChangeSelectedTab(index)}
+            onClick={() => this.onChangeSelectedTab(index)}
           >
             {option.label}
           </a>
@@ -42,7 +47,7 @@ class Tabs extends Component {
         <div
           key={index}
           className={
-            this.props.selectedTab === index
+            this.state.selectedTab === index
               ? styles.tabPanelActive
               : styles.tabPanel
           }
@@ -55,16 +60,16 @@ class Tabs extends Component {
 
   renderPanel(index, option) {
     if (index === 0) {
-      return <Box
-        className={styles.usage}
-        dangerouslySetInnerHTML={{ __html: option.panel }}
-        style={{ overflow: "auto", maxHeight: 300 }}
-      />
-    }
-    else if (index === 1) {
+      return (
+        <Box
+          className={styles.usage}
+          dangerouslySetInnerHTML={{ __html: option.panel }}
+          style={{ overflow: "auto", maxHeight: 300 }}
+        />
+      )
+    } else if (index === 1) {
       return <CodeHighlight code={option.panel} language={"html"} />
-    }
-    else if (index === 2) {
+    } else if (index === 2) {
       return <CodeHighlight code={option.panel} language={"jsx"} />
     }
   }

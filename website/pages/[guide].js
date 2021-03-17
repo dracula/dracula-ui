@@ -66,7 +66,7 @@ function DocsOverview({ sections }) {
   )
 }
 
-function Section({ section, selectedTab, onChangeSelectedTab }) {
+function Section({ section }) {
   return (
     <Box>
       <Link
@@ -82,71 +82,54 @@ function Section({ section, selectedTab, onChangeSelectedTab }) {
         <Paragraph size="md">{section.description}</Paragraph>
       )}
 
-      <Tabs
-        selectedTab={selectedTab}
-        onChangeSelectedTab={onChangeSelectedTab}
-        section={section}
-      />
+      <Tabs section={section} />
     </Box>
   )
 }
 
-class Guide extends React.Component {
-  state = {
-    selectedTab: 0
-  }
+function Guide({ query }) {
+  const { title, description, sections, docgen } = query
 
-  onChangeSelectedTab(index) {
-    this.setState({ selectedTab: index })
-  }
+  return (
+    <Box>
+      <Head>
+        <title>{title}</title>
+        <meta content={title} property="og:title" />
+        <meta content={description} name="description" />
+        <meta content={description} property="og:description" />
+        <meta content="Netto Farah &amp; Zeno Rocha" name="author" />
+      </Head>
 
-  render() {
-    const { title, description, sections, docgen } = this.props.query;
+      <Box className={styles.container} style={{ minHeight: "100vh" }}>
+        <Navigation selected={title} />
 
-    return (
-      <Box>
-        <Head>
-          <title>{title}</title>
-          <meta content={title} property="og:title" />
-          <meta content={description} name="description" />
-          <meta content={description} property="og:description" />
-          <meta content="Netto Farah &amp; Zeno Rocha" name="author" />
-        </Head>
+        <Box className={styles.content} py="lg">
+          <main className={styles.center}>
+            <DocsOverview sections={sections} />
 
-        <Box className={styles.container} style={{ minHeight: "100vh" }}>
-          <Navigation selected={title} />
+            <Box>
+              <Heading size="heading-1">{title}</Heading>
+              <Paragraph className={styles.description} size="md">
+                {description}
+              </Paragraph>
 
-          <Box className={styles.content} py="lg">
-            <main className={styles.center}>
-              <DocsOverview sections={sections} />
+              {sections.map((section) => {
+                return (
+                  <Box key={section.title} my="lg">
+                    <Section key={section.title} section={section} />
+                  </Box>
+                )
+              })}
 
-              <Box>
-                <Heading size="heading-1">{title}</Heading>
-                <Paragraph className={styles.description} size="md">{description}</Paragraph>
-
-                {sections.map((section) => {
-                  return (
-                    <Box key={section.title} my="lg">
-                      <Section
-                        key={section.title}
-                        section={section}
-                        onChangeSelectedTab={this.onChangeSelectedTab.bind(this)}
-                        selectedTab={this.state.selectedTab}
-                      />
-                    </Box>
-                  )
-                })}
-
-                <Box mt="lg">
-                  <Properties docGenProps={docgen.props} />
-                </Box>
+              <Box mt="lg">
+                <Properties docGenProps={docgen.props} />
               </Box>
-            </main>
-          </Box>
+            </Box>
+          </main>
         </Box>
       </Box>
-    )
-  }
+    </Box>
+  )
 }
 
 Guide.Layout = Theme
