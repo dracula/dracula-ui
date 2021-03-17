@@ -28,3 +28,7 @@
 .usage {
   background-color: #282a36;
 }
+
+.image {
+  max-width: 100%;
+}
