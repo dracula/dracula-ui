@@ -47,7 +47,7 @@ Object {
 }
 `;
 
-exports[`Site: Link Sizes / weights 1`] = `
+exports[`Site: Link Sizes & Weights 1`] = `
 Object {
   "docs": "Link sizes can be customized with pre defined sizes or using regular HTML styles or CSS classes.",
   "html": "<div style=\\"display: flex; flex-direction: column\\">
@@ -101,6 +101,6 @@ Object {
   </Link>
 </div>;
 ",
-  "title": "Sizes / weights",
+  "title": "Sizes & Weights",
 }
 `;
