@@ -1,5 +1,6 @@
 .link {
   text-decoration: none;
+  color: var(--accentColor);
 }
 
 @each $color in black, white, cyan, green, orange, pink, purple, red, yellow {

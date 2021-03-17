@@ -23,6 +23,7 @@
   padding-right: 5px;
   text-align: right;
   width: 30px;
+  color: var(--accentColor);
 }
 
 @each $color in black, blackSecondary, white, cyan, green, orange, pink, purple, red, yellow {

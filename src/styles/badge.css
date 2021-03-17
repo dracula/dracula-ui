@@ -3,6 +3,7 @@
   border: none;
   border-radius: var(--rounded-lg);
   text-transform: uppercase;
+  background-color: var(--accentColor);
 }
 
 .badge .text {

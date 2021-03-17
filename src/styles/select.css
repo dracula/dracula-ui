@@ -1,4 +1,5 @@
 .select {
+  border-color: var(--accentColor);
   border-radius: var(--rounded-lg);
   background: var(--blackSecondary);
   border: 0.3rem solid transparent;

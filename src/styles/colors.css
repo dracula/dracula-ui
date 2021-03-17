@@ -58,6 +58,16 @@
     --red-$(opacity)0: hsl(10, 100%, 75%, 0.$(opacity));
     --yellow-$(opacity)0: hsl(60, 100%, 75%, 0.$(opacity));
   }
+
+  --accentColor: var(--purple);
+
+  @each $from, $to in (purple, yellow, cyan, pink), (cyan, pink,  green, purple) {
+    --$(from)-$(to): linear-gradient(
+        var(--gradientDegree),
+        var(--$(from)) 0%,
+        var(--$(to)) 100%
+      );
+  }
 }
 
 @each $from, $to in (purple, yellow, cyan, pink), (cyan, pink,  green, purple) {

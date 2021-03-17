@@ -1,6 +1,8 @@
 .table {
   border-collapse: collapse;
   width: 100%;
+
+  border-color: var(--accentColor);
 }
 
 .table th {

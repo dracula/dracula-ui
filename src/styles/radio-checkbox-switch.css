@@ -1,7 +1,7 @@
 .checkbox,
 .radio {
   --active-inner: var(--white);
-  --background: var(--white);
+  --background: var(--accentColor);
   --disabled: var(--blackSecondary);
   --disabled-inner: var(--blackTernary);
   appearance: none;

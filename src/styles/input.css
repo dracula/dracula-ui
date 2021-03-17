@@ -7,6 +7,7 @@
   border: 0.3rem solid transparent;
   transition: 0.3s ease-in-out all;
   -webkit-appearance: textfield;
+  border-color: var(--accentColor);
 }
 
 .input:focus {
@@ -22,7 +23,9 @@
   border-color: var(--blackTernary);
 }
 
-@each $color in black, blackSecondary, white, cyan, green, orange, pink, purple, red, yellow {
+@each $color in black, blackSecondary, white, cyan, green, orange, pink, purple,
+  red, yellow
+{
   .input-outline.input-$(color),
   .input-outline.input-$(color):focus,
   .input.input-$(color):focus {
