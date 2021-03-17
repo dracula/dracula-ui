@@ -19,6 +19,11 @@ export interface LinkProps
     PaddingMixin,
     MarginMixin {
   /**
+   * The path to link this anchor to.
+   */
+  href?: string
+
+  /**
    * Controls the size of the link based on pre-configured Dracula UI sizes.
    * Options: `xsmall`, `small`, `medium`, `large`
    */
@@ -62,7 +67,7 @@ export const Link = (props: LinkProps) => {
       textSizes[props.size ?? 'medium'],
       textWeights[props.weight ?? 'normal'],
       textColors[props.color ?? 'white'],
-      linkHoverColors[props.hoverColor ?? 'white'],
+      linkHoverColors[props.hoverColor ?? 'purple'],
       ...paddingMixin(props),
       ...marginMixin(props)
     )
