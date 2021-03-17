@@ -3,7 +3,7 @@
   "type": "page",
   "id": "Avatar",
   "name": "Avatar",
-  "last_updated": "2021-03-16T23:22:42.678Z",
+  "last_updated": "2021-03-16T23:59:25.718Z",
   "last_updated_by": "System",
   "description": "The Avatar component is used to represent a user.\n\nIt displays a profile picture, or falls back to the user's initials\nif a profile pic is not provided.",
   "related_entity_ids": [],
@@ -17,7 +17,7 @@
   },
   "ext_com_draculaui_variations": [
     {
-      "title": "basic usage",
+      "title": "Usage",
       "html": "<span\n  class=\"drac-avatar drac-bg-green-transparent drac-text-green\"\n  style=\"\n    background-image: url(https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg);\n  \"\n></span>\n",
       "react": "<Avatar\n  title=\"Netto Farah\"\n  src=\"https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg\"\n/>;\n",
       "docs": "The most basic instance of an Avatar requires a src image and a title to be used for accessibility or as a fallback in case the image can't be loaded.",
@@ -25,44 +25,28 @@
       "svgData": "./dsp/assets/svgs/Avatar.svg"
     },
     {
-      "title": "border: normal",
-      "html": "<span class=\"drac-avatar drac-bg-green-transparent drac-text-green\"\n  ><span color=\"white\" class=\"drac-text drac-text-white\">NF</span></span\n>\n",
-      "react": "<Avatar title=\"Netto Farah\" borderVariant=\"normal\" />;\n",
-      "docs": "A border variant allows for customization of the border width of an Avatar, or for an Avatar to be rendered without a border.",
-      "screenshot": "./dsp/assets/Avatarborder: normal.png",
-      "svgData": "./dsp/assets/svgs/Avatarborder: normal.svg"
-    },
-    {
-      "title": "border: large",
-      "html": "<span\n  class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-lg-stroke\"\n  ><span color=\"white\" class=\"drac-text drac-text-white\">NF</span></span\n>\n",
-      "react": "<Avatar title=\"Netto Farah\" borderVariant=\"large\" />;\n",
-      "docs": "A border variant allows for customization of the border width of an Avatar, or for an Avatar to be rendered without a border.",
-      "screenshot": "./dsp/assets/Avatarborder: large.png",
-      "svgData": "./dsp/assets/svgs/Avatarborder: large.svg"
-    },
-    {
-      "title": "border: none",
-      "html": "<span\n  class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-no-border\"\n  ><span color=\"white\" class=\"drac-text drac-text-white\">NF</span></span\n>\n",
-      "react": "<Avatar title=\"Netto Farah\" borderVariant=\"none\" />;\n",
-      "docs": "A border variant allows for customization of the border width of an Avatar, or for an Avatar to be rendered without a border.",
-      "screenshot": "./dsp/assets/Avatarborder: none.png",
-      "svgData": "./dsp/assets/svgs/Avatarborder: none.svg"
-    },
-    {
-      "title": "Custom variants",
+      "title": "Variants",
       "html": "<div>\n  <span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-subtle\"\n    ><span color=\"white\" class=\"drac-text drac-text-white\">ZR</span></span\n  ><span class=\"drac-avatar drac-bg-green-transparent drac-text-green\"\n    ><span color=\"white\" class=\"drac-text drac-text-white\">NF</span></span\n  >\n</div>\n",
       "react": "<div>\n  <Avatar title=\"Zeno Rocha\" variant=\"subtle\" />\n  <Avatar title=\"Netto Farah\" variant=\"normal\" />\n</div>;\n",
       "docs": "Avatars accept multiple variants, which can be used to render a more subtle variation of the Avatar component.",
-      "screenshot": "./dsp/assets/AvatarCustom variants.png",
-      "svgData": "./dsp/assets/svgs/AvatarCustom variants.svg"
+      "screenshot": "./dsp/assets/AvatarVariants.png",
+      "svgData": "./dsp/assets/svgs/AvatarVariants.svg"
     },
     {
-      "title": "Custom colors",
+      "title": "Borders",
+      "html": "<div>\n  <span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-lg-stroke\"\n    ><span color=\"white\" class=\"drac-text drac-text-white\">NF</span></span\n  ><span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-no-border\"\n    ><span color=\"white\" class=\"drac-text drac-text-white\">NF</span></span\n  >\n</div>\n",
+      "react": "<div>\n  <Avatar title=\"Netto Farah\" borderVariant=\"large\" />\n  <Avatar title=\"Netto Farah\" borderVariant=\"none\" />\n</div>;\n",
+      "docs": "A border variant allows for customization of the border width of an Avatar, or for an Avatar to be rendered without a border.",
+      "screenshot": "./dsp/assets/AvatarBorders.png",
+      "svgData": "./dsp/assets/svgs/AvatarBorders.svg"
+    },
+    {
+      "title": "Colors",
       "html": "<div>\n  <span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green\"\n    color=\"cyan\"\n    ><span color=\"white\" class=\"drac-text drac-text-white\">NF</span></span\n  >\n</div>\n",
       "react": "<div>\n  <Avatar title=\"Netto Farah\" color=\"cyan\" />\n</div>;\n",
       "docs": "The Avatar component accepts a *color* param that allows for customizing the background and accent color for an Avatar.",
-      "screenshot": "./dsp/assets/AvatarCustom colors.png",
-      "svgData": "./dsp/assets/svgs/AvatarCustom colors.svg"
+      "screenshot": "./dsp/assets/AvatarColors.png",
+      "svgData": "./dsp/assets/svgs/AvatarColors.svg"
     }
   ],
   "ext_com_draculaui_props": {

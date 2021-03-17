@@ -24,10 +24,7 @@ export const roundedBorders = {
 /**
  * Box Props
  */
-export interface BoxProps<K extends keyof Element = 'div'>
-  extends AllHTMLAttributes<K>,
-    PaddingMixin,
-    MarginMixin {
+export type BoxProps<K extends keyof Element = 'div'> = {
   /** The background color. */
   color?: keyof typeof colors
 
@@ -39,7 +36,9 @@ export interface BoxProps<K extends keyof Element = 'div'>
 
   /** The HTML element to be used */
   as?: K
-}
+} & AllHTMLAttributes<K> &
+  PaddingMixin &
+  MarginMixin
 
 /**
  * Box is the most primitive component of Dracula UI.

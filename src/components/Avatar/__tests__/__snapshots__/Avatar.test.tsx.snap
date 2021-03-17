@@ -15,11 +15,33 @@ Object {
   src=\\"https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg\\"
 />;
 ",
-  "title": "basic usage",
+  "title": "Usage",
 }
 `;
 
-exports[`Site: Avatar Custom colors 1`] = `
+exports[`Site: Avatar Borders 1`] = `
+Object {
+  "docs": "A border variant allows for customization of the border width of an Avatar, or for an Avatar to be rendered without a border.",
+  "html": "<div>
+  <span
+    class=\\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-lg-stroke\\"
+    ><span color=\\"white\\" class=\\"drac-text drac-text-white\\">NF</span></span
+  ><span
+    class=\\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-no-border\\"
+    ><span color=\\"white\\" class=\\"drac-text drac-text-white\\">NF</span></span
+  >
+</div>
+",
+  "react": "<div>
+  <Avatar title=\\"Netto Farah\\" borderVariant=\\"large\\" />
+  <Avatar title=\\"Netto Farah\\" borderVariant=\\"none\\" />
+</div>;
+",
+  "title": "Borders",
+}
+`;
+
+exports[`Site: Avatar Colors 1`] = `
 Object {
   "docs": "The Avatar component accepts a *color* param that allows for customizing the background and accent color for an Avatar.",
   "html": "<div>
@@ -34,11 +56,11 @@ Object {
   <Avatar title=\\"Netto Farah\\" color=\\"cyan\\" />
 </div>;
 ",
-  "title": "Custom colors",
+  "title": "Colors",
 }
 `;
 
-exports[`Site: Avatar Custom variants 1`] = `
+exports[`Site: Avatar Variants 1`] = `
 Object {
   "docs": "Avatars accept multiple variants, which can be used to render a more subtle variation of the Avatar component.",
   "html": "<div>
@@ -55,47 +77,6 @@ Object {
   <Avatar title=\\"Netto Farah\\" variant=\\"normal\\" />
 </div>;
 ",
-  "title": "Custom variants",
-}
-`;
-
-exports[`Site: Avatar border: large 1`] = `
-Object {
-  "docs": "A border variant allows for customization of the border width of an Avatar, or for an Avatar to be rendered without a border.",
-  "html": "<span
-  class=\\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-lg-stroke\\"
-  ><span color=\\"white\\" class=\\"drac-text drac-text-white\\">NF</span></span
->
-",
-  "react": "<Avatar title=\\"Netto Farah\\" borderVariant=\\"large\\" />;
-",
-  "title": "border: large",
-}
-`;
-
-exports[`Site: Avatar border: none 1`] = `
-Object {
-  "docs": "A border variant allows for customization of the border width of an Avatar, or for an Avatar to be rendered without a border.",
-  "html": "<span
-  class=\\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-no-border\\"
-  ><span color=\\"white\\" class=\\"drac-text drac-text-white\\">NF</span></span
->
-",
-  "react": "<Avatar title=\\"Netto Farah\\" borderVariant=\\"none\\" />;
-",
-  "title": "border: none",
-}
-`;
-
-exports[`Site: Avatar border: normal 1`] = `
-Object {
-  "docs": "A border variant allows for customization of the border width of an Avatar, or for an Avatar to be rendered without a border.",
-  "html": "<span class=\\"drac-avatar drac-bg-green-transparent drac-text-green\\"
-  ><span color=\\"white\\" class=\\"drac-text drac-text-white\\">NF</span></span
->
-",
-  "react": "<Avatar title=\\"Netto Farah\\" borderVariant=\\"normal\\" />;
-",
-  "title": "border: normal",
+  "title": "Variants",
 }
 `;

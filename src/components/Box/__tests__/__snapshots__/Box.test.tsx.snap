@@ -2,10 +2,14 @@
 
 exports[`Site: Box Basic Usage 1`] = `
 Object {
-  "docs": "",
-  "html": "<div color=\\"purple\\" class=\\"drac-box drac-bg-purple\\">Dracula</div>
+  "docs": "A Box is analogous to an HTML div and can contain any other component. Use Box when you want to compose layouts, or multiple components.",
+  "html": "<div class=\\"drac-box\\">
+  <span class=\\"drac-text drac-text-white\\">Dracula</span>
+</div>
 ",
-  "react": "<Box color=\\"purple\\">Dracula</Box>;
+  "react": "<Box>
+  <Text>Dracula</Text>
+</Box>;
 ",
   "title": "Usage",
 }
@@ -13,134 +17,101 @@ Object {
 
 exports[`Site: Box Colors 1`] = `
 Object {
-  "docs": "",
-  "html": "<div color=\\"pinkPurple\\" class=\\"drac-box drac-bg-pink-purple\\">Pink Purple</div>
+  "docs": "Boxes can be customized to use any of the Dracula UI theme colors, including all solid, gradient, and animated colors.",
+  "html": "<div color=\\"pinkPurple\\" class=\\"drac-box drac-bg-pink-purple\\">
+  <span class=\\"drac-text drac-text-white\\">Pink Purple</span>
+</div>
 ",
-  "react": "<Box color=\\"pinkPurple\\">Pink Purple</Box>;
+  "react": "<Box color=\\"pinkPurple\\">
+  <Text>Pink Purple</Text>
+</Box>;
 ",
   "title": "Colors",
 }
 `;
 
-exports[`Site: Box Generic Elements 1`] = `
+exports[`Site: Box Rounded 1`] = `
 Object {
-  "docs": "",
+  "docs": "Choose from one of the predefined \`rounded\` options for a Box.",
   "html": "<div>
-  <button as=\\"button\\" color=\\"pinkPurple\\" class=\\"drac-box drac-bg-pink-purple\\">
-    Button</button
-  ><a as=\\"a\\" color=\\"green\\" href=\\"#\\" class=\\"drac-box drac-bg-green\\">Link</a>
+  <div
+    rounded=\\"lg\\"
+    color=\\"purpleCyan\\"
+    p=\\"md\\"
+    class=\\"drac-box drac-bg-purple-cyan drac-rounded-lg drac-p-md\\"
+  >
+    <span class=\\"drac-text drac-text-white\\">Large round border</span>
+  </div>
+  <div
+    rounded=\\"sm\\"
+    color=\\"yellowPink\\"
+    p=\\"md\\"
+    class=\\"drac-box drac-bg-yellow-pink drac-rounded-sm drac-p-md\\"
+  >
+    <span color=\\"black\\" class=\\"drac-text drac-text-black\\"
+      >small round border</span
+    >
+  </div>
 </div>
 ",
   "react": "<div>
-  <Box as=\\"button\\" color=\\"pinkPurple\\">
-    Button
+  <Box rounded=\\"lg\\" color=\\"purpleCyan\\" p=\\"md\\">
+    <Text>Large round border</Text>
   </Box>
-  <Box as=\\"a\\" color=\\"green\\" href=\\"#\\">
-    Link
+  <Box rounded=\\"sm\\" color=\\"yellowPink\\" p=\\"md\\">
+    <Text color=\\"black\\">small round border</Text>
   </Box>
-</div>;
-",
-  "title": "Generic Elements",
-}
-`;
-
-exports[`Site: Box Rounded 1`] = `
-Object {
-  "docs": "",
-  "html": "<div style=\\"display: flex; flex-direction: row\\">
-  <div
-    color=\\"purple\\"
-    rounded=\\"none\\"
-    style=\\"width: 250px; height: 250px; margin-right: 20px\\"
-    class=\\"drac-box drac-bg-purple drac-rounded-none\\"
-  ></div>
-  <div
-    color=\\"purple\\"
-    rounded=\\"sm\\"
-    style=\\"width: 250px; height: 250px; margin-right: 20px\\"
-    class=\\"drac-box drac-bg-purple drac-rounded-sm\\"
-  ></div>
-  <div
-    color=\\"purple\\"
-    rounded=\\"base\\"
-    style=\\"width: 250px; height: 250px; margin-right: 20px\\"
-    class=\\"drac-box drac-bg-purple drac-rounded\\"
-  ></div>
-  <div
-    color=\\"purple\\"
-    rounded=\\"lg\\"
-    style=\\"width: 250px; height: 250px; margin-right: 20px\\"
-    class=\\"drac-box drac-bg-purple drac-rounded-lg\\"
-  ></div>
-  <div
-    color=\\"purple\\"
-    rounded=\\"xl\\"
-    style=\\"width: 250px; height: 250px; margin-right: 20px\\"
-    class=\\"drac-box drac-bg-purple drac-rounded-xl\\"
-  ></div>
-  <div
-    color=\\"purple\\"
-    rounded=\\"2xl\\"
-    style=\\"width: 250px; height: 250px; margin-right: 20px\\"
-    class=\\"drac-box drac-bg-purple drac-rounded-2xl\\"
-  ></div>
-  <div
-    color=\\"purple\\"
-    rounded=\\"3xl\\"
-    style=\\"width: 250px; height: 250px; margin-right: 20px\\"
-    class=\\"drac-box drac-bg-purple drac-rounded-3xl\\"
-  ></div>
-  <div
-    color=\\"purple\\"
-    rounded=\\"full\\"
-    style=\\"width: 250px; height: 250px; margin-right: 20px\\"
-    class=\\"drac-box drac-bg-purple drac-rounded-full\\"
-  ></div>
-</div>
-",
-  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"row\\" }}>
-  <Box
-    color=\\"purple\\"
-    rounded=\\"none\\"
-    style={{ width: 250, height: 250, marginRight: 20 }}
-  />
-  <Box
-    color=\\"purple\\"
-    rounded=\\"sm\\"
-    style={{ width: 250, height: 250, marginRight: 20 }}
-  />
-  <Box
-    color=\\"purple\\"
-    rounded=\\"base\\"
-    style={{ width: 250, height: 250, marginRight: 20 }}
-  />
-  <Box
-    color=\\"purple\\"
-    rounded=\\"lg\\"
-    style={{ width: 250, height: 250, marginRight: 20 }}
-  />
-  <Box
-    color=\\"purple\\"
-    rounded=\\"xl\\"
-    style={{ width: 250, height: 250, marginRight: 20 }}
-  />
-  <Box
-    color=\\"purple\\"
-    rounded=\\"2xl\\"
-    style={{ width: 250, height: 250, marginRight: 20 }}
-  />
-  <Box
-    color=\\"purple\\"
-    rounded=\\"3xl\\"
-    style={{ width: 250, height: 250, marginRight: 20 }}
-  />
-  <Box
-    color=\\"purple\\"
-    rounded=\\"full\\"
-    style={{ width: 250, height: 250, marginRight: 20 }}
-  />
 </div>;
 ",
   "title": "Rounded",
+}
+`;
+
+exports[`Site: Box Spacing 1`] = `
+Object {
+  "docs": "Boxes come with pre defined spacing primitives for padding and margin that allow for customizing the spacing inside and around boxes.",
+  "html": "<div>
+  <div color=\\"yellowPink\\" p=\\"xs\\" class=\\"drac-box drac-bg-yellow-pink drac-p-xs\\">
+    <span color=\\"black\\" class=\\"drac-text drac-text-black\\">xs padding</span>
+  </div>
+  <div color=\\"purpleCyan\\" p=\\"sm\\" class=\\"drac-box drac-bg-purple-cyan drac-p-sm\\">
+    <span color=\\"black\\" class=\\"drac-text drac-text-black\\">sm padding</span>
+  </div>
+  <div color=\\"pinkPurple\\" p=\\"md\\" class=\\"drac-box drac-bg-pink-purple drac-p-md\\">
+    <span color=\\"black\\" class=\\"drac-text drac-text-black\\">medium padding</span>
+  </div>
+  <div color=\\"yellowPink\\" m=\\"xs\\" class=\\"drac-box drac-bg-yellow-pink drac-m-xs\\">
+    <span color=\\"black\\" class=\\"drac-text drac-text-black\\">xs margin</span>
+  </div>
+  <div color=\\"purpleCyan\\" m=\\"sm\\" class=\\"drac-box drac-bg-purple-cyan drac-m-sm\\">
+    <span color=\\"black\\" class=\\"drac-text drac-text-black\\">sm margin</span>
+  </div>
+  <div color=\\"pinkPurple\\" m=\\"md\\" class=\\"drac-box drac-bg-pink-purple drac-m-md\\">
+    <span color=\\"black\\" class=\\"drac-text drac-text-black\\">medium margin</span>
+  </div>
+</div>
+",
+  "react": "<div>
+  <Box color=\\"yellowPink\\" p=\\"xs\\">
+    <Text color=\\"black\\">xs padding</Text>
+  </Box>
+  <Box color=\\"purpleCyan\\" p=\\"sm\\">
+    <Text color=\\"black\\">sm padding</Text>
+  </Box>
+  <Box color=\\"pinkPurple\\" p=\\"md\\">
+    <Text color=\\"black\\">medium padding</Text>
+  </Box>
+  <Box color=\\"yellowPink\\" m=\\"xs\\">
+    <Text color=\\"black\\">xs margin</Text>
+  </Box>
+  <Box color=\\"purpleCyan\\" m=\\"sm\\">
+    <Text color=\\"black\\">sm margin</Text>
+  </Box>
+  <Box color=\\"pinkPurple\\" m=\\"md\\">
+    <Text color=\\"black\\">medium margin</Text>
+  </Box>
+</div>;
+",
+  "title": "Spacing",
 }
 `;

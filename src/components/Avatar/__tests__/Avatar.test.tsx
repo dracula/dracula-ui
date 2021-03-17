@@ -1,13 +1,12 @@
-import { Avatar, AvatarBorderVariants } from '@/components/Avatar/Avatar'
+import { Avatar } from '@/components/Avatar/Avatar'
 import { docs } from '@/documentation/site-docs'
 import React from 'react'
 import { snapshot } from '../../../documentation/render-component'
-import { withEntries } from '../../../documentation/with-entries'
 
 docs(Avatar, {
   basic: () =>
     snapshot(
-      'basic usage',
+      'Usage',
       () => (
         <Avatar
           title="Netto Farah"
@@ -20,7 +19,7 @@ docs(Avatar, {
     ),
   variations() {
     const snap = snapshot(
-      'Custom colors',
+      'Colors',
       () => (
         <div>
           <Avatar title="Netto Farah" color="cyan" />
@@ -32,7 +31,7 @@ docs(Avatar, {
     )
 
     const variants = snapshot(
-      'Custom variants',
+      'Variants',
       () => (
         <div>
           <Avatar title="Zeno Rocha" variant="subtle" />
@@ -44,16 +43,19 @@ docs(Avatar, {
     `
     )
 
-    const borders = withEntries(AvatarBorderVariants, (variant) => {
-      return snapshot(
-        `border: ${variant}`,
-        () => <Avatar title="Netto Farah" borderVariant={variant} />,
-        `
+    const borders = snapshot(
+      `Borders`,
+      () => (
+        <div>
+          <Avatar title="Netto Farah" borderVariant="large" />
+          <Avatar title="Netto Farah" borderVariant="none" />
+        </div>
+      ),
+      `
         A border variant allows for customization of the border width of an Avatar, or for an Avatar to be rendered without a border.
       `
-      )
-    })
+    )
 
-    return [...borders, variants, snap]
+    return [variants, borders, snap]
   }
 })

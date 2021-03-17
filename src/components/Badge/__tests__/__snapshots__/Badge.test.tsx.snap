@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Site: Badge Basic Usage 1`] = `
+Object {
+  "docs": "You can create a new Badge with any text content you'd like to highlight.",
+  "html": "<span class=\\"drac-badge drac-bg-black\\"
+  ><span class=\\"drac-text drac-text-white\\">Badge</span></span
+>
+",
+  "react": "<Badge>Badge</Badge>;
+",
+  "title": "Usage",
+}
+`;
+
+exports[`Site: Badge Colors 1`] = `
+Object {
+  "docs": "Badges can be customized to use any of the Dracula UI theme colors, including all solid, gradient, and animated colors.",
+  "html": "<span class=\\"drac-badge drac-bg-animated\\" themecolor=\\"animated\\"
+  ><span class=\\"drac-text drac-text-white\\">Fun Badge</span></span
+>
+",
+  "react": "<Badge themeColor=\\"animated\\">Fun Badge</Badge>;
+",
+  "title": "Colors",
+}
+`;
+
+exports[`Site: Badge Variants 1`] = `
+Object {
+  "docs": "Use \`outline\` or \`subtle\` when you don't want your Badges to stand out, but still want to keep them playful.",
+  "html": "<div>
+  <span
+    class=\\"drac-badge drac-bg-purple-cyan drac-badge-outline drac-text-purple-cyan\\"
+    themecolor=\\"purpleCyan\\"
+    variant=\\"outline\\"
+    ><span color=\\"purpleCyan\\" class=\\"drac-text drac-text-purple-cyan\\"
+      >Outline</span
+    ></span
+  ><span
+    class=\\"drac-badge drac-bg-purple-transparent drac-badge-subtle drac-text-purple\\"
+    themecolor=\\"purple\\"
+    variant=\\"subtle\\"
+    ><span color=\\"purple\\" class=\\"drac-text drac-text-purple\\">Subtle</span></span
+  >
+</div>
+",
+  "react": "<div>
+  <Badge themeColor=\\"purpleCyan\\" variant=\\"outline\\">
+    Outline
+  </Badge>
+  <Badge themeColor=\\"purple\\" variant=\\"subtle\\">
+    Subtle
+  </Badge>
+</div>;
+",
+  "title": "Variants",
+}
+`;

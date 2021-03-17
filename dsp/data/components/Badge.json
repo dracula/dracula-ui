@@ -1,114 +1,68 @@
 {
   "class": "component",
   "type": "page",
-  "id": "Text",
-  "name": "Text",
-  "last_updated": "2021-03-16T23:59:12.352Z",
+  "id": "Badge",
+  "name": "Badge",
+  "last_updated": "2021-03-16T23:59:30.452Z",
   "last_updated_by": "System",
-  "description": "Text is the base component for any sort of text.\n\nConsumers of this component can control, the color, size,\nweight, and spacing of Text.\n\nUse this component for generic, and non-hierarchical text that is\nto be displayed on a page, or as part of other complex components\nor UI patterns",
+  "description": "Badges are used to denote status or to highlight specific\ninformation.",
   "related_entity_ids": [],
   "tags": ["component"],
   "snippets": {
-    "trigger": "text",
+    "trigger": "badge",
     "languages": {
-      "javascriptreact": "<Text>Text</Text>;\n",
-      "html": "<span class=\"drac-text drac-text-white\">Text</span>\n"
+      "javascriptreact": "<Badge>Badge</Badge>;\n",
+      "html": "<span class=\"drac-badge drac-bg-black\"\n  ><span class=\"drac-text drac-text-white\">Badge</span></span\n>\n"
     }
   },
   "ext_com_draculaui_variations": [
     {
       "title": "Usage",
-      "html": "<span class=\"drac-text drac-text-white\">Text</span>\n",
-      "react": "<Text>Text</Text>;\n",
-      "docs": "",
-      "screenshot": "./dsp/assets/Text.png",
-      "svgData": "./dsp/assets/svgs/Text.svg"
+      "html": "<span class=\"drac-badge drac-bg-black\"\n  ><span class=\"drac-text drac-text-white\">Badge</span></span\n>\n",
+      "react": "<Badge>Badge</Badge>;\n",
+      "docs": "You can create a new Badge with any text content you'd like to highlight.",
+      "screenshot": "./dsp/assets/Badge.png",
+      "svgData": "./dsp/assets/svgs/Badge.svg"
     },
     {
       "title": "Colors",
-      "html": "<div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"white\" class=\"drac-text drac-text-white\">white</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"black\" class=\"drac-text drac-text-black\">black</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"blackSecondary\" class=\"drac-text drac-text-black-secondary\"\n      >blackSecondary</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"blackLight\" class=\"drac-text drac-text-black-light\"\n      >blackLight</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"cyan\" class=\"drac-text drac-text-cyan\">cyan</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"green\" class=\"drac-text drac-text-green\">green</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"orange\" class=\"drac-text drac-text-orange\">orange</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"pink\" class=\"drac-text drac-text-pink\">pink</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"purple\" class=\"drac-text drac-text-purple\">purple</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"red\" class=\"drac-text drac-text-red\">red</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"yellow\" class=\"drac-text drac-text-yellow\">yellow</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"purpleCyan\" class=\"drac-text drac-text-purple-cyan\"\n      >purpleCyan</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"yellowPink\" class=\"drac-text drac-text-yellow-pink\"\n      >yellowPink</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"cyanGreen\" class=\"drac-text drac-text-cyan-green\"\n      >cyanGreen</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"pinkPurple\" class=\"drac-text drac-text-pink-purple\"\n      >pinkPurple</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"animated\" class=\"drac-text drac-text-animated\">animated</span>\n  </div>\n</div>\n",
-      "react": "<div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"white\">white</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"black\">black</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"blackSecondary\">blackSecondary</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"blackLight\">blackLight</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"cyan\">cyan</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"green\">green</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"orange\">orange</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"pink\">pink</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"purple\">purple</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"red\">red</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"yellow\">yellow</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"purpleCyan\">purpleCyan</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"yellowPink\">yellowPink</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"cyanGreen\">cyanGreen</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"pinkPurple\">pinkPurple</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"animated\">animated</Text>\n  </div>\n</div>;\n",
-      "docs": "",
-      "screenshot": "./dsp/assets/TextColors.png",
-      "svgData": "./dsp/assets/svgs/TextColors.svg"
+      "html": "<span class=\"drac-badge drac-bg-animated\" themecolor=\"animated\"\n  ><span class=\"drac-text drac-text-white\">Fun Badge</span></span\n>\n",
+      "react": "<Badge themeColor=\"animated\">Fun Badge</Badge>;\n",
+      "docs": "Badges can be customized to use any of the Dracula UI theme colors, including all solid, gradient, and animated colors.",
+      "screenshot": "./dsp/assets/BadgeColors.png",
+      "svgData": "./dsp/assets/svgs/BadgeColors.svg"
     },
     {
-      "title": "Weights",
-      "html": "<div>\n  <div style=\"margin-bottom: 20px\">\n    <span weight=\"normal\" class=\"drac-text drac-text-white\">normal</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span weight=\"semibold\" class=\"drac-text drac-text-semibold drac-text-white\"\n      >semibold</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span weight=\"bold\" class=\"drac-text drac-text-bold drac-text-white\"\n      >bold</span\n    >\n  </div>\n</div>\n",
-      "react": "<div>\n  <div style={{ marginBottom: 20 }}>\n    <Text weight=\"normal\">normal</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text weight=\"semibold\">semibold</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text weight=\"bold\">bold</Text>\n  </div>\n</div>;\n",
-      "docs": "",
-      "screenshot": "./dsp/assets/TextWeights.png",
-      "svgData": "./dsp/assets/svgs/TextWeights.svg"
-    },
-    {
-      "title": "Sizes",
-      "html": "<div>\n  <div style=\"margin-bottom: 20px\">\n    <span class=\"drac-text drac-text-lg drac-text-white\">large</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span class=\"drac-text drac-text-white\">medium</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span class=\"drac-text drac-text-sm drac-text-white\">small</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span class=\"drac-text drac-text-xs drac-text-white\">xsmall</span>\n  </div>\n</div>\n",
-      "react": "<div>\n  <div style={{ marginBottom: 20 }}>\n    <Text size=\"large\">large</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text size=\"medium\">medium</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text size=\"small\">small</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text size=\"xsmall\">xsmall</Text>\n  </div>\n</div>;\n",
-      "docs": "",
-      "screenshot": "./dsp/assets/TextSizes.png",
-      "svgData": "./dsp/assets/svgs/TextSizes.svg"
+      "title": "Variants",
+      "html": "<div>\n  <span\n    class=\"drac-badge drac-bg-purple-cyan drac-badge-outline drac-text-purple-cyan\"\n    themecolor=\"purpleCyan\"\n    variant=\"outline\"\n    ><span color=\"purpleCyan\" class=\"drac-text drac-text-purple-cyan\"\n      >Outline</span\n    ></span\n  ><span\n    class=\"drac-badge drac-bg-purple-transparent drac-badge-subtle drac-text-purple\"\n    themecolor=\"purple\"\n    variant=\"subtle\"\n    ><span color=\"purple\" class=\"drac-text drac-text-purple\">Subtle</span></span\n  >\n</div>\n",
+      "react": "<div>\n  <Badge themeColor=\"purpleCyan\" variant=\"outline\">\n    Outline\n  </Badge>\n  <Badge themeColor=\"purple\" variant=\"subtle\">\n    Subtle\n  </Badge>\n</div>;\n",
+      "docs": "Use `outline` or `subtle` when you don't want your Badges to stand out, but still want to keep them playful.",
+      "screenshot": "./dsp/assets/BadgeVariants.png",
+      "svgData": "./dsp/assets/svgs/BadgeVariants.svg"
     }
   ],
   "ext_com_draculaui_props": {
-    "size": {
+    "themeColor": {
       "defaultValue": null,
-      "description": "Controls the size of the text based on pre-configured Dracula UI sizes.\nOptions: `xsmall`, `small`, `medium`, `large`",
-      "name": "size",
-      "parent": {
-        "fileName": "src/components/Text/Text.tsx",
-        "name": "TextProps"
-      },
+      "description": "The theme variation color for a badge.",
+      "name": "themeColor",
       "declarations": [
-        { "fileName": "src/components/Text/Text.tsx", "name": "TextProps" }
-      ],
-      "required": false,
-      "type": {
-        "name": "\"large\" | \"medium\" | \"small\" | \"xsmall\" | undefined"
-      }
-    },
-    "weight": {
-      "defaultValue": null,
-      "description": "Controsl the weight of the text.\nOptions: `normal`, `semibold`, `bold`.",
-      "name": "weight",
-      "parent": {
-        "fileName": "src/components/Text/Text.tsx",
-        "name": "TextProps"
-      },
-      "declarations": [
-        { "fileName": "src/components/Text/Text.tsx", "name": "TextProps" }
-      ],
-      "required": false,
-      "type": { "name": "\"normal\" | \"semibold\" | \"bold\" | undefined" }
-    },
-    "color": {
-      "defaultValue": null,
-      "description": "Controls the color of the text",
-      "name": "color",
-      "parent": {
-        "fileName": "src/components/Text/Text.tsx",
-        "name": "TextProps"
-      },
-      "declarations": [
-        { "fileName": "src/components/Text/Text.tsx", "name": "TextProps" }
+        { "fileName": "src/components/Badge/Badge.tsx", "name": "TypeLiteral" }
       ],
       "required": false,
       "type": {
         "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
       }
     },
-    "as": {
+    "variant": {
       "defaultValue": null,
-      "description": "",
-      "name": "as",
-      "parent": {
-        "fileName": "src/components/Text/Text.tsx",
-        "name": "TextProps"
-      },
+      "description": "The variants for the Badge components.\n`normal` -> Default solid badge.\n`subtle` -> Subtler background, highlights the text.\n`outline` -> No background color, just borders and text.",
+      "name": "variant",
       "declarations": [
-        { "fileName": "src/components/Text/Text.tsx", "name": "TextProps" }
+        { "fileName": "src/components/Badge/Badge.tsx", "name": "TypeLiteral" }
       ],
       "required": false,
-      "type": { "name": "\"a\" | \"span\" | \"p\" | undefined" }
+      "type": { "name": "\"normal\" | \"subtle\" | \"outline\" | undefined" }
     },
     "p": {
       "defaultValue": null,
@@ -281,69 +235,37 @@
   },
   "ext_com_draculaui_docgen": {
     "tags": {},
-    "description": "Text is the base component for any sort of text.\n\nConsumers of this component can control, the color, size,\nweight, and spacing of Text.\n\nUse this component for generic, and non-hierarchical text that is\nto be displayed on a page, or as part of other complex components\nor UI patterns",
-    "displayName": "Text",
+    "description": "Badges are used to denote status or to highlight specific\ninformation.",
+    "displayName": "Badge",
     "methods": [],
     "props": {
-      "size": {
+      "themeColor": {
         "defaultValue": null,
-        "description": "Controls the size of the text based on pre-configured Dracula UI sizes.\nOptions: `xsmall`, `small`, `medium`, `large`",
-        "name": "size",
-        "parent": {
-          "fileName": "src/components/Text/Text.tsx",
-          "name": "TextProps"
-        },
+        "description": "The theme variation color for a badge.",
+        "name": "themeColor",
         "declarations": [
-          { "fileName": "src/components/Text/Text.tsx", "name": "TextProps" }
-        ],
-        "required": false,
-        "type": {
-          "name": "\"large\" | \"medium\" | \"small\" | \"xsmall\" | undefined"
-        }
-      },
-      "weight": {
-        "defaultValue": null,
-        "description": "Controsl the weight of the text.\nOptions: `normal`, `semibold`, `bold`.",
-        "name": "weight",
-        "parent": {
-          "fileName": "src/components/Text/Text.tsx",
-          "name": "TextProps"
-        },
-        "declarations": [
-          { "fileName": "src/components/Text/Text.tsx", "name": "TextProps" }
-        ],
-        "required": false,
-        "type": { "name": "\"normal\" | \"semibold\" | \"bold\" | undefined" }
-      },
-      "color": {
-        "defaultValue": null,
-        "description": "Controls the color of the text",
-        "name": "color",
-        "parent": {
-          "fileName": "src/components/Text/Text.tsx",
-          "name": "TextProps"
-        },
-        "declarations": [
-          { "fileName": "src/components/Text/Text.tsx", "name": "TextProps" }
+          {
+            "fileName": "src/components/Badge/Badge.tsx",
+            "name": "TypeLiteral"
+          }
         ],
         "required": false,
         "type": {
           "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
         }
       },
-      "as": {
+      "variant": {
         "defaultValue": null,
-        "description": "",
-        "name": "as",
-        "parent": {
-          "fileName": "src/components/Text/Text.tsx",
-          "name": "TextProps"
-        },
+        "description": "The variants for the Badge components.\n`normal` -> Default solid badge.\n`subtle` -> Subtler background, highlights the text.\n`outline` -> No background color, just borders and text.",
+        "name": "variant",
         "declarations": [
-          { "fileName": "src/components/Text/Text.tsx", "name": "TextProps" }
+          {
+            "fileName": "src/components/Badge/Badge.tsx",
+            "name": "TypeLiteral"
+          }
         ],
         "required": false,
-        "type": { "name": "\"a\" | \"span\" | \"p\" | undefined" }
+        "type": { "name": "\"normal\" | \"subtle\" | \"outline\" | undefined" }
       },
       "p": {
         "defaultValue": null,

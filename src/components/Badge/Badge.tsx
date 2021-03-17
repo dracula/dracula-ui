@@ -1,13 +1,13 @@
-import React, { HTMLAttributes } from 'react'
-import { colors as backgroundColors } from '../../base/colors'
-import { Text, textColors } from '../../components/Text/Text'
 import cx from 'classnames/dedupe'
+import React, { AllHTMLAttributes } from 'react'
+import { colors as backgroundColors } from '../../base/colors'
 import {
   MarginMixin,
   marginMixin,
   PaddingMixin,
   paddingMixin
 } from '../../base/spacing'
+import { Text, textColors } from '../../components/Text/Text'
 
 const variants = {
   normal: 'drac-badge',
@@ -18,10 +18,7 @@ const variants = {
 /**
  * Badge Props
  */
-export interface BadgeProps
-  extends HTMLAttributes<HTMLSpanElement>,
-    PaddingMixin,
-    MarginMixin {
+export type BadgeProps = {
   /**
    * The theme variation color for a badge.
    */
@@ -34,7 +31,9 @@ export interface BadgeProps
    * `outline` -> No background color, just borders and text.
    */
   variant?: keyof typeof variants
-}
+} & AllHTMLAttributes<HTMLSpanElement> &
+  PaddingMixin &
+  MarginMixin
 
 /**
  * Badges are used to denote status or to highlight specific
@@ -49,7 +48,7 @@ export const Badge: React.FC<BadgeProps> = (props: BadgeProps) => {
     ? textColors[props.themeColor ?? 'green']
     : undefined
 
-  let backgroundClass = backgroundColors[props.themeColor ?? 'green']
+  let backgroundClass = backgroundColors[props.themeColor ?? 'black']
   if (isSubtle) {
     backgroundClass = `${backgroundClass}-transparent`
   }
