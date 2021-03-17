@@ -19,9 +19,10 @@ module.exports = {
           })
         ],
         sourceMap: true,
-        extract: 'styles/dracula-ui.css',
+        extract: 'styles/dracula-ui.css'
       })
     )
+
     return config
   }
 }

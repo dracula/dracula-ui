@@ -13770,6 +13770,13 @@ rollup@^1.32.1:
     "@types/node" "*"
     acorn "^7.1.0"
 
+rollup@^2.41.4:
+  version "2.41.4"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.41.4.tgz#2a674d64db4322482d440699acb060dc6dd9e65f"
+  integrity sha512-f9IHfMO8p2Y8OdisI7Oj3oKkPuaQ6cgSwYqAi0TDvP3w2p+oX1VejX/w28a1h8WTnrapzfO5d4Uqhww+gL0b0g==
+  optionalDependencies:
+    fsevents "~2.3.1"
+
 rst-selector-parser@^2.2.3:
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/rst-selector-parser/-/rst-selector-parser-2.2.3.tgz#81b230ea2fcc6066c89e3472de794285d9b03d91"
