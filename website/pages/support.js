@@ -1,0 +1,64 @@
+import React from "react"
+import Head from "next/head"
+import Theme from "../layouts/Theme"
+import { Box, Heading, Link, Paragraph } from "../../dist"
+import Navigation from "../components/Navigation"
+import styles from "./index.module.css"
+
+export async function getStaticProps() {
+  return {
+    props: {
+      query: {
+        title: 'Support',
+        description: 'Need help? Have an idea? Found a bug?'
+      }
+    }
+  }
+}
+
+class Design extends React.Component {
+  render() {
+    const { title, description } = this.props.query;
+
+    return (
+      <div>
+        <Head>
+          <meta charSet="utf-8" />
+          <title>{title}</title>
+          <meta content={title} property="og:title" />
+          <meta content={description} name="description" />
+          <meta content={description} property="og:description" />
+          <meta content="Netto Farah &amp; Zeno Rocha" name="author" />
+        </Head>
+
+        <Box className={styles.container}>
+          <Navigation selected={title} />
+          <Box className={styles.content} py="lg">
+            <main className={styles.center}>
+              <Box>
+                <Heading size="heading-1">{title}</Heading>
+                <Paragraph className={styles.description} size="large">{description}</Paragraph>
+                <Box my="lg">
+                  <Heading size="heading-2">Questions</Heading>
+                  <Paragraph>Join us on <Link color="purple" hoverColor="purple" href="https://discord.gg/584kS9Mg">Discord</Link> to discuss anything about Dracula UI.</Paragraph>
+                </Box>
+                <Box my="lg">
+                  <Heading size="heading-2">Ideas</Heading>
+                  <Paragraph>You can suggest new component ideas using <Link color="purple" hoverColor="purple" href="https://github.com/dracula/dracula-ui/discussions">GitHub Discussions</Link>.</Paragraph>
+                </Box>
+                <Box my="lg">
+                  <Heading size="heading-2">Bugs</Heading>
+                  <Paragraph>If you find a problem, feel free to open new <Link color="purple" hoverColor="purple" href="https://github.com/dracula/dracula-ui/issues">GitHub Issues</Link>.</Paragraph>
+                </Box>
+              </Box>
+            </main>
+          </Box>
+        </Box>
+      </div>
+    )
+  }
+}
+
+Design.Layout = Theme
+
+export default Design

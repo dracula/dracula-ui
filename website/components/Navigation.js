@@ -13,7 +13,7 @@ const Navigation = ({ selected }) => {
   const items = [
     {
       title: "Getting Started",
-      pages: ["Installation", "Principles", "Tooling"]
+      pages: ["Installation", "Principles", "Tooling", "Support"]
     },
     {
       title: "Components",
