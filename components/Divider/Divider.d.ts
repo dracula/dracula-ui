@@ -1,9 +1,10 @@
 import React, { HTMLAttributes } from 'react';
-export declare const dividerColors: Record<"white" | "cyan" | "green" | "orange" | "pink" | "purple" | "red" | "yellow" | "purpleCyan" | "yellowPink" | "cyanGreen" | "pinkPurple" | "animated", string>;
+import { MarginMixin, PaddingMixin } from '../../base/spacing';
+export declare const dividerColors: Record<"purpleCyan" | "yellowPink" | "cyanGreen" | "pinkPurple" | "animated", string>;
 /**
  * Divider Props
  */
-export interface DividerProps extends HTMLAttributes<HTMLDivElement> {
+export interface DividerProps extends HTMLAttributes<HTMLDivElement>, PaddingMixin, MarginMixin {
     /** The Dracula UI color for the Divider. */
     color: keyof typeof dividerColors;
 }

@@ -3,7 +3,7 @@
   "type": "page",
   "id": "Box",
   "name": "Box",
-  "last_updated": "2021-03-14T22:34:41.638Z",
+  "last_updated": "2021-03-17T04:01:55.432Z",
   "last_updated_by": "System",
   "description": "Box is the most primitive component of Dracula UI.\nUsing Box allows for consumers of the components library to compose\nmore complex patterns, components, and UIs.\n\nBox includes built-in Color and Spacing properties that make building\ncomplex components convenient and consistent.",
   "related_entity_ids": [],
@@ -11,42 +11,42 @@
   "snippets": {
     "trigger": "box",
     "languages": {
-      "javascriptreact": "<Box color=\"purple\">Dracula</Box>;\n",
-      "html": "<div color=\"purple\" class=\"drac-box drac-bg-purple\">Dracula</div>\n"
+      "javascriptreact": "<Box>\n  <Text>Dracula</Text>\n</Box>;\n",
+      "html": "<div class=\"drac-box\">\n  <span class=\"drac-text drac-text-white\">Dracula</span>\n</div>\n"
     }
   },
   "ext_com_draculaui_variations": [
     {
       "title": "Usage",
-      "html": "<div color=\"purple\" class=\"drac-box drac-bg-purple\">Dracula</div>\n",
-      "react": "<Box color=\"purple\">Dracula</Box>;\n",
-      "docs": "",
+      "html": "<div class=\"drac-box\">\n  <span class=\"drac-text drac-text-white\">Dracula</span>\n</div>\n",
+      "react": "<Box>\n  <Text>Dracula</Text>\n</Box>;\n",
+      "docs": "A Box is analogous to an HTML div and can contain any other component. Use Box when you want to compose layouts, or multiple components.",
       "screenshot": "./dsp/assets/Box.png",
       "svgData": "./dsp/assets/svgs/Box.svg"
     },
     {
       "title": "Colors",
-      "html": "<div color=\"pinkPurple\" class=\"drac-box drac-bg-pink-purple\">Pink Purple</div>\n",
-      "react": "<Box color=\"pinkPurple\">Pink Purple</Box>;\n",
-      "docs": "",
+      "html": "<div color=\"pinkPurple\" class=\"drac-box drac-bg-pink-purple\">\n  <span class=\"drac-text drac-text-white\">Pink Purple</span>\n</div>\n",
+      "react": "<Box color=\"pinkPurple\">\n  <Text>Pink Purple</Text>\n</Box>;\n",
+      "docs": "Boxes can be customized to use any of the Dracula UI theme colors, including all solid, gradient, and animated colors.",
       "screenshot": "./dsp/assets/BoxColors.png",
       "svgData": "./dsp/assets/svgs/BoxColors.svg"
     },
     {
       "title": "Rounded",
-      "html": "<div style=\"display: flex; flex-direction: row\">\n  <div\n    color=\"purple\"\n    rounded=\"none\"\n    style=\"width: 250px; height: 250px; margin-right: 20px\"\n    class=\"drac-box drac-bg-purple drac-rounded-none\"\n  ></div>\n  <div\n    color=\"purple\"\n    rounded=\"sm\"\n    style=\"width: 250px; height: 250px; margin-right: 20px\"\n    class=\"drac-box drac-bg-purple drac-rounded-sm\"\n  ></div>\n  <div\n    color=\"purple\"\n    rounded=\"base\"\n    style=\"width: 250px; height: 250px; margin-right: 20px\"\n    class=\"drac-box drac-bg-purple drac-rounded\"\n  ></div>\n  <div\n    color=\"purple\"\n    rounded=\"lg\"\n    style=\"width: 250px; height: 250px; margin-right: 20px\"\n    class=\"drac-box drac-bg-purple drac-rounded-lg\"\n  ></div>\n  <div\n    color=\"purple\"\n    rounded=\"xl\"\n    style=\"width: 250px; height: 250px; margin-right: 20px\"\n    class=\"drac-box drac-bg-purple drac-rounded-xl\"\n  ></div>\n  <div\n    color=\"purple\"\n    rounded=\"2xl\"\n    style=\"width: 250px; height: 250px; margin-right: 20px\"\n    class=\"drac-box drac-bg-purple drac-rounded-2xl\"\n  ></div>\n  <div\n    color=\"purple\"\n    rounded=\"3xl\"\n    style=\"width: 250px; height: 250px; margin-right: 20px\"\n    class=\"drac-box drac-bg-purple drac-rounded-3xl\"\n  ></div>\n  <div\n    color=\"purple\"\n    rounded=\"full\"\n    style=\"width: 250px; height: 250px; margin-right: 20px\"\n    class=\"drac-box drac-bg-purple drac-rounded-full\"\n  ></div>\n</div>\n",
-      "react": "<div style={{ display: \"flex\", flexDirection: \"row\" }}>\n  <Box\n    color=\"purple\"\n    rounded=\"none\"\n    style={{ width: 250, height: 250, marginRight: 20 }}\n  />\n  <Box\n    color=\"purple\"\n    rounded=\"sm\"\n    style={{ width: 250, height: 250, marginRight: 20 }}\n  />\n  <Box\n    color=\"purple\"\n    rounded=\"base\"\n    style={{ width: 250, height: 250, marginRight: 20 }}\n  />\n  <Box\n    color=\"purple\"\n    rounded=\"lg\"\n    style={{ width: 250, height: 250, marginRight: 20 }}\n  />\n  <Box\n    color=\"purple\"\n    rounded=\"xl\"\n    style={{ width: 250, height: 250, marginRight: 20 }}\n  />\n  <Box\n    color=\"purple\"\n    rounded=\"2xl\"\n    style={{ width: 250, height: 250, marginRight: 20 }}\n  />\n  <Box\n    color=\"purple\"\n    rounded=\"3xl\"\n    style={{ width: 250, height: 250, marginRight: 20 }}\n  />\n  <Box\n    color=\"purple\"\n    rounded=\"full\"\n    style={{ width: 250, height: 250, marginRight: 20 }}\n  />\n</div>;\n",
-      "docs": "",
+      "html": "<div>\n  <div\n    rounded=\"lg\"\n    color=\"purpleCyan\"\n    p=\"md\"\n    class=\"drac-box drac-bg-purple-cyan drac-rounded-lg drac-p-md\"\n  >\n    <span class=\"drac-text drac-text-white\">Large round border</span>\n  </div>\n  <div\n    rounded=\"sm\"\n    color=\"yellowPink\"\n    p=\"md\"\n    class=\"drac-box drac-bg-yellow-pink drac-rounded-sm drac-p-md\"\n  >\n    <span color=\"black\" class=\"drac-text drac-text-black\"\n      >small round border</span\n    >\n  </div>\n</div>\n",
+      "react": "<div>\n  <Box rounded=\"lg\" color=\"purpleCyan\" p=\"md\">\n    <Text>Large round border</Text>\n  </Box>\n  <Box rounded=\"sm\" color=\"yellowPink\" p=\"md\">\n    <Text color=\"black\">small round border</Text>\n  </Box>\n</div>;\n",
+      "docs": "Choose from one of the predefined `rounded` options for a Box.",
       "screenshot": "./dsp/assets/BoxRounded.png",
       "svgData": "./dsp/assets/svgs/BoxRounded.svg"
     },
     {
-      "title": "Generic Elements",
-      "html": "<div>\n  <button as=\"button\" color=\"pinkPurple\" class=\"drac-box drac-bg-pink-purple\">\n    Button</button\n  ><a as=\"a\" color=\"green\" href=\"#\" class=\"drac-box drac-bg-green\">Link</a>\n</div>\n",
-      "react": "<div>\n  <Box as=\"button\" color=\"pinkPurple\">\n    Button\n  </Box>\n  <Box as=\"a\" color=\"green\" href=\"#\">\n    Link\n  </Box>\n</div>;\n",
-      "docs": "",
-      "screenshot": "./dsp/assets/BoxGeneric Elements.png",
-      "svgData": "./dsp/assets/svgs/BoxGeneric Elements.svg"
+      "title": "Spacing",
+      "html": "<div>\n  <div color=\"yellowPink\" p=\"xs\" class=\"drac-box drac-bg-yellow-pink drac-p-xs\">\n    <span color=\"black\" class=\"drac-text drac-text-black\">xs padding</span>\n  </div>\n  <div color=\"purpleCyan\" p=\"sm\" class=\"drac-box drac-bg-purple-cyan drac-p-sm\">\n    <span color=\"black\" class=\"drac-text drac-text-black\">sm padding</span>\n  </div>\n  <div color=\"pinkPurple\" p=\"md\" class=\"drac-box drac-bg-pink-purple drac-p-md\">\n    <span color=\"black\" class=\"drac-text drac-text-black\">medium padding</span>\n  </div>\n  <div color=\"yellowPink\" m=\"xs\" class=\"drac-box drac-bg-yellow-pink drac-m-xs\">\n    <span color=\"black\" class=\"drac-text drac-text-black\">xs margin</span>\n  </div>\n  <div color=\"purpleCyan\" m=\"sm\" class=\"drac-box drac-bg-purple-cyan drac-m-sm\">\n    <span color=\"black\" class=\"drac-text drac-text-black\">sm margin</span>\n  </div>\n  <div color=\"pinkPurple\" m=\"md\" class=\"drac-box drac-bg-pink-purple drac-m-md\">\n    <span color=\"black\" class=\"drac-text drac-text-black\">medium margin</span>\n  </div>\n</div>\n",
+      "react": "<div>\n  <Box color=\"yellowPink\" p=\"xs\">\n    <Text color=\"black\">xs padding</Text>\n  </Box>\n  <Box color=\"purpleCyan\" p=\"sm\">\n    <Text color=\"black\">sm padding</Text>\n  </Box>\n  <Box color=\"pinkPurple\" p=\"md\">\n    <Text color=\"black\">medium padding</Text>\n  </Box>\n  <Box color=\"yellowPink\" m=\"xs\">\n    <Text color=\"black\">xs margin</Text>\n  </Box>\n  <Box color=\"purpleCyan\" m=\"sm\">\n    <Text color=\"black\">sm margin</Text>\n  </Box>\n  <Box color=\"pinkPurple\" m=\"md\">\n    <Text color=\"black\">medium margin</Text>\n  </Box>\n</div>;\n",
+      "docs": "Boxes come with pre defined spacing primitives for padding and margin that allow for customizing the spacing inside and around boxes.",
+      "screenshot": "./dsp/assets/BoxSpacing.png",
+      "svgData": "./dsp/assets/svgs/BoxSpacing.svg"
     }
   ],
   "ext_com_draculaui_props": {
@@ -54,75 +54,225 @@
       "defaultValue": null,
       "description": "The background color.",
       "name": "color",
-      "parent": {
-        "fileName": "src/components/Box/Box.tsx",
-        "name": "BoxProps"
-      },
       "declarations": [
-        { "fileName": "src/components/Box/Box.tsx", "name": "BoxProps" }
+        { "fileName": "src/components/Box/Box.tsx", "name": "TypeLiteral" },
+        {
+          "fileName": "dracula-ui/node_modules/@types/react/index.d.ts",
+          "name": "HTMLAttributes"
+        }
       ],
       "required": false,
       "type": {
-        "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+        "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+      }
+    },
+    "glowColor": {
+      "defaultValue": null,
+      "description": "The glow color.",
+      "name": "glowColor",
+      "declarations": [
+        { "fileName": "src/components/Box/Box.tsx", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | undefined"
       }
     },
     "rounded": {
       "defaultValue": null,
       "description": "The border radius.",
       "name": "rounded",
-      "parent": {
-        "fileName": "src/components/Box/Box.tsx",
-        "name": "BoxProps"
-      },
       "declarations": [
-        { "fileName": "src/components/Box/Box.tsx", "name": "BoxProps" }
+        { "fileName": "src/components/Box/Box.tsx", "name": "TypeLiteral" }
       ],
       "required": false,
       "type": {
         "name": "\"none\" | \"sm\" | \"base\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"full\" | undefined"
       }
     },
-    "spacing": {
-      "defaultValue": null,
-      "description": "Dracula UI standard spacing properties.",
-      "name": "spacing",
-      "parent": {
-        "fileName": "src/components/Box/Box.tsx",
-        "name": "BoxProps"
-      },
-      "declarations": [
-        { "fileName": "src/components/Box/Box.tsx", "name": "BoxProps" }
-      ],
-      "required": false,
-      "type": { "name": "SpacingPropType | undefined" }
-    },
-    "margin": {
-      "defaultValue": null,
-      "description": "Dracula UI standard margin properties.",
-      "name": "margin",
-      "parent": {
-        "fileName": "src/components/Box/Box.tsx",
-        "name": "BoxProps"
-      },
-      "declarations": [
-        { "fileName": "src/components/Box/Box.tsx", "name": "BoxProps" }
-      ],
-      "required": false,
-      "type": { "name": "MarginPropType | undefined" }
-    },
     "as": {
       "defaultValue": null,
       "description": "The HTML element to be used",
       "name": "as",
-      "parent": {
-        "fileName": "src/components/Box/Box.tsx",
-        "name": "BoxProps"
-      },
       "declarations": [
-        { "fileName": "src/components/Box/Box.tsx", "name": "BoxProps" }
+        { "fileName": "src/components/Box/Box.tsx", "name": "TypeLiteral" },
+        {
+          "fileName": "dracula-ui/node_modules/@types/react/index.d.ts",
+          "name": "AllHTMLAttributes"
+        }
       ],
       "required": false,
-      "type": { "name": "keyof HTMLElementTagNameMap | undefined" }
+      "type": {
+        "name": "\"object\" | \"base\" | \"time\" | \"link\" | \"menu\" | \"dialog\" | \"a\" | \"abbr\" | \"address\" | \"applet\" | \"area\" | \"article\" | \"aside\" | \"audio\" | \"b\" | \"basefont\" | \"bdi\" | \"bdo\" | \"blockquote\" | ... 100 more ... | undefined"
+      }
+    },
+    "p": {
+      "defaultValue": null,
+      "description": "",
+      "name": "p",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+      }
+    },
+    "py": {
+      "defaultValue": null,
+      "description": "",
+      "name": "py",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+      }
+    },
+    "px": {
+      "defaultValue": null,
+      "description": "",
+      "name": "px",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+      }
+    },
+    "pt": {
+      "defaultValue": null,
+      "description": "",
+      "name": "pt",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+      }
+    },
+    "pb": {
+      "defaultValue": null,
+      "description": "",
+      "name": "pb",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+      }
+    },
+    "pl": {
+      "defaultValue": null,
+      "description": "",
+      "name": "pl",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+      }
+    },
+    "pr": {
+      "defaultValue": null,
+      "description": "",
+      "name": "pr",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+      }
+    },
+    "m": {
+      "defaultValue": null,
+      "description": "",
+      "name": "m",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+      }
+    },
+    "my": {
+      "defaultValue": null,
+      "description": "",
+      "name": "my",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+      }
+    },
+    "mx": {
+      "defaultValue": null,
+      "description": "",
+      "name": "mx",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+      }
+    },
+    "mt": {
+      "defaultValue": null,
+      "description": "",
+      "name": "mt",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+      }
+    },
+    "mb": {
+      "defaultValue": null,
+      "description": "",
+      "name": "mb",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+      }
+    },
+    "ml": {
+      "defaultValue": null,
+      "description": "",
+      "name": "ml",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+      }
+    },
+    "mr": {
+      "defaultValue": null,
+      "description": "",
+      "name": "mr",
+      "declarations": [
+        { "fileName": "dracula-ui/src/base/spacing.ts", "name": "TypeLiteral" }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+      }
     }
   },
   "ext_com_draculaui_docgen": {
@@ -135,75 +285,267 @@
         "defaultValue": null,
         "description": "The background color.",
         "name": "color",
-        "parent": {
-          "fileName": "src/components/Box/Box.tsx",
-          "name": "BoxProps"
-        },
         "declarations": [
-          { "fileName": "src/components/Box/Box.tsx", "name": "BoxProps" }
+          { "fileName": "src/components/Box/Box.tsx", "name": "TypeLiteral" },
+          {
+            "fileName": "dracula-ui/node_modules/@types/react/index.d.ts",
+            "name": "HTMLAttributes"
+          }
         ],
         "required": false,
         "type": {
-          "name": "\"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+          "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+        }
+      },
+      "glowColor": {
+        "defaultValue": null,
+        "description": "The glow color.",
+        "name": "glowColor",
+        "declarations": [
+          { "fileName": "src/components/Box/Box.tsx", "name": "TypeLiteral" }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | undefined"
         }
       },
       "rounded": {
         "defaultValue": null,
         "description": "The border radius.",
         "name": "rounded",
-        "parent": {
-          "fileName": "src/components/Box/Box.tsx",
-          "name": "BoxProps"
-        },
         "declarations": [
-          { "fileName": "src/components/Box/Box.tsx", "name": "BoxProps" }
+          { "fileName": "src/components/Box/Box.tsx", "name": "TypeLiteral" }
         ],
         "required": false,
         "type": {
           "name": "\"none\" | \"sm\" | \"base\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"full\" | undefined"
         }
       },
-      "spacing": {
-        "defaultValue": null,
-        "description": "Dracula UI standard spacing properties.",
-        "name": "spacing",
-        "parent": {
-          "fileName": "src/components/Box/Box.tsx",
-          "name": "BoxProps"
-        },
-        "declarations": [
-          { "fileName": "src/components/Box/Box.tsx", "name": "BoxProps" }
-        ],
-        "required": false,
-        "type": { "name": "SpacingPropType | undefined" }
-      },
-      "margin": {
-        "defaultValue": null,
-        "description": "Dracula UI standard margin properties.",
-        "name": "margin",
-        "parent": {
-          "fileName": "src/components/Box/Box.tsx",
-          "name": "BoxProps"
-        },
-        "declarations": [
-          { "fileName": "src/components/Box/Box.tsx", "name": "BoxProps" }
-        ],
-        "required": false,
-        "type": { "name": "MarginPropType | undefined" }
-      },
       "as": {
         "defaultValue": null,
         "description": "The HTML element to be used",
         "name": "as",
-        "parent": {
-          "fileName": "src/components/Box/Box.tsx",
-          "name": "BoxProps"
-        },
         "declarations": [
-          { "fileName": "src/components/Box/Box.tsx", "name": "BoxProps" }
+          { "fileName": "src/components/Box/Box.tsx", "name": "TypeLiteral" },
+          {
+            "fileName": "dracula-ui/node_modules/@types/react/index.d.ts",
+            "name": "AllHTMLAttributes"
+          }
         ],
         "required": false,
-        "type": { "name": "keyof HTMLElementTagNameMap | undefined" }
+        "type": {
+          "name": "\"object\" | \"base\" | \"time\" | \"link\" | \"menu\" | \"dialog\" | \"a\" | \"abbr\" | \"address\" | \"applet\" | \"area\" | \"article\" | \"aside\" | \"audio\" | \"b\" | \"basefont\" | \"bdi\" | \"bdo\" | \"blockquote\" | ... 100 more ... | undefined"
+        }
+      },
+      "p": {
+        "defaultValue": null,
+        "description": "",
+        "name": "p",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+        }
+      },
+      "py": {
+        "defaultValue": null,
+        "description": "",
+        "name": "py",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+        }
+      },
+      "px": {
+        "defaultValue": null,
+        "description": "",
+        "name": "px",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+        }
+      },
+      "pt": {
+        "defaultValue": null,
+        "description": "",
+        "name": "pt",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+        }
+      },
+      "pb": {
+        "defaultValue": null,
+        "description": "",
+        "name": "pb",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+        }
+      },
+      "pl": {
+        "defaultValue": null,
+        "description": "",
+        "name": "pl",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+        }
+      },
+      "pr": {
+        "defaultValue": null,
+        "description": "",
+        "name": "pr",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+        }
+      },
+      "m": {
+        "defaultValue": null,
+        "description": "",
+        "name": "m",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+        }
+      },
+      "my": {
+        "defaultValue": null,
+        "description": "",
+        "name": "my",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+        }
+      },
+      "mx": {
+        "defaultValue": null,
+        "description": "",
+        "name": "mx",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+        }
+      },
+      "mt": {
+        "defaultValue": null,
+        "description": "",
+        "name": "mt",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+        }
+      },
+      "mb": {
+        "defaultValue": null,
+        "description": "",
+        "name": "mb",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+        }
+      },
+      "ml": {
+        "defaultValue": null,
+        "description": "",
+        "name": "ml",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+        }
+      },
+      "mr": {
+        "defaultValue": null,
+        "description": "",
+        "name": "mr",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/base/spacing.ts",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+        }
       }
     }
   }

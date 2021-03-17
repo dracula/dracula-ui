@@ -1,5 +1,6 @@
-import { ColorMap } from '../../base/colors';
 import React, { HTMLAttributes } from 'react';
+import { ColorMap } from '../../base/colors';
+import { MarginMixin, PaddingMixin } from '../../base/spacing';
 export declare const inputVariants: {
     normal: string;
     outline: string;
@@ -9,9 +10,9 @@ export declare const inputSizes: {
     medium: string;
     small: string;
 };
-export declare const inputColors: ColorMap;
+export declare const inputColors: Partial<ColorMap>;
 /** Input Props */
-export interface InputProps extends HTMLAttributes<HTMLInputElement> {
+export interface InputProps extends HTMLAttributes<HTMLInputElement>, PaddingMixin, MarginMixin {
     /**
      * The Dracula UI theme color to be used
      */

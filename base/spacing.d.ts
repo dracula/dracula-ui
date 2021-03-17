@@ -1,44 +1,39 @@
-export declare const spacing: {
+declare const padding: {
     none: string;
-    noneX: string;
-    noneY: string;
     xxs: string;
-    xxsY: string;
-    xxsX: string;
     xs: string;
-    xsX: string;
-    xsY: string;
-    small: string;
-    smallX: string;
-    smallY: string;
-    medium: string;
-    mediumX: string;
-    mediumY: string;
-    large: string;
-    largeX: string;
-    largeY: string;
+    sm: string;
+    md: string;
+    lg: string;
 };
-export declare const margin: {
+declare type paddingType = keyof typeof padding;
+export declare type PaddingMixin = {
+    p?: paddingType;
+    py?: paddingType;
+    px?: paddingType;
+    pt?: paddingType;
+    pb?: paddingType;
+    pl?: paddingType;
+    pr?: paddingType;
+};
+export declare function paddingMixin(mixin: PaddingMixin): string[];
+declare const margin: {
     none: string;
-    noneX: string;
-    noneY: string;
     xxs: string;
-    xxsY: string;
-    xxsX: string;
     xs: string;
-    xsX: string;
-    xsY: string;
-    small: string;
-    smallX: string;
-    smallY: string;
-    medium: string;
-    mediumX: string;
-    mediumY: string;
-    large: string;
-    largeX: string;
-    largeY: string;
+    sm: string;
+    md: string;
+    lg: string;
 };
-export declare type SpacingPropType = keyof typeof spacing | Array<keyof typeof spacing>;
-export declare type MarginPropType = keyof typeof margin | Array<keyof typeof margin>;
-export declare function spacingClasses(input?: SpacingPropType): string[];
-export declare function marginClasses(input?: MarginPropType): string[];
+declare type marginType = keyof typeof margin;
+export declare type MarginMixin = {
+    m?: marginType;
+    my?: marginType;
+    mx?: marginType;
+    mt?: marginType;
+    mb?: marginType;
+    ml?: marginType;
+    mr?: marginType;
+};
+export declare function marginMixin(mixin: MarginMixin): string[];
+export {};

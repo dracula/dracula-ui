@@ -1,5 +1,6 @@
 import { HTMLAttributes } from 'react';
 import { colors as backgroundColors } from '../../base/colors';
+import { MarginMixin, PaddingMixin } from '../../base/spacing';
 export declare const AvatarVariants: {
     normal: string;
     subtle: string;
@@ -10,7 +11,7 @@ export declare const AvatarBorderVariants: {
     none: string;
 };
 /** Avatar Props */
-export interface AvatarProps extends HTMLAttributes<HTMLSpanElement & HTMLImageElement> {
+export interface AvatarProps extends HTMLAttributes<HTMLSpanElement & HTMLImageElement>, PaddingMixin, MarginMixin {
     /**
      * The title or name to be used in the avatar.
      */

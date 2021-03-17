@@ -1,8 +1,9 @@
 import React, { HTMLAttributes } from 'react';
 import { ColorMap } from '../../base/colors';
-export declare const checkboxColors: ColorMap;
+import { MarginMixin, PaddingMixin } from '../../base/spacing';
+export declare const checkboxColors: Partial<ColorMap>;
 /** Checkbox Props */
-export interface CheckboxProps extends HTMLAttributes<HTMLInputElement> {
+export interface CheckboxProps extends HTMLAttributes<HTMLInputElement>, PaddingMixin, MarginMixin {
     /** The Dracula UI theme color for the checkbox. */
     color?: keyof typeof checkboxColors;
     /** The name of the checkbox. Mirrors the name HTML attribute. */

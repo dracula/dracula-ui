@@ -1,5 +1,6 @@
-import { ColorMap } from '../../base/colors';
 import React, { HTMLAttributes } from 'react';
+import { ColorMap } from '../../base/colors';
+import { MarginMixin, PaddingMixin } from '../../base/spacing';
 export declare const selectVariants: {
     normal: string;
     outline: string;
@@ -9,9 +10,9 @@ export declare const selectSizes: {
     medium: string;
     small: string;
 };
-export declare const selectColors: ColorMap;
+export declare const selectColors: Partial<ColorMap>;
 /** Select Props */
-export interface SelectProps extends HTMLAttributes<HTMLSelectElement> {
+export interface SelectProps extends HTMLAttributes<HTMLSelectElement>, PaddingMixin, MarginMixin {
     /** The Dracula UI theme color for the Select. */
     color?: keyof typeof selectColors;
     /**

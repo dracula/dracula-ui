@@ -1,4 +1,5 @@
 /// <reference types="react" />
+import '../../../../dist/styles/dracula-ui.css';
 declare const _default: {
     title: string;
 };

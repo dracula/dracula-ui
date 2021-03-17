@@ -1,8 +1,12 @@
 import React, { HTMLAttributes } from 'react';
-import { SpacingPropType } from '../../base/spacing';
+import { MarginMixin, PaddingMixin } from '../../base/spacing';
 import { textColors, textSizes, textWeights } from '../Text/Text';
 export declare const linkHoverColors: {
-    white: string;
+    purpleCyan: string;
+    yellowPink: string;
+    cyanGreen: string;
+    pinkPurple: string;
+    animated: string;
     cyan: string;
     green: string;
     orange: string;
@@ -10,14 +14,17 @@ export declare const linkHoverColors: {
     purple: string;
     red: string;
     yellow: string;
-    purpleCyan: string;
-    yellowPink: string;
-    cyanGreen: string;
-    pinkPurple: string;
-    animated: string;
+    white: string;
+    black: string;
+    blackSecondary: string;
+    blackLight: string;
 };
 /** Link Props */
-export interface LinkProps extends HTMLAttributes<HTMLAnchorElement> {
+export interface LinkProps extends HTMLAttributes<HTMLAnchorElement>, PaddingMixin, MarginMixin {
+    /**
+     * The path to link this anchor to.
+     */
+    href?: string;
     /**
      * Controls the size of the link based on pre-configured Dracula UI sizes.
      * Options: `xsmall`, `small`, `medium`, `large`
@@ -36,10 +43,6 @@ export interface LinkProps extends HTMLAttributes<HTMLAnchorElement> {
      * Controls the color of the link on hover
      */
     hoverColor?: keyof typeof linkHoverColors;
-    /**
-     * Controls the spacing between the Link component and its parent and siblings.
-     */
-    spacing?: SpacingPropType;
 }
 /**
  * Text is the base component for any sort of text.
@@ -55,6 +58,10 @@ export declare const Link: {
     (props: LinkProps): React.DetailedReactHTMLElement<{
         className: string;
         /**
+         * The path to link this anchor to.
+         */
+        href?: string | undefined;
+        /**
          * Controls the size of the link based on pre-configured Dracula UI sizes.
          * Options: `xsmall`, `small`, `medium`, `large`
          */
@@ -67,15 +74,11 @@ export declare const Link: {
         /**
          * Controls the color of the link
          */
-        color?: "white" | "cyan" | "green" | "orange" | "pink" | "purple" | "red" | "yellow" | "purpleCyan" | "yellowPink" | "cyanGreen" | "pinkPurple" | "animated" | undefined;
+        color?: "purpleCyan" | "yellowPink" | "cyanGreen" | "pinkPurple" | "animated" | "cyan" | "green" | "orange" | "pink" | "purple" | "red" | "yellow" | "white" | "black" | "blackSecondary" | "blackLight" | undefined;
         /**
          * Controls the color of the link on hover
          */
-        hoverColor?: "white" | "cyan" | "green" | "orange" | "pink" | "purple" | "red" | "yellow" | "purpleCyan" | "yellowPink" | "cyanGreen" | "pinkPurple" | "animated" | undefined;
-        /**
-         * Controls the spacing between the Link component and its parent and siblings.
-         */
-        spacing?: "large" | "medium" | "small" | "none" | "noneX" | "noneY" | "xs" | "xsX" | "xsY" | "smallX" | "smallY" | "mediumX" | "mediumY" | "largeX" | "largeY" | ("large" | "medium" | "small" | "none" | "noneX" | "noneY" | "xs" | "xsX" | "xsY" | "smallX" | "smallY" | "mediumX" | "mediumY" | "largeX" | "largeY")[] | undefined;
+        hoverColor?: "purpleCyan" | "yellowPink" | "cyanGreen" | "pinkPurple" | "animated" | "cyan" | "green" | "orange" | "pink" | "purple" | "red" | "yellow" | "white" | "black" | "blackSecondary" | "blackLight" | undefined;
         defaultChecked?: boolean | undefined;
         defaultValue?: string | number | readonly string[] | undefined;
         suppressContentEditableWarning?: boolean | undefined;
@@ -131,7 +134,7 @@ export declare const Link: {
         'aria-describedby'?: string | undefined;
         'aria-details'?: string | undefined;
         'aria-disabled'?: boolean | "true" | "false" | undefined;
-        'aria-dropeffect'?: "none" | "link" | "copy" | "execute" | "move" | "popup" | undefined;
+        'aria-dropeffect'?: "link" | "none" | "copy" | "execute" | "move" | "popup" | undefined;
         'aria-errormessage'?: string | undefined;
         'aria-expanded'?: boolean | "true" | "false" | undefined;
         'aria-flowto'?: string | undefined;
@@ -330,6 +333,23 @@ export declare const Link: {
         onAnimationIterationCapture?: ((event: React.AnimationEvent<HTMLAnchorElement>) => void) | undefined;
         onTransitionEnd?: ((event: React.TransitionEvent<HTMLAnchorElement>) => void) | undefined;
         onTransitionEndCapture?: ((event: React.TransitionEvent<HTMLAnchorElement>) => void) | undefined;
+        p?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
+        py?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
+        px?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined; /**
+         * Controls the weight of the link.
+         * Options: `normal`, `semibold`, `bold`.
+         */
+        pt?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
+        pb?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
+        pl?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
+        pr?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
+        m?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
+        my?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
+        mx?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
+        mt?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
+        mb?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
+        ml?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
+        mr?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
     }, HTMLElement>;
     displayName: string;
 };

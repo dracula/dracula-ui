@@ -1,17 +1,13 @@
 import React, { HTMLAttributes } from 'react';
 import { ColorMap } from '../../base/colors';
-import { MarginPropType, SpacingPropType } from '../../base/spacing';
-export declare const tabsColors: ColorMap;
+import { MarginMixin, PaddingMixin } from '../../base/spacing';
+export declare const tabsColors: Partial<ColorMap>;
 /**
  * Tabs Props
  */
-export interface TabsProps extends HTMLAttributes<HTMLUListElement> {
+export interface TabsProps extends HTMLAttributes<HTMLUListElement>, PaddingMixin, MarginMixin {
     /** The Dracula UI color for the Tabs. */
     color: keyof typeof tabsColors;
-    /** Dracula UI standard spacing properties. */
-    spacing?: SpacingPropType;
-    /** Dracula UI standard margin properties. */
-    margin?: MarginPropType;
 }
 /**
  * Tabs are horizontal navigation elements used to display

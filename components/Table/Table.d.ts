@@ -1,6 +1,7 @@
-import { ColorMap } from '../../base/colors';
 import React, { HTMLAttributes } from 'react';
-export declare const tableColors: ColorMap;
+import { ColorMap } from '../../base/colors';
+import { MarginMixin, PaddingMixin } from '../../base/spacing';
+export declare const tableColors: Partial<ColorMap>;
 export declare const tableVariants: {
     normal: string;
     striped: string;
@@ -8,7 +9,7 @@ export declare const tableVariants: {
 /**
  * Table Props
  */
-export interface TableProps extends HTMLAttributes<HTMLTableElement> {
+export interface TableProps extends HTMLAttributes<HTMLTableElement>, PaddingMixin, MarginMixin {
     /** The Dracula UI color for the Table. */
     color?: keyof typeof tableColors;
     /**

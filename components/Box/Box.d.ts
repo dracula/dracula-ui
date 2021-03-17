@@ -1,6 +1,6 @@
 import React, { AllHTMLAttributes } from 'react';
-import { colors } from '../../base/colors';
-import { SpacingPropType, MarginPropType } from '../../base/spacing';
+import { colors, glowColors } from '../../base/colors';
+import { PaddingMixin, MarginMixin } from '../../base/spacing';
 declare type Element = HTMLElementTagNameMap;
 export declare const roundedBorders: {
     none: string;
@@ -15,18 +15,16 @@ export declare const roundedBorders: {
 /**
  * Box Props
  */
-export interface BoxProps<K extends keyof Element = 'div'> extends AllHTMLAttributes<K> {
+export declare type BoxProps<K extends keyof Element = 'div'> = {
     /** The background color. */
     color?: keyof typeof colors;
+    /** The glow color. */
+    glowColor?: keyof typeof glowColors;
     /** The border radius. */
     rounded?: keyof typeof roundedBorders;
-    /** Dracula UI standard spacing properties. */
-    spacing?: SpacingPropType;
-    /** Dracula UI standard margin properties. */
-    margin?: MarginPropType;
     /** The HTML element to be used */
     as?: K;
-}
+} & AllHTMLAttributes<K> & PaddingMixin & MarginMixin;
 /**
  * Box is the most primitive component of Dracula UI.
  * Using Box allows for consumers of the components library to compose
@@ -37,16 +35,12 @@ export interface BoxProps<K extends keyof Element = 'div'> extends AllHTMLAttrib
  */
 export declare function Box<T extends keyof Element>(props: BoxProps<T>): React.ReactElement<{
     className: string;
-    /** The background color. */
-    color?: "white" | "cyan" | "green" | "orange" | "pink" | "purple" | "red" | "yellow" | "purpleCyan" | "yellowPink" | "cyanGreen" | "pinkPurple" | "animated" | undefined;
+    color?: "purpleCyan" | "yellowPink" | "cyanGreen" | "pinkPurple" | "animated" | "cyan" | "green" | "orange" | "pink" | "purple" | "red" | "yellow" | "white" | "black" | "blackSecondary" | "blackLight" | undefined;
+    /** The glow color. */
+    glowColor?: "cyan" | "green" | "orange" | "pink" | "purple" | "red" | "yellow" | undefined;
     /** The border radius. */
     rounded?: "base" | "none" | "sm" | "lg" | "xl" | "2xl" | "3xl" | "full" | undefined;
-    /** Dracula UI standard spacing properties. */
-    spacing?: "small" | "none" | "noneX" | "noneY" | "xs" | "xsX" | "xsY" | "smallX" | "smallY" | "medium" | "mediumX" | "mediumY" | "large" | "largeX" | "largeY" | ("small" | "none" | "noneX" | "noneY" | "xs" | "xsX" | "xsY" | "smallX" | "smallY" | "medium" | "mediumX" | "mediumY" | "large" | "largeX" | "largeY")[] | undefined;
-    /** Dracula UI standard margin properties. */
-    margin?: "small" | "none" | "noneX" | "noneY" | "xs" | "xsX" | "xsY" | "smallX" | "smallY" | "medium" | "mediumX" | "mediumY" | "large" | "largeX" | "largeY" | ("small" | "none" | "noneX" | "noneY" | "xs" | "xsX" | "xsY" | "smallX" | "smallY" | "medium" | "mediumX" | "mediumY" | "large" | "largeX" | "largeY")[] | undefined;
-    /** The HTML element to be used */
-    as?: T | undefined;
+    as?: (T & string) | undefined;
     accept?: string | undefined;
     acceptCharset?: string | undefined;
     action?: string | undefined;
@@ -405,6 +399,20 @@ export declare function Box<T extends keyof Element>(props: BoxProps<T>): React.
     onAnimationIterationCapture?: ((event: React.AnimationEvent<T>) => void) | undefined;
     onTransitionEnd?: ((event: React.TransitionEvent<T>) => void) | undefined;
     onTransitionEndCapture?: ((event: React.TransitionEvent<T>) => void) | undefined;
+    p?: "none" | "sm" | "lg" | "xxs" | "xs" | "md" | undefined;
+    py?: "none" | "sm" | "lg" | "xxs" | "xs" | "md" | undefined;
+    px?: "none" | "sm" | "lg" | "xxs" | "xs" | "md" | undefined;
+    pt?: "none" | "sm" | "lg" | "xxs" | "xs" | "md" | undefined;
+    pb?: "none" | "sm" | "lg" | "xxs" | "xs" | "md" | undefined;
+    pl?: "none" | "sm" | "lg" | "xxs" | "xs" | "md" | undefined;
+    pr?: "none" | "sm" | "lg" | "xxs" | "xs" | "md" | undefined;
+    m?: "none" | "sm" | "lg" | "xxs" | "xs" | "md" | undefined;
+    my?: "none" | "sm" | "lg" | "xxs" | "xs" | "md" | undefined;
+    mx?: "none" | "sm" | "lg" | "xxs" | "xs" | "md" | undefined;
+    mt?: "none" | "sm" | "lg" | "xxs" | "xs" | "md" | undefined;
+    mb?: "none" | "sm" | "lg" | "xxs" | "xs" | "md" | undefined;
+    ml?: "none" | "sm" | "lg" | "xxs" | "xs" | "md" | undefined;
+    mr?: "none" | "sm" | "lg" | "xxs" | "xs" | "md" | undefined;
 }, string | ((props: any) => React.ReactElement<any, any> | null) | (new (props: any) => React.Component<any, any, any>)>;
 export declare namespace Box {
     var displayName: string;

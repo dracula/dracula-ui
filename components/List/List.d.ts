@@ -1,6 +1,7 @@
-import { ColorMap } from '../../base/colors';
 import React, { HTMLAttributes } from 'react';
-export declare const listColors: ColorMap;
+import { ColorMap } from '../../base/colors';
+import { MarginMixin, PaddingMixin } from '../../base/spacing';
+export declare const listColors: Partial<ColorMap>;
 export declare const listVariants: {
     unordered: string;
     ordered: string;
@@ -9,7 +10,7 @@ export declare const listVariants: {
 /**
  * List Props
  */
-export interface ListProps extends HTMLAttributes<HTMLOListElement> {
+export interface ListProps extends HTMLAttributes<HTMLOListElement>, PaddingMixin, MarginMixin {
     /** The Dracula UI color for the List. */
     color: keyof typeof listColors;
     /**

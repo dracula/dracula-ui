@@ -1,5 +1,5 @@
 import React, { HTMLAttributes } from 'react';
-import { MarginPropType, SpacingPropType } from '../../base/spacing';
+import { MarginMixin, PaddingMixin } from '../../base/spacing';
 export declare const headingSizes: {
     'heading-1': string;
     'heading-2': string;
@@ -9,7 +9,11 @@ export declare const headingSizes: {
     'heading-6': string;
 };
 export declare const headingColors: {
-    white: string;
+    purpleCyan: string;
+    yellowPink: string;
+    cyanGreen: string;
+    pinkPurple: string;
+    animated: string;
     cyan: string;
     green: string;
     orange: string;
@@ -17,14 +21,13 @@ export declare const headingColors: {
     purple: string;
     red: string;
     yellow: string;
-    purpleCyan: string;
-    yellowPink: string;
-    cyanGreen: string;
-    pinkPurple: string;
-    animated: string;
+    white: string;
+    black: string;
+    blackSecondary: string;
+    blackLight: string;
 };
 /** Heading Props */
-export interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {
+export interface HeadingProps extends HTMLAttributes<HTMLHeadingElement>, MarginMixin, PaddingMixin {
     /**
      * The size and type of Heading to be used.
      * Denotes hierarchy.
@@ -34,12 +37,6 @@ export interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {
      * The Dracula UI color to be applied to the Heading.
      */
     color?: keyof typeof headingColors;
-    /**
-     * Controls the spacing between the Heading component and its parent and siblings.
-     */
-    spacing?: SpacingPropType;
-    /** Dracula UI standard margin properties. */
-    margin?: MarginPropType;
     as?: keyof HTMLElementTagNameMap;
 }
 /**

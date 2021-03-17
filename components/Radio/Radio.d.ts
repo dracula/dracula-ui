@@ -1,8 +1,9 @@
-import { ColorMap } from '../../base/colors';
 import React, { HTMLAttributes } from 'react';
-export declare const radioColors: ColorMap;
+import { ColorMap } from '../../base/colors';
+import { MarginMixin, PaddingMixin } from '../../base/spacing';
+export declare const radioColors: Partial<ColorMap>;
 /** Radio Props */
-export interface RadioProps extends HTMLAttributes<HTMLInputElement> {
+export interface RadioProps extends HTMLAttributes<HTMLInputElement>, PaddingMixin, MarginMixin {
     /** The Dracula UI theme color for the radio button. */
     color: keyof typeof radioColors;
     /** The name of the radio. Mirrors the name HTML attribute. */

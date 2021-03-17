@@ -1,5 +1,5 @@
 import React, { HTMLAttributes } from 'react';
-import { SpacingPropType } from '../../base/spacing';
+import { MarginMixin, PaddingMixin } from '../../base/spacing';
 export declare const textSizes: {
     large: string;
     medium: string;
@@ -12,7 +12,11 @@ export declare const textWeights: {
     bold: string;
 };
 export declare const textColors: {
-    white: string;
+    purpleCyan: string;
+    yellowPink: string;
+    cyanGreen: string;
+    pinkPurple: string;
+    animated: string;
     cyan: string;
     green: string;
     orange: string;
@@ -20,14 +24,13 @@ export declare const textColors: {
     purple: string;
     red: string;
     yellow: string;
-    purpleCyan: string;
-    yellowPink: string;
-    cyanGreen: string;
-    pinkPurple: string;
-    animated: string;
+    white: string;
+    black: string;
+    blackSecondary: string;
+    blackLight: string;
 };
 /** Text Props */
-export interface TextProps extends HTMLAttributes<HTMLSpanElement> {
+export interface TextProps extends HTMLAttributes<HTMLSpanElement>, PaddingMixin, MarginMixin {
     /**
      * Controls the size of the text based on pre-configured Dracula UI sizes.
      * Options: `xsmall`, `small`, `medium`, `large`
@@ -42,10 +45,6 @@ export interface TextProps extends HTMLAttributes<HTMLSpanElement> {
      * Controls the color of the text
      */
     color?: keyof typeof textColors;
-    /**
-     * Controls the spacing between the Text component and its parent and siblings.
-     */
-    spacing?: SpacingPropType;
     as?: 'a' | 'span' | 'p';
 }
 /**
@@ -74,11 +73,7 @@ export declare const Text: {
         /**
          * Controls the color of the text
          */
-        color?: "white" | "cyan" | "green" | "orange" | "pink" | "purple" | "red" | "yellow" | "purpleCyan" | "yellowPink" | "cyanGreen" | "pinkPurple" | "animated" | undefined;
-        /**
-         * Controls the spacing between the Text component and its parent and siblings.
-         */
-        spacing?: "large" | "medium" | "small" | "none" | "noneX" | "noneY" | "xs" | "xsX" | "xsY" | "smallX" | "smallY" | "mediumX" | "mediumY" | "largeX" | "largeY" | ("large" | "medium" | "small" | "none" | "noneX" | "noneY" | "xs" | "xsX" | "xsY" | "smallX" | "smallY" | "mediumX" | "mediumY" | "largeX" | "largeY")[] | undefined;
+        color?: "purpleCyan" | "yellowPink" | "cyanGreen" | "pinkPurple" | "animated" | "cyan" | "green" | "orange" | "pink" | "purple" | "red" | "yellow" | "white" | "black" | "blackSecondary" | "blackLight" | undefined;
         as?: "a" | "span" | "p" | undefined;
         defaultChecked?: boolean | undefined;
         defaultValue?: string | number | readonly string[] | undefined;
@@ -334,6 +329,23 @@ export declare const Text: {
         onAnimationIterationCapture?: ((event: React.AnimationEvent<HTMLSpanElement>) => void) | undefined;
         onTransitionEnd?: ((event: React.TransitionEvent<HTMLSpanElement>) => void) | undefined;
         onTransitionEndCapture?: ((event: React.TransitionEvent<HTMLSpanElement>) => void) | undefined;
+        p?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
+        py?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined; /**
+         * Controls the size of the text based on pre-configured Dracula UI sizes.
+         * Options: `xsmall`, `small`, `medium`, `large`
+         */
+        px?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
+        pt?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
+        pb?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
+        pl?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
+        pr?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
+        m?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
+        my?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
+        mx?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
+        mt?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
+        mb?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
+        ml?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
+        mr?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
     }, HTMLElement>;
     displayName: string;
 };

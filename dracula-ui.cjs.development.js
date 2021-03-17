@@ -41,94 +41,156 @@ function _objectWithoutPropertiesLoose(source, excluded) {
   return target;
 }
 
-var colors = {
+var supportColors = {
   white: 'drac-bg-white',
   black: 'drac-bg-black',
   blackSecondary: 'drac-bg-black-secondary',
-  blackLight: 'drac-bg-black-light',
+  blackLight: 'drac-bg-black-light'
+};
+var baseColors = {
   cyan: 'drac-bg-cyan',
   green: 'drac-bg-green',
   orange: 'drac-bg-orange',
   pink: 'drac-bg-pink',
   purple: 'drac-bg-purple',
   red: 'drac-bg-red',
-  yellow: 'drac-bg-yellow',
+  yellow: 'drac-bg-yellow'
+};
+var gradientColors = {
   purpleCyan: 'drac-bg-purple-cyan',
   yellowPink: 'drac-bg-yellow-pink',
   cyanGreen: 'drac-bg-cyan-green',
   pinkPurple: 'drac-bg-pink-purple',
   animated: 'drac-bg-animated'
 };
+var colors = /*#__PURE__*/_extends({}, supportColors, baseColors, gradientColors);
 var borderColors = /*#__PURE__*/lodash.mapValues(colors, function (className) {
   return className.replace('-bg-', '-border-');
+});
+var glowColors = /*#__PURE__*/lodash.mapValues(colors, function (className) {
+  return className.replace('-bg-', '-glow-');
 });
 var baseTextColors = /*#__PURE__*/lodash.mapValues(colors, function (className) {
   return className.replace('-bg-', '-text-');
 });
 
-var spacing = {
-  none: 'drac-spacing-none',
-  noneX: 'drac-spacing-none-x',
-  noneY: 'drac-spacing-none-y',
-  xxs: 'drac-spacing-xxs',
-  xxsY: 'drac-spacing-xxs-y',
-  xxsX: 'drac-spacing-xxs-x',
-  xs: 'drac-spacing-xs',
-  xsX: 'drac-spacing-xs-x',
-  xsY: 'drac-spacing-xs-y',
-  small: 'drac-spacing-sm',
-  smallX: 'drac-spacing-sm-x',
-  smallY: 'drac-spacing-sm-y',
-  medium: 'drac-spacing-md',
-  mediumX: 'drac-spacing-md-x',
-  mediumY: 'drac-spacing-md-y',
-  large: 'drac-spacing-lg',
-  largeX: 'drac-spacing-lg-x',
-  largeY: 'drac-spacing-lg-y'
+var padding = {
+  none: 'drac-p-none',
+  xxs: 'drac-p-xxs',
+  xs: 'drac-p-xs',
+  sm: 'drac-p-sm',
+  md: 'drac-p-md',
+  lg: 'drac-p-lg'
 };
-var margin = {
-  none: 'drac-margin-none',
-  noneX: 'drac-margin-none-x',
-  noneY: 'drac-margin-none-y',
-  xxs: 'drac-margin-xxs',
-  xxsY: 'drac-margin-xxs-y',
-  xxsX: 'drac-margin-xxs-x',
-  xs: 'drac-margin-tn',
-  xsX: 'drac-margin-xs-x',
-  xsY: 'drac-margin-xs-y',
-  small: 'drac-margin-sm',
-  smallX: 'drac-margin-sm-x',
-  smallY: 'drac-margin-sm-y',
-  medium: 'drac-margin-md',
-  mediumX: 'drac-margin-md-x',
-  mediumY: 'drac-margin-md-y',
-  large: 'drac-margin-lg',
-  largeX: 'drac-margin-lg-x',
-  largeY: 'drac-margin-lg-y'
-};
-function spacingClasses(input) {
-  var spacingInput = input != null ? input : [];
+var paddingLeft = /*#__PURE__*/lodash.mapValues(padding, function (clz) {
+  return clz.replace('-p-', '-pl-');
+});
+var paddingRight = /*#__PURE__*/lodash.mapValues(padding, function (clz) {
+  return clz.replace('-p-', '-pr-');
+});
+var paddingTop = /*#__PURE__*/lodash.mapValues(padding, function (clz) {
+  return clz.replace('-p-', '-pt-');
+});
+var paddingBottom = /*#__PURE__*/lodash.mapValues(padding, function (clz) {
+  return clz.replace('-p-', '-pb-');
+});
+var paddingX = /*#__PURE__*/lodash.mapValues(padding, function (clz) {
+  return clz.replace('-p-', '-px-');
+});
+var paddingY = /*#__PURE__*/lodash.mapValues(padding, function (clz) {
+  return clz.replace('-p-', '-py-');
+});
+function paddingMixin(mixin) {
+  var classes = [];
 
-  if (!Array.isArray(spacingInput)) {
-    spacingInput = [spacingInput];
+  if (mixin.p) {
+    classes.push(padding[mixin.p]);
   }
 
-  spacingInput = spacingInput;
-  return spacingInput.map(function (spc) {
-    return spacing[spc];
-  });
+  if (mixin.py) {
+    classes.push(paddingY[mixin.py]);
+  }
+
+  if (mixin.px) {
+    classes.push(paddingX[mixin.px]);
+  }
+
+  if (mixin.pt) {
+    classes.push(paddingTop[mixin.pt]);
+  }
+
+  if (mixin.pb) {
+    classes.push(paddingBottom[mixin.pb]);
+  }
+
+  if (mixin.pl) {
+    classes.push(paddingLeft[mixin.pl]);
+  }
+
+  if (mixin.pr) {
+    classes.push(paddingRight[mixin.pr]);
+  }
+
+  return classes;
 }
-function marginClasses(input) {
-  var marginInput = input != null ? input : [];
+var margin = {
+  none: 'drac-m-none',
+  xxs: 'drac-m-xxs',
+  xs: 'drac-m-xs',
+  sm: 'drac-m-sm',
+  md: 'drac-m-md',
+  lg: 'drac-m-lg'
+};
+var mLeft = /*#__PURE__*/lodash.mapValues(margin, function (clz) {
+  return clz.replace('-m-', '-ml-');
+});
+var mRight = /*#__PURE__*/lodash.mapValues(margin, function (clz) {
+  return clz.replace('-m-', '-mr-');
+});
+var mTop = /*#__PURE__*/lodash.mapValues(margin, function (clz) {
+  return clz.replace('-m-', '-mt-');
+});
+var mBottom = /*#__PURE__*/lodash.mapValues(margin, function (clz) {
+  return clz.replace('-m-', '-mb-');
+});
+var mX = /*#__PURE__*/lodash.mapValues(margin, function (clz) {
+  return clz.replace('-m-', '-mx-');
+});
+var mY = /*#__PURE__*/lodash.mapValues(margin, function (clz) {
+  return clz.replace('-m-', '-my-');
+});
+function marginMixin(mixin) {
+  var classes = [];
 
-  if (!Array.isArray(marginInput)) {
-    marginInput = [marginInput];
+  if (mixin.m) {
+    classes.push(margin[mixin.m]);
   }
 
-  marginInput = marginInput;
-  return marginInput.map(function (spc) {
-    return margin[spc];
-  });
+  if (mixin.my) {
+    classes.push(mY[mixin.my]);
+  }
+
+  if (mixin.mx) {
+    classes.push(mX[mixin.mx]);
+  }
+
+  if (mixin.mt) {
+    classes.push(mTop[mixin.mt]);
+  }
+
+  if (mixin.mb) {
+    classes.push(mBottom[mixin.mb]);
+  }
+
+  if (mixin.ml) {
+    classes.push(mLeft[mixin.ml]);
+  }
+
+  if (mixin.mr) {
+    classes.push(mRight[mixin.mr]);
+  }
+
+  return classes;
 }
 
 var headingSizes = {
@@ -150,7 +212,7 @@ var headingColors = /*#__PURE__*/lodash.mapValues(colors, function (className) {
  */
 
 var Heading = function Heading(props) {
-  var _props$size, _props$size2, _props$color, _props$spacing, _props$margin, _finalProps$as;
+  var _props$size, _props$size2, _props$color, _finalProps$as;
 
   var tag = {
     'heading-1': 'h1',
@@ -163,7 +225,7 @@ var Heading = function Heading(props) {
   var size = tag[(_props$size = props.size) != null ? _props$size : 'heading-1'];
 
   var finalProps = _extends({}, props, {
-    className: cx.apply(void 0, ["drac-heading", headingSizes[(_props$size2 = props.size) != null ? _props$size2 : 'heading-1'], headingColors[(_props$color = props.color) != null ? _props$color : 'white']].concat(spacingClasses((_props$spacing = props.spacing) != null ? _props$spacing : 'none'), marginClasses((_props$margin = props.margin) != null ? _props$margin : 'none')))
+    className: cx.apply(void 0, ["drac-heading", props.className, headingSizes[(_props$size2 = props.size) != null ? _props$size2 : 'heading-1'], headingColors[(_props$color = props.color) != null ? _props$color : 'white']].concat(paddingMixin(props), marginMixin(props)))
   });
 
   return React.createElement((_finalProps$as = finalProps.as) != null ? _finalProps$as : size, finalProps, props.children);
@@ -181,7 +243,7 @@ var textWeights = {
   semibold: 'drac-text-semibold',
   bold: 'drac-text-bold'
 };
-var textColors = /*#__PURE__*/lodash.mapValues(baseTextColors, function (className) {
+var textColors = /*#__PURE__*/lodash.mapValues(colors, function (className) {
   return className.replace('-bg-', '-text-');
 });
 /**
@@ -199,7 +261,7 @@ var Text = function Text(props) {
   var _props$size, _props$weight, _props$color, _finalProps$as;
 
   var finalProps = _extends({}, props, {
-    className: cx("drac-text", textSizes[(_props$size = props.size) != null ? _props$size : 'medium'], textWeights[(_props$weight = props.weight) != null ? _props$weight : 'normal'], textColors[(_props$color = props.color) != null ? _props$color : 'white'], spacingClasses(props.spacing))
+    className: cx.apply(void 0, ["drac-text", props.className, textSizes[(_props$size = props.size) != null ? _props$size : 'medium'], textWeights[(_props$weight = props.weight) != null ? _props$weight : 'normal'], textColors[(_props$color = props.color) != null ? _props$color : 'white']].concat(paddingMixin(props), marginMixin(props)))
   });
 
   return React.createElement((_finalProps$as = finalProps.as) != null ? _finalProps$as : 'span', finalProps, props.children);
@@ -224,7 +286,7 @@ var Link = function Link(props) {
   var _props$size, _props$weight, _props$color, _props$hoverColor;
 
   var finalProps = _extends({}, props, {
-    className: cx("drac-link", "drac-text", textSizes[(_props$size = props.size) != null ? _props$size : 'medium'], textWeights[(_props$weight = props.weight) != null ? _props$weight : 'normal'], textColors[(_props$color = props.color) != null ? _props$color : 'white'], linkHoverColors[(_props$hoverColor = props.hoverColor) != null ? _props$hoverColor : 'white'], spacingClasses(props.spacing))
+    className: cx.apply(void 0, ["drac-link", "drac-text", props.className, textSizes[(_props$size = props.size) != null ? _props$size : 'medium'], textWeights[(_props$weight = props.weight) != null ? _props$weight : 'normal'], textColors[(_props$color = props.color) != null ? _props$color : 'white'], linkHoverColors[(_props$hoverColor = props.hoverColor) != null ? _props$hoverColor : 'purple']].concat(paddingMixin(props), marginMixin(props)))
   });
 
   return React.createElement('a', finalProps, props.children);
@@ -239,10 +301,10 @@ Link.displayName = 'Link';
  */
 
 var Paragraph = function Paragraph(props) {
-  var _props$size, _props$weight, _props$color, _props$spacing;
+  var _props$size, _props$weight, _props$color;
 
   var finalProps = _extends({}, props, {
-    className: cx("drac-text", textSizes[(_props$size = props.size) != null ? _props$size : 'medium'], textWeights[(_props$weight = props.weight) != null ? _props$weight : 'normal'], textColors[(_props$color = props.color) != null ? _props$color : 'white'], spacingClasses((_props$spacing = props.spacing) != null ? _props$spacing : 'smallY'))
+    className: cx.apply(void 0, ["drac-text", props.className, textSizes[(_props$size = props.size) != null ? _props$size : 'medium'], textWeights[(_props$weight = props.weight) != null ? _props$weight : 'normal'], textColors[(_props$color = props.color) != null ? _props$color : 'white']].concat(paddingMixin(props), marginMixin(props)))
   });
 
   return React.createElement("p", Object.assign({}, finalProps), props.children);
@@ -271,7 +333,7 @@ function Box(props) {
   var _finalProps$as;
 
   var finalProps = _extends({}, props, {
-    className: cx.apply(void 0, ["drac-box", props.color && colors[props.color], props.rounded && roundedBorders[props.rounded]].concat(spacingClasses(props.spacing), marginClasses(props.margin), [props.className]))
+    className: cx.apply(void 0, ["drac-box", props.className, props.color && colors[props.color], props.glowColor && glowColors[props.glowColor], props.rounded && roundedBorders[props.rounded]].concat(paddingMixin(props), marginMixin(props)))
   });
 
   var as = (_finalProps$as = finalProps.as) != null ? _finalProps$as : 'div';
@@ -308,7 +370,7 @@ var Button = function Button(props) {
     backgroundClass = backgroundClass + "-transparent";
   }
 
-  var classes = cx('drac-btn', backgroundClass, buttonVariants[(_props$variant = props.variant) != null ? _props$variant : 'normal'], buttonSizes[(_props$size = props.size) != null ? _props$size : 'medium'], textColorClass);
+  var classes = cx.apply(void 0, ['drac-btn', props.className, backgroundClass, buttonVariants[(_props$variant = props.variant) != null ? _props$variant : 'normal'], buttonSizes[(_props$size = props.size) != null ? _props$size : 'medium'], textColorClass].concat(paddingMixin(props), marginMixin(props)));
   return React.createElement((_props$as = props.as) != null ? _props$as : 'button', _extends({
     className: classes
   }, props), props.children);
@@ -332,13 +394,13 @@ var Badge = function Badge(props) {
   var isSubtle = props.variant === 'subtle';
   var overrideTextColor = isOutline || isSubtle;
   var textColorClass = overrideTextColor ? textColors[(_props$themeColor = props.themeColor) != null ? _props$themeColor : 'green'] : undefined;
-  var backgroundClass = colors[(_props$themeColor2 = props.themeColor) != null ? _props$themeColor2 : 'green'];
+  var backgroundClass = colors[(_props$themeColor2 = props.themeColor) != null ? _props$themeColor2 : 'black'];
 
   if (isSubtle) {
     backgroundClass = backgroundClass + "-transparent";
   }
 
-  var classes = cx('drac-badge', backgroundClass, variants[(_props$variant = props.variant) != null ? _props$variant : 'normal'], textColorClass);
+  var classes = cx.apply(void 0, ['drac-badge', props.className, backgroundClass, variants[(_props$variant = props.variant) != null ? _props$variant : 'normal'], textColorClass].concat(marginMixin(props), paddingMixin(props)));
   return React.createElement("span", Object.assign({
     className: classes
   }, props), React.createElement(Text, {
@@ -372,7 +434,7 @@ var Avatar = function Avatar(props) {
       htmlProps = _objectWithoutPropertiesLoose(props, ["themeColor", "variant", "borderVariant", "src", "title"]);
 
   var backgroundClass = colors[themeColor != null ? themeColor : 'green'] + "-transparent";
-  var classes = cx('drac-avatar', backgroundClass, textColors[themeColor != null ? themeColor : 'green'], AvatarVariants[variant != null ? variant : 'normal'], AvatarBorderVariants[borderVariant != null ? borderVariant : 'normal']);
+  var classes = cx.apply(void 0, ['drac-avatar', props.className, backgroundClass, textColors[themeColor != null ? themeColor : 'green'], AvatarVariants[variant != null ? variant : 'normal'], AvatarBorderVariants[borderVariant != null ? borderVariant : 'normal']].concat(paddingMixin(props), marginMixin(props)));
   var names = props.title.split(' ');
   var f = (_first = lodash.first(names)) == null ? void 0 : _first.slice(0, 1);
   var l = (_last = lodash.last(names)) == null ? void 0 : _last.slice(0, 1);
@@ -409,12 +471,7 @@ var inputColors = {
   pink: 'drac-input-pink drac-text-pink',
   purple: 'drac-input-purple drac-text-purple',
   red: 'drac-input-red drac-text-red',
-  yellow: 'drac-input-yellow drac-text-yellow',
-  animated: '',
-  cyanGreen: '',
-  pinkPurple: '',
-  purpleCyan: '',
-  yellowPink: ''
+  yellow: 'drac-input-yellow drac-text-yellow'
 };
 /**
  * Input is a styled HTML Input.
@@ -425,7 +482,7 @@ var inputColors = {
 
 var Input = function Input(props) {
   var finalProps = _extends({}, props, {
-    className: cx("drac-input", props.variant && inputVariants[props.variant], props.size && inputSizes[props.size], props.color && inputColors[props.color])
+    className: cx.apply(void 0, ["drac-input", props.className, props.variant && inputVariants[props.variant], props.size && inputSizes[props.size], props.color && inputColors[props.color]].concat(paddingMixin(props), marginMixin(props)))
   });
 
   var cleanProps = _objectWithoutPropertiesLoose(finalProps, ["size"]);
@@ -451,12 +508,7 @@ var selectColors = {
   pink: 'drac-select-pink',
   purple: 'drac-select-purple',
   red: 'drac-select-red',
-  yellow: 'drac-select-yellow',
-  animated: '',
-  cyanGreen: '',
-  pinkPurple: '',
-  purpleCyan: '',
-  yellowPink: ''
+  yellow: 'drac-select-yellow'
 };
 /**
  * Select is a styled HTML Select element.
@@ -467,7 +519,7 @@ var selectColors = {
 
 var Select = function Select(props) {
   var finalProps = _extends({}, props, {
-    className: cx('drac-select', props.variant && selectVariants[props.variant], props.size && selectSizes[props.size], props.color && selectColors[props.color])
+    className: cx.apply(void 0, ['drac-select', props.className, props.variant && selectVariants[props.variant], props.size && selectSizes[props.size], props.color && selectColors[props.color]].concat(paddingMixin(props), marginMixin(props)))
   });
 
   var cleanProps = _objectWithoutPropertiesLoose(finalProps, ["size"]);
@@ -498,7 +550,7 @@ var dividerColors = borderColors;
 
 var Divider = function Divider(props) {
   var finalProps = _extends({}, props, {
-    className: "drac-divider " + dividerColors[props.color]
+    className: cx.apply(void 0, ["drac-divider", props.className, dividerColors[props.color]].concat(paddingMixin(props), marginMixin(props)))
   });
 
   return React.createElement("hr", Object.assign({}, finalProps));
@@ -513,12 +565,7 @@ var radioColors = {
   pink: 'drac-radio-pink',
   purple: 'drac-radio-purple',
   red: 'drac-radio-red',
-  yellow: 'drac-radio-yellow',
-  animated: '',
-  cyanGreen: '',
-  pinkPurple: '',
-  purpleCyan: '',
-  yellowPink: ''
+  yellow: 'drac-radio-yellow'
 };
 /**
  * Radio is a styled HTML Input of type radio.
@@ -529,7 +576,7 @@ var radioColors = {
 
 var Radio = function Radio(props) {
   var finalProps = _extends({}, props, {
-    className: "drac-radio " + radioColors[props.color]
+    className: cx.apply(void 0, ["drac-radio", props.className, radioColors[props.color]].concat(paddingMixin(props), marginMixin(props)))
   });
 
   return React.createElement("input", Object.assign({
@@ -546,12 +593,7 @@ var checkboxColors = {
   pink: 'drac-checkbox-pink',
   purple: 'drac-checkbox-purple',
   red: 'drac-checkbox-red',
-  yellow: 'drac-checkbox-yellow',
-  animated: '',
-  cyanGreen: '',
-  pinkPurple: '',
-  purpleCyan: '',
-  yellowPink: ''
+  yellow: 'drac-checkbox-yellow'
 };
 /**
  * Checkbox is a styled HTML Input of type checkbox.
@@ -562,7 +604,7 @@ var checkboxColors = {
 
 var Checkbox = function Checkbox(props) {
   var finalProps = _extends({}, props, {
-    className: cx("drac-checkbox", props.color && checkboxColors[props.color])
+    className: cx.apply(void 0, ["drac-checkbox", props.className, props.color && checkboxColors[props.color]].concat(paddingMixin(props), marginMixin(props)))
   });
 
   return React.createElement("input", Object.assign({
@@ -579,12 +621,7 @@ var switchColors = {
   pink: 'drac-switch-pink',
   purple: 'drac-switch-purple',
   red: 'drac-switch-red',
-  yellow: 'drac-switch-yellow',
-  animated: '',
-  cyanGreen: '',
-  pinkPurple: '',
-  purpleCyan: '',
-  yellowPink: ''
+  yellow: 'drac-switch-yellow'
 };
 /**
  * Switch is an abstraction pattern that represents toggles.
@@ -598,7 +635,7 @@ var switchColors = {
 
 var Switch = function Switch(props) {
   var finalProps = _extends({}, props, {
-    className: "drac-switch drac-checkbox " + switchColors[props.color]
+    className: cx.apply(void 0, ["drac-switch", 'drac-checkbox', props.className, switchColors[props.color]].concat(paddingMixin(props), marginMixin(props)))
   });
 
   return React.createElement("input", Object.assign({
@@ -621,8 +658,10 @@ var cardVariants = {
  */
 
 var Card = function Card(props) {
-  var classNames = cx('drac-card', props.className, props.orientation && cardOrientations[props.orientation], props.variant && cardVariants[props.variant], // apply border color based on theme color
-  props.color && props.variant && borderColors[props.color]);
+  var classNames = cx('drac-card', props.className, props.variant && cardVariants[props.variant], // apply border color based on theme color
+  // @ts-ignore TODO: make sure border and background colors match
+  props.color && props.variant !== 'subtle' && colors[props.color], // @ts-ignore TODO: make sure border and background colors match
+  props.color && props.variant === 'subtle' && borderColors[props.color], props.glowColor && glowColors[props.glowColor]);
   return React.createElement(Box, Object.assign({}, props, {
     className: classNames
   }), props.children);
@@ -637,12 +676,7 @@ var tabsColors = {
   pink: 'drac-tabs-pink',
   purple: 'drac-tabs-purple',
   red: 'drac-tabs-red',
-  yellow: 'drac-tabs-yellow',
-  animated: '',
-  cyanGreen: '',
-  pinkPurple: '',
-  purpleCyan: '',
-  yellowPink: ''
+  yellow: 'drac-tabs-yellow'
 };
 /**
  * Tabs are horizontal navigation elements used to display
@@ -651,7 +685,7 @@ var tabsColors = {
 
 var Tabs = function Tabs(props) {
   var finalProps = _extends({}, props, {
-    className: cx.apply(void 0, ['drac-tabs', props.color && tabsColors[props.color]].concat(spacingClasses(props.spacing), marginClasses(props.margin)))
+    className: cx.apply(void 0, ['drac-tabs', props.className, props.color && tabsColors[props.color]].concat(paddingMixin(props), marginMixin(props)))
   });
 
   return React.createElement("ul", Object.assign({}, finalProps));
@@ -666,12 +700,7 @@ var tableColors = {
   pink: 'drac-table-pink',
   purple: 'drac-table-purple',
   red: 'drac-table-red',
-  yellow: 'drac-table-yellow',
-  animated: '',
-  cyanGreen: '',
-  pinkPurple: '',
-  purpleCyan: '',
-  yellowPink: ''
+  yellow: 'drac-table-yellow'
 };
 var tableVariants = {
   normal: 'drac-table',
@@ -684,7 +713,7 @@ var tableVariants = {
 
 var Table = function Table(props) {
   var finalProps = _extends({}, props, {
-    className: cx('drac-table', props.variant && tableVariants[props.variant], props.color && tableColors[props.color])
+    className: cx.apply(void 0, ['drac-table', props.className, props.variant && tableVariants[props.variant], props.color && tableColors[props.color]].concat(paddingMixin(props), marginMixin(props)))
   });
 
   return React.createElement("table", Object.assign({}, finalProps));
@@ -699,12 +728,7 @@ var listColors = {
   pink: 'drac-list-pink',
   purple: 'drac-list-purple',
   red: 'drac-list-red',
-  yellow: 'drac-list-yellow',
-  animated: '',
-  cyanGreen: '',
-  pinkPurple: '',
-  purpleCyan: '',
-  yellowPink: ''
+  yellow: 'drac-list-yellow'
 };
 var listVariants = {
   unordered: 'drac-list-unordered',
@@ -718,7 +742,7 @@ var listVariants = {
 
 var List = function List(props) {
   var finalProps = _extends({}, props, {
-    className: cx('drac-list', props.variant && listVariants[props.variant], props.color && listColors[props.color])
+    className: cx.apply(void 0, ['drac-list', props.className, props.variant && listVariants[props.variant], props.color && listColors[props.color]].concat(paddingMixin(props), marginMixin(props)))
   });
 
   if (props.variant === 'unordered') {
@@ -749,12 +773,18 @@ exports.Switch = Switch;
 exports.Table = Table;
 exports.Tabs = Tabs;
 exports.Text = Text;
+exports.baseColors = baseColors;
+exports.baseTextColors = baseTextColors;
+exports.borderColors = borderColors;
 exports.buttonSizes = buttonSizes;
 exports.buttonVariants = buttonVariants;
 exports.cardOrientations = cardOrientations;
 exports.cardVariants = cardVariants;
 exports.checkboxColors = checkboxColors;
+exports.colors = colors;
 exports.dividerColors = dividerColors;
+exports.glowColors = glowColors;
+exports.gradientColors = gradientColors;
 exports.headingColors = headingColors;
 exports.headingSizes = headingSizes;
 exports.inputColors = inputColors;
@@ -763,11 +793,14 @@ exports.inputVariants = inputVariants;
 exports.linkHoverColors = linkHoverColors;
 exports.listColors = listColors;
 exports.listVariants = listVariants;
+exports.marginMixin = marginMixin;
+exports.paddingMixin = paddingMixin;
 exports.radioColors = radioColors;
 exports.roundedBorders = roundedBorders;
 exports.selectColors = selectColors;
 exports.selectSizes = selectSizes;
 exports.selectVariants = selectVariants;
+exports.supportColors = supportColors;
 exports.switchColors = switchColors;
 exports.tableColors = tableColors;
 exports.tableVariants = tableVariants;

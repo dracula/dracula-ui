@@ -1,8 +1,9 @@
 import { ColorMap } from '../../base/colors';
 import React, { HTMLAttributes } from 'react';
-export declare const switchColors: ColorMap;
+import { MarginMixin, PaddingMixin } from '../../base/spacing';
+export declare const switchColors: Partial<ColorMap>;
 /** Switch Props. */
-export interface SwitchProps extends HTMLAttributes<HTMLInputElement> {
+export interface SwitchProps extends HTMLAttributes<HTMLInputElement>, PaddingMixin, MarginMixin {
     /** The name of the form element. */
     name?: string;
     /**

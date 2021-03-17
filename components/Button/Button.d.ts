@@ -1,5 +1,6 @@
 import React, { HTMLAttributes } from 'react';
 import { colors as backgroundColors } from '../../base/colors';
+import { MarginMixin, PaddingMixin } from '../../base/spacing';
 export declare const buttonVariants: {
     normal: string;
     outline: string;
@@ -12,7 +13,7 @@ export declare const buttonSizes: {
     xsmall: string;
 };
 /** Button Props */
-export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends HTMLAttributes<HTMLButtonElement>, PaddingMixin, MarginMixin {
     /** A Dracula UI theme color for the Button. */
     color?: keyof typeof backgroundColors;
     /**

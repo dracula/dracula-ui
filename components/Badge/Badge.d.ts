@@ -1,5 +1,6 @@
-import React, { HTMLAttributes } from 'react';
+import React, { AllHTMLAttributes } from 'react';
 import { colors as backgroundColors } from '../../base/colors';
+import { MarginMixin, PaddingMixin } from '../../base/spacing';
 declare const variants: {
     normal: string;
     subtle: string;
@@ -8,7 +9,7 @@ declare const variants: {
 /**
  * Badge Props
  */
-export interface BadgeProps extends HTMLAttributes<HTMLSpanElement> {
+export declare type BadgeProps = {
     /**
      * The theme variation color for a badge.
      */
@@ -20,7 +21,7 @@ export interface BadgeProps extends HTMLAttributes<HTMLSpanElement> {
      * `outline` -> No background color, just borders and text.
      */
     variant?: keyof typeof variants;
-}
+} & AllHTMLAttributes<HTMLSpanElement> & PaddingMixin & MarginMixin;
 /**
  * Badges are used to denote status or to highlight specific
  * information.
