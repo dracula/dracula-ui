@@ -14,7 +14,7 @@ docs(Link, {
   variations() {
     return [
       snapshot(
-        'Sizes',
+        'Sizes & Weights',
         () => (
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <Link href="#" size="xsmall">
@@ -28,6 +28,9 @@ docs(Link, {
             </Link>
             <Link href="#" size="large">
               large
+            </Link>
+            <Link href="#" weight="semibold">
+              semibold
             </Link>
             <Link href="#" style={{ fontSize: 30 }}>
               font-size: 30

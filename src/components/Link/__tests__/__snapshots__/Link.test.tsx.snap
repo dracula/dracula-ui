@@ -47,7 +47,7 @@ Object {
 }
 `;
 
-exports[`Site: Link Sizes 1`] = `
+exports[`Site: Link Sizes / weights 1`] = `
 Object {
   "docs": "Link sizes can be customized with pre defined sizes or using regular HTML styles or CSS classes.",
   "html": "<div style=\\"display: flex; flex-direction: column\\">
@@ -69,6 +69,11 @@ Object {
     >large</a
   ><a
     href=\\"#\\"
+    weight=\\"semibold\\"
+    class=\\"drac-link drac-text drac-text-semibold drac-text-white drac-text-purple--hover\\"
+    >semibold</a
+  ><a
+    href=\\"#\\"
     style=\\"font-size: 30px\\"
     class=\\"drac-link drac-text drac-text-white drac-text-purple--hover\\"
     >font-size: 30</a
@@ -88,11 +93,14 @@ Object {
   <Link href=\\"#\\" size=\\"large\\">
     large
   </Link>
+  <Link href=\\"#\\" weight=\\"semibold\\">
+    semibold
+  </Link>
   <Link href=\\"#\\" style={{ fontSize: 30 }}>
     font-size: 30
   </Link>
 </div>;
 ",
-  "title": "Sizes",
+  "title": "Sizes / weights",
 }
 `;

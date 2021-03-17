@@ -3,7 +3,7 @@
   "type": "page",
   "id": "Link",
   "name": "Link",
-  "last_updated": "2021-03-17T03:33:20.646Z",
+  "last_updated": "2021-03-17T03:34:27.233Z",
   "last_updated_by": "System",
   "description": "Text is the base component for any sort of text.\n\nConsumers of this component can control, the color, size,\nweight, and spacing of Text.\n\nUse this component for generic, and non-hierarchical text that is\nto be displayed on a page, or as part of other complex components\nor UI patterns",
   "related_entity_ids": [],
@@ -23,14 +23,6 @@
       "docs": "Link is an abstraction/style that can/is applied to HTML anchor elements.",
       "screenshot": "./dsp/assets/Link.png",
       "svgData": "./dsp/assets/svgs/Link.svg"
-    },
-    {
-      "title": "Sizes",
-      "html": "<div style=\"display: flex; flex-direction: column\">\n  <a\n    href=\"#\"\n    class=\"drac-link drac-text drac-text-xs drac-text-white drac-text-purple--hover\"\n    >xsmall</a\n  ><a\n    href=\"#\"\n    class=\"drac-link drac-text drac-text-sm drac-text-white drac-text-purple--hover\"\n    >small</a\n  ><a\n    href=\"#\"\n    class=\"drac-link drac-text drac-text-white drac-text-purple--hover\"\n    >medium</a\n  ><a\n    href=\"#\"\n    class=\"drac-link drac-text drac-text-lg drac-text-white drac-text-purple--hover\"\n    >large</a\n  ><a\n    href=\"#\"\n    style=\"font-size: 30px\"\n    class=\"drac-link drac-text drac-text-white drac-text-purple--hover\"\n    >font-size: 30</a\n  >\n</div>\n",
-      "react": "<div style={{ display: \"flex\", flexDirection: \"column\" }}>\n  <Link href=\"#\" size=\"xsmall\">\n    xsmall\n  </Link>\n  <Link href=\"#\" size=\"small\">\n    small\n  </Link>\n  <Link href=\"#\" size=\"medium\">\n    medium\n  </Link>\n  <Link href=\"#\" size=\"large\">\n    large\n  </Link>\n  <Link href=\"#\" style={{ fontSize: 30 }}>\n    font-size: 30\n  </Link>\n</div>;\n",
-      "docs": "Link sizes can be customized with pre defined sizes or using regular HTML styles or CSS classes.",
-      "screenshot": "./dsp/assets/LinkSizes.png",
-      "svgData": "./dsp/assets/svgs/LinkSizes.svg"
     },
     {
       "title": "Colors",
