@@ -2,14 +2,14 @@
 
 exports[`Site: Input Basic Usage 1`] = `
 Object {
-  "docs": "",
+  "docs": "Styles or abstracts HTML input elements.",
   "html": "<input
-  placeholder=\\"Placeholder\\"
+  placeholder=\\"Input\\"
   color=\\"white\\"
   class=\\"drac-input drac-input-white drac-text-white\\"
 />
 ",
-  "react": "<Input placeholder=\\"Placeholder\\" color=\\"white\\" />;
+  "react": "<Input placeholder=\\"Input\\" color=\\"white\\" />;
 ",
   "title": "Usage",
 }
@@ -17,205 +17,25 @@ Object {
 
 exports[`Site: Input Colors 1`] = `
 Object {
-  "docs": "",
-  "html": "<div style=\\"display: flex; flex-direction: column\\">
+  "docs": "Inputs can be customized to use any of the Dracula UI theme colors.",
+  "html": "<div class=\\"drac-box\\">
   <input
-    placeholder=\\"Placeholder\\"
-    variant=\\"outline\\"
-    color=\\"white\\"
-    style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input-outline drac-input-white drac-text-white\\"
-  /><input
-    placeholder=\\"Placeholder\\"
-    variant=\\"outline\\"
-    color=\\"cyan\\"
-    style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input-outline drac-input-cyan drac-text-cyan\\"
-  /><input
-    placeholder=\\"Placeholder\\"
-    variant=\\"outline\\"
-    color=\\"green\\"
-    style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input-outline drac-input-green drac-text-green\\"
-  /><input
-    placeholder=\\"Placeholder\\"
-    variant=\\"outline\\"
-    color=\\"orange\\"
-    style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input-outline drac-input-orange drac-text-orange\\"
-  /><input
-    placeholder=\\"Placeholder\\"
-    variant=\\"outline\\"
-    color=\\"pink\\"
-    style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input-outline drac-input-pink drac-text-pink\\"
-  /><input
-    placeholder=\\"Placeholder\\"
-    variant=\\"outline\\"
     color=\\"purple\\"
-    style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input-outline drac-input-purple drac-text-purple\\"
+    placeholder=\\"purple\\"
+    m=\\"xs\\"
+    class=\\"drac-input drac-input-purple drac-text-purple drac-m-xs\\"
   /><input
-    placeholder=\\"Placeholder\\"
-    variant=\\"outline\\"
-    color=\\"red\\"
-    style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input-outline drac-input-red drac-text-red\\"
-  /><input
-    placeholder=\\"Placeholder\\"
-    variant=\\"outline\\"
-    color=\\"yellow\\"
-    style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input-outline drac-input-yellow drac-text-yellow\\"
-  /><input
-    placeholder=\\"Placeholder\\"
-    variant=\\"normal\\"
-    color=\\"white\\"
-    style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input-white drac-text-white\\"
-  /><input
-    placeholder=\\"Placeholder\\"
-    variant=\\"normal\\"
-    color=\\"cyan\\"
-    style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input-cyan drac-text-cyan\\"
-  /><input
-    placeholder=\\"Placeholder\\"
-    variant=\\"normal\\"
     color=\\"green\\"
-    style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input-green drac-text-green\\"
-  /><input
-    placeholder=\\"Placeholder\\"
-    variant=\\"normal\\"
-    color=\\"orange\\"
-    style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input-orange drac-text-orange\\"
-  /><input
-    placeholder=\\"Placeholder\\"
-    variant=\\"normal\\"
-    color=\\"pink\\"
-    style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input-pink drac-text-pink\\"
-  /><input
-    placeholder=\\"Placeholder\\"
-    variant=\\"normal\\"
-    color=\\"purple\\"
-    style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input-purple drac-text-purple\\"
-  /><input
-    placeholder=\\"Placeholder\\"
-    variant=\\"normal\\"
-    color=\\"red\\"
-    style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input-red drac-text-red\\"
-  /><input
-    placeholder=\\"Placeholder\\"
-    variant=\\"normal\\"
-    color=\\"yellow\\"
-    style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input-yellow drac-text-yellow\\"
+    placeholder=\\"green\\"
+    m=\\"xs\\"
+    class=\\"drac-input drac-input-green drac-text-green drac-m-xs\\"
   />
 </div>
 ",
-  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\" }}>
-  <Input
-    placeholder=\\"Placeholder\\"
-    variant=\\"outline\\"
-    color=\\"white\\"
-    style={{ marginBottom: 20 }}
-  />
-  <Input
-    placeholder=\\"Placeholder\\"
-    variant=\\"outline\\"
-    color=\\"cyan\\"
-    style={{ marginBottom: 20 }}
-  />
-  <Input
-    placeholder=\\"Placeholder\\"
-    variant=\\"outline\\"
-    color=\\"green\\"
-    style={{ marginBottom: 20 }}
-  />
-  <Input
-    placeholder=\\"Placeholder\\"
-    variant=\\"outline\\"
-    color=\\"orange\\"
-    style={{ marginBottom: 20 }}
-  />
-  <Input
-    placeholder=\\"Placeholder\\"
-    variant=\\"outline\\"
-    color=\\"pink\\"
-    style={{ marginBottom: 20 }}
-  />
-  <Input
-    placeholder=\\"Placeholder\\"
-    variant=\\"outline\\"
-    color=\\"purple\\"
-    style={{ marginBottom: 20 }}
-  />
-  <Input
-    placeholder=\\"Placeholder\\"
-    variant=\\"outline\\"
-    color=\\"red\\"
-    style={{ marginBottom: 20 }}
-  />
-  <Input
-    placeholder=\\"Placeholder\\"
-    variant=\\"outline\\"
-    color=\\"yellow\\"
-    style={{ marginBottom: 20 }}
-  />
-  <Input
-    placeholder=\\"Placeholder\\"
-    variant=\\"normal\\"
-    color=\\"white\\"
-    style={{ marginBottom: 20 }}
-  />
-  <Input
-    placeholder=\\"Placeholder\\"
-    variant=\\"normal\\"
-    color=\\"cyan\\"
-    style={{ marginBottom: 20 }}
-  />
-  <Input
-    placeholder=\\"Placeholder\\"
-    variant=\\"normal\\"
-    color=\\"green\\"
-    style={{ marginBottom: 20 }}
-  />
-  <Input
-    placeholder=\\"Placeholder\\"
-    variant=\\"normal\\"
-    color=\\"orange\\"
-    style={{ marginBottom: 20 }}
-  />
-  <Input
-    placeholder=\\"Placeholder\\"
-    variant=\\"normal\\"
-    color=\\"pink\\"
-    style={{ marginBottom: 20 }}
-  />
-  <Input
-    placeholder=\\"Placeholder\\"
-    variant=\\"normal\\"
-    color=\\"purple\\"
-    style={{ marginBottom: 20 }}
-  />
-  <Input
-    placeholder=\\"Placeholder\\"
-    variant=\\"normal\\"
-    color=\\"red\\"
-    style={{ marginBottom: 20 }}
-  />
-  <Input
-    placeholder=\\"Placeholder\\"
-    variant=\\"normal\\"
-    color=\\"yellow\\"
-    style={{ marginBottom: 20 }}
-  />
-</div>;
+  "react": "<Box>
+  <Input color=\\"purple\\" placeholder=\\"purple\\" m=\\"xs\\" />
+  <Input color=\\"green\\" placeholder=\\"green\\" m=\\"xs\\" />
+</Box>;
 ",
   "title": "Colors",
 }
@@ -223,42 +43,24 @@ Object {
 
 exports[`Site: Input Sizes 1`] = `
 Object {
-  "docs": "",
-  "html": "<div>
-  <div style=\\"margin-bottom: 10px\\">
-    <input
-      placeholder=\\"Placeholder\\"
-      color=\\"white\\"
-      class=\\"drac-input drac-input-lg drac-input-white drac-text-white\\"
-    />
-  </div>
-  <div style=\\"margin-bottom: 10px\\">
-    <input
-      placeholder=\\"Placeholder\\"
-      color=\\"white\\"
-      class=\\"drac-input drac-input-white drac-text-white\\"
-    />
-  </div>
-  <div style=\\"margin-bottom: 10px\\">
-    <input
-      placeholder=\\"Placeholder\\"
-      color=\\"white\\"
-      class=\\"drac-input drac-input-sm drac-input-white drac-text-white\\"
-    />
-  </div>
+  "docs": "Inputs can be customize to use several different sizes.",
+  "html": "<div class=\\"drac-box\\">
+  <input
+    placeholder=\\"small\\"
+    m=\\"xs\\"
+    class=\\"drac-input drac-input-sm drac-m-xs\\"
+  /><input placeholder=\\"medium\\" m=\\"xs\\" class=\\"drac-input drac-m-xs\\" /><input
+    placeholder=\\"large\\"
+    m=\\"xs\\"
+    class=\\"drac-input drac-input-lg drac-m-xs\\"
+  />
 </div>
 ",
-  "react": "<div>
-  <div style={{ marginBottom: 10 }}>
-    <Input placeholder=\\"Placeholder\\" size=\\"large\\" color=\\"white\\" />
-  </div>
-  <div style={{ marginBottom: 10 }}>
-    <Input placeholder=\\"Placeholder\\" size=\\"medium\\" color=\\"white\\" />
-  </div>
-  <div style={{ marginBottom: 10 }}>
-    <Input placeholder=\\"Placeholder\\" size=\\"small\\" color=\\"white\\" />
-  </div>
-</div>;
+  "react": "<Box>
+  <Input size=\\"small\\" placeholder=\\"small\\" m=\\"xs\\" />
+  <Input size=\\"medium\\" placeholder=\\"medium\\" m=\\"xs\\" />
+  <Input size=\\"large\\" placeholder=\\"large\\" m=\\"xs\\" />
+</Box>;
 ",
   "title": "Sizes",
 }
@@ -266,37 +68,25 @@ Object {
 
 exports[`Site: Input Variants 1`] = `
 Object {
-  "docs": "",
-  "html": "<div style=\\"display: flex; flex-direction: column\\">
+  "docs": "Use the \`outline\` variant to represent subtler text Inputs",
+  "html": "<div class=\\"drac-box\\">
   <input
-    placeholder=\\"Placeholder\\"
     variant=\\"normal\\"
-    color=\\"white\\"
-    style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input-white drac-text-white\\"
+    placeholder=\\"normal\\"
+    m=\\"xs\\"
+    class=\\"drac-input drac-m-xs\\"
   /><input
-    placeholder=\\"Placeholder\\"
     variant=\\"outline\\"
-    color=\\"white\\"
-    style=\\"margin-bottom: 20px\\"
-    class=\\"drac-input drac-input-outline drac-input-white drac-text-white\\"
+    placeholder=\\"outline\\"
+    m=\\"xs\\"
+    class=\\"drac-input drac-input-outline drac-m-xs\\"
   />
 </div>
 ",
-  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\" }}>
-  <Input
-    placeholder=\\"Placeholder\\"
-    variant=\\"normal\\"
-    color=\\"white\\"
-    style={{ marginBottom: 20 }}
-  />
-  <Input
-    placeholder=\\"Placeholder\\"
-    variant=\\"outline\\"
-    color=\\"white\\"
-    style={{ marginBottom: 20 }}
-  />
-</div>;
+  "react": "<Box>
+  <Input variant=\\"normal\\" placeholder=\\"normal\\" m=\\"xs\\" />
+  <Input variant=\\"outline\\" placeholder=\\"outline\\" m=\\"xs\\" />
+</Box>;
 ",
   "title": "Variants",
 }

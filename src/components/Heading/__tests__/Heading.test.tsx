@@ -1,9 +1,5 @@
-import React from 'react'
-import {
-  HeadingColors,
-  HeadingSizes
-} from '@/components/Heading/__stories__/Heading.stories'
 import { docs } from '@/documentation/site-docs'
+import React from 'react'
 import { snapshot } from '../../../documentation/render-component'
 import { Heading } from '../Heading'
 
