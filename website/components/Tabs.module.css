@@ -16,3 +16,9 @@
 .tabPanelActive {
   display: block;
 }
+
+.usage {
+  background: #282a36;
+  border-radius: var(--rounded-md);
+  padding: 1rem;
+}

@@ -37,7 +37,7 @@ class Design extends React.Component {
             <main className={styles.center}>
               <Box>
                 <Heading size="heading-1">{title}</Heading>
-                <Paragraph className={styles.description} size="large">{description}</Paragraph>
+                <Paragraph className={styles.description} size="md">{description}</Paragraph>
                 <Box my="lg">
                   <Heading size="heading-2">Questions</Heading>
                   <Paragraph>Join us on <Link color="purple" hoverColor="purple" href="https://discord.gg/584kS9Mg">Discord</Link> to discuss anything about Dracula UI.</Paragraph>

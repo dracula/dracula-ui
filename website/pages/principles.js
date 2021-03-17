@@ -36,7 +36,7 @@ class Principles extends React.Component {
             <main className={styles.center}>
               <Box>
                 <Heading size="heading-1">{title}</Heading>
-                <Paragraph className={styles.description} size="large">{description}</Paragraph>
+                <Paragraph className={styles.description} size="md">{description}</Paragraph>
                 <Box my="lg">
                   <Heading size="heading-2">Why</Heading>
                   <Paragraph>Our mission is to unleash the creative potential in every developer. We do that by providing modular components that can be used to build modern sites faster.</Paragraph>

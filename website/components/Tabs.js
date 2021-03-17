@@ -9,6 +9,7 @@ class Tabs extends Component {
 
     this.state = {
       options: [
+        { label: "Preview", panel: this.props.section.html },
         { label: "HTML", panel: this.props.section.html },
         { label: "React", panel: this.props.section.react }
       ]
@@ -46,10 +47,26 @@ class Tabs extends Component {
               : styles.tabPanel
           }
         >
-          <CodeHighlight code={option.panel} language={index === 0 ? "html" : "jsx"} />
+          {this.renderPanel(index, option)}
         </div>
       )
     })
+  }
+
+  renderPanel(index, option) {
+    if (index === 0) {
+      return <Box
+        className={styles.usage}
+        dangerouslySetInnerHTML={{ __html: option.panel }}
+        style={{ overflow: "auto", maxHeight: 300 }}
+      />
+    }
+    else if (index === 1) {
+      return <CodeHighlight code={option.panel} language={"html"} />
+    }
+    else if (index === 2) {
+      return <CodeHighlight code={option.panel} language={"jsx"} />
+    }
   }
 
   render() {

@@ -38,7 +38,7 @@ class Installation extends React.Component {
             <main className={styles.center}>
               <Box>
                 <Heading size="heading-1">{title}</Heading>
-                <Paragraph className={styles.description} size="large">{description}</Paragraph>
+                <Paragraph className={styles.description} size="md">{description}</Paragraph>
                 <Box my="lg">
                   <Heading size="heading-2">Getting set up</Heading>
                   <Paragraph>Inside your project directory, install Dracula UI by running either of the following:</Paragraph>

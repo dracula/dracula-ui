@@ -23,7 +23,6 @@ function Properties({ docGenProps }) {
       <Link id="properties" href="#properties" color="black">
         <Heading size="heading-2">Properties</Heading>
       </Link>
-      <Box color="purpleCyan" style={{ height: 2, marginTop: "0.5rem" }}></Box>
 
       <PropsTable props={docGenProps} />
     </>
@@ -32,7 +31,7 @@ function Properties({ docGenProps }) {
 
 function DocsOverview({ sections }) {
   return (
-    <Box as="ul" style={{ position: "fixed", right: 80 }} p="md">
+    <Box as="ul" style={{ position: "fixed", right: 80 }}>
       <Text weight="semibold" style={{ textTransform: "uppercase" }}>
         On this page
       </Text>
@@ -53,7 +52,7 @@ function DocsOverview({ sections }) {
         )
       })}
 
-      <Box key="properties" my="xxs">
+      <Box key="properties">
         <Link
           size="small"
           href="#properties"
@@ -69,7 +68,7 @@ function DocsOverview({ sections }) {
 
 function Section({ section, selectedTab, onChangeSelectedTab }) {
   return (
-    <Card p="md">
+    <Box>
       <Link
         id={section.title.toLowerCase()}
         href={`#${section.title.toLowerCase()}`}
@@ -79,33 +78,16 @@ function Section({ section, selectedTab, onChangeSelectedTab }) {
         </Heading>
       </Link>
 
-      <Box color="pinkPurple" style={{ height: 2 }} my="s" />
-
       {section.description && (
-        <Paragraph size="small">{section.description}</Paragraph>
+        <Paragraph size="md">{section.description}</Paragraph>
       )}
 
-      <Box
-        className={styles.usage}
-        p="sm"
-        mt="sm"
-        dangerouslySetInnerHTML={{ __html: section.code }}
-        style={{ overflow: "auto", maxHeight: 300 }}
+      <Tabs
+        selectedTab={selectedTab}
+        onChangeSelectedTab={onChangeSelectedTab}
+        section={section}
       />
-
-      <Box py="sm">
-        <details>
-          <summary style={{ outline: 'none' }}>
-            <Text>code</Text>
-          </summary>
-          <Tabs
-            selectedTab={selectedTab}
-            onChangeSelectedTab={onChangeSelectedTab}
-            section={section}
-          />
-        </details>
-      </Box>
-    </Card>
+    </Box>
   )
 }
 
@@ -119,8 +101,7 @@ class Guide extends React.Component {
   }
 
   render() {
-    const title = `${this.props.query.title} — Dracula UI`
-    const description = "A dark-first collection of UI patterns and components"
+    const { title, description, sections, docgen } = this.props.query;
 
     return (
       <Box>
@@ -129,28 +110,21 @@ class Guide extends React.Component {
           <meta content={title} property="og:title" />
           <meta content={description} name="description" />
           <meta content={description} property="og:description" />
-          <meta
-            content={`https://dracula-ui.com/${this.props.query.guide}`}
-            property="og:url"
-          />
+          <meta content="Netto Farah &amp; Zeno Rocha" name="author" />
         </Head>
 
         <Box className={styles.container} style={{ minHeight: "100vh" }}>
-          <Navigation selected={this.props.query.title} />
+          <Navigation selected={title} />
 
-          <Box className={styles.content} py="md">
+          <Box className={styles.content} py="lg">
             <main className={styles.center}>
-              <DocsOverview sections={this.props.query.sections} />
+              <DocsOverview sections={sections} />
 
               <Box>
-                <Heading color="purpleCyan" size="heading-1">
-                  {this.props.query.title}
-                </Heading>
-                <Paragraph size="small">
-                  {this.props.query.description}
-                </Paragraph>
+                <Heading size="heading-1">{title}</Heading>
+                <Paragraph className={styles.description} size="md">{description}</Paragraph>
 
-                {this.props.query.sections.map((section) => {
+                {sections.map((section) => {
                   return (
                     <Box key={section.title} my="lg">
                       <Section
@@ -163,9 +137,9 @@ class Guide extends React.Component {
                   )
                 })}
 
-                <Card p="md" mt="lg">
-                  <Properties docGenProps={this.props.query.docgen.props} />
-                </Card>
+                <Box mt="lg">
+                  <Properties docGenProps={docgen.props} />
+                </Box>
               </Box>
             </main>
           </Box>

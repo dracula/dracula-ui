@@ -37,7 +37,7 @@ class Design extends React.Component {
             <main className={styles.center}>
               <Box>
                 <Heading size="heading-1">{title}</Heading>
-                <Paragraph className={styles.description} size="large">{description}</Paragraph>
+                <Paragraph className={styles.description} size="md">{description}</Paragraph>
                 <Box my="lg">
                   <Heading size="heading-2">Using Figma</Heading>
                   <Paragraph>To facilitate the communication between between designers and developers, we decided to build all Dracula UI components on Figma.</Paragraph>

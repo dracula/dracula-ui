@@ -15,8 +15,8 @@ const PropsTable = ({ props }) => {
       {ownProps.map((prop) => (
         <Box my="md">
           <Box>
-            <Text color="pink" weight="semibold">{prop.name}</Text>
-            <Text size="xsmall" color="pink"> {prop.required ? "(required)" : ""}</Text>
+            <Text color="purple" weight="semibold">{prop.name}</Text>
+            <Text size="small" color="purple"> {prop.required ? "(required)" : ""}</Text>
           </Box>
 
           <Box>
@@ -25,7 +25,7 @@ const PropsTable = ({ props }) => {
 
           <Box>
             <Text color="green" weight="semibold">values: </Text><br />
-            <Text color="green" size="xsmall">
+            <Text color="green" size="small">
               {prop.type.name}
             </Text>
           </Box>

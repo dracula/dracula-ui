@@ -37,7 +37,7 @@ class Tooling extends React.Component {
             <main className={styles.center}>
               <Box>
                 <Heading size="heading-1">{title}</Heading>
-                <Paragraph className={styles.description} size="large">{description}</Paragraph>
+                <Paragraph className={styles.description} size="md">{description}</Paragraph>
                 <Box my="lg">
                   <Heading size="heading-2">Built-in Documentation</Heading>
                   <Paragraph>We partnered with <Link color="purple" hoverColor="purple" href="https://letsxd.com/vscode">Adobe</Link> to create a new way of reading and consuming documentation without ever leaving the code editor. This new format is called <Link color="purple" hoverColor="purple" href="https://github.com/AdobeXD/design-system-package-dsp">Design System Package (DSP)</Link> and it's open source. Here's a preview:</Paragraph>
