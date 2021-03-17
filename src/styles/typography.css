@@ -25,12 +25,16 @@
   font-family: 'Fira Code', monospace;
 }
 
+.heading {
+  margin: 0;
+}
+
 code {
   font-family: 'Fira Code', monospace;
   border-radius: var(--rounded-sm);
   background: var(--purple-100);
   color: var(--purple-900);
-  padding: .1rem .3rem;
+  padding: 0.1rem 0.3rem;
 }
 
 p.text {

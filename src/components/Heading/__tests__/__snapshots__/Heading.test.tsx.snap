@@ -2,7 +2,7 @@
 
 exports[`Site: Heading Basic Usage 1`] = `
 Object {
-  "docs": "",
+  "docs": "Heading is an abstraction/style that can/is applied to HTML heading elements.",
   "html": "<h1 class=\\"drac-heading drac-heading-1 drac-text-white\\">Heading</h1>
 ",
   "react": "<Heading>Heading</Heading>;
@@ -13,155 +13,24 @@ Object {
 
 exports[`Site: Heading Colors 1`] = `
 Object {
-  "docs": "",
+  "docs": "Headings can be customized to use any of the Dracula UI theme colors, including all solid, gradient, and animated colors.",
   "html": "<div>
-  <div style=\\"margin-bottom: 20px\\">
-    <h1 color=\\"white\\" class=\\"drac-heading drac-heading-1 drac-text-white\\">
-      white
-    </h1>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <h1 color=\\"black\\" class=\\"drac-heading drac-heading-1 drac-text-black\\">
-      black
-    </h1>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <h1
-      color=\\"blackSecondary\\"
-      class=\\"drac-heading drac-heading-1 drac-text-black-secondary\\"
-    >
-      blackSecondary
-    </h1>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <h1
-      color=\\"blackLight\\"
-      class=\\"drac-heading drac-heading-1 drac-text-black-light\\"
-    >
-      blackLight
-    </h1>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <h1 color=\\"cyan\\" class=\\"drac-heading drac-heading-1 drac-text-cyan\\">
-      cyan
-    </h1>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <h1 color=\\"green\\" class=\\"drac-heading drac-heading-1 drac-text-green\\">
-      green
-    </h1>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <h1 color=\\"orange\\" class=\\"drac-heading drac-heading-1 drac-text-orange\\">
-      orange
-    </h1>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <h1 color=\\"pink\\" class=\\"drac-heading drac-heading-1 drac-text-pink\\">
-      pink
-    </h1>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <h1 color=\\"purple\\" class=\\"drac-heading drac-heading-1 drac-text-purple\\">
-      purple
-    </h1>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <h1 color=\\"red\\" class=\\"drac-heading drac-heading-1 drac-text-red\\">red</h1>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <h1 color=\\"yellow\\" class=\\"drac-heading drac-heading-1 drac-text-yellow\\">
-      yellow
-    </h1>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <h1
-      color=\\"purpleCyan\\"
-      class=\\"drac-heading drac-heading-1 drac-text-purple-cyan\\"
-    >
-      purpleCyan
-    </h1>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <h1
-      color=\\"yellowPink\\"
-      class=\\"drac-heading drac-heading-1 drac-text-yellow-pink\\"
-    >
-      yellowPink
-    </h1>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <h1
-      color=\\"cyanGreen\\"
-      class=\\"drac-heading drac-heading-1 drac-text-cyan-green\\"
-    >
-      cyanGreen
-    </h1>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <h1
-      color=\\"pinkPurple\\"
-      class=\\"drac-heading drac-heading-1 drac-text-pink-purple\\"
-    >
-      pinkPurple
-    </h1>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <h1 color=\\"animated\\" class=\\"drac-heading drac-heading-1 drac-text-animated\\">
-      animated
-    </h1>
-  </div>
+  <h1 color=\\"pink\\" class=\\"drac-heading drac-heading-1 drac-text-pink\\">pink</h1>
+  <h1
+    color=\\"purpleCyan\\"
+    class=\\"drac-heading drac-heading-1 drac-text-purple-cyan\\"
+  >
+    purpleCyan
+  </h1>
 </div>
 ",
   "react": "<div>
-  <div style={{ marginBottom: 20 }}>
-    <Heading color=\\"white\\">white</Heading>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Heading color=\\"black\\">black</Heading>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Heading color=\\"blackSecondary\\">blackSecondary</Heading>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Heading color=\\"blackLight\\">blackLight</Heading>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Heading color=\\"cyan\\">cyan</Heading>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Heading color=\\"green\\">green</Heading>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Heading color=\\"orange\\">orange</Heading>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Heading color=\\"pink\\">pink</Heading>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Heading color=\\"purple\\">purple</Heading>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Heading color=\\"red\\">red</Heading>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Heading color=\\"yellow\\">yellow</Heading>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Heading color=\\"purpleCyan\\">purpleCyan</Heading>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Heading color=\\"yellowPink\\">yellowPink</Heading>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Heading color=\\"cyanGreen\\">cyanGreen</Heading>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Heading color=\\"pinkPurple\\">pinkPurple</Heading>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Heading color=\\"animated\\">animated</Heading>
-  </div>
+  <Heading size=\\"heading-1\\" color=\\"pink\\">
+    pink
+  </Heading>
+  <Heading size=\\"heading-1\\" color=\\"purpleCyan\\">
+    purpleCyan
+  </Heading>
 </div>;
 ",
   "title": "Colors",
@@ -170,71 +39,23 @@ Object {
 
 exports[`Site: Heading Sizes 1`] = `
 Object {
-  "docs": "",
+  "docs": "Each heading size is mapped directly to a specific h tag in HTML.",
   "html": "<div>
-  <div style=\\"margin-bottom: 20px\\">
-    <h1 color=\\"white\\" class=\\"drac-heading drac-heading-1 drac-text-white\\">
-      heading-1
-    </h1>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <h2 color=\\"white\\" class=\\"drac-heading drac-heading-2 drac-text-white\\">
-      heading-2
-    </h2>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <h3 color=\\"white\\" class=\\"drac-heading drac-heading-3 drac-text-white\\">
-      heading-3
-    </h3>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <h4 color=\\"white\\" class=\\"drac-heading drac-heading-4 drac-text-white\\">
-      heading-4
-    </h4>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <h5 color=\\"white\\" class=\\"drac-heading drac-heading-5 drac-text-white\\">
-      heading-5
-    </h5>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <h6 color=\\"white\\" class=\\"drac-heading drac-heading-6 drac-text-white\\">
-      heading-6
-    </h6>
-  </div>
+  <h1 class=\\"drac-heading drac-heading-1 drac-text-white\\">heading-1</h1>
+  <h2 class=\\"drac-heading drac-heading-2 drac-text-white\\">heading-2</h2>
+  <h3 class=\\"drac-heading drac-heading-3 drac-text-white\\">heading-3</h3>
+  <h4 class=\\"drac-heading drac-heading-4 drac-text-white\\">heading-4</h4>
+  <h5 class=\\"drac-heading drac-heading-5 drac-text-white\\">heading-5</h5>
+  <h6 class=\\"drac-heading drac-heading-6 drac-text-white\\">heading-6</h6>
 </div>
 ",
   "react": "<div>
-  <div style={{ marginBottom: 20 }}>
-    <Heading color=\\"white\\" size=\\"heading-1\\">
-      heading-1
-    </Heading>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Heading color=\\"white\\" size=\\"heading-2\\">
-      heading-2
-    </Heading>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Heading color=\\"white\\" size=\\"heading-3\\">
-      heading-3
-    </Heading>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Heading color=\\"white\\" size=\\"heading-4\\">
-      heading-4
-    </Heading>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Heading color=\\"white\\" size=\\"heading-5\\">
-      heading-5
-    </Heading>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Heading color=\\"white\\" size=\\"heading-6\\">
-      heading-6
-    </Heading>
-  </div>
+  <Heading size=\\"heading-1\\">heading-1</Heading>
+  <Heading size=\\"heading-2\\">heading-2</Heading>
+  <Heading size=\\"heading-3\\">heading-3</Heading>
+  <Heading size=\\"heading-4\\">heading-4</Heading>
+  <Heading size=\\"heading-5\\">heading-5</Heading>
+  <Heading size=\\"heading-6\\">heading-6</Heading>
 </div>;
 ",
   "title": "Sizes",
