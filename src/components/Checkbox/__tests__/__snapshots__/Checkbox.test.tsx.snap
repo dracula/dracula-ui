@@ -2,7 +2,7 @@
 
 exports[`Site: Checkbox Basic Usage 1`] = `
 Object {
-  "docs": "",
+  "docs": "Checkbox allows for styling HTML checkboxes with Dracula UI styles.",
   "html": "<div>
   <input
     type=\\"checkbox\\"
@@ -27,7 +27,7 @@ Object {
 
 exports[`Site: Checkbox Colors 1`] = `
 Object {
-  "docs": "",
+  "docs": "Checkboxes can be customized to use any of the Dracula UI theme colors, including all solid, gradient, and animated colors.",
   "html": "<div style=\\"display: flex; flex-direction: column\\">
   <div style=\\"margin-bottom: 10px\\">
     <input
@@ -163,57 +163,5 @@ Object {
 </div>;
 ",
   "title": "Colors",
-}
-`;
-
-exports[`Site: Checkbox Disabled 1`] = `
-Object {
-  "docs": "",
-  "html": "<div style=\\"display: flex; flex-direction: column\\">
-  <div style=\\"margin-bottom: 10px\\">
-    <input
-      type=\\"checkbox\\"
-      id=\\"one\\"
-      disabled=\\"\\"
-      color=\\"white\\"
-      name=\\"demo\\"
-      class=\\"drac-checkbox drac-checkbox-white\\"
-      checked=\\"\\"
-    /><label for=\\"one\\" class=\\"drac-text drac-text-white\\">Checked</label>
-  </div>
-  <div style=\\"margin-bottom: 10px\\">
-    <input
-      type=\\"checkbox\\"
-      id=\\"two\\"
-      disabled=\\"\\"
-      color=\\"white\\"
-      name=\\"demo\\"
-      class=\\"drac-checkbox drac-checkbox-white\\"
-    /><label for=\\"two\\" class=\\"drac-text drac-text-white\\">Unchecked</label>
-  </div>
-</div>
-",
-  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\" }}>
-  <div style={{ marginBottom: 10 }}>
-    <Checkbox
-      id=\\"one\\"
-      disabled={true}
-      defaultChecked={true}
-      color=\\"white\\"
-      name=\\"demo\\"
-    />
-    <label htmlFor=\\"one\\" className=\\"drac-text drac-text-white\\">
-      Checked
-    </label>
-  </div>
-  <div style={{ marginBottom: 10 }}>
-    <Checkbox id=\\"two\\" disabled={true} color=\\"white\\" name=\\"demo\\" />
-    <label htmlFor=\\"two\\" className=\\"drac-text drac-text-white\\">
-      Unchecked
-    </label>
-  </div>
-</div>;
-",
-  "title": "Disabled",
 }
 `;
