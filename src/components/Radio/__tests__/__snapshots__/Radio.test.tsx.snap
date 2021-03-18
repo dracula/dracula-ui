@@ -2,7 +2,7 @@
 
 exports[`Site: Radio Basic Usage 1`] = `
 Object {
-  "docs": "",
+  "docs": "Radio buttons let a user select only one of a limited number of choices.",
   "html": "<div>
   <input
     type=\\"radio\\"
@@ -27,7 +27,7 @@ Object {
 
 exports[`Site: Radio Colors 1`] = `
 Object {
-  "docs": "",
+  "docs": "Radio can be customized to use any of the Dracula UI theme colors.",
   "html": "<div>
   <div style=\\"margin-bottom: 10px\\">
     <input
@@ -160,7 +160,7 @@ Object {
 
 exports[`Site: Radio Disabled 1`] = `
 Object {
-  "docs": "",
+  "docs": "A radio select is unusable and un-clickable.",
   "html": "<div>
   <div style=\\"margin-bottom: 10px\\">
     <input
