@@ -9,12 +9,24 @@ import { snapshot } from '../../../documentation/render-component'
 
 docs(Radio, {
   basic() {
-    return snapshot('Usage', RadioNormal)
+    return snapshot(
+      'Usage',
+      RadioNormal,
+      'Radio buttons let a user select only one of a limited number of choices.'
+    )
   },
   variations() {
     return [
-      snapshot('Disabled', RadioDisabled),
-      snapshot('Colors', RadioColors)
+      snapshot(
+        'Disabled',
+        RadioDisabled,
+        'A radio select is unusable and un-clickable.'
+      ),
+      snapshot(
+        'Colors',
+        RadioColors,
+        'Radio can be customized to use any of the Dracula UI theme colors.'
+      )
     ]
   }
 })

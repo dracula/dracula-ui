@@ -28,7 +28,10 @@ export interface RadioProps
   color: keyof typeof radioColors
 
   /** The name of the radio. Mirrors the name HTML attribute. */
-  name?: string
+  name?: string,
+
+  /** A disabled radio is unusable and un-clickable. */
+  disabled?: boolean
 }
 
 /**
