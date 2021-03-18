@@ -7,7 +7,7 @@ export function AccentColorPicker() {
         style={{
           listStyle: "none",
           display: "flex",
-          margin: 0,
+          margin: "10px 0 0",
           padding: 0
         }}
       >
@@ -26,7 +26,7 @@ export function AccentColorPicker() {
                 style={{
                   width: 12,
                   height: 12,
-                  margin: 2,
+                  margin: 3,
                   borderRadius: "100%",
                   cursor: "pointer"
                 }}
