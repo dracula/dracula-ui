@@ -33,7 +33,7 @@ export interface ListProps
     PaddingMixin,
     MarginMixin {
   /** The Dracula UI color for the List. */
-  color: keyof typeof listColors
+  color?: keyof typeof listColors
 
   /**
    * The variation to be used for the List element.
