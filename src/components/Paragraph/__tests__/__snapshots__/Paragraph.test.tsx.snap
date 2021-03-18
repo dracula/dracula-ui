@@ -2,10 +2,10 @@
 
 exports[`Site: Paragraph Basic Usage 1`] = `
 Object {
-  "docs": "",
-  "html": "<p class=\\"drac-text drac-text-white\\">Paragraph</p>
+  "docs": "Show a paragraph within an interface.",
+  "html": "<p class=\\"drac-text drac-text-white\\">basic</p>
 ",
-  "react": "<Paragraph>Paragraph</Paragraph>;
+  "react": "<Paragraph>basic</Paragraph>;
 ",
   "title": "Usage",
 }
@@ -13,110 +13,16 @@ Object {
 
 exports[`Site: Paragraph Colors 1`] = `
 Object {
-  "docs": "",
-  "html": "<div>
-  <div style=\\"margin-bottom: 20px\\">
-    <p color=\\"white\\" class=\\"drac-text drac-text-white\\">white</p>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <p color=\\"black\\" class=\\"drac-text drac-text-black\\">black</p>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <p color=\\"blackSecondary\\" class=\\"drac-text drac-text-black-secondary\\">
-      blackSecondary
-    </p>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <p color=\\"blackLight\\" class=\\"drac-text drac-text-black-light\\">blackLight</p>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <p color=\\"cyan\\" class=\\"drac-text drac-text-cyan\\">cyan</p>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <p color=\\"green\\" class=\\"drac-text drac-text-green\\">green</p>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <p color=\\"orange\\" class=\\"drac-text drac-text-orange\\">orange</p>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <p color=\\"pink\\" class=\\"drac-text drac-text-pink\\">pink</p>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <p color=\\"purple\\" class=\\"drac-text drac-text-purple\\">purple</p>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <p color=\\"red\\" class=\\"drac-text drac-text-red\\">red</p>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <p color=\\"yellow\\" class=\\"drac-text drac-text-yellow\\">yellow</p>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <p color=\\"purpleCyan\\" class=\\"drac-text drac-text-purple-cyan\\">purpleCyan</p>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <p color=\\"yellowPink\\" class=\\"drac-text drac-text-yellow-pink\\">yellowPink</p>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <p color=\\"cyanGreen\\" class=\\"drac-text drac-text-cyan-green\\">cyanGreen</p>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <p color=\\"pinkPurple\\" class=\\"drac-text drac-text-pink-purple\\">pinkPurple</p>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <p color=\\"animated\\" class=\\"drac-text drac-text-animated\\">animated</p>
-  </div>
+  "docs": "Paragraphs can be customized to use any of the Dracula UI theme colors.",
+  "html": "<div class=\\"drac-box\\">
+  <p color=\\"cyan\\" class=\\"drac-text drac-text-cyan\\">cyan</p>
+  <p color=\\"green\\" class=\\"drac-text drac-text-green\\">green</p>
 </div>
 ",
-  "react": "<div>
-  <div style={{ marginBottom: 20 }}>
-    <Paragraph color=\\"white\\">white</Paragraph>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Paragraph color=\\"black\\">black</Paragraph>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Paragraph color=\\"blackSecondary\\">blackSecondary</Paragraph>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Paragraph color=\\"blackLight\\">blackLight</Paragraph>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Paragraph color=\\"cyan\\">cyan</Paragraph>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Paragraph color=\\"green\\">green</Paragraph>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Paragraph color=\\"orange\\">orange</Paragraph>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Paragraph color=\\"pink\\">pink</Paragraph>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Paragraph color=\\"purple\\">purple</Paragraph>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Paragraph color=\\"red\\">red</Paragraph>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Paragraph color=\\"yellow\\">yellow</Paragraph>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Paragraph color=\\"purpleCyan\\">purpleCyan</Paragraph>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Paragraph color=\\"yellowPink\\">yellowPink</Paragraph>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Paragraph color=\\"cyanGreen\\">cyanGreen</Paragraph>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Paragraph color=\\"pinkPurple\\">pinkPurple</Paragraph>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Paragraph color=\\"animated\\">animated</Paragraph>
-  </div>
-</div>;
+  "react": "<Box>
+  <Paragraph color=\\"cyan\\">cyan</Paragraph>
+  <Paragraph color=\\"green\\">green</Paragraph>
+</Box>;
 ",
   "title": "Colors",
 }
@@ -124,36 +30,20 @@ Object {
 
 exports[`Site: Paragraph Sizes 1`] = `
 Object {
-  "docs": "",
-  "html": "<div>
-  <div style=\\"margin-bottom: 20px\\">
-    <p class=\\"drac-text drac-text-lg drac-text-white\\">large</p>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <p class=\\"drac-text drac-text-white\\">medium</p>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <p class=\\"drac-text drac-text-sm drac-text-white\\">small</p>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <p class=\\"drac-text drac-text-xs drac-text-white\\">xsmall</p>
-  </div>
+  "docs": "Paragraphs can be customize to use several different sizes.",
+  "html": "<div class=\\"drac-box\\">
+  <p class=\\"drac-text drac-text-xs drac-text-white\\">xsmall</p>
+  <p class=\\"drac-text drac-text-sm drac-text-white\\">small</p>
+  <p class=\\"drac-text drac-text-white\\">medium</p>
+  <p class=\\"drac-text drac-text-lg drac-text-white\\">large</p>
 </div>
 ",
-  "react": "<div>
-  <div style={{ marginBottom: 20 }}>
-    <Paragraph size=\\"large\\">large</Paragraph>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Paragraph size=\\"medium\\">medium</Paragraph>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Paragraph size=\\"small\\">small</Paragraph>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Paragraph size=\\"xsmall\\">xsmall</Paragraph>
-  </div>
-</div>;
+  "react": "<Box>
+  <Paragraph size=\\"xsmall\\">xsmall</Paragraph>
+  <Paragraph size=\\"small\\">small</Paragraph>
+  <Paragraph size=\\"medium\\">medium</Paragraph>
+  <Paragraph size=\\"large\\">large</Paragraph>
+</Box>;
 ",
   "title": "Sizes",
 }
@@ -161,32 +51,20 @@ Object {
 
 exports[`Site: Paragraph Weights 1`] = `
 Object {
-  "docs": "",
-  "html": "<div>
-  <div style=\\"margin-bottom: 20px\\">
-    <p weight=\\"normal\\" class=\\"drac-text drac-text-white\\">normal</p>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <p weight=\\"semibold\\" class=\\"drac-text drac-text-semibold drac-text-white\\">
-      semibold
-    </p>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <p weight=\\"bold\\" class=\\"drac-text drac-text-bold drac-text-white\\">bold</p>
-  </div>
+  "docs": "Paragraphs can be defined in different font weights.",
+  "html": "<div class=\\"drac-box\\">
+  <p weight=\\"normal\\" class=\\"drac-text drac-text-white\\">normal</p>
+  <p weight=\\"semibold\\" class=\\"drac-text drac-text-semibold drac-text-white\\">
+    semibold
+  </p>
+  <p weight=\\"bold\\" class=\\"drac-text drac-text-bold drac-text-white\\">bold</p>
 </div>
 ",
-  "react": "<div>
-  <div style={{ marginBottom: 20 }}>
-    <Paragraph weight=\\"normal\\">normal</Paragraph>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Paragraph weight=\\"semibold\\">semibold</Paragraph>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Paragraph weight=\\"bold\\">bold</Paragraph>
-  </div>
-</div>;
+  "react": "<Box>
+  <Paragraph weight=\\"normal\\">normal</Paragraph>
+  <Paragraph weight=\\"semibold\\">semibold</Paragraph>
+  <Paragraph weight=\\"bold\\">bold</Paragraph>
+</Box>;
 ",
   "title": "Weights",
 }
