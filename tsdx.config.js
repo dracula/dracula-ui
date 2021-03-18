@@ -10,9 +10,9 @@ module.exports = {
         plugins: [
           inlineImport(),
           autoprefixer(),
-          cssnano({
-            preset: 'default'
-          }),
+          // cssnano({
+          //   preset: 'default'
+          // }),
           require('postcss-each'),
           require('postcss-prefixer')({
             prefix: 'drac-'

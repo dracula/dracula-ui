@@ -56,6 +56,7 @@
     "babel-loader": "^8.1.0",
     "caniuse-lite": "^1.0.30001197",
     "concurrently": "^6.0.0",
+    "css": "^3.0.0",
     "cssnano": "^4.1.10",
     "enzyme": "^3.11.0",
     "enzyme-to-json": "^3.5.0",
