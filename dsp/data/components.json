@@ -8,7 +8,7 @@
       "type": "page",
       "id": "Avatar",
       "name": "Avatar",
-      "last_updated": "2021-03-18T00:31:24.769Z",
+      "last_updated": "2021-03-18T01:10:53.286Z",
       "last_updated_by": "System",
       "description": "The Avatar component is used to represent a user.\n\nIt displays a profile picture, or falls back to the user's initials\nif a profile pic is not provided.",
       "related_entity_ids": [],
@@ -682,7 +682,7 @@
       "type": "page",
       "id": "Badge",
       "name": "Badge",
-      "last_updated": "2021-03-17T04:01:50.644Z",
+      "last_updated": "2021-03-18T01:10:46.983Z",
       "last_updated_by": "System",
       "description": "Badges are used to denote status or to highlight specific\ninformation.",
       "related_entity_ids": [],
@@ -1218,7 +1218,7 @@
       "type": "page",
       "id": "Box",
       "name": "Box",
-      "last_updated": "2021-03-17T04:01:55.432Z",
+      "last_updated": "2021-03-18T01:10:46.638Z",
       "last_updated_by": "System",
       "description": "Box is the most primitive component of Dracula UI.\nUsing Box allows for consumers of the components library to compose\nmore complex patterns, components, and UIs.\n\nBox includes built-in Color and Spacing properties that make building\ncomplex components convenient and consistent.",
       "related_entity_ids": [],
@@ -1838,7 +1838,7 @@
       "type": "page",
       "id": "Button",
       "name": "Button",
-      "last_updated": "2021-03-17T04:01:40.573Z",
+      "last_updated": "2021-03-18T01:10:35.722Z",
       "last_updated_by": "System",
       "description": "The Button component triggers actions, behaviors, or events based\non user input.",
       "related_entity_ids": [],
@@ -1908,7 +1908,7 @@
         },
         "size": {
           "defaultValue": null,
-          "description": "Controls the size of the button based on pre-configured Dracula UI sizes.\nOptions: `xsmall`, `small`, `medium`, `large`",
+          "description": "Controls the size of the button based on pre-configured Dracula UI sizes.",
           "name": "size",
           "parent": {
             "fileName": "src/components/Button/Button.tsx",
@@ -2220,7 +2220,7 @@
           },
           "size": {
             "defaultValue": null,
-            "description": "Controls the size of the button based on pre-configured Dracula UI sizes.\nOptions: `xsmall`, `small`, `medium`, `large`",
+            "description": "Controls the size of the button based on pre-configured Dracula UI sizes.",
             "name": "size",
             "parent": {
               "fileName": "src/components/Button/Button.tsx",
@@ -2512,7 +2512,7 @@
       "type": "page",
       "id": "Card",
       "name": "Card",
-      "last_updated": "2021-03-17T04:01:56.096Z",
+      "last_updated": "2021-03-18T01:10:46.687Z",
       "last_updated_by": "System",
       "description": "Card is a high level Pattern Component use to group\nrelated or hierarchical information.",
       "related_entity_ids": [],
@@ -3170,7 +3170,7 @@
       "type": "page",
       "id": "Checkbox",
       "name": "Checkbox",
-      "last_updated": "2021-03-17T04:01:51.575Z",
+      "last_updated": "2021-03-18T01:10:52.094Z",
       "last_updated_by": "System",
       "description": "Checkbox is a styled HTML Input of type checkbox.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep check boxes accessible.",
       "related_entity_ids": [],
@@ -3752,7 +3752,7 @@
       "type": "page",
       "id": "Divider",
       "name": "Divider",
-      "last_updated": "2021-03-17T04:01:55.135Z",
+      "last_updated": "2021-03-18T01:10:51.835Z",
       "last_updated_by": "System",
       "description": "Dividers are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
       "related_entity_ids": [],
@@ -4258,7 +4258,7 @@
       "type": "page",
       "id": "Heading",
       "name": "Heading",
-      "last_updated": "2021-03-17T04:01:55.883Z",
+      "last_updated": "2021-03-18T01:10:52.849Z",
       "last_updated_by": "System",
       "description": "Heading is used to display headlines and other forms of hierarchical Text.\n\nHeadings are similar to the base Text component, but restricted to certain\nsizes and font weight.",
       "related_entity_ids": [],
@@ -4848,7 +4848,7 @@
       "type": "page",
       "id": "Input",
       "name": "Input",
-      "last_updated": "2021-03-17T04:01:40.879Z",
+      "last_updated": "2021-03-18T01:10:46.594Z",
       "last_updated_by": "System",
       "description": "Input is a styled HTML Input.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep inputs accessible.",
       "related_entity_ids": [],
@@ -4918,7 +4918,7 @@
         },
         "size": {
           "defaultValue": null,
-          "description": "Controls the size of the input based on pre-configured Dracula UI sizes.\nOptions: `small`, `medium`, `large`",
+          "description": "Controls the size of the input based on pre-configured Dracula UI sizes.",
           "name": "size",
           "parent": {
             "fileName": "src/components/Input/Input.tsx",
@@ -5192,7 +5192,7 @@
           },
           "size": {
             "defaultValue": null,
-            "description": "Controls the size of the input based on pre-configured Dracula UI sizes.\nOptions: `small`, `medium`, `large`",
+            "description": "Controls the size of the input based on pre-configured Dracula UI sizes.",
             "name": "size",
             "parent": {
               "fileName": "src/components/Input/Input.tsx",
@@ -5446,7 +5446,7 @@
       "type": "page",
       "id": "Link",
       "name": "Link",
-      "last_updated": "2021-03-17T04:01:39.491Z",
+      "last_updated": "2021-03-18T01:10:45.366Z",
       "last_updated_by": "System",
       "description": "Text is the base component for any sort of text.\n\nConsumers of this component can control, the color, size,\nweight, and spacing of Text.\n\nUse this component for generic, and non-hierarchical text that is\nto be displayed on a page, or as part of other complex components\nor UI patterns",
       "related_entity_ids": [],
@@ -5508,7 +5508,7 @@
         },
         "size": {
           "defaultValue": null,
-          "description": "Controls the size of the link based on pre-configured Dracula UI sizes.\nOptions: `xsmall`, `small`, `medium`, `large`",
+          "description": "Controls the size of the link based on pre-configured Dracula UI sizes.",
           "name": "size",
           "parent": {
             "fileName": "src/components/Link/Link.tsx",
@@ -5527,7 +5527,7 @@
         },
         "weight": {
           "defaultValue": null,
-          "description": "Controls the weight of the link.\nOptions: `normal`, `semibold`, `bold`.",
+          "description": "Controls the weight of the link.",
           "name": "weight",
           "parent": {
             "fileName": "src/components/Link/Link.tsx",
@@ -5820,7 +5820,7 @@
           },
           "size": {
             "defaultValue": null,
-            "description": "Controls the size of the link based on pre-configured Dracula UI sizes.\nOptions: `xsmall`, `small`, `medium`, `large`",
+            "description": "Controls the size of the link based on pre-configured Dracula UI sizes.",
             "name": "size",
             "parent": {
               "fileName": "src/components/Link/Link.tsx",
@@ -5839,7 +5839,7 @@
           },
           "weight": {
             "defaultValue": null,
-            "description": "Controls the weight of the link.\nOptions: `normal`, `semibold`, `bold`.",
+            "description": "Controls the weight of the link.",
             "name": "weight",
             "parent": {
               "fileName": "src/components/Link/Link.tsx",
@@ -6112,7 +6112,7 @@
       "type": "page",
       "id": "List",
       "name": "List",
-      "last_updated": "2021-03-17T04:01:49.231Z",
+      "last_updated": "2021-03-18T01:10:46.632Z",
       "last_updated_by": "System",
       "description": "Lists are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
       "related_entity_ids": [],
@@ -6664,7 +6664,7 @@
       "type": "page",
       "id": "Paragraph",
       "name": "Paragraph",
-      "last_updated": "2021-03-17T04:01:41.244Z",
+      "last_updated": "2021-03-18T01:10:35.722Z",
       "last_updated_by": "System",
       "description": "Paragraph is a semantic component used for blocks of text with\nsemantic meaning.\n\nParagraph accepts all the same customization options as Text.",
       "related_entity_ids": [],
@@ -6715,7 +6715,7 @@
       "ext_com_draculaui_props": {
         "size": {
           "defaultValue": null,
-          "description": "Controls the size of the text based on pre-configured Dracula UI sizes.\nOptions: `xsmall`, `small`, `medium`, `large`",
+          "description": "Controls the size of the text based on pre-configured Dracula UI sizes.",
           "name": "size",
           "parent": {
             "fileName": "dracula-ui/src/components/Text/Text.tsx",
@@ -6734,7 +6734,7 @@
         },
         "weight": {
           "defaultValue": null,
-          "description": "Controsl the weight of the text.\nOptions: `normal`, `semibold`, `bold`.",
+          "description": "Controsl the weight of the text.",
           "name": "weight",
           "parent": {
             "fileName": "dracula-ui/src/components/Text/Text.tsx",
@@ -7008,7 +7008,7 @@
         "props": {
           "size": {
             "defaultValue": null,
-            "description": "Controls the size of the text based on pre-configured Dracula UI sizes.\nOptions: `xsmall`, `small`, `medium`, `large`",
+            "description": "Controls the size of the text based on pre-configured Dracula UI sizes.",
             "name": "size",
             "parent": {
               "fileName": "dracula-ui/src/components/Text/Text.tsx",
@@ -7027,7 +7027,7 @@
           },
           "weight": {
             "defaultValue": null,
-            "description": "Controsl the weight of the text.\nOptions: `normal`, `semibold`, `bold`.",
+            "description": "Controsl the weight of the text.",
             "name": "weight",
             "parent": {
               "fileName": "dracula-ui/src/components/Text/Text.tsx",
@@ -7300,7 +7300,7 @@
       "type": "page",
       "id": "Radio",
       "name": "Radio",
-      "last_updated": "2021-03-17T04:01:50.499Z",
+      "last_updated": "2021-03-18T01:10:34.057Z",
       "last_updated_by": "System",
       "description": "Radio is a styled HTML Input of type radio.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep Radios accessible.",
       "related_entity_ids": [],
@@ -7852,7 +7852,7 @@
       "type": "page",
       "id": "Select",
       "name": "Select",
-      "last_updated": "2021-03-17T04:01:43.828Z",
+      "last_updated": "2021-03-18T01:10:39.623Z",
       "last_updated_by": "System",
       "description": "Select is a styled HTML Select element.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS, and small SVG component in order to keep Selects accessible.",
       "related_entity_ids": [],
@@ -7930,7 +7930,7 @@
         },
         "size": {
           "defaultValue": null,
-          "description": "Controls the size of the select based on pre-configured Dracula UI sizes.\nOptions: `small`, `medium`, `large`",
+          "description": "Controls the size of the select based on pre-configured Dracula UI sizes.",
           "name": "size",
           "parent": {
             "fileName": "src/components/Select/Select.tsx",
@@ -8223,7 +8223,7 @@
           },
           "size": {
             "defaultValue": null,
-            "description": "Controls the size of the select based on pre-configured Dracula UI sizes.\nOptions: `small`, `medium`, `large`",
+            "description": "Controls the size of the select based on pre-configured Dracula UI sizes.",
             "name": "size",
             "parent": {
               "fileName": "src/components/Select/Select.tsx",
@@ -8496,7 +8496,7 @@
       "type": "page",
       "id": "Switch",
       "name": "Switch",
-      "last_updated": "2021-03-17T04:01:50.525Z",
+      "last_updated": "2021-03-18T01:10:34.253Z",
       "last_updated_by": "System",
       "description": "Switch is an abstraction pattern that represents toggles.\n\nUse the Switch component as an alternative for Checkboxes or Radios\nwhen options are binary.\n\nSwitches are implemented as Checkboxes under the hood,\nand work normally with forms.",
       "related_entity_ids": [],
@@ -9086,7 +9086,7 @@
       "type": "page",
       "id": "Table",
       "name": "Table",
-      "last_updated": "2021-03-17T04:01:41.781Z",
+      "last_updated": "2021-03-18T01:10:37.383Z",
       "last_updated_by": "System",
       "description": "Tables are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
       "related_entity_ids": [],
@@ -9638,7 +9638,7 @@
       "type": "page",
       "id": "Tabs",
       "name": "Tabs",
-      "last_updated": "2021-03-17T04:01:48.315Z",
+      "last_updated": "2021-03-18T01:10:48.199Z",
       "last_updated_by": "System",
       "description": "Tabs are horizontal navigation elements used to display\ncontent within the same page.",
       "related_entity_ids": [],
@@ -10144,7 +10144,7 @@
       "type": "page",
       "id": "Text",
       "name": "Text",
-      "last_updated": "2021-03-17T04:01:51.605Z",
+      "last_updated": "2021-03-18T01:10:35.784Z",
       "last_updated_by": "System",
       "description": "Text is the base component for any sort of text.\n\nConsumers of this component can control, the color, size,\nweight, and spacing of Text.\n\nUse this component for generic, and non-hierarchical text that is\nto be displayed on a page, or as part of other complex components\nor UI patterns",
       "related_entity_ids": [],
@@ -10195,7 +10195,7 @@
       "ext_com_draculaui_props": {
         "size": {
           "defaultValue": null,
-          "description": "Controls the size of the text based on pre-configured Dracula UI sizes.\nOptions: `xsmall`, `small`, `medium`, `large`",
+          "description": "Controls the size of the text based on pre-configured Dracula UI sizes.",
           "name": "size",
           "parent": {
             "fileName": "src/components/Text/Text.tsx",
@@ -10214,7 +10214,7 @@
         },
         "weight": {
           "defaultValue": null,
-          "description": "Controsl the weight of the text.\nOptions: `normal`, `semibold`, `bold`.",
+          "description": "Controsl the weight of the text.",
           "name": "weight",
           "parent": {
             "fileName": "src/components/Text/Text.tsx",
@@ -10488,7 +10488,7 @@
         "props": {
           "size": {
             "defaultValue": null,
-            "description": "Controls the size of the text based on pre-configured Dracula UI sizes.\nOptions: `xsmall`, `small`, `medium`, `large`",
+            "description": "Controls the size of the text based on pre-configured Dracula UI sizes.",
             "name": "size",
             "parent": {
               "fileName": "src/components/Text/Text.tsx",
@@ -10507,7 +10507,7 @@
           },
           "weight": {
             "defaultValue": null,
-            "description": "Controsl the weight of the text.\nOptions: `normal`, `semibold`, `bold`.",
+            "description": "Controsl the weight of the text.",
             "name": "weight",
             "parent": {
               "fileName": "src/components/Text/Text.tsx",

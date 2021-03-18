@@ -40,7 +40,6 @@ export interface SelectProps
 
   /**
    * Controls the size of the select based on pre-configured Dracula UI sizes.
-   * Options: `small`, `medium`, `large`
    */
   size?: keyof typeof selectSizes
 

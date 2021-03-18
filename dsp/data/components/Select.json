@@ -3,7 +3,7 @@
   "type": "page",
   "id": "Select",
   "name": "Select",
-  "last_updated": "2021-03-17T04:01:43.828Z",
+  "last_updated": "2021-03-18T01:10:39.623Z",
   "last_updated_by": "System",
   "description": "Select is a styled HTML Select element.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS, and small SVG component in order to keep Selects accessible.",
   "related_entity_ids": [],
@@ -79,7 +79,7 @@
     },
     "size": {
       "defaultValue": null,
-      "description": "Controls the size of the select based on pre-configured Dracula UI sizes.\nOptions: `small`, `medium`, `large`",
+      "description": "Controls the size of the select based on pre-configured Dracula UI sizes.",
       "name": "size",
       "parent": {
         "fileName": "src/components/Select/Select.tsx",
@@ -324,7 +324,7 @@
       },
       "size": {
         "defaultValue": null,
-        "description": "Controls the size of the select based on pre-configured Dracula UI sizes.\nOptions: `small`, `medium`, `large`",
+        "description": "Controls the size of the select based on pre-configured Dracula UI sizes.",
         "name": "size",
         "parent": {
           "fileName": "src/components/Select/Select.tsx",

@@ -3,7 +3,11 @@
   "type": "page",
   "id": "Tabs",
   "name": "Tabs",
+<<<<<<< HEAD
   "last_updated": "2021-03-18T01:11:15.015Z",
+=======
+  "last_updated": "2021-03-18T01:10:48.199Z",
+>>>>>>> Remove duplicated options
   "last_updated_by": "System",
   "description": "Tabs are horizontal navigation elements used to display\ncontent within the same page.",
   "related_entity_ids": [],

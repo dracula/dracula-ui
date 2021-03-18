@@ -32,7 +32,6 @@ export interface ButtonProps
 
   /**
    * Controls the size of the button based on pre-configured Dracula UI sizes.
-   * Options: `xsmall`, `small`, `medium`, `large`
    */
   size?: keyof typeof buttonSizes
 
