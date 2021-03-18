@@ -32,6 +32,9 @@ export interface SwitchProps
    */
   color: keyof typeof switchColors
 
+  /**
+   * A disabled switch is unusable and un-clickable.
+   */
   disabled?: boolean
 }
 
