@@ -50,6 +50,9 @@ export interface SelectProps
    */
   variant?: keyof typeof selectVariants
 
+  /**
+   * A disabled select is unusable and un-clickable.
+   */
   disabled?: boolean
 }
 
