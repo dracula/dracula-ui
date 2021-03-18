@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
 :root {
   --font-xs: 0.75rem; /* 12px */
   --font-sm: 0.875rem; /* 14px */
@@ -21,7 +23,6 @@
   /* Optional, not supported for all languages */
   hyphens: auto;
 
-  /* TODO: add web font */
   font-family: 'Fira Code', monospace;
 }
 
