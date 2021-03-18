@@ -4,7 +4,7 @@ node_modules
 .cache
 dist
 
-/dsp/**/*.json
+/dsp/data/components/*.json
 /dsp/assets/svgs/*
 /dsp/assets/html/*
 /dsp/assets/*.png
