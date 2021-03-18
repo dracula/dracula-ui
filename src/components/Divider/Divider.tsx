@@ -1,6 +1,6 @@
 import classNamesDedupe from 'classnames/dedupe'
 import React, { HTMLAttributes } from 'react'
-import { borderColors } from '../../base/colors'
+import { baseColors } from '../../base/colors'
 import {
   MarginMixin,
   marginMixin,
@@ -8,7 +8,7 @@ import {
   paddingMixin
 } from '../../base/spacing'
 
-export const dividerColors = borderColors
+export const dividerColors = baseColors
 
 /**
  * Divider Props

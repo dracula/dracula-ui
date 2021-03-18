@@ -12,7 +12,6 @@ class Topbar extends Component {
         style={{
           display: "flex",
           flexDirection: "column",
-          // alignItems: "center",
           marginLeft: 12
         }}
       >
