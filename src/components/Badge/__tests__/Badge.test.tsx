@@ -21,11 +21,11 @@ docs(Badge, {
       'Variants',
       () => (
         <div>
-          <Badge themeColor="purpleCyan" variant="outline">
+          <Badge m="sm" themeColor="orange" variant="outline">
             Outline
           </Badge>
 
-          <Badge themeColor="purple" variant="subtle">
+          <Badge m="sm" themeColor="cyan" variant="subtle">
             Subtle
           </Badge>
         </div>

@@ -50,27 +50,28 @@
   --glowColor: rgba(255, 255, 255, 0.25);
 
   @each $opacity in 10, 20, 30, 40, 50, 60, 70, 80, 90 {
-    --cyan-$(opacity)0: hsl(170, 100%, 75%, 0.$(opacity));
-    --green-$(opacity)0: hsl(115, 100%, 75%, 0.$(opacity));
-    --orange-$(opacity)0: hsl(35, 100%, 75%, 0.$(opacity));
-    --pink-$(opacity)0: hsl(330, 100%, 75%, 0.$(opacity));
-    --purple-$(opacity)0: hsl(250, 100%, 75%, 0.$(opacity));
-    --red-$(opacity)0: hsl(10, 100%, 75%, 0.$(opacity));
-    --yellow-$(opacity)0: hsl(60, 100%, 75%, 0.$(opacity));
+    --cyan-$(opacity)0: hsl(170, 100%, 75%, 0$ (opacity));
+    --green-$(opacity)0: hsl(115, 100%, 75%, 0$ (opacity));
+    --orange-$(opacity)0: hsl(35, 100%, 75%, 0$ (opacity));
+    --pink-$(opacity)0: hsl(330, 100%, 75%, 0$ (opacity));
+    --purple-$(opacity)0: hsl(250, 100%, 75%, 0$ (opacity));
+    --red-$(opacity)0: hsl(10, 100%, 75%, 0$ (opacity));
+    --yellow-$(opacity)0: hsl(60, 100%, 75%, 0$ (opacity));
   }
 
   --accentColor: var(--purple);
 
-  @each $from, $to in (purple, yellow, cyan, pink), (cyan, pink,  green, purple) {
+  @each $from, $to in (purple, yellow, cyan, pink), (cyan, pink, green, purple)
+  {
     --$(from)-$(to): linear-gradient(
-        var(--gradientDegree),
-        var(--$(from)) 0%,
-        var(--$(to)) 100%
-      );
+      var(--gradientDegree),
+      var(--$(from)) 0%,
+      var(--$(to)) 100%
+    );
   }
 }
 
-@each $from, $to in (purple, yellow, cyan, pink), (cyan, pink,  green, purple) {
+@each $from, $to in (purple, yellow, cyan, pink), (cyan, pink, green, purple) {
   .bg-$(from)-$(to) {
     background: linear-gradient(
       var(--gradientDegree),
@@ -106,15 +107,17 @@
 
 @each $color in black, white, cyan, green, orange, pink, purple, red, yellow {
   .bg-$(color) {
-    background: var(--$(color));
+    background-color: var(--$(color));
   }
 
   .bg-$(color)-secondary {
-    background: var(--$(color)Secondary);
+    --accentColor: var(--$(color)Secondary);
+    background-color: var(--$(color)Secondary);
   }
 
   .bg-$(color)-transparent {
-    background: var(--$(color)-transparent);
+    --accentColor: var(--$(color)-transparent);
+    background-color: var(--$(color)-transparent);
   }
 
   .text-$(color) {
@@ -126,11 +129,10 @@
   }
 
   .glow-$(color) {
-    background: var(--$(color));
+    background-color: var(--$(color));
     --glowColor: var(--$(color));
   }
 }
-
 
 .bg-animated {
   content: '';

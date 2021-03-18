@@ -3,11 +3,7 @@
   "type": "page",
   "id": "Paragraph",
   "name": "Paragraph",
-<<<<<<< HEAD
-  "last_updated": "2021-03-18T01:02:35.284Z",
-=======
-  "last_updated": "2021-03-18T01:10:35.722Z",
->>>>>>> Remove duplicated options
+  "last_updated": "2021-03-18T02:34:32.162Z",
   "last_updated_by": "System",
   "description": "Paragraph is a semantic component used for blocks of text with\nsemantic meaning.\n\nParagraph accepts all the same customization options as Text.",
   "related_entity_ids": [],

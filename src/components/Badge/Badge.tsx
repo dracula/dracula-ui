@@ -44,11 +44,11 @@ export const Badge: React.FC<BadgeProps> = (props: BadgeProps) => {
   const isSubtle = props.variant === 'subtle'
   const overrideTextColor = isOutline || isSubtle
 
-  const textColorClass = overrideTextColor
-    ? textColors[props.themeColor ?? 'green']
-    : undefined
+  const themeColor = props.themeColor ?? 'purple'
 
-  let backgroundClass = backgroundColors[props.themeColor ?? 'black']
+  const textColorClass = overrideTextColor ? textColors[themeColor] : undefined
+
+  let backgroundClass = backgroundColors[themeColor]
   if (isSubtle) {
     backgroundClass = `${backgroundClass}-transparent`
   }

@@ -8,7 +8,7 @@
       "type": "page",
       "id": "Avatar",
       "name": "Avatar",
-      "last_updated": "2021-03-18T01:10:53.286Z",
+      "last_updated": "2021-03-18T02:34:44.157Z",
       "last_updated_by": "System",
       "description": "The Avatar component is used to represent a user.\n\nIt displays a profile picture, or falls back to the user's initials\nif a profile pic is not provided.",
       "related_entity_ids": [],
@@ -682,7 +682,7 @@
       "type": "page",
       "id": "Badge",
       "name": "Badge",
-      "last_updated": "2021-03-18T01:10:46.983Z",
+      "last_updated": "2021-03-18T02:34:49.734Z",
       "last_updated_by": "System",
       "description": "Badges are used to denote status or to highlight specific\ninformation.",
       "related_entity_ids": [],
@@ -693,13 +693,13 @@
         "trigger": "badge",
         "languages": {
           "javascriptreact": "<Badge>Badge</Badge>;\n",
-          "html": "<span class=\"drac-badge drac-bg-black\"\n  ><span class=\"drac-text drac-text-white\">Badge</span></span\n>\n"
+          "html": "<span class=\"drac-badge drac-bg-purple\"\n  ><span class=\"drac-text drac-text-white\">Badge</span></span\n>\n"
         }
       },
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
-          "html": "<span class=\"drac-badge drac-bg-black\"\n  ><span class=\"drac-text drac-text-white\">Badge</span></span\n>\n",
+          "html": "<span class=\"drac-badge drac-bg-purple\"\n  ><span class=\"drac-text drac-text-white\">Badge</span></span\n>\n",
           "react": "<Badge>Badge</Badge>;\n",
           "docs": "You can create a new Badge with any text content you'd like to highlight.",
           "screenshot": "./dsp/assets/Badge.png",
@@ -715,8 +715,8 @@
         },
         {
           "title": "Variants",
-          "html": "<div>\n  <span\n    class=\"drac-badge drac-bg-purple-cyan drac-badge-outline drac-text-purple-cyan\"\n    themecolor=\"purpleCyan\"\n    variant=\"outline\"\n    ><span color=\"purpleCyan\" class=\"drac-text drac-text-purple-cyan\"\n      >Outline</span\n    ></span\n  ><span\n    class=\"drac-badge drac-bg-purple-transparent drac-badge-subtle drac-text-purple\"\n    themecolor=\"purple\"\n    variant=\"subtle\"\n    ><span color=\"purple\" class=\"drac-text drac-text-purple\">Subtle</span></span\n  >\n</div>\n",
-          "react": "<div>\n  <Badge themeColor=\"purpleCyan\" variant=\"outline\">\n    Outline\n  </Badge>\n  <Badge themeColor=\"purple\" variant=\"subtle\">\n    Subtle\n  </Badge>\n</div>;\n",
+          "html": "<div>\n  <span\n    class=\"drac-badge drac-bg-orange drac-badge-outline drac-text-orange drac-m-sm\"\n    m=\"sm\"\n    themecolor=\"orange\"\n    variant=\"outline\"\n    ><span color=\"orange\" class=\"drac-text drac-text-orange\"\n      >Outline</span\n    ></span\n  ><span\n    class=\"drac-badge drac-bg-cyan-transparent drac-badge-subtle drac-text-cyan drac-m-sm\"\n    m=\"sm\"\n    themecolor=\"cyan\"\n    variant=\"subtle\"\n    ><span color=\"cyan\" class=\"drac-text drac-text-cyan\">Subtle</span></span\n  >\n</div>\n",
+          "react": "<div>\n  <Badge m=\"sm\" themeColor=\"orange\" variant=\"outline\">\n    Outline\n  </Badge>\n  <Badge m=\"sm\" themeColor=\"cyan\" variant=\"subtle\">\n    Subtle\n  </Badge>\n</div>;\n",
           "docs": "Use `outline` or `subtle` when you don't want your Badges to stand out, but still want to keep them playful.",
           "screenshot": "./dsp/assets/BadgeVariants.png",
           "svgData": "./dsp/assets/svgs/BadgeVariants.svg"
@@ -1218,7 +1218,7 @@
       "type": "page",
       "id": "Box",
       "name": "Box",
-      "last_updated": "2021-03-18T01:10:46.638Z",
+      "last_updated": "2021-03-18T02:34:44.278Z",
       "last_updated_by": "System",
       "description": "Box is the most primitive component of Dracula UI.\nUsing Box allows for consumers of the components library to compose\nmore complex patterns, components, and UIs.\n\nBox includes built-in Color and Spacing properties that make building\ncomplex components convenient and consistent.",
       "related_entity_ids": [],
@@ -1838,7 +1838,7 @@
       "type": "page",
       "id": "Button",
       "name": "Button",
-      "last_updated": "2021-03-18T01:10:35.722Z",
+      "last_updated": "2021-03-18T02:34:32.427Z",
       "last_updated_by": "System",
       "description": "The Button component triggers actions, behaviors, or events based\non user input.",
       "related_entity_ids": [],
@@ -2512,7 +2512,7 @@
       "type": "page",
       "id": "Card",
       "name": "Card",
-      "last_updated": "2021-03-18T01:10:46.687Z",
+      "last_updated": "2021-03-18T02:34:32.752Z",
       "last_updated_by": "System",
       "description": "Card is a high level Pattern Component use to group\nrelated or hierarchical information.",
       "related_entity_ids": [],
@@ -3170,7 +3170,7 @@
       "type": "page",
       "id": "Checkbox",
       "name": "Checkbox",
-      "last_updated": "2021-03-18T01:10:52.094Z",
+      "last_updated": "2021-03-18T02:34:48.576Z",
       "last_updated_by": "System",
       "description": "Checkbox is a styled HTML Input of type checkbox.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep check boxes accessible.",
       "related_entity_ids": [],
@@ -3752,7 +3752,7 @@
       "type": "page",
       "id": "Divider",
       "name": "Divider",
-      "last_updated": "2021-03-18T01:10:51.835Z",
+      "last_updated": "2021-03-18T02:34:48.476Z",
       "last_updated_by": "System",
       "description": "Dividers are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
       "related_entity_ids": [],
@@ -4258,7 +4258,7 @@
       "type": "page",
       "id": "Heading",
       "name": "Heading",
-      "last_updated": "2021-03-18T01:10:52.849Z",
+      "last_updated": "2021-03-18T02:34:45.794Z",
       "last_updated_by": "System",
       "description": "Heading is used to display headlines and other forms of hierarchical Text.\n\nHeadings are similar to the base Text component, but restricted to certain\nsizes and font weight.",
       "related_entity_ids": [],
@@ -4848,7 +4848,7 @@
       "type": "page",
       "id": "Input",
       "name": "Input",
-      "last_updated": "2021-03-18T01:10:46.594Z",
+      "last_updated": "2021-03-18T02:34:32.471Z",
       "last_updated_by": "System",
       "description": "Input is a styled HTML Input.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep inputs accessible.",
       "related_entity_ids": [],
@@ -5446,7 +5446,7 @@
       "type": "page",
       "id": "Link",
       "name": "Link",
-      "last_updated": "2021-03-18T01:10:45.366Z",
+      "last_updated": "2021-03-18T02:34:42.353Z",
       "last_updated_by": "System",
       "description": "Text is the base component for any sort of text.\n\nConsumers of this component can control, the color, size,\nweight, and spacing of Text.\n\nUse this component for generic, and non-hierarchical text that is\nto be displayed on a page, or as part of other complex components\nor UI patterns",
       "related_entity_ids": [],
@@ -6112,9 +6112,9 @@
       "type": "page",
       "id": "List",
       "name": "List",
-      "last_updated": "2021-03-18T01:10:46.632Z",
+      "last_updated": "2021-03-18T02:34:42.677Z",
       "last_updated_by": "System",
-      "description": "Lists are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
+      "description": "Lists are used to display list items in an ordered or unordered way.",
       "related_entity_ids": [],
       "tags": [
         "component"
@@ -6122,34 +6122,34 @@
       "snippets": {
         "trigger": "list",
         "languages": {
-          "javascriptreact": "<div style={{ display: \"flex\", flexDirection: \"column\" }}>\n  <List color=\"purple\">\n    <li className=\"drac-text drac-text-white\">Blade</li>\n    <li className=\"drac-text drac-text-white\">Buffy</li>\n    <li className=\"drac-text drac-text-white\">Morbius</li>\n  </List>\n</div>;\n",
-          "html": "<div style=\"display: flex; flex-direction: column\">\n  <ol color=\"purple\" class=\"drac-list drac-list-purple\">\n    <li class=\"drac-text drac-text-white\">Blade</li>\n    <li class=\"drac-text drac-text-white\">Buffy</li>\n    <li class=\"drac-text drac-text-white\">Morbius</li>\n  </ol>\n</div>\n"
+          "javascriptreact": "<List>\n  <li className=\"drac-text drac-text-white\">Blade</li>\n  <li className=\"drac-text drac-text-white\">Buffy</li>\n  <li className=\"drac-text drac-text-white\">Morbius</li>\n</List>;\n",
+          "html": "<ol class=\"drac-list\">\n  <li class=\"drac-text drac-text-white\">Blade</li>\n  <li class=\"drac-text drac-text-white\">Buffy</li>\n  <li class=\"drac-text drac-text-white\">Morbius</li>\n</ol>\n"
         }
       },
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
-          "html": "<div style=\"display: flex; flex-direction: column\">\n  <ol color=\"purple\" class=\"drac-list drac-list-purple\">\n    <li class=\"drac-text drac-text-white\">Blade</li>\n    <li class=\"drac-text drac-text-white\">Buffy</li>\n    <li class=\"drac-text drac-text-white\">Morbius</li>\n  </ol>\n</div>\n",
-          "react": "<div style={{ display: \"flex\", flexDirection: \"column\" }}>\n  <List color=\"purple\">\n    <li className=\"drac-text drac-text-white\">Blade</li>\n    <li className=\"drac-text drac-text-white\">Buffy</li>\n    <li className=\"drac-text drac-text-white\">Morbius</li>\n  </List>\n</div>;\n",
-          "docs": "",
+          "html": "<ol class=\"drac-list\">\n  <li class=\"drac-text drac-text-white\">Blade</li>\n  <li class=\"drac-text drac-text-white\">Buffy</li>\n  <li class=\"drac-text drac-text-white\">Morbius</li>\n</ol>\n",
+          "react": "<List>\n  <li className=\"drac-text drac-text-white\">Blade</li>\n  <li className=\"drac-text drac-text-white\">Buffy</li>\n  <li className=\"drac-text drac-text-white\">Morbius</li>\n</List>;\n",
+          "docs": "Render an unstyled list by default.",
           "screenshot": "./dsp/assets/List.png",
           "svgData": "./dsp/assets/svgs/List.svg"
         },
         {
-          "title": "Colors",
-          "html": "<div style=\"display: flex; flex-direction: column\">\n  <div>\n    <ol\n      variant=\"ordered\"\n      color=\"white\"\n      class=\"drac-list drac-list-ordered drac-list-white\"\n    >\n      <li class=\"drac-text drac-text-white\">Blade</li>\n      <li class=\"drac-text drac-text-white\">Buffy</li>\n      <li class=\"drac-text drac-text-white\">Morbius</li>\n    </ol>\n  </div>\n  <div>\n    <ol\n      variant=\"ordered\"\n      color=\"cyan\"\n      class=\"drac-list drac-list-ordered drac-list-cyan\"\n    >\n      <li class=\"drac-text drac-text-white\">Blade</li>\n      <li class=\"drac-text drac-text-white\">Buffy</li>\n      <li class=\"drac-text drac-text-white\">Morbius</li>\n    </ol>\n  </div>\n  <div>\n    <ol\n      variant=\"ordered\"\n      color=\"green\"\n      class=\"drac-list drac-list-ordered drac-list-green\"\n    >\n      <li class=\"drac-text drac-text-white\">Blade</li>\n      <li class=\"drac-text drac-text-white\">Buffy</li>\n      <li class=\"drac-text drac-text-white\">Morbius</li>\n    </ol>\n  </div>\n  <div>\n    <ol\n      variant=\"ordered\"\n      color=\"orange\"\n      class=\"drac-list drac-list-ordered drac-list-orange\"\n    >\n      <li class=\"drac-text drac-text-white\">Blade</li>\n      <li class=\"drac-text drac-text-white\">Buffy</li>\n      <li class=\"drac-text drac-text-white\">Morbius</li>\n    </ol>\n  </div>\n  <div>\n    <ol\n      variant=\"ordered\"\n      color=\"pink\"\n      class=\"drac-list drac-list-ordered drac-list-pink\"\n    >\n      <li class=\"drac-text drac-text-white\">Blade</li>\n      <li class=\"drac-text drac-text-white\">Buffy</li>\n      <li class=\"drac-text drac-text-white\">Morbius</li>\n    </ol>\n  </div>\n  <div>\n    <ol\n      variant=\"ordered\"\n      color=\"purple\"\n      class=\"drac-list drac-list-ordered drac-list-purple\"\n    >\n      <li class=\"drac-text drac-text-white\">Blade</li>\n      <li class=\"drac-text drac-text-white\">Buffy</li>\n      <li class=\"drac-text drac-text-white\">Morbius</li>\n    </ol>\n  </div>\n  <div>\n    <ol\n      variant=\"ordered\"\n      color=\"red\"\n      class=\"drac-list drac-list-ordered drac-list-red\"\n    >\n      <li class=\"drac-text drac-text-white\">Blade</li>\n      <li class=\"drac-text drac-text-white\">Buffy</li>\n      <li class=\"drac-text drac-text-white\">Morbius</li>\n    </ol>\n  </div>\n  <div>\n    <ol\n      variant=\"ordered\"\n      color=\"yellow\"\n      class=\"drac-list drac-list-ordered drac-list-yellow\"\n    >\n      <li class=\"drac-text drac-text-white\">Blade</li>\n      <li class=\"drac-text drac-text-white\">Buffy</li>\n      <li class=\"drac-text drac-text-white\">Morbius</li>\n    </ol>\n  </div>\n</div>\n",
-          "react": "<div style={{ display: \"flex\", flexDirection: \"column\" }}>\n  <div>\n    <List variant=\"ordered\" color=\"white\">\n      <li className=\"drac-text drac-text-white\">Blade</li>\n      <li className=\"drac-text drac-text-white\">Buffy</li>\n      <li className=\"drac-text drac-text-white\">Morbius</li>\n    </List>\n  </div>\n  <div>\n    <List variant=\"ordered\" color=\"cyan\">\n      <li className=\"drac-text drac-text-white\">Blade</li>\n      <li className=\"drac-text drac-text-white\">Buffy</li>\n      <li className=\"drac-text drac-text-white\">Morbius</li>\n    </List>\n  </div>\n  <div>\n    <List variant=\"ordered\" color=\"green\">\n      <li className=\"drac-text drac-text-white\">Blade</li>\n      <li className=\"drac-text drac-text-white\">Buffy</li>\n      <li className=\"drac-text drac-text-white\">Morbius</li>\n    </List>\n  </div>\n  <div>\n    <List variant=\"ordered\" color=\"orange\">\n      <li className=\"drac-text drac-text-white\">Blade</li>\n      <li className=\"drac-text drac-text-white\">Buffy</li>\n      <li className=\"drac-text drac-text-white\">Morbius</li>\n    </List>\n  </div>\n  <div>\n    <List variant=\"ordered\" color=\"pink\">\n      <li className=\"drac-text drac-text-white\">Blade</li>\n      <li className=\"drac-text drac-text-white\">Buffy</li>\n      <li className=\"drac-text drac-text-white\">Morbius</li>\n    </List>\n  </div>\n  <div>\n    <List variant=\"ordered\" color=\"purple\">\n      <li className=\"drac-text drac-text-white\">Blade</li>\n      <li className=\"drac-text drac-text-white\">Buffy</li>\n      <li className=\"drac-text drac-text-white\">Morbius</li>\n    </List>\n  </div>\n  <div>\n    <List variant=\"ordered\" color=\"red\">\n      <li className=\"drac-text drac-text-white\">Blade</li>\n      <li className=\"drac-text drac-text-white\">Buffy</li>\n      <li className=\"drac-text drac-text-white\">Morbius</li>\n    </List>\n  </div>\n  <div>\n    <List variant=\"ordered\" color=\"yellow\">\n      <li className=\"drac-text drac-text-white\">Blade</li>\n      <li className=\"drac-text drac-text-white\">Buffy</li>\n      <li className=\"drac-text drac-text-white\">Morbius</li>\n    </List>\n  </div>\n</div>;\n",
-          "docs": "",
-          "screenshot": "./dsp/assets/ListColors.png",
-          "svgData": "./dsp/assets/svgs/ListColors.svg"
-        },
-        {
           "title": "Variants",
-          "html": "<div style=\"display: flex; flex-direction: column\">\n  <div>\n    <ul\n      variant=\"unordered\"\n      color=\"purple\"\n      class=\"drac-list drac-list-unordered drac-list-purple\"\n    >\n      <li class=\"drac-text drac-text-white\">This is the first item</li>\n      <li class=\"drac-text drac-text-white\">This is the second item</li>\n      <li class=\"drac-text drac-text-white\">This is the third item</li>\n      <li class=\"drac-text drac-text-white\">This is the fourth item</li>\n      <li class=\"drac-text drac-text-white\">This is the fifth item</li>\n      <li class=\"drac-text drac-text-white\">This is the sixth item</li>\n      <li class=\"drac-text drac-text-white\">This is the seventh item</li>\n      <li class=\"drac-text drac-text-white\">This is the eighth item</li>\n      <li class=\"drac-text drac-text-white\">This is the ninth item</li>\n      <li class=\"drac-text drac-text-white\">\n        This is the tenth item (showing how numbers align and wrapping looks by\n        default)\n      </li>\n    </ul>\n  </div>\n  <div>\n    <ol\n      variant=\"ordered\"\n      color=\"purple\"\n      class=\"drac-list drac-list-ordered drac-list-purple\"\n    >\n      <li class=\"drac-text drac-text-white\">This is the first item</li>\n      <li class=\"drac-text drac-text-white\">This is the second item</li>\n      <li class=\"drac-text drac-text-white\">This is the third item</li>\n      <li class=\"drac-text drac-text-white\">This is the fourth item</li>\n      <li class=\"drac-text drac-text-white\">This is the fifth item</li>\n      <li class=\"drac-text drac-text-white\">This is the sixth item</li>\n      <li class=\"drac-text drac-text-white\">This is the seventh item</li>\n      <li class=\"drac-text drac-text-white\">This is the eighth item</li>\n      <li class=\"drac-text drac-text-white\">This is the ninth item</li>\n      <li class=\"drac-text drac-text-white\">\n        This is the tenth item (showing how numbers align and wrapping looks by\n        default)\n      </li>\n    </ol>\n  </div>\n  <div>\n    <ol\n      variant=\"none\"\n      color=\"purple\"\n      class=\"drac-list drac-list-none drac-list-purple\"\n    >\n      <li class=\"drac-text drac-text-white\">This is the first item</li>\n      <li class=\"drac-text drac-text-white\">This is the second item</li>\n      <li class=\"drac-text drac-text-white\">This is the third item</li>\n      <li class=\"drac-text drac-text-white\">This is the fourth item</li>\n      <li class=\"drac-text drac-text-white\">This is the fifth item</li>\n      <li class=\"drac-text drac-text-white\">This is the sixth item</li>\n      <li class=\"drac-text drac-text-white\">This is the seventh item</li>\n      <li class=\"drac-text drac-text-white\">This is the eighth item</li>\n      <li class=\"drac-text drac-text-white\">This is the ninth item</li>\n      <li class=\"drac-text drac-text-white\">\n        This is the tenth item (showing how numbers align and wrapping looks by\n        default)\n      </li>\n    </ol>\n  </div>\n</div>\n",
-          "react": "<div style={{ display: \"flex\", flexDirection: \"column\" }}>\n  <div>\n    <List variant=\"unordered\" color=\"purple\">\n      <li className=\"drac-text drac-text-white\">This is the first item</li>\n      <li className=\"drac-text drac-text-white\">This is the second item</li>\n      <li className=\"drac-text drac-text-white\">This is the third item</li>\n      <li className=\"drac-text drac-text-white\">This is the fourth item</li>\n      <li className=\"drac-text drac-text-white\">This is the fifth item</li>\n      <li className=\"drac-text drac-text-white\">This is the sixth item</li>\n      <li className=\"drac-text drac-text-white\">This is the seventh item</li>\n      <li className=\"drac-text drac-text-white\">This is the eighth item</li>\n      <li className=\"drac-text drac-text-white\">This is the ninth item</li>\n      <li className=\"drac-text drac-text-white\">\n        This is the tenth item (showing how numbers align and wrapping looks by\n        default)\n      </li>\n    </List>\n  </div>\n  <div>\n    <List variant=\"ordered\" color=\"purple\">\n      <li className=\"drac-text drac-text-white\">This is the first item</li>\n      <li className=\"drac-text drac-text-white\">This is the second item</li>\n      <li className=\"drac-text drac-text-white\">This is the third item</li>\n      <li className=\"drac-text drac-text-white\">This is the fourth item</li>\n      <li className=\"drac-text drac-text-white\">This is the fifth item</li>\n      <li className=\"drac-text drac-text-white\">This is the sixth item</li>\n      <li className=\"drac-text drac-text-white\">This is the seventh item</li>\n      <li className=\"drac-text drac-text-white\">This is the eighth item</li>\n      <li className=\"drac-text drac-text-white\">This is the ninth item</li>\n      <li className=\"drac-text drac-text-white\">\n        This is the tenth item (showing how numbers align and wrapping looks by\n        default)\n      </li>\n    </List>\n  </div>\n  <div>\n    <List variant=\"none\" color=\"purple\">\n      <li className=\"drac-text drac-text-white\">This is the first item</li>\n      <li className=\"drac-text drac-text-white\">This is the second item</li>\n      <li className=\"drac-text drac-text-white\">This is the third item</li>\n      <li className=\"drac-text drac-text-white\">This is the fourth item</li>\n      <li className=\"drac-text drac-text-white\">This is the fifth item</li>\n      <li className=\"drac-text drac-text-white\">This is the sixth item</li>\n      <li className=\"drac-text drac-text-white\">This is the seventh item</li>\n      <li className=\"drac-text drac-text-white\">This is the eighth item</li>\n      <li className=\"drac-text drac-text-white\">This is the ninth item</li>\n      <li className=\"drac-text drac-text-white\">\n        This is the tenth item (showing how numbers align and wrapping looks by\n        default)\n      </li>\n    </List>\n  </div>\n</div>;\n",
-          "docs": "",
+          "html": "<div class=\"drac-box\">\n  <ol\n    variant=\"ordered\"\n    color=\"purple\"\n    class=\"drac-list drac-list-ordered drac-list-purple\"\n  >\n    <li class=\"drac-text drac-text-white\">Blade</li>\n    <li class=\"drac-text drac-text-white\">Buffy</li>\n    <li class=\"drac-text drac-text-white\">Morbius</li>\n  </ol>\n  <ul\n    variant=\"unordered\"\n    color=\"purple\"\n    class=\"drac-list drac-list-unordered drac-list-purple\"\n  >\n    <li class=\"drac-text drac-text-white\">Blade</li>\n    <li class=\"drac-text drac-text-white\">Buffy</li>\n    <li class=\"drac-text drac-text-white\">Morbius</li>\n  </ul>\n</div>\n",
+          "react": "<Box>\n  <List variant=\"ordered\" color=\"purple\">\n    <li className=\"drac-text drac-text-white\">Blade</li>\n    <li className=\"drac-text drac-text-white\">Buffy</li>\n    <li className=\"drac-text drac-text-white\">Morbius</li>\n  </List>\n  <List variant=\"unordered\" color=\"purple\">\n    <li className=\"drac-text drac-text-white\">Blade</li>\n    <li className=\"drac-text drac-text-white\">Buffy</li>\n    <li className=\"drac-text drac-text-white\">Morbius</li>\n  </List>\n</Box>;\n",
+          "docs": "Lists can be displayed in dashes as an `<ul>` or in numbers as an `<ol>",
           "screenshot": "./dsp/assets/ListVariants.png",
           "svgData": "./dsp/assets/svgs/ListVariants.svg"
+        },
+        {
+          "title": "Colors",
+          "html": "<ol\n  variant=\"ordered\"\n  color=\"cyan\"\n  class=\"drac-list drac-list-ordered drac-list-cyan\"\n>\n  <li class=\"drac-text drac-text-white\">Blade</li>\n  <li class=\"drac-text drac-text-white\">Buffy</li>\n  <li class=\"drac-text drac-text-white\">Morbius</li>\n</ol>\n",
+          "react": "<List variant=\"ordered\" color=\"cyan\">\n  <li className=\"drac-text drac-text-white\">Blade</li>\n  <li className=\"drac-text drac-text-white\">Buffy</li>\n  <li className=\"drac-text drac-text-white\">Morbius</li>\n</List>;\n",
+          "docs": "Lists can be customized to use any of the Dracula UI theme colors.",
+          "screenshot": "./dsp/assets/ListColors.png",
+          "svgData": "./dsp/assets/svgs/ListColors.svg"
         }
       ],
       "ext_com_draculaui_props": {
@@ -6167,9 +6167,9 @@
               "name": "ListProps"
             }
           ],
-          "required": true,
+          "required": false,
           "type": {
-            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\""
+            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
           }
         },
         "variant": {
@@ -6404,7 +6404,7 @@
       },
       "ext_com_draculaui_docgen": {
         "tags": {},
-        "description": "Lists are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
+        "description": "Lists are used to display list items in an ordered or unordered way.",
         "displayName": "List",
         "methods": [],
         "props": {
@@ -6422,9 +6422,9 @@
                 "name": "ListProps"
               }
             ],
-            "required": true,
+            "required": false,
             "type": {
-              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\""
+              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
             }
           },
           "variant": {
@@ -6664,7 +6664,7 @@
       "type": "page",
       "id": "Paragraph",
       "name": "Paragraph",
-      "last_updated": "2021-03-18T01:10:35.722Z",
+      "last_updated": "2021-03-18T02:34:32.162Z",
       "last_updated_by": "System",
       "description": "Paragraph is a semantic component used for blocks of text with\nsemantic meaning.\n\nParagraph accepts all the same customization options as Text.",
       "related_entity_ids": [],
@@ -6674,40 +6674,40 @@
       "snippets": {
         "trigger": "paragraph",
         "languages": {
-          "javascriptreact": "<Paragraph>Paragraph</Paragraph>;\n",
-          "html": "<p class=\"drac-text drac-text-white\">Paragraph</p>\n"
+          "javascriptreact": "<Paragraph>basic</Paragraph>;\n",
+          "html": "<p class=\"drac-text drac-text-white\">basic</p>\n"
         }
       },
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
-          "html": "<p class=\"drac-text drac-text-white\">Paragraph</p>\n",
-          "react": "<Paragraph>Paragraph</Paragraph>;\n",
-          "docs": "",
+          "html": "<p class=\"drac-text drac-text-white\">basic</p>\n",
+          "react": "<Paragraph>basic</Paragraph>;\n",
+          "docs": "Show a paragraph within an interface.",
           "screenshot": "./dsp/assets/Paragraph.png",
           "svgData": "./dsp/assets/svgs/Paragraph.svg"
         },
         {
           "title": "Colors",
-          "html": "<div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"white\" class=\"drac-text drac-text-white\">white</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"black\" class=\"drac-text drac-text-black\">black</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"blackSecondary\" class=\"drac-text drac-text-black-secondary\">\n      blackSecondary\n    </p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"blackLight\" class=\"drac-text drac-text-black-light\">blackLight</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"cyan\" class=\"drac-text drac-text-cyan\">cyan</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"green\" class=\"drac-text drac-text-green\">green</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"orange\" class=\"drac-text drac-text-orange\">orange</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"pink\" class=\"drac-text drac-text-pink\">pink</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"purple\" class=\"drac-text drac-text-purple\">purple</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"red\" class=\"drac-text drac-text-red\">red</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"yellow\" class=\"drac-text drac-text-yellow\">yellow</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"purpleCyan\" class=\"drac-text drac-text-purple-cyan\">purpleCyan</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"yellowPink\" class=\"drac-text drac-text-yellow-pink\">yellowPink</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"cyanGreen\" class=\"drac-text drac-text-cyan-green\">cyanGreen</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"pinkPurple\" class=\"drac-text drac-text-pink-purple\">pinkPurple</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"animated\" class=\"drac-text drac-text-animated\">animated</p>\n  </div>\n</div>\n",
-          "react": "<div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"white\">white</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"black\">black</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"blackSecondary\">blackSecondary</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"blackLight\">blackLight</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"cyan\">cyan</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"green\">green</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"orange\">orange</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"pink\">pink</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"purple\">purple</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"red\">red</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"yellow\">yellow</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"purpleCyan\">purpleCyan</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"yellowPink\">yellowPink</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"cyanGreen\">cyanGreen</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"pinkPurple\">pinkPurple</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"animated\">animated</Paragraph>\n  </div>\n</div>;\n",
-          "docs": "",
+          "html": "<div class=\"drac-box\">\n  <p color=\"cyan\" class=\"drac-text drac-text-cyan\">cyan</p>\n  <p color=\"green\" class=\"drac-text drac-text-green\">green</p>\n</div>\n",
+          "react": "<Box>\n  <Paragraph color=\"cyan\">cyan</Paragraph>\n  <Paragraph color=\"green\">green</Paragraph>\n</Box>;\n",
+          "docs": "Paragraphs can be customized to use any of the Dracula UI theme colors.",
           "screenshot": "./dsp/assets/ParagraphColors.png",
           "svgData": "./dsp/assets/svgs/ParagraphColors.svg"
         },
         {
           "title": "Weights",
-          "html": "<div>\n  <div style=\"margin-bottom: 20px\">\n    <p weight=\"normal\" class=\"drac-text drac-text-white\">normal</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p weight=\"semibold\" class=\"drac-text drac-text-semibold drac-text-white\">\n      semibold\n    </p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p weight=\"bold\" class=\"drac-text drac-text-bold drac-text-white\">bold</p>\n  </div>\n</div>\n",
-          "react": "<div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph weight=\"normal\">normal</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph weight=\"semibold\">semibold</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph weight=\"bold\">bold</Paragraph>\n  </div>\n</div>;\n",
-          "docs": "",
+          "html": "<div class=\"drac-box\">\n  <p weight=\"normal\" class=\"drac-text drac-text-white\">normal</p>\n  <p weight=\"semibold\" class=\"drac-text drac-text-semibold drac-text-white\">\n    semibold\n  </p>\n  <p weight=\"bold\" class=\"drac-text drac-text-bold drac-text-white\">bold</p>\n</div>\n",
+          "react": "<Box>\n  <Paragraph weight=\"normal\">normal</Paragraph>\n  <Paragraph weight=\"semibold\">semibold</Paragraph>\n  <Paragraph weight=\"bold\">bold</Paragraph>\n</Box>;\n",
+          "docs": "Paragraphs can be defined in different font weights.",
           "screenshot": "./dsp/assets/ParagraphWeights.png",
           "svgData": "./dsp/assets/svgs/ParagraphWeights.svg"
         },
         {
           "title": "Sizes",
-          "html": "<div>\n  <div style=\"margin-bottom: 20px\">\n    <p class=\"drac-text drac-text-lg drac-text-white\">large</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p class=\"drac-text drac-text-white\">medium</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p class=\"drac-text drac-text-sm drac-text-white\">small</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p class=\"drac-text drac-text-xs drac-text-white\">xsmall</p>\n  </div>\n</div>\n",
-          "react": "<div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph size=\"large\">large</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph size=\"medium\">medium</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph size=\"small\">small</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph size=\"xsmall\">xsmall</Paragraph>\n  </div>\n</div>;\n",
-          "docs": "",
+          "html": "<div class=\"drac-box\">\n  <p class=\"drac-text drac-text-xs drac-text-white\">xsmall</p>\n  <p class=\"drac-text drac-text-sm drac-text-white\">small</p>\n  <p class=\"drac-text drac-text-white\">medium</p>\n  <p class=\"drac-text drac-text-lg drac-text-white\">large</p>\n</div>\n",
+          "react": "<Box>\n  <Paragraph size=\"xsmall\">xsmall</Paragraph>\n  <Paragraph size=\"small\">small</Paragraph>\n  <Paragraph size=\"medium\">medium</Paragraph>\n  <Paragraph size=\"large\">large</Paragraph>\n</Box>;\n",
+          "docs": "Paragraphs can be customize to use several different sizes.",
           "screenshot": "./dsp/assets/ParagraphSizes.png",
           "svgData": "./dsp/assets/svgs/ParagraphSizes.svg"
         }
@@ -7300,7 +7300,7 @@
       "type": "page",
       "id": "Radio",
       "name": "Radio",
-      "last_updated": "2021-03-18T01:10:34.057Z",
+      "last_updated": "2021-03-18T02:34:42.371Z",
       "last_updated_by": "System",
       "description": "Radio is a styled HTML Input of type radio.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep Radios accessible.",
       "related_entity_ids": [],
@@ -7852,7 +7852,7 @@
       "type": "page",
       "id": "Select",
       "name": "Select",
-      "last_updated": "2021-03-18T01:10:39.623Z",
+      "last_updated": "2021-03-18T02:34:36.282Z",
       "last_updated_by": "System",
       "description": "Select is a styled HTML Select element.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS, and small SVG component in order to keep Selects accessible.",
       "related_entity_ids": [],
@@ -8496,7 +8496,7 @@
       "type": "page",
       "id": "Switch",
       "name": "Switch",
-      "last_updated": "2021-03-18T01:10:34.253Z",
+      "last_updated": "2021-03-18T02:34:42.620Z",
       "last_updated_by": "System",
       "description": "Switch is an abstraction pattern that represents toggles.\n\nUse the Switch component as an alternative for Checkboxes or Radios\nwhen options are binary.\n\nSwitches are implemented as Checkboxes under the hood,\nand work normally with forms.",
       "related_entity_ids": [],
@@ -9086,7 +9086,7 @@
       "type": "page",
       "id": "Table",
       "name": "Table",
-      "last_updated": "2021-03-18T01:10:37.383Z",
+      "last_updated": "2021-03-18T02:34:32.595Z",
       "last_updated_by": "System",
       "description": "Tables are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
       "related_entity_ids": [],
@@ -9638,7 +9638,7 @@
       "type": "page",
       "id": "Tabs",
       "name": "Tabs",
-      "last_updated": "2021-03-18T01:10:48.199Z",
+      "last_updated": "2021-03-18T02:34:48.607Z",
       "last_updated_by": "System",
       "description": "Tabs are horizontal navigation elements used to display\ncontent within the same page.",
       "related_entity_ids": [],
@@ -9648,24 +9648,24 @@
       "snippets": {
         "trigger": "tabs",
         "languages": {
-          "javascriptreact": "<Tabs color=\"purple\">\n  <li className=\"drac-tab drac-tab-active\">\n    <a className=\"drac-tab-link drac-text\" href=\"#\">\n      Item One\n    </a>\n  </li>\n  <li className=\"drac-tab\">\n    <a className=\"drac-tab-link drac-text\" href=\"#\">\n      Item Two\n    </a>\n  </li>\n  <li className=\"drac-tab\">\n    <a className=\"drac-tab-link drac-text\" href=\"#\">\n      Item Three\n    </a>\n  </li>\n</Tabs>;\n",
-          "html": "<ul color=\"purple\" class=\"drac-tabs drac-tabs-purple\">\n  <li class=\"drac-tab drac-tab-active\">\n    <a class=\"drac-tab-link drac-text\" href=\"#\">Item One</a>\n  </li>\n  <li class=\"drac-tab\">\n    <a class=\"drac-tab-link drac-text\" href=\"#\">Item Two</a>\n  </li>\n  <li class=\"drac-tab\">\n    <a class=\"drac-tab-link drac-text\" href=\"#\">Item Three</a>\n  </li>\n</ul>\n"
+          "javascriptreact": "<Tabs color=\"white\">\n  <li className=\"drac-tab drac-tab-active\">\n    <a className=\"drac-tab-link drac-text\" href=\"#\">\n      Item One\n    </a>\n  </li>\n  <li className=\"drac-tab\">\n    <a className=\"drac-tab-link drac-text\" href=\"#\">\n      Item Two\n    </a>\n  </li>\n  <li className=\"drac-tab\">\n    <a className=\"drac-tab-link drac-text\" href=\"#\">\n      Item Three\n    </a>\n  </li>\n</Tabs>;\n",
+          "html": "<ul color=\"white\" class=\"drac-tabs drac-tabs-white\">\n  <li class=\"drac-tab drac-tab-active\">\n    <a class=\"drac-tab-link drac-text\" href=\"#\">Item One</a>\n  </li>\n  <li class=\"drac-tab\">\n    <a class=\"drac-tab-link drac-text\" href=\"#\">Item Two</a>\n  </li>\n  <li class=\"drac-tab\">\n    <a class=\"drac-tab-link drac-text\" href=\"#\">Item Three</a>\n  </li>\n</ul>\n"
         }
       },
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
-          "html": "<ul color=\"purple\" class=\"drac-tabs drac-tabs-purple\">\n  <li class=\"drac-tab drac-tab-active\">\n    <a class=\"drac-tab-link drac-text\" href=\"#\">Item One</a>\n  </li>\n  <li class=\"drac-tab\">\n    <a class=\"drac-tab-link drac-text\" href=\"#\">Item Two</a>\n  </li>\n  <li class=\"drac-tab\">\n    <a class=\"drac-tab-link drac-text\" href=\"#\">Item Three</a>\n  </li>\n</ul>\n",
-          "react": "<Tabs color=\"purple\">\n  <li className=\"drac-tab drac-tab-active\">\n    <a className=\"drac-tab-link drac-text\" href=\"#\">\n      Item One\n    </a>\n  </li>\n  <li className=\"drac-tab\">\n    <a className=\"drac-tab-link drac-text\" href=\"#\">\n      Item Two\n    </a>\n  </li>\n  <li className=\"drac-tab\">\n    <a className=\"drac-tab-link drac-text\" href=\"#\">\n      Item Three\n    </a>\n  </li>\n</Tabs>;\n",
-          "docs": "",
+          "html": "<ul color=\"white\" class=\"drac-tabs drac-tabs-white\">\n  <li class=\"drac-tab drac-tab-active\">\n    <a class=\"drac-tab-link drac-text\" href=\"#\">Item One</a>\n  </li>\n  <li class=\"drac-tab\">\n    <a class=\"drac-tab-link drac-text\" href=\"#\">Item Two</a>\n  </li>\n  <li class=\"drac-tab\">\n    <a class=\"drac-tab-link drac-text\" href=\"#\">Item Three</a>\n  </li>\n</ul>\n",
+          "react": "<Tabs color=\"white\">\n  <li className=\"drac-tab drac-tab-active\">\n    <a className=\"drac-tab-link drac-text\" href=\"#\">\n      Item One\n    </a>\n  </li>\n  <li className=\"drac-tab\">\n    <a className=\"drac-tab-link drac-text\" href=\"#\">\n      Item Two\n    </a>\n  </li>\n  <li className=\"drac-tab\">\n    <a className=\"drac-tab-link drac-text\" href=\"#\">\n      Item Three\n    </a>\n  </li>\n</Tabs>;\n",
+          "docs": "Display different content based on the Tabs behavior.",
           "screenshot": "./dsp/assets/Tabs.png",
           "svgData": "./dsp/assets/svgs/Tabs.svg"
         },
         {
           "title": "Colors",
-          "html": "<div style=\"display: flex; flex-direction: column\">\n  <ul color=\"white\" class=\"drac-tabs drac-tabs-white\">\n    <li class=\"drac-tab drac-tab-active\">\n      <a class=\"drac-tab-link drac-text\" href=\"#\">Item One</a>\n    </li>\n    <li class=\"drac-tab\">\n      <a class=\"drac-tab-link drac-text\" href=\"#\">Item Two</a>\n    </li>\n    <li class=\"drac-tab\">\n      <a class=\"drac-tab-link drac-text\" href=\"#\">Item Three</a>\n    </li>\n  </ul>\n  <ul color=\"cyan\" class=\"drac-tabs drac-tabs-cyan\">\n    <li class=\"drac-tab drac-tab-active\">\n      <a class=\"drac-tab-link drac-text\" href=\"#\">Item One</a>\n    </li>\n    <li class=\"drac-tab\">\n      <a class=\"drac-tab-link drac-text\" href=\"#\">Item Two</a>\n    </li>\n    <li class=\"drac-tab\">\n      <a class=\"drac-tab-link drac-text\" href=\"#\">Item Three</a>\n    </li>\n  </ul>\n  <ul color=\"green\" class=\"drac-tabs drac-tabs-green\">\n    <li class=\"drac-tab drac-tab-active\">\n      <a class=\"drac-tab-link drac-text\" href=\"#\">Item One</a>\n    </li>\n    <li class=\"drac-tab\">\n      <a class=\"drac-tab-link drac-text\" href=\"#\">Item Two</a>\n    </li>\n    <li class=\"drac-tab\">\n      <a class=\"drac-tab-link drac-text\" href=\"#\">Item Three</a>\n    </li>\n  </ul>\n  <ul color=\"orange\" class=\"drac-tabs drac-tabs-orange\">\n    <li class=\"drac-tab drac-tab-active\">\n      <a class=\"drac-tab-link drac-text\" href=\"#\">Item One</a>\n    </li>\n    <li class=\"drac-tab\">\n      <a class=\"drac-tab-link drac-text\" href=\"#\">Item Two</a>\n    </li>\n    <li class=\"drac-tab\">\n      <a class=\"drac-tab-link drac-text\" href=\"#\">Item Three</a>\n    </li>\n  </ul>\n  <ul color=\"pink\" class=\"drac-tabs drac-tabs-pink\">\n    <li class=\"drac-tab drac-tab-active\">\n      <a class=\"drac-tab-link drac-text\" href=\"#\">Item One</a>\n    </li>\n    <li class=\"drac-tab\">\n      <a class=\"drac-tab-link drac-text\" href=\"#\">Item Two</a>\n    </li>\n    <li class=\"drac-tab\">\n      <a class=\"drac-tab-link drac-text\" href=\"#\">Item Three</a>\n    </li>\n  </ul>\n  <ul color=\"purple\" class=\"drac-tabs drac-tabs-purple\">\n    <li class=\"drac-tab drac-tab-active\">\n      <a class=\"drac-tab-link drac-text\" href=\"#\">Item One</a>\n    </li>\n    <li class=\"drac-tab\">\n      <a class=\"drac-tab-link drac-text\" href=\"#\">Item Two</a>\n    </li>\n    <li class=\"drac-tab\">\n      <a class=\"drac-tab-link drac-text\" href=\"#\">Item Three</a>\n    </li>\n  </ul>\n  <ul color=\"red\" class=\"drac-tabs drac-tabs-red\">\n    <li class=\"drac-tab drac-tab-active\">\n      <a class=\"drac-tab-link drac-text\" href=\"#\">Item One</a>\n    </li>\n    <li class=\"drac-tab\">\n      <a class=\"drac-tab-link drac-text\" href=\"#\">Item Two</a>\n    </li>\n    <li class=\"drac-tab\">\n      <a class=\"drac-tab-link drac-text\" href=\"#\">Item Three</a>\n    </li>\n  </ul>\n  <ul color=\"yellow\" class=\"drac-tabs drac-tabs-yellow\">\n    <li class=\"drac-tab drac-tab-active\">\n      <a class=\"drac-tab-link drac-text\" href=\"#\">Item One</a>\n    </li>\n    <li class=\"drac-tab\">\n      <a class=\"drac-tab-link drac-text\" href=\"#\">Item Two</a>\n    </li>\n    <li class=\"drac-tab\">\n      <a class=\"drac-tab-link drac-text\" href=\"#\">Item Three</a>\n    </li>\n  </ul>\n</div>\n",
-          "react": "<div style={{ display: \"flex\", flexDirection: \"column\" }}>\n  <Tabs color=\"white\">\n    <li className=\"drac-tab drac-tab-active\">\n      <a className=\"drac-tab-link drac-text\" href=\"#\">\n        Item One\n      </a>\n    </li>\n    <li className=\"drac-tab\">\n      <a className=\"drac-tab-link drac-text\" href=\"#\">\n        Item Two\n      </a>\n    </li>\n    <li className=\"drac-tab\">\n      <a className=\"drac-tab-link drac-text\" href=\"#\">\n        Item Three\n      </a>\n    </li>\n  </Tabs>\n  <Tabs color=\"cyan\">\n    <li className=\"drac-tab drac-tab-active\">\n      <a className=\"drac-tab-link drac-text\" href=\"#\">\n        Item One\n      </a>\n    </li>\n    <li className=\"drac-tab\">\n      <a className=\"drac-tab-link drac-text\" href=\"#\">\n        Item Two\n      </a>\n    </li>\n    <li className=\"drac-tab\">\n      <a className=\"drac-tab-link drac-text\" href=\"#\">\n        Item Three\n      </a>\n    </li>\n  </Tabs>\n  <Tabs color=\"green\">\n    <li className=\"drac-tab drac-tab-active\">\n      <a className=\"drac-tab-link drac-text\" href=\"#\">\n        Item One\n      </a>\n    </li>\n    <li className=\"drac-tab\">\n      <a className=\"drac-tab-link drac-text\" href=\"#\">\n        Item Two\n      </a>\n    </li>\n    <li className=\"drac-tab\">\n      <a className=\"drac-tab-link drac-text\" href=\"#\">\n        Item Three\n      </a>\n    </li>\n  </Tabs>\n  <Tabs color=\"orange\">\n    <li className=\"drac-tab drac-tab-active\">\n      <a className=\"drac-tab-link drac-text\" href=\"#\">\n        Item One\n      </a>\n    </li>\n    <li className=\"drac-tab\">\n      <a className=\"drac-tab-link drac-text\" href=\"#\">\n        Item Two\n      </a>\n    </li>\n    <li className=\"drac-tab\">\n      <a className=\"drac-tab-link drac-text\" href=\"#\">\n        Item Three\n      </a>\n    </li>\n  </Tabs>\n  <Tabs color=\"pink\">\n    <li className=\"drac-tab drac-tab-active\">\n      <a className=\"drac-tab-link drac-text\" href=\"#\">\n        Item One\n      </a>\n    </li>\n    <li className=\"drac-tab\">\n      <a className=\"drac-tab-link drac-text\" href=\"#\">\n        Item Two\n      </a>\n    </li>\n    <li className=\"drac-tab\">\n      <a className=\"drac-tab-link drac-text\" href=\"#\">\n        Item Three\n      </a>\n    </li>\n  </Tabs>\n  <Tabs color=\"purple\">\n    <li className=\"drac-tab drac-tab-active\">\n      <a className=\"drac-tab-link drac-text\" href=\"#\">\n        Item One\n      </a>\n    </li>\n    <li className=\"drac-tab\">\n      <a className=\"drac-tab-link drac-text\" href=\"#\">\n        Item Two\n      </a>\n    </li>\n    <li className=\"drac-tab\">\n      <a className=\"drac-tab-link drac-text\" href=\"#\">\n        Item Three\n      </a>\n    </li>\n  </Tabs>\n  <Tabs color=\"red\">\n    <li className=\"drac-tab drac-tab-active\">\n      <a className=\"drac-tab-link drac-text\" href=\"#\">\n        Item One\n      </a>\n    </li>\n    <li className=\"drac-tab\">\n      <a className=\"drac-tab-link drac-text\" href=\"#\">\n        Item Two\n      </a>\n    </li>\n    <li className=\"drac-tab\">\n      <a className=\"drac-tab-link drac-text\" href=\"#\">\n        Item Three\n      </a>\n    </li>\n  </Tabs>\n  <Tabs color=\"yellow\">\n    <li className=\"drac-tab drac-tab-active\">\n      <a className=\"drac-tab-link drac-text\" href=\"#\">\n        Item One\n      </a>\n    </li>\n    <li className=\"drac-tab\">\n      <a className=\"drac-tab-link drac-text\" href=\"#\">\n        Item Two\n      </a>\n    </li>\n    <li className=\"drac-tab\">\n      <a className=\"drac-tab-link drac-text\" href=\"#\">\n        Item Three\n      </a>\n    </li>\n  </Tabs>\n</div>;\n",
-          "docs": "",
+          "html": "<div class=\"drac-box\">\n  <div class=\"drac-box\">\n    <ul color=\"cyan\" class=\"drac-tabs drac-tabs-cyan\">\n      <li class=\"drac-tab drac-tab-active\">\n        <a class=\"drac-tab-link drac-text\" href=\"#\">Item One</a>\n      </li>\n      <li class=\"drac-tab\">\n        <a class=\"drac-tab-link drac-text\" href=\"#\">Item Two</a>\n      </li>\n      <li class=\"drac-tab\">\n        <a class=\"drac-tab-link drac-text\" href=\"#\">Item Three</a>\n      </li>\n    </ul>\n  </div>\n  <div class=\"drac-box\">\n    <ul color=\"green\" class=\"drac-tabs drac-tabs-green\">\n      <li class=\"drac-tab drac-tab-active\">\n        <a class=\"drac-tab-link drac-text\" href=\"#\">Item One</a>\n      </li>\n      <li class=\"drac-tab\">\n        <a class=\"drac-tab-link drac-text\" href=\"#\">Item Two</a>\n      </li>\n      <li class=\"drac-tab\">\n        <a class=\"drac-tab-link drac-text\" href=\"#\">Item Three</a>\n      </li>\n    </ul>\n  </div>\n</div>\n",
+          "react": "<Box>\n  <Box>\n    <Tabs color=\"cyan\">\n      <li className=\"drac-tab drac-tab-active\">\n        <a className=\"drac-tab-link drac-text\" href=\"#\">\n          Item One\n        </a>\n      </li>\n      <li className=\"drac-tab\">\n        <a className=\"drac-tab-link drac-text\" href=\"#\">\n          Item Two\n        </a>\n      </li>\n      <li className=\"drac-tab\">\n        <a className=\"drac-tab-link drac-text\" href=\"#\">\n          Item Three\n        </a>\n      </li>\n    </Tabs>\n  </Box>\n  <Box>\n    <Tabs color=\"green\">\n      <li className=\"drac-tab drac-tab-active\">\n        <a className=\"drac-tab-link drac-text\" href=\"#\">\n          Item One\n        </a>\n      </li>\n      <li className=\"drac-tab\">\n        <a className=\"drac-tab-link drac-text\" href=\"#\">\n          Item Two\n        </a>\n      </li>\n      <li className=\"drac-tab\">\n        <a className=\"drac-tab-link drac-text\" href=\"#\">\n          Item Three\n        </a>\n      </li>\n    </Tabs>\n  </Box>\n</Box>;\n",
+          "docs": "Tabs can be customized to use any of the Dracula UI theme colors.",
           "screenshot": "./dsp/assets/TabsColors.png",
           "svgData": "./dsp/assets/svgs/TabsColors.svg"
         }
@@ -10144,7 +10144,7 @@
       "type": "page",
       "id": "Text",
       "name": "Text",
-      "last_updated": "2021-03-18T01:10:35.784Z",
+      "last_updated": "2021-03-18T02:34:32.321Z",
       "last_updated_by": "System",
       "description": "Text is the base component for any sort of text.\n\nConsumers of this component can control, the color, size,\nweight, and spacing of Text.\n\nUse this component for generic, and non-hierarchical text that is\nto be displayed on a page, or as part of other complex components\nor UI patterns",
       "related_entity_ids": [],
@@ -10154,40 +10154,40 @@
       "snippets": {
         "trigger": "text",
         "languages": {
-          "javascriptreact": "<Text>Text</Text>;\n",
-          "html": "<span class=\"drac-text drac-text-white\">Text</span>\n"
+          "javascriptreact": "<Text>basic</Text>;\n",
+          "html": "<span class=\"drac-text drac-text-white\">basic</span>\n"
         }
       },
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
-          "html": "<span class=\"drac-text drac-text-white\">Text</span>\n",
-          "react": "<Text>Text</Text>;\n",
-          "docs": "",
+          "html": "<span class=\"drac-text drac-text-white\">basic</span>\n",
+          "react": "<Text>basic</Text>;\n",
+          "docs": "Show inline text within an interface.",
           "screenshot": "./dsp/assets/Text.png",
           "svgData": "./dsp/assets/svgs/Text.svg"
         },
         {
           "title": "Colors",
-          "html": "<div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"white\" class=\"drac-text drac-text-white\">white</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"black\" class=\"drac-text drac-text-black\">black</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"blackSecondary\" class=\"drac-text drac-text-black-secondary\"\n      >blackSecondary</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"blackLight\" class=\"drac-text drac-text-black-light\"\n      >blackLight</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"cyan\" class=\"drac-text drac-text-cyan\">cyan</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"green\" class=\"drac-text drac-text-green\">green</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"orange\" class=\"drac-text drac-text-orange\">orange</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"pink\" class=\"drac-text drac-text-pink\">pink</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"purple\" class=\"drac-text drac-text-purple\">purple</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"red\" class=\"drac-text drac-text-red\">red</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"yellow\" class=\"drac-text drac-text-yellow\">yellow</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"purpleCyan\" class=\"drac-text drac-text-purple-cyan\"\n      >purpleCyan</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"yellowPink\" class=\"drac-text drac-text-yellow-pink\"\n      >yellowPink</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"cyanGreen\" class=\"drac-text drac-text-cyan-green\"\n      >cyanGreen</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"pinkPurple\" class=\"drac-text drac-text-pink-purple\"\n      >pinkPurple</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span color=\"animated\" class=\"drac-text drac-text-animated\">animated</span>\n  </div>\n</div>\n",
-          "react": "<div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"white\">white</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"black\">black</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"blackSecondary\">blackSecondary</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"blackLight\">blackLight</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"cyan\">cyan</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"green\">green</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"orange\">orange</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"pink\">pink</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"purple\">purple</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"red\">red</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"yellow\">yellow</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"purpleCyan\">purpleCyan</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"yellowPink\">yellowPink</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"cyanGreen\">cyanGreen</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"pinkPurple\">pinkPurple</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text color=\"animated\">animated</Text>\n  </div>\n</div>;\n",
-          "docs": "",
+          "html": "<div class=\"drac-box\">\n  <div class=\"drac-box\">\n    <span color=\"cyan\" class=\"drac-text drac-text-cyan\">cyan</span>\n  </div>\n  <div class=\"drac-box\">\n    <span color=\"green\" class=\"drac-text drac-text-green\">green</span>\n  </div>\n</div>\n",
+          "react": "<Box>\n  <Box>\n    <Text color=\"cyan\">cyan</Text>\n  </Box>\n  <Box>\n    <Text color=\"green\">green</Text>\n  </Box>\n</Box>;\n",
+          "docs": "Text can be customized to use any of the Dracula UI theme colors.",
           "screenshot": "./dsp/assets/TextColors.png",
           "svgData": "./dsp/assets/svgs/TextColors.svg"
         },
         {
           "title": "Weights",
-          "html": "<div>\n  <div style=\"margin-bottom: 20px\">\n    <span weight=\"normal\" class=\"drac-text drac-text-white\">normal</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span weight=\"semibold\" class=\"drac-text drac-text-semibold drac-text-white\"\n      >semibold</span\n    >\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span weight=\"bold\" class=\"drac-text drac-text-bold drac-text-white\"\n      >bold</span\n    >\n  </div>\n</div>\n",
-          "react": "<div>\n  <div style={{ marginBottom: 20 }}>\n    <Text weight=\"normal\">normal</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text weight=\"semibold\">semibold</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text weight=\"bold\">bold</Text>\n  </div>\n</div>;\n",
-          "docs": "",
+          "html": "<div class=\"drac-box\">\n  <div class=\"drac-box\">\n    <span weight=\"normal\" class=\"drac-text drac-text-white\">normal</span>\n  </div>\n  <div class=\"drac-box\">\n    <span weight=\"semibold\" class=\"drac-text drac-text-semibold drac-text-white\"\n      >semibold</span\n    >\n  </div>\n  <div class=\"drac-box\">\n    <span weight=\"bold\" class=\"drac-text drac-text-bold drac-text-white\"\n      >bold</span\n    >\n  </div>\n</div>\n",
+          "react": "<Box>\n  <Box>\n    <Text weight=\"normal\">normal</Text>\n  </Box>\n  <Box>\n    <Text weight=\"semibold\">semibold</Text>\n  </Box>\n  <Box>\n    <Text weight=\"bold\">bold</Text>\n  </Box>\n</Box>;\n",
+          "docs": "Text can be defined in different font weights.",
           "screenshot": "./dsp/assets/TextWeights.png",
           "svgData": "./dsp/assets/svgs/TextWeights.svg"
         },
         {
           "title": "Sizes",
-          "html": "<div>\n  <div style=\"margin-bottom: 20px\">\n    <span class=\"drac-text drac-text-lg drac-text-white\">large</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span class=\"drac-text drac-text-white\">medium</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span class=\"drac-text drac-text-sm drac-text-white\">small</span>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <span class=\"drac-text drac-text-xs drac-text-white\">xsmall</span>\n  </div>\n</div>\n",
-          "react": "<div>\n  <div style={{ marginBottom: 20 }}>\n    <Text size=\"large\">large</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text size=\"medium\">medium</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text size=\"small\">small</Text>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Text size=\"xsmall\">xsmall</Text>\n  </div>\n</div>;\n",
-          "docs": "",
+          "html": "<div class=\"drac-box\">\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-text-xs drac-text-white\">xsmall</span>\n  </div>\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-text-sm drac-text-white\">small</span>\n  </div>\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-text-white\">medium</span>\n  </div>\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-text-lg drac-text-white\">large</span>\n  </div>\n</div>\n",
+          "react": "<Box>\n  <Box>\n    <Text size=\"xsmall\">xsmall</Text>\n  </Box>\n  <Box>\n    <Text size=\"small\">small</Text>\n  </Box>\n  <Box>\n    <Text size=\"medium\">medium</Text>\n  </Box>\n  <Box>\n    <Text size=\"large\">large</Text>\n  </Box>\n</Box>;\n",
+          "docs": "Text can be customize to use several different sizes.",
           "screenshot": "./dsp/assets/TextSizes.png",
           "svgData": "./dsp/assets/svgs/TextSizes.svg"
         }

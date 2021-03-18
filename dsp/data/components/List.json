@@ -3,11 +3,7 @@
   "type": "page",
   "id": "List",
   "name": "List",
-<<<<<<< HEAD
-  "last_updated": "2021-03-18T00:43:14.209Z",
-=======
-  "last_updated": "2021-03-18T01:10:46.632Z",
->>>>>>> Remove duplicated options
+  "last_updated": "2021-03-18T02:34:42.677Z",
   "last_updated_by": "System",
   "description": "Lists are used to display list items in an ordered or unordered way.",
   "related_entity_ids": [],
