@@ -20,8 +20,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  background-color: var(--accentColor);
 }
 
 .avatar-lg-stroke {

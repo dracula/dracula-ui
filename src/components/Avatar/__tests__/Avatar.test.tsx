@@ -10,7 +10,7 @@ docs(Avatar, {
       () => (
         <Avatar
           title="Netto Farah"
-          src="https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg"
+          src="https://pbs.twimg.com/profile_images/1325812776707690496/_iTWBLbr_400x400.jpg"
         />
       ),
       `
