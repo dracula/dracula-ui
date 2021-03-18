@@ -2,10 +2,10 @@
 
 exports[`Site: Text Basic Usage 1`] = `
 Object {
-  "docs": "",
-  "html": "<span class=\\"drac-text drac-text-white\\">Text</span>
+  "docs": "Show inline text within an interface.",
+  "html": "<span class=\\"drac-text drac-text-white\\">basic</span>
 ",
-  "react": "<Text>Text</Text>;
+  "react": "<Text>basic</Text>;
 ",
   "title": "Usage",
 }
@@ -13,120 +13,24 @@ Object {
 
 exports[`Site: Text Colors 1`] = `
 Object {
-  "docs": "",
-  "html": "<div>
-  <div style=\\"margin-bottom: 20px\\">
-    <span color=\\"white\\" class=\\"drac-text drac-text-white\\">white</span>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <span color=\\"black\\" class=\\"drac-text drac-text-black\\">black</span>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <span color=\\"blackSecondary\\" class=\\"drac-text drac-text-black-secondary\\"
-      >blackSecondary</span
-    >
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <span color=\\"blackLight\\" class=\\"drac-text drac-text-black-light\\"
-      >blackLight</span
-    >
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
+  "docs": "Text can be customized to use any of the Dracula UI theme colors.",
+  "html": "<div class=\\"drac-box\\">
+  <div class=\\"drac-box\\">
     <span color=\\"cyan\\" class=\\"drac-text drac-text-cyan\\">cyan</span>
   </div>
-  <div style=\\"margin-bottom: 20px\\">
+  <div class=\\"drac-box\\">
     <span color=\\"green\\" class=\\"drac-text drac-text-green\\">green</span>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <span color=\\"orange\\" class=\\"drac-text drac-text-orange\\">orange</span>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <span color=\\"pink\\" class=\\"drac-text drac-text-pink\\">pink</span>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <span color=\\"purple\\" class=\\"drac-text drac-text-purple\\">purple</span>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <span color=\\"red\\" class=\\"drac-text drac-text-red\\">red</span>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <span color=\\"yellow\\" class=\\"drac-text drac-text-yellow\\">yellow</span>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <span color=\\"purpleCyan\\" class=\\"drac-text drac-text-purple-cyan\\"
-      >purpleCyan</span
-    >
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <span color=\\"yellowPink\\" class=\\"drac-text drac-text-yellow-pink\\"
-      >yellowPink</span
-    >
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <span color=\\"cyanGreen\\" class=\\"drac-text drac-text-cyan-green\\"
-      >cyanGreen</span
-    >
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <span color=\\"pinkPurple\\" class=\\"drac-text drac-text-pink-purple\\"
-      >pinkPurple</span
-    >
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <span color=\\"animated\\" class=\\"drac-text drac-text-animated\\">animated</span>
   </div>
 </div>
 ",
-  "react": "<div>
-  <div style={{ marginBottom: 20 }}>
-    <Text color=\\"white\\">white</Text>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Text color=\\"black\\">black</Text>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Text color=\\"blackSecondary\\">blackSecondary</Text>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Text color=\\"blackLight\\">blackLight</Text>
-  </div>
-  <div style={{ marginBottom: 20 }}>
+  "react": "<Box>
+  <Box>
     <Text color=\\"cyan\\">cyan</Text>
-  </div>
-  <div style={{ marginBottom: 20 }}>
+  </Box>
+  <Box>
     <Text color=\\"green\\">green</Text>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Text color=\\"orange\\">orange</Text>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Text color=\\"pink\\">pink</Text>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Text color=\\"purple\\">purple</Text>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Text color=\\"red\\">red</Text>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Text color=\\"yellow\\">yellow</Text>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Text color=\\"purpleCyan\\">purpleCyan</Text>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Text color=\\"yellowPink\\">yellowPink</Text>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Text color=\\"cyanGreen\\">cyanGreen</Text>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Text color=\\"pinkPurple\\">pinkPurple</Text>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Text color=\\"animated\\">animated</Text>
-  </div>
-</div>;
+  </Box>
+</Box>;
 ",
   "title": "Colors",
 }
@@ -134,36 +38,36 @@ Object {
 
 exports[`Site: Text Sizes 1`] = `
 Object {
-  "docs": "",
-  "html": "<div>
-  <div style=\\"margin-bottom: 20px\\">
-    <span class=\\"drac-text drac-text-lg drac-text-white\\">large</span>
+  "docs": "Text can be customize to use several different sizes.",
+  "html": "<div class=\\"drac-box\\">
+  <div class=\\"drac-box\\">
+    <span class=\\"drac-text drac-text-xs drac-text-white\\">xsmall</span>
   </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <span class=\\"drac-text drac-text-white\\">medium</span>
-  </div>
-  <div style=\\"margin-bottom: 20px\\">
+  <div class=\\"drac-box\\">
     <span class=\\"drac-text drac-text-sm drac-text-white\\">small</span>
   </div>
-  <div style=\\"margin-bottom: 20px\\">
-    <span class=\\"drac-text drac-text-xs drac-text-white\\">xsmall</span>
+  <div class=\\"drac-box\\">
+    <span class=\\"drac-text drac-text-white\\">medium</span>
+  </div>
+  <div class=\\"drac-box\\">
+    <span class=\\"drac-text drac-text-lg drac-text-white\\">large</span>
   </div>
 </div>
 ",
-  "react": "<div>
-  <div style={{ marginBottom: 20 }}>
-    <Text size=\\"large\\">large</Text>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Text size=\\"medium\\">medium</Text>
-  </div>
-  <div style={{ marginBottom: 20 }}>
-    <Text size=\\"small\\">small</Text>
-  </div>
-  <div style={{ marginBottom: 20 }}>
+  "react": "<Box>
+  <Box>
     <Text size=\\"xsmall\\">xsmall</Text>
-  </div>
-</div>;
+  </Box>
+  <Box>
+    <Text size=\\"small\\">small</Text>
+  </Box>
+  <Box>
+    <Text size=\\"medium\\">medium</Text>
+  </Box>
+  <Box>
+    <Text size=\\"large\\">large</Text>
+  </Box>
+</Box>;
 ",
   "title": "Sizes",
 }
@@ -171,34 +75,34 @@ Object {
 
 exports[`Site: Text Weights 1`] = `
 Object {
-  "docs": "",
-  "html": "<div>
-  <div style=\\"margin-bottom: 20px\\">
+  "docs": "Text can be defined in different font weights.",
+  "html": "<div class=\\"drac-box\\">
+  <div class=\\"drac-box\\">
     <span weight=\\"normal\\" class=\\"drac-text drac-text-white\\">normal</span>
   </div>
-  <div style=\\"margin-bottom: 20px\\">
+  <div class=\\"drac-box\\">
     <span weight=\\"semibold\\" class=\\"drac-text drac-text-semibold drac-text-white\\"
       >semibold</span
     >
   </div>
-  <div style=\\"margin-bottom: 20px\\">
+  <div class=\\"drac-box\\">
     <span weight=\\"bold\\" class=\\"drac-text drac-text-bold drac-text-white\\"
       >bold</span
     >
   </div>
 </div>
 ",
-  "react": "<div>
-  <div style={{ marginBottom: 20 }}>
+  "react": "<Box>
+  <Box>
     <Text weight=\\"normal\\">normal</Text>
-  </div>
-  <div style={{ marginBottom: 20 }}>
+  </Box>
+  <Box>
     <Text weight=\\"semibold\\">semibold</Text>
-  </div>
-  <div style={{ marginBottom: 20 }}>
+  </Box>
+  <Box>
     <Text weight=\\"bold\\">bold</Text>
-  </div>
-</div>;
+  </Box>
+</Box>;
 ",
   "title": "Weights",
 }

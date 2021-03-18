@@ -33,13 +33,11 @@ export interface TextProps
     MarginMixin {
   /**
    * Controls the size of the text based on pre-configured Dracula UI sizes.
-   * Options: `xsmall`, `small`, `medium`, `large`
    */
   size?: keyof typeof textSizes
 
   /**
    * Controsl the weight of the text.
-   * Options: `normal`, `semibold`, `bold`.
    */
   weight?: keyof typeof textWeights
 
