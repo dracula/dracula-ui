@@ -44,8 +44,7 @@ export interface ListProps
 }
 
 /**
- * Lists are horizontal lines used to separate semantic blocks of
- * content or UI patterns.
+ * Lists are used to display list items in an ordered or unordered way.
  */
 export const List: React.FC<ListProps> = (props: ListProps) => {
   const finalProps = {
