@@ -8,6 +8,8 @@ export interface RadioProps extends HTMLAttributes<HTMLInputElement>, PaddingMix
     color: keyof typeof radioColors;
     /** The name of the radio. Mirrors the name HTML attribute. */
     name?: string;
+    /** A disabled radio is unusable and un-clickable. */
+    disabled?: boolean;
 }
 /**
  * Radio is a styled HTML Input of type radio.

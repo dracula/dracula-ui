@@ -388,13 +388,14 @@ var variants = {
  */
 
 var Badge = function Badge(props) {
-  var _props$themeColor, _props$themeColor2, _props$variant;
+  var _props$themeColor, _props$variant;
 
   var isOutline = props.variant === 'outline';
   var isSubtle = props.variant === 'subtle';
   var overrideTextColor = isOutline || isSubtle;
-  var textColorClass = overrideTextColor ? textColors[(_props$themeColor = props.themeColor) != null ? _props$themeColor : 'green'] : undefined;
-  var backgroundClass = colors[(_props$themeColor2 = props.themeColor) != null ? _props$themeColor2 : 'black'];
+  var themeColor = (_props$themeColor = props.themeColor) != null ? _props$themeColor : 'purple';
+  var textColorClass = overrideTextColor ? textColors[themeColor] : undefined;
+  var backgroundClass = colors[themeColor];
 
   if (isSubtle) {
     backgroundClass = backgroundClass + "-transparent";
@@ -542,7 +543,7 @@ var Select = function Select(props) {
 };
 Select.displayName = 'Select';
 
-var dividerColors = borderColors;
+var dividerColors = baseColors;
 /**
  * Dividers are horizontal lines used to separate semantic blocks of
  * content or UI patterns.
@@ -707,8 +708,7 @@ var tableVariants = {
   striped: 'drac-table-striped'
 };
 /**
- * Tables are horizontal lines used to separate semantic blocks of
- * content or UI patterns.
+ * Tables are used to display data in a tabular fashion.
  */
 
 var Table = function Table(props) {
@@ -736,8 +736,7 @@ var listVariants = {
   none: 'drac-list-none'
 };
 /**
- * Lists are horizontal lines used to separate semantic blocks of
- * content or UI patterns.
+ * Lists are used to display list items in an ordered or unordered way.
  */
 
 var List = function List(props) {

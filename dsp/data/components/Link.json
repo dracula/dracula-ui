@@ -3,7 +3,6 @@
   "type": "page",
   "id": "Link",
   "name": "Link",
-  "last_updated": "2021-03-17T04:01:39.491Z",
   "last_updated_by": "System",
   "description": "Text is the base component for any sort of text.\n\nConsumers of this component can control, the color, size,\nweight, and spacing of Text.\n\nUse this component for generic, and non-hierarchical text that is\nto be displayed on a page, or as part of other complex components\nor UI patterns",
   "related_entity_ids": [],
@@ -58,7 +57,7 @@
     },
     "size": {
       "defaultValue": null,
-      "description": "Controls the size of the link based on pre-configured Dracula UI sizes.\nOptions: `xsmall`, `small`, `medium`, `large`",
+      "description": "Controls the size of the link based on pre-configured Dracula UI sizes.",
       "name": "size",
       "parent": {
         "fileName": "src/components/Link/Link.tsx",
@@ -74,7 +73,7 @@
     },
     "weight": {
       "defaultValue": null,
-      "description": "Controls the weight of the link.\nOptions: `normal`, `semibold`, `bold`.",
+      "description": "Controls the weight of the link.",
       "name": "weight",
       "parent": {
         "fileName": "src/components/Link/Link.tsx",
@@ -309,7 +308,7 @@
       },
       "size": {
         "defaultValue": null,
-        "description": "Controls the size of the link based on pre-configured Dracula UI sizes.\nOptions: `xsmall`, `small`, `medium`, `large`",
+        "description": "Controls the size of the link based on pre-configured Dracula UI sizes.",
         "name": "size",
         "parent": {
           "fileName": "src/components/Link/Link.tsx",
@@ -325,7 +324,7 @@
       },
       "weight": {
         "defaultValue": null,
-        "description": "Controls the weight of the link.\nOptions: `normal`, `semibold`, `bold`.",
+        "description": "Controls the weight of the link.",
         "name": "weight",
         "parent": {
           "fileName": "src/components/Link/Link.tsx",

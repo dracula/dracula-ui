@@ -27,12 +27,10 @@ export interface LinkProps extends HTMLAttributes<HTMLAnchorElement>, PaddingMix
     href?: string;
     /**
      * Controls the size of the link based on pre-configured Dracula UI sizes.
-     * Options: `xsmall`, `small`, `medium`, `large`
      */
     size?: keyof typeof textSizes;
     /**
      * Controls the weight of the link.
-     * Options: `normal`, `semibold`, `bold`.
      */
     weight?: keyof typeof textWeights;
     /**
@@ -63,12 +61,10 @@ export declare const Link: {
         href?: string | undefined;
         /**
          * Controls the size of the link based on pre-configured Dracula UI sizes.
-         * Options: `xsmall`, `small`, `medium`, `large`
          */
         size?: "large" | "medium" | "small" | "xsmall" | undefined;
         /**
          * Controls the weight of the link.
-         * Options: `normal`, `semibold`, `bold`.
          */
         weight?: "normal" | "semibold" | "bold" | undefined;
         /**
@@ -335,10 +331,7 @@ export declare const Link: {
         onTransitionEndCapture?: ((event: React.TransitionEvent<HTMLAnchorElement>) => void) | undefined;
         p?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
         py?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
-        px?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined; /**
-         * Controls the weight of the link.
-         * Options: `normal`, `semibold`, `bold`.
-         */
+        px?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
         pt?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
         pb?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
         pl?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;

@@ -3,7 +3,6 @@
   "type": "page",
   "id": "Radio",
   "name": "Radio",
-  "last_updated": "2021-03-17T04:01:50.499Z",
   "last_updated_by": "System",
   "description": "Radio is a styled HTML Input of type radio.\n\nThere are no behavior changes applied to the native HTML tag other\nthan light styling done via CSS in order to keep Radios accessible.",
   "related_entity_ids": [],
@@ -20,7 +19,7 @@
       "title": "Usage",
       "html": "<div>\n  <input\n    type=\"radio\"\n    id=\"one\"\n    color=\"purple\"\n    name=\"demo\"\n    class=\"drac-radio drac-radio-purple\"\n    checked=\"\"\n  /><label for=\"one\" class=\"drac-text drac-text-white\">Checked</label>\n</div>\n",
       "react": "<div>\n  <Radio id=\"one\" defaultChecked={true} color=\"purple\" name=\"demo\" />\n  <label htmlFor=\"one\" className=\"drac-text drac-text-white\">\n    Checked\n  </label>\n</div>;\n",
-      "docs": "",
+      "docs": "Radio buttons let a user select only one of a limited number of choices.",
       "screenshot": "./dsp/assets/Radio.png",
       "svgData": "./dsp/assets/svgs/Radio.svg"
     },
@@ -28,7 +27,7 @@
       "title": "Disabled",
       "html": "<div>\n  <div style=\"margin-bottom: 10px\">\n    <input\n      type=\"radio\"\n      id=\"one\"\n      color=\"white\"\n      name=\"demo\"\n      class=\"drac-radio drac-radio-white\"\n      checked=\"\"\n    /><label for=\"one\" class=\"drac-text drac-text-white\">Checked</label>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <input\n      type=\"radio\"\n      id=\"two\"\n      color=\"white\"\n      name=\"demo\"\n      class=\"drac-radio drac-radio-white\"\n    /><label for=\"two\" class=\"drac-text drac-text-white\">Unchecked</label>\n  </div>\n</div>\n",
       "react": "<div>\n  <div style={{ marginBottom: 10 }}>\n    <Radio id=\"one\" defaultChecked={true} color=\"white\" name=\"demo\" />\n    <label htmlFor=\"one\" className=\"drac-text drac-text-white\">\n      Checked\n    </label>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Radio id=\"two\" color=\"white\" name=\"demo\" />\n    <label htmlFor=\"two\" className=\"drac-text drac-text-white\">\n      Unchecked\n    </label>\n  </div>\n</div>;\n",
-      "docs": "",
+      "docs": "A radio select is unusable and un-clickable.",
       "screenshot": "./dsp/assets/RadioDisabled.png",
       "svgData": "./dsp/assets/svgs/RadioDisabled.svg"
     },
@@ -36,7 +35,7 @@
       "title": "Colors",
       "html": "<div>\n  <div style=\"margin-bottom: 10px\">\n    <input\n      type=\"radio\"\n      id=\"white\"\n      color=\"white\"\n      name=\"demo\"\n      class=\"drac-radio drac-radio-white\"\n    /><label for=\"white\" class=\"drac-text drac-text-white\">Radio</label>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <input\n      type=\"radio\"\n      id=\"cyan\"\n      color=\"cyan\"\n      name=\"demo\"\n      class=\"drac-radio drac-radio-cyan\"\n    /><label for=\"cyan\" class=\"drac-text drac-text-white\">Radio</label>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <input\n      type=\"radio\"\n      id=\"green\"\n      color=\"green\"\n      name=\"demo\"\n      class=\"drac-radio drac-radio-green\"\n    /><label for=\"green\" class=\"drac-text drac-text-white\">Radio</label>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <input\n      type=\"radio\"\n      id=\"orange\"\n      color=\"orange\"\n      name=\"demo\"\n      class=\"drac-radio drac-radio-orange\"\n    /><label for=\"orange\" class=\"drac-text drac-text-white\">Radio</label>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <input\n      type=\"radio\"\n      id=\"pink\"\n      color=\"pink\"\n      name=\"demo\"\n      class=\"drac-radio drac-radio-pink\"\n    /><label for=\"pink\" class=\"drac-text drac-text-white\">Radio</label>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <input\n      type=\"radio\"\n      id=\"purple\"\n      color=\"purple\"\n      name=\"demo\"\n      class=\"drac-radio drac-radio-purple\"\n    /><label for=\"purple\" class=\"drac-text drac-text-white\">Radio</label>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <input\n      type=\"radio\"\n      id=\"red\"\n      color=\"red\"\n      name=\"demo\"\n      class=\"drac-radio drac-radio-red\"\n    /><label for=\"red\" class=\"drac-text drac-text-white\">Radio</label>\n  </div>\n  <div style=\"margin-bottom: 10px\">\n    <input\n      type=\"radio\"\n      id=\"yellow\"\n      color=\"yellow\"\n      name=\"demo\"\n      class=\"drac-radio drac-radio-yellow\"\n    /><label for=\"yellow\" class=\"drac-text drac-text-white\">Radio</label>\n  </div>\n</div>\n",
       "react": "<div>\n  <div style={{ marginBottom: 10 }}>\n    <Radio id=\"white\" color=\"white\" name=\"demo\" />\n    <label htmlFor=\"white\" className=\"drac-text drac-text-white\">\n      Radio\n    </label>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Radio id=\"cyan\" color=\"cyan\" name=\"demo\" />\n    <label htmlFor=\"cyan\" className=\"drac-text drac-text-white\">\n      Radio\n    </label>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Radio id=\"green\" color=\"green\" name=\"demo\" />\n    <label htmlFor=\"green\" className=\"drac-text drac-text-white\">\n      Radio\n    </label>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Radio id=\"orange\" color=\"orange\" name=\"demo\" />\n    <label htmlFor=\"orange\" className=\"drac-text drac-text-white\">\n      Radio\n    </label>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Radio id=\"pink\" color=\"pink\" name=\"demo\" />\n    <label htmlFor=\"pink\" className=\"drac-text drac-text-white\">\n      Radio\n    </label>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Radio id=\"purple\" color=\"purple\" name=\"demo\" />\n    <label htmlFor=\"purple\" className=\"drac-text drac-text-white\">\n      Radio\n    </label>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Radio id=\"red\" color=\"red\" name=\"demo\" />\n    <label htmlFor=\"red\" className=\"drac-text drac-text-white\">\n      Radio\n    </label>\n  </div>\n  <div style={{ marginBottom: 10 }}>\n    <Radio id=\"yellow\" color=\"yellow\" name=\"demo\" />\n    <label htmlFor=\"yellow\" className=\"drac-text drac-text-white\">\n      Radio\n    </label>\n  </div>\n</div>;\n",
-      "docs": "",
+      "docs": "Radio can be customized to use any of the Dracula UI theme colors.",
       "screenshot": "./dsp/assets/RadioColors.png",
       "svgData": "./dsp/assets/svgs/RadioColors.svg"
     }
@@ -71,6 +70,20 @@
       ],
       "required": false,
       "type": { "name": "string | undefined" }
+    },
+    "disabled": {
+      "defaultValue": null,
+      "description": "A disabled radio is unusable and un-clickable.",
+      "name": "disabled",
+      "parent": {
+        "fileName": "src/components/Radio/Radio.tsx",
+        "name": "RadioProps"
+      },
+      "declarations": [
+        { "fileName": "src/components/Radio/Radio.tsx", "name": "RadioProps" }
+      ],
+      "required": false,
+      "type": { "name": "boolean | undefined" }
     },
     "p": {
       "defaultValue": null,
@@ -276,6 +289,20 @@
         ],
         "required": false,
         "type": { "name": "string | undefined" }
+      },
+      "disabled": {
+        "defaultValue": null,
+        "description": "A disabled radio is unusable and un-clickable.",
+        "name": "disabled",
+        "parent": {
+          "fileName": "src/components/Radio/Radio.tsx",
+          "name": "RadioProps"
+        },
+        "declarations": [
+          { "fileName": "src/components/Radio/Radio.tsx", "name": "RadioProps" }
+        ],
+        "required": false,
+        "type": { "name": "boolean | undefined" }
       },
       "p": {
         "defaultValue": null,

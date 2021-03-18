@@ -3,7 +3,6 @@
   "type": "page",
   "id": "Paragraph",
   "name": "Paragraph",
-  "last_updated": "2021-03-17T04:01:41.244Z",
   "last_updated_by": "System",
   "description": "Paragraph is a semantic component used for blocks of text with\nsemantic meaning.\n\nParagraph accepts all the same customization options as Text.",
   "related_entity_ids": [],
@@ -11,40 +10,40 @@
   "snippets": {
     "trigger": "paragraph",
     "languages": {
-      "javascriptreact": "<Paragraph>Paragraph</Paragraph>;\n",
-      "html": "<p class=\"drac-text drac-text-white\">Paragraph</p>\n"
+      "javascriptreact": "<Paragraph>basic</Paragraph>;\n",
+      "html": "<p class=\"drac-text drac-text-white\">basic</p>\n"
     }
   },
   "ext_com_draculaui_variations": [
     {
       "title": "Usage",
-      "html": "<p class=\"drac-text drac-text-white\">Paragraph</p>\n",
-      "react": "<Paragraph>Paragraph</Paragraph>;\n",
-      "docs": "",
+      "html": "<p class=\"drac-text drac-text-white\">basic</p>\n",
+      "react": "<Paragraph>basic</Paragraph>;\n",
+      "docs": "Show a paragraph within an interface.",
       "screenshot": "./dsp/assets/Paragraph.png",
       "svgData": "./dsp/assets/svgs/Paragraph.svg"
     },
     {
       "title": "Colors",
-      "html": "<div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"white\" class=\"drac-text drac-text-white\">white</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"black\" class=\"drac-text drac-text-black\">black</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"blackSecondary\" class=\"drac-text drac-text-black-secondary\">\n      blackSecondary\n    </p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"blackLight\" class=\"drac-text drac-text-black-light\">blackLight</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"cyan\" class=\"drac-text drac-text-cyan\">cyan</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"green\" class=\"drac-text drac-text-green\">green</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"orange\" class=\"drac-text drac-text-orange\">orange</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"pink\" class=\"drac-text drac-text-pink\">pink</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"purple\" class=\"drac-text drac-text-purple\">purple</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"red\" class=\"drac-text drac-text-red\">red</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"yellow\" class=\"drac-text drac-text-yellow\">yellow</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"purpleCyan\" class=\"drac-text drac-text-purple-cyan\">purpleCyan</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"yellowPink\" class=\"drac-text drac-text-yellow-pink\">yellowPink</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"cyanGreen\" class=\"drac-text drac-text-cyan-green\">cyanGreen</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"pinkPurple\" class=\"drac-text drac-text-pink-purple\">pinkPurple</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p color=\"animated\" class=\"drac-text drac-text-animated\">animated</p>\n  </div>\n</div>\n",
-      "react": "<div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"white\">white</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"black\">black</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"blackSecondary\">blackSecondary</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"blackLight\">blackLight</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"cyan\">cyan</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"green\">green</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"orange\">orange</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"pink\">pink</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"purple\">purple</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"red\">red</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"yellow\">yellow</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"purpleCyan\">purpleCyan</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"yellowPink\">yellowPink</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"cyanGreen\">cyanGreen</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"pinkPurple\">pinkPurple</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph color=\"animated\">animated</Paragraph>\n  </div>\n</div>;\n",
-      "docs": "",
+      "html": "<div class=\"drac-box\">\n  <p color=\"cyan\" class=\"drac-text drac-text-cyan\">cyan</p>\n  <p color=\"green\" class=\"drac-text drac-text-green\">green</p>\n</div>\n",
+      "react": "<Box>\n  <Paragraph color=\"cyan\">cyan</Paragraph>\n  <Paragraph color=\"green\">green</Paragraph>\n</Box>;\n",
+      "docs": "Paragraphs can be customized to use any of the Dracula UI theme colors.",
       "screenshot": "./dsp/assets/ParagraphColors.png",
       "svgData": "./dsp/assets/svgs/ParagraphColors.svg"
     },
     {
       "title": "Weights",
-      "html": "<div>\n  <div style=\"margin-bottom: 20px\">\n    <p weight=\"normal\" class=\"drac-text drac-text-white\">normal</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p weight=\"semibold\" class=\"drac-text drac-text-semibold drac-text-white\">\n      semibold\n    </p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p weight=\"bold\" class=\"drac-text drac-text-bold drac-text-white\">bold</p>\n  </div>\n</div>\n",
-      "react": "<div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph weight=\"normal\">normal</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph weight=\"semibold\">semibold</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph weight=\"bold\">bold</Paragraph>\n  </div>\n</div>;\n",
-      "docs": "",
+      "html": "<div class=\"drac-box\">\n  <p weight=\"normal\" class=\"drac-text drac-text-white\">normal</p>\n  <p weight=\"semibold\" class=\"drac-text drac-text-semibold drac-text-white\">\n    semibold\n  </p>\n  <p weight=\"bold\" class=\"drac-text drac-text-bold drac-text-white\">bold</p>\n</div>\n",
+      "react": "<Box>\n  <Paragraph weight=\"normal\">normal</Paragraph>\n  <Paragraph weight=\"semibold\">semibold</Paragraph>\n  <Paragraph weight=\"bold\">bold</Paragraph>\n</Box>;\n",
+      "docs": "Paragraphs can be defined in different font weights.",
       "screenshot": "./dsp/assets/ParagraphWeights.png",
       "svgData": "./dsp/assets/svgs/ParagraphWeights.svg"
     },
     {
       "title": "Sizes",
-      "html": "<div>\n  <div style=\"margin-bottom: 20px\">\n    <p class=\"drac-text drac-text-lg drac-text-white\">large</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p class=\"drac-text drac-text-white\">medium</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p class=\"drac-text drac-text-sm drac-text-white\">small</p>\n  </div>\n  <div style=\"margin-bottom: 20px\">\n    <p class=\"drac-text drac-text-xs drac-text-white\">xsmall</p>\n  </div>\n</div>\n",
-      "react": "<div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph size=\"large\">large</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph size=\"medium\">medium</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph size=\"small\">small</Paragraph>\n  </div>\n  <div style={{ marginBottom: 20 }}>\n    <Paragraph size=\"xsmall\">xsmall</Paragraph>\n  </div>\n</div>;\n",
-      "docs": "",
+      "html": "<div class=\"drac-box\">\n  <p class=\"drac-text drac-text-xs drac-text-white\">xsmall</p>\n  <p class=\"drac-text drac-text-sm drac-text-white\">small</p>\n  <p class=\"drac-text drac-text-white\">medium</p>\n  <p class=\"drac-text drac-text-lg drac-text-white\">large</p>\n</div>\n",
+      "react": "<Box>\n  <Paragraph size=\"xsmall\">xsmall</Paragraph>\n  <Paragraph size=\"small\">small</Paragraph>\n  <Paragraph size=\"medium\">medium</Paragraph>\n  <Paragraph size=\"large\">large</Paragraph>\n</Box>;\n",
+      "docs": "Paragraphs can be customize to use several different sizes.",
       "screenshot": "./dsp/assets/ParagraphSizes.png",
       "svgData": "./dsp/assets/svgs/ParagraphSizes.svg"
     }
@@ -52,7 +51,7 @@
   "ext_com_draculaui_props": {
     "size": {
       "defaultValue": null,
-      "description": "Controls the size of the text based on pre-configured Dracula UI sizes.\nOptions: `xsmall`, `small`, `medium`, `large`",
+      "description": "Controls the size of the text based on pre-configured Dracula UI sizes.",
       "name": "size",
       "parent": {
         "fileName": "dracula-ui/src/components/Text/Text.tsx",
@@ -71,7 +70,7 @@
     },
     "weight": {
       "defaultValue": null,
-      "description": "Controsl the weight of the text.\nOptions: `normal`, `semibold`, `bold`.",
+      "description": "Controsl the weight of the text.",
       "name": "weight",
       "parent": {
         "fileName": "dracula-ui/src/components/Text/Text.tsx",
@@ -299,7 +298,7 @@
     "props": {
       "size": {
         "defaultValue": null,
-        "description": "Controls the size of the text based on pre-configured Dracula UI sizes.\nOptions: `xsmall`, `small`, `medium`, `large`",
+        "description": "Controls the size of the text based on pre-configured Dracula UI sizes.",
         "name": "size",
         "parent": {
           "fileName": "dracula-ui/src/components/Text/Text.tsx",
@@ -318,7 +317,7 @@
       },
       "weight": {
         "defaultValue": null,
-        "description": "Controsl the weight of the text.\nOptions: `normal`, `semibold`, `bold`.",
+        "description": "Controsl the weight of the text.",
         "name": "weight",
         "parent": {
           "fileName": "dracula-ui/src/components/Text/Text.tsx",

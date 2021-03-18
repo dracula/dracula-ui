@@ -5,7 +5,6 @@ declare type Component = {
     type: string;
     id: string;
     name: string;
-    last_updated: Date | string;
     last_updated_by: string;
     description: string;
     tags: string[];

@@ -1,6 +1,17 @@
 import React, { HTMLAttributes } from 'react';
 import { MarginMixin, PaddingMixin } from '../../base/spacing';
-export declare const dividerColors: Record<"purpleCyan" | "yellowPink" | "cyanGreen" | "pinkPurple" | "animated", string>;
+export declare const dividerColors: {
+    cyan: string;
+    green: string;
+    /**
+     * Divider Props
+     */
+    orange: string;
+    pink: string;
+    purple: string;
+    red: string;
+    yellow: string;
+};
 /**
  * Divider Props
  */

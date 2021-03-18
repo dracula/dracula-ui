@@ -33,12 +33,10 @@ export declare const textColors: {
 export interface TextProps extends HTMLAttributes<HTMLSpanElement>, PaddingMixin, MarginMixin {
     /**
      * Controls the size of the text based on pre-configured Dracula UI sizes.
-     * Options: `xsmall`, `small`, `medium`, `large`
      */
     size?: keyof typeof textSizes;
     /**
      * Controsl the weight of the text.
-     * Options: `normal`, `semibold`, `bold`.
      */
     weight?: keyof typeof textWeights;
     /**
@@ -62,12 +60,10 @@ export declare const Text: {
         className: string;
         /**
          * Controls the size of the text based on pre-configured Dracula UI sizes.
-         * Options: `xsmall`, `small`, `medium`, `large`
          */
         size?: "large" | "medium" | "small" | "xsmall" | undefined;
         /**
          * Controsl the weight of the text.
-         * Options: `normal`, `semibold`, `bold`.
          */
         weight?: "normal" | "semibold" | "bold" | undefined;
         /**
@@ -332,7 +328,6 @@ export declare const Text: {
         p?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
         py?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined; /**
          * Controls the size of the text based on pre-configured Dracula UI sizes.
-         * Options: `xsmall`, `small`, `medium`, `large`
          */
         px?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
         pt?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;

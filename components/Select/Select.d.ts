@@ -17,7 +17,6 @@ export interface SelectProps extends HTMLAttributes<HTMLSelectElement>, PaddingM
     color?: keyof typeof selectColors;
     /**
      * Controls the size of the select based on pre-configured Dracula UI sizes.
-     * Options: `small`, `medium`, `large`
      */
     size?: keyof typeof selectSizes;
     /**
@@ -26,6 +25,9 @@ export interface SelectProps extends HTMLAttributes<HTMLSelectElement>, PaddingM
      * `outline` -> Keeps the accent color, but removes the background.
      */
     variant?: keyof typeof selectVariants;
+    /**
+     * A disabled select is unusable and un-clickable.
+     */
     disabled?: boolean;
 }
 /**

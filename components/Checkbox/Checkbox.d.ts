@@ -8,6 +8,9 @@ export interface CheckboxProps extends HTMLAttributes<HTMLInputElement>, Padding
     color?: keyof typeof checkboxColors;
     /** The name of the checkbox. Mirrors the name HTML attribute. */
     name?: string;
+    /**
+   * A disabled checkbox is unusable and un-clickable.
+   */
     disabled?: boolean;
 }
 /**

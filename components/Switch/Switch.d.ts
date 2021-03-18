@@ -10,6 +10,9 @@ export interface SwitchProps extends HTMLAttributes<HTMLInputElement>, PaddingMi
      * The Dracula UI theme color to be applied to the Switch.
      */
     color: keyof typeof switchColors;
+    /**
+     * A disabled switch is unusable and un-clickable.
+     */
     disabled?: boolean;
 }
 /**

@@ -3,7 +3,6 @@
   "type": "page",
   "id": "Avatar",
   "name": "Avatar",
-  "last_updated": "2021-03-17T04:01:40.886Z",
   "last_updated_by": "System",
   "description": "The Avatar component is used to represent a user.\n\nIt displays a profile picture, or falls back to the user's initials\nif a profile pic is not provided.",
   "related_entity_ids": [],
@@ -11,15 +10,15 @@
   "snippets": {
     "trigger": "avatar",
     "languages": {
-      "javascriptreact": "<Avatar\n  title=\"Netto Farah\"\n  src=\"https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg\"\n/>;\n",
-      "html": "<span\n  class=\"drac-avatar drac-bg-green-transparent drac-text-green\"\n  style=\"\n    background-image: url(https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg);\n  \"\n></span>\n"
+      "javascriptreact": "<Avatar\n  title=\"Netto Farah\"\n  src=\"https://pbs.twimg.com/profile_images/1325812776707690496/_iTWBLbr_400x400.jpg\"\n/>;\n",
+      "html": "<span\n  class=\"drac-avatar drac-bg-green-transparent drac-text-green\"\n  style=\"\n    background-image: url(https://pbs.twimg.com/profile_images/1325812776707690496/_iTWBLbr_400x400.jpg);\n  \"\n></span>\n"
     }
   },
   "ext_com_draculaui_variations": [
     {
       "title": "Usage",
-      "html": "<span\n  class=\"drac-avatar drac-bg-green-transparent drac-text-green\"\n  style=\"\n    background-image: url(https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg);\n  \"\n></span>\n",
-      "react": "<Avatar\n  title=\"Netto Farah\"\n  src=\"https://pbs.twimg.com/profile_images/1217874327137185794/rFqSV_h0_400x400.jpg\"\n/>;\n",
+      "html": "<span\n  class=\"drac-avatar drac-bg-green-transparent drac-text-green\"\n  style=\"\n    background-image: url(https://pbs.twimg.com/profile_images/1325812776707690496/_iTWBLbr_400x400.jpg);\n  \"\n></span>\n",
+      "react": "<Avatar\n  title=\"Netto Farah\"\n  src=\"https://pbs.twimg.com/profile_images/1325812776707690496/_iTWBLbr_400x400.jpg\"\n/>;\n",
       "docs": "The most basic instance of an Avatar requires a src image and a title to be used for accessibility or as a fallback in case the image can't be loaded.",
       "screenshot": "./dsp/assets/Avatar.png",
       "svgData": "./dsp/assets/svgs/Avatar.svg"

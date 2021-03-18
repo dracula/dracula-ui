@@ -12,7 +12,7 @@ export declare const listVariants: {
  */
 export interface ListProps extends HTMLAttributes<HTMLOListElement>, PaddingMixin, MarginMixin {
     /** The Dracula UI color for the List. */
-    color: keyof typeof listColors;
+    color?: keyof typeof listColors;
     /**
      * The variation to be used for the List element.
      * `unordered` -> Display list in dashes as an `<ul>`
@@ -21,7 +21,6 @@ export interface ListProps extends HTMLAttributes<HTMLOListElement>, PaddingMixi
     variant?: keyof typeof listVariants;
 }
 /**
- * Lists are horizontal lines used to separate semantic blocks of
- * content or UI patterns.
+ * Lists are used to display list items in an ordered or unordered way.
  */
 export declare const List: React.FC<ListProps>;

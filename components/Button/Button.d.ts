@@ -18,7 +18,6 @@ export interface ButtonProps extends HTMLAttributes<HTMLButtonElement>, PaddingM
     color?: keyof typeof backgroundColors;
     /**
      * Controls the size of the button based on pre-configured Dracula UI sizes.
-     * Options: `xsmall`, `small`, `medium`, `large`
      */
     size?: keyof typeof buttonSizes;
     /**

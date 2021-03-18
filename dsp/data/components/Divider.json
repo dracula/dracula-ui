@@ -3,7 +3,6 @@
   "type": "page",
   "id": "Divider",
   "name": "Divider",
-  "last_updated": "2021-03-17T04:01:55.135Z",
   "last_updated_by": "System",
   "description": "Dividers are horizontal lines used to separate semantic blocks of\ncontent or UI patterns.",
   "related_entity_ids": [],
@@ -11,24 +10,24 @@
   "snippets": {
     "trigger": "divider",
     "languages": {
-      "javascriptreact": "<Divider color=\"purple\" />;\n",
-      "html": "<hr color=\"purple\" class=\"drac-divider drac-border-purple\" />\n"
+      "javascriptreact": "<Divider color=\"cyan\" />;\n",
+      "html": "<hr color=\"cyan\" class=\"drac-divider drac-bg-cyan\" />\n"
     }
   },
   "ext_com_draculaui_variations": [
     {
       "title": "Usage",
-      "html": "<hr color=\"purple\" class=\"drac-divider drac-border-purple\" />\n",
-      "react": "<Divider color=\"purple\" />;\n",
-      "docs": "",
+      "html": "<hr color=\"cyan\" class=\"drac-divider drac-bg-cyan\" />\n",
+      "react": "<Divider color=\"cyan\" />;\n",
+      "docs": "Dividers are used to defined a thematic break in a page.",
       "screenshot": "./dsp/assets/Divider.png",
       "svgData": "./dsp/assets/svgs/Divider.svg"
     },
     {
       "title": "Colors",
-      "html": "<div style=\"display: flex; flex-direction: column\">\n  <div><hr color=\"white\" class=\"drac-divider drac-border-white\" /></div>\n  <div><hr color=\"black\" class=\"drac-divider drac-border-black\" /></div>\n  <div>\n    <hr\n      color=\"blackSecondary\"\n      class=\"drac-divider drac-border-black-secondary\"\n    />\n  </div>\n  <div>\n    <hr color=\"blackLight\" class=\"drac-divider drac-border-black-light\" />\n  </div>\n  <div><hr color=\"cyan\" class=\"drac-divider drac-border-cyan\" /></div>\n  <div><hr color=\"green\" class=\"drac-divider drac-border-green\" /></div>\n  <div><hr color=\"orange\" class=\"drac-divider drac-border-orange\" /></div>\n  <div><hr color=\"pink\" class=\"drac-divider drac-border-pink\" /></div>\n  <div><hr color=\"purple\" class=\"drac-divider drac-border-purple\" /></div>\n  <div><hr color=\"red\" class=\"drac-divider drac-border-red\" /></div>\n  <div><hr color=\"yellow\" class=\"drac-divider drac-border-yellow\" /></div>\n  <div>\n    <hr color=\"purpleCyan\" class=\"drac-divider drac-border-purple-cyan\" />\n  </div>\n  <div>\n    <hr color=\"yellowPink\" class=\"drac-divider drac-border-yellow-pink\" />\n  </div>\n  <div>\n    <hr color=\"cyanGreen\" class=\"drac-divider drac-border-cyan-green\" />\n  </div>\n  <div>\n    <hr color=\"pinkPurple\" class=\"drac-divider drac-border-pink-purple\" />\n  </div>\n  <div><hr color=\"animated\" class=\"drac-divider drac-border-animated\" /></div>\n</div>\n",
-      "react": "<div style={{ display: \"flex\", flexDirection: \"column\" }}>\n  <div>\n    <Divider color=\"white\" />\n  </div>\n  <div>\n    <Divider color=\"black\" />\n  </div>\n  <div>\n    <Divider color=\"blackSecondary\" />\n  </div>\n  <div>\n    <Divider color=\"blackLight\" />\n  </div>\n  <div>\n    <Divider color=\"cyan\" />\n  </div>\n  <div>\n    <Divider color=\"green\" />\n  </div>\n  <div>\n    <Divider color=\"orange\" />\n  </div>\n  <div>\n    <Divider color=\"pink\" />\n  </div>\n  <div>\n    <Divider color=\"purple\" />\n  </div>\n  <div>\n    <Divider color=\"red\" />\n  </div>\n  <div>\n    <Divider color=\"yellow\" />\n  </div>\n  <div>\n    <Divider color=\"purpleCyan\" />\n  </div>\n  <div>\n    <Divider color=\"yellowPink\" />\n  </div>\n  <div>\n    <Divider color=\"cyanGreen\" />\n  </div>\n  <div>\n    <Divider color=\"pinkPurple\" />\n  </div>\n  <div>\n    <Divider color=\"animated\" />\n  </div>\n</div>;\n",
-      "docs": "",
+      "html": "<hr color=\"yellow\" class=\"drac-divider drac-bg-yellow\" />\n",
+      "react": "<Divider color=\"yellow\" />;\n",
+      "docs": "Dividers can be customized to use any of the Dracula UI theme colors.",
       "screenshot": "./dsp/assets/DividerColors.png",
       "svgData": "./dsp/assets/svgs/DividerColors.svg"
     }
@@ -50,7 +49,7 @@
       ],
       "required": true,
       "type": {
-        "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
+        "name": "\"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\""
       }
     },
     "p": {
@@ -244,7 +243,7 @@
         ],
         "required": true,
         "type": {
-          "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\""
+          "name": "\"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\""
         }
       },
       "p": {

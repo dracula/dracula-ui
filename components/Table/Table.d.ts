@@ -20,7 +20,6 @@ export interface TableProps extends HTMLAttributes<HTMLTableElement>, PaddingMix
     variant?: keyof typeof tableVariants;
 }
 /**
- * Tables are horizontal lines used to separate semantic blocks of
- * content or UI patterns.
+ * Tables are used to display data in a tabular fashion.
  */
 export declare const Table: React.FC<TableProps>;

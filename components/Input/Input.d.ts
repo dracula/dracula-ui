@@ -19,7 +19,6 @@ export interface InputProps extends HTMLAttributes<HTMLInputElement>, PaddingMix
     color?: keyof typeof inputColors;
     /**
      * Controls the size of the input based on pre-configured Dracula UI sizes.
-     * Options: `small`, `medium`, `large`
      */
     size?: keyof typeof inputSizes;
     /**
