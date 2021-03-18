@@ -4,6 +4,11 @@
 
 ![Dracula UI](https://user-images.githubusercontent.com/398893/111241824-24571f00-85bb-11eb-86fc-15836ac703c6.png)
 
+
+## Early Access Program
+https://github.com/dracula/dracula-ui/discussions/17
+
+
 ## :thinking: Why
 
 Most templates are built using light colors and later on adapted to dark colors. Dark themes shouldn't be an afterthought, they should be a top priority.
