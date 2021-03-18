@@ -2,7 +2,7 @@
 
 exports[`Site: Select Basic Usage 1`] = `
 Object {
-  "docs": "",
+  "docs": "Select different items from a list.",
   "html": "<div style=\\"position: relative\\">
   <select color=\\"white\\" class=\\"drac-select drac-select-white\\">
     <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
@@ -44,7 +44,7 @@ Object {
 
 exports[`Site: Select Colors 1`] = `
 Object {
-  "docs": "",
+  "docs": "Select can be customized to use any of the Dracula UI theme colors.",
   "html": "<div style=\\"display: flex; flex-direction: column\\">
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
@@ -709,7 +709,7 @@ Object {
 
 exports[`Site: Select Disabled 1`] = `
 Object {
-  "docs": "",
+  "docs": "A disabled select is unusable and un-clickable.",
   "html": "<div style=\\"display: flex; flex-direction: column\\">
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
@@ -802,7 +802,7 @@ Object {
 
 exports[`Site: Select Sizes 1`] = `
 Object {
-  "docs": "",
+  "docs": "Select can be customize to use several different sizes.",
   "html": "<div>
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
@@ -932,7 +932,7 @@ Object {
 
 exports[`Site: Select Variants 1`] = `
 Object {
-  "docs": "",
+  "docs": "There are two different variations you can use: \`normal\` and \`outline\`",
   "html": "<div style=\\"display: flex; flex-direction: column\\">
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
