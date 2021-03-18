@@ -29,8 +29,8 @@ export const tableVariants = {
  */
 export interface TableProps
   extends HTMLAttributes<HTMLTableElement>,
-    PaddingMixin,
-    MarginMixin {
+  PaddingMixin,
+  MarginMixin {
   /** The Dracula UI color for the Table. */
   color?: keyof typeof tableColors
 
@@ -43,8 +43,7 @@ export interface TableProps
 }
 
 /**
- * Tables are horizontal lines used to separate semantic blocks of
- * content or UI patterns.
+ * Tables are used to display data in a tabular fashion.
  */
 export const Table: React.FC<TableProps> = (props: TableProps) => {
   const finalProps = {
