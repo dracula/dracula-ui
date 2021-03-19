@@ -56,7 +56,14 @@ class Spacing extends React.Component {
                   <Paragraph>
                     Dracula UI ships with two spacing utilities that help you
                     define padding and margin for your websites and apps. While
-                    not required, the utility css classes and the `p` and `m`
+                    not required, the utility css classes and the{" "}
+                    <Box as="code" className="drac-text-pink">
+                      p
+                    </Box>{" "}
+                    and{" "}
+                    <Box as="code" className="drac-text-pink">
+                      m
+                    </Box>{" "}
                     properties (for React components), help remove the burden of
                     having to manage your own spacing classes, properties and
                     variables.
@@ -66,17 +73,28 @@ class Spacing extends React.Component {
                 <Box my="lg">
                   <Heading size="heading-3">Padding</Heading>
                   <Paragraph>
-                    The padding css utility classes and `p` React property can
-                    help manage padding for your components and html elements.
+                    The padding css utility classes and{" "}
+                    <Box as="code" className="drac-text-pink">
+                      p
+                    </Box>{" "}
+                    React property can help manage padding for your components
+                    and html elements.
                   </Paragraph>
 
                   <Tabs section={SpacingDocs.ext_com_draculaui_variations[0]} />
 
                   <Paragraph pt="md">
-                    Add the `p` property at the top level of any Dracula UI
-                    react component for easy and type safe padding management.
-                    For HTML only websites, apply the ".drac-p" css utilty
-                    classes directly into your code.
+                    Add the{" "}
+                    <Box as="code" className="drac-text-pink">
+                      p
+                    </Box>{" "}
+                    property at the top level of any Dracula UI react component
+                    for easy and type safe padding management. For HTML only
+                    websites, apply the{" "}
+                    <Box as="code" className="drac-text-pink">
+                      .drac-p
+                    </Box>{" "}
+                    css utilty classes directly into your code.
                   </Paragraph>
 
                   <Tabs section={SpacingDocs.ext_com_draculaui_variations[1]} />
@@ -86,8 +104,12 @@ class Spacing extends React.Component {
                   <Heading size="heading-3">Margin</Heading>
                   <Paragraph>
                     Similar to the padding helpers, the margin css utility
-                    classes and `m` React property can help manage margin for
-                    your components and html elements.
+                    classes and{" "}
+                    <Box as="code" className="drac-text-pink">
+                      m
+                    </Box>{" "}
+                    React property can help manage margin for your components
+                    and html elements.
                   </Paragraph>
 
                   <Tabs section={SpacingDocs.ext_com_draculaui_variations[2]} />
