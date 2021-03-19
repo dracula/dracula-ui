@@ -10,7 +10,7 @@
   "scripts": {
     "start": "tsdx watch --noClean",
     "build": "tsdx build",
-    "dev": "yarn build && concurrently \"yarn start\" \"cd website && yarn dev\" ",
+    "dev": "yarn build && concurrently \"yarn start\" \"cd website && yarn && yarn dev\" ",
     "test": "jest",
     "docs": "RECORDING=true yarn test -u && node ./dsp/update.js",
     "lint": "echo Linting",
