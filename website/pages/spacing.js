@@ -26,7 +26,7 @@ export async function getStaticProps() {
   }
 }
 
-class Principles extends React.Component {
+class Spacing extends React.Component {
   render() {
     const { title, description } = this.props.query
 
@@ -158,6 +158,6 @@ class Principles extends React.Component {
   }
 }
 
-Principles.Layout = Theme
+Spacing.Layout = Theme
 
-export default Principles
+export default Spacing
