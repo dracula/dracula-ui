@@ -22,10 +22,14 @@ jest.setTimeout(10000)
 const RECORDING = process.env.RECORDING
 
 export function docs<T>(
-  componentClass: React.FunctionComponent<T>,
+  componentClass: React.FunctionComponent<T> | string,
   documentation: Documentation
 ) {
-  const name = componentClass.displayName ?? componentClass.name
+  const name =
+    typeof componentClass === 'string'
+      ? componentClass
+      : componentClass.displayName ?? componentClass.name
+
   const dspPath = `${process.cwd()}/dsp`
 
   describe(`Site: ${name}`, () => {

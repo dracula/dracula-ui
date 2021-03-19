@@ -68,9 +68,9 @@ class Tabs extends Component {
         />
       )
     } else if (index === 1) {
-      return <CodeHighlight code={option.panel} language={"html"} />
+      return <CodeHighlight code={option.panel.trim()} language={"html"} />
     } else if (index === 2) {
-      return <CodeHighlight code={option.panel} language={"jsx"} />
+      return <CodeHighlight code={option.panel.trim()} language={"jsx"} />
     }
   }
 
