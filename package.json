@@ -1,12 +1,9 @@
 {
   "version": "0.2.1-alpha",
   "license": "MIT",
-  "main": "dist",
-  "style": "dist/styles/dracula-ui.css",
-  "typings": "diest/index.d.ts",
-  "files": [
-    "dist"
-  ],
+  "main": "index.js",
+  "style": "./styles/dracula-ui.css",
+  "typings": "index.d.ts",
   "engines": {
     "node": ">=10"
   },
