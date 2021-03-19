@@ -127,3 +127,26 @@ export function marginMixin(mixin: MarginMixin) {
 
   return classes
 }
+
+export const spacingUtilities = {
+  classes: {
+    padding: [
+      ...Object.values(padding),
+      ...Object.values(paddingX),
+      ...Object.values(paddingY),
+      ...Object.values(paddingTop),
+      ...Object.values(paddingBottom)
+    ],
+    margin: [
+      ...Object.values(margin),
+      ...Object.values(mX),
+      ...Object.values(mY),
+      ...Object.values(mTop),
+      ...Object.values(mBottom)
+    ]
+  },
+  react: {
+    padding: [`p`, `px`, `py`, `pt`, `pb`, `pl`, `pr`],
+    margin: [`m`, `mx`, `my`, `mt`, `mb`, `ml`, `mr`]
+  }
+}

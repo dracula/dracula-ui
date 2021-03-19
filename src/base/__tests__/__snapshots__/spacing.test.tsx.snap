@@ -1,0 +1,140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Site: Spacing Basic Usage 1`] = `
+Object {
+  "docs": "",
+  "html": "<div p=\\"md\\" color=\\"pink\\" class=\\"drac-box drac-bg-pink drac-p-md\\">
+  <div class=\\"drac-box\\">
+    <span class=\\"drac-text drac-text-white\\">Padding</span>
+  </div>
+</div>
+",
+  "react": "<Box p=\\"md\\" color=\\"pink\\">
+  <Box>
+    <Text>Padding</Text>
+  </Box>
+</Box>;
+",
+  "title": "Usage",
+}
+`;
+
+exports[`Site: Spacing Margin 1`] = `
+Object {
+  "docs": "",
+  "html": "<div class=\\"drac-box\\">
+  <div m=\\"sm\\" color=\\"pink\\" class=\\"drac-box drac-bg-pink drac-m-sm\\">
+    <div class=\\"drac-box\\">
+      <span class=\\"drac-text drac-text-white\\">margin sm</span>
+    </div>
+  </div>
+  <div my=\\"sm\\" color=\\"purple\\" class=\\"drac-box drac-bg-purple drac-my-sm\\">
+    <div class=\\"drac-box\\">
+      <span class=\\"drac-text drac-text-white\\">margin y sm</span>
+    </div>
+  </div>
+  <div mx=\\"sm\\" color=\\"red\\" class=\\"drac-box drac-bg-red drac-mx-sm\\">
+    <div class=\\"drac-box\\">
+      <span class=\\"drac-text drac-text-white\\">margin x sm</span>
+    </div>
+  </div>
+  <div
+    mt=\\"sm\\"
+    mb=\\"md\\"
+    ml=\\"lg\\"
+    mr=\\"xxs\\"
+    color=\\"purpleCyan\\"
+    class=\\"drac-box drac-bg-purple-cyan drac-mt-sm drac-mb-md drac-ml-lg drac-mr-xxs\\"
+  >
+    <div class=\\"drac-box\\">
+      <span class=\\"drac-text drac-text-white\\">mixing all styles</span>
+    </div>
+  </div>
+</div>
+",
+  "react": "<Box>
+  <Box m=\\"sm\\" color=\\"pink\\">
+    <Box>
+      <Text>margin sm</Text>
+    </Box>
+  </Box>
+  <Box my=\\"sm\\" color=\\"purple\\">
+    <Box>
+      <Text>margin y sm</Text>
+    </Box>
+  </Box>
+  <Box mx=\\"sm\\" color=\\"red\\">
+    <Box>
+      <Text>margin x sm</Text>
+    </Box>
+  </Box>
+  <Box mt=\\"sm\\" mb=\\"md\\" ml=\\"lg\\" mr=\\"xxs\\" color=\\"purpleCyan\\">
+    <Box>
+      <Text>mixing all styles</Text>
+    </Box>
+  </Box>
+</Box>;
+",
+  "title": "Margin",
+}
+`;
+
+exports[`Site: Spacing Padding 1`] = `
+Object {
+  "docs": "",
+  "html": "<div class=\\"drac-box\\">
+  <div p=\\"sm\\" color=\\"pink\\" class=\\"drac-box drac-bg-pink drac-p-sm\\">
+    <div class=\\"drac-box\\">
+      <span class=\\"drac-text drac-text-white\\">padding sm</span>
+    </div>
+  </div>
+  <div py=\\"sm\\" color=\\"purple\\" class=\\"drac-box drac-bg-purple drac-py-sm\\">
+    <div class=\\"drac-box\\">
+      <span class=\\"drac-text drac-text-white\\">padding y sm</span>
+    </div>
+  </div>
+  <div px=\\"sm\\" color=\\"red\\" class=\\"drac-box drac-bg-red drac-px-sm\\">
+    <div class=\\"drac-box\\">
+      <span class=\\"drac-text drac-text-white\\">padding x sm</span>
+    </div>
+  </div>
+  <div
+    pt=\\"sm\\"
+    pb=\\"md\\"
+    pl=\\"lg\\"
+    pr=\\"xxs\\"
+    color=\\"purpleCyan\\"
+    class=\\"drac-box drac-bg-purple-cyan drac-pt-sm drac-pb-md drac-pl-lg drac-pr-xxs\\"
+  >
+    <div class=\\"drac-box\\">
+      <span class=\\"drac-text drac-text-white\\">mixing all styles</span>
+    </div>
+  </div>
+</div>
+",
+  "react": "<Box>
+  <Box p=\\"sm\\" color=\\"pink\\">
+    <Box>
+      <Text>padding sm</Text>
+    </Box>
+  </Box>
+  <Box py=\\"sm\\" color=\\"purple\\">
+    <Box>
+      <Text>padding y sm</Text>
+    </Box>
+  </Box>
+  <Box px=\\"sm\\" color=\\"red\\">
+    <Box>
+      <Text>padding x sm</Text>
+    </Box>
+  </Box>
+  <Box pt=\\"sm\\" pb=\\"md\\" pl=\\"lg\\" pr=\\"xxs\\" color=\\"purpleCyan\\">
+    <Box>
+      <Text>mixing all styles</Text>
+    </Box>
+  </Box>
+</Box>;
+",
+  "title": "Padding",
+}
+`;

@@ -8518,6 +8518,52 @@
     {
       "class": "component",
       "type": "page",
+      "id": "Spacing",
+      "name": "Spacing",
+      "last_updated_by": "System",
+      "description": "undefined",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "spacing",
+        "languages": {
+          "javascriptreact": "<Box p=\"md\" color=\"pink\">\n  <Box>\n    <Text>Padding</Text>\n  </Box>\n</Box>;\n",
+          "html": "<div p=\"md\" color=\"pink\" class=\"drac-box drac-bg-pink drac-p-md\">\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-text-white\">Padding</span>\n  </div>\n</div>\n"
+        }
+      },
+      "ext_com_draculaui_variations": [
+        {
+          "title": "Usage",
+          "html": "<div p=\"md\" color=\"pink\" class=\"drac-box drac-bg-pink drac-p-md\">\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-text-white\">Padding</span>\n  </div>\n</div>\n",
+          "react": "<Box p=\"md\" color=\"pink\">\n  <Box>\n    <Text>Padding</Text>\n  </Box>\n</Box>;\n",
+          "docs": "",
+          "screenshot": "./dsp/assets/Spacing.png",
+          "svgData": "./dsp/assets/svgs/Spacing.svg"
+        },
+        {
+          "title": "Padding",
+          "html": "<div class=\"drac-box\">\n  <div p=\"sm\" color=\"pink\" class=\"drac-box drac-bg-pink drac-p-sm\">\n    <div class=\"drac-box\">\n      <span class=\"drac-text drac-text-white\">padding sm</span>\n    </div>\n  </div>\n  <div py=\"sm\" color=\"purple\" class=\"drac-box drac-bg-purple drac-py-sm\">\n    <div class=\"drac-box\">\n      <span class=\"drac-text drac-text-white\">padding y sm</span>\n    </div>\n  </div>\n  <div px=\"sm\" color=\"red\" class=\"drac-box drac-bg-red drac-px-sm\">\n    <div class=\"drac-box\">\n      <span class=\"drac-text drac-text-white\">padding x sm</span>\n    </div>\n  </div>\n  <div\n    pt=\"sm\"\n    pb=\"md\"\n    pl=\"lg\"\n    pr=\"xxs\"\n    color=\"purpleCyan\"\n    class=\"drac-box drac-bg-purple-cyan drac-pt-sm drac-pb-md drac-pl-lg drac-pr-xxs\"\n  >\n    <div class=\"drac-box\">\n      <span class=\"drac-text drac-text-white\">mixing all styles</span>\n    </div>\n  </div>\n</div>\n",
+          "react": "<Box>\n  <Box p=\"sm\" color=\"pink\">\n    <Box>\n      <Text>padding sm</Text>\n    </Box>\n  </Box>\n  <Box py=\"sm\" color=\"purple\">\n    <Box>\n      <Text>padding y sm</Text>\n    </Box>\n  </Box>\n  <Box px=\"sm\" color=\"red\">\n    <Box>\n      <Text>padding x sm</Text>\n    </Box>\n  </Box>\n  <Box pt=\"sm\" pb=\"md\" pl=\"lg\" pr=\"xxs\" color=\"purpleCyan\">\n    <Box>\n      <Text>mixing all styles</Text>\n    </Box>\n  </Box>\n</Box>;\n",
+          "docs": "",
+          "screenshot": "./dsp/assets/SpacingPadding.png",
+          "svgData": "./dsp/assets/svgs/SpacingPadding.svg"
+        },
+        {
+          "title": "Margin",
+          "html": "<div class=\"drac-box\">\n  <div m=\"sm\" color=\"pink\" class=\"drac-box drac-bg-pink drac-m-sm\">\n    <div class=\"drac-box\">\n      <span class=\"drac-text drac-text-white\">margin sm</span>\n    </div>\n  </div>\n  <div my=\"sm\" color=\"purple\" class=\"drac-box drac-bg-purple drac-my-sm\">\n    <div class=\"drac-box\">\n      <span class=\"drac-text drac-text-white\">margin y sm</span>\n    </div>\n  </div>\n  <div mx=\"sm\" color=\"red\" class=\"drac-box drac-bg-red drac-mx-sm\">\n    <div class=\"drac-box\">\n      <span class=\"drac-text drac-text-white\">margin x sm</span>\n    </div>\n  </div>\n  <div\n    mt=\"sm\"\n    mb=\"md\"\n    ml=\"lg\"\n    mr=\"xxs\"\n    color=\"purpleCyan\"\n    class=\"drac-box drac-bg-purple-cyan drac-mt-sm drac-mb-md drac-ml-lg drac-mr-xxs\"\n  >\n    <div class=\"drac-box\">\n      <span class=\"drac-text drac-text-white\">mixing all styles</span>\n    </div>\n  </div>\n</div>\n",
+          "react": "<Box>\n  <Box m=\"sm\" color=\"pink\">\n    <Box>\n      <Text>margin sm</Text>\n    </Box>\n  </Box>\n  <Box my=\"sm\" color=\"purple\">\n    <Box>\n      <Text>margin y sm</Text>\n    </Box>\n  </Box>\n  <Box mx=\"sm\" color=\"red\">\n    <Box>\n      <Text>margin x sm</Text>\n    </Box>\n  </Box>\n  <Box mt=\"sm\" mb=\"md\" ml=\"lg\" mr=\"xxs\" color=\"purpleCyan\">\n    <Box>\n      <Text>mixing all styles</Text>\n    </Box>\n  </Box>\n</Box>;\n",
+          "docs": "",
+          "screenshot": "./dsp/assets/SpacingMargin.png",
+          "svgData": "./dsp/assets/svgs/SpacingMargin.svg"
+        }
+      ],
+      "ext_com_draculaui_props": {}
+    },
+    {
+      "class": "component",
+      "type": "page",
       "id": "Switch",
       "name": "Switch",
       "last_updated_by": "System",
