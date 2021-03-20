@@ -36,4 +36,14 @@ export declare type MarginMixin = {
     mr?: marginType;
 };
 export declare function marginMixin(mixin: MarginMixin): string[];
+export declare const spacingUtilities: {
+    classes: {
+        padding: string[];
+        margin: string[];
+    };
+    react: {
+        padding: string[];
+        margin: string[];
+    };
+};
 export {};

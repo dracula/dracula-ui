@@ -192,6 +192,16 @@ function marginMixin(mixin) {
 
   return classes;
 }
+var spacingUtilities = {
+  classes: {
+    padding: /*#__PURE__*/[].concat( /*#__PURE__*/Object.values(padding), /*#__PURE__*/Object.values(paddingX), /*#__PURE__*/Object.values(paddingY), /*#__PURE__*/Object.values(paddingTop), /*#__PURE__*/Object.values(paddingBottom)),
+    margin: /*#__PURE__*/[].concat( /*#__PURE__*/Object.values(margin), /*#__PURE__*/Object.values(mX), /*#__PURE__*/Object.values(mY), /*#__PURE__*/Object.values(mTop), /*#__PURE__*/Object.values(mBottom))
+  },
+  react: {
+    padding: ["p", "px", "py", "pt", "pb", "pl", "pr"],
+    margin: ["m", "mx", "my", "mt", "mb", "ml", "mr"]
+  }
+};
 
 var headingSizes = {
   'heading-1': 'drac-heading-1',
@@ -799,6 +809,7 @@ exports.roundedBorders = roundedBorders;
 exports.selectColors = selectColors;
 exports.selectSizes = selectSizes;
 exports.selectVariants = selectVariants;
+exports.spacingUtilities = spacingUtilities;
 exports.supportColors = supportColors;
 exports.switchColors = switchColors;
 exports.tableColors = tableColors;

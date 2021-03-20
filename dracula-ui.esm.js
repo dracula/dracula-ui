@@ -186,6 +186,16 @@ function marginMixin(mixin) {
 
   return classes;
 }
+var spacingUtilities = {
+  classes: {
+    padding: /*#__PURE__*/[].concat( /*#__PURE__*/Object.values(padding), /*#__PURE__*/Object.values(paddingX), /*#__PURE__*/Object.values(paddingY), /*#__PURE__*/Object.values(paddingTop), /*#__PURE__*/Object.values(paddingBottom)),
+    margin: /*#__PURE__*/[].concat( /*#__PURE__*/Object.values(margin), /*#__PURE__*/Object.values(mX), /*#__PURE__*/Object.values(mY), /*#__PURE__*/Object.values(mTop), /*#__PURE__*/Object.values(mBottom))
+  },
+  react: {
+    padding: ["p", "px", "py", "pt", "pb", "pl", "pr"],
+    margin: ["m", "mx", "my", "mt", "mb", "ml", "mr"]
+  }
+};
 
 var headingSizes = {
   'heading-1': 'drac-heading-1',
@@ -746,5 +756,5 @@ var List = function List(props) {
 };
 List.displayName = 'List';
 
-export { Avatar, AvatarBorderVariants, AvatarVariants, Badge, Box, Button, Card, Checkbox, Divider, Heading, Input, Link, List, Paragraph, Radio, Select, Switch, Table, Tabs, Text, baseColors, baseTextColors, borderColors, buttonSizes, buttonVariants, cardOrientations, cardVariants, checkboxColors, colors, dividerColors, glowColors, gradientColors, headingColors, headingSizes, inputColors, inputSizes, inputVariants, linkHoverColors, listColors, listVariants, marginMixin, paddingMixin, radioColors, roundedBorders, selectColors, selectSizes, selectVariants, supportColors, switchColors, tableColors, tableVariants, tabsColors, textColors, textSizes, textWeights };
+export { Avatar, AvatarBorderVariants, AvatarVariants, Badge, Box, Button, Card, Checkbox, Divider, Heading, Input, Link, List, Paragraph, Radio, Select, Switch, Table, Tabs, Text, baseColors, baseTextColors, borderColors, buttonSizes, buttonVariants, cardOrientations, cardVariants, checkboxColors, colors, dividerColors, glowColors, gradientColors, headingColors, headingSizes, inputColors, inputSizes, inputVariants, linkHoverColors, listColors, listVariants, marginMixin, paddingMixin, radioColors, roundedBorders, selectColors, selectSizes, selectVariants, spacingUtilities, supportColors, switchColors, tableColors, tableVariants, tabsColors, textColors, textSizes, textWeights };
 //# sourceMappingURL=dracula-ui.esm.js.map
