@@ -11,6 +11,13 @@
   --font-4xl: 2.25rem; /* 36px */
   --font-5xl: 3rem; /* 48px */
   --font-6xl: 4rem; /* 64px */
+
+  --line-height-none: 1;
+  --line-height-sm: 1.25;
+  --line-height: 1.375;
+  --line-height-md: 1.5;
+  --line-height-lg: 1.625;
+  --line-height-xl: 2;
 }
 
 .heading,
@@ -36,10 +43,6 @@ code {
   background: var(--purple-100);
   color: var(--purple-900);
   padding: 0.1rem 0.3rem;
-}
-
-p.text {
-  line-height: 1.7rem;
 }
 
 /* -- Heading -- */
@@ -93,4 +96,30 @@ p.text {
 
 .text.text-xs {
   font-size: var(--font-xs);
+}
+
+/* -- Line Height -- */
+
+.line-height-none {
+  line-height: var(--line-height-none);
+}
+
+.line-height-sm {
+  line-height: var(--line-height-sm);
+}
+
+.line-height {
+  line-height: var(--line-height);
+}
+
+.line-height-md {
+  line-height: var(--line-height-md);
+}
+
+.line-height-lg {
+  line-height: var(--line-height-lg);
+}
+
+.line-height-xl {
+  line-height: var(--line-height-xl);
 }

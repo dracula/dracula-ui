@@ -1,7 +1,7 @@
 import cx from 'classnames/dedupe'
 import React from 'react'
 import { marginMixin, paddingMixin } from '../../base/spacing'
-import { textColors, TextProps, textSizes, textWeights } from '../Text/Text'
+import { textColors, TextProps, textSizes, lineHeights, textWeights } from '../Text/Text'
 
 /**
  * Paragraph is a semantic component used for blocks of text with
@@ -18,6 +18,7 @@ export const Paragraph: React.FC<TextProps> = (props: TextProps) => {
       props.className,
       textSizes[props.size ?? 'medium'],
       textWeights[props.weight ?? 'normal'],
+      lineHeights[props.lineHeight ?? 'normal'],
       textColors[props.color ?? 'white'],
       ...paddingMixin(props),
       ...marginMixin(props)

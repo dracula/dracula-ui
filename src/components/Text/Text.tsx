@@ -22,6 +22,15 @@ export const textWeights = {
   bold: 'drac-text-bold'
 }
 
+export const lineHeights = {
+  none: 'drac-line-height-none',
+  small: 'drac-line-height-sm',
+  normal: 'drac-line-height',
+  medium: 'drac-line-height-md',
+  large: 'drac-line-height-lg',
+  xlarge: 'drac-line-height-xl',
+}
+
 export const textColors = mapValues(colors, (className) => {
   return className.replace('-bg-', '-text-')
 })
@@ -29,17 +38,22 @@ export const textColors = mapValues(colors, (className) => {
 /** Text Props */
 export interface TextProps
   extends HTMLAttributes<HTMLSpanElement>,
-    PaddingMixin,
-    MarginMixin {
+  PaddingMixin,
+  MarginMixin {
   /**
    * Controls the size of the text based on pre-configured Dracula UI sizes.
    */
   size?: keyof typeof textSizes
 
   /**
-   * Controsl the weight of the text.
+   * Controls the weight of the text.
    */
   weight?: keyof typeof textWeights
+
+  /**
+   * Controls the line height of a text.
+   */
+  lineHeight?: keyof typeof lineHeights
 
   /**
    * Controls the color of the text
@@ -68,6 +82,7 @@ export const Text = (props: TextProps) => {
       props.className,
       textSizes[props.size ?? 'medium'],
       textWeights[props.weight ?? 'normal'],
+      lineHeights[props.lineHeight ?? 'normal'],
       textColors[props.color ?? 'white'],
       ...paddingMixin(props),
       ...marginMixin(props)

@@ -3,7 +3,7 @@
 exports[`Site: Text Basic Usage 1`] = `
 Object {
   "docs": "Show inline text within an interface.",
-  "html": "<span class=\\"drac-text drac-text-white\\">basic</span>
+  "html": "<span class=\\"drac-text drac-line-height drac-text-white\\">basic</span>
 ",
   "react": "<Text>basic</Text>;
 ",
@@ -16,10 +16,14 @@ Object {
   "docs": "Text can be customized to use any of the Dracula UI theme colors.",
   "html": "<div class=\\"drac-box\\">
   <div class=\\"drac-box\\">
-    <span color=\\"cyan\\" class=\\"drac-text drac-text-cyan\\">cyan</span>
+    <span color=\\"cyan\\" class=\\"drac-text drac-line-height drac-text-cyan\\"
+      >cyan</span
+    >
   </div>
   <div class=\\"drac-box\\">
-    <span color=\\"green\\" class=\\"drac-text drac-text-green\\">green</span>
+    <span color=\\"green\\" class=\\"drac-text drac-line-height drac-text-green\\"
+      >green</span
+    >
   </div>
 </div>
 ",
@@ -41,16 +45,22 @@ Object {
   "docs": "Text can be customize to use several different sizes.",
   "html": "<div class=\\"drac-box\\">
   <div class=\\"drac-box\\">
-    <span class=\\"drac-text drac-text-xs drac-text-white\\">xsmall</span>
+    <span class=\\"drac-text drac-text-xs drac-line-height drac-text-white\\"
+      >xsmall</span
+    >
   </div>
   <div class=\\"drac-box\\">
-    <span class=\\"drac-text drac-text-sm drac-text-white\\">small</span>
+    <span class=\\"drac-text drac-text-sm drac-line-height drac-text-white\\"
+      >small</span
+    >
   </div>
   <div class=\\"drac-box\\">
-    <span class=\\"drac-text drac-text-white\\">medium</span>
+    <span class=\\"drac-text drac-line-height drac-text-white\\">medium</span>
   </div>
   <div class=\\"drac-box\\">
-    <span class=\\"drac-text drac-text-lg drac-text-white\\">large</span>
+    <span class=\\"drac-text drac-text-lg drac-line-height drac-text-white\\"
+      >large</span
+    >
   </div>
 </div>
 ",
@@ -78,15 +88,21 @@ Object {
   "docs": "Text can be defined in different font weights.",
   "html": "<div class=\\"drac-box\\">
   <div class=\\"drac-box\\">
-    <span weight=\\"normal\\" class=\\"drac-text drac-text-white\\">normal</span>
+    <span weight=\\"normal\\" class=\\"drac-text drac-line-height drac-text-white\\"
+      >normal</span
+    >
   </div>
   <div class=\\"drac-box\\">
-    <span weight=\\"semibold\\" class=\\"drac-text drac-text-semibold drac-text-white\\"
+    <span
+      weight=\\"semibold\\"
+      class=\\"drac-text drac-text-semibold drac-line-height drac-text-white\\"
       >semibold</span
     >
   </div>
   <div class=\\"drac-box\\">
-    <span weight=\\"bold\\" class=\\"drac-text drac-text-bold drac-text-white\\"
+    <span
+      weight=\\"bold\\"
+      class=\\"drac-text drac-text-bold drac-line-height drac-text-white\\"
       >bold</span
     >
   </div>

@@ -4,7 +4,7 @@ exports[`Site: Badge Basic Usage 1`] = `
 Object {
   "docs": "You can create a new Badge with any text content you'd like to highlight.",
   "html": "<span class=\\"drac-badge drac-bg-purple\\"
-  ><span class=\\"drac-text drac-text-white\\">Badge</span></span
+  ><span class=\\"drac-text drac-line-height drac-text-white\\">Badge</span></span
 >
 ",
   "react": "<Badge>Badge</Badge>;
@@ -17,7 +17,9 @@ exports[`Site: Badge Colors 1`] = `
 Object {
   "docs": "Badges can be customized to use any of the Dracula UI theme colors, including all solid, gradient, and animated colors.",
   "html": "<span class=\\"drac-badge drac-bg-animated\\" themecolor=\\"animated\\"
-  ><span class=\\"drac-text drac-text-white\\">Fun Badge</span></span
+  ><span class=\\"drac-text drac-line-height drac-text-white\\"
+    >Fun Badge</span
+  ></span
 >
 ",
   "react": "<Badge themeColor=\\"animated\\">Fun Badge</Badge>;
@@ -35,7 +37,7 @@ Object {
     m=\\"sm\\"
     themecolor=\\"orange\\"
     variant=\\"outline\\"
-    ><span color=\\"orange\\" class=\\"drac-text drac-text-orange\\"
+    ><span color=\\"orange\\" class=\\"drac-text drac-line-height drac-text-orange\\"
       >Outline</span
     ></span
   ><span
@@ -43,7 +45,9 @@ Object {
     m=\\"sm\\"
     themecolor=\\"cyan\\"
     variant=\\"subtle\\"
-    ><span color=\\"cyan\\" class=\\"drac-text drac-text-cyan\\">Subtle</span></span
+    ><span color=\\"cyan\\" class=\\"drac-text drac-line-height drac-text-cyan\\"
+      >Subtle</span
+    ></span
   >
 </div>
 ",

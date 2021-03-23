@@ -4,7 +4,7 @@ exports[`Site: Box Basic Usage 1`] = `
 Object {
   "docs": "A Box is analogous to an HTML div and can contain any other component. Use Box when you want to compose layouts, or multiple components.",
   "html": "<div class=\\"drac-box\\">
-  <span class=\\"drac-text drac-text-white\\">Dracula</span>
+  <span class=\\"drac-text drac-line-height drac-text-white\\">Dracula</span>
 </div>
 ",
   "react": "<Box>
@@ -19,7 +19,7 @@ exports[`Site: Box Colors 1`] = `
 Object {
   "docs": "Boxes can be customized to use any of the Dracula UI theme colors, including all solid, gradient, and animated colors.",
   "html": "<div color=\\"pinkPurple\\" class=\\"drac-box drac-bg-pink-purple\\">
-  <span class=\\"drac-text drac-text-white\\">Pink Purple</span>
+  <span class=\\"drac-text drac-line-height drac-text-white\\">Pink Purple</span>
 </div>
 ",
   "react": "<Box color=\\"pinkPurple\\">
@@ -40,7 +40,9 @@ Object {
     p=\\"md\\"
     class=\\"drac-box drac-bg-purple-cyan drac-rounded-lg drac-p-md\\"
   >
-    <span class=\\"drac-text drac-text-white\\">Large round border</span>
+    <span class=\\"drac-text drac-line-height drac-text-white\\"
+      >Large round border</span
+    >
   </div>
   <div
     rounded=\\"sm\\"
@@ -48,7 +50,7 @@ Object {
     p=\\"md\\"
     class=\\"drac-box drac-bg-yellow-pink drac-rounded-sm drac-p-md\\"
   >
-    <span color=\\"black\\" class=\\"drac-text drac-text-black\\"
+    <span color=\\"black\\" class=\\"drac-text drac-line-height drac-text-black\\"
       >small round border</span
     >
   </div>
@@ -72,22 +74,34 @@ Object {
   "docs": "Boxes come with pre defined spacing primitives for padding and margin that allow for customizing the spacing inside and around boxes.",
   "html": "<div>
   <div color=\\"yellowPink\\" p=\\"xs\\" class=\\"drac-box drac-bg-yellow-pink drac-p-xs\\">
-    <span color=\\"black\\" class=\\"drac-text drac-text-black\\">xs padding</span>
+    <span color=\\"black\\" class=\\"drac-text drac-line-height drac-text-black\\"
+      >xs padding</span
+    >
   </div>
   <div color=\\"purpleCyan\\" p=\\"sm\\" class=\\"drac-box drac-bg-purple-cyan drac-p-sm\\">
-    <span color=\\"black\\" class=\\"drac-text drac-text-black\\">sm padding</span>
+    <span color=\\"black\\" class=\\"drac-text drac-line-height drac-text-black\\"
+      >sm padding</span
+    >
   </div>
   <div color=\\"pinkPurple\\" p=\\"md\\" class=\\"drac-box drac-bg-pink-purple drac-p-md\\">
-    <span color=\\"black\\" class=\\"drac-text drac-text-black\\">medium padding</span>
+    <span color=\\"black\\" class=\\"drac-text drac-line-height drac-text-black\\"
+      >medium padding</span
+    >
   </div>
   <div color=\\"yellowPink\\" m=\\"xs\\" class=\\"drac-box drac-bg-yellow-pink drac-m-xs\\">
-    <span color=\\"black\\" class=\\"drac-text drac-text-black\\">xs margin</span>
+    <span color=\\"black\\" class=\\"drac-text drac-line-height drac-text-black\\"
+      >xs margin</span
+    >
   </div>
   <div color=\\"purpleCyan\\" m=\\"sm\\" class=\\"drac-box drac-bg-purple-cyan drac-m-sm\\">
-    <span color=\\"black\\" class=\\"drac-text drac-text-black\\">sm margin</span>
+    <span color=\\"black\\" class=\\"drac-text drac-line-height drac-text-black\\"
+      >sm margin</span
+    >
   </div>
   <div color=\\"pinkPurple\\" m=\\"md\\" class=\\"drac-box drac-bg-pink-purple drac-m-md\\">
-    <span color=\\"black\\" class=\\"drac-text drac-text-black\\">medium margin</span>
+    <span color=\\"black\\" class=\\"drac-text drac-line-height drac-text-black\\"
+      >medium margin</span
+    >
   </div>
 </div>
 ",

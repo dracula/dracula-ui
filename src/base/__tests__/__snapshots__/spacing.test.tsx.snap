@@ -5,7 +5,7 @@ Object {
   "docs": "",
   "html": "<div p=\\"md\\" color=\\"pink\\" class=\\"drac-box drac-bg-pink drac-p-md\\">
   <div class=\\"drac-box\\">
-    <span class=\\"drac-text drac-text-white\\">Padding</span>
+    <span class=\\"drac-text drac-line-height drac-text-white\\">Padding</span>
   </div>
 </div>
 ",
@@ -25,17 +25,21 @@ Object {
   "html": "<div class=\\"drac-box\\">
   <div m=\\"sm\\" color=\\"pink\\" class=\\"drac-box drac-bg-pink drac-m-sm\\">
     <div class=\\"drac-box\\">
-      <span class=\\"drac-text drac-text-white\\">margin sm</span>
+      <span class=\\"drac-text drac-line-height drac-text-white\\">margin sm</span>
     </div>
   </div>
   <div my=\\"sm\\" color=\\"purple\\" class=\\"drac-box drac-bg-purple drac-my-sm\\">
     <div class=\\"drac-box\\">
-      <span class=\\"drac-text drac-text-white\\">margin y sm</span>
+      <span class=\\"drac-text drac-line-height drac-text-white\\"
+        >margin y sm</span
+      >
     </div>
   </div>
   <div mx=\\"sm\\" color=\\"red\\" class=\\"drac-box drac-bg-red drac-mx-sm\\">
     <div class=\\"drac-box\\">
-      <span class=\\"drac-text drac-text-white\\">margin x sm</span>
+      <span class=\\"drac-text drac-line-height drac-text-white\\"
+        >margin x sm</span
+      >
     </div>
   </div>
   <div
@@ -47,7 +51,9 @@ Object {
     class=\\"drac-box drac-bg-purple-cyan drac-mt-sm drac-mb-md drac-ml-lg drac-mr-xxs\\"
   >
     <div class=\\"drac-box\\">
-      <span class=\\"drac-text drac-text-white\\">mixing all styles</span>
+      <span class=\\"drac-text drac-line-height drac-text-white\\"
+        >mixing all styles</span
+      >
     </div>
   </div>
 </div>
@@ -85,17 +91,21 @@ Object {
   "html": "<div class=\\"drac-box\\">
   <div p=\\"sm\\" color=\\"pink\\" class=\\"drac-box drac-bg-pink drac-p-sm\\">
     <div class=\\"drac-box\\">
-      <span class=\\"drac-text drac-text-white\\">padding sm</span>
+      <span class=\\"drac-text drac-line-height drac-text-white\\">padding sm</span>
     </div>
   </div>
   <div py=\\"sm\\" color=\\"purple\\" class=\\"drac-box drac-bg-purple drac-py-sm\\">
     <div class=\\"drac-box\\">
-      <span class=\\"drac-text drac-text-white\\">padding y sm</span>
+      <span class=\\"drac-text drac-line-height drac-text-white\\"
+        >padding y sm</span
+      >
     </div>
   </div>
   <div px=\\"sm\\" color=\\"red\\" class=\\"drac-box drac-bg-red drac-px-sm\\">
     <div class=\\"drac-box\\">
-      <span class=\\"drac-text drac-text-white\\">padding x sm</span>
+      <span class=\\"drac-text drac-line-height drac-text-white\\"
+        >padding x sm</span
+      >
     </div>
   </div>
   <div
@@ -107,7 +117,9 @@ Object {
     class=\\"drac-box drac-bg-purple-cyan drac-pt-sm drac-pb-md drac-pl-lg drac-pr-xxs\\"
   >
     <div class=\\"drac-box\\">
-      <span class=\\"drac-text drac-text-white\\">mixing all styles</span>
+      <span class=\\"drac-text drac-line-height drac-text-white\\"
+        >mixing all styles</span
+      >
     </div>
   </div>
 </div>

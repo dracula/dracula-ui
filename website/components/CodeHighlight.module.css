@@ -5,5 +5,5 @@
   border-radius: var(--rounded-md);
   margin: 0 0 40px;
   font-family: 'Fira Code', monospace;
-  line-height: 24px;
+  line-height: var(--line-height-md);
 }

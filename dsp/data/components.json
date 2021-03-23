@@ -32,7 +32,7 @@
         },
         {
           "title": "Variants",
-          "html": "<div>\n  <span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-subtle\"\n    ><span color=\"white\" class=\"drac-text drac-text-white\">ZR</span></span\n  ><span class=\"drac-avatar drac-bg-green-transparent drac-text-green\"\n    ><span color=\"white\" class=\"drac-text drac-text-white\">NF</span></span\n  >\n</div>\n",
+          "html": "<div>\n  <span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-subtle\"\n    ><span color=\"white\" class=\"drac-text drac-line-height drac-text-white\"\n      >ZR</span\n    ></span\n  ><span class=\"drac-avatar drac-bg-green-transparent drac-text-green\"\n    ><span color=\"white\" class=\"drac-text drac-line-height drac-text-white\"\n      >NF</span\n    ></span\n  >\n</div>\n",
           "react": "<div>\n  <Avatar title=\"Zeno Rocha\" variant=\"subtle\" />\n  <Avatar title=\"Netto Farah\" variant=\"normal\" />\n</div>;\n",
           "docs": "Avatars accept multiple variants, which can be used to render a more subtle variation of the Avatar component.",
           "screenshot": "./dsp/assets/AvatarVariants.png",
@@ -40,7 +40,7 @@
         },
         {
           "title": "Borders",
-          "html": "<div>\n  <span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-lg-stroke\"\n    ><span color=\"white\" class=\"drac-text drac-text-white\">NF</span></span\n  ><span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-no-border\"\n    ><span color=\"white\" class=\"drac-text drac-text-white\">NF</span></span\n  >\n</div>\n",
+          "html": "<div>\n  <span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-lg-stroke\"\n    ><span color=\"white\" class=\"drac-text drac-line-height drac-text-white\"\n      >NF</span\n    ></span\n  ><span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-no-border\"\n    ><span color=\"white\" class=\"drac-text drac-line-height drac-text-white\"\n      >NF</span\n    ></span\n  >\n</div>\n",
           "react": "<div>\n  <Avatar title=\"Netto Farah\" borderVariant=\"large\" />\n  <Avatar title=\"Netto Farah\" borderVariant=\"none\" />\n</div>;\n",
           "docs": "A border variant allows for customization of the border width of an Avatar, or for an Avatar to be rendered without a border.",
           "screenshot": "./dsp/assets/AvatarBorders.png",
@@ -48,7 +48,7 @@
         },
         {
           "title": "Colors",
-          "html": "<div>\n  <span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green\"\n    color=\"cyan\"\n    ><span color=\"white\" class=\"drac-text drac-text-white\">NF</span></span\n  >\n</div>\n",
+          "html": "<div>\n  <span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green\"\n    color=\"cyan\"\n    ><span color=\"white\" class=\"drac-text drac-line-height drac-text-white\"\n      >NF</span\n    ></span\n  >\n</div>\n",
           "react": "<div>\n  <Avatar title=\"Netto Farah\" color=\"cyan\" />\n</div>;\n",
           "docs": "The Avatar component accepts a *color* param that allows for customizing the background and accent color for an Avatar.",
           "screenshot": "./dsp/assets/AvatarColors.png",
@@ -691,13 +691,13 @@
         "trigger": "badge",
         "languages": {
           "javascriptreact": "<Badge>Badge</Badge>;\n",
-          "html": "<span class=\"drac-badge drac-bg-purple\"\n  ><span class=\"drac-text drac-text-white\">Badge</span></span\n>\n"
+          "html": "<span class=\"drac-badge drac-bg-purple\"\n  ><span class=\"drac-text drac-line-height drac-text-white\">Badge</span></span\n>\n"
         }
       },
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
-          "html": "<span class=\"drac-badge drac-bg-purple\"\n  ><span class=\"drac-text drac-text-white\">Badge</span></span\n>\n",
+          "html": "<span class=\"drac-badge drac-bg-purple\"\n  ><span class=\"drac-text drac-line-height drac-text-white\">Badge</span></span\n>\n",
           "react": "<Badge>Badge</Badge>;\n",
           "docs": "You can create a new Badge with any text content you'd like to highlight.",
           "screenshot": "./dsp/assets/Badge.png",
@@ -705,7 +705,7 @@
         },
         {
           "title": "Colors",
-          "html": "<span class=\"drac-badge drac-bg-animated\" themecolor=\"animated\"\n  ><span class=\"drac-text drac-text-white\">Fun Badge</span></span\n>\n",
+          "html": "<span class=\"drac-badge drac-bg-animated\" themecolor=\"animated\"\n  ><span class=\"drac-text drac-line-height drac-text-white\"\n    >Fun Badge</span\n  ></span\n>\n",
           "react": "<Badge themeColor=\"animated\">Fun Badge</Badge>;\n",
           "docs": "Badges can be customized to use any of the Dracula UI theme colors, including all solid, gradient, and animated colors.",
           "screenshot": "./dsp/assets/BadgeColors.png",
@@ -713,7 +713,7 @@
         },
         {
           "title": "Variants",
-          "html": "<div>\n  <span\n    class=\"drac-badge drac-bg-orange drac-badge-outline drac-text-orange drac-m-sm\"\n    m=\"sm\"\n    themecolor=\"orange\"\n    variant=\"outline\"\n    ><span color=\"orange\" class=\"drac-text drac-text-orange\"\n      >Outline</span\n    ></span\n  ><span\n    class=\"drac-badge drac-bg-cyan-transparent drac-badge-subtle drac-text-cyan drac-m-sm\"\n    m=\"sm\"\n    themecolor=\"cyan\"\n    variant=\"subtle\"\n    ><span color=\"cyan\" class=\"drac-text drac-text-cyan\">Subtle</span></span\n  >\n</div>\n",
+          "html": "<div>\n  <span\n    class=\"drac-badge drac-bg-orange drac-badge-outline drac-text-orange drac-m-sm\"\n    m=\"sm\"\n    themecolor=\"orange\"\n    variant=\"outline\"\n    ><span color=\"orange\" class=\"drac-text drac-line-height drac-text-orange\"\n      >Outline</span\n    ></span\n  ><span\n    class=\"drac-badge drac-bg-cyan-transparent drac-badge-subtle drac-text-cyan drac-m-sm\"\n    m=\"sm\"\n    themecolor=\"cyan\"\n    variant=\"subtle\"\n    ><span color=\"cyan\" class=\"drac-text drac-line-height drac-text-cyan\"\n      >Subtle</span\n    ></span\n  >\n</div>\n",
           "react": "<div>\n  <Badge m=\"sm\" themeColor=\"orange\" variant=\"outline\">\n    Outline\n  </Badge>\n  <Badge m=\"sm\" themeColor=\"cyan\" variant=\"subtle\">\n    Subtle\n  </Badge>\n</div>;\n",
           "docs": "Use `outline` or `subtle` when you don't want your Badges to stand out, but still want to keep them playful.",
           "screenshot": "./dsp/assets/BadgeVariants.png",
@@ -1226,13 +1226,13 @@
         "trigger": "box",
         "languages": {
           "javascriptreact": "<Box>\n  <Text>Dracula</Text>\n</Box>;\n",
-          "html": "<div class=\"drac-box\">\n  <span class=\"drac-text drac-text-white\">Dracula</span>\n</div>\n"
+          "html": "<div class=\"drac-box\">\n  <span class=\"drac-text drac-line-height drac-text-white\">Dracula</span>\n</div>\n"
         }
       },
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
-          "html": "<div class=\"drac-box\">\n  <span class=\"drac-text drac-text-white\">Dracula</span>\n</div>\n",
+          "html": "<div class=\"drac-box\">\n  <span class=\"drac-text drac-line-height drac-text-white\">Dracula</span>\n</div>\n",
           "react": "<Box>\n  <Text>Dracula</Text>\n</Box>;\n",
           "docs": "A Box is analogous to an HTML div and can contain any other component. Use Box when you want to compose layouts, or multiple components.",
           "screenshot": "./dsp/assets/Box.png",
@@ -1240,7 +1240,7 @@
         },
         {
           "title": "Colors",
-          "html": "<div color=\"pinkPurple\" class=\"drac-box drac-bg-pink-purple\">\n  <span class=\"drac-text drac-text-white\">Pink Purple</span>\n</div>\n",
+          "html": "<div color=\"pinkPurple\" class=\"drac-box drac-bg-pink-purple\">\n  <span class=\"drac-text drac-line-height drac-text-white\">Pink Purple</span>\n</div>\n",
           "react": "<Box color=\"pinkPurple\">\n  <Text>Pink Purple</Text>\n</Box>;\n",
           "docs": "Boxes can be customized to use any of the Dracula UI theme colors, including all solid, gradient, and animated colors.",
           "screenshot": "./dsp/assets/BoxColors.png",
@@ -1248,7 +1248,7 @@
         },
         {
           "title": "Rounded",
-          "html": "<div>\n  <div\n    rounded=\"lg\"\n    color=\"purpleCyan\"\n    p=\"md\"\n    class=\"drac-box drac-bg-purple-cyan drac-rounded-lg drac-p-md\"\n  >\n    <span class=\"drac-text drac-text-white\">Large round border</span>\n  </div>\n  <div\n    rounded=\"sm\"\n    color=\"yellowPink\"\n    p=\"md\"\n    class=\"drac-box drac-bg-yellow-pink drac-rounded-sm drac-p-md\"\n  >\n    <span color=\"black\" class=\"drac-text drac-text-black\"\n      >small round border</span\n    >\n  </div>\n</div>\n",
+          "html": "<div>\n  <div\n    rounded=\"lg\"\n    color=\"purpleCyan\"\n    p=\"md\"\n    class=\"drac-box drac-bg-purple-cyan drac-rounded-lg drac-p-md\"\n  >\n    <span class=\"drac-text drac-line-height drac-text-white\"\n      >Large round border</span\n    >\n  </div>\n  <div\n    rounded=\"sm\"\n    color=\"yellowPink\"\n    p=\"md\"\n    class=\"drac-box drac-bg-yellow-pink drac-rounded-sm drac-p-md\"\n  >\n    <span color=\"black\" class=\"drac-text drac-line-height drac-text-black\"\n      >small round border</span\n    >\n  </div>\n</div>\n",
           "react": "<div>\n  <Box rounded=\"lg\" color=\"purpleCyan\" p=\"md\">\n    <Text>Large round border</Text>\n  </Box>\n  <Box rounded=\"sm\" color=\"yellowPink\" p=\"md\">\n    <Text color=\"black\">small round border</Text>\n  </Box>\n</div>;\n",
           "docs": "Choose from one of the predefined `rounded` options for a Box.",
           "screenshot": "./dsp/assets/BoxRounded.png",
@@ -1256,7 +1256,7 @@
         },
         {
           "title": "Spacing",
-          "html": "<div>\n  <div color=\"yellowPink\" p=\"xs\" class=\"drac-box drac-bg-yellow-pink drac-p-xs\">\n    <span color=\"black\" class=\"drac-text drac-text-black\">xs padding</span>\n  </div>\n  <div color=\"purpleCyan\" p=\"sm\" class=\"drac-box drac-bg-purple-cyan drac-p-sm\">\n    <span color=\"black\" class=\"drac-text drac-text-black\">sm padding</span>\n  </div>\n  <div color=\"pinkPurple\" p=\"md\" class=\"drac-box drac-bg-pink-purple drac-p-md\">\n    <span color=\"black\" class=\"drac-text drac-text-black\">medium padding</span>\n  </div>\n  <div color=\"yellowPink\" m=\"xs\" class=\"drac-box drac-bg-yellow-pink drac-m-xs\">\n    <span color=\"black\" class=\"drac-text drac-text-black\">xs margin</span>\n  </div>\n  <div color=\"purpleCyan\" m=\"sm\" class=\"drac-box drac-bg-purple-cyan drac-m-sm\">\n    <span color=\"black\" class=\"drac-text drac-text-black\">sm margin</span>\n  </div>\n  <div color=\"pinkPurple\" m=\"md\" class=\"drac-box drac-bg-pink-purple drac-m-md\">\n    <span color=\"black\" class=\"drac-text drac-text-black\">medium margin</span>\n  </div>\n</div>\n",
+          "html": "<div>\n  <div color=\"yellowPink\" p=\"xs\" class=\"drac-box drac-bg-yellow-pink drac-p-xs\">\n    <span color=\"black\" class=\"drac-text drac-line-height drac-text-black\"\n      >xs padding</span\n    >\n  </div>\n  <div color=\"purpleCyan\" p=\"sm\" class=\"drac-box drac-bg-purple-cyan drac-p-sm\">\n    <span color=\"black\" class=\"drac-text drac-line-height drac-text-black\"\n      >sm padding</span\n    >\n  </div>\n  <div color=\"pinkPurple\" p=\"md\" class=\"drac-box drac-bg-pink-purple drac-p-md\">\n    <span color=\"black\" class=\"drac-text drac-line-height drac-text-black\"\n      >medium padding</span\n    >\n  </div>\n  <div color=\"yellowPink\" m=\"xs\" class=\"drac-box drac-bg-yellow-pink drac-m-xs\">\n    <span color=\"black\" class=\"drac-text drac-line-height drac-text-black\"\n      >xs margin</span\n    >\n  </div>\n  <div color=\"purpleCyan\" m=\"sm\" class=\"drac-box drac-bg-purple-cyan drac-m-sm\">\n    <span color=\"black\" class=\"drac-text drac-line-height drac-text-black\"\n      >sm margin</span\n    >\n  </div>\n  <div color=\"pinkPurple\" m=\"md\" class=\"drac-box drac-bg-pink-purple drac-m-md\">\n    <span color=\"black\" class=\"drac-text drac-line-height drac-text-black\"\n      >medium margin</span\n    >\n  </div>\n</div>\n",
           "react": "<div>\n  <Box color=\"yellowPink\" p=\"xs\">\n    <Text color=\"black\">xs padding</Text>\n  </Box>\n  <Box color=\"purpleCyan\" p=\"sm\">\n    <Text color=\"black\">sm padding</Text>\n  </Box>\n  <Box color=\"pinkPurple\" p=\"md\">\n    <Text color=\"black\">medium padding</Text>\n  </Box>\n  <Box color=\"yellowPink\" m=\"xs\">\n    <Text color=\"black\">xs margin</Text>\n  </Box>\n  <Box color=\"purpleCyan\" m=\"sm\">\n    <Text color=\"black\">sm margin</Text>\n  </Box>\n  <Box color=\"pinkPurple\" m=\"md\">\n    <Text color=\"black\">medium margin</Text>\n  </Box>\n</div>;\n",
           "docs": "Boxes come with pre defined spacing primitives for padding and margin that allow for customizing the spacing inside and around boxes.",
           "screenshot": "./dsp/assets/BoxSpacing.png",
@@ -2518,13 +2518,13 @@
         "trigger": "card",
         "languages": {
           "javascriptreact": "<Card color=\"purple\" p=\"sm\">\n  <Text>Dracula</Text>\n</Card>;\n",
-          "html": "<div color=\"purple\" p=\"sm\" class=\"drac-box drac-card drac-bg-purple drac-p-sm\">\n  <span class=\"drac-text drac-text-white\">Dracula</span>\n</div>\n"
+          "html": "<div color=\"purple\" p=\"sm\" class=\"drac-box drac-card drac-bg-purple drac-p-sm\">\n  <span class=\"drac-text drac-line-height drac-text-white\">Dracula</span>\n</div>\n"
         }
       },
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
-          "html": "<div color=\"purple\" p=\"sm\" class=\"drac-box drac-card drac-bg-purple drac-p-sm\">\n  <span class=\"drac-text drac-text-white\">Dracula</span>\n</div>\n",
+          "html": "<div color=\"purple\" p=\"sm\" class=\"drac-box drac-card drac-bg-purple drac-p-sm\">\n  <span class=\"drac-text drac-line-height drac-text-white\">Dracula</span>\n</div>\n",
           "react": "<Card color=\"purple\" p=\"sm\">\n  <Text>Dracula</Text>\n</Card>;\n",
           "docs": "A Card is analogous to an HTML div and can contain any other component. Use Cards when you want to add hierarchy or highlight parts of your content.",
           "screenshot": "./dsp/assets/Card.png",
@@ -2532,7 +2532,7 @@
         },
         {
           "title": "Colors",
-          "html": "<div\n  color=\"pinkPurple\"\n  p=\"sm\"\n  class=\"drac-box drac-card drac-bg-pink-purple drac-p-sm\"\n>\n  <span class=\"drac-text drac-text-white\">Pink Purple</span>\n</div>\n",
+          "html": "<div\n  color=\"pinkPurple\"\n  p=\"sm\"\n  class=\"drac-box drac-card drac-bg-pink-purple drac-p-sm\"\n>\n  <span class=\"drac-text drac-line-height drac-text-white\">Pink Purple</span>\n</div>\n",
           "react": "<Card color=\"pinkPurple\" p=\"sm\">\n  <Text>Pink Purple</Text>\n</Card>;\n",
           "docs": "Cards can be customized to use any of the Dracula UI theme colors, including all solid, gradient, and animated colors.",
           "screenshot": "./dsp/assets/CardColors.png",
@@ -2540,7 +2540,7 @@
         },
         {
           "title": "Variants: subtle",
-          "html": "<div>\n  <div\n    variant=\"subtle\"\n    color=\"pink\"\n    p=\"md\"\n    m=\"md\"\n    class=\"drac-box drac-card drac-card-subtle drac-border-pink drac-bg-pink drac-p-md drac-m-md\"\n  >\n    <span color=\"pink\" class=\"drac-text drac-text-pink\">Subtle Card</span>\n  </div>\n</div>\n",
+          "html": "<div>\n  <div\n    variant=\"subtle\"\n    color=\"pink\"\n    p=\"md\"\n    m=\"md\"\n    class=\"drac-box drac-card drac-card-subtle drac-border-pink drac-bg-pink drac-p-md drac-m-md\"\n  >\n    <span color=\"pink\" class=\"drac-text drac-line-height drac-text-pink\"\n      >Subtle Card</span\n    >\n  </div>\n</div>\n",
           "react": "<div>\n  <Card variant=\"subtle\" color=\"pink\" p=\"md\" m=\"md\">\n    <Text color=\"pink\">Subtle Card</Text>\n  </Card>\n</div>;\n",
           "docs": "Use variant=\"subtle\" to create discrete or secondary cards",
           "screenshot": "./dsp/assets/CardVariants: subtle.png",
@@ -2548,7 +2548,7 @@
         },
         {
           "title": "Spacing",
-          "html": "<div>\n  <div\n    color=\"yellowPink\"\n    p=\"xs\"\n    class=\"drac-box drac-card drac-bg-yellow-pink drac-p-xs\"\n  >\n    <span color=\"black\" class=\"drac-text drac-text-black\">xs padding</span>\n  </div>\n  <div\n    color=\"purpleCyan\"\n    p=\"sm\"\n    class=\"drac-box drac-card drac-bg-purple-cyan drac-p-sm\"\n  >\n    <span color=\"black\" class=\"drac-text drac-text-black\">sm padding</span>\n  </div>\n  <div\n    color=\"pinkPurple\"\n    p=\"md\"\n    class=\"drac-box drac-card drac-bg-pink-purple drac-p-md\"\n  >\n    <span color=\"black\" class=\"drac-text drac-text-black\">medium padding</span>\n  </div>\n  <div\n    color=\"yellowPink\"\n    m=\"xs\"\n    class=\"drac-box drac-card drac-bg-yellow-pink drac-m-xs\"\n  >\n    <span color=\"black\" class=\"drac-text drac-text-black\">xs margin</span>\n  </div>\n  <div\n    color=\"purpleCyan\"\n    m=\"sm\"\n    class=\"drac-box drac-card drac-bg-purple-cyan drac-m-sm\"\n  >\n    <span color=\"black\" class=\"drac-text drac-text-black\">sm margin</span>\n  </div>\n  <div\n    color=\"pinkPurple\"\n    m=\"md\"\n    class=\"drac-box drac-card drac-bg-pink-purple drac-m-md\"\n  >\n    <span color=\"black\" class=\"drac-text drac-text-black\">medium margin</span>\n  </div>\n</div>\n",
+          "html": "<div>\n  <div\n    color=\"yellowPink\"\n    p=\"xs\"\n    class=\"drac-box drac-card drac-bg-yellow-pink drac-p-xs\"\n  >\n    <span color=\"black\" class=\"drac-text drac-line-height drac-text-black\"\n      >xs padding</span\n    >\n  </div>\n  <div\n    color=\"purpleCyan\"\n    p=\"sm\"\n    class=\"drac-box drac-card drac-bg-purple-cyan drac-p-sm\"\n  >\n    <span color=\"black\" class=\"drac-text drac-line-height drac-text-black\"\n      >sm padding</span\n    >\n  </div>\n  <div\n    color=\"pinkPurple\"\n    p=\"md\"\n    class=\"drac-box drac-card drac-bg-pink-purple drac-p-md\"\n  >\n    <span color=\"black\" class=\"drac-text drac-line-height drac-text-black\"\n      >medium padding</span\n    >\n  </div>\n  <div\n    color=\"yellowPink\"\n    m=\"xs\"\n    class=\"drac-box drac-card drac-bg-yellow-pink drac-m-xs\"\n  >\n    <span color=\"black\" class=\"drac-text drac-line-height drac-text-black\"\n      >xs margin</span\n    >\n  </div>\n  <div\n    color=\"purpleCyan\"\n    m=\"sm\"\n    class=\"drac-box drac-card drac-bg-purple-cyan drac-m-sm\"\n  >\n    <span color=\"black\" class=\"drac-text drac-line-height drac-text-black\"\n      >sm margin</span\n    >\n  </div>\n  <div\n    color=\"pinkPurple\"\n    m=\"md\"\n    class=\"drac-box drac-card drac-bg-pink-purple drac-m-md\"\n  >\n    <span color=\"black\" class=\"drac-text drac-line-height drac-text-black\"\n      >medium margin</span\n    >\n  </div>\n</div>\n",
           "react": "<div>\n  <Card color=\"yellowPink\" p=\"xs\">\n    <Text color=\"black\">xs padding</Text>\n  </Card>\n  <Card color=\"purpleCyan\" p=\"sm\">\n    <Text color=\"black\">sm padding</Text>\n  </Card>\n  <Card color=\"pinkPurple\" p=\"md\">\n    <Text color=\"black\">medium padding</Text>\n  </Card>\n  <Card color=\"yellowPink\" m=\"xs\">\n    <Text color=\"black\">xs margin</Text>\n  </Card>\n  <Card color=\"purpleCyan\" m=\"sm\">\n    <Text color=\"black\">sm margin</Text>\n  </Card>\n  <Card color=\"pinkPurple\" m=\"md\">\n    <Text color=\"black\">medium margin</Text>\n  </Card>\n</div>;\n",
           "docs": "Cards come with pre defined spacing primitives for padding and margin that allow for customizing the spacing inside and around Cardes.",
           "screenshot": "./dsp/assets/CardSpacing.png",
@@ -6663,13 +6663,13 @@
         "trigger": "paragraph",
         "languages": {
           "javascriptreact": "<Paragraph>basic</Paragraph>;\n",
-          "html": "<p class=\"drac-text drac-text-white\">basic</p>\n"
+          "html": "<p class=\"drac-text drac-line-height drac-text-white\">basic</p>\n"
         }
       },
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
-          "html": "<p class=\"drac-text drac-text-white\">basic</p>\n",
+          "html": "<p class=\"drac-text drac-line-height drac-text-white\">basic</p>\n",
           "react": "<Paragraph>basic</Paragraph>;\n",
           "docs": "Show a paragraph within an interface.",
           "screenshot": "./dsp/assets/Paragraph.png",
@@ -6677,7 +6677,7 @@
         },
         {
           "title": "Colors",
-          "html": "<div class=\"drac-box\">\n  <p color=\"cyan\" class=\"drac-text drac-text-cyan\">cyan</p>\n  <p color=\"green\" class=\"drac-text drac-text-green\">green</p>\n</div>\n",
+          "html": "<div class=\"drac-box\">\n  <p color=\"cyan\" class=\"drac-text drac-line-height drac-text-cyan\">cyan</p>\n  <p color=\"green\" class=\"drac-text drac-line-height drac-text-green\">green</p>\n</div>\n",
           "react": "<Box>\n  <Paragraph color=\"cyan\">cyan</Paragraph>\n  <Paragraph color=\"green\">green</Paragraph>\n</Box>;\n",
           "docs": "Paragraphs can be customized to use any of the Dracula UI theme colors.",
           "screenshot": "./dsp/assets/ParagraphColors.png",
@@ -6685,7 +6685,7 @@
         },
         {
           "title": "Weights",
-          "html": "<div class=\"drac-box\">\n  <p weight=\"normal\" class=\"drac-text drac-text-white\">normal</p>\n  <p weight=\"semibold\" class=\"drac-text drac-text-semibold drac-text-white\">\n    semibold\n  </p>\n  <p weight=\"bold\" class=\"drac-text drac-text-bold drac-text-white\">bold</p>\n</div>\n",
+          "html": "<div class=\"drac-box\">\n  <p weight=\"normal\" class=\"drac-text drac-line-height drac-text-white\">\n    normal\n  </p>\n  <p\n    weight=\"semibold\"\n    class=\"drac-text drac-text-semibold drac-line-height drac-text-white\"\n  >\n    semibold\n  </p>\n  <p\n    weight=\"bold\"\n    class=\"drac-text drac-text-bold drac-line-height drac-text-white\"\n  >\n    bold\n  </p>\n</div>\n",
           "react": "<Box>\n  <Paragraph weight=\"normal\">normal</Paragraph>\n  <Paragraph weight=\"semibold\">semibold</Paragraph>\n  <Paragraph weight=\"bold\">bold</Paragraph>\n</Box>;\n",
           "docs": "Paragraphs can be defined in different font weights.",
           "screenshot": "./dsp/assets/ParagraphWeights.png",
@@ -6693,11 +6693,19 @@
         },
         {
           "title": "Sizes",
-          "html": "<div class=\"drac-box\">\n  <p class=\"drac-text drac-text-xs drac-text-white\">xsmall</p>\n  <p class=\"drac-text drac-text-sm drac-text-white\">small</p>\n  <p class=\"drac-text drac-text-white\">medium</p>\n  <p class=\"drac-text drac-text-lg drac-text-white\">large</p>\n</div>\n",
+          "html": "<div class=\"drac-box\">\n  <p class=\"drac-text drac-text-xs drac-line-height drac-text-white\">xsmall</p>\n  <p class=\"drac-text drac-text-sm drac-line-height drac-text-white\">small</p>\n  <p class=\"drac-text drac-line-height drac-text-white\">medium</p>\n  <p class=\"drac-text drac-text-lg drac-line-height drac-text-white\">large</p>\n</div>\n",
           "react": "<Box>\n  <Paragraph size=\"xsmall\">xsmall</Paragraph>\n  <Paragraph size=\"small\">small</Paragraph>\n  <Paragraph size=\"medium\">medium</Paragraph>\n  <Paragraph size=\"large\">large</Paragraph>\n</Box>;\n",
           "docs": "Paragraphs can be customize to use several different sizes.",
           "screenshot": "./dsp/assets/ParagraphSizes.png",
           "svgData": "./dsp/assets/svgs/ParagraphSizes.svg"
+        },
+        {
+          "title": "Line Height",
+          "html": "<div class=\"drac-box\">\n  <p color=\"red\" class=\"drac-text drac-line-height drac-text-red\">none</p>\n  <p lineheight=\"none\" class=\"drac-text drac-line-height-none drac-text-white\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </p>\n  <p color=\"orange\" class=\"drac-text drac-line-height drac-text-orange\">\n    small\n  </p>\n  <p lineheight=\"small\" class=\"drac-text drac-line-height-sm drac-text-white\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </p>\n  <p color=\"yellow\" class=\"drac-text drac-line-height drac-text-yellow\">\n    normal\n  </p>\n  <p lineheight=\"normal\" class=\"drac-text drac-line-height drac-text-white\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </p>\n  <p color=\"pink\" class=\"drac-text drac-line-height drac-text-pink\">medium</p>\n  <p lineheight=\"medium\" class=\"drac-text drac-line-height-md drac-text-white\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </p>\n  <p color=\"cyan\" class=\"drac-text drac-line-height drac-text-cyan\">large</p>\n  <p lineheight=\"large\" class=\"drac-text drac-line-height-lg drac-text-white\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </p>\n  <p color=\"green\" class=\"drac-text drac-line-height drac-text-green\">xlarge</p>\n  <p lineheight=\"xlarge\" class=\"drac-text drac-line-height-xl drac-text-white\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </p>\n</div>\n",
+          "react": "<Box>\n  <Paragraph color=\"red\">none</Paragraph>\n  <Paragraph lineHeight=\"none\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </Paragraph>\n  <Paragraph color=\"orange\">small</Paragraph>\n  <Paragraph lineHeight=\"small\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </Paragraph>\n  <Paragraph color=\"yellow\">normal</Paragraph>\n  <Paragraph lineHeight=\"normal\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </Paragraph>\n  <Paragraph color=\"pink\">medium</Paragraph>\n  <Paragraph lineHeight=\"medium\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </Paragraph>\n  <Paragraph color=\"cyan\">large</Paragraph>\n  <Paragraph lineHeight=\"large\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </Paragraph>\n  <Paragraph color=\"green\">xlarge</Paragraph>\n  <Paragraph lineHeight=\"xlarge\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </Paragraph>\n</Box>;\n",
+          "docs": "Paragraphs can be controlled with different line heights.",
+          "screenshot": "./dsp/assets/ParagraphLine Height.png",
+          "svgData": "./dsp/assets/svgs/ParagraphLine Height.svg"
         }
       ],
       "ext_com_draculaui_props": {
@@ -6722,7 +6730,7 @@
         },
         "weight": {
           "defaultValue": null,
-          "description": "Controsl the weight of the text.",
+          "description": "Controls the weight of the text.",
           "name": "weight",
           "parent": {
             "fileName": "dracula-ui/src/components/Text/Text.tsx",
@@ -6737,6 +6745,25 @@
           "required": false,
           "type": {
             "name": "\"normal\" | \"semibold\" | \"bold\" | undefined"
+          }
+        },
+        "lineHeight": {
+          "defaultValue": null,
+          "description": "Controls the line height of a text.",
+          "name": "lineHeight",
+          "parent": {
+            "fileName": "dracula-ui/src/components/Text/Text.tsx",
+            "name": "TextProps"
+          },
+          "declarations": [
+            {
+              "fileName": "dracula-ui/src/components/Text/Text.tsx",
+              "name": "TextProps"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"large\" | \"medium\" | \"small\" | \"normal\" | \"none\" | \"xlarge\" | undefined"
           }
         },
         "color": {
@@ -7015,7 +7042,7 @@
           },
           "weight": {
             "defaultValue": null,
-            "description": "Controsl the weight of the text.",
+            "description": "Controls the weight of the text.",
             "name": "weight",
             "parent": {
               "fileName": "dracula-ui/src/components/Text/Text.tsx",
@@ -7030,6 +7057,25 @@
             "required": false,
             "type": {
               "name": "\"normal\" | \"semibold\" | \"bold\" | undefined"
+            }
+          },
+          "lineHeight": {
+            "defaultValue": null,
+            "description": "Controls the line height of a text.",
+            "name": "lineHeight",
+            "parent": {
+              "fileName": "dracula-ui/src/components/Text/Text.tsx",
+              "name": "TextProps"
+            },
+            "declarations": [
+              {
+                "fileName": "dracula-ui/src/components/Text/Text.tsx",
+                "name": "TextProps"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"large\" | \"medium\" | \"small\" | \"normal\" | \"none\" | \"xlarge\" | undefined"
             }
           },
           "color": {
@@ -8530,13 +8576,13 @@
         "trigger": "spacing",
         "languages": {
           "javascriptreact": "<Box p=\"md\" color=\"pink\">\n  <Box>\n    <Text>Padding</Text>\n  </Box>\n</Box>;\n",
-          "html": "<div p=\"md\" color=\"pink\" class=\"drac-box drac-bg-pink drac-p-md\">\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-text-white\">Padding</span>\n  </div>\n</div>\n"
+          "html": "<div p=\"md\" color=\"pink\" class=\"drac-box drac-bg-pink drac-p-md\">\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-line-height drac-text-white\">Padding</span>\n  </div>\n</div>\n"
         }
       },
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
-          "html": "<div p=\"md\" color=\"pink\" class=\"drac-box drac-bg-pink drac-p-md\">\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-text-white\">Padding</span>\n  </div>\n</div>\n",
+          "html": "<div p=\"md\" color=\"pink\" class=\"drac-box drac-bg-pink drac-p-md\">\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-line-height drac-text-white\">Padding</span>\n  </div>\n</div>\n",
           "react": "<Box p=\"md\" color=\"pink\">\n  <Box>\n    <Text>Padding</Text>\n  </Box>\n</Box>;\n",
           "docs": "",
           "screenshot": "./dsp/assets/Spacing.png",
@@ -8544,7 +8590,7 @@
         },
         {
           "title": "Padding",
-          "html": "<div class=\"drac-box\">\n  <div p=\"sm\" color=\"pink\" class=\"drac-box drac-bg-pink drac-p-sm\">\n    <div class=\"drac-box\">\n      <span class=\"drac-text drac-text-white\">padding sm</span>\n    </div>\n  </div>\n  <div py=\"sm\" color=\"purple\" class=\"drac-box drac-bg-purple drac-py-sm\">\n    <div class=\"drac-box\">\n      <span class=\"drac-text drac-text-white\">padding y sm</span>\n    </div>\n  </div>\n  <div px=\"sm\" color=\"red\" class=\"drac-box drac-bg-red drac-px-sm\">\n    <div class=\"drac-box\">\n      <span class=\"drac-text drac-text-white\">padding x sm</span>\n    </div>\n  </div>\n  <div\n    pt=\"sm\"\n    pb=\"md\"\n    pl=\"lg\"\n    pr=\"xxs\"\n    color=\"purpleCyan\"\n    class=\"drac-box drac-bg-purple-cyan drac-pt-sm drac-pb-md drac-pl-lg drac-pr-xxs\"\n  >\n    <div class=\"drac-box\">\n      <span class=\"drac-text drac-text-white\">mixing all styles</span>\n    </div>\n  </div>\n</div>\n",
+          "html": "<div class=\"drac-box\">\n  <div p=\"sm\" color=\"pink\" class=\"drac-box drac-bg-pink drac-p-sm\">\n    <div class=\"drac-box\">\n      <span class=\"drac-text drac-line-height drac-text-white\">padding sm</span>\n    </div>\n  </div>\n  <div py=\"sm\" color=\"purple\" class=\"drac-box drac-bg-purple drac-py-sm\">\n    <div class=\"drac-box\">\n      <span class=\"drac-text drac-line-height drac-text-white\"\n        >padding y sm</span\n      >\n    </div>\n  </div>\n  <div px=\"sm\" color=\"red\" class=\"drac-box drac-bg-red drac-px-sm\">\n    <div class=\"drac-box\">\n      <span class=\"drac-text drac-line-height drac-text-white\"\n        >padding x sm</span\n      >\n    </div>\n  </div>\n  <div\n    pt=\"sm\"\n    pb=\"md\"\n    pl=\"lg\"\n    pr=\"xxs\"\n    color=\"purpleCyan\"\n    class=\"drac-box drac-bg-purple-cyan drac-pt-sm drac-pb-md drac-pl-lg drac-pr-xxs\"\n  >\n    <div class=\"drac-box\">\n      <span class=\"drac-text drac-line-height drac-text-white\"\n        >mixing all styles</span\n      >\n    </div>\n  </div>\n</div>\n",
           "react": "<Box>\n  <Box p=\"sm\" color=\"pink\">\n    <Box>\n      <Text>padding sm</Text>\n    </Box>\n  </Box>\n  <Box py=\"sm\" color=\"purple\">\n    <Box>\n      <Text>padding y sm</Text>\n    </Box>\n  </Box>\n  <Box px=\"sm\" color=\"red\">\n    <Box>\n      <Text>padding x sm</Text>\n    </Box>\n  </Box>\n  <Box pt=\"sm\" pb=\"md\" pl=\"lg\" pr=\"xxs\" color=\"purpleCyan\">\n    <Box>\n      <Text>mixing all styles</Text>\n    </Box>\n  </Box>\n</Box>;\n",
           "docs": "",
           "screenshot": "./dsp/assets/SpacingPadding.png",
@@ -8552,7 +8598,7 @@
         },
         {
           "title": "Margin",
-          "html": "<div class=\"drac-box\">\n  <div m=\"sm\" color=\"pink\" class=\"drac-box drac-bg-pink drac-m-sm\">\n    <div class=\"drac-box\">\n      <span class=\"drac-text drac-text-white\">margin sm</span>\n    </div>\n  </div>\n  <div my=\"sm\" color=\"purple\" class=\"drac-box drac-bg-purple drac-my-sm\">\n    <div class=\"drac-box\">\n      <span class=\"drac-text drac-text-white\">margin y sm</span>\n    </div>\n  </div>\n  <div mx=\"sm\" color=\"red\" class=\"drac-box drac-bg-red drac-mx-sm\">\n    <div class=\"drac-box\">\n      <span class=\"drac-text drac-text-white\">margin x sm</span>\n    </div>\n  </div>\n  <div\n    mt=\"sm\"\n    mb=\"md\"\n    ml=\"lg\"\n    mr=\"xxs\"\n    color=\"purpleCyan\"\n    class=\"drac-box drac-bg-purple-cyan drac-mt-sm drac-mb-md drac-ml-lg drac-mr-xxs\"\n  >\n    <div class=\"drac-box\">\n      <span class=\"drac-text drac-text-white\">mixing all styles</span>\n    </div>\n  </div>\n</div>\n",
+          "html": "<div class=\"drac-box\">\n  <div m=\"sm\" color=\"pink\" class=\"drac-box drac-bg-pink drac-m-sm\">\n    <div class=\"drac-box\">\n      <span class=\"drac-text drac-line-height drac-text-white\">margin sm</span>\n    </div>\n  </div>\n  <div my=\"sm\" color=\"purple\" class=\"drac-box drac-bg-purple drac-my-sm\">\n    <div class=\"drac-box\">\n      <span class=\"drac-text drac-line-height drac-text-white\"\n        >margin y sm</span\n      >\n    </div>\n  </div>\n  <div mx=\"sm\" color=\"red\" class=\"drac-box drac-bg-red drac-mx-sm\">\n    <div class=\"drac-box\">\n      <span class=\"drac-text drac-line-height drac-text-white\"\n        >margin x sm</span\n      >\n    </div>\n  </div>\n  <div\n    mt=\"sm\"\n    mb=\"md\"\n    ml=\"lg\"\n    mr=\"xxs\"\n    color=\"purpleCyan\"\n    class=\"drac-box drac-bg-purple-cyan drac-mt-sm drac-mb-md drac-ml-lg drac-mr-xxs\"\n  >\n    <div class=\"drac-box\">\n      <span class=\"drac-text drac-line-height drac-text-white\"\n        >mixing all styles</span\n      >\n    </div>\n  </div>\n</div>\n",
           "react": "<Box>\n  <Box m=\"sm\" color=\"pink\">\n    <Box>\n      <Text>margin sm</Text>\n    </Box>\n  </Box>\n  <Box my=\"sm\" color=\"purple\">\n    <Box>\n      <Text>margin y sm</Text>\n    </Box>\n  </Box>\n  <Box mx=\"sm\" color=\"red\">\n    <Box>\n      <Text>margin x sm</Text>\n    </Box>\n  </Box>\n  <Box mt=\"sm\" mb=\"md\" ml=\"lg\" mr=\"xxs\" color=\"purpleCyan\">\n    <Box>\n      <Text>mixing all styles</Text>\n    </Box>\n  </Box>\n</Box>;\n",
           "docs": "",
           "screenshot": "./dsp/assets/SpacingMargin.png",
@@ -10221,13 +10267,13 @@
         "trigger": "text",
         "languages": {
           "javascriptreact": "<Text>basic</Text>;\n",
-          "html": "<span class=\"drac-text drac-text-white\">basic</span>\n"
+          "html": "<span class=\"drac-text drac-line-height drac-text-white\">basic</span>\n"
         }
       },
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
-          "html": "<span class=\"drac-text drac-text-white\">basic</span>\n",
+          "html": "<span class=\"drac-text drac-line-height drac-text-white\">basic</span>\n",
           "react": "<Text>basic</Text>;\n",
           "docs": "Show inline text within an interface.",
           "screenshot": "./dsp/assets/Text.png",
@@ -10235,7 +10281,7 @@
         },
         {
           "title": "Colors",
-          "html": "<div class=\"drac-box\">\n  <div class=\"drac-box\">\n    <span color=\"cyan\" class=\"drac-text drac-text-cyan\">cyan</span>\n  </div>\n  <div class=\"drac-box\">\n    <span color=\"green\" class=\"drac-text drac-text-green\">green</span>\n  </div>\n</div>\n",
+          "html": "<div class=\"drac-box\">\n  <div class=\"drac-box\">\n    <span color=\"cyan\" class=\"drac-text drac-line-height drac-text-cyan\"\n      >cyan</span\n    >\n  </div>\n  <div class=\"drac-box\">\n    <span color=\"green\" class=\"drac-text drac-line-height drac-text-green\"\n      >green</span\n    >\n  </div>\n</div>\n",
           "react": "<Box>\n  <Box>\n    <Text color=\"cyan\">cyan</Text>\n  </Box>\n  <Box>\n    <Text color=\"green\">green</Text>\n  </Box>\n</Box>;\n",
           "docs": "Text can be customized to use any of the Dracula UI theme colors.",
           "screenshot": "./dsp/assets/TextColors.png",
@@ -10243,7 +10289,7 @@
         },
         {
           "title": "Weights",
-          "html": "<div class=\"drac-box\">\n  <div class=\"drac-box\">\n    <span weight=\"normal\" class=\"drac-text drac-text-white\">normal</span>\n  </div>\n  <div class=\"drac-box\">\n    <span weight=\"semibold\" class=\"drac-text drac-text-semibold drac-text-white\"\n      >semibold</span\n    >\n  </div>\n  <div class=\"drac-box\">\n    <span weight=\"bold\" class=\"drac-text drac-text-bold drac-text-white\"\n      >bold</span\n    >\n  </div>\n</div>\n",
+          "html": "<div class=\"drac-box\">\n  <div class=\"drac-box\">\n    <span weight=\"normal\" class=\"drac-text drac-line-height drac-text-white\"\n      >normal</span\n    >\n  </div>\n  <div class=\"drac-box\">\n    <span\n      weight=\"semibold\"\n      class=\"drac-text drac-text-semibold drac-line-height drac-text-white\"\n      >semibold</span\n    >\n  </div>\n  <div class=\"drac-box\">\n    <span\n      weight=\"bold\"\n      class=\"drac-text drac-text-bold drac-line-height drac-text-white\"\n      >bold</span\n    >\n  </div>\n</div>\n",
           "react": "<Box>\n  <Box>\n    <Text weight=\"normal\">normal</Text>\n  </Box>\n  <Box>\n    <Text weight=\"semibold\">semibold</Text>\n  </Box>\n  <Box>\n    <Text weight=\"bold\">bold</Text>\n  </Box>\n</Box>;\n",
           "docs": "Text can be defined in different font weights.",
           "screenshot": "./dsp/assets/TextWeights.png",
@@ -10251,7 +10297,7 @@
         },
         {
           "title": "Sizes",
-          "html": "<div class=\"drac-box\">\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-text-xs drac-text-white\">xsmall</span>\n  </div>\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-text-sm drac-text-white\">small</span>\n  </div>\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-text-white\">medium</span>\n  </div>\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-text-lg drac-text-white\">large</span>\n  </div>\n</div>\n",
+          "html": "<div class=\"drac-box\">\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-text-xs drac-line-height drac-text-white\"\n      >xsmall</span\n    >\n  </div>\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-text-sm drac-line-height drac-text-white\"\n      >small</span\n    >\n  </div>\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-line-height drac-text-white\">medium</span>\n  </div>\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-text-lg drac-line-height drac-text-white\"\n      >large</span\n    >\n  </div>\n</div>\n",
           "react": "<Box>\n  <Box>\n    <Text size=\"xsmall\">xsmall</Text>\n  </Box>\n  <Box>\n    <Text size=\"small\">small</Text>\n  </Box>\n  <Box>\n    <Text size=\"medium\">medium</Text>\n  </Box>\n  <Box>\n    <Text size=\"large\">large</Text>\n  </Box>\n</Box>;\n",
           "docs": "Text can be customize to use several different sizes.",
           "screenshot": "./dsp/assets/TextSizes.png",
@@ -10280,7 +10326,7 @@
         },
         "weight": {
           "defaultValue": null,
-          "description": "Controsl the weight of the text.",
+          "description": "Controls the weight of the text.",
           "name": "weight",
           "parent": {
             "fileName": "src/components/Text/Text.tsx",
@@ -10295,6 +10341,25 @@
           "required": false,
           "type": {
             "name": "\"normal\" | \"semibold\" | \"bold\" | undefined"
+          }
+        },
+        "lineHeight": {
+          "defaultValue": null,
+          "description": "Controls the line height of a text.",
+          "name": "lineHeight",
+          "parent": {
+            "fileName": "src/components/Text/Text.tsx",
+            "name": "TextProps"
+          },
+          "declarations": [
+            {
+              "fileName": "src/components/Text/Text.tsx",
+              "name": "TextProps"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"large\" | \"medium\" | \"small\" | \"normal\" | \"none\" | \"xlarge\" | undefined"
           }
         },
         "color": {
@@ -10573,7 +10638,7 @@
           },
           "weight": {
             "defaultValue": null,
-            "description": "Controsl the weight of the text.",
+            "description": "Controls the weight of the text.",
             "name": "weight",
             "parent": {
               "fileName": "src/components/Text/Text.tsx",
@@ -10588,6 +10653,25 @@
             "required": false,
             "type": {
               "name": "\"normal\" | \"semibold\" | \"bold\" | undefined"
+            }
+          },
+          "lineHeight": {
+            "defaultValue": null,
+            "description": "Controls the line height of a text.",
+            "name": "lineHeight",
+            "parent": {
+              "fileName": "src/components/Text/Text.tsx",
+              "name": "TextProps"
+            },
+            "declarations": [
+              {
+                "fileName": "src/components/Text/Text.tsx",
+                "name": "TextProps"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"large\" | \"medium\" | \"small\" | \"normal\" | \"none\" | \"xlarge\" | undefined"
             }
           },
           "color": {
