@@ -11,13 +11,13 @@
     "trigger": "card",
     "languages": {
       "javascriptreact": "<Card color=\"purple\" p=\"sm\">\n  <Text>Dracula</Text>\n</Card>;\n",
-      "html": "<div color=\"purple\" p=\"sm\" class=\"drac-box drac-card drac-bg-purple drac-p-sm\">\n  <span class=\"drac-text drac-text-white\">Dracula</span>\n</div>\n"
+      "html": "<div color=\"purple\" p=\"sm\" class=\"drac-box drac-card drac-bg-purple drac-p-sm\">\n  <span class=\"drac-text drac-line-height drac-text-white\">Dracula</span>\n</div>\n"
     }
   },
   "ext_com_draculaui_variations": [
     {
       "title": "Usage",
-      "html": "<div color=\"purple\" p=\"sm\" class=\"drac-box drac-card drac-bg-purple drac-p-sm\">\n  <span class=\"drac-text drac-text-white\">Dracula</span>\n</div>\n",
+      "html": "<div color=\"purple\" p=\"sm\" class=\"drac-box drac-card drac-bg-purple drac-p-sm\">\n  <span class=\"drac-text drac-line-height drac-text-white\">Dracula</span>\n</div>\n",
       "react": "<Card color=\"purple\" p=\"sm\">\n  <Text>Dracula</Text>\n</Card>;\n",
       "docs": "A Card is analogous to an HTML div and can contain any other component. Use Cards when you want to add hierarchy or highlight parts of your content.",
       "screenshot": "./dsp/assets/Card.png",
@@ -25,7 +25,7 @@
     },
     {
       "title": "Colors",
-      "html": "<div\n  color=\"pinkPurple\"\n  p=\"sm\"\n  class=\"drac-box drac-card drac-bg-pink-purple drac-p-sm\"\n>\n  <span class=\"drac-text drac-text-white\">Pink Purple</span>\n</div>\n",
+      "html": "<div\n  color=\"pinkPurple\"\n  p=\"sm\"\n  class=\"drac-box drac-card drac-bg-pink-purple drac-p-sm\"\n>\n  <span class=\"drac-text drac-line-height drac-text-white\">Pink Purple</span>\n</div>\n",
       "react": "<Card color=\"pinkPurple\" p=\"sm\">\n  <Text>Pink Purple</Text>\n</Card>;\n",
       "docs": "Cards can be customized to use any of the Dracula UI theme colors, including all solid, gradient, and animated colors.",
       "screenshot": "./dsp/assets/CardColors.png",
@@ -33,7 +33,7 @@
     },
     {
       "title": "Variants: subtle",
-      "html": "<div>\n  <div\n    variant=\"subtle\"\n    color=\"pink\"\n    p=\"md\"\n    m=\"md\"\n    class=\"drac-box drac-card drac-card-subtle drac-border-pink drac-bg-pink drac-p-md drac-m-md\"\n  >\n    <span color=\"pink\" class=\"drac-text drac-text-pink\">Subtle Card</span>\n  </div>\n</div>\n",
+      "html": "<div>\n  <div\n    variant=\"subtle\"\n    color=\"pink\"\n    p=\"md\"\n    m=\"md\"\n    class=\"drac-box drac-card drac-card-subtle drac-border-pink drac-bg-pink drac-p-md drac-m-md\"\n  >\n    <span color=\"pink\" class=\"drac-text drac-line-height drac-text-pink\"\n      >Subtle Card</span\n    >\n  </div>\n</div>\n",
       "react": "<div>\n  <Card variant=\"subtle\" color=\"pink\" p=\"md\" m=\"md\">\n    <Text color=\"pink\">Subtle Card</Text>\n  </Card>\n</div>;\n",
       "docs": "Use variant=\"subtle\" to create discrete or secondary cards",
       "screenshot": "./dsp/assets/CardVariants: subtle.png",
@@ -41,7 +41,7 @@
     },
     {
       "title": "Spacing",
-      "html": "<div>\n  <div\n    color=\"yellowPink\"\n    p=\"xs\"\n    class=\"drac-box drac-card drac-bg-yellow-pink drac-p-xs\"\n  >\n    <span color=\"black\" class=\"drac-text drac-text-black\">xs padding</span>\n  </div>\n  <div\n    color=\"purpleCyan\"\n    p=\"sm\"\n    class=\"drac-box drac-card drac-bg-purple-cyan drac-p-sm\"\n  >\n    <span color=\"black\" class=\"drac-text drac-text-black\">sm padding</span>\n  </div>\n  <div\n    color=\"pinkPurple\"\n    p=\"md\"\n    class=\"drac-box drac-card drac-bg-pink-purple drac-p-md\"\n  >\n    <span color=\"black\" class=\"drac-text drac-text-black\">medium padding</span>\n  </div>\n  <div\n    color=\"yellowPink\"\n    m=\"xs\"\n    class=\"drac-box drac-card drac-bg-yellow-pink drac-m-xs\"\n  >\n    <span color=\"black\" class=\"drac-text drac-text-black\">xs margin</span>\n  </div>\n  <div\n    color=\"purpleCyan\"\n    m=\"sm\"\n    class=\"drac-box drac-card drac-bg-purple-cyan drac-m-sm\"\n  >\n    <span color=\"black\" class=\"drac-text drac-text-black\">sm margin</span>\n  </div>\n  <div\n    color=\"pinkPurple\"\n    m=\"md\"\n    class=\"drac-box drac-card drac-bg-pink-purple drac-m-md\"\n  >\n    <span color=\"black\" class=\"drac-text drac-text-black\">medium margin</span>\n  </div>\n</div>\n",
+      "html": "<div>\n  <div\n    color=\"yellowPink\"\n    p=\"xs\"\n    class=\"drac-box drac-card drac-bg-yellow-pink drac-p-xs\"\n  >\n    <span color=\"black\" class=\"drac-text drac-line-height drac-text-black\"\n      >xs padding</span\n    >\n  </div>\n  <div\n    color=\"purpleCyan\"\n    p=\"sm\"\n    class=\"drac-box drac-card drac-bg-purple-cyan drac-p-sm\"\n  >\n    <span color=\"black\" class=\"drac-text drac-line-height drac-text-black\"\n      >sm padding</span\n    >\n  </div>\n  <div\n    color=\"pinkPurple\"\n    p=\"md\"\n    class=\"drac-box drac-card drac-bg-pink-purple drac-p-md\"\n  >\n    <span color=\"black\" class=\"drac-text drac-line-height drac-text-black\"\n      >medium padding</span\n    >\n  </div>\n  <div\n    color=\"yellowPink\"\n    m=\"xs\"\n    class=\"drac-box drac-card drac-bg-yellow-pink drac-m-xs\"\n  >\n    <span color=\"black\" class=\"drac-text drac-line-height drac-text-black\"\n      >xs margin</span\n    >\n  </div>\n  <div\n    color=\"purpleCyan\"\n    m=\"sm\"\n    class=\"drac-box drac-card drac-bg-purple-cyan drac-m-sm\"\n  >\n    <span color=\"black\" class=\"drac-text drac-line-height drac-text-black\"\n      >sm margin</span\n    >\n  </div>\n  <div\n    color=\"pinkPurple\"\n    m=\"md\"\n    class=\"drac-box drac-card drac-bg-pink-purple drac-m-md\"\n  >\n    <span color=\"black\" class=\"drac-text drac-line-height drac-text-black\"\n      >medium margin</span\n    >\n  </div>\n</div>\n",
       "react": "<div>\n  <Card color=\"yellowPink\" p=\"xs\">\n    <Text color=\"black\">xs padding</Text>\n  </Card>\n  <Card color=\"purpleCyan\" p=\"sm\">\n    <Text color=\"black\">sm padding</Text>\n  </Card>\n  <Card color=\"pinkPurple\" p=\"md\">\n    <Text color=\"black\">medium padding</Text>\n  </Card>\n  <Card color=\"yellowPink\" m=\"xs\">\n    <Text color=\"black\">xs margin</Text>\n  </Card>\n  <Card color=\"purpleCyan\" m=\"sm\">\n    <Text color=\"black\">sm margin</Text>\n  </Card>\n  <Card color=\"pinkPurple\" m=\"md\">\n    <Text color=\"black\">medium margin</Text>\n  </Card>\n</div>;\n",
       "docs": "Cards come with pre defined spacing primitives for padding and margin that allow for customizing the spacing inside and around Cardes.",
       "screenshot": "./dsp/assets/CardSpacing.png",

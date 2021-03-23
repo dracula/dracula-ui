@@ -2740,6 +2740,13 @@
         --font-4xl: 2.25rem; /* 36px */
         --font-5xl: 3rem; /* 48px */
         --font-6xl: 4rem; /* 64px */
+
+        --line-height-none: 1;
+        --line-height-sm: 1.25;
+        --line-height: 1.375;
+        --line-height-md: 1.5;
+        --line-height-lg: 1.625;
+        --line-height-xl: 2;
       }
       .drac-heading,
       .drac-select,
@@ -2764,9 +2771,6 @@
         background: var(--purple-100);
         color: var(--purple-900);
         padding: 0.1rem 0.3rem;
-      }
-      p.drac-text {
-        line-height: 1.7rem;
       } /* -- Heading -- */
       .drac-heading-1 {
         font-size: var(--font-5xl);
@@ -2803,6 +2807,24 @@
       }
       .drac-text.drac-text-xs {
         font-size: var(--font-xs);
+      } /* -- Line Height -- */
+      .drac-line-height-none {
+        line-height: var(--line-height-none);
+      }
+      .drac-line-height-sm {
+        line-height: var(--line-height-sm);
+      }
+      .drac-line-height {
+        line-height: var(--line-height);
+      }
+      .drac-line-height-md {
+        line-height: var(--line-height-md);
+      }
+      .drac-line-height-lg {
+        line-height: var(--line-height-lg);
+      }
+      .drac-line-height-xl {
+        line-height: var(--line-height-xl);
       }
       .drac-btn {
         -webkit-appearance: none;
@@ -4093,7 +4115,7 @@
           p="xs"
           class="drac-box drac-bg-yellow-pink drac-p-xs"
         >
-          <span color="black" class="drac-text drac-text-black"
+          <span color="black" class="drac-text drac-line-height drac-text-black"
             >xs padding</span
           >
         </div>
@@ -4102,7 +4124,7 @@
           p="sm"
           class="drac-box drac-bg-purple-cyan drac-p-sm"
         >
-          <span color="black" class="drac-text drac-text-black"
+          <span color="black" class="drac-text drac-line-height drac-text-black"
             >sm padding</span
           >
         </div>
@@ -4111,7 +4133,7 @@
           p="md"
           class="drac-box drac-bg-pink-purple drac-p-md"
         >
-          <span color="black" class="drac-text drac-text-black"
+          <span color="black" class="drac-text drac-line-height drac-text-black"
             >medium padding</span
           >
         </div>
@@ -4120,21 +4142,25 @@
           m="xs"
           class="drac-box drac-bg-yellow-pink drac-m-xs"
         >
-          <span color="black" class="drac-text drac-text-black">xs margin</span>
+          <span color="black" class="drac-text drac-line-height drac-text-black"
+            >xs margin</span
+          >
         </div>
         <div
           color="purpleCyan"
           m="sm"
           class="drac-box drac-bg-purple-cyan drac-m-sm"
         >
-          <span color="black" class="drac-text drac-text-black">sm margin</span>
+          <span color="black" class="drac-text drac-line-height drac-text-black"
+            >sm margin</span
+          >
         </div>
         <div
           color="pinkPurple"
           m="md"
           class="drac-box drac-bg-pink-purple drac-m-md"
         >
-          <span color="black" class="drac-text drac-text-black"
+          <span color="black" class="drac-text drac-line-height drac-text-black"
             >medium margin</span
           >
         </div>

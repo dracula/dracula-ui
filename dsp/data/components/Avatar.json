@@ -25,7 +25,7 @@
     },
     {
       "title": "Variants",
-      "html": "<div>\n  <span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-subtle\"\n    ><span color=\"white\" class=\"drac-text drac-text-white\">ZR</span></span\n  ><span class=\"drac-avatar drac-bg-green-transparent drac-text-green\"\n    ><span color=\"white\" class=\"drac-text drac-text-white\">NF</span></span\n  >\n</div>\n",
+      "html": "<div>\n  <span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-subtle\"\n    ><span color=\"white\" class=\"drac-text drac-line-height drac-text-white\"\n      >ZR</span\n    ></span\n  ><span class=\"drac-avatar drac-bg-green-transparent drac-text-green\"\n    ><span color=\"white\" class=\"drac-text drac-line-height drac-text-white\"\n      >NF</span\n    ></span\n  >\n</div>\n",
       "react": "<div>\n  <Avatar title=\"Zeno Rocha\" variant=\"subtle\" />\n  <Avatar title=\"Netto Farah\" variant=\"normal\" />\n</div>;\n",
       "docs": "Avatars accept multiple variants, which can be used to render a more subtle variation of the Avatar component.",
       "screenshot": "./dsp/assets/AvatarVariants.png",
@@ -33,7 +33,7 @@
     },
     {
       "title": "Borders",
-      "html": "<div>\n  <span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-lg-stroke\"\n    ><span color=\"white\" class=\"drac-text drac-text-white\">NF</span></span\n  ><span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-no-border\"\n    ><span color=\"white\" class=\"drac-text drac-text-white\">NF</span></span\n  >\n</div>\n",
+      "html": "<div>\n  <span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-lg-stroke\"\n    ><span color=\"white\" class=\"drac-text drac-line-height drac-text-white\"\n      >NF</span\n    ></span\n  ><span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-no-border\"\n    ><span color=\"white\" class=\"drac-text drac-line-height drac-text-white\"\n      >NF</span\n    ></span\n  >\n</div>\n",
       "react": "<div>\n  <Avatar title=\"Netto Farah\" borderVariant=\"large\" />\n  <Avatar title=\"Netto Farah\" borderVariant=\"none\" />\n</div>;\n",
       "docs": "A border variant allows for customization of the border width of an Avatar, or for an Avatar to be rendered without a border.",
       "screenshot": "./dsp/assets/AvatarBorders.png",
@@ -41,7 +41,7 @@
     },
     {
       "title": "Colors",
-      "html": "<div>\n  <span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green\"\n    color=\"cyan\"\n    ><span color=\"white\" class=\"drac-text drac-text-white\">NF</span></span\n  >\n</div>\n",
+      "html": "<div>\n  <span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green\"\n    color=\"cyan\"\n    ><span color=\"white\" class=\"drac-text drac-line-height drac-text-white\"\n      >NF</span\n    ></span\n  >\n</div>\n",
       "react": "<div>\n  <Avatar title=\"Netto Farah\" color=\"cyan\" />\n</div>;\n",
       "docs": "The Avatar component accepts a *color* param that allows for customizing the background and accent color for an Avatar.",
       "screenshot": "./dsp/assets/AvatarColors.png",

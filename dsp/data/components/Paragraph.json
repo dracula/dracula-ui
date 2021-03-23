@@ -11,13 +11,13 @@
     "trigger": "paragraph",
     "languages": {
       "javascriptreact": "<Paragraph>basic</Paragraph>;\n",
-      "html": "<p class=\"drac-text drac-text-white\">basic</p>\n"
+      "html": "<p class=\"drac-text drac-line-height drac-text-white\">basic</p>\n"
     }
   },
   "ext_com_draculaui_variations": [
     {
       "title": "Usage",
-      "html": "<p class=\"drac-text drac-text-white\">basic</p>\n",
+      "html": "<p class=\"drac-text drac-line-height drac-text-white\">basic</p>\n",
       "react": "<Paragraph>basic</Paragraph>;\n",
       "docs": "Show a paragraph within an interface.",
       "screenshot": "./dsp/assets/Paragraph.png",
@@ -25,7 +25,7 @@
     },
     {
       "title": "Colors",
-      "html": "<div class=\"drac-box\">\n  <p color=\"cyan\" class=\"drac-text drac-text-cyan\">cyan</p>\n  <p color=\"green\" class=\"drac-text drac-text-green\">green</p>\n</div>\n",
+      "html": "<div class=\"drac-box\">\n  <p color=\"cyan\" class=\"drac-text drac-line-height drac-text-cyan\">cyan</p>\n  <p color=\"green\" class=\"drac-text drac-line-height drac-text-green\">green</p>\n</div>\n",
       "react": "<Box>\n  <Paragraph color=\"cyan\">cyan</Paragraph>\n  <Paragraph color=\"green\">green</Paragraph>\n</Box>;\n",
       "docs": "Paragraphs can be customized to use any of the Dracula UI theme colors.",
       "screenshot": "./dsp/assets/ParagraphColors.png",
@@ -33,7 +33,7 @@
     },
     {
       "title": "Weights",
-      "html": "<div class=\"drac-box\">\n  <p weight=\"normal\" class=\"drac-text drac-text-white\">normal</p>\n  <p weight=\"semibold\" class=\"drac-text drac-text-semibold drac-text-white\">\n    semibold\n  </p>\n  <p weight=\"bold\" class=\"drac-text drac-text-bold drac-text-white\">bold</p>\n</div>\n",
+      "html": "<div class=\"drac-box\">\n  <p weight=\"normal\" class=\"drac-text drac-line-height drac-text-white\">\n    normal\n  </p>\n  <p\n    weight=\"semibold\"\n    class=\"drac-text drac-text-semibold drac-line-height drac-text-white\"\n  >\n    semibold\n  </p>\n  <p\n    weight=\"bold\"\n    class=\"drac-text drac-text-bold drac-line-height drac-text-white\"\n  >\n    bold\n  </p>\n</div>\n",
       "react": "<Box>\n  <Paragraph weight=\"normal\">normal</Paragraph>\n  <Paragraph weight=\"semibold\">semibold</Paragraph>\n  <Paragraph weight=\"bold\">bold</Paragraph>\n</Box>;\n",
       "docs": "Paragraphs can be defined in different font weights.",
       "screenshot": "./dsp/assets/ParagraphWeights.png",
@@ -41,11 +41,19 @@
     },
     {
       "title": "Sizes",
-      "html": "<div class=\"drac-box\">\n  <p class=\"drac-text drac-text-xs drac-text-white\">xsmall</p>\n  <p class=\"drac-text drac-text-sm drac-text-white\">small</p>\n  <p class=\"drac-text drac-text-white\">medium</p>\n  <p class=\"drac-text drac-text-lg drac-text-white\">large</p>\n</div>\n",
+      "html": "<div class=\"drac-box\">\n  <p class=\"drac-text drac-text-xs drac-line-height drac-text-white\">xsmall</p>\n  <p class=\"drac-text drac-text-sm drac-line-height drac-text-white\">small</p>\n  <p class=\"drac-text drac-line-height drac-text-white\">medium</p>\n  <p class=\"drac-text drac-text-lg drac-line-height drac-text-white\">large</p>\n</div>\n",
       "react": "<Box>\n  <Paragraph size=\"xsmall\">xsmall</Paragraph>\n  <Paragraph size=\"small\">small</Paragraph>\n  <Paragraph size=\"medium\">medium</Paragraph>\n  <Paragraph size=\"large\">large</Paragraph>\n</Box>;\n",
       "docs": "Paragraphs can be customize to use several different sizes.",
       "screenshot": "./dsp/assets/ParagraphSizes.png",
       "svgData": "./dsp/assets/svgs/ParagraphSizes.svg"
+    },
+    {
+      "title": "Line Height",
+      "html": "<div class=\"drac-box\">\n  <p color=\"red\" class=\"drac-text drac-line-height drac-text-red\">none</p>\n  <p lineheight=\"none\" class=\"drac-text drac-line-height-none drac-text-white\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </p>\n  <p color=\"orange\" class=\"drac-text drac-line-height drac-text-orange\">\n    small\n  </p>\n  <p lineheight=\"small\" class=\"drac-text drac-line-height-sm drac-text-white\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </p>\n  <p color=\"yellow\" class=\"drac-text drac-line-height drac-text-yellow\">\n    normal\n  </p>\n  <p lineheight=\"normal\" class=\"drac-text drac-line-height drac-text-white\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </p>\n  <p color=\"pink\" class=\"drac-text drac-line-height drac-text-pink\">medium</p>\n  <p lineheight=\"medium\" class=\"drac-text drac-line-height-md drac-text-white\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </p>\n  <p color=\"cyan\" class=\"drac-text drac-line-height drac-text-cyan\">large</p>\n  <p lineheight=\"large\" class=\"drac-text drac-line-height-lg drac-text-white\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </p>\n  <p color=\"green\" class=\"drac-text drac-line-height drac-text-green\">xlarge</p>\n  <p lineheight=\"xlarge\" class=\"drac-text drac-line-height-xl drac-text-white\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </p>\n</div>\n",
+      "react": "<Box>\n  <Paragraph color=\"red\">none</Paragraph>\n  <Paragraph lineHeight=\"none\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </Paragraph>\n  <Paragraph color=\"orange\">small</Paragraph>\n  <Paragraph lineHeight=\"small\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </Paragraph>\n  <Paragraph color=\"yellow\">normal</Paragraph>\n  <Paragraph lineHeight=\"normal\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </Paragraph>\n  <Paragraph color=\"pink\">medium</Paragraph>\n  <Paragraph lineHeight=\"medium\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </Paragraph>\n  <Paragraph color=\"cyan\">large</Paragraph>\n  <Paragraph lineHeight=\"large\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </Paragraph>\n  <Paragraph color=\"green\">xlarge</Paragraph>\n  <Paragraph lineHeight=\"xlarge\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </Paragraph>\n</Box>;\n",
+      "docs": "Paragraphs can be controlled with different line heights.",
+      "screenshot": "./dsp/assets/ParagraphLine Height.png",
+      "svgData": "./dsp/assets/svgs/ParagraphLine Height.svg"
     }
   ],
   "ext_com_draculaui_props": {
@@ -70,7 +78,7 @@
     },
     "weight": {
       "defaultValue": null,
-      "description": "Controsl the weight of the text.",
+      "description": "Controls the weight of the text.",
       "name": "weight",
       "parent": {
         "fileName": "dracula-ui/src/components/Text/Text.tsx",
@@ -84,6 +92,25 @@
       ],
       "required": false,
       "type": { "name": "\"normal\" | \"semibold\" | \"bold\" | undefined" }
+    },
+    "lineHeight": {
+      "defaultValue": null,
+      "description": "Controls the line height of a text.",
+      "name": "lineHeight",
+      "parent": {
+        "fileName": "dracula-ui/src/components/Text/Text.tsx",
+        "name": "TextProps"
+      },
+      "declarations": [
+        {
+          "fileName": "dracula-ui/src/components/Text/Text.tsx",
+          "name": "TextProps"
+        }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"large\" | \"medium\" | \"small\" | \"normal\" | \"none\" | \"xlarge\" | undefined"
+      }
     },
     "color": {
       "defaultValue": null,
@@ -317,7 +344,7 @@
       },
       "weight": {
         "defaultValue": null,
-        "description": "Controsl the weight of the text.",
+        "description": "Controls the weight of the text.",
         "name": "weight",
         "parent": {
           "fileName": "dracula-ui/src/components/Text/Text.tsx",
@@ -331,6 +358,25 @@
         ],
         "required": false,
         "type": { "name": "\"normal\" | \"semibold\" | \"bold\" | undefined" }
+      },
+      "lineHeight": {
+        "defaultValue": null,
+        "description": "Controls the line height of a text.",
+        "name": "lineHeight",
+        "parent": {
+          "fileName": "dracula-ui/src/components/Text/Text.tsx",
+          "name": "TextProps"
+        },
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/components/Text/Text.tsx",
+            "name": "TextProps"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"large\" | \"medium\" | \"small\" | \"normal\" | \"none\" | \"xlarge\" | undefined"
+        }
       },
       "color": {
         "defaultValue": null,

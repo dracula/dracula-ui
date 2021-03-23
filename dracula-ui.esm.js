@@ -247,6 +247,14 @@ var textWeights = {
   semibold: 'drac-text-semibold',
   bold: 'drac-text-bold'
 };
+var lineHeights = {
+  none: 'drac-line-height-none',
+  small: 'drac-line-height-sm',
+  normal: 'drac-line-height',
+  medium: 'drac-line-height-md',
+  large: 'drac-line-height-lg',
+  xlarge: 'drac-line-height-xl'
+};
 var textColors = /*#__PURE__*/mapValues(colors, function (className) {
   return className.replace('-bg-', '-text-');
 });
@@ -262,10 +270,10 @@ var textColors = /*#__PURE__*/mapValues(colors, function (className) {
  */
 
 var Text = function Text(props) {
-  var _props$size, _props$weight, _props$color, _finalProps$as;
+  var _props$size, _props$weight, _props$lineHeight, _props$color, _finalProps$as;
 
   var finalProps = _extends({}, props, {
-    className: cx.apply(void 0, ["drac-text", props.className, textSizes[(_props$size = props.size) != null ? _props$size : 'medium'], textWeights[(_props$weight = props.weight) != null ? _props$weight : 'normal'], textColors[(_props$color = props.color) != null ? _props$color : 'white']].concat(paddingMixin(props), marginMixin(props)))
+    className: cx.apply(void 0, ["drac-text", props.className, textSizes[(_props$size = props.size) != null ? _props$size : 'medium'], textWeights[(_props$weight = props.weight) != null ? _props$weight : 'normal'], lineHeights[(_props$lineHeight = props.lineHeight) != null ? _props$lineHeight : 'normal'], textColors[(_props$color = props.color) != null ? _props$color : 'white']].concat(paddingMixin(props), marginMixin(props)))
   });
 
   return React.createElement((_finalProps$as = finalProps.as) != null ? _finalProps$as : 'span', finalProps, props.children);
@@ -305,10 +313,10 @@ Link.displayName = 'Link';
  */
 
 var Paragraph = function Paragraph(props) {
-  var _props$size, _props$weight, _props$color;
+  var _props$size, _props$weight, _props$lineHeight, _props$color;
 
   var finalProps = _extends({}, props, {
-    className: cx.apply(void 0, ["drac-text", props.className, textSizes[(_props$size = props.size) != null ? _props$size : 'medium'], textWeights[(_props$weight = props.weight) != null ? _props$weight : 'normal'], textColors[(_props$color = props.color) != null ? _props$color : 'white']].concat(paddingMixin(props), marginMixin(props)))
+    className: cx.apply(void 0, ["drac-text", props.className, textSizes[(_props$size = props.size) != null ? _props$size : 'medium'], textWeights[(_props$weight = props.weight) != null ? _props$weight : 'normal'], lineHeights[(_props$lineHeight = props.lineHeight) != null ? _props$lineHeight : 'normal'], textColors[(_props$color = props.color) != null ? _props$color : 'white']].concat(paddingMixin(props), marginMixin(props)))
   });
 
   return React.createElement("p", Object.assign({}, finalProps), props.children);
@@ -756,5 +764,5 @@ var List = function List(props) {
 };
 List.displayName = 'List';
 
-export { Avatar, AvatarBorderVariants, AvatarVariants, Badge, Box, Button, Card, Checkbox, Divider, Heading, Input, Link, List, Paragraph, Radio, Select, Switch, Table, Tabs, Text, baseColors, baseTextColors, borderColors, buttonSizes, buttonVariants, cardOrientations, cardVariants, checkboxColors, colors, dividerColors, glowColors, gradientColors, headingColors, headingSizes, inputColors, inputSizes, inputVariants, linkHoverColors, listColors, listVariants, marginMixin, paddingMixin, radioColors, roundedBorders, selectColors, selectSizes, selectVariants, spacingUtilities, supportColors, switchColors, tableColors, tableVariants, tabsColors, textColors, textSizes, textWeights };
+export { Avatar, AvatarBorderVariants, AvatarVariants, Badge, Box, Button, Card, Checkbox, Divider, Heading, Input, Link, List, Paragraph, Radio, Select, Switch, Table, Tabs, Text, baseColors, baseTextColors, borderColors, buttonSizes, buttonVariants, cardOrientations, cardVariants, checkboxColors, colors, dividerColors, glowColors, gradientColors, headingColors, headingSizes, inputColors, inputSizes, inputVariants, lineHeights, linkHoverColors, listColors, listVariants, marginMixin, paddingMixin, radioColors, roundedBorders, selectColors, selectSizes, selectVariants, spacingUtilities, supportColors, switchColors, tableColors, tableVariants, tabsColors, textColors, textSizes, textWeights };
 //# sourceMappingURL=dracula-ui.esm.js.map

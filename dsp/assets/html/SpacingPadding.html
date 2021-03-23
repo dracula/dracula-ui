@@ -2740,6 +2740,13 @@
         --font-4xl: 2.25rem; /* 36px */
         --font-5xl: 3rem; /* 48px */
         --font-6xl: 4rem; /* 64px */
+
+        --line-height-none: 1;
+        --line-height-sm: 1.25;
+        --line-height: 1.375;
+        --line-height-md: 1.5;
+        --line-height-lg: 1.625;
+        --line-height-xl: 2;
       }
       .drac-heading,
       .drac-select,
@@ -2764,9 +2771,6 @@
         background: var(--purple-100);
         color: var(--purple-900);
         padding: 0.1rem 0.3rem;
-      }
-      p.drac-text {
-        line-height: 1.7rem;
       } /* -- Heading -- */
       .drac-heading-1 {
         font-size: var(--font-5xl);
@@ -2803,6 +2807,24 @@
       }
       .drac-text.drac-text-xs {
         font-size: var(--font-xs);
+      } /* -- Line Height -- */
+      .drac-line-height-none {
+        line-height: var(--line-height-none);
+      }
+      .drac-line-height-sm {
+        line-height: var(--line-height-sm);
+      }
+      .drac-line-height {
+        line-height: var(--line-height);
+      }
+      .drac-line-height-md {
+        line-height: var(--line-height-md);
+      }
+      .drac-line-height-lg {
+        line-height: var(--line-height-lg);
+      }
+      .drac-line-height-xl {
+        line-height: var(--line-height-xl);
       }
       .drac-btn {
         -webkit-appearance: none;
@@ -4090,17 +4112,23 @@
       <div class="drac-box">
         <div p="sm" color="pink" class="drac-box drac-bg-pink drac-p-sm">
           <div class="drac-box">
-            <span class="drac-text drac-text-white">padding sm</span>
+            <span class="drac-text drac-line-height drac-text-white"
+              >padding sm</span
+            >
           </div>
         </div>
         <div py="sm" color="purple" class="drac-box drac-bg-purple drac-py-sm">
           <div class="drac-box">
-            <span class="drac-text drac-text-white">padding y sm</span>
+            <span class="drac-text drac-line-height drac-text-white"
+              >padding y sm</span
+            >
           </div>
         </div>
         <div px="sm" color="red" class="drac-box drac-bg-red drac-px-sm">
           <div class="drac-box">
-            <span class="drac-text drac-text-white">padding x sm</span>
+            <span class="drac-text drac-line-height drac-text-white"
+              >padding x sm</span
+            >
           </div>
         </div>
         <div
@@ -4112,7 +4140,9 @@
           class="drac-box drac-bg-purple-cyan drac-pt-sm drac-pb-md drac-pl-lg drac-pr-xxs"
         >
           <div class="drac-box">
-            <span class="drac-text drac-text-white">mixing all styles</span>
+            <span class="drac-text drac-line-height drac-text-white"
+              >mixing all styles</span
+            >
           </div>
         </div>
       </div>

@@ -11,6 +11,14 @@ export declare const textWeights: {
     semibold: string;
     bold: string;
 };
+export declare const lineHeights: {
+    none: string;
+    small: string;
+    normal: string;
+    medium: string;
+    large: string;
+    xlarge: string;
+};
 export declare const textColors: {
     purpleCyan: string;
     yellowPink: string;
@@ -36,9 +44,13 @@ export interface TextProps extends HTMLAttributes<HTMLSpanElement>, PaddingMixin
      */
     size?: keyof typeof textSizes;
     /**
-     * Controsl the weight of the text.
+     * Controls the weight of the text.
      */
     weight?: keyof typeof textWeights;
+    /**
+     * Controls the line height of a text.
+     */
+    lineHeight?: keyof typeof lineHeights;
     /**
      * Controls the color of the text
      */
@@ -63,9 +75,13 @@ export declare const Text: {
          */
         size?: "large" | "medium" | "small" | "xsmall" | undefined;
         /**
-         * Controsl the weight of the text.
+         * Controls the weight of the text.
          */
         weight?: "normal" | "semibold" | "bold" | undefined;
+        /**
+         * Controls the line height of a text.
+         */
+        lineHeight?: "large" | "medium" | "small" | "normal" | "none" | "xlarge" | undefined;
         /**
          * Controls the color of the text
          */
@@ -326,9 +342,7 @@ export declare const Text: {
         onTransitionEnd?: ((event: React.TransitionEvent<HTMLSpanElement>) => void) | undefined;
         onTransitionEndCapture?: ((event: React.TransitionEvent<HTMLSpanElement>) => void) | undefined;
         p?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
-        py?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined; /**
-         * Controls the size of the text based on pre-configured Dracula UI sizes.
-         */
+        py?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
         px?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
         pt?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
         pb?: "none" | "xxs" | "xs" | "sm" | "md" | "lg" | undefined;
