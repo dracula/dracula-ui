@@ -19,7 +19,8 @@ const Navigation = ({ selected }) => {
         "Tooling",
         "Design",
         "Support",
-        "Spacing"
+        "Spacing",
+        "Colors"
       ]
     },
     {

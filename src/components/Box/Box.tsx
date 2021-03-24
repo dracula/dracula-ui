@@ -1,6 +1,6 @@
 import cx from 'classnames/dedupe'
 import React, { AllHTMLAttributes } from 'react'
-import { colors, glowColors } from '../../base/colors'
+import { borderColors, colors, glowColors } from '../../base/colors'
 import {
   PaddingMixin,
   paddingMixin,
@@ -31,6 +31,9 @@ export type BoxProps<K extends keyof Element = 'div'> = {
   /** The glow color. */
   glowColor?: keyof typeof glowColors
 
+  /** The border color. */
+  borderColor?: keyof typeof borderColors
+
   /** The border radius. */
   rounded?: keyof typeof roundedBorders
 
@@ -56,6 +59,7 @@ export function Box<T extends keyof Element>(props: BoxProps<T>) {
       props.className,
       props.color && colors[props.color],
       props.glowColor && glowColors[props.glowColor],
+      props.borderColor && borderColors[props.borderColor],
       props.rounded && roundedBorders[props.rounded],
       ...paddingMixin(props),
       ...marginMixin(props)

@@ -55,3 +55,20 @@ export const glowColors: BaseColorMap = mapValues(colors, (className) =>
 export const baseTextColors: ColorMap = mapValues(colors, (className) => {
   return className.replace('-bg-', '-text-')
 })
+
+export const colorUtilities = {
+  classes: [
+    ...Object.values(baseColors),
+    ...Object.values(baseTextColors),
+    ...Object.values(supportColors),
+    ...Object.values(gradientColors),
+    ...Object.values(borderColors)
+  ],
+  react: {
+    base: Object.keys(baseColors),
+    text: Object.keys(baseTextColors),
+    support: Object.keys(supportColors),
+    gradient: Object.keys(gradientColors),
+    border: Object.keys(borderColors)
+  }
+}
