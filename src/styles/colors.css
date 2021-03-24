@@ -132,6 +132,11 @@
     background-color: var(--$(color));
     --glowColor: var(--$(color));
   }
+
+  .border-$(color) {
+    border-color: var(--$(color));
+    --borderColor: var(--$(color));
+  }
 }
 
 .bg-animated {

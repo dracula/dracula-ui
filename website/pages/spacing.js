@@ -169,8 +169,8 @@ class Spacing extends React.Component {
               </Paragraph>
 
               <Paragraph className={styles.description}>
-                Feel free to mix and matching whatever styling strategy makes
-                sense for your project.
+                Feel free to mix and match whatever styling strategy makes sense
+                for your project.
               </Paragraph>
             </main>
           </Box>
