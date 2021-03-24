@@ -56,7 +56,7 @@ class Spacing extends React.Component {
                     Color System
                   </Heading>
                   <Paragraph>
-                    Dracula UI ships with a hand crafted color system thats help
+                    Dracula UI ships with a handcrafted color system that helps
                     you design apps and websites that are pleasing and easy on
                     the eyes.
                   </Paragraph>
@@ -156,7 +156,7 @@ class Spacing extends React.Component {
 
                   <Paragraph>
                     The animated color takes gradients one step further by
-                    alternating gradient colors at a random time interval.
+                    alternating gradient colors in an infinite loop.
                   </Paragraph>
 
                   <Box my="xs">
@@ -257,21 +257,6 @@ class Spacing extends React.Component {
                   </Box>
                 </Box>
               </Box>
-
-              <Heading size="heading-2" color="cyanGreen">
-                Styling with regular CSS
-              </Heading>
-
-              <Paragraph className={styles.description}>
-                Regular styling with CSS, inline styles, and custom classes are
-                still available for the cases where the Dracula UI color system
-                can't cater to your needs.
-              </Paragraph>
-
-              <Paragraph className={styles.description}>
-                Feel free to mix and match whatever styling strategy makes sense
-                for your project.
-              </Paragraph>
             </main>
           </Box>
         </Box>
