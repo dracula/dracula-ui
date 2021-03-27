@@ -49,3 +49,13 @@ export declare type GradientBaseColorMap = Record<GradientColorNames, string>;
 export declare const borderColors: GradientBaseColorMap;
 export declare const glowColors: BaseColorMap;
 export declare const baseTextColors: ColorMap;
+export declare const colorUtilities: {
+    classes: string[];
+    react: {
+        base: string[];
+        text: string[];
+        support: string[];
+        gradient: string[];
+        border: string[];
+    };
+};

@@ -1,5 +1,5 @@
 import React, { AllHTMLAttributes } from 'react';
-import { colors, glowColors } from '../../base/colors';
+import { borderColors, colors, glowColors } from '../../base/colors';
 import { PaddingMixin, MarginMixin } from '../../base/spacing';
 declare type Element = HTMLElementTagNameMap;
 export declare const roundedBorders: {
@@ -20,6 +20,8 @@ export declare type BoxProps<K extends keyof Element = 'div'> = {
     color?: keyof typeof colors;
     /** The glow color. */
     glowColor?: keyof typeof glowColors;
+    /** The border color. */
+    borderColor?: keyof typeof borderColors;
     /** The border radius. */
     rounded?: keyof typeof roundedBorders;
     /** The HTML element to be used */
@@ -38,6 +40,8 @@ export declare function Box<T extends keyof Element>(props: BoxProps<T>): React.
     color?: "purpleCyan" | "yellowPink" | "cyanGreen" | "pinkPurple" | "animated" | "cyan" | "green" | "orange" | "pink" | "purple" | "red" | "yellow" | "white" | "black" | "blackSecondary" | "blackLight" | undefined;
     /** The glow color. */
     glowColor?: "cyan" | "green" | "orange" | "pink" | "purple" | "red" | "yellow" | undefined;
+    /** The border color. */
+    borderColor?: "purpleCyan" | "yellowPink" | "cyanGreen" | "pinkPurple" | "animated" | undefined;
     /** The border radius. */
     rounded?: "base" | "none" | "sm" | "lg" | "xl" | "2xl" | "3xl" | "full" | undefined;
     as?: (T & string) | undefined;
@@ -405,6 +409,7 @@ export declare function Box<T extends keyof Element>(props: BoxProps<T>): React.
     pt?: "none" | "sm" | "lg" | "xxs" | "xs" | "md" | undefined;
     pb?: "none" | "sm" | "lg" | "xxs" | "xs" | "md" | undefined;
     pl?: "none" | "sm" | "lg" | "xxs" | "xs" | "md" | undefined;
+    /** The border radius. */
     pr?: "none" | "sm" | "lg" | "xxs" | "xs" | "md" | undefined;
     m?: "none" | "sm" | "lg" | "xxs" | "xs" | "md" | undefined;
     my?: "none" | "sm" | "lg" | "xxs" | "xs" | "md" | undefined;

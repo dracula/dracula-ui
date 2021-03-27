@@ -478,6 +478,9 @@
   }.drac-glow-black {
     background-color: var(--black);
     --glowColor: var(--black);
+  }.drac-border-black {
+    border-color: var(--black);
+    --borderColor: var(--black);
   }.drac-bg-white {
     background-color: var(--white);
   }.drac-bg-white-secondary {
@@ -493,6 +496,9 @@
   }.drac-glow-white {
     background-color: var(--white);
     --glowColor: var(--white);
+  }.drac-border-white {
+    border-color: var(--white);
+    --borderColor: var(--white);
   }.drac-bg-cyan {
     background-color: var(--cyan);
   }.drac-bg-cyan-secondary {
@@ -508,6 +514,9 @@
   }.drac-glow-cyan {
     background-color: var(--cyan);
     --glowColor: var(--cyan);
+  }.drac-border-cyan {
+    border-color: var(--cyan);
+    --borderColor: var(--cyan);
   }.drac-bg-green {
     background-color: var(--green);
   }.drac-bg-green-secondary {
@@ -523,6 +532,9 @@
   }.drac-glow-green {
     background-color: var(--green);
     --glowColor: var(--green);
+  }.drac-border-green {
+    border-color: var(--green);
+    --borderColor: var(--green);
   }.drac-bg-orange {
     background-color: var(--orange);
   }.drac-bg-orange-secondary {
@@ -538,6 +550,9 @@
   }.drac-glow-orange {
     background-color: var(--orange);
     --glowColor: var(--orange);
+  }.drac-border-orange {
+    border-color: var(--orange);
+    --borderColor: var(--orange);
   }.drac-bg-pink {
     background-color: var(--pink);
   }.drac-bg-pink-secondary {
@@ -553,6 +568,9 @@
   }.drac-glow-pink {
     background-color: var(--pink);
     --glowColor: var(--pink);
+  }.drac-border-pink {
+    border-color: var(--pink);
+    --borderColor: var(--pink);
   }.drac-bg-purple {
     background-color: var(--purple);
   }.drac-bg-purple-secondary {
@@ -568,6 +586,9 @@
   }.drac-glow-purple {
     background-color: var(--purple);
     --glowColor: var(--purple);
+  }.drac-border-purple {
+    border-color: var(--purple);
+    --borderColor: var(--purple);
   }.drac-bg-red {
     background-color: var(--red);
   }.drac-bg-red-secondary {
@@ -583,6 +604,9 @@
   }.drac-glow-red {
     background-color: var(--red);
     --glowColor: var(--red);
+  }.drac-border-red {
+    border-color: var(--red);
+    --borderColor: var(--red);
   }.drac-bg-yellow {
     background-color: var(--yellow);
   }.drac-bg-yellow-secondary {
@@ -598,6 +622,9 @@
   }.drac-glow-yellow {
     background-color: var(--yellow);
     --glowColor: var(--yellow);
+  }.drac-border-yellow {
+    border-color: var(--yellow);
+    --borderColor: var(--yellow);
   }.drac-bg-animated {
   content: '';
   -webkit-animation: animatedGradient 6s ease infinite alternate;
@@ -1018,7 +1045,102 @@
 }.drac-select.drac-select-lg {
   height: var(--spacing-12);
   font-size: var(--font-lg);
-}:root {
+}.drac-anchor {
+  text-decoration: none;
+  color: var(--accentColor);
+}.drac-text-black\--hover:hover {
+    color: var(--black);
+  }.drac-text-black-secondary--hover:hover {
+    color: var(--blackSecondary);
+  }.drac-text-white\--hover:hover {
+    color: var(--white);
+  }.drac-text-white-secondary--hover:hover {
+    color: var(--whiteSecondary);
+  }.drac-text-cyan\--hover:hover {
+    color: var(--cyan);
+  }.drac-text-cyan-secondary--hover:hover {
+    color: var(--cyanSecondary);
+  }.drac-text-green\--hover:hover {
+    color: var(--green);
+  }.drac-text-green-secondary--hover:hover {
+    color: var(--greenSecondary);
+  }.drac-text-orange\--hover:hover {
+    color: var(--orange);
+  }.drac-text-orange-secondary--hover:hover {
+    color: var(--orangeSecondary);
+  }.drac-text-pink\--hover:hover {
+    color: var(--pink);
+  }.drac-text-pink-secondary--hover:hover {
+    color: var(--pinkSecondary);
+  }.drac-text-purple\--hover:hover {
+    color: var(--purple);
+  }.drac-text-purple-secondary--hover:hover {
+    color: var(--purpleSecondary);
+  }.drac-text-red\--hover:hover {
+    color: var(--red);
+  }.drac-text-red-secondary--hover:hover {
+    color: var(--redSecondary);
+  }.drac-text-yellow\--hover:hover {
+    color: var(--yellow);
+  }.drac-text-yellow-secondary--hover:hover {
+    color: var(--yellowSecondary);
+  }.drac-text-purple-cyan\--hover:hover {
+    background-image: linear-gradient(
+      var(--gradientDegree),
+      var(--purple) 0%,
+      var(--cyan) 100%
+    );
+
+    background-size: 100%;
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }.drac-text-yellow-pink\--hover:hover {
+    background-image: linear-gradient(
+      var(--gradientDegree),
+      var(--yellow) 0%,
+      var(--pink) 100%
+    );
+
+    background-size: 100%;
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }.drac-text-cyan-green\--hover:hover {
+    background-image: linear-gradient(
+      var(--gradientDegree),
+      var(--cyan) 0%,
+      var(--green) 100%
+    );
+
+    background-size: 100%;
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }.drac-text-pink-purple\--hover:hover {
+    background-image: linear-gradient(
+      var(--gradientDegree),
+      var(--pink) 0%,
+      var(--purple) 100%
+    );
+
+    background-size: 100%;
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }:root {
   --subtle-avatar-shadow: inset 0 0 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
 }/** Defines an avatar */.drac-avatar {
   box-sizing: border-box;
@@ -1388,101 +1510,6 @@
   list-style: none;
   margin-left: 0;
   padding-left: 0;
-}.drac-link {
-  text-decoration: none;
-  color: var(--accentColor);
-}.drac-text-black\--hover:hover {
-    color: var(--black);
-  }.drac-text-black-secondary--hover:hover {
-    color: var(--blackSecondary);
-  }.drac-text-white\--hover:hover {
-    color: var(--white);
-  }.drac-text-white-secondary--hover:hover {
-    color: var(--whiteSecondary);
-  }.drac-text-cyan\--hover:hover {
-    color: var(--cyan);
-  }.drac-text-cyan-secondary--hover:hover {
-    color: var(--cyanSecondary);
-  }.drac-text-green\--hover:hover {
-    color: var(--green);
-  }.drac-text-green-secondary--hover:hover {
-    color: var(--greenSecondary);
-  }.drac-text-orange\--hover:hover {
-    color: var(--orange);
-  }.drac-text-orange-secondary--hover:hover {
-    color: var(--orangeSecondary);
-  }.drac-text-pink\--hover:hover {
-    color: var(--pink);
-  }.drac-text-pink-secondary--hover:hover {
-    color: var(--pinkSecondary);
-  }.drac-text-purple\--hover:hover {
-    color: var(--purple);
-  }.drac-text-purple-secondary--hover:hover {
-    color: var(--purpleSecondary);
-  }.drac-text-red\--hover:hover {
-    color: var(--red);
-  }.drac-text-red-secondary--hover:hover {
-    color: var(--redSecondary);
-  }.drac-text-yellow\--hover:hover {
-    color: var(--yellow);
-  }.drac-text-yellow-secondary--hover:hover {
-    color: var(--yellowSecondary);
-  }.drac-text-purple-cyan\--hover:hover {
-    background-image: linear-gradient(
-      var(--gradientDegree),
-      var(--purple) 0%,
-      var(--cyan) 100%
-    );
-
-    background-size: 100%;
-    background-clip: text;
-
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-  }.drac-text-yellow-pink\--hover:hover {
-    background-image: linear-gradient(
-      var(--gradientDegree),
-      var(--yellow) 0%,
-      var(--pink) 100%
-    );
-
-    background-size: 100%;
-    background-clip: text;
-
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-  }.drac-text-cyan-green\--hover:hover {
-    background-image: linear-gradient(
-      var(--gradientDegree),
-      var(--cyan) 0%,
-      var(--green) 100%
-    );
-
-    background-size: 100%;
-    background-clip: text;
-
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-  }.drac-text-pink-purple\--hover:hover {
-    background-image: linear-gradient(
-      var(--gradientDegree),
-      var(--pink) 0%,
-      var(--purple) 100%
-    );
-
-    background-size: 100%;
-    background-clip: text;
-
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-  }
+}
 
 /*# sourceMappingURL=dracula-ui.css.map */

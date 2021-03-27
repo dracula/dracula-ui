@@ -67,6 +67,16 @@ var glowColors = /*#__PURE__*/mapValues(colors, function (className) {
 var baseTextColors = /*#__PURE__*/mapValues(colors, function (className) {
   return className.replace('-bg-', '-text-');
 });
+var colorUtilities = {
+  classes: /*#__PURE__*/[].concat( /*#__PURE__*/Object.values(baseColors), /*#__PURE__*/Object.values(baseTextColors), /*#__PURE__*/Object.values(supportColors), /*#__PURE__*/Object.values(gradientColors), /*#__PURE__*/Object.values(borderColors)),
+  react: {
+    base: /*#__PURE__*/Object.keys(baseColors),
+    text: /*#__PURE__*/Object.keys(baseTextColors),
+    support: /*#__PURE__*/Object.keys(supportColors),
+    gradient: /*#__PURE__*/Object.keys(gradientColors),
+    border: /*#__PURE__*/Object.keys(borderColors)
+  }
+};
 
 var padding = {
   none: 'drac-p-none',
@@ -280,7 +290,7 @@ var Text = function Text(props) {
 };
 Text.displayName = 'Text';
 
-var linkHoverColors = /*#__PURE__*/mapValues(textColors, function (classname) {
+var hoverColors = /*#__PURE__*/mapValues(textColors, function (classname) {
   return classname + "--hover";
 });
 /**
@@ -294,16 +304,16 @@ var linkHoverColors = /*#__PURE__*/mapValues(textColors, function (classname) {
  * or UI patterns
  */
 
-var Link = function Link(props) {
+var Anchor = function Anchor(props) {
   var _props$size, _props$weight, _props$color, _props$hoverColor;
 
   var finalProps = _extends({}, props, {
-    className: cx.apply(void 0, ["drac-link", "drac-text", props.className, textSizes[(_props$size = props.size) != null ? _props$size : 'medium'], textWeights[(_props$weight = props.weight) != null ? _props$weight : 'normal'], textColors[(_props$color = props.color) != null ? _props$color : 'white'], linkHoverColors[(_props$hoverColor = props.hoverColor) != null ? _props$hoverColor : 'purple']].concat(paddingMixin(props), marginMixin(props)))
+    className: cx.apply(void 0, ["drac-anchor", "drac-text", props.className, textSizes[(_props$size = props.size) != null ? _props$size : 'medium'], textWeights[(_props$weight = props.weight) != null ? _props$weight : 'normal'], textColors[(_props$color = props.color) != null ? _props$color : 'white'], hoverColors[(_props$hoverColor = props.hoverColor) != null ? _props$hoverColor : 'purple']].concat(paddingMixin(props), marginMixin(props)))
   });
 
   return React.createElement('a', finalProps, props.children);
 };
-Link.displayName = 'Link';
+Anchor.displayName = 'Anchor';
 
 /**
  * Paragraph is a semantic component used for blocks of text with
@@ -345,7 +355,7 @@ function Box(props) {
   var _finalProps$as;
 
   var finalProps = _extends({}, props, {
-    className: cx.apply(void 0, ["drac-box", props.className, props.color && colors[props.color], props.glowColor && glowColors[props.glowColor], props.rounded && roundedBorders[props.rounded]].concat(paddingMixin(props), marginMixin(props)))
+    className: cx.apply(void 0, ["drac-box", props.className, props.color && colors[props.color], props.glowColor && glowColors[props.glowColor], props.borderColor && borderColors[props.borderColor], props.rounded && roundedBorders[props.rounded]].concat(paddingMixin(props), marginMixin(props)))
   });
 
   var as = (_finalProps$as = finalProps.as) != null ? _finalProps$as : 'div';
@@ -764,5 +774,5 @@ var List = function List(props) {
 };
 List.displayName = 'List';
 
-export { Avatar, AvatarBorderVariants, AvatarVariants, Badge, Box, Button, Card, Checkbox, Divider, Heading, Input, Link, List, Paragraph, Radio, Select, Switch, Table, Tabs, Text, baseColors, baseTextColors, borderColors, buttonSizes, buttonVariants, cardOrientations, cardVariants, checkboxColors, colors, dividerColors, glowColors, gradientColors, headingColors, headingSizes, inputColors, inputSizes, inputVariants, lineHeights, linkHoverColors, listColors, listVariants, marginMixin, paddingMixin, radioColors, roundedBorders, selectColors, selectSizes, selectVariants, spacingUtilities, supportColors, switchColors, tableColors, tableVariants, tabsColors, textColors, textSizes, textWeights };
+export { Anchor, Avatar, AvatarBorderVariants, AvatarVariants, Badge, Box, Button, Card, Checkbox, Divider, Heading, Input, List, Paragraph, Radio, Select, Switch, Table, Tabs, Text, baseColors, baseTextColors, borderColors, buttonSizes, buttonVariants, cardOrientations, cardVariants, checkboxColors, colorUtilities, colors, dividerColors, glowColors, gradientColors, headingColors, headingSizes, hoverColors, inputColors, inputSizes, inputVariants, lineHeights, listColors, listVariants, marginMixin, paddingMixin, radioColors, roundedBorders, selectColors, selectSizes, selectVariants, spacingUtilities, supportColors, switchColors, tableColors, tableVariants, tabsColors, textColors, textSizes, textWeights };
 //# sourceMappingURL=dracula-ui.esm.js.map

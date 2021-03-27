@@ -97,6 +97,21 @@
         "name": "\"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | undefined"
       }
     },
+    "borderColor": {
+      "defaultValue": null,
+      "description": "The border color.",
+      "name": "borderColor",
+      "declarations": [
+        {
+          "fileName": "dracula-ui/src/components/Box/Box.tsx",
+          "name": "TypeLiteral"
+        }
+      ],
+      "required": false,
+      "type": {
+        "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+      }
+    },
     "rounded": {
       "defaultValue": null,
       "description": "The border radius.",
@@ -350,6 +365,21 @@
         "required": false,
         "type": {
           "name": "\"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | undefined"
+        }
+      },
+      "borderColor": {
+        "defaultValue": null,
+        "description": "The border color.",
+        "name": "borderColor",
+        "declarations": [
+          {
+            "fileName": "dracula-ui/src/components/Box/Box.tsx",
+            "name": "TypeLiteral"
+          }
+        ],
+        "required": false,
+        "type": {
+          "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
         }
       },
       "rounded": {

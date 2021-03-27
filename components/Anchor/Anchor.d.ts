@@ -1,7 +1,7 @@
 import React, { HTMLAttributes } from 'react';
 import { MarginMixin, PaddingMixin } from '../../base/spacing';
 import { textColors, textSizes, textWeights } from '../Text/Text';
-export declare const linkHoverColors: {
+export declare const hoverColors: {
     purpleCyan: string;
     yellowPink: string;
     cyanGreen: string;
@@ -19,8 +19,8 @@ export declare const linkHoverColors: {
     blackSecondary: string;
     blackLight: string;
 };
-/** Link Props */
-export interface LinkProps extends HTMLAttributes<HTMLAnchorElement>, PaddingMixin, MarginMixin {
+/** Anchor Props */
+export interface AnchorProps extends HTMLAttributes<HTMLAnchorElement>, PaddingMixin, MarginMixin {
     /**
      * The path to link this anchor to.
      */
@@ -40,7 +40,7 @@ export interface LinkProps extends HTMLAttributes<HTMLAnchorElement>, PaddingMix
     /**
      * Controls the color of the link on hover
      */
-    hoverColor?: keyof typeof linkHoverColors;
+    hoverColor?: keyof typeof hoverColors;
 }
 /**
  * Text is the base component for any sort of text.
@@ -52,8 +52,8 @@ export interface LinkProps extends HTMLAttributes<HTMLAnchorElement>, PaddingMix
  * to be displayed on a page, or as part of other complex components
  * or UI patterns
  */
-export declare const Link: {
-    (props: LinkProps): React.DetailedReactHTMLElement<{
+export declare const Anchor: {
+    (props: AnchorProps): React.DetailedReactHTMLElement<{
         className: string;
         /**
          * The path to link this anchor to.

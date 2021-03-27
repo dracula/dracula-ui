@@ -73,6 +73,16 @@ var glowColors = /*#__PURE__*/lodash.mapValues(colors, function (className) {
 var baseTextColors = /*#__PURE__*/lodash.mapValues(colors, function (className) {
   return className.replace('-bg-', '-text-');
 });
+var colorUtilities = {
+  classes: /*#__PURE__*/[].concat( /*#__PURE__*/Object.values(baseColors), /*#__PURE__*/Object.values(baseTextColors), /*#__PURE__*/Object.values(supportColors), /*#__PURE__*/Object.values(gradientColors), /*#__PURE__*/Object.values(borderColors)),
+  react: {
+    base: /*#__PURE__*/Object.keys(baseColors),
+    text: /*#__PURE__*/Object.keys(baseTextColors),
+    support: /*#__PURE__*/Object.keys(supportColors),
+    gradient: /*#__PURE__*/Object.keys(gradientColors),
+    border: /*#__PURE__*/Object.keys(borderColors)
+  }
+};
 
 var padding = {
   none: 'drac-p-none',
@@ -286,7 +296,7 @@ var Text = function Text(props) {
 };
 Text.displayName = 'Text';
 
-var linkHoverColors = /*#__PURE__*/lodash.mapValues(textColors, function (classname) {
+var hoverColors = /*#__PURE__*/lodash.mapValues(textColors, function (classname) {
   return classname + "--hover";
 });
 /**
@@ -300,16 +310,16 @@ var linkHoverColors = /*#__PURE__*/lodash.mapValues(textColors, function (classn
  * or UI patterns
  */
 
-var Link = function Link(props) {
+var Anchor = function Anchor(props) {
   var _props$size, _props$weight, _props$color, _props$hoverColor;
 
   var finalProps = _extends({}, props, {
-    className: cx.apply(void 0, ["drac-link", "drac-text", props.className, textSizes[(_props$size = props.size) != null ? _props$size : 'medium'], textWeights[(_props$weight = props.weight) != null ? _props$weight : 'normal'], textColors[(_props$color = props.color) != null ? _props$color : 'white'], linkHoverColors[(_props$hoverColor = props.hoverColor) != null ? _props$hoverColor : 'purple']].concat(paddingMixin(props), marginMixin(props)))
+    className: cx.apply(void 0, ["drac-anchor", "drac-text", props.className, textSizes[(_props$size = props.size) != null ? _props$size : 'medium'], textWeights[(_props$weight = props.weight) != null ? _props$weight : 'normal'], textColors[(_props$color = props.color) != null ? _props$color : 'white'], hoverColors[(_props$hoverColor = props.hoverColor) != null ? _props$hoverColor : 'purple']].concat(paddingMixin(props), marginMixin(props)))
   });
 
   return React.createElement('a', finalProps, props.children);
 };
-Link.displayName = 'Link';
+Anchor.displayName = 'Anchor';
 
 /**
  * Paragraph is a semantic component used for blocks of text with
@@ -351,7 +361,7 @@ function Box(props) {
   var _finalProps$as;
 
   var finalProps = _extends({}, props, {
-    className: cx.apply(void 0, ["drac-box", props.className, props.color && colors[props.color], props.glowColor && glowColors[props.glowColor], props.rounded && roundedBorders[props.rounded]].concat(paddingMixin(props), marginMixin(props)))
+    className: cx.apply(void 0, ["drac-box", props.className, props.color && colors[props.color], props.glowColor && glowColors[props.glowColor], props.borderColor && borderColors[props.borderColor], props.rounded && roundedBorders[props.rounded]].concat(paddingMixin(props), marginMixin(props)))
   });
 
   var as = (_finalProps$as = finalProps.as) != null ? _finalProps$as : 'div';
@@ -770,6 +780,7 @@ var List = function List(props) {
 };
 List.displayName = 'List';
 
+exports.Anchor = Anchor;
 exports.Avatar = Avatar;
 exports.AvatarBorderVariants = AvatarBorderVariants;
 exports.AvatarVariants = AvatarVariants;
@@ -781,7 +792,6 @@ exports.Checkbox = Checkbox;
 exports.Divider = Divider;
 exports.Heading = Heading;
 exports.Input = Input;
-exports.Link = Link;
 exports.List = List;
 exports.Paragraph = Paragraph;
 exports.Radio = Radio;
@@ -798,17 +808,18 @@ exports.buttonVariants = buttonVariants;
 exports.cardOrientations = cardOrientations;
 exports.cardVariants = cardVariants;
 exports.checkboxColors = checkboxColors;
+exports.colorUtilities = colorUtilities;
 exports.colors = colors;
 exports.dividerColors = dividerColors;
 exports.glowColors = glowColors;
 exports.gradientColors = gradientColors;
 exports.headingColors = headingColors;
 exports.headingSizes = headingSizes;
+exports.hoverColors = hoverColors;
 exports.inputColors = inputColors;
 exports.inputSizes = inputSizes;
 exports.inputVariants = inputVariants;
 exports.lineHeights = lineHeights;
-exports.linkHoverColors = linkHoverColors;
 exports.listColors = listColors;
 exports.listVariants = listVariants;
 exports.marginMixin = marginMixin;
