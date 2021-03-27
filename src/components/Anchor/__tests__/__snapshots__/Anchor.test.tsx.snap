@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Site: Anchor Basic Usage 1`] = `
+Object {
+  "docs": "Anchor is an abstraction/style that can/is applied to HTML anchor elements.",
+  "html": "<a
+  href=\\"#\\"
+  class=\\"drac-anchor drac-text drac-text-white drac-text-purple--hover\\"
+  >anchor</a
+>
+",
+  "react": "<Anchor href=\\"#\\">anchor</Anchor>;
+",
+  "title": "Usage",
+}
+`;
+
+exports[`Site: Anchor Colors 1`] = `
+Object {
+  "docs": "Anchors can be customized to use any of the Dracula UI theme colors, including all solid, and gradients.",
+  "html": "<div style=\\"display: flex; flex-direction: column\\">
+  <a
+    href=\\"#\\"
+    color=\\"pink\\"
+    hovercolor=\\"purple\\"
+    m=\\"sm\\"
+    class=\\"drac-anchor drac-text drac-text-pink drac-text-purple--hover drac-m-sm\\"
+    >pink / purple</a
+  ><a
+    href=\\"#\\"
+    color=\\"cyanGreen\\"
+    hovercolor=\\"yellowPink\\"
+    m=\\"sm\\"
+    class=\\"drac-anchor drac-text drac-text-cyan-green drac-text-yellow-pink--hover drac-m-sm\\"
+    >cyanGreen / yellowPink</a
+  >
+</div>
+",
+  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\" }}>
+  <Anchor href=\\"#\\" color=\\"pink\\" hoverColor=\\"purple\\" m=\\"sm\\">
+    pink / purple
+  </Anchor>
+  <Anchor href=\\"#\\" color=\\"cyanGreen\\" hoverColor=\\"yellowPink\\" m=\\"sm\\">
+    cyanGreen / yellowPink
+  </Anchor>
+</div>;
+",
+  "title": "Colors",
+}
+`;
+
+exports[`Site: Anchor Sizes & Weights 1`] = `
+Object {
+  "docs": "Anchor sizes can be customized with pre defined sizes or using regular HTML styles or CSS classes.",
+  "html": "<div style=\\"display: flex; flex-direction: column\\">
+  <a
+    href=\\"#\\"
+    class=\\"drac-anchor drac-text drac-text-xs drac-text-white drac-text-purple--hover\\"
+    >xsmall</a
+  ><a
+    href=\\"#\\"
+    class=\\"drac-anchor drac-text drac-text-sm drac-text-white drac-text-purple--hover\\"
+    >small</a
+  ><a
+    href=\\"#\\"
+    class=\\"drac-anchor drac-text drac-text-white drac-text-purple--hover\\"
+    >medium</a
+  ><a
+    href=\\"#\\"
+    class=\\"drac-anchor drac-text drac-text-lg drac-text-white drac-text-purple--hover\\"
+    >large</a
+  ><a
+    href=\\"#\\"
+    weight=\\"semibold\\"
+    class=\\"drac-anchor drac-text drac-text-semibold drac-text-white drac-text-purple--hover\\"
+    >semibold</a
+  ><a
+    href=\\"#\\"
+    style=\\"font-size: 30px\\"
+    class=\\"drac-anchor drac-text drac-text-white drac-text-purple--hover\\"
+    >font-size: 30</a
+  >
+</div>
+",
+  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\" }}>
+  <Anchor href=\\"#\\" size=\\"xsmall\\">
+    xsmall
+  </Anchor>
+  <Anchor href=\\"#\\" size=\\"small\\">
+    small
+  </Anchor>
+  <Anchor href=\\"#\\" size=\\"medium\\">
+    medium
+  </Anchor>
+  <Anchor href=\\"#\\" size=\\"large\\">
+    large
+  </Anchor>
+  <Anchor href=\\"#\\" weight=\\"semibold\\">
+    semibold
+  </Anchor>
+  <Anchor href=\\"#\\" style={{ fontSize: 30 }}>
+    font-size: 30
+  </Anchor>
+</div>;
+",
+  "title": "Sizes & Weights",
+}
+`;

@@ -1,4 +1,4 @@
-import { Box, Text } from "../../dist"
+import { Box, Text, Anchor } from "../../dist"
 import { Component } from "react"
 import Link from "next/link"
 import styles from "./Topbar.module.css"
@@ -16,13 +16,13 @@ class Topbar extends Component {
         }}
       >
         <Link href="/">
-          <a className={styles.title}>
+          <Anchor className={styles.title}>
             <Text className={styles.text}>Dracula</Text>
             <Text className={styles.text} color="purpleCyan">
               {" "}
               UI
             </Text>
-          </a>
+          </Anchor>
         </Link>
 
         <AccentColorPicker />

@@ -1,7 +1,7 @@
 import React from "react"
 import Head from "next/head"
 import Theme from "../layouts/Theme"
-import { Box, Heading, Link, List, Text, Paragraph } from "../../dist"
+import { Box, Heading, Anchor, List, Text, Paragraph } from "../../dist"
 import Navigation from "../components/Navigation"
 import styles from "./index.module.css"
 
@@ -40,11 +40,11 @@ class Tooling extends React.Component {
                 <Paragraph className={styles.description} size="md">{description}</Paragraph>
                 <Box my="lg">
                   <Heading size="heading-2">Built-in Documentation</Heading>
-                  <Paragraph>We partnered with <Link color="purple" hoverColor="purple" href="https://letsxd.com/vscode">Adobe</Link> to create a new way of reading and consuming documentation without ever leaving the code editor. This new format is called <Link color="purple" hoverColor="purple" href="https://github.com/AdobeXD/design-system-package-dsp">Design System Package (DSP)</Link> and it's open source. Here's a preview:</Paragraph>
+                  <Paragraph>We partnered with <Anchor color="purple" hoverColor="purple" href="https://letsxd.com/vscode">Adobe</Anchor> to create a new way of reading and consuming documentation without ever leaving the code editor. This new format is called <Anchor color="purple" hoverColor="purple" href="https://github.com/AdobeXD/design-system-package-dsp">Design System Package (DSP)</Anchor> and it's open source. Here's a preview:</Paragraph>
                   <img className={styles.image} src="/static/images/tooling-1.png" alt="Dracula UI documentation on VSCode" />
                   <Paragraph>If you want to see the Dracula UI documentation inside Visual Studio Code, follow these steps:</Paragraph>
                   <List color="white" variant="ordered">
-                    <li className="drac-text drac-text-white">Install the <Link color="purple" hoverColor="purple" href="https://marketplace.visualstudio.com/items?itemName=Adobe.xd">Adobe XD extension</Link> on VSCode</li>
+                    <li className="drac-text drac-text-white">Install the <Anchor color="purple" hoverColor="purple" href="https://marketplace.visualstudio.com/items?itemName=Adobe.xd">Adobe XD extension</Anchor> on VSCode</li>
                     <li className="drac-text drac-text-white">Click on the "XD" button on the bottom right corner</li>
                     <li className="drac-text drac-text-white">Click on the "Load Package" option</li>
                     <li className="drac-text drac-text-white">Select the <code>dracula-ui/dsp</code> folder</li>

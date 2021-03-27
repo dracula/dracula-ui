@@ -1,4 +1,4 @@
-import { Box, Button, Card, Heading, Link, Paragraph, Text } from "../../dist"
+import { Box, Button, Card, Heading, Anchor, Paragraph, Text } from "../../dist"
 import Head from "next/head"
 import React from "react"
 import Navigation from "../components/Navigation"
@@ -20,9 +20,9 @@ export async function getStaticProps({ params }) {
 function Properties({ docGenProps }) {
   return (
     <>
-      <Link id="properties" href="#properties" color="black">
+      <Anchor id="properties" href="#properties" color="black">
         <Heading size="heading-2">Properties</Heading>
-      </Link>
+      </Anchor>
 
       <PropsTable props={docGenProps} />
     </>
@@ -40,27 +40,27 @@ function DocsOverview({ sections }) {
       {sections.map((section) => {
         return (
           <Box key={section.title} py="xxs">
-            <Link
+            <Anchor
               size="small"
               color="blackSecondary"
               href={`#${section.title.toLowerCase()}`}
               hoverColor="pinkPurple"
             >
               {section.title}
-            </Link>
+            </Anchor>
           </Box>
         )
       })}
 
       <Box key="properties">
-        <Link
+        <Anchor
           size="small"
           href="#properties"
           hoverColor="pinkPurple"
           color="blackSecondary"
         >
           Properties
-        </Link>
+        </Anchor>
       </Box>
     </Box>
   )
@@ -69,14 +69,14 @@ function DocsOverview({ sections }) {
 function Section({ section }) {
   return (
     <Box>
-      <Link
+      <Anchor
         id={section.title.toLowerCase()}
         href={`#${section.title.toLowerCase()}`}
       >
         <Heading size="heading-2" my="small">
           {section.title}
         </Heading>
-      </Link>
+      </Anchor>
 
       {section.description && (
         <Paragraph size="md">{section.description}</Paragraph>

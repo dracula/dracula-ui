@@ -1,7 +1,7 @@
-import { Box, Heading, List, Link, Text } from "../../dist"
+import { Box, Heading, List, Anchor, Text } from "../../dist"
 import dspComponents from "../../dsp/data/components.json"
 import styles from "./Navigation.module.css"
-import NextLink from "next/link"
+import Link from "next/link"
 import React from "react"
 import Topbar from "./Topbar"
 
@@ -44,8 +44,8 @@ const Navigation = ({ selected }) => {
 
                 return (
                   <Box as="li" key={index}>
-                    <NextLink href={path}>
-                      <Link
+                    <Link href={path}>
+                      <Anchor
                         size={"normal"}
                         className={
                           isSelected
@@ -54,8 +54,8 @@ const Navigation = ({ selected }) => {
                         }
                       >
                         {item.pages[index]}
-                      </Link>
-                    </NextLink>
+                      </Anchor>
+                    </Link>
                   </Box>
                 )
               })}

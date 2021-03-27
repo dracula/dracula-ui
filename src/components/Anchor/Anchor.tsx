@@ -9,15 +9,15 @@ import {
 } from '../../base/spacing'
 import { textColors, textSizes, textWeights } from '../Text/Text'
 
-export const linkHoverColors = mapValues(textColors, (classname) => {
+export const hoverColors = mapValues(textColors, (classname) => {
   return `${classname}--hover`
 })
 
-/** Link Props */
-export interface LinkProps
+/** Anchor Props */
+export interface AnchorProps
   extends HTMLAttributes<HTMLAnchorElement>,
-    PaddingMixin,
-    MarginMixin {
+  PaddingMixin,
+  MarginMixin {
   /**
    * The path to link this anchor to.
    */
@@ -41,7 +41,7 @@ export interface LinkProps
   /**
    * Controls the color of the link on hover
    */
-  hoverColor?: keyof typeof linkHoverColors
+  hoverColor?: keyof typeof hoverColors
 }
 
 /**
@@ -54,18 +54,18 @@ export interface LinkProps
  * to be displayed on a page, or as part of other complex components
  * or UI patterns
  */
-export const Link = (props: LinkProps) => {
+export const Anchor = (props: AnchorProps) => {
   const finalProps = {
     ...props,
 
     className: cx(
-      `drac-link`,
+      `drac-anchor`,
       `drac-text`,
       props.className,
       textSizes[props.size ?? 'medium'],
       textWeights[props.weight ?? 'normal'],
       textColors[props.color ?? 'white'],
-      linkHoverColors[props.hoverColor ?? 'purple'],
+      hoverColors[props.hoverColor ?? 'purple'],
       ...paddingMixin(props),
       ...marginMixin(props)
     )
@@ -74,4 +74,4 @@ export const Link = (props: LinkProps) => {
   return React.createElement('a', finalProps, props.children)
 }
 
-Link.displayName = 'Link'
+Anchor.displayName = 'Anchor'
