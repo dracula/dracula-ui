@@ -9,7 +9,7 @@
       "id": "Anchor",
       "name": "Anchor",
       "last_updated_by": "System",
-      "description": "Text is the base component for any sort of text.\n\nConsumers of this component can control, the color, size,\nweight, and spacing of Text.\n\nUse this component for generic, and non-hierarchical text that is\nto be displayed on a page, or as part of other complex components\nor UI patterns",
+      "description": "Anchor is an abstraction/style that can/is applied to HTML anchor elements.\n\nConsumers of this component can control, the color, size,\nweight, and spacing of the Anchor.\n\nUse this component to create text or element based anchors around other HTML tags or React Components.",
       "related_entity_ids": [],
       "tags": [
         "component"
@@ -356,7 +356,7 @@
       },
       "ext_com_draculaui_docgen": {
         "tags": {},
-        "description": "Text is the base component for any sort of text.\n\nConsumers of this component can control, the color, size,\nweight, and spacing of Text.\n\nUse this component for generic, and non-hierarchical text that is\nto be displayed on a page, or as part of other complex components\nor UI patterns",
+        "description": "Anchor is an abstraction/style that can/is applied to HTML anchor elements.\n\nConsumers of this component can control, the color, size,\nweight, and spacing of the Anchor.\n\nUse this component to create text or element based anchors around other HTML tags or React Components.",
         "displayName": "Anchor",
         "methods": [],
         "props": {
@@ -4465,6 +4465,36 @@
           }
         }
       }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": "Colors",
+      "name": "Colors",
+      "last_updated_by": "System",
+      "description": "undefined",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "colors",
+        "languages": {
+          "javascriptreact": "<Box p=\"md\" style={{ display: \"flex\" }}>\n  <Box color=\"pink\" style={{ width: 48, height: 48 }} />\n  <Box color=\"purpleCyan\" style={{ width: 48, height: 48 }} />\n  <Box color=\"animated\" style={{ width: 48, height: 48 }} />\n</Box>;\n",
+          "html": "<div p=\"md\" style=\"display: flex\" class=\"drac-box drac-p-md\">\n  <div\n    color=\"pink\"\n    style=\"width: 48px; height: 48px\"\n    class=\"drac-box drac-bg-pink\"\n  ></div>\n  <div\n    color=\"purpleCyan\"\n    style=\"width: 48px; height: 48px\"\n    class=\"drac-box drac-bg-purple-cyan\"\n  ></div>\n  <div\n    color=\"animated\"\n    style=\"width: 48px; height: 48px\"\n    class=\"drac-box drac-bg-animated\"\n  ></div>\n</div>\n"
+        }
+      },
+      "ext_com_draculaui_variations": [
+        {
+          "title": "Usage",
+          "html": "<div p=\"md\" style=\"display: flex\" class=\"drac-box drac-p-md\">\n  <div\n    color=\"pink\"\n    style=\"width: 48px; height: 48px\"\n    class=\"drac-box drac-bg-pink\"\n  ></div>\n  <div\n    color=\"purpleCyan\"\n    style=\"width: 48px; height: 48px\"\n    class=\"drac-box drac-bg-purple-cyan\"\n  ></div>\n  <div\n    color=\"animated\"\n    style=\"width: 48px; height: 48px\"\n    class=\"drac-box drac-bg-animated\"\n  ></div>\n</div>\n",
+          "react": "<Box p=\"md\" style={{ display: \"flex\" }}>\n  <Box color=\"pink\" style={{ width: 48, height: 48 }} />\n  <Box color=\"purpleCyan\" style={{ width: 48, height: 48 }} />\n  <Box color=\"animated\" style={{ width: 48, height: 48 }} />\n</Box>;\n",
+          "docs": "",
+          "screenshot": "./dsp/assets/Colors.png",
+          "svgData": "./dsp/assets/svgs/Colors.svg"
+        }
+      ],
+      "ext_com_draculaui_props": {}
     },
     {
       "class": "component",

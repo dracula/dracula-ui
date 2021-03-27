@@ -43,14 +43,12 @@ export interface AnchorProps extends HTMLAttributes<HTMLAnchorElement>, PaddingM
     hoverColor?: keyof typeof hoverColors;
 }
 /**
- * Text is the base component for any sort of text.
+ * Anchor is an abstraction/style that can/is applied to HTML anchor elements.
  *
  * Consumers of this component can control, the color, size,
- * weight, and spacing of Text.
+ * weight, and spacing of the Anchor.
  *
- * Use this component for generic, and non-hierarchical text that is
- * to be displayed on a page, or as part of other complex components
- * or UI patterns
+ * Use this component to create text or element based anchors around other HTML tags or React Components.
  */
 export declare const Anchor: {
     (props: AnchorProps): React.DetailedReactHTMLElement<{
