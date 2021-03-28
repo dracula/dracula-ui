@@ -28,7 +28,7 @@ export async function getStaticProps() {
   }
 }
 
-class Spacing extends React.Component {
+class Colors extends React.Component {
   render() {
     const { title, description } = this.props.query
 
@@ -265,6 +265,6 @@ class Spacing extends React.Component {
   }
 }
 
-Spacing.Layout = Theme
+Colors.Layout = Theme
 
-export default Spacing
+export default Colors
