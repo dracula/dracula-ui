@@ -7,7 +7,7 @@ import {
   spacingUtilities,
   Table,
   Text
-} from "../../dist"
+} from "dracula-ui"
 import SpacingDocs from "../../dsp/data/components/Spacing.json"
 import Navigation from "../components/Navigation"
 import Tabs from "../components/Tabs"
