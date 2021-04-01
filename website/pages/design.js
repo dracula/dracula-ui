@@ -1,16 +1,16 @@
-import React from "react"
 import Head from "next/head"
-import Theme from "../layouts/Theme"
-import { Box, Heading, Link, Paragraph } from "../../dist"
+import React from "react"
+import { Box, Heading, Paragraph } from "../../dist"
 import Navigation from "../components/Navigation"
+import Theme from "../layouts/Theme"
 import styles from "./index.module.css"
 
 export async function getStaticProps() {
   return {
     props: {
       query: {
-        title: 'Design',
-        description: 'How to use Dracula UI on Figma'
+        title: "Design",
+        description: "How to use Dracula UI on Figma"
       }
     }
   }
@@ -18,7 +18,7 @@ export async function getStaticProps() {
 
 class Design extends React.Component {
   render() {
-    const { title, description } = this.props.query;
+    const { title, description } = this.props.query
 
     return (
       <div>
@@ -37,12 +37,25 @@ class Design extends React.Component {
             <main className={styles.center}>
               <Box>
                 <Heading size="heading-1">{title}</Heading>
-                <Paragraph className={styles.description} size="md">{description}</Paragraph>
+                <Paragraph className={styles.description} size="md">
+                  {description}
+                </Paragraph>
                 <Box my="lg">
                   <Heading size="heading-2">Using Figma</Heading>
-                  <Paragraph>To facilitate the communication between between designers and developers, we decided to build all Dracula UI components on Figma.</Paragraph>
-                  <Paragraph>You can find the <code>.fig</code> file inside the "design" folder.</Paragraph>
-                  <img className={styles.image} src="/static/images/design-1.png" alt="Dracula UI on Figma" />
+                  <Paragraph>
+                    To facilitate the communication between between designers
+                    and developers, we decided to build all Dracula UI
+                    components on Figma.
+                  </Paragraph>
+                  <Paragraph>
+                    You can find the <code>.fig</code> file inside the "design"
+                    folder.
+                  </Paragraph>
+                  <img
+                    className={styles.image}
+                    src="/static/images/design-1.png"
+                    alt="Dracula UI on Figma"
+                  />
                 </Box>
               </Box>
             </main>

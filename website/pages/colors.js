@@ -2,10 +2,10 @@ import { omit } from "lodash"
 import Head from "next/head"
 import React from "react"
 import {
-  colorUtilities,
   baseColors,
   borderColors,
   Box,
+  colorUtilities,
   gradientColors,
   Heading,
   Paragraph,

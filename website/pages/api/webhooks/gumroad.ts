@@ -1,6 +1,6 @@
-import { NextApiHandler } from 'next'
-import { Octokit } from '@octokit/rest'
-import Twilio from 'twilio'
+import { Octokit } from "@octokit/rest"
+import { NextApiHandler } from "next"
+import Twilio from "twilio"
 
 const accountSid = process.env.TWILIO_ACCOUNT_SID
 const authToken = process.env.TWILIO_AUTH_TOKEN
@@ -32,7 +32,7 @@ const octokit = new Octokit({
 })
 
 const handler: NextApiHandler = async (req, res) => {
-  const github = req.body['GitHub username']
+  const github = req.body["GitHub username"]
 
   if (!github) {
     res.status(422)
@@ -40,22 +40,23 @@ const handler: NextApiHandler = async (req, res) => {
     return
   }
 
+  await octokit
+    .request("PUT /repos/{owner}/{repo}/collaborators/{username}", {
+      repo: "dracula-ui",
+      username: github,
+      permission: "triage",
+      owner: "dracula"
+    })
+    .catch(async (err) => {
+      console.error(err)
 
-  await octokit.request('PUT /repos/{owner}/{repo}/collaborators/{username}', {
-    repo: 'dracula-ui',
-    username: github,
-    permission: 'triage',
-    owner: 'dracula'
-  }).catch(async (err) => {
-    console.error(err)
+      await Promise.all([
+        fallback("+17758638863", github),
+        fallback("+19095481593", github)
+      ])
+    })
 
-    await Promise.all([
-      fallback("+17758638863", github),
-      fallback("+19095481593", github)
-    ])
-  })
-
-  res.status(200).json({ name: 'Gumroad!' })
+  res.status(200).json({ name: "Gumroad!" })
 }
 
 export default handler
