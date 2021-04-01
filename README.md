@@ -17,21 +17,9 @@ Our mission is to unleash the creative potential in every developer. We do that 
 
 ## :book: Documentation
 
-During the alpha phase, our documentation can only be accessed locally.
+You can access the documentation portal at: https://dracula-ui-zeta.vercel.app/
 
-To do that, you first need to install all dependencies:
-
-```bash
-yarn install
-```
-
-And then run:
-
-```bash
-yarn run dev
-```
-
-Now you can open `localhost:3000` in your browser.
+> Note: Please don't share this secret URL with people outside of the early access program.
 
 ## :package: Install
 
