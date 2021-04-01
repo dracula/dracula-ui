@@ -1,5 +1,5 @@
 import React from "react"
-import { Box, Paragraph, Text } from "dracula-ui"
+import { Box, Paragraph, Text } from "@dracula/dracula-ui"
 
 const spacingProps = [
   "p",

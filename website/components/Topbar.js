@@ -1,4 +1,4 @@
-import { Box, Text, Anchor } from "dracula-ui"
+import { Box, Text, Anchor } from "@dracula/dracula-ui"
 import { Component } from "react"
 import Link from "next/link"
 import styles from "./Topbar.module.css"

@@ -18,7 +18,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "twilio": "^3.57.0",
-    "dracula-ui": "github://dracula/dracula-ui#alpha"
+    "@dracula/dracula-ui": "^0.2.2"
   },
   "prettier": {
     "semi": false,

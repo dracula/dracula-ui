@@ -12,7 +12,7 @@ import {
   Table,
   Text,
   textColors
-} from "dracula-ui"
+} from "@dracula/dracula-ui"
 import Navigation from "../components/Navigation"
 import Theme from "../layouts/Theme"
 import styles from "./index.module.css"

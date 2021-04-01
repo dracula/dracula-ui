@@ -1,6 +1,6 @@
 import Head from "next/head"
 import React from "react"
-import { Box, Heading, Paragraph } from "dracula-ui"
+import { Box, Heading, Paragraph } from "@dracula/dracula-ui"
 import CodeHighlight from "../components/CodeHighlight"
 import Navigation from "../components/Navigation"
 import Theme from "../layouts/Theme"
