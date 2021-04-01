@@ -7,8 +7,8 @@ import {
   spacingUtilities,
   Table,
   Text
-} from "../../dist"
-import SpacingDocs from "../../dsp/data/components/Spacing.json"
+} from "@dracula/dracula-ui"
+import SpacingDocs from "@dracula/dracula-ui/dsp/data/components/Spacing.json"
 import Navigation from "../components/Navigation"
 import Tabs from "../components/Tabs"
 import Theme from "../layouts/Theme"

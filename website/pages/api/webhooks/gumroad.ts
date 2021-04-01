@@ -42,7 +42,7 @@ const handler: NextApiHandler = async (req, res) => {
 
   await octokit
     .request("PUT /repos/{owner}/{repo}/collaborators/{username}", {
-      repo: "dracula-ui",
+      repo: "@dracula/dracula-ui",
       username: github,
       permission: "triage",
       owner: "dracula"

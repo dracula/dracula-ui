@@ -1,4 +1,4 @@
-import { Box, baseColors } from "../../dist"
+import { Box, baseColors } from "@dracula/dracula-ui"
 
 export function AccentColorPicker() {
   return (

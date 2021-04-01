@@ -12,7 +12,7 @@ import {
   Table,
   Text,
   textColors
-} from "../../dist"
+} from "@dracula/dracula-ui"
 import Navigation from "../components/Navigation"
 import Theme from "../layouts/Theme"
 import styles from "./index.module.css"
@@ -245,7 +245,7 @@ class Colors extends React.Component {
                       <tbody>
                         {colorUtilities.classes.map((color) => {
                           return (
-                            <tr key={_}>
+                            <tr key={color}>
                               <td>
                                 <Text color="white">.{color}</Text>
                               </td>

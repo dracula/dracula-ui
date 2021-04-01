@@ -1,8 +1,8 @@
-import { Box, Heading, List, Anchor, Text } from "../../dist"
-import dspComponents from "../../dsp/data/components.json"
-import styles from "./Navigation.module.css"
+import { Anchor, Box, List, Text } from "@dracula/dracula-ui"
 import Link from "next/link"
 import React from "react"
+import dspComponents from "@dracula/dracula-ui/dsp/data/components.json"
+import styles from "./Navigation.module.css"
 import Topbar from "./Topbar"
 
 const pages = dspComponents.entities.map((entity) => {

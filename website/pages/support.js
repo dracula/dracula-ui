@@ -1,6 +1,6 @@
 import Head from "next/head"
 import React from "react"
-import { Anchor, Box, Heading, Paragraph } from "../../dist"
+import { Anchor, Box, Heading, Paragraph } from "@dracula/dracula-ui"
 import Navigation from "../components/Navigation"
 import Theme from "../layouts/Theme"
 import styles from "./index.module.css"
