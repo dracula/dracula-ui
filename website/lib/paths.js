@@ -1,4 +1,4 @@
-import dspComponents from "../../dsp/data/components.json";
+import dspComponents from "@dracula/dracula-ui/dsp/data/components.json"
 
 const paths = dspComponents.entities.map((entity) => {
   return {
@@ -12,12 +12,12 @@ const paths = dspComponents.entities.map((entity) => {
           return {
             ...example,
             code: example.html,
-            description: example.docs,
-          };
+            description: example.docs
+          }
         }
-      ),
-    },
-  };
-});
+      )
+    }
+  }
+})
 
-module.exports = paths;
+module.exports = paths
