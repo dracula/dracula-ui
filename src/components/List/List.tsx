@@ -2,6 +2,7 @@ import cx from 'classnames/dedupe'
 import React, { HTMLAttributes } from 'react'
 import { ColorMap } from '../../base/colors'
 import {
+  cleanProps,
   marginMixin,
   MarginMixin,
   paddingMixin,
@@ -47,19 +48,21 @@ export interface ListProps
  * Lists are used to display list items in an ordered or unordered way.
  */
 export const List: React.FC<ListProps> = (props: ListProps) => {
-  const finalProps = {
-    ...props,
+  const { color, variant, ...htmlProps } = props
+
+  const finalProps = cleanProps({
+    ...htmlProps,
     className: cx(
       'drac-list',
       props.className,
-      props.variant && listVariants[props.variant],
-      props.color && listColors[props.color],
+      variant && listVariants[variant],
+      color && listColors[color],
       ...paddingMixin(props),
       ...marginMixin(props)
     )
-  }
+  })
 
-  if (props.variant === 'unordered') {
+  if (variant === 'unordered') {
     return <ul {...finalProps} />
   }
 

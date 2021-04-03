@@ -15,13 +15,8 @@ exports[`Site: Heading Colors 1`] = `
 Object {
   "docs": "Headings can be customized to use any of the Dracula UI theme colors, including all solid, gradient, and animated colors.",
   "html": "<div>
-  <h1 color=\\"pink\\" class=\\"drac-heading drac-heading-1 drac-text-pink\\">pink</h1>
-  <h1
-    color=\\"purpleCyan\\"
-    class=\\"drac-heading drac-heading-1 drac-text-purple-cyan\\"
-  >
-    purpleCyan
-  </h1>
+  <h1 class=\\"drac-heading drac-heading-1 drac-text-pink\\">pink</h1>
+  <h1 class=\\"drac-heading drac-heading-1 drac-text-purple-cyan\\">purpleCyan</h1>
 </div>
 ",
   "react": "<div>

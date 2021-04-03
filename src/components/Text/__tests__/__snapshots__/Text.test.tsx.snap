@@ -16,14 +16,10 @@ Object {
   "docs": "Text can be customized to use any of the Dracula UI theme colors.",
   "html": "<div class=\\"drac-box\\">
   <div class=\\"drac-box\\">
-    <span color=\\"cyan\\" class=\\"drac-text drac-line-height drac-text-cyan\\"
-      >cyan</span
-    >
+    <span class=\\"drac-text drac-line-height drac-text-cyan\\">cyan</span>
   </div>
   <div class=\\"drac-box\\">
-    <span color=\\"green\\" class=\\"drac-text drac-line-height drac-text-green\\"
-      >green</span
-    >
+    <span class=\\"drac-text drac-line-height drac-text-green\\">green</span>
   </div>
 </div>
 ",
@@ -88,21 +84,15 @@ Object {
   "docs": "Text can be defined in different font weights.",
   "html": "<div class=\\"drac-box\\">
   <div class=\\"drac-box\\">
-    <span weight=\\"normal\\" class=\\"drac-text drac-line-height drac-text-white\\"
-      >normal</span
-    >
+    <span class=\\"drac-text drac-line-height drac-text-white\\">normal</span>
   </div>
   <div class=\\"drac-box\\">
-    <span
-      weight=\\"semibold\\"
-      class=\\"drac-text drac-text-semibold drac-line-height drac-text-white\\"
+    <span class=\\"drac-text drac-text-semibold drac-line-height drac-text-white\\"
       >semibold</span
     >
   </div>
   <div class=\\"drac-box\\">
-    <span
-      weight=\\"bold\\"
-      class=\\"drac-text drac-text-bold drac-line-height drac-text-white\\"
+    <span class=\\"drac-text drac-text-bold drac-line-height drac-text-white\\"
       >bold</span
     >
   </div>

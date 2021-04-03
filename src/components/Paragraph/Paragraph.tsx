@@ -1,7 +1,13 @@
 import cx from 'classnames/dedupe'
 import React from 'react'
-import { marginMixin, paddingMixin } from '../../base/spacing'
-import { textColors, TextProps, textSizes, lineHeights, textWeights } from '../Text/Text'
+import { cleanProps, marginMixin, paddingMixin } from '../../base/spacing'
+import {
+  textColors,
+  TextProps,
+  textSizes,
+  lineHeights,
+  textWeights
+} from '../Text/Text'
 
 /**
  * Paragraph is a semantic component used for blocks of text with
@@ -10,20 +16,22 @@ import { textColors, TextProps, textSizes, lineHeights, textWeights } from '../T
  * Paragraph accepts all the same customization options as Text.
  */
 export const Paragraph: React.FC<TextProps> = (props: TextProps) => {
+  const { size, weight, lineHeight, color, ...htmlProps } = props
+
   const finalProps = {
-    ...props,
+    ...htmlProps,
 
     className: cx(
       `drac-text`,
       props.className,
-      textSizes[props.size ?? 'medium'],
-      textWeights[props.weight ?? 'normal'],
-      lineHeights[props.lineHeight ?? 'normal'],
-      textColors[props.color ?? 'white'],
+      textSizes[size ?? 'medium'],
+      textWeights[weight ?? 'normal'],
+      lineHeights[lineHeight ?? 'normal'],
+      textColors[color ?? 'white'],
       ...paddingMixin(props),
       ...marginMixin(props)
     )
   }
 
-  return <p {...finalProps}>{props.children}</p>
+  return <p {...cleanProps(finalProps)}>{props.children}</p>
 }

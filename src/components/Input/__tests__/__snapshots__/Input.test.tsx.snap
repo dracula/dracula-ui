@@ -5,7 +5,6 @@ Object {
   "docs": "Styles or abstracts HTML input elements.",
   "html": "<input
   placeholder=\\"Input\\"
-  color=\\"white\\"
   class=\\"drac-input drac-input-white drac-text-white\\"
 />
 ",
@@ -20,14 +19,10 @@ Object {
   "docs": "Inputs can be customized to use any of the Dracula UI theme colors.",
   "html": "<div class=\\"drac-box\\">
   <input
-    color=\\"purple\\"
     placeholder=\\"purple\\"
-    m=\\"xs\\"
     class=\\"drac-input drac-input-purple drac-text-purple drac-m-xs\\"
   /><input
-    color=\\"green\\"
     placeholder=\\"green\\"
-    m=\\"xs\\"
     class=\\"drac-input drac-input-green drac-text-green drac-m-xs\\"
   />
 </div>
@@ -45,15 +40,10 @@ exports[`Site: Input Sizes 1`] = `
 Object {
   "docs": "Inputs can be customize to use several different sizes.",
   "html": "<div class=\\"drac-box\\">
-  <input
-    placeholder=\\"small\\"
-    m=\\"xs\\"
-    class=\\"drac-input drac-input-sm drac-m-xs\\"
-  /><input placeholder=\\"medium\\" m=\\"xs\\" class=\\"drac-input drac-m-xs\\" /><input
-    placeholder=\\"large\\"
-    m=\\"xs\\"
-    class=\\"drac-input drac-input-lg drac-m-xs\\"
-  />
+  <input placeholder=\\"small\\" class=\\"drac-input drac-input-sm drac-m-xs\\" /><input
+    placeholder=\\"medium\\"
+    class=\\"drac-input drac-m-xs\\"
+  /><input placeholder=\\"large\\" class=\\"drac-input drac-input-lg drac-m-xs\\" />
 </div>
 ",
   "react": "<Box>
@@ -70,15 +60,8 @@ exports[`Site: Input Variants 1`] = `
 Object {
   "docs": "Use the \`outline\` variant to represent subtler text Inputs",
   "html": "<div class=\\"drac-box\\">
-  <input
-    variant=\\"normal\\"
-    placeholder=\\"normal\\"
-    m=\\"xs\\"
-    class=\\"drac-input drac-m-xs\\"
-  /><input
-    variant=\\"outline\\"
+  <input placeholder=\\"normal\\" class=\\"drac-input drac-m-xs\\" /><input
     placeholder=\\"outline\\"
-    m=\\"xs\\"
     class=\\"drac-input drac-input-outline drac-m-xs\\"
   />
 </div>

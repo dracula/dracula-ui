@@ -6,9 +6,8 @@ Object {
   "html": "<div>
   <input
     type=\\"checkbox\\"
-    id=\\"one\\"
-    color=\\"purple\\"
     name=\\"demo\\"
+    id=\\"one\\"
     class=\\"drac-checkbox drac-checkbox-purple\\"
     checked=\\"\\"
   /><label for=\\"one\\" class=\\"drac-text drac-text-white\\">Checked</label>
@@ -32,9 +31,8 @@ Object {
   <div style=\\"margin-bottom: 10px\\">
     <input
       type=\\"checkbox\\"
-      id=\\"white\\"
-      color=\\"white\\"
       name=\\"demo\\"
+      id=\\"white\\"
       class=\\"drac-checkbox drac-checkbox-white\\"
       checked=\\"\\"
     /><label for=\\"white\\" class=\\"drac-text drac-text-white\\">Checkbox</label>
@@ -42,9 +40,8 @@ Object {
   <div style=\\"margin-bottom: 10px\\">
     <input
       type=\\"checkbox\\"
-      id=\\"cyan\\"
-      color=\\"cyan\\"
       name=\\"demo\\"
+      id=\\"cyan\\"
       class=\\"drac-checkbox drac-checkbox-cyan\\"
       checked=\\"\\"
     /><label for=\\"cyan\\" class=\\"drac-text drac-text-white\\">Checkbox</label>
@@ -52,9 +49,8 @@ Object {
   <div style=\\"margin-bottom: 10px\\">
     <input
       type=\\"checkbox\\"
-      id=\\"green\\"
-      color=\\"green\\"
       name=\\"demo\\"
+      id=\\"green\\"
       class=\\"drac-checkbox drac-checkbox-green\\"
       checked=\\"\\"
     /><label for=\\"green\\" class=\\"drac-text drac-text-white\\">Checkbox</label>
@@ -62,9 +58,8 @@ Object {
   <div style=\\"margin-bottom: 10px\\">
     <input
       type=\\"checkbox\\"
-      id=\\"orange\\"
-      color=\\"orange\\"
       name=\\"demo\\"
+      id=\\"orange\\"
       class=\\"drac-checkbox drac-checkbox-orange\\"
       checked=\\"\\"
     /><label for=\\"orange\\" class=\\"drac-text drac-text-white\\">Checkbox</label>
@@ -72,9 +67,8 @@ Object {
   <div style=\\"margin-bottom: 10px\\">
     <input
       type=\\"checkbox\\"
-      id=\\"pink\\"
-      color=\\"pink\\"
       name=\\"demo\\"
+      id=\\"pink\\"
       class=\\"drac-checkbox drac-checkbox-pink\\"
       checked=\\"\\"
     /><label for=\\"pink\\" class=\\"drac-text drac-text-white\\">Checkbox</label>
@@ -82,9 +76,8 @@ Object {
   <div style=\\"margin-bottom: 10px\\">
     <input
       type=\\"checkbox\\"
-      id=\\"purple\\"
-      color=\\"purple\\"
       name=\\"demo\\"
+      id=\\"purple\\"
       class=\\"drac-checkbox drac-checkbox-purple\\"
       checked=\\"\\"
     /><label for=\\"purple\\" class=\\"drac-text drac-text-white\\">Checkbox</label>
@@ -92,9 +85,8 @@ Object {
   <div style=\\"margin-bottom: 10px\\">
     <input
       type=\\"checkbox\\"
-      id=\\"red\\"
-      color=\\"red\\"
       name=\\"demo\\"
+      id=\\"red\\"
       class=\\"drac-checkbox drac-checkbox-red\\"
       checked=\\"\\"
     /><label for=\\"red\\" class=\\"drac-text drac-text-white\\">Checkbox</label>
@@ -102,9 +94,8 @@ Object {
   <div style=\\"margin-bottom: 10px\\">
     <input
       type=\\"checkbox\\"
-      id=\\"yellow\\"
-      color=\\"yellow\\"
       name=\\"demo\\"
+      id=\\"yellow\\"
       class=\\"drac-checkbox drac-checkbox-yellow\\"
       checked=\\"\\"
     /><label for=\\"yellow\\" class=\\"drac-text drac-text-white\\">Checkbox</label>

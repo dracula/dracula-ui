@@ -25,14 +25,10 @@ Object {
   "html": "<div>
   <span
     class=\\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-lg-stroke\\"
-    ><span color=\\"white\\" class=\\"drac-text drac-line-height drac-text-white\\"
-      >NF</span
-    ></span
+    ><span class=\\"drac-text drac-line-height drac-text-white\\">NF</span></span
   ><span
     class=\\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-no-border\\"
-    ><span color=\\"white\\" class=\\"drac-text drac-line-height drac-text-white\\"
-      >NF</span
-    ></span
+    ><span class=\\"drac-text drac-line-height drac-text-white\\">NF</span></span
   >
 </div>
 ",
@@ -52,9 +48,7 @@ Object {
   <span
     class=\\"drac-avatar drac-bg-green-transparent drac-text-green\\"
     color=\\"cyan\\"
-    ><span color=\\"white\\" class=\\"drac-text drac-line-height drac-text-white\\"
-      >NF</span
-    ></span
+    ><span class=\\"drac-text drac-line-height drac-text-white\\">NF</span></span
   >
 </div>
 ",
@@ -72,13 +66,9 @@ Object {
   "html": "<div>
   <span
     class=\\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-subtle\\"
-    ><span color=\\"white\\" class=\\"drac-text drac-line-height drac-text-white\\"
-      >ZR</span
-    ></span
+    ><span class=\\"drac-text drac-line-height drac-text-white\\">ZR</span></span
   ><span class=\\"drac-avatar drac-bg-green-transparent drac-text-green\\"
-    ><span color=\\"white\\" class=\\"drac-text drac-line-height drac-text-white\\"
-      >NF</span
-    ></span
+    ><span class=\\"drac-text drac-line-height drac-text-white\\">NF</span></span
   >
 </div>
 ",

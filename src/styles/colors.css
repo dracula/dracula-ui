@@ -108,6 +108,7 @@
 
 @each $color in black, white, cyan, green, orange, pink, purple, red, yellow {
   .bg-$(color) {
+    --accentColor: var(--$(color));
     background-color: var(--$(color));
   }
 

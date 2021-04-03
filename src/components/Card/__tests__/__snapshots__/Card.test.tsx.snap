@@ -3,7 +3,7 @@
 exports[`Site: Card Basic Usage 1`] = `
 Object {
   "docs": "A Card is analogous to an HTML div and can contain any other component. Use Cards when you want to add hierarchy or highlight parts of your content.",
-  "html": "<div color=\\"purple\\" p=\\"sm\\" class=\\"drac-box drac-card drac-bg-purple drac-p-sm\\">
+  "html": "<div class=\\"drac-box drac-card drac-bg-purple drac-p-sm\\">
   <span class=\\"drac-text drac-line-height drac-text-white\\">Dracula</span>
 </div>
 ",
@@ -18,11 +18,7 @@ Object {
 exports[`Site: Card Colors 1`] = `
 Object {
   "docs": "Cards can be customized to use any of the Dracula UI theme colors, including all solid, gradient, and animated colors.",
-  "html": "<div
-  color=\\"pinkPurple\\"
-  p=\\"sm\\"
-  class=\\"drac-box drac-card drac-bg-pink-purple drac-p-sm\\"
->
+  "html": "<div class=\\"drac-box drac-card drac-bg-pink-purple drac-p-sm\\">
   <span class=\\"drac-text drac-line-height drac-text-white\\">Pink Purple</span>
 </div>
 ",
@@ -38,57 +34,25 @@ exports[`Site: Card Spacing 1`] = `
 Object {
   "docs": "Cards come with pre defined spacing primitives for padding and margin that allow for customizing the spacing inside and around Cardes.",
   "html": "<div>
-  <div
-    color=\\"yellowPink\\"
-    p=\\"xs\\"
-    class=\\"drac-box drac-card drac-bg-yellow-pink drac-p-xs\\"
-  >
-    <span color=\\"black\\" class=\\"drac-text drac-line-height drac-text-black\\"
-      >xs padding</span
-    >
+  <div class=\\"drac-box drac-card drac-bg-yellow-pink drac-p-xs\\">
+    <span class=\\"drac-text drac-line-height drac-text-black\\">xs padding</span>
   </div>
-  <div
-    color=\\"purpleCyan\\"
-    p=\\"sm\\"
-    class=\\"drac-box drac-card drac-bg-purple-cyan drac-p-sm\\"
-  >
-    <span color=\\"black\\" class=\\"drac-text drac-line-height drac-text-black\\"
-      >sm padding</span
-    >
+  <div class=\\"drac-box drac-card drac-bg-purple-cyan drac-p-sm\\">
+    <span class=\\"drac-text drac-line-height drac-text-black\\">sm padding</span>
   </div>
-  <div
-    color=\\"pinkPurple\\"
-    p=\\"md\\"
-    class=\\"drac-box drac-card drac-bg-pink-purple drac-p-md\\"
-  >
-    <span color=\\"black\\" class=\\"drac-text drac-line-height drac-text-black\\"
+  <div class=\\"drac-box drac-card drac-bg-pink-purple drac-p-md\\">
+    <span class=\\"drac-text drac-line-height drac-text-black\\"
       >medium padding</span
     >
   </div>
-  <div
-    color=\\"yellowPink\\"
-    m=\\"xs\\"
-    class=\\"drac-box drac-card drac-bg-yellow-pink drac-m-xs\\"
-  >
-    <span color=\\"black\\" class=\\"drac-text drac-line-height drac-text-black\\"
-      >xs margin</span
-    >
+  <div class=\\"drac-box drac-card drac-bg-yellow-pink drac-m-xs\\">
+    <span class=\\"drac-text drac-line-height drac-text-black\\">xs margin</span>
   </div>
-  <div
-    color=\\"purpleCyan\\"
-    m=\\"sm\\"
-    class=\\"drac-box drac-card drac-bg-purple-cyan drac-m-sm\\"
-  >
-    <span color=\\"black\\" class=\\"drac-text drac-line-height drac-text-black\\"
-      >sm margin</span
-    >
+  <div class=\\"drac-box drac-card drac-bg-purple-cyan drac-m-sm\\">
+    <span class=\\"drac-text drac-line-height drac-text-black\\">sm margin</span>
   </div>
-  <div
-    color=\\"pinkPurple\\"
-    m=\\"md\\"
-    class=\\"drac-box drac-card drac-bg-pink-purple drac-m-md\\"
-  >
-    <span color=\\"black\\" class=\\"drac-text drac-line-height drac-text-black\\"
+  <div class=\\"drac-box drac-card drac-bg-pink-purple drac-m-md\\">
+    <span class=\\"drac-text drac-line-height drac-text-black\\"
       >medium margin</span
     >
   </div>
@@ -125,14 +89,9 @@ Object {
   "html": "<div>
   <div
     variant=\\"subtle\\"
-    color=\\"pink\\"
-    p=\\"md\\"
-    m=\\"md\\"
     class=\\"drac-box drac-card drac-card-subtle drac-border-pink drac-bg-pink drac-p-md drac-m-md\\"
   >
-    <span color=\\"pink\\" class=\\"drac-text drac-line-height drac-text-pink\\"
-      >Subtle Card</span
-    >
+    <span class=\\"drac-text drac-line-height drac-text-pink\\">Subtle Card</span>
   </div>
 </div>
 ",

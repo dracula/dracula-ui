@@ -3,6 +3,7 @@ import { first, last } from 'lodash'
 import React, { HTMLAttributes } from 'react'
 import { colors as backgroundColors } from '../../base/colors'
 import {
+  cleanProps,
   MarginMixin,
   marginMixin,
   PaddingMixin,
@@ -93,7 +94,7 @@ export const Avatar = (props: AvatarProps) => {
   }
 
   return (
-    <span className={classes} style={style} {...htmlProps}>
+    <span className={classes} style={style} {...cleanProps(htmlProps)}>
       {!props.src && (
         <Text color={props.themeColor ?? 'white'}>
           {f}

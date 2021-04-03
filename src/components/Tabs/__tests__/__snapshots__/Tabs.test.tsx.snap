@@ -3,7 +3,7 @@
 exports[`Site: Tabs Basic Usage 1`] = `
 Object {
   "docs": "Display different content based on the Tabs behavior.",
-  "html": "<ul color=\\"white\\" class=\\"drac-tabs drac-tabs-white\\">
+  "html": "<ul class=\\"drac-tabs drac-tabs-white\\">
   <li class=\\"drac-tab drac-tab-active\\">
     <a class=\\"drac-tab-link drac-text\\" href=\\"#\\">Item One</a>
   </li>
@@ -42,7 +42,7 @@ Object {
   "docs": "Tabs can be customized to use any of the Dracula UI theme colors.",
   "html": "<div class=\\"drac-box\\">
   <div class=\\"drac-box\\">
-    <ul color=\\"cyan\\" class=\\"drac-tabs drac-tabs-cyan\\">
+    <ul class=\\"drac-tabs drac-tabs-cyan\\">
       <li class=\\"drac-tab drac-tab-active\\">
         <a class=\\"drac-tab-link drac-text\\" href=\\"#\\">Item One</a>
       </li>
@@ -55,7 +55,7 @@ Object {
     </ul>
   </div>
   <div class=\\"drac-box\\">
-    <ul color=\\"green\\" class=\\"drac-tabs drac-tabs-green\\">
+    <ul class=\\"drac-tabs drac-tabs-green\\">
       <li class=\\"drac-tab drac-tab-active\\">
         <a class=\\"drac-tab-link drac-text\\" href=\\"#\\">Item One</a>
       </li>

@@ -3,6 +3,7 @@ import { mapValues } from 'lodash'
 import React, { HTMLAttributes } from 'react'
 import { colors } from '../../base/colors'
 import {
+  cleanProps,
   marginMixin,
   MarginMixin,
   paddingMixin,
@@ -28,7 +29,7 @@ export const lineHeights = {
   normal: 'drac-line-height',
   medium: 'drac-line-height-md',
   large: 'drac-line-height-lg',
-  xlarge: 'drac-line-height-xl',
+  xlarge: 'drac-line-height-xl'
 }
 
 export const textColors = mapValues(colors, (className) => {
@@ -38,8 +39,8 @@ export const textColors = mapValues(colors, (className) => {
 /** Text Props */
 export interface TextProps
   extends HTMLAttributes<HTMLSpanElement>,
-  PaddingMixin,
-  MarginMixin {
+    PaddingMixin,
+    MarginMixin {
   /**
    * Controls the size of the text based on pre-configured Dracula UI sizes.
    */
@@ -74,24 +75,25 @@ export interface TextProps
  * or UI patterns
  */
 export const Text = (props: TextProps) => {
-  const finalProps = {
-    ...props,
+  const { size, weight, lineHeight, as, color, ...htmlProps } = props
 
+  const finalProps = {
+    ...htmlProps,
     className: cx(
       `drac-text`,
       props.className,
-      textSizes[props.size ?? 'medium'],
-      textWeights[props.weight ?? 'normal'],
-      lineHeights[props.lineHeight ?? 'normal'],
-      textColors[props.color ?? 'white'],
+      textSizes[size ?? 'medium'],
+      textWeights[weight ?? 'normal'],
+      lineHeights[lineHeight ?? 'normal'],
+      textColors[color ?? 'white'],
       ...paddingMixin(props),
       ...marginMixin(props)
     )
   }
 
   return React.createElement(
-    finalProps.as ?? 'span',
-    finalProps,
+    as ?? 'span',
+    cleanProps(finalProps),
     props.children
   )
 }

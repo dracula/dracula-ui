@@ -2,6 +2,7 @@ import cx from 'classnames/dedupe'
 import { mapValues } from 'lodash'
 import React, { HTMLAttributes } from 'react'
 import {
+  cleanProps,
   marginMixin,
   MarginMixin,
   paddingMixin,
@@ -53,21 +54,22 @@ export interface AnchorProps
  * Use this component to create text or element based anchors around other HTML tags or React Components.
  */
 export const Anchor = (props: AnchorProps) => {
-  const finalProps = {
-    ...props,
+  const { size, weight, color, hoverColor, ...htmlProps } = props
 
+  const finalProps = cleanProps({
+    ...htmlProps,
     className: cx(
       `drac-anchor`,
       `drac-text`,
       props.className,
-      textSizes[props.size ?? 'medium'],
-      textWeights[props.weight ?? 'normal'],
-      textColors[props.color ?? 'white'],
-      hoverColors[props.hoverColor ?? 'purple'],
+      textSizes[size ?? 'medium'],
+      textWeights[weight ?? 'normal'],
+      textColors[color ?? 'white'],
+      hoverColors[hoverColor ?? 'purple'],
       ...paddingMixin(props),
       ...marginMixin(props)
     )
-  }
+  })
 
   return React.createElement('a', finalProps, props.children)
 }

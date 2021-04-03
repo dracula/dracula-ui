@@ -2,6 +2,7 @@ import cx from 'classnames/dedupe'
 import React, { AllHTMLAttributes } from 'react'
 import { colors as backgroundColors } from '../../base/colors'
 import {
+  cleanProps,
   MarginMixin,
   marginMixin,
   PaddingMixin,
@@ -40,11 +41,11 @@ export type BadgeProps = {
  * information.
  */
 export const Badge: React.FC<BadgeProps> = (props: BadgeProps) => {
-  const isOutline = props.variant === 'outline'
-  const isSubtle = props.variant === 'subtle'
-  const overrideTextColor = isOutline || isSubtle
+  const { variant, themeColor = 'purple', children, ...htmlProps } = props
 
-  const themeColor = props.themeColor ?? 'purple'
+  const isOutline = variant === 'outline'
+  const isSubtle = variant === 'subtle'
+  const overrideTextColor = isOutline || isSubtle
 
   const textColorClass = overrideTextColor ? textColors[themeColor] : undefined
 
@@ -64,9 +65,9 @@ export const Badge: React.FC<BadgeProps> = (props: BadgeProps) => {
   )
 
   return (
-    <span className={classes} {...props}>
+    <span className={classes} {...cleanProps(htmlProps)}>
       <Text color={overrideTextColor ? props.themeColor : undefined}>
-        {props.children}
+        {children}
       </Text>
     </span>
   )

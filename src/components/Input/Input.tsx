@@ -2,6 +2,7 @@ import cx from 'classnames/dedupe'
 import React, { HTMLAttributes } from 'react'
 import { ColorMap } from '../../base/colors'
 import {
+  cleanProps,
   marginMixin,
   MarginMixin,
   paddingMixin,
@@ -60,21 +61,22 @@ export interface InputProps
  * than light styling done via CSS in order to keep inputs accessible.
  */
 export const Input: React.FC<InputProps> = (props: InputProps) => {
+  const { color, size, variant, ...htmlProps } = props
+
   const finalProps = {
-    ...props,
+    ...htmlProps,
     className: cx(
       `drac-input`,
       props.className,
-      props.variant && inputVariants[props.variant],
-      props.size && inputSizes[props.size],
-      props.color && inputColors[props.color],
+      variant && inputVariants[variant],
+      size && inputSizes[size],
+      color && inputColors[color],
       ...paddingMixin(props),
       ...marginMixin(props)
     )
   }
 
-  const { size, ...cleanProps } = finalProps
-  return <input {...cleanProps} />
+  return <input {...cleanProps(finalProps)} />
 }
 
 Input.displayName = 'Input'

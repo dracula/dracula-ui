@@ -3,7 +3,7 @@
 exports[`Site: Spacing Basic Usage 1`] = `
 Object {
   "docs": "",
-  "html": "<div p=\\"md\\" color=\\"pink\\" class=\\"drac-box drac-bg-pink drac-p-md\\">
+  "html": "<div class=\\"drac-box drac-bg-pink drac-p-md\\">
   <div class=\\"drac-box\\">
     <span class=\\"drac-text drac-line-height drac-text-white\\">Padding</span>
   </div>
@@ -23,19 +23,19 @@ exports[`Site: Spacing Margin 1`] = `
 Object {
   "docs": "",
   "html": "<div class=\\"drac-box\\">
-  <div m=\\"sm\\" color=\\"pink\\" class=\\"drac-box drac-bg-pink drac-m-sm\\">
+  <div class=\\"drac-box drac-bg-pink drac-m-sm\\">
     <div class=\\"drac-box\\">
       <span class=\\"drac-text drac-line-height drac-text-white\\">margin sm</span>
     </div>
   </div>
-  <div my=\\"sm\\" color=\\"purple\\" class=\\"drac-box drac-bg-purple drac-my-sm\\">
+  <div class=\\"drac-box drac-bg-purple drac-my-sm\\">
     <div class=\\"drac-box\\">
       <span class=\\"drac-text drac-line-height drac-text-white\\"
         >margin y sm</span
       >
     </div>
   </div>
-  <div mx=\\"sm\\" color=\\"red\\" class=\\"drac-box drac-bg-red drac-mx-sm\\">
+  <div class=\\"drac-box drac-bg-red drac-mx-sm\\">
     <div class=\\"drac-box\\">
       <span class=\\"drac-text drac-line-height drac-text-white\\"
         >margin x sm</span
@@ -43,11 +43,6 @@ Object {
     </div>
   </div>
   <div
-    mt=\\"sm\\"
-    mb=\\"md\\"
-    ml=\\"lg\\"
-    mr=\\"xxs\\"
-    color=\\"purpleCyan\\"
     class=\\"drac-box drac-bg-purple-cyan drac-mt-sm drac-mb-md drac-ml-lg drac-mr-xxs\\"
   >
     <div class=\\"drac-box\\">
@@ -89,19 +84,19 @@ exports[`Site: Spacing Padding 1`] = `
 Object {
   "docs": "",
   "html": "<div class=\\"drac-box\\">
-  <div p=\\"sm\\" color=\\"pink\\" class=\\"drac-box drac-bg-pink drac-p-sm\\">
+  <div class=\\"drac-box drac-bg-pink drac-p-sm\\">
     <div class=\\"drac-box\\">
       <span class=\\"drac-text drac-line-height drac-text-white\\">padding sm</span>
     </div>
   </div>
-  <div py=\\"sm\\" color=\\"purple\\" class=\\"drac-box drac-bg-purple drac-py-sm\\">
+  <div class=\\"drac-box drac-bg-purple drac-py-sm\\">
     <div class=\\"drac-box\\">
       <span class=\\"drac-text drac-line-height drac-text-white\\"
         >padding y sm</span
       >
     </div>
   </div>
-  <div px=\\"sm\\" color=\\"red\\" class=\\"drac-box drac-bg-red drac-px-sm\\">
+  <div class=\\"drac-box drac-bg-red drac-px-sm\\">
     <div class=\\"drac-box\\">
       <span class=\\"drac-text drac-line-height drac-text-white\\"
         >padding x sm</span
@@ -109,11 +104,6 @@ Object {
     </div>
   </div>
   <div
-    pt=\\"sm\\"
-    pb=\\"md\\"
-    pl=\\"lg\\"
-    pr=\\"xxs\\"
-    color=\\"purpleCyan\\"
     class=\\"drac-box drac-bg-purple-cyan drac-pt-sm drac-pb-md drac-pl-lg drac-pr-xxs\\"
   >
     <div class=\\"drac-box\\">
