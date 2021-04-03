@@ -112,8 +112,8 @@
   }
 
   .bg-$(color)-secondary {
-    --accentColor: var(--$(color) Secondary);
-    background-color: var(--$(color) Secondary);
+    --accentColor: var(--$(color)Secondary);
+    background-color: var(--$(color)Secondary);
   }
 
   .bg-$(color)-transparent {
@@ -126,7 +126,7 @@
   }
 
   .text-$(color)-secondary {
-    color: var(--$(color) Secondary);
+    color: var(--$(color)Secondary);
   }
 
   .glow-$(color) {
