@@ -1,6 +1,6 @@
 import Head from "next/head"
 import React from "react"
-import { Box, Heading, Paragraph } from "@dracula/dracula-ui"
+import { Anchor, Box, Heading, Paragraph } from "@dracula/dracula-ui"
 import CodeHighlight from "../components/CodeHighlight"
 import Navigation from "../components/Navigation"
 import Theme from "../layouts/Theme"
@@ -44,14 +44,39 @@ class Installation extends React.Component {
                 <Box my="lg">
                   <Heading size="heading-2">Getting set up</Heading>
                   <Paragraph>
+                    Dracula UI uses <Anchor href="https://github.com/features/packages" target="_blank">GitHub Packages</Anchor> to distribute the code to you.
+                  </Paragraph>
+                  <Paragraph lineHeight="large">
+                    First, create a <Anchor href="https://github.com/settings/tokens/new" target="_blank">Personal Access Token</Anchor> with the following scopes: <code>write:packages</code> and <code>delete:packages</code>.
+                  </Paragraph>
+                  <img
+                    className={styles.image}
+                    src="/static/images/installation-1.png"
+                    alt="GitHub Personal Access Token"
+                  />
+                  <Paragraph lineHeight="large">
+                    Now, create a <code>.npmrc</code> file in the root of your project and include the following lines, replacing <code>TOKEN</code> with your Personal Access Token.
+                  </Paragraph>
+                  <CodeHighlight
+                    code={`registry=https://registry.npmjs.org/
+@dracula:registry=https://npm.pkg.github.com/
+//npm.pkg.github.com/:_authToken=TOKEN`}
+                  />
+                  <Paragraph>
+                    This will allow you to fetch all packages from npm except for Dracula UI, which will be downloaded from GitHub Packages.
+                  </Paragraph>
+                </Box>
+                <Box my="lg">
+                  <Heading size="heading-2">Installing the package</Heading>
+                  <Paragraph>
                     Inside your project directory, install Dracula UI by running
                     either of the following:
                   </Paragraph>
                   <CodeHighlight
                     language="bash"
-                    code={`npm install dracula/dracula-ui#alpha
+                    code={`npm install @dracula/dracula-ui@latest
 
-yarn add dracula/dracula-ui#alpha`}
+yarn add @dracula/dracula-ui@latest`}
                   />
                 </Box>
                 <Box my="lg">
@@ -97,7 +122,7 @@ export default Footer`}
                   <Paragraph>
                     First, you need to import the CSS globally.
                   </Paragraph>
-                  <Paragraph>
+                  <Paragraph lineHeight="large">
                     Go to <code>pages/_app.js</code> (or create this file if it
                     doesn't exist yet) and add the CSS import:
                   </Paragraph>
