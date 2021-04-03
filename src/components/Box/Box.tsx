@@ -5,7 +5,8 @@ import {
   PaddingMixin,
   paddingMixin,
   marginMixin,
-  MarginMixin
+  MarginMixin,
+  cleanProps
 } from '../../base/spacing'
 
 type Element = HTMLElementTagNameMap
@@ -52,22 +53,30 @@ export type BoxProps<K extends keyof Element = 'div'> = {
  * complex components convenient and consistent.
  */
 export function Box<T extends keyof Element>(props: BoxProps<T>) {
+  const {
+    color,
+    glowColor,
+    borderColor,
+    rounded,
+    as = 'div',
+    ...htmlProps
+  } = props
+
   const finalProps = {
-    ...props,
+    ...htmlProps,
     className: cx(
       `drac-box`,
       props.className,
-      props.color && colors[props.color],
-      props.glowColor && glowColors[props.glowColor],
-      props.borderColor && borderColors[props.borderColor],
-      props.rounded && roundedBorders[props.rounded],
+      color && colors[color],
+      glowColor && glowColors[glowColor],
+      borderColor && borderColors[borderColor],
+      rounded && roundedBorders[rounded],
       ...paddingMixin(props),
       ...marginMixin(props)
     )
   }
 
-  const as = finalProps.as ?? 'div'
-  return React.createElement(as, finalProps, props.children)
+  return React.createElement(as, cleanProps(finalProps), props.children)
 }
 
 Box.displayName = 'Box'

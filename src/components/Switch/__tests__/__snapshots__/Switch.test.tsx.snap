@@ -6,9 +6,8 @@ Object {
   "html": "<div class=\\"drac-box\\">
   <input
     type=\\"checkbox\\"
-    color=\\"purple\\"
-    id=\\"demo\\"
     name=\\"demo\\"
+    id=\\"demo\\"
     class=\\"drac-switch drac-checkbox drac-switch-purple\\"
     checked=\\"\\"
   /><label for=\\"demo\\" class=\\"drac-text drac-text-white\\">Checked</label>
@@ -31,9 +30,8 @@ Object {
   "html": "<div class=\\"drac-box\\">
   <input
     type=\\"checkbox\\"
-    color=\\"cyan\\"
-    id=\\"colors\\"
     name=\\"colors\\"
+    id=\\"colors\\"
     class=\\"drac-switch drac-checkbox drac-switch-cyan\\"
   /><label for=\\"colors\\" class=\\"drac-text drac-text-cyan\\">Checked</label>
 </div>
@@ -56,10 +54,9 @@ Object {
   <div class=\\"drac-box\\">
     <input
       type=\\"checkbox\\"
-      id=\\"one\\"
-      disabled=\\"\\"
-      color=\\"white\\"
       name=\\"one\\"
+      disabled=\\"\\"
+      id=\\"one\\"
       class=\\"drac-switch drac-checkbox drac-switch-white\\"
       checked=\\"\\"
     /><label for=\\"one\\" class=\\"drac-text drac-text-white\\">Checked</label>
@@ -67,10 +64,9 @@ Object {
   <div class=\\"drac-box\\">
     <input
       type=\\"checkbox\\"
-      id=\\"two\\"
-      disabled=\\"\\"
-      color=\\"white\\"
       name=\\"two\\"
+      disabled=\\"\\"
+      id=\\"two\\"
       class=\\"drac-switch drac-checkbox drac-switch-white\\"
     /><label for=\\"two\\" class=\\"drac-text drac-text-white\\">Unchecked</label>
   </div>

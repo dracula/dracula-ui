@@ -4,7 +4,7 @@ exports[`Site: Select Basic Usage 1`] = `
 Object {
   "docs": "Select different items from a list.",
   "html": "<div style=\\"position: relative\\">
-  <select color=\\"white\\" class=\\"drac-select drac-select-white\\">
+  <select class=\\"drac-select drac-select-white\\">
     <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
     <option>Blade</option>
     <option>Buffy</option>
@@ -48,11 +48,7 @@ Object {
   "html": "<div style=\\"display: flex; flex-direction: column\\">
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
-      <select
-        variant=\\"outline\\"
-        color=\\"white\\"
-        class=\\"drac-select drac-select-outline drac-select-white\\"
-      >
+      <select class=\\"drac-select drac-select-outline drac-select-white\\">
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
         <option>Buffy</option>
@@ -77,11 +73,7 @@ Object {
   </div>
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
-      <select
-        variant=\\"outline\\"
-        color=\\"cyan\\"
-        class=\\"drac-select drac-select-outline drac-select-cyan\\"
-      >
+      <select class=\\"drac-select drac-select-outline drac-select-cyan\\">
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
         <option>Buffy</option>
@@ -106,11 +98,7 @@ Object {
   </div>
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
-      <select
-        variant=\\"outline\\"
-        color=\\"green\\"
-        class=\\"drac-select drac-select-outline drac-select-green\\"
-      >
+      <select class=\\"drac-select drac-select-outline drac-select-green\\">
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
         <option>Buffy</option>
@@ -135,11 +123,7 @@ Object {
   </div>
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
-      <select
-        variant=\\"outline\\"
-        color=\\"orange\\"
-        class=\\"drac-select drac-select-outline drac-select-orange\\"
-      >
+      <select class=\\"drac-select drac-select-outline drac-select-orange\\">
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
         <option>Buffy</option>
@@ -164,11 +148,7 @@ Object {
   </div>
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
-      <select
-        variant=\\"outline\\"
-        color=\\"pink\\"
-        class=\\"drac-select drac-select-outline drac-select-pink\\"
-      >
+      <select class=\\"drac-select drac-select-outline drac-select-pink\\">
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
         <option>Buffy</option>
@@ -193,11 +173,7 @@ Object {
   </div>
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
-      <select
-        variant=\\"outline\\"
-        color=\\"purple\\"
-        class=\\"drac-select drac-select-outline drac-select-purple\\"
-      >
+      <select class=\\"drac-select drac-select-outline drac-select-purple\\">
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
         <option>Buffy</option>
@@ -222,11 +198,7 @@ Object {
   </div>
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
-      <select
-        variant=\\"outline\\"
-        color=\\"red\\"
-        class=\\"drac-select drac-select-outline drac-select-red\\"
-      >
+      <select class=\\"drac-select drac-select-outline drac-select-red\\">
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
         <option>Buffy</option>
@@ -251,11 +223,7 @@ Object {
   </div>
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
-      <select
-        variant=\\"outline\\"
-        color=\\"yellow\\"
-        class=\\"drac-select drac-select-outline drac-select-yellow\\"
-      >
+      <select class=\\"drac-select drac-select-outline drac-select-yellow\\">
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
         <option>Buffy</option>
@@ -280,11 +248,7 @@ Object {
   </div>
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
-      <select
-        variant=\\"normal\\"
-        color=\\"white\\"
-        class=\\"drac-select drac-select-white\\"
-      >
+      <select class=\\"drac-select drac-select-white\\">
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
         <option>Buffy</option>
@@ -309,11 +273,7 @@ Object {
   </div>
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
-      <select
-        variant=\\"normal\\"
-        color=\\"cyan\\"
-        class=\\"drac-select drac-select-cyan\\"
-      >
+      <select class=\\"drac-select drac-select-cyan\\">
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
         <option>Buffy</option>
@@ -338,11 +298,7 @@ Object {
   </div>
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
-      <select
-        variant=\\"normal\\"
-        color=\\"green\\"
-        class=\\"drac-select drac-select-green\\"
-      >
+      <select class=\\"drac-select drac-select-green\\">
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
         <option>Buffy</option>
@@ -367,11 +323,7 @@ Object {
   </div>
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
-      <select
-        variant=\\"normal\\"
-        color=\\"orange\\"
-        class=\\"drac-select drac-select-orange\\"
-      >
+      <select class=\\"drac-select drac-select-orange\\">
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
         <option>Buffy</option>
@@ -396,11 +348,7 @@ Object {
   </div>
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
-      <select
-        variant=\\"normal\\"
-        color=\\"pink\\"
-        class=\\"drac-select drac-select-pink\\"
-      >
+      <select class=\\"drac-select drac-select-pink\\">
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
         <option>Buffy</option>
@@ -425,11 +373,7 @@ Object {
   </div>
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
-      <select
-        variant=\\"normal\\"
-        color=\\"purple\\"
-        class=\\"drac-select drac-select-purple\\"
-      >
+      <select class=\\"drac-select drac-select-purple\\">
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
         <option>Buffy</option>
@@ -454,7 +398,7 @@ Object {
   </div>
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
-      <select variant=\\"normal\\" color=\\"red\\" class=\\"drac-select drac-select-red\\">
+      <select class=\\"drac-select drac-select-red\\">
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
         <option>Buffy</option>
@@ -479,11 +423,7 @@ Object {
   </div>
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
-      <select
-        variant=\\"normal\\"
-        color=\\"yellow\\"
-        class=\\"drac-select drac-select-yellow\\"
-      >
+      <select class=\\"drac-select drac-select-yellow\\">
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
         <option>Buffy</option>
@@ -713,12 +653,7 @@ Object {
   "html": "<div style=\\"display: flex; flex-direction: column\\">
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
-      <select
-        disabled=\\"\\"
-        variant=\\"normal\\"
-        color=\\"white\\"
-        class=\\"drac-select drac-select-white\\"
-      >
+      <select class=\\"drac-select drac-select-white\\">
         <option value=\\"default\\">Select option</option>
         <option>Blade</option>
         <option>Buffy</option>
@@ -743,12 +678,7 @@ Object {
   </div>
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
-      <select
-        disabled=\\"\\"
-        variant=\\"outline\\"
-        color=\\"white\\"
-        class=\\"drac-select drac-select-outline drac-select-white\\"
-      >
+      <select class=\\"drac-select drac-select-outline drac-select-white\\">
         <option value=\\"default\\">Select option</option>
         <option>Blade</option>
         <option>Buffy</option>
@@ -806,10 +736,7 @@ Object {
   "html": "<div>
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
-      <select
-        color=\\"white\\"
-        class=\\"drac-select drac-select-lg drac-select-white\\"
-      >
+      <select class=\\"drac-select drac-select-lg drac-select-white\\">
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
         <option>Buffy</option>
@@ -834,7 +761,7 @@ Object {
   </div>
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
-      <select color=\\"white\\" class=\\"drac-select drac-select-white\\">
+      <select class=\\"drac-select drac-select-white\\">
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
         <option>Buffy</option>
@@ -859,10 +786,7 @@ Object {
   </div>
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
-      <select
-        color=\\"white\\"
-        class=\\"drac-select drac-select-sm drac-select-white\\"
-      >
+      <select class=\\"drac-select drac-select-sm drac-select-white\\">
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
         <option>Buffy</option>
@@ -936,11 +860,7 @@ Object {
   "html": "<div style=\\"display: flex; flex-direction: column\\">
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
-      <select
-        variant=\\"normal\\"
-        color=\\"white\\"
-        class=\\"drac-select drac-select-white\\"
-      >
+      <select class=\\"drac-select drac-select-white\\">
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
         <option>Buffy</option>
@@ -965,11 +885,7 @@ Object {
   </div>
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
-      <select
-        variant=\\"outline\\"
-        color=\\"white\\"
-        class=\\"drac-select drac-select-outline drac-select-white\\"
-      >
+      <select class=\\"drac-select drac-select-outline drac-select-white\\">
         <option value=\\"default\\" disabled=\\"\\" selected=\\"\\">Select option</option>
         <option>Blade</option>
         <option>Buffy</option>

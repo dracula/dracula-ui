@@ -3,7 +3,7 @@
 exports[`Site: Button Basic Usage 1`] = `
 Object {
   "docs": "A Dracula UI button behaves like regular HTML buttons and accepts the same contents and properties.",
-  "html": "<button class=\\"drac-btn drac-bg-purple\\" color=\\"purple\\">Dracula</button>
+  "html": "<button class=\\"drac-btn drac-bg-purple\\">Dracula</button>
 ",
   "react": "<Button color=\\"purple\\">Dracula</Button>;
 ",
@@ -15,15 +15,8 @@ exports[`Site: Button Colors 1`] = `
 Object {
   "docs": "Buttons can be customized to use any of the Dracula UI theme colors, including all solid, gradient, and animated colors.",
   "html": "<div>
-  <button class=\\"drac-btn drac-bg-purple drac-m-sm\\" color=\\"purple\\" m=\\"sm\\">
-    Purple</button
-  ><button
-    class=\\"drac-btn drac-bg-purple-cyan drac-m-sm\\"
-    color=\\"purpleCyan\\"
-    m=\\"sm\\"
-  >
-    Purple Cyan
-  </button>
+  <button class=\\"drac-btn drac-bg-purple drac-m-sm\\">Purple</button
+  ><button class=\\"drac-btn drac-bg-purple-cyan drac-m-sm\\">Purple Cyan</button>
 </div>
 ",
   "react": "<div>
@@ -43,27 +36,10 @@ exports[`Site: Button Sizes 1`] = `
 Object {
   "docs": "Button sizes range from xsmall to large using the Dracula UI size scale.",
   "html": "<div class=\\"drac-box\\">
-  <button
-    class=\\"drac-btn drac-bg-purple drac-btn-xs drac-m-sm\\"
-    color=\\"purple\\"
-    m=\\"sm\\"
-  >
-    xsmall</button
-  ><button
-    class=\\"drac-btn drac-bg-purple drac-btn-sm drac-m-sm\\"
-    color=\\"purple\\"
-    m=\\"sm\\"
-  >
-    xsmall</button
-  ><button class=\\"drac-btn drac-bg-purple drac-m-sm\\" color=\\"purple\\" m=\\"sm\\">
-    medium</button
-  ><button
-    class=\\"drac-btn drac-bg-purple drac-btn-lg drac-m-sm\\"
-    color=\\"purple\\"
-    m=\\"sm\\"
-  >
-    large
-  </button>
+  <button class=\\"drac-btn drac-bg-purple drac-btn-xs drac-m-sm\\">xsmall</button
+  ><button class=\\"drac-btn drac-bg-purple drac-btn-sm drac-m-sm\\">xsmall</button
+  ><button class=\\"drac-btn drac-bg-purple drac-m-sm\\">medium</button
+  ><button class=\\"drac-btn drac-bg-purple drac-btn-lg drac-m-sm\\">large</button>
 </div>
 ",
   "react": "<Box>
@@ -89,20 +65,13 @@ exports[`Site: Button Variants 1`] = `
 Object {
   "docs": "Dracula UI ships with three distinct button variations that allow for different levels of hierarchy and usage.",
   "html": "<div class=\\"drac-box\\">
-  <button class=\\"drac-btn drac-bg-purple drac-m-sm\\" color=\\"purple\\" m=\\"sm\\">
-    Normal</button
+  <button class=\\"drac-btn drac-bg-purple drac-m-sm\\">Normal</button
   ><button
     class=\\"drac-btn drac-bg-purple-transparent drac-btn-ghost drac-text-purple drac-m-sm\\"
-    variant=\\"ghost\\"
-    color=\\"purple\\"
-    m=\\"sm\\"
   >
     Ghost</button
   ><button
     class=\\"drac-btn drac-bg-purple drac-btn-outline drac-text-purple drac-m-sm\\"
-    variant=\\"outline\\"
-    color=\\"purple\\"
-    m=\\"sm\\"
   >
     Outline
   </button>

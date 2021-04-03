@@ -6,9 +6,8 @@ Object {
   "html": "<div>
   <input
     type=\\"radio\\"
-    id=\\"one\\"
-    color=\\"purple\\"
     name=\\"demo\\"
+    id=\\"one\\"
     class=\\"drac-radio drac-radio-purple\\"
     checked=\\"\\"
   /><label for=\\"one\\" class=\\"drac-text drac-text-white\\">Checked</label>
@@ -32,72 +31,64 @@ Object {
   <div style=\\"margin-bottom: 10px\\">
     <input
       type=\\"radio\\"
-      id=\\"white\\"
-      color=\\"white\\"
       name=\\"demo\\"
+      id=\\"white\\"
       class=\\"drac-radio drac-radio-white\\"
     /><label for=\\"white\\" class=\\"drac-text drac-text-white\\">Radio</label>
   </div>
   <div style=\\"margin-bottom: 10px\\">
     <input
       type=\\"radio\\"
-      id=\\"cyan\\"
-      color=\\"cyan\\"
       name=\\"demo\\"
+      id=\\"cyan\\"
       class=\\"drac-radio drac-radio-cyan\\"
     /><label for=\\"cyan\\" class=\\"drac-text drac-text-white\\">Radio</label>
   </div>
   <div style=\\"margin-bottom: 10px\\">
     <input
       type=\\"radio\\"
-      id=\\"green\\"
-      color=\\"green\\"
       name=\\"demo\\"
+      id=\\"green\\"
       class=\\"drac-radio drac-radio-green\\"
     /><label for=\\"green\\" class=\\"drac-text drac-text-white\\">Radio</label>
   </div>
   <div style=\\"margin-bottom: 10px\\">
     <input
       type=\\"radio\\"
-      id=\\"orange\\"
-      color=\\"orange\\"
       name=\\"demo\\"
+      id=\\"orange\\"
       class=\\"drac-radio drac-radio-orange\\"
     /><label for=\\"orange\\" class=\\"drac-text drac-text-white\\">Radio</label>
   </div>
   <div style=\\"margin-bottom: 10px\\">
     <input
       type=\\"radio\\"
-      id=\\"pink\\"
-      color=\\"pink\\"
       name=\\"demo\\"
+      id=\\"pink\\"
       class=\\"drac-radio drac-radio-pink\\"
     /><label for=\\"pink\\" class=\\"drac-text drac-text-white\\">Radio</label>
   </div>
   <div style=\\"margin-bottom: 10px\\">
     <input
       type=\\"radio\\"
-      id=\\"purple\\"
-      color=\\"purple\\"
       name=\\"demo\\"
+      id=\\"purple\\"
       class=\\"drac-radio drac-radio-purple\\"
     /><label for=\\"purple\\" class=\\"drac-text drac-text-white\\">Radio</label>
   </div>
   <div style=\\"margin-bottom: 10px\\">
     <input
       type=\\"radio\\"
-      id=\\"red\\"
-      color=\\"red\\"
       name=\\"demo\\"
+      id=\\"red\\"
       class=\\"drac-radio drac-radio-red\\"
     /><label for=\\"red\\" class=\\"drac-text drac-text-white\\">Radio</label>
   </div>
   <div style=\\"margin-bottom: 10px\\">
     <input
       type=\\"radio\\"
-      id=\\"yellow\\"
-      color=\\"yellow\\"
       name=\\"demo\\"
+      id=\\"yellow\\"
       class=\\"drac-radio drac-radio-yellow\\"
     /><label for=\\"yellow\\" class=\\"drac-text drac-text-white\\">Radio</label>
   </div>
@@ -165,9 +156,8 @@ Object {
   <div style=\\"margin-bottom: 10px\\">
     <input
       type=\\"radio\\"
-      id=\\"one\\"
-      color=\\"white\\"
       name=\\"demo\\"
+      id=\\"one\\"
       class=\\"drac-radio drac-radio-white\\"
       checked=\\"\\"
     /><label for=\\"one\\" class=\\"drac-text drac-text-white\\">Checked</label>
@@ -175,9 +165,8 @@ Object {
   <div style=\\"margin-bottom: 10px\\">
     <input
       type=\\"radio\\"
-      id=\\"two\\"
-      color=\\"white\\"
       name=\\"demo\\"
+      id=\\"two\\"
       class=\\"drac-radio drac-radio-white\\"
     /><label for=\\"two\\" class=\\"drac-text drac-text-white\\">Unchecked</label>
   </div>

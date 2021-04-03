@@ -22,11 +22,7 @@ Object {
 exports[`Site: List Colors 1`] = `
 Object {
   "docs": "Lists can be customized to use any of the Dracula UI theme colors.",
-  "html": "<ol
-  variant=\\"ordered\\"
-  color=\\"cyan\\"
-  class=\\"drac-list drac-list-ordered drac-list-cyan\\"
->
+  "html": "<ol class=\\"drac-list drac-list-ordered drac-list-cyan\\">
   <li class=\\"drac-text drac-text-white\\">Blade</li>
   <li class=\\"drac-text drac-text-white\\">Buffy</li>
   <li class=\\"drac-text drac-text-white\\">Morbius</li>
@@ -46,20 +42,12 @@ exports[`Site: List Variants 1`] = `
 Object {
   "docs": "Lists can be displayed in dashes as an \`<ul>\` or in numbers as an \`<ol>",
   "html": "<div class=\\"drac-box\\">
-  <ol
-    variant=\\"ordered\\"
-    color=\\"purple\\"
-    class=\\"drac-list drac-list-ordered drac-list-purple\\"
-  >
+  <ol class=\\"drac-list drac-list-ordered drac-list-purple\\">
     <li class=\\"drac-text drac-text-white\\">Blade</li>
     <li class=\\"drac-text drac-text-white\\">Buffy</li>
     <li class=\\"drac-text drac-text-white\\">Morbius</li>
   </ol>
-  <ul
-    variant=\\"unordered\\"
-    color=\\"purple\\"
-    class=\\"drac-list drac-list-unordered drac-list-purple\\"
-  >
+  <ul class=\\"drac-list drac-list-unordered drac-list-purple\\">
     <li class=\\"drac-text drac-text-white\\">Blade</li>
     <li class=\\"drac-text drac-text-white\\">Buffy</li>
     <li class=\\"drac-text drac-text-white\\">Morbius</li>

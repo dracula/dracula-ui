@@ -2,6 +2,7 @@ import cx from 'classnames/dedupe'
 import React, { HTMLAttributes } from 'react'
 import { ColorMap } from '../../base/colors'
 import {
+  cleanProps,
   MarginMixin,
   marginMixin,
   PaddingMixin,
@@ -35,18 +36,19 @@ export interface TabsProps
  * content within the same page.
  */
 export const Tabs: React.FC<TabsProps> = (props: TabsProps) => {
+  const { color, ...htmlProps } = props
   const finalProps = {
-    ...props,
+    ...htmlProps,
     className: cx(
       'drac-tabs',
       props.className,
-      props.color && tabsColors[props.color],
+      color && tabsColors[color],
       ...paddingMixin(props),
       ...marginMixin(props)
     )
   }
 
-  return <ul {...finalProps} />
+  return <ul {...cleanProps(finalProps)} />
 }
 
 Tabs.displayName = 'Tabs'

@@ -2,6 +2,7 @@ import cx from 'classnames/dedupe'
 import React, { HTMLAttributes } from 'react'
 import { ColorMap } from '../../base/colors'
 import {
+  cleanProps,
   marginMixin,
   MarginMixin,
   paddingMixin,
@@ -63,24 +64,24 @@ export interface SelectProps
  * than light styling done via CSS, and small SVG component in order to keep Selects accessible.
  */
 export const Select: React.FC<SelectProps> = (props: SelectProps) => {
+  const { size, variant, color, disabled, ...htmlProps } = props
+
   const finalProps = {
-    ...props,
+    ...htmlProps,
     className: cx(
       'drac-select',
       props.className,
-      props.variant && selectVariants[props.variant],
-      props.size && selectSizes[props.size],
-      props.color && selectColors[props.color],
+      variant && selectVariants[variant],
+      size && selectSizes[size],
+      color && selectColors[color],
       ...paddingMixin(props),
       ...marginMixin(props)
     )
   }
 
-  const { size, ...cleanProps } = finalProps
-
   return (
     <div style={{ position: 'relative' }}>
-      <select {...cleanProps} />
+      <select {...cleanProps(finalProps)} />
       <div className={`drac-select-arrow drac-text-${props.color}`}>
         <svg
           viewBox="0 0 24 24"

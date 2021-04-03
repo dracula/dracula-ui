@@ -21,16 +21,10 @@ Object {
   "html": "<div style=\\"display: flex; flex-direction: column\\">
   <a
     href=\\"#\\"
-    color=\\"pink\\"
-    hovercolor=\\"purple\\"
-    m=\\"sm\\"
     class=\\"drac-anchor drac-text drac-text-pink drac-text-purple--hover drac-m-sm\\"
     >pink / purple</a
   ><a
     href=\\"#\\"
-    color=\\"cyanGreen\\"
-    hovercolor=\\"yellowPink\\"
-    m=\\"sm\\"
     class=\\"drac-anchor drac-text drac-text-cyan-green drac-text-yellow-pink--hover drac-m-sm\\"
     >cyanGreen / yellowPink</a
   >
@@ -71,7 +65,6 @@ Object {
     >large</a
   ><a
     href=\\"#\\"
-    weight=\\"semibold\\"
     class=\\"drac-anchor drac-text drac-text-semibold drac-text-white drac-text-purple--hover\\"
     >semibold</a
   ><a

@@ -1,4 +1,4 @@
-import { mapValues } from 'lodash'
+import { mapValues, omit } from 'lodash'
 
 const padding = {
   none: 'drac-p-none',
@@ -149,4 +149,16 @@ export const spacingUtilities = {
     padding: [`p`, `px`, `py`, `pt`, `pb`, `pl`, `pr`],
     margin: [`m`, `mx`, `my`, `mt`, `mb`, `ml`, `mr`]
   }
+}
+
+/**
+ * Removes all spacing props from props object
+ */
+export function cleanProps<T>(
+  props: T & Partial<PaddingMixin> & Partial<MarginMixin>
+) {
+  return omit(props, [
+    ...spacingUtilities.react.padding,
+    ...spacingUtilities.react.margin
+  ]) as Omit<T, keyof PaddingMixin | keyof MarginMixin>
 }

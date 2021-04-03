@@ -2,6 +2,7 @@ import classNamesDedupe from 'classnames/dedupe'
 import React, { HTMLAttributes } from 'react'
 import { ColorMap } from '../../base/colors'
 import {
+  cleanProps,
   marginMixin,
   MarginMixin,
   paddingMixin,
@@ -28,7 +29,7 @@ export interface RadioProps
   color: keyof typeof radioColors
 
   /** The name of the radio. Mirrors the name HTML attribute. */
-  name?: string,
+  name?: string
 
   /** A disabled radio is unusable and un-clickable. */
   disabled?: boolean
@@ -41,18 +42,22 @@ export interface RadioProps
  * than light styling done via CSS in order to keep Radios accessible.
  */
 export const Radio: React.FC<RadioProps> = (props: RadioProps) => {
+  const { color, name, disabled, ...htmlProps } = props
+
   const finalProps = {
-    ...props,
+    name,
+    disabled,
+    ...htmlProps,
     className: classNamesDedupe(
       `drac-radio`,
       props.className,
-      radioColors[props.color],
+      radioColors[color],
       ...paddingMixin(props),
       ...marginMixin(props)
     )
   }
 
-  return <input type="radio" {...finalProps} />
+  return <input type="radio" {...cleanProps(finalProps)} />
 }
 
 Radio.displayName = 'Radio'

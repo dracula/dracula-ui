@@ -3,7 +3,7 @@
 exports[`Site: Divider Basic Usage 1`] = `
 Object {
   "docs": "Dividers are used to defined a thematic break in a page.",
-  "html": "<hr color=\\"cyan\\" class=\\"drac-divider drac-bg-cyan\\" />
+  "html": "<hr class=\\"drac-divider drac-bg-cyan\\" />
 ",
   "react": "<Divider color=\\"cyan\\" />;
 ",
@@ -14,7 +14,7 @@ Object {
 exports[`Site: Divider Colors 1`] = `
 Object {
   "docs": "Dividers can be customized to use any of the Dracula UI theme colors.",
-  "html": "<hr color=\\"yellow\\" class=\\"drac-divider drac-bg-yellow\\" />
+  "html": "<hr class=\\"drac-divider drac-bg-yellow\\" />
 ",
   "react": "<Divider color=\\"yellow\\" />;
 ",

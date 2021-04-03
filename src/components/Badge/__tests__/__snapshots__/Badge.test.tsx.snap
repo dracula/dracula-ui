@@ -16,7 +16,7 @@ Object {
 exports[`Site: Badge Colors 1`] = `
 Object {
   "docs": "Badges can be customized to use any of the Dracula UI theme colors, including all solid, gradient, and animated colors.",
-  "html": "<span class=\\"drac-badge drac-bg-animated\\" themecolor=\\"animated\\"
+  "html": "<span class=\\"drac-badge drac-bg-animated\\"
   ><span class=\\"drac-text drac-line-height drac-text-white\\"
     >Fun Badge</span
   ></span
@@ -34,20 +34,12 @@ Object {
   "html": "<div>
   <span
     class=\\"drac-badge drac-bg-orange drac-badge-outline drac-text-orange drac-m-sm\\"
-    m=\\"sm\\"
-    themecolor=\\"orange\\"
-    variant=\\"outline\\"
-    ><span color=\\"orange\\" class=\\"drac-text drac-line-height drac-text-orange\\"
+    ><span class=\\"drac-text drac-line-height drac-text-orange\\"
       >Outline</span
     ></span
   ><span
     class=\\"drac-badge drac-bg-cyan-transparent drac-badge-subtle drac-text-cyan drac-m-sm\\"
-    m=\\"sm\\"
-    themecolor=\\"cyan\\"
-    variant=\\"subtle\\"
-    ><span color=\\"cyan\\" class=\\"drac-text drac-line-height drac-text-cyan\\"
-      >Subtle</span
-    ></span
+    ><span class=\\"drac-text drac-line-height drac-text-cyan\\">Subtle</span></span
   >
 </div>
 ",

@@ -3,6 +3,7 @@ import { mapValues } from 'lodash'
 import React, { HTMLAttributes } from 'react'
 import { colors } from '../../base/colors'
 import {
+  cleanProps,
   marginMixin,
   MarginMixin,
   paddingMixin,
@@ -48,6 +49,7 @@ export interface HeadingProps
  * sizes and font weight.
  */
 export const Heading: React.FC<HeadingProps> = (props: HeadingProps) => {
+  const { size = 'heading-1', color, as, ...htmlProps } = props
   const tag = {
     'heading-1': 'h1',
     'heading-2': 'h2',
@@ -57,20 +59,23 @@ export const Heading: React.FC<HeadingProps> = (props: HeadingProps) => {
     'heading-6': 'h6'
   }
 
-  const size = tag[props.size ?? 'heading-1']
   const finalProps = {
-    ...props,
+    ...htmlProps,
     className: cx(
       `drac-heading`,
       props.className,
-      headingSizes[props.size ?? 'heading-1'],
-      headingColors[props.color ?? 'white'],
+      headingSizes[size ?? 'heading-1'],
+      headingColors[color ?? 'white'],
       ...paddingMixin(props),
       ...marginMixin(props)
     )
   }
 
-  return React.createElement(finalProps.as ?? size, finalProps, props.children)
+  return React.createElement(
+    as ?? tag[size],
+    cleanProps(finalProps),
+    props.children
+  )
 }
 
 Heading.displayName = 'Heading'

@@ -1,6 +1,7 @@
 import { ColorMap } from '../../base/colors'
 import React, { HTMLAttributes } from 'react'
 import {
+  cleanProps,
   marginMixin,
   MarginMixin,
   paddingMixin,
@@ -48,19 +49,23 @@ export interface SwitchProps
  * and work normally with forms.
  */
 export const Switch: React.FC<SwitchProps> = (props: SwitchProps) => {
+  const { name, color, disabled, ...htmlProps } = props
+
   const finalProps = {
-    ...props,
+    name,
+    disabled,
+    ...htmlProps,
     className: classNamesDedupe(
       `drac-switch`,
       'drac-checkbox',
       props.className,
-      switchColors[props.color],
+      switchColors[color],
       ...paddingMixin(props),
       ...marginMixin(props)
     )
   }
 
-  return <input type="checkbox" {...finalProps} />
+  return <input type="checkbox" {...cleanProps(finalProps)} />
 }
 
 Switch.displayName = 'Switch'

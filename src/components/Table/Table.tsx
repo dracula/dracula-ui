@@ -2,6 +2,7 @@ import cx from 'classnames/dedupe'
 import React, { HTMLAttributes } from 'react'
 import { ColorMap } from '../../base/colors'
 import {
+  cleanProps,
   marginMixin,
   MarginMixin,
   paddingMixin,
@@ -29,8 +30,8 @@ export const tableVariants = {
  */
 export interface TableProps
   extends HTMLAttributes<HTMLTableElement>,
-  PaddingMixin,
-  MarginMixin {
+    PaddingMixin,
+    MarginMixin {
   /** The Dracula UI color for the Table. */
   color?: keyof typeof tableColors
 
@@ -46,19 +47,21 @@ export interface TableProps
  * Tables are used to display data in a tabular fashion.
  */
 export const Table: React.FC<TableProps> = (props: TableProps) => {
+  const { color, variant, ...htmlProps } = props
+
   const finalProps = {
-    ...props,
+    ...htmlProps,
     className: cx(
       'drac-table',
       props.className,
-      props.variant && tableVariants[props.variant],
-      props.color && tableColors[props.color],
+      variant && tableVariants[variant],
+      color && tableColors[color],
       ...paddingMixin(props),
       ...marginMixin(props)
     )
   }
 
-  return <table {...finalProps} />
+  return <table {...cleanProps(finalProps)} />
 }
 
 Table.displayName = 'Table'

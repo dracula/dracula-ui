@@ -3,6 +3,7 @@ import { colors as backgroundColors } from '../../base/colors'
 import cx from 'classnames/dedupe'
 import { textColors } from '../../components/Text/Text'
 import {
+  cleanProps,
   marginMixin,
   MarginMixin,
   paddingMixin,
@@ -56,15 +57,17 @@ export interface ButtonProps
  * on user input.
  */
 export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
-  const isOutline = props.variant === 'outline'
-  const isGhost = props.variant === 'ghost'
+  const { color, size, variant, disabled, as, ...htmlProps } = props
+
+  const isOutline = variant === 'outline'
+  const isGhost = variant === 'ghost'
   const overrideTextColor = isOutline || isGhost
 
   const textColorClass = overrideTextColor
-    ? textColors[props.color ?? 'green']
+    ? textColors[color ?? 'green']
     : undefined
 
-  let backgroundClass = backgroundColors[props.color ?? 'green']
+  let backgroundClass = backgroundColors[color ?? 'green']
   if (isGhost) {
     backgroundClass = `${backgroundClass}-transparent`
   }
@@ -73,16 +76,16 @@ export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
     'drac-btn',
     props.className,
     backgroundClass,
-    buttonVariants[props.variant ?? 'normal'],
-    buttonSizes[props.size ?? 'medium'],
+    buttonVariants[variant ?? 'normal'],
+    buttonSizes[size ?? 'medium'],
     textColorClass,
     ...paddingMixin(props),
     ...marginMixin(props)
   )
 
   return React.createElement(
-    props.as ?? 'button',
-    { className: classes, ...props },
+    as ?? 'button',
+    { className: classes, disabled, ...cleanProps(htmlProps) },
     props.children
   )
 }

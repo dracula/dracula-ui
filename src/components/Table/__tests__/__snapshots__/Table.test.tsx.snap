@@ -142,7 +142,7 @@ Object {
 exports[`Site: Table Colors 1`] = `
 Object {
   "docs": "Table can be customized to use any of the Dracula UI theme colors.",
-  "html": "<table color=\\"cyan\\" class=\\"drac-table drac-table-cyan\\">
+  "html": "<table class=\\"drac-table drac-table-cyan\\">
   <thead>
     <tr>
       <th class=\\"drac-text drac-text-white\\">Name</th>
@@ -281,7 +281,7 @@ Object {
 exports[`Site: Table Variants 1`] = `
 Object {
   "docs": "Table has a unique variation called \`stripped\` which changes the background color of each even row.",
-  "html": "<table variant=\\"striped\\" class=\\"drac-table drac-table-striped\\">
+  "html": "<table class=\\"drac-table drac-table-striped\\">
   <thead>
     <tr>
       <th class=\\"drac-text drac-text-white\\">Name</th>

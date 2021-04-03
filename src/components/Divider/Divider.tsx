@@ -2,6 +2,7 @@ import classNamesDedupe from 'classnames/dedupe'
 import React, { HTMLAttributes } from 'react'
 import { baseColors } from '../../base/colors'
 import {
+  cleanProps,
   MarginMixin,
   marginMixin,
   PaddingMixin,
@@ -26,18 +27,20 @@ export interface DividerProps
  * content or UI patterns.
  */
 export const Divider: React.FC<DividerProps> = (props: DividerProps) => {
+  const { color, ...htmlProps } = props
+
   const finalProps = {
-    ...props,
+    ...htmlProps,
     className: classNamesDedupe(
       `drac-divider`,
       props.className,
-      dividerColors[props.color],
+      color && dividerColors[color],
       ...paddingMixin(props),
       ...marginMixin(props)
     )
   }
 
-  return <hr {...finalProps} />
+  return <hr {...cleanProps(finalProps)} />
 }
 
 Divider.displayName = 'Divider'

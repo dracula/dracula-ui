@@ -2,6 +2,7 @@ import React, { HTMLAttributes } from 'react'
 import cx from 'classnames/dedupe'
 import { ColorMap } from '../../base/colors'
 import {
+  cleanProps,
   marginMixin,
   MarginMixin,
   paddingMixin,
@@ -30,8 +31,8 @@ export interface CheckboxProps
   name?: string
 
   /**
- * A disabled checkbox is unusable and un-clickable.
- */
+   * A disabled checkbox is unusable and un-clickable.
+   */
   disabled?: boolean
 }
 
@@ -42,18 +43,22 @@ export interface CheckboxProps
  * than light styling done via CSS in order to keep check boxes accessible.
  */
 export const Checkbox: React.FC<CheckboxProps> = (props: CheckboxProps) => {
+  const { className, color, name, disabled, ...htmlProps } = props
+
   const finalProps = {
-    ...props,
+    name,
+    disabled,
+    ...htmlProps,
     className: cx(
       `drac-checkbox`,
-      props.className,
-      props.color && checkboxColors[props.color],
+      className,
+      color && checkboxColors[color],
       ...paddingMixin(props),
       ...marginMixin(props)
     )
   }
 
-  return <input type="checkbox" {...finalProps} />
+  return <input type="checkbox" {...cleanProps(finalProps)} />
 }
 
 Checkbox.displayName = 'Checkbox'
