@@ -4,10 +4,9 @@
 
 ![Dracula UI](https://user-images.githubusercontent.com/398893/111241824-24571f00-85bb-11eb-86fc-15836ac703c6.png)
 
+## :tada: Early Access Program
 
-## Early Access Program
-https://github.com/dracula/dracula-ui/discussions/17
-
+[Welcome / GitHub Discussion](https://github.com/dracula/dracula-ui/discussions/17)
 
 ## :thinking: Why
 
@@ -21,14 +20,30 @@ You can access the documentation portal at: https://dracula-ui-zeta.vercel.app/
 
 > Note: Please don't share this secret URL with people outside of the early access program.
 
+## :computer: Setup
+
+Dracula UI uses [GitHub Packages](https://github.com/features/packages) to distribute the code to you.
+
+First, create a [Personal Access Token](https://github.com/settings/tokens/new) with the following scopes: `write:packages` and `delete:packages`.
+
+Now, create a `.npmrc` file in the root of your project and include the following lines, replacing `TOKEN` with your Personal Access Token.
+
+```
+registry=https://registry.npmjs.org/
+@dracula:registry=https://npm.pkg.github.com/
+//npm.pkg.github.com/:_authToken=TOKEN
+```
+
+This will allow you to fetch all packages from npm except for Dracula UI, which will be downloaded from GitHub Packages.
+
 ## :package: Install
 
 You can install Dracula UI via npm or yarn.
 
 ```bash
-npm install dracula/dracula-ui#alpha
+npm install @dracula/dracula-ui@latest
 
-yarn add dracula/dracula-ui#alpha
+yarn add @dracula/dracula-ui@latest
 ```
 
 If you're not into package managers, just [download a ZIP](https://github.com/dracula/dracula-ui/archive/master.zip) file.
