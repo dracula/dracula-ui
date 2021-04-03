@@ -1,3 +1,4 @@
+
 :root {
   --black: hsl(230, 15%, 15%);
   --blackSecondary: hsl(230, 15%, 30%);
@@ -50,13 +51,13 @@
   --glowColor: rgba(255, 255, 255, 0.25);
 
   @each $opacity in 10, 20, 30, 40, 50, 60, 70, 80, 90 {
-    --cyan-$(opacity)0: hsl(170, 100%, 75%, 0$ (opacity));
-    --green-$(opacity)0: hsl(115, 100%, 75%, 0$ (opacity));
-    --orange-$(opacity)0: hsl(35, 100%, 75%, 0$ (opacity));
-    --pink-$(opacity)0: hsl(330, 100%, 75%, 0$ (opacity));
-    --purple-$(opacity)0: hsl(250, 100%, 75%, 0$ (opacity));
-    --red-$(opacity)0: hsl(10, 100%, 75%, 0$ (opacity));
-    --yellow-$(opacity)0: hsl(60, 100%, 75%, 0$ (opacity));
+    --cyan-$(opacity)0: hsl(170, 100%, 75%, 0.$(opacity));
+    --green-$(opacity)0: hsl(115, 100%, 75%, 0.$(opacity));
+    --orange-$(opacity)0: hsl(35, 100%, 75%, 0.$(opacity));
+    --pink-$(opacity)0: hsl(330, 100%, 75%, 0.$(opacity));
+    --purple-$(opacity)0: hsl(250, 100%, 75%, 0.$(opacity));
+    --red-$(opacity)0: hsl(10, 100%, 75%, 0.$(opacity));
+    --yellow-$(opacity)0: hsl(60, 100%, 75%, 0.$(opacity));
   }
 
   --accentColor: var(--purple);
@@ -111,8 +112,8 @@
   }
 
   .bg-$(color)-secondary {
-    --accentColor: var(--$(color)Secondary);
-    background-color: var(--$(color)Secondary);
+    --accentColor: var(--$(color) Secondary);
+    background-color: var(--$(color) Secondary);
   }
 
   .bg-$(color)-transparent {
@@ -125,7 +126,7 @@
   }
 
   .text-$(color)-secondary {
-    color: var(--$(color)Secondary);
+    color: var(--$(color) Secondary);
   }
 
   .glow-$(color) {
