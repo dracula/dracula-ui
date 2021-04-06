@@ -17,24 +17,38 @@ docs(Heading, {
         'Sizes',
         () => (
           <div>
-            <Heading size="heading-1">heading-1</Heading>
-            <Heading size="heading-2">heading-2</Heading>
-            <Heading size="heading-3">heading-3</Heading>
-            <Heading size="heading-4">heading-4</Heading>
-            <Heading size="heading-5">heading-5</Heading>
-            <Heading size="heading-6">heading-6</Heading>
+            <Heading size="2xl">2xl</Heading>
+            <Heading size="xl">xl</Heading>
+            <Heading size="lg">lg</Heading>
+            <Heading size="md">md</Heading>
+            <Heading size="sm">sm</Heading>
+            <Heading size="xs">xs</Heading>
           </div>
         ),
-        'Each heading size is mapped directly to a specific h tag in HTML.'
+        'Heading sizes range from xs to 2xl using the Dracula UI font size scale.'
+      ),
+      snapshot(
+        'Tags',
+        () => (
+          <div>
+            <Heading as="h1">h1</Heading>
+            <Heading as="h2">h2</Heading>
+            <Heading as="h3">h3</Heading>
+            <Heading as="h4">h4</Heading>
+            <Heading as="h5">h5</Heading>
+            <Heading as="h6">h6</Heading>
+          </div>
+        ),
+        'By default, every Heading is specified with `h2`, but you can change that to better match your SEO needs.'
       ),
       snapshot(
         'Colors',
         () => (
           <div>
-            <Heading size="heading-1" color="pink">
+            <Heading size="2xl" color="pink">
               pink
             </Heading>
-            <Heading size="heading-1" color="purpleCyan">
+            <Heading size="2xl" color="purpleCyan">
               purpleCyan
             </Heading>
           </div>

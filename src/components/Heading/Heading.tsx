@@ -11,12 +11,12 @@ import {
 } from '../../base/spacing'
 
 export const headingSizes = {
-  'heading-1': 'drac-heading-1',
-  'heading-2': 'drac-heading-2',
-  'heading-3': 'drac-heading-3',
-  'heading-4': 'drac-heading-4',
-  'heading-5': 'drac-heading-5',
-  'heading-6': 'drac-heading-6'
+  'md': 'drac-heading',
+  '2xl': 'drac-heading-2xl',
+  'xl': 'drac-heading-xl',
+  'lg': 'drac-heading-lg',
+  'sm': 'drac-heading-sm',
+  'xs': 'drac-heading-xs'
 }
 
 export const headingColors = mapValues(colors, (className) => {
@@ -39,6 +39,7 @@ export interface HeadingProps
    */
   color?: keyof typeof headingColors
 
+  /** The HTML element to be used */
   as?: keyof HTMLElementTagNameMap
 }
 
@@ -49,22 +50,14 @@ export interface HeadingProps
  * sizes and font weight.
  */
 export const Heading: React.FC<HeadingProps> = (props: HeadingProps) => {
-  const { size = 'heading-1', color, as, ...htmlProps } = props
-  const tag = {
-    'heading-1': 'h1',
-    'heading-2': 'h2',
-    'heading-3': 'h3',
-    'heading-4': 'h4',
-    'heading-5': 'h5',
-    'heading-6': 'h6'
-  }
+  const { size, color, as, ...htmlProps } = props
 
   const finalProps = {
     ...htmlProps,
     className: cx(
       `drac-heading`,
       props.className,
-      headingSizes[size ?? 'heading-1'],
+      headingSizes[size ?? '2xl'],
       headingColors[color ?? 'white'],
       ...paddingMixin(props),
       ...marginMixin(props)
@@ -72,7 +65,7 @@ export const Heading: React.FC<HeadingProps> = (props: HeadingProps) => {
   }
 
   return React.createElement(
-    as ?? tag[size],
+    as ?? 'h2',
     cleanProps(finalProps),
     props.children
   )
