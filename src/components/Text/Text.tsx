@@ -11,10 +11,10 @@ import {
 } from '../../base/spacing'
 
 export const textSizes = {
-  large: 'drac-text-lg',
-  medium: 'drac-text',
-  small: 'drac-text-sm',
-  xsmall: 'drac-text-xs'
+  md: 'drac-text',
+  lg: 'drac-text-lg',
+  sm: 'drac-text-sm',
+  xs: 'drac-text-xs',
 }
 
 export const textWeights = {
@@ -24,12 +24,11 @@ export const textWeights = {
 }
 
 export const lineHeights = {
-  none: 'drac-line-height-none',
-  small: 'drac-line-height-sm',
-  normal: 'drac-line-height',
-  medium: 'drac-line-height-md',
-  large: 'drac-line-height-lg',
-  xlarge: 'drac-line-height-xl'
+  md: 'drac-line-height',
+  xl: 'drac-line-height-xl',
+  lg: 'drac-line-height-lg',
+  sm: 'drac-line-height-sm',
+  xs: 'drac-line-height-xs',
 }
 
 export const textColors = mapValues(colors, (className) => {
@@ -61,6 +60,7 @@ export interface TextProps
    */
   color?: keyof typeof textColors
 
+  /** The HTML element to be used */
   as?: 'a' | 'span' | 'p'
 }
 
@@ -82,9 +82,9 @@ export const Text = (props: TextProps) => {
     className: cx(
       `drac-text`,
       props.className,
-      textSizes[size ?? 'medium'],
+      textSizes[size ?? 'md'],
       textWeights[weight ?? 'normal'],
-      lineHeights[lineHeight ?? 'normal'],
+      lineHeights[lineHeight ?? 'md'],
       textColors[color ?? 'white'],
       ...paddingMixin(props),
       ...marginMixin(props)

@@ -50,16 +50,16 @@ docs(Text, {
         () => (
           <Box>
             <Box>
-              <Text size="xsmall">xsmall</Text>
+              <Text size="xs">xs</Text>
             </Box>
             <Box>
-              <Text size="small">small</Text>
+              <Text size="sm">sm</Text>
             </Box>
             <Box>
-              <Text size="medium">medium</Text>
+              <Text size="md">md</Text>
             </Box>
             <Box>
-              <Text size="large">large</Text>
+              <Text size="lg">lg</Text>
             </Box>
           </Box>
         ),
