@@ -47,12 +47,12 @@ class Colors extends React.Component {
           <Box className={styles.content} py="lg">
             <main className={styles.center}>
               <Box>
-                <Heading size="heading-1">{title}</Heading>
+                <Heading as="h1" size="2xl">{title}</Heading>
                 <Paragraph className={styles.description} size="md">
                   {description}
                 </Paragraph>
                 <Box my="lg">
-                  <Heading size="heading-2" color="cyanGreen">
+                  <Heading as="h2" size="xl" color="cyanGreen">
                     Color System
                   </Heading>
                   <Paragraph>
@@ -70,7 +70,7 @@ class Colors extends React.Component {
                 </Box>
 
                 <Box my="lg">
-                  <Heading size="heading-3">Base / Accent Colors</Heading>
+                  <Heading as="h3" size="md">Base / Accent Colors</Heading>
                   <Paragraph>
                     Base colors are the elemental colors derived from the
                     Dracula color palette. The entire palette was tested against
@@ -116,7 +116,7 @@ class Colors extends React.Component {
                 </Box>
 
                 <Box my="lg">
-                  <Heading size="heading-3">Gradients</Heading>
+                  <Heading as="h3" size="md">Gradients</Heading>
                   <Paragraph>
                     Gradients can be used to add a more playful tone to your
                     application, and can be very aesthetically pleasing when
@@ -150,7 +150,7 @@ class Colors extends React.Component {
                 </Box>
 
                 <Box my="lg">
-                  <Heading size="heading-3">
+                  <Heading as="h3" size="md">
                     Color Animations (Experimental)
                   </Heading>
 
@@ -169,7 +169,7 @@ class Colors extends React.Component {
                 </Box>
 
                 <Box my="lg">
-                  <Heading size="heading-3">
+                  <Heading as="h3" size="md">
                     Conveying Hiearchy with Colors
                   </Heading>
 
@@ -220,7 +220,7 @@ class Colors extends React.Component {
                 </Box>
 
                 <Box my="lg">
-                  <Heading size="heading-2" color="cyanGreen">
+                  <Heading as="h2" size="xl" color="cyanGreen">
                     Utility Classes and Properties
                   </Heading>
                   <Paragraph className={styles.description}>

@@ -37,12 +37,12 @@ class Installation extends React.Component {
           <Box className={styles.content} py="lg">
             <main className={styles.center}>
               <Box>
-                <Heading size="heading-1">{title}</Heading>
+                <Heading as="h1" size="2xl">{title}</Heading>
                 <Paragraph className={styles.description} size="md">
                   {description}
                 </Paragraph>
                 <Box my="lg">
-                  <Heading size="heading-2">Getting set up</Heading>
+                  <Heading as="h2" size="xl">Getting set up</Heading>
                   <Paragraph>
                     Dracula UI uses <Anchor href="https://github.com/features/packages" target="_blank">GitHub Packages</Anchor> to distribute the code to you.
                   </Paragraph>
@@ -80,7 +80,7 @@ yarn add @dracula/dracula-ui@latest`}
                   />
                 </Box>
                 <Box my="lg">
-                  <Heading size="heading-2">Using with HTML</Heading>
+                  <Heading as="h2" size="xl">Using with HTML</Heading>
                   <Paragraph>
                     You can use Dracula UI with plain HTML by importing the CSS
                     file.
@@ -98,7 +98,7 @@ yarn add @dracula/dracula-ui@latest`}
                   />
                 </Box>
                 <Box my="lg">
-                  <Heading size="heading-2">Using with React</Heading>
+                  <Heading as="h2" size="xl">Using with React</Heading>
                   <Paragraph>
                     You can also use Dracula UI with React by importing the JS
                     package.
@@ -118,7 +118,7 @@ export default Footer`}
                   />
                 </Box>
                 <Box my="lg">
-                  <Heading size="heading-2">Using with Next.js</Heading>
+                  <Heading as="h2" size="xl">Using with Next.js</Heading>
                   <Paragraph>
                     First, you need to import the CSS globally.
                   </Paragraph>

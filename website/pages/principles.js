@@ -36,12 +36,12 @@ class Principles extends React.Component {
           <Box className={styles.content} py="lg">
             <main className={styles.center}>
               <Box>
-                <Heading size="heading-1">{title}</Heading>
+                <Heading as="h1" size="2xl">{title}</Heading>
                 <Paragraph className={styles.description} size="md">
                   {description}
                 </Paragraph>
                 <Box my="lg">
-                  <Heading size="heading-2">Why</Heading>
+                  <Heading as="h2" size="xl">Why</Heading>
                   <Paragraph>
                     Our mission is to unleash the creative potential in every
                     developer. We do that by providing modular components that
@@ -49,7 +49,7 @@ class Principles extends React.Component {
                   </Paragraph>
                 </Box>
                 <Box my="lg">
-                  <Heading size="heading-2" color="cyan">
+                  <Heading as="h2" size="xl" color="cyan">
                     Built for Dark Mode
                   </Heading>
                   <Paragraph>
@@ -59,7 +59,7 @@ class Principles extends React.Component {
                   </Paragraph>
                 </Box>
                 <Box my="lg">
-                  <Heading size="heading-2" color="green">
+                  <Heading as="h2" size="xl" color="green">
                     Designer Friendly
                   </Heading>
                   <Paragraph>
@@ -69,7 +69,7 @@ class Principles extends React.Component {
                   </Paragraph>
                 </Box>
                 <Box my="lg">
-                  <Heading size="heading-2" color="yellow">
+                  <Heading as="h2" size="xl" color="yellow">
                     Great Developer Experience
                   </Heading>
                   <Paragraph>
@@ -80,7 +80,7 @@ class Principles extends React.Component {
                   </Paragraph>
                 </Box>
                 <Box my="lg">
-                  <Heading size="heading-2" color="orange">
+                  <Heading as="h2" size="xl" color="orange">
                     Enhanced Accessibility
                   </Heading>
                   <Paragraph>
@@ -91,7 +91,7 @@ class Principles extends React.Component {
                   </Paragraph>
                 </Box>
                 <Box my="lg">
-                  <Heading size="heading-2" color="pink">
+                  <Heading as="h2" size="xl" color="pink">
                     Aesthetically Pleasing
                   </Heading>
                   <Paragraph>
@@ -102,7 +102,7 @@ class Principles extends React.Component {
                   </Paragraph>
                 </Box>
                 <Box my="lg">
-                  <Heading size="heading-2" color="purple">
+                  <Heading as="h2" size="xl" color="purple">
                     Appealing Typography
                   </Heading>
                   <Paragraph>

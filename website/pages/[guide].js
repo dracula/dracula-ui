@@ -21,7 +21,7 @@ function Properties({ docGenProps }) {
   return (
     <>
       <Anchor id="properties" href="#properties" color="black">
-        <Heading size="heading-2">Properties</Heading>
+        <Heading as="h2" size="xl">Properties</Heading>
       </Anchor>
 
       <PropsTable props={docGenProps} />
@@ -73,7 +73,7 @@ function Section({ section }) {
         id={section.title.toLowerCase()}
         href={`#${section.title.toLowerCase()}`}
       >
-        <Heading size="heading-2" my="small">
+        <Heading as="h2" size="xl" my="small">
           {section.title}
         </Heading>
       </Anchor>
@@ -108,7 +108,7 @@ function Guide({ query }) {
             <DocsOverview sections={sections} />
 
             <Box>
-              <Heading size="heading-1">{title}</Heading>
+              <Heading as="h1" size="2xl">{title}</Heading>
               <Paragraph className={styles.description} size="md">
                 {description}
               </Paragraph>

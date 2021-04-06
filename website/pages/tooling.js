@@ -37,12 +37,12 @@ class Tooling extends React.Component {
           <Box className={styles.content} py="lg">
             <main className={styles.center}>
               <Box>
-                <Heading size="heading-1">{title}</Heading>
+                <Heading as="h1" size="2xl">{title}</Heading>
                 <Paragraph className={styles.description} size="md">
                   {description}
                 </Paragraph>
                 <Box my="lg">
-                  <Heading size="heading-2">Built-in Documentation</Heading>
+                  <Heading as="h2" size="xl">Built-in Documentation</Heading>
                   <Paragraph>
                     We partnered with{" "}
                     <Anchor
@@ -100,7 +100,7 @@ class Tooling extends React.Component {
                   </List>
                 </Box>
                 <Box my="lg">
-                  <Heading size="heading-2">Autocomplete</Heading>
+                  <Heading as="h2" size="xl">Autocomplete</Heading>
                   <Paragraph>
                     In order to have autocomplete enabled on Visual Studio Code
                     you must follow the steps above.
