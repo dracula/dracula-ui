@@ -53,7 +53,7 @@ If you're not into package managers, just [download a ZIP](https://github.com/dr
 You can use Dracula UI with plain HTML by importing the CSS file.
 
 ```html
-<link rel="stylesheet" href="node_modules/dracula-ui/styles/dracula-ui.css" />
+<link rel="stylesheet" href="node_modules/@dracula/dracula-ui/styles/dracula-ui.css" />
 ```
 
 Now you can take advantage of all the classes, for example:
@@ -68,7 +68,7 @@ You can also use Dracula UI with React by importing the JS package.
 
 ```js
 import { Component } from 'react'
-import { Paragraph } from 'dracula-ui'
+import { Paragraph } from '@dracula/dracula-ui'
 
 class Footer extends Component {
   render() {
@@ -86,7 +86,7 @@ First, you need to import the CSS globally.
 Go to `pages/_app.js` (or create this file if it doesn't exist yet) and add the CSS import:
 
 ```jsx
-import "dracula-ui/styles/dracula-ui.css"
+import "@dracula/dracula-ui/styles/dracula-ui.css"
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
@@ -99,7 +99,7 @@ Then you can import Dracula UI and use all React components.
 
 ```jsx
 import { Component } from 'react'
-import { Paragraph } from 'dracula-ui'
+import { Paragraph } from '@dracula/dracula-ui'
 
 class Footer extends Component {
   render() {
