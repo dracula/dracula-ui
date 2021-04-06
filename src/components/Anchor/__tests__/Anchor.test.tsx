@@ -17,17 +17,17 @@ docs(Anchor, {
         'Sizes & Weights',
         () => (
           <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <Anchor href="#" size="xsmall">
-              xsmall
+            <Anchor href="#" size="xs">
+              xs
             </Anchor>
-            <Anchor href="#" size="small">
-              small
+            <Anchor href="#" size="sm">
+              sm
             </Anchor>
-            <Anchor href="#" size="medium">
-              medium
+            <Anchor href="#" size="md">
+              md
             </Anchor>
-            <Anchor href="#" size="large">
-              large
+            <Anchor href="#" size="lg">
+              lg
             </Anchor>
             <Anchor href="#" weight="semibold">
               semibold
