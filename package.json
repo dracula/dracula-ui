@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "tsdx watch --noClean",
-    "build": "tsdx build",
+    "build": "tsdx build && cp package.json ./dist && cp -r dsp ./dist",
     "dev": "yarn build && yarn docs && concurrently \"yarn start\" \"cd website && yarn && yarn dev\" ",
     "test": "jest",
     "docs": "RECORDING=true yarn test -u && node ./dsp/update.js",
