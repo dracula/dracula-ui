@@ -62,7 +62,7 @@ export const Anchor = (props: AnchorProps) => {
       `drac-anchor`,
       `drac-text`,
       props.className,
-      textSizes[size ?? 'medium'],
+      textSizes[size ?? 'md'],
       textWeights[weight ?? 'normal'],
       textColors[color ?? 'white'],
       hoverColors[hoverColor ?? 'purple'],
