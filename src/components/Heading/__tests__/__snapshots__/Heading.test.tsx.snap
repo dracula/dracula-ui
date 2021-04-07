@@ -3,7 +3,7 @@
 exports[`Site: Heading Basic Usage 1`] = `
 Object {
   "docs": "Heading is an abstraction/style that can/is applied to HTML heading elements.",
-  "html": "<h2 class=\\"drac-heading drac-heading-2xl drac-text-white\\">Heading</h2>
+  "html": "<h2 class=\\"drac-heading drac-heading-xl drac-text-white\\">Heading</h2>
 ",
   "react": "<Heading>Heading</Heading>;
 ",
@@ -63,21 +63,31 @@ exports[`Site: Heading Tags 1`] = `
 Object {
   "docs": "By default, every Heading is specified with \`h2\`, but you can change that to better match your SEO needs.",
   "html": "<div>
-  <h1 class=\\"drac-heading drac-heading-2xl drac-text-white\\">h1</h1>
-  <h2 class=\\"drac-heading drac-heading-2xl drac-text-white\\">h2</h2>
-  <h3 class=\\"drac-heading drac-heading-2xl drac-text-white\\">h3</h3>
-  <h4 class=\\"drac-heading drac-heading-2xl drac-text-white\\">h4</h4>
-  <h5 class=\\"drac-heading drac-heading-2xl drac-text-white\\">h5</h5>
-  <h6 class=\\"drac-heading drac-heading-2xl drac-text-white\\">h6</h6>
+  <h1 class=\\"drac-heading drac-heading-xl drac-text-white\\">h1</h1>
+  <h2 class=\\"drac-heading drac-heading-xl drac-text-white\\">h2</h2>
+  <h3 class=\\"drac-heading drac-heading-lg drac-text-white\\">h3</h3>
+  <h4 class=\\"drac-heading drac-text-white\\">h4</h4>
+  <h5 class=\\"drac-heading drac-heading-sm drac-text-white\\">h5</h5>
+  <h6 class=\\"drac-heading drac-heading-xs drac-text-white\\">h6</h6>
 </div>
 ",
   "react": "<div>
   <Heading as=\\"h1\\">h1</Heading>
-  <Heading as=\\"h2\\">h2</Heading>
-  <Heading as=\\"h3\\">h3</Heading>
-  <Heading as=\\"h4\\">h4</Heading>
-  <Heading as=\\"h5\\">h5</Heading>
-  <Heading as=\\"h6\\">h6</Heading>
+  <Heading as=\\"h2\\" size=\\"xl\\">
+    h2
+  </Heading>
+  <Heading as=\\"h3\\" size=\\"lg\\">
+    h3
+  </Heading>
+  <Heading as=\\"h4\\" size=\\"md\\">
+    h4
+  </Heading>
+  <Heading as=\\"h5\\" size=\\"sm\\">
+    h5
+  </Heading>
+  <Heading as=\\"h6\\" size=\\"xs\\">
+    h6
+  </Heading>
 </div>;
 ",
   "title": "Tags",

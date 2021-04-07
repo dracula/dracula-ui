@@ -32,11 +32,21 @@ docs(Heading, {
         () => (
           <div>
             <Heading as="h1">h1</Heading>
-            <Heading as="h2">h2</Heading>
-            <Heading as="h3">h3</Heading>
-            <Heading as="h4">h4</Heading>
-            <Heading as="h5">h5</Heading>
-            <Heading as="h6">h6</Heading>
+            <Heading as="h2" size="xl">
+              h2
+            </Heading>
+            <Heading as="h3" size="lg">
+              h3
+            </Heading>
+            <Heading as="h4" size="md">
+              h4
+            </Heading>
+            <Heading as="h5" size="sm">
+              h5
+            </Heading>
+            <Heading as="h6" size="xs">
+              h6
+            </Heading>
           </div>
         ),
         'By default, every Heading is specified with `h2`, but you can change that to better match your SEO needs.'

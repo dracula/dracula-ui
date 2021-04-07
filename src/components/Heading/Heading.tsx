@@ -11,12 +11,12 @@ import {
 } from '../../base/spacing'
 
 export const headingSizes = {
-  'md': 'drac-heading',
   '2xl': 'drac-heading-2xl',
-  'xl': 'drac-heading-xl',
-  'lg': 'drac-heading-lg',
-  'sm': 'drac-heading-sm',
-  'xs': 'drac-heading-xs'
+  xl: 'drac-heading-xl',
+  lg: 'drac-heading-lg',
+  md: 'drac-heading',
+  sm: 'drac-heading-sm',
+  xs: 'drac-heading-xs'
 }
 
 export const headingColors = mapValues(colors, (className) => {
@@ -57,18 +57,14 @@ export const Heading: React.FC<HeadingProps> = (props: HeadingProps) => {
     className: cx(
       `drac-heading`,
       props.className,
-      headingSizes[size ?? '2xl'],
+      headingSizes[size ?? 'xl'],
       headingColors[color ?? 'white'],
       ...paddingMixin(props),
       ...marginMixin(props)
     )
   }
 
-  return React.createElement(
-    as ?? 'h2',
-    cleanProps(finalProps),
-    props.children
-  )
+  return React.createElement(as ?? 'h2', cleanProps(finalProps), props.children)
 }
 
 Heading.displayName = 'Heading'

@@ -5016,13 +5016,13 @@
         "trigger": "heading",
         "languages": {
           "javascriptreact": "<Heading>Heading</Heading>;\n",
-          "html": "<h2 class=\"drac-heading drac-heading-2xl drac-text-white\">Heading</h2>\n"
+          "html": "<h2 class=\"drac-heading drac-heading-xl drac-text-white\">Heading</h2>\n"
         }
       },
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
-          "html": "<h2 class=\"drac-heading drac-heading-2xl drac-text-white\">Heading</h2>\n",
+          "html": "<h2 class=\"drac-heading drac-heading-xl drac-text-white\">Heading</h2>\n",
           "react": "<Heading>Heading</Heading>;\n",
           "docs": "Heading is an abstraction/style that can/is applied to HTML heading elements.",
           "screenshot": "./dsp/assets/Heading.png",
@@ -5038,8 +5038,8 @@
         },
         {
           "title": "Tags",
-          "html": "<div>\n  <h1 class=\"drac-heading drac-heading-2xl drac-text-white\">h1</h1>\n  <h2 class=\"drac-heading drac-heading-2xl drac-text-white\">h2</h2>\n  <h3 class=\"drac-heading drac-heading-2xl drac-text-white\">h3</h3>\n  <h4 class=\"drac-heading drac-heading-2xl drac-text-white\">h4</h4>\n  <h5 class=\"drac-heading drac-heading-2xl drac-text-white\">h5</h5>\n  <h6 class=\"drac-heading drac-heading-2xl drac-text-white\">h6</h6>\n</div>\n",
-          "react": "<div>\n  <Heading as=\"h1\">h1</Heading>\n  <Heading as=\"h2\">h2</Heading>\n  <Heading as=\"h3\">h3</Heading>\n  <Heading as=\"h4\">h4</Heading>\n  <Heading as=\"h5\">h5</Heading>\n  <Heading as=\"h6\">h6</Heading>\n</div>;\n",
+          "html": "<div>\n  <h1 class=\"drac-heading drac-heading-xl drac-text-white\">h1</h1>\n  <h2 class=\"drac-heading drac-heading-xl drac-text-white\">h2</h2>\n  <h3 class=\"drac-heading drac-heading-lg drac-text-white\">h3</h3>\n  <h4 class=\"drac-heading drac-text-white\">h4</h4>\n  <h5 class=\"drac-heading drac-heading-sm drac-text-white\">h5</h5>\n  <h6 class=\"drac-heading drac-heading-xs drac-text-white\">h6</h6>\n</div>\n",
+          "react": "<div>\n  <Heading as=\"h1\">h1</Heading>\n  <Heading as=\"h2\" size=\"xl\">\n    h2\n  </Heading>\n  <Heading as=\"h3\" size=\"lg\">\n    h3\n  </Heading>\n  <Heading as=\"h4\" size=\"md\">\n    h4\n  </Heading>\n  <Heading as=\"h5\" size=\"sm\">\n    h5\n  </Heading>\n  <Heading as=\"h6\" size=\"xs\">\n    h6\n  </Heading>\n</div>;\n",
           "docs": "By default, every Heading is specified with `h2`, but you can change that to better match your SEO needs.",
           "screenshot": "./dsp/assets/HeadingTags.png",
           "svgData": "./dsp/assets/svgs/HeadingTags.svg"
@@ -5070,7 +5070,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"2xl\" | \"xl\" | \"lg\" | \"sm\" | \"xs\" | undefined"
+            "name": "\"2xl\" | \"xl\" | \"lg\" | \"md\" | \"sm\" | \"xs\" | undefined"
           }
         },
         "color": {
@@ -5123,7 +5123,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "my": {
@@ -5138,7 +5138,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "mx": {
@@ -5153,7 +5153,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "mt": {
@@ -5168,7 +5168,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "mb": {
@@ -5183,7 +5183,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "ml": {
@@ -5198,7 +5198,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "mr": {
@@ -5213,7 +5213,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "p": {
@@ -5228,7 +5228,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "py": {
@@ -5243,7 +5243,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "px": {
@@ -5258,7 +5258,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "pt": {
@@ -5273,7 +5273,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "pb": {
@@ -5288,7 +5288,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "pl": {
@@ -5303,7 +5303,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "pr": {
@@ -5318,7 +5318,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         }
       },
@@ -5344,7 +5344,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"2xl\" | \"xl\" | \"lg\" | \"sm\" | \"xs\" | undefined"
+              "name": "\"2xl\" | \"xl\" | \"lg\" | \"md\" | \"sm\" | \"xs\" | undefined"
             }
           },
           "color": {
@@ -5397,7 +5397,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "my": {
@@ -5412,7 +5412,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "mx": {
@@ -5427,7 +5427,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "mt": {
@@ -5442,7 +5442,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "mb": {
@@ -5457,7 +5457,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "ml": {
@@ -5472,7 +5472,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "mr": {
@@ -5487,7 +5487,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "p": {
@@ -5502,7 +5502,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "py": {
@@ -5517,7 +5517,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "px": {
@@ -5532,7 +5532,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "pt": {
@@ -5547,7 +5547,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "pb": {
@@ -5562,7 +5562,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "pl": {
@@ -5577,7 +5577,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "pr": {
@@ -5592,7 +5592,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           }
         }
