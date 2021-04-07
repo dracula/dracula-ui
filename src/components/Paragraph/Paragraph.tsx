@@ -24,9 +24,9 @@ export const Paragraph: React.FC<TextProps> = (props: TextProps) => {
     className: cx(
       `drac-text`,
       props.className,
-      textSizes[size ?? 'medium'],
+      textSizes[size ?? 'md'],
       textWeights[weight ?? 'normal'],
-      lineHeights[lineHeight ?? 'normal'],
+      lineHeights[lineHeight ?? 'md'],
       textColors[color ?? 'white'],
       ...paddingMixin(props),
       ...marginMixin(props)
