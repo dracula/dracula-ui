@@ -3,7 +3,7 @@
 exports[`Site: Heading Basic Usage 1`] = `
 Object {
   "docs": "Heading is an abstraction/style that can/is applied to HTML heading elements.",
-  "html": "<h1 class=\\"drac-heading drac-heading-1 drac-text-white\\">Heading</h1>
+  "html": "<h2 class=\\"drac-heading drac-heading-xl drac-text-white\\">Heading</h2>
 ",
   "react": "<Heading>Heading</Heading>;
 ",
@@ -15,15 +15,17 @@ exports[`Site: Heading Colors 1`] = `
 Object {
   "docs": "Headings can be customized to use any of the Dracula UI theme colors, including all solid, gradient, and animated colors.",
   "html": "<div>
-  <h1 class=\\"drac-heading drac-heading-1 drac-text-pink\\">pink</h1>
-  <h1 class=\\"drac-heading drac-heading-1 drac-text-purple-cyan\\">purpleCyan</h1>
+  <h2 class=\\"drac-heading drac-heading-2xl drac-text-pink\\">pink</h2>
+  <h2 class=\\"drac-heading drac-heading-2xl drac-text-purple-cyan\\">
+    purpleCyan
+  </h2>
 </div>
 ",
   "react": "<div>
-  <Heading size=\\"heading-1\\" color=\\"pink\\">
+  <Heading size=\\"2xl\\" color=\\"pink\\">
     pink
   </Heading>
-  <Heading size=\\"heading-1\\" color=\\"purpleCyan\\">
+  <Heading size=\\"2xl\\" color=\\"purpleCyan\\">
     purpleCyan
   </Heading>
 </div>;
@@ -34,25 +36,60 @@ Object {
 
 exports[`Site: Heading Sizes 1`] = `
 Object {
-  "docs": "Each heading size is mapped directly to a specific h tag in HTML.",
+  "docs": "Heading sizes range from xs to 2xl using the Dracula UI font size scale.",
   "html": "<div>
-  <h1 class=\\"drac-heading drac-heading-1 drac-text-white\\">heading-1</h1>
-  <h2 class=\\"drac-heading drac-heading-2 drac-text-white\\">heading-2</h2>
-  <h3 class=\\"drac-heading drac-heading-3 drac-text-white\\">heading-3</h3>
-  <h4 class=\\"drac-heading drac-heading-4 drac-text-white\\">heading-4</h4>
-  <h5 class=\\"drac-heading drac-heading-5 drac-text-white\\">heading-5</h5>
-  <h6 class=\\"drac-heading drac-heading-6 drac-text-white\\">heading-6</h6>
+  <h2 class=\\"drac-heading drac-heading-2xl drac-text-white\\">2xl</h2>
+  <h2 class=\\"drac-heading drac-heading-xl drac-text-white\\">xl</h2>
+  <h2 class=\\"drac-heading drac-heading-lg drac-text-white\\">lg</h2>
+  <h2 class=\\"drac-heading drac-text-white\\">md</h2>
+  <h2 class=\\"drac-heading drac-heading-sm drac-text-white\\">sm</h2>
+  <h2 class=\\"drac-heading drac-heading-xs drac-text-white\\">xs</h2>
 </div>
 ",
   "react": "<div>
-  <Heading size=\\"heading-1\\">heading-1</Heading>
-  <Heading size=\\"heading-2\\">heading-2</Heading>
-  <Heading size=\\"heading-3\\">heading-3</Heading>
-  <Heading size=\\"heading-4\\">heading-4</Heading>
-  <Heading size=\\"heading-5\\">heading-5</Heading>
-  <Heading size=\\"heading-6\\">heading-6</Heading>
+  <Heading size=\\"2xl\\">2xl</Heading>
+  <Heading size=\\"xl\\">xl</Heading>
+  <Heading size=\\"lg\\">lg</Heading>
+  <Heading size=\\"md\\">md</Heading>
+  <Heading size=\\"sm\\">sm</Heading>
+  <Heading size=\\"xs\\">xs</Heading>
 </div>;
 ",
   "title": "Sizes",
+}
+`;
+
+exports[`Site: Heading Tags 1`] = `
+Object {
+  "docs": "By default, every Heading is specified with \`h2\`, but you can change that to better match your SEO needs.",
+  "html": "<div>
+  <h1 class=\\"drac-heading drac-heading-xl drac-text-white\\">h1</h1>
+  <h2 class=\\"drac-heading drac-heading-xl drac-text-white\\">h2</h2>
+  <h3 class=\\"drac-heading drac-heading-lg drac-text-white\\">h3</h3>
+  <h4 class=\\"drac-heading drac-text-white\\">h4</h4>
+  <h5 class=\\"drac-heading drac-heading-sm drac-text-white\\">h5</h5>
+  <h6 class=\\"drac-heading drac-heading-xs drac-text-white\\">h6</h6>
+</div>
+",
+  "react": "<div>
+  <Heading as=\\"h1\\">h1</Heading>
+  <Heading as=\\"h2\\" size=\\"xl\\">
+    h2
+  </Heading>
+  <Heading as=\\"h3\\" size=\\"lg\\">
+    h3
+  </Heading>
+  <Heading as=\\"h4\\" size=\\"md\\">
+    h4
+  </Heading>
+  <Heading as=\\"h5\\" size=\\"sm\\">
+    h5
+  </Heading>
+  <Heading as=\\"h6\\" size=\\"xs\\">
+    h6
+  </Heading>
+</div>;
+",
+  "title": "Tags",
 }
 `;

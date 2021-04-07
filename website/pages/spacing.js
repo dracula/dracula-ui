@@ -45,12 +45,12 @@ class Spacing extends React.Component {
           <Box className={styles.content} py="lg">
             <main className={styles.center}>
               <Box>
-                <Heading size="heading-1">{title}</Heading>
+                <Heading as="h1" size="2xl">{title}</Heading>
                 <Paragraph className={styles.description} size="md">
                   {description}
                 </Paragraph>
                 <Box my="lg">
-                  <Heading size="heading-2" color="cyanGreen">
+                  <Heading as="h2" size="xl" color="cyanGreen">
                     Spacing Utilities
                   </Heading>
                   <Paragraph>
@@ -71,7 +71,7 @@ class Spacing extends React.Component {
                 </Box>
 
                 <Box my="lg">
-                  <Heading size="heading-3">Padding</Heading>
+                  <Heading as="h3" size="md">Padding</Heading>
                   <Paragraph>
                     The padding css utility classes and{" "}
                     <Box as="code" className="drac-text-pink">
@@ -101,7 +101,7 @@ class Spacing extends React.Component {
                 </Box>
 
                 <Box my="lg">
-                  <Heading size="heading-3">Margin</Heading>
+                  <Heading as="h3" size="md">Margin</Heading>
                   <Paragraph>
                     Similar to the padding helpers, the margin css utility
                     classes and{" "}
@@ -116,7 +116,7 @@ class Spacing extends React.Component {
                 </Box>
 
                 <Box my="lg">
-                  <Heading size="heading-2" color="cyanGreen">
+                  <Heading as="h2" size="xl" color="cyanGreen">
                     Utility Classes and Properties
                   </Heading>
                   <Paragraph className={styles.description}>
@@ -158,7 +158,7 @@ class Spacing extends React.Component {
                 </Box>
               </Box>
 
-              <Heading size="heading-2" color="cyanGreen">
+              <Heading as="h2" size="xl" color="cyanGreen">
                 Styling with regular CSS
               </Heading>
 

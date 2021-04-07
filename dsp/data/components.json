@@ -32,8 +32,8 @@
         },
         {
           "title": "Sizes & Weights",
-          "html": "<div style=\"display: flex; flex-direction: column\">\n  <a\n    href=\"#\"\n    class=\"drac-anchor drac-text drac-text-xs drac-text-white drac-text-purple--hover\"\n    >xsmall</a\n  ><a\n    href=\"#\"\n    class=\"drac-anchor drac-text drac-text-sm drac-text-white drac-text-purple--hover\"\n    >small</a\n  ><a\n    href=\"#\"\n    class=\"drac-anchor drac-text drac-text-white drac-text-purple--hover\"\n    >medium</a\n  ><a\n    href=\"#\"\n    class=\"drac-anchor drac-text drac-text-lg drac-text-white drac-text-purple--hover\"\n    >large</a\n  ><a\n    href=\"#\"\n    class=\"drac-anchor drac-text drac-text-semibold drac-text-white drac-text-purple--hover\"\n    >semibold</a\n  ><a\n    href=\"#\"\n    style=\"font-size: 30px\"\n    class=\"drac-anchor drac-text drac-text-white drac-text-purple--hover\"\n    >font-size: 30</a\n  >\n</div>\n",
-          "react": "<div style={{ display: \"flex\", flexDirection: \"column\" }}>\n  <Anchor href=\"#\" size=\"xsmall\">\n    xsmall\n  </Anchor>\n  <Anchor href=\"#\" size=\"small\">\n    small\n  </Anchor>\n  <Anchor href=\"#\" size=\"medium\">\n    medium\n  </Anchor>\n  <Anchor href=\"#\" size=\"large\">\n    large\n  </Anchor>\n  <Anchor href=\"#\" weight=\"semibold\">\n    semibold\n  </Anchor>\n  <Anchor href=\"#\" style={{ fontSize: 30 }}>\n    font-size: 30\n  </Anchor>\n</div>;\n",
+          "html": "<div style=\"display: flex; flex-direction: column\">\n  <a\n    href=\"#\"\n    class=\"drac-anchor drac-text drac-text-xs drac-text-white drac-text-purple--hover\"\n    >xs</a\n  ><a\n    href=\"#\"\n    class=\"drac-anchor drac-text drac-text-sm drac-text-white drac-text-purple--hover\"\n    >sm</a\n  ><a\n    href=\"#\"\n    class=\"drac-anchor drac-text drac-text-white drac-text-purple--hover\"\n    >md</a\n  ><a\n    href=\"#\"\n    class=\"drac-anchor drac-text drac-text-lg drac-text-white drac-text-purple--hover\"\n    >lg</a\n  ><a\n    href=\"#\"\n    class=\"drac-anchor drac-text drac-text-semibold drac-text-white drac-text-purple--hover\"\n    >semibold</a\n  ><a\n    href=\"#\"\n    style=\"font-size: 30px\"\n    class=\"drac-anchor drac-text drac-text-white drac-text-purple--hover\"\n    >font-size: 30</a\n  >\n</div>\n",
+          "react": "<div style={{ display: \"flex\", flexDirection: \"column\" }}>\n  <Anchor href=\"#\" size=\"xs\">\n    xs\n  </Anchor>\n  <Anchor href=\"#\" size=\"sm\">\n    sm\n  </Anchor>\n  <Anchor href=\"#\" size=\"md\">\n    md\n  </Anchor>\n  <Anchor href=\"#\" size=\"lg\">\n    lg\n  </Anchor>\n  <Anchor href=\"#\" weight=\"semibold\">\n    semibold\n  </Anchor>\n  <Anchor href=\"#\" style={{ fontSize: 30 }}>\n    font-size: 30\n  </Anchor>\n</div>;\n",
           "docs": "Anchor sizes can be customized with pre defined sizes or using regular HTML styles or CSS classes.",
           "screenshot": "./dsp/assets/AnchorSizes & Weights.png",
           "svgData": "./dsp/assets/svgs/AnchorSizes & Weights.svg"
@@ -83,7 +83,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"large\" | \"medium\" | \"small\" | \"xsmall\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | undefined"
           }
         },
         "weight": {
@@ -155,7 +155,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "py": {
@@ -170,7 +170,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "px": {
@@ -185,7 +185,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "pt": {
@@ -200,7 +200,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "pb": {
@@ -215,7 +215,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "pl": {
@@ -230,7 +230,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "pr": {
@@ -245,7 +245,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "m": {
@@ -260,7 +260,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "my": {
@@ -275,7 +275,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "mx": {
@@ -290,7 +290,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "mt": {
@@ -305,7 +305,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "mb": {
@@ -320,7 +320,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "ml": {
@@ -335,7 +335,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "mr": {
@@ -350,7 +350,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         }
       },
@@ -395,7 +395,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"large\" | \"medium\" | \"small\" | \"xsmall\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | undefined"
             }
           },
           "weight": {
@@ -467,7 +467,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "py": {
@@ -482,7 +482,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "px": {
@@ -497,7 +497,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "pt": {
@@ -512,7 +512,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "pb": {
@@ -527,7 +527,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "pl": {
@@ -542,7 +542,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "pr": {
@@ -557,7 +557,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "m": {
@@ -572,7 +572,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "my": {
@@ -587,7 +587,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "mx": {
@@ -602,7 +602,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "mt": {
@@ -617,7 +617,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "mb": {
@@ -632,7 +632,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "ml": {
@@ -647,7 +647,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "mr": {
@@ -662,7 +662,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           }
         }
@@ -2570,9 +2570,9 @@
         },
         {
           "title": "Sizes",
-          "html": "<div class=\"drac-box\">\n  <button class=\"drac-btn drac-bg-purple drac-btn-xs drac-m-sm\">xsmall</button\n  ><button class=\"drac-btn drac-bg-purple drac-btn-sm drac-m-sm\">xsmall</button\n  ><button class=\"drac-btn drac-bg-purple drac-m-sm\">medium</button\n  ><button class=\"drac-btn drac-bg-purple drac-btn-lg drac-m-sm\">large</button>\n</div>\n",
-          "react": "<Box>\n  <Button color=\"purple\" size=\"xsmall\" m=\"sm\">\n    xsmall\n  </Button>\n  <Button color=\"purple\" size=\"small\" m=\"sm\">\n    xsmall\n  </Button>\n  <Button color=\"purple\" size=\"medium\" m=\"sm\">\n    medium\n  </Button>\n  <Button color=\"purple\" size=\"large\" m=\"sm\">\n    large\n  </Button>\n</Box>;\n",
-          "docs": "Button sizes range from xsmall to large using the Dracula UI size scale.",
+          "html": "<div class=\"drac-box\">\n  <button class=\"drac-btn drac-bg-purple drac-btn-xs drac-m-sm\">xs</button\n  ><button class=\"drac-btn drac-bg-purple drac-btn-sm drac-m-sm\">sm</button\n  ><button class=\"drac-btn drac-bg-purple drac-m-sm\">md</button\n  ><button class=\"drac-btn drac-bg-purple drac-btn-lg drac-m-sm\">lg</button>\n</div>\n",
+          "react": "<Box>\n  <Button color=\"purple\" size=\"xs\" m=\"sm\">\n    xs\n  </Button>\n  <Button color=\"purple\" size=\"sm\" m=\"sm\">\n    sm\n  </Button>\n  <Button color=\"purple\" size=\"md\" m=\"sm\">\n    md\n  </Button>\n  <Button color=\"purple\" size=\"lg\" m=\"sm\">\n    lg\n  </Button>\n</Box>;\n",
+          "docs": "Button sizes range from `xs` to `lg` using the Dracula UI size scale.",
           "screenshot": "./dsp/assets/ButtonSizes.png",
           "svgData": "./dsp/assets/svgs/ButtonSizes.svg"
         }
@@ -2613,7 +2613,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"large\" | \"medium\" | \"small\" | \"xsmall\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | undefined"
           }
         },
         "variant": {
@@ -2656,7 +2656,7 @@
         },
         "as": {
           "defaultValue": null,
-          "description": "",
+          "description": "The HTML element to be used",
           "name": "as",
           "parent": {
             "fileName": "src/components/Button/Button.tsx",
@@ -2685,7 +2685,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "py": {
@@ -2700,7 +2700,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "px": {
@@ -2715,7 +2715,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "pt": {
@@ -2730,7 +2730,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "pb": {
@@ -2745,7 +2745,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "pl": {
@@ -2760,7 +2760,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "pr": {
@@ -2775,7 +2775,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "m": {
@@ -2790,7 +2790,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "my": {
@@ -2805,7 +2805,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "mx": {
@@ -2820,7 +2820,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "mt": {
@@ -2835,7 +2835,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "mb": {
@@ -2850,7 +2850,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "ml": {
@@ -2865,7 +2865,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "mr": {
@@ -2880,7 +2880,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         }
       },
@@ -2925,7 +2925,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"large\" | \"medium\" | \"small\" | \"xsmall\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | undefined"
             }
           },
           "variant": {
@@ -2968,7 +2968,7 @@
           },
           "as": {
             "defaultValue": null,
-            "description": "",
+            "description": "The HTML element to be used",
             "name": "as",
             "parent": {
               "fileName": "src/components/Button/Button.tsx",
@@ -2997,7 +2997,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "py": {
@@ -3012,7 +3012,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "px": {
@@ -3027,7 +3027,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "pt": {
@@ -3042,7 +3042,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "pb": {
@@ -3057,7 +3057,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "pl": {
@@ -3072,7 +3072,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "pr": {
@@ -3087,7 +3087,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "m": {
@@ -3102,7 +3102,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "my": {
@@ -3117,7 +3117,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "mx": {
@@ -3132,7 +3132,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "mt": {
@@ -3147,7 +3147,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "mb": {
@@ -3162,7 +3162,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "ml": {
@@ -3177,7 +3177,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "mr": {
@@ -3192,7 +3192,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           }
         }
@@ -5016,13 +5016,13 @@
         "trigger": "heading",
         "languages": {
           "javascriptreact": "<Heading>Heading</Heading>;\n",
-          "html": "<h1 class=\"drac-heading drac-heading-1 drac-text-white\">Heading</h1>\n"
+          "html": "<h2 class=\"drac-heading drac-heading-xl drac-text-white\">Heading</h2>\n"
         }
       },
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
-          "html": "<h1 class=\"drac-heading drac-heading-1 drac-text-white\">Heading</h1>\n",
+          "html": "<h2 class=\"drac-heading drac-heading-xl drac-text-white\">Heading</h2>\n",
           "react": "<Heading>Heading</Heading>;\n",
           "docs": "Heading is an abstraction/style that can/is applied to HTML heading elements.",
           "screenshot": "./dsp/assets/Heading.png",
@@ -5030,16 +5030,24 @@
         },
         {
           "title": "Sizes",
-          "html": "<div>\n  <h1 class=\"drac-heading drac-heading-1 drac-text-white\">heading-1</h1>\n  <h2 class=\"drac-heading drac-heading-2 drac-text-white\">heading-2</h2>\n  <h3 class=\"drac-heading drac-heading-3 drac-text-white\">heading-3</h3>\n  <h4 class=\"drac-heading drac-heading-4 drac-text-white\">heading-4</h4>\n  <h5 class=\"drac-heading drac-heading-5 drac-text-white\">heading-5</h5>\n  <h6 class=\"drac-heading drac-heading-6 drac-text-white\">heading-6</h6>\n</div>\n",
-          "react": "<div>\n  <Heading size=\"heading-1\">heading-1</Heading>\n  <Heading size=\"heading-2\">heading-2</Heading>\n  <Heading size=\"heading-3\">heading-3</Heading>\n  <Heading size=\"heading-4\">heading-4</Heading>\n  <Heading size=\"heading-5\">heading-5</Heading>\n  <Heading size=\"heading-6\">heading-6</Heading>\n</div>;\n",
-          "docs": "Each heading size is mapped directly to a specific h tag in HTML.",
+          "html": "<div>\n  <h2 class=\"drac-heading drac-heading-2xl drac-text-white\">2xl</h2>\n  <h2 class=\"drac-heading drac-heading-xl drac-text-white\">xl</h2>\n  <h2 class=\"drac-heading drac-heading-lg drac-text-white\">lg</h2>\n  <h2 class=\"drac-heading drac-text-white\">md</h2>\n  <h2 class=\"drac-heading drac-heading-sm drac-text-white\">sm</h2>\n  <h2 class=\"drac-heading drac-heading-xs drac-text-white\">xs</h2>\n</div>\n",
+          "react": "<div>\n  <Heading size=\"2xl\">2xl</Heading>\n  <Heading size=\"xl\">xl</Heading>\n  <Heading size=\"lg\">lg</Heading>\n  <Heading size=\"md\">md</Heading>\n  <Heading size=\"sm\">sm</Heading>\n  <Heading size=\"xs\">xs</Heading>\n</div>;\n",
+          "docs": "Heading sizes range from xs to 2xl using the Dracula UI font size scale.",
           "screenshot": "./dsp/assets/HeadingSizes.png",
           "svgData": "./dsp/assets/svgs/HeadingSizes.svg"
         },
         {
+          "title": "Tags",
+          "html": "<div>\n  <h1 class=\"drac-heading drac-heading-xl drac-text-white\">h1</h1>\n  <h2 class=\"drac-heading drac-heading-xl drac-text-white\">h2</h2>\n  <h3 class=\"drac-heading drac-heading-lg drac-text-white\">h3</h3>\n  <h4 class=\"drac-heading drac-text-white\">h4</h4>\n  <h5 class=\"drac-heading drac-heading-sm drac-text-white\">h5</h5>\n  <h6 class=\"drac-heading drac-heading-xs drac-text-white\">h6</h6>\n</div>\n",
+          "react": "<div>\n  <Heading as=\"h1\">h1</Heading>\n  <Heading as=\"h2\" size=\"xl\">\n    h2\n  </Heading>\n  <Heading as=\"h3\" size=\"lg\">\n    h3\n  </Heading>\n  <Heading as=\"h4\" size=\"md\">\n    h4\n  </Heading>\n  <Heading as=\"h5\" size=\"sm\">\n    h5\n  </Heading>\n  <Heading as=\"h6\" size=\"xs\">\n    h6\n  </Heading>\n</div>;\n",
+          "docs": "By default, every Heading is specified with `h2`, but you can change that to better match your SEO needs.",
+          "screenshot": "./dsp/assets/HeadingTags.png",
+          "svgData": "./dsp/assets/svgs/HeadingTags.svg"
+        },
+        {
           "title": "Colors",
-          "html": "<div>\n  <h1 class=\"drac-heading drac-heading-1 drac-text-pink\">pink</h1>\n  <h1 class=\"drac-heading drac-heading-1 drac-text-purple-cyan\">purpleCyan</h1>\n</div>\n",
-          "react": "<div>\n  <Heading size=\"heading-1\" color=\"pink\">\n    pink\n  </Heading>\n  <Heading size=\"heading-1\" color=\"purpleCyan\">\n    purpleCyan\n  </Heading>\n</div>;\n",
+          "html": "<div>\n  <h2 class=\"drac-heading drac-heading-2xl drac-text-pink\">pink</h2>\n  <h2 class=\"drac-heading drac-heading-2xl drac-text-purple-cyan\">\n    purpleCyan\n  </h2>\n</div>\n",
+          "react": "<div>\n  <Heading size=\"2xl\" color=\"pink\">\n    pink\n  </Heading>\n  <Heading size=\"2xl\" color=\"purpleCyan\">\n    purpleCyan\n  </Heading>\n</div>;\n",
           "docs": "Headings can be customized to use any of the Dracula UI theme colors, including all solid, gradient, and animated colors.",
           "screenshot": "./dsp/assets/HeadingColors.png",
           "svgData": "./dsp/assets/svgs/HeadingColors.svg"
@@ -5062,7 +5070,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"heading-1\" | \"heading-2\" | \"heading-3\" | \"heading-4\" | \"heading-5\" | \"heading-6\" | undefined"
+            "name": "\"2xl\" | \"xl\" | \"lg\" | \"md\" | \"sm\" | \"xs\" | undefined"
           }
         },
         "color": {
@@ -5086,7 +5094,7 @@
         },
         "as": {
           "defaultValue": null,
-          "description": "",
+          "description": "The HTML element to be used",
           "name": "as",
           "parent": {
             "fileName": "src/components/Heading/Heading.tsx",
@@ -5115,7 +5123,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "my": {
@@ -5130,7 +5138,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "mx": {
@@ -5145,7 +5153,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "mt": {
@@ -5160,7 +5168,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "mb": {
@@ -5175,7 +5183,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "ml": {
@@ -5190,7 +5198,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "mr": {
@@ -5205,7 +5213,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "p": {
@@ -5220,7 +5228,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "py": {
@@ -5235,7 +5243,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "px": {
@@ -5250,7 +5258,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "pt": {
@@ -5265,7 +5273,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "pb": {
@@ -5280,7 +5288,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "pl": {
@@ -5295,7 +5303,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "pr": {
@@ -5310,7 +5318,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         }
       },
@@ -5336,7 +5344,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"heading-1\" | \"heading-2\" | \"heading-3\" | \"heading-4\" | \"heading-5\" | \"heading-6\" | undefined"
+              "name": "\"2xl\" | \"xl\" | \"lg\" | \"md\" | \"sm\" | \"xs\" | undefined"
             }
           },
           "color": {
@@ -5360,7 +5368,7 @@
           },
           "as": {
             "defaultValue": null,
-            "description": "",
+            "description": "The HTML element to be used",
             "name": "as",
             "parent": {
               "fileName": "src/components/Heading/Heading.tsx",
@@ -5389,7 +5397,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "my": {
@@ -5404,7 +5412,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "mx": {
@@ -5419,7 +5427,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "mt": {
@@ -5434,7 +5442,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "mb": {
@@ -5449,7 +5457,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "ml": {
@@ -5464,7 +5472,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "mr": {
@@ -5479,7 +5487,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "p": {
@@ -5494,7 +5502,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "py": {
@@ -5509,7 +5517,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "px": {
@@ -5524,7 +5532,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "pt": {
@@ -5539,7 +5547,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "pb": {
@@ -5554,7 +5562,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "pl": {
@@ -5569,7 +5577,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "pr": {
@@ -5584,7 +5592,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           }
         }
@@ -7448,16 +7456,16 @@
         },
         {
           "title": "Sizes",
-          "html": "<div class=\"drac-box\">\n  <p class=\"drac-text drac-text-xs drac-line-height drac-text-white\">xsmall</p>\n  <p class=\"drac-text drac-text-sm drac-line-height drac-text-white\">small</p>\n  <p class=\"drac-text drac-line-height drac-text-white\">medium</p>\n  <p class=\"drac-text drac-text-lg drac-line-height drac-text-white\">large</p>\n</div>\n",
-          "react": "<Box>\n  <Paragraph size=\"xsmall\">xsmall</Paragraph>\n  <Paragraph size=\"small\">small</Paragraph>\n  <Paragraph size=\"medium\">medium</Paragraph>\n  <Paragraph size=\"large\">large</Paragraph>\n</Box>;\n",
+          "html": "<div class=\"drac-box\">\n  <p class=\"drac-text drac-text-xs drac-line-height drac-text-white\">xs</p>\n  <p class=\"drac-text drac-text-sm drac-line-height drac-text-white\">sm</p>\n  <p class=\"drac-text drac-line-height drac-text-white\">md</p>\n  <p class=\"drac-text drac-text-lg drac-line-height drac-text-white\">lg</p>\n</div>\n",
+          "react": "<Box>\n  <Paragraph size=\"xs\">xs</Paragraph>\n  <Paragraph size=\"sm\">sm</Paragraph>\n  <Paragraph size=\"md\">md</Paragraph>\n  <Paragraph size=\"lg\">lg</Paragraph>\n</Box>;\n",
           "docs": "Paragraphs can be customize to use several different sizes.",
           "screenshot": "./dsp/assets/ParagraphSizes.png",
           "svgData": "./dsp/assets/svgs/ParagraphSizes.svg"
         },
         {
           "title": "Line Height",
-          "html": "<div class=\"drac-box\">\n  <p class=\"drac-text drac-line-height drac-text-red\">none</p>\n  <p class=\"drac-text drac-line-height-none drac-text-white\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </p>\n  <p class=\"drac-text drac-line-height drac-text-orange\">small</p>\n  <p class=\"drac-text drac-line-height-sm drac-text-white\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </p>\n  <p class=\"drac-text drac-line-height drac-text-yellow\">normal</p>\n  <p class=\"drac-text drac-line-height drac-text-white\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </p>\n  <p class=\"drac-text drac-line-height drac-text-pink\">medium</p>\n  <p class=\"drac-text drac-line-height-md drac-text-white\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </p>\n  <p class=\"drac-text drac-line-height drac-text-cyan\">large</p>\n  <p class=\"drac-text drac-line-height-lg drac-text-white\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </p>\n  <p class=\"drac-text drac-line-height drac-text-green\">xlarge</p>\n  <p class=\"drac-text drac-line-height-xl drac-text-white\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </p>\n</div>\n",
-          "react": "<Box>\n  <Paragraph color=\"red\">none</Paragraph>\n  <Paragraph lineHeight=\"none\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </Paragraph>\n  <Paragraph color=\"orange\">small</Paragraph>\n  <Paragraph lineHeight=\"small\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </Paragraph>\n  <Paragraph color=\"yellow\">normal</Paragraph>\n  <Paragraph lineHeight=\"normal\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </Paragraph>\n  <Paragraph color=\"pink\">medium</Paragraph>\n  <Paragraph lineHeight=\"medium\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </Paragraph>\n  <Paragraph color=\"cyan\">large</Paragraph>\n  <Paragraph lineHeight=\"large\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </Paragraph>\n  <Paragraph color=\"green\">xlarge</Paragraph>\n  <Paragraph lineHeight=\"xlarge\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </Paragraph>\n</Box>;\n",
+          "html": "<div class=\"drac-box\">\n  <p class=\"drac-text drac-line-height drac-text-red\">xs</p>\n  <p class=\"drac-text drac-line-height-xs drac-text-white\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </p>\n  <p class=\"drac-text drac-line-height drac-text-orange\">sm</p>\n  <p class=\"drac-text drac-line-height-sm drac-text-white\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </p>\n  <p class=\"drac-text drac-line-height drac-text-yellow\">md</p>\n  <p class=\"drac-text drac-line-height drac-text-white\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </p>\n  <p class=\"drac-text drac-line-height drac-text-pink\">lg</p>\n  <p class=\"drac-text drac-line-height-lg drac-text-white\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </p>\n  <p class=\"drac-text drac-line-height drac-text-cyan\">xl</p>\n  <p class=\"drac-text drac-line-height-xl drac-text-white\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </p>\n</div>\n",
+          "react": "<Box>\n  <Paragraph color=\"red\">xs</Paragraph>\n  <Paragraph lineHeight=\"xs\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </Paragraph>\n  <Paragraph color=\"orange\">sm</Paragraph>\n  <Paragraph lineHeight=\"sm\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </Paragraph>\n  <Paragraph color=\"yellow\">md</Paragraph>\n  <Paragraph lineHeight=\"md\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </Paragraph>\n  <Paragraph color=\"pink\">lg</Paragraph>\n  <Paragraph lineHeight=\"lg\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </Paragraph>\n  <Paragraph color=\"cyan\">xl</Paragraph>\n  <Paragraph lineHeight=\"xl\">\n    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De\n    carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel\n    maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi\n    mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi\n    dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket\n    bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater,\n    suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum\n    defunctis go lum cerebro.\n  </Paragraph>\n</Box>;\n",
           "docs": "Paragraphs can be controlled with different line heights.",
           "screenshot": "./dsp/assets/ParagraphLine Height.png",
           "svgData": "./dsp/assets/svgs/ParagraphLine Height.svg"
@@ -7480,7 +7488,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"large\" | \"medium\" | \"small\" | \"xsmall\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | undefined"
           }
         },
         "weight": {
@@ -7518,7 +7526,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"large\" | \"medium\" | \"small\" | \"normal\" | \"none\" | \"xlarge\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"xl\" | undefined"
           }
         },
         "color": {
@@ -7542,7 +7550,7 @@
         },
         "as": {
           "defaultValue": null,
-          "description": "",
+          "description": "The HTML element to be used",
           "name": "as",
           "parent": {
             "fileName": "dracula-ui/src/components/Text/Text.tsx",
@@ -7571,7 +7579,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "py": {
@@ -7586,7 +7594,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "px": {
@@ -7601,7 +7609,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "pt": {
@@ -7616,7 +7624,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "pb": {
@@ -7631,7 +7639,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "pl": {
@@ -7646,7 +7654,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "pr": {
@@ -7661,7 +7669,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "m": {
@@ -7676,7 +7684,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "my": {
@@ -7691,7 +7699,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "mx": {
@@ -7706,7 +7714,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "mt": {
@@ -7721,7 +7729,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "mb": {
@@ -7736,7 +7744,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "ml": {
@@ -7751,7 +7759,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "mr": {
@@ -7766,7 +7774,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         }
       },
@@ -7792,7 +7800,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"large\" | \"medium\" | \"small\" | \"xsmall\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | undefined"
             }
           },
           "weight": {
@@ -7830,7 +7838,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"large\" | \"medium\" | \"small\" | \"normal\" | \"none\" | \"xlarge\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"xl\" | undefined"
             }
           },
           "color": {
@@ -7854,7 +7862,7 @@
           },
           "as": {
             "defaultValue": null,
-            "description": "",
+            "description": "The HTML element to be used",
             "name": "as",
             "parent": {
               "fileName": "dracula-ui/src/components/Text/Text.tsx",
@@ -7883,7 +7891,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "py": {
@@ -7898,7 +7906,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "px": {
@@ -7913,7 +7921,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "pt": {
@@ -7928,7 +7936,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "pb": {
@@ -7943,7 +7951,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "pl": {
@@ -7958,7 +7966,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "pr": {
@@ -7973,7 +7981,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "m": {
@@ -7988,7 +7996,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "my": {
@@ -8003,7 +8011,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "mx": {
@@ -8018,7 +8026,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "mt": {
@@ -8033,7 +8041,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "mb": {
@@ -8048,7 +8056,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "ml": {
@@ -8063,7 +8071,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "mr": {
@@ -8078,7 +8086,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           }
         }
@@ -11052,8 +11060,8 @@
         },
         {
           "title": "Sizes",
-          "html": "<div class=\"drac-box\">\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-text-xs drac-line-height drac-text-white\"\n      >xsmall</span\n    >\n  </div>\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-text-sm drac-line-height drac-text-white\"\n      >small</span\n    >\n  </div>\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-line-height drac-text-white\">medium</span>\n  </div>\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-text-lg drac-line-height drac-text-white\"\n      >large</span\n    >\n  </div>\n</div>\n",
-          "react": "<Box>\n  <Box>\n    <Text size=\"xsmall\">xsmall</Text>\n  </Box>\n  <Box>\n    <Text size=\"small\">small</Text>\n  </Box>\n  <Box>\n    <Text size=\"medium\">medium</Text>\n  </Box>\n  <Box>\n    <Text size=\"large\">large</Text>\n  </Box>\n</Box>;\n",
+          "html": "<div class=\"drac-box\">\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-text-xs drac-line-height drac-text-white\"\n      >xs</span\n    >\n  </div>\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-text-sm drac-line-height drac-text-white\"\n      >sm</span\n    >\n  </div>\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-line-height drac-text-white\">md</span>\n  </div>\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-text-lg drac-line-height drac-text-white\"\n      >lg</span\n    >\n  </div>\n</div>\n",
+          "react": "<Box>\n  <Box>\n    <Text size=\"xs\">xs</Text>\n  </Box>\n  <Box>\n    <Text size=\"sm\">sm</Text>\n  </Box>\n  <Box>\n    <Text size=\"md\">md</Text>\n  </Box>\n  <Box>\n    <Text size=\"lg\">lg</Text>\n  </Box>\n</Box>;\n",
           "docs": "Text can be customize to use several different sizes.",
           "screenshot": "./dsp/assets/TextSizes.png",
           "svgData": "./dsp/assets/svgs/TextSizes.svg"
@@ -11076,7 +11084,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"large\" | \"medium\" | \"small\" | \"xsmall\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | undefined"
           }
         },
         "weight": {
@@ -11114,7 +11122,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"large\" | \"medium\" | \"small\" | \"normal\" | \"none\" | \"xlarge\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"xl\" | undefined"
           }
         },
         "color": {
@@ -11138,7 +11146,7 @@
         },
         "as": {
           "defaultValue": null,
-          "description": "",
+          "description": "The HTML element to be used",
           "name": "as",
           "parent": {
             "fileName": "src/components/Text/Text.tsx",
@@ -11167,7 +11175,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "py": {
@@ -11182,7 +11190,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "px": {
@@ -11197,7 +11205,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "pt": {
@@ -11212,7 +11220,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "pb": {
@@ -11227,7 +11235,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "pl": {
@@ -11242,7 +11250,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "pr": {
@@ -11257,7 +11265,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "m": {
@@ -11272,7 +11280,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "my": {
@@ -11287,7 +11295,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "mx": {
@@ -11302,7 +11310,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "mt": {
@@ -11317,7 +11325,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "mb": {
@@ -11332,7 +11340,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "ml": {
@@ -11347,7 +11355,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         },
         "mr": {
@@ -11362,7 +11370,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
           }
         }
       },
@@ -11388,7 +11396,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"large\" | \"medium\" | \"small\" | \"xsmall\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | undefined"
             }
           },
           "weight": {
@@ -11426,7 +11434,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"large\" | \"medium\" | \"small\" | \"normal\" | \"none\" | \"xlarge\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"xl\" | undefined"
             }
           },
           "color": {
@@ -11450,7 +11458,7 @@
           },
           "as": {
             "defaultValue": null,
-            "description": "",
+            "description": "The HTML element to be used",
             "name": "as",
             "parent": {
               "fileName": "src/components/Text/Text.tsx",
@@ -11479,7 +11487,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "py": {
@@ -11494,7 +11502,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "px": {
@@ -11509,7 +11517,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "pt": {
@@ -11524,7 +11532,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "pb": {
@@ -11539,7 +11547,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "pl": {
@@ -11554,7 +11562,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "pr": {
@@ -11569,7 +11577,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "m": {
@@ -11584,7 +11592,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "my": {
@@ -11599,7 +11607,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "mx": {
@@ -11614,7 +11622,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "mt": {
@@ -11629,7 +11637,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "mb": {
@@ -11644,7 +11652,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "ml": {
@@ -11659,7 +11667,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           },
           "mr": {
@@ -11674,7 +11682,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
             }
           }
         }

@@ -25,7 +25,7 @@ const PropsTable = ({ props }) => {
   return (
     <>
       {ownProps.map((prop) => (
-        <Box my="md">
+        <Box my="md" key={prop.name}>
           <Box>
             <Text color="purple" weight="semibold">
               {prop.name}

@@ -17,10 +17,10 @@ export const buttonVariants = {
 }
 
 export const buttonSizes = {
-  large: 'drac-btn-lg',
-  medium: 'drac-btn',
-  small: 'drac-btn-sm',
-  xsmall: 'drac-btn-xs'
+  md: 'drac-btn',
+  lg: 'drac-btn-lg',
+  sm: 'drac-btn-sm',
+  xs: 'drac-btn-xs',
 }
 
 /** Button Props */
@@ -49,6 +49,7 @@ export interface ButtonProps
    */
   disabled?: boolean
 
+  /** The HTML element to be used */
   as?: 'button' | 'a' | 'input'
 }
 
@@ -77,7 +78,7 @@ export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
     props.className,
     backgroundClass,
     buttonVariants[variant ?? 'normal'],
-    buttonSizes[size ?? 'medium'],
+    buttonSizes[size ?? 'md'],
     textColorClass,
     ...paddingMixin(props),
     ...marginMixin(props)

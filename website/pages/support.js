@@ -36,12 +36,12 @@ class Design extends React.Component {
           <Box className={styles.content} py="lg">
             <main className={styles.center}>
               <Box>
-                <Heading size="heading-1">{title}</Heading>
+                <Heading as="h1" size="2xl">{title}</Heading>
                 <Paragraph className={styles.description} size="md">
                   {description}
                 </Paragraph>
                 <Box my="lg">
-                  <Heading size="heading-2">Questions</Heading>
+                  <Heading as="h2" size="xl">Questions</Heading>
                   <Paragraph>
                     Join us on{" "}
                     <Anchor
@@ -60,7 +60,7 @@ class Design extends React.Component {
                   />
                 </Box>
                 <Box my="lg">
-                  <Heading size="heading-2">Ideas</Heading>
+                  <Heading as="h2" size="xl">Ideas</Heading>
                   <Paragraph>
                     You can suggest new component ideas using{" "}
                     <Anchor
@@ -79,7 +79,7 @@ class Design extends React.Component {
                   />
                 </Box>
                 <Box my="lg">
-                  <Heading size="heading-2">Bugs</Heading>
+                  <Heading as="h2" size="xl">Bugs</Heading>
                   <Paragraph>
                     If you find a problem, feel free to open new{" "}
                     <Anchor

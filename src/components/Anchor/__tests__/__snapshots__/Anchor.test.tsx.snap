@@ -50,19 +50,19 @@ Object {
   <a
     href=\\"#\\"
     class=\\"drac-anchor drac-text drac-text-xs drac-text-white drac-text-purple--hover\\"
-    >xsmall</a
+    >xs</a
   ><a
     href=\\"#\\"
     class=\\"drac-anchor drac-text drac-text-sm drac-text-white drac-text-purple--hover\\"
-    >small</a
+    >sm</a
   ><a
     href=\\"#\\"
     class=\\"drac-anchor drac-text drac-text-white drac-text-purple--hover\\"
-    >medium</a
+    >md</a
   ><a
     href=\\"#\\"
     class=\\"drac-anchor drac-text drac-text-lg drac-text-white drac-text-purple--hover\\"
-    >large</a
+    >lg</a
   ><a
     href=\\"#\\"
     class=\\"drac-anchor drac-text drac-text-semibold drac-text-white drac-text-purple--hover\\"
@@ -76,17 +76,17 @@ Object {
 </div>
 ",
   "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\" }}>
-  <Anchor href=\\"#\\" size=\\"xsmall\\">
-    xsmall
+  <Anchor href=\\"#\\" size=\\"xs\\">
+    xs
   </Anchor>
-  <Anchor href=\\"#\\" size=\\"small\\">
-    small
+  <Anchor href=\\"#\\" size=\\"sm\\">
+    sm
   </Anchor>
-  <Anchor href=\\"#\\" size=\\"medium\\">
-    medium
+  <Anchor href=\\"#\\" size=\\"md\\">
+    md
   </Anchor>
-  <Anchor href=\\"#\\" size=\\"large\\">
-    large
+  <Anchor href=\\"#\\" size=\\"lg\\">
+    lg
   </Anchor>
   <Anchor href=\\"#\\" weight=\\"semibold\\">
     semibold

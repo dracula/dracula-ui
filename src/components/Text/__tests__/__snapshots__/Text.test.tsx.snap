@@ -42,36 +42,36 @@ Object {
   "html": "<div class=\\"drac-box\\">
   <div class=\\"drac-box\\">
     <span class=\\"drac-text drac-text-xs drac-line-height drac-text-white\\"
-      >xsmall</span
+      >xs</span
     >
   </div>
   <div class=\\"drac-box\\">
     <span class=\\"drac-text drac-text-sm drac-line-height drac-text-white\\"
-      >small</span
+      >sm</span
     >
   </div>
   <div class=\\"drac-box\\">
-    <span class=\\"drac-text drac-line-height drac-text-white\\">medium</span>
+    <span class=\\"drac-text drac-line-height drac-text-white\\">md</span>
   </div>
   <div class=\\"drac-box\\">
     <span class=\\"drac-text drac-text-lg drac-line-height drac-text-white\\"
-      >large</span
+      >lg</span
     >
   </div>
 </div>
 ",
   "react": "<Box>
   <Box>
-    <Text size=\\"xsmall\\">xsmall</Text>
+    <Text size=\\"xs\\">xs</Text>
   </Box>
   <Box>
-    <Text size=\\"small\\">small</Text>
+    <Text size=\\"sm\\">sm</Text>
   </Box>
   <Box>
-    <Text size=\\"medium\\">medium</Text>
+    <Text size=\\"md\\">md</Text>
   </Box>
   <Box>
-    <Text size=\\"large\\">large</Text>
+    <Text size=\\"lg\\">lg</Text>
   </Box>
 </Box>;
 ",

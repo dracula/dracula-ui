@@ -50,24 +50,24 @@ docs(Button, {
       'Sizes',
       () => (
         <Box>
-          <Button color="purple" size="xsmall" m="sm">
-            xsmall
+          <Button color="purple" size="xs" m="sm">
+            xs
           </Button>
 
-          <Button color="purple" size="small" m="sm">
-            xsmall
+          <Button color="purple" size="sm" m="sm">
+            sm
           </Button>
 
-          <Button color="purple" size="medium" m="sm">
-            medium
+          <Button color="purple" size="md" m="sm">
+            md
           </Button>
 
-          <Button color="purple" size="large" m="sm">
-            large
+          <Button color="purple" size="lg" m="sm">
+            lg
           </Button>
         </Box>
       ),
-      'Button sizes range from xsmall to large using the Dracula UI size scale.'
+      'Button sizes range from `xs` to `lg` using the Dracula UI size scale.'
     )
   ]
 })
