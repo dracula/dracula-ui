@@ -3,7 +3,7 @@
 exports[`Site: Paragraph Basic Usage 1`] = `
 Object {
   "docs": "Show a paragraph within an interface.",
-  "html": "<p class=\\"drac-text drac-text-white\\">basic</p>
+  "html": "<p class=\\"drac-text drac-line-height drac-text-white\\">basic</p>
 ",
   "react": "<Paragraph>basic</Paragraph>;
 ",
@@ -15,8 +15,8 @@ exports[`Site: Paragraph Colors 1`] = `
 Object {
   "docs": "Paragraphs can be customized to use any of the Dracula UI theme colors.",
   "html": "<div class=\\"drac-box\\">
-  <p class=\\"drac-text drac-text-cyan\\">cyan</p>
-  <p class=\\"drac-text drac-text-green\\">green</p>
+  <p class=\\"drac-text drac-line-height drac-text-cyan\\">cyan</p>
+  <p class=\\"drac-text drac-line-height drac-text-green\\">green</p>
 </div>
 ",
   "react": "<Box>
@@ -32,7 +32,7 @@ exports[`Site: Paragraph Line Height 1`] = `
 Object {
   "docs": "Paragraphs can be controlled with different line heights.",
   "html": "<div class=\\"drac-box\\">
-  <p class=\\"drac-text drac-text-red\\">xs</p>
+  <p class=\\"drac-text drac-line-height drac-text-red\\">xs</p>
   <p class=\\"drac-text drac-line-height-xs drac-text-white\\">
     Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De
     carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel
@@ -43,7 +43,7 @@ Object {
     suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum
     defunctis go lum cerebro.
   </p>
-  <p class=\\"drac-text drac-text-orange\\">sm</p>
+  <p class=\\"drac-text drac-line-height drac-text-orange\\">sm</p>
   <p class=\\"drac-text drac-line-height-sm drac-text-white\\">
     Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De
     carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel
@@ -54,7 +54,7 @@ Object {
     suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum
     defunctis go lum cerebro.
   </p>
-  <p class=\\"drac-text drac-text-yellow\\">md</p>
+  <p class=\\"drac-text drac-line-height drac-text-yellow\\">md</p>
   <p class=\\"drac-text drac-line-height drac-text-white\\">
     Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De
     carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel
@@ -65,7 +65,7 @@ Object {
     suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum
     defunctis go lum cerebro.
   </p>
-  <p class=\\"drac-text drac-text-pink\\">lg</p>
+  <p class=\\"drac-text drac-line-height drac-text-pink\\">lg</p>
   <p class=\\"drac-text drac-line-height-lg drac-text-white\\">
     Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De
     carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel
@@ -76,7 +76,7 @@ Object {
     suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum
     defunctis go lum cerebro.
   </p>
-  <p class=\\"drac-text drac-text-cyan\\">xl</p>
+  <p class=\\"drac-text drac-line-height drac-text-cyan\\">xl</p>
   <p class=\\"drac-text drac-line-height-xl drac-text-white\\">
     Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De
     carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel
@@ -155,10 +155,10 @@ exports[`Site: Paragraph Sizes 1`] = `
 Object {
   "docs": "Paragraphs can be customize to use several different sizes.",
   "html": "<div class=\\"drac-box\\">
-  <p class=\\"drac-text drac-text-xs drac-text-white\\">xs</p>
-  <p class=\\"drac-text drac-text-sm drac-text-white\\">sm</p>
-  <p class=\\"drac-text drac-text-white\\">md</p>
-  <p class=\\"drac-text drac-text-lg drac-text-white\\">lg</p>
+  <p class=\\"drac-text drac-text-xs drac-line-height drac-text-white\\">xs</p>
+  <p class=\\"drac-text drac-text-sm drac-line-height drac-text-white\\">sm</p>
+  <p class=\\"drac-text drac-line-height drac-text-white\\">md</p>
+  <p class=\\"drac-text drac-text-lg drac-line-height drac-text-white\\">lg</p>
 </div>
 ",
   "react": "<Box>
@@ -176,9 +176,11 @@ exports[`Site: Paragraph Weights 1`] = `
 Object {
   "docs": "Paragraphs can be defined in different font weights.",
   "html": "<div class=\\"drac-box\\">
-  <p class=\\"drac-text drac-text-white\\">normal</p>
-  <p class=\\"drac-text drac-text-semibold drac-text-white\\">semibold</p>
-  <p class=\\"drac-text drac-text-bold drac-text-white\\">bold</p>
+  <p class=\\"drac-text drac-line-height drac-text-white\\">normal</p>
+  <p class=\\"drac-text drac-text-semibold drac-line-height drac-text-white\\">
+    semibold
+  </p>
+  <p class=\\"drac-text drac-text-bold drac-line-height drac-text-white\\">bold</p>
 </div>
 ",
   "react": "<Box>
