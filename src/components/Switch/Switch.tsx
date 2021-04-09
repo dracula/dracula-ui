@@ -48,24 +48,26 @@ export interface SwitchProps
  * Switches are implemented as Checkboxes under the hood,
  * and work normally with forms.
  */
-export const Switch: React.FC<SwitchProps> = (props: SwitchProps) => {
-  const { name, color, disabled, ...htmlProps } = props
+export const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
+  (props, ref) => {
+    const { name, color, disabled, ...htmlProps } = props
 
-  const finalProps = {
-    name,
-    disabled,
-    ...htmlProps,
-    className: classNamesDedupe(
-      `drac-switch`,
-      'drac-checkbox',
-      props.className,
-      switchColors[color],
-      ...paddingMixin(props),
-      ...marginMixin(props)
-    )
+    const finalProps = {
+      name,
+      disabled,
+      ...htmlProps,
+      className: classNamesDedupe(
+        `drac-switch`,
+        'drac-checkbox',
+        props.className,
+        switchColors[color],
+        ...paddingMixin(props),
+        ...marginMixin(props)
+      )
+    }
+
+    return <input type="checkbox" ref={ref} {...cleanProps(finalProps)} />
   }
-
-  return <input type="checkbox" {...cleanProps(finalProps)} />
-}
+)
 
 Switch.displayName = 'Switch'

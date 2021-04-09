@@ -41,23 +41,25 @@ export interface RadioProps
  * There are no behavior changes applied to the native HTML tag other
  * than light styling done via CSS in order to keep Radios accessible.
  */
-export const Radio: React.FC<RadioProps> = (props: RadioProps) => {
-  const { color, name, disabled, ...htmlProps } = props
+export const Radio = React.forwardRef<HTMLInputElement, RadioProps>(
+  (props, ref) => {
+    const { color, name, disabled, ...htmlProps } = props
 
-  const finalProps = {
-    name,
-    disabled,
-    ...htmlProps,
-    className: classNamesDedupe(
-      `drac-radio`,
-      props.className,
-      radioColors[color],
-      ...paddingMixin(props),
-      ...marginMixin(props)
-    )
+    const finalProps = {
+      name,
+      disabled,
+      ...htmlProps,
+      className: classNamesDedupe(
+        `drac-radio`,
+        props.className,
+        radioColors[color],
+        ...paddingMixin(props),
+        ...marginMixin(props)
+      )
+    }
+
+    return <input type="radio" ref={ref} {...cleanProps(finalProps)} />
   }
-
-  return <input type="radio" {...cleanProps(finalProps)} />
-}
+)
 
 Radio.displayName = 'Radio'

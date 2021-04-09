@@ -63,40 +63,42 @@ export interface SelectProps
  * There are no behavior changes applied to the native HTML tag other
  * than light styling done via CSS, and small SVG component in order to keep Selects accessible.
  */
-export const Select: React.FC<SelectProps> = (props: SelectProps) => {
-  const { size, variant, color, disabled, ...htmlProps } = props
+export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
+  (props, ref) => {
+    const { size, variant, color, disabled, ...htmlProps } = props
 
-  const finalProps = {
-    ...htmlProps,
-    className: cx(
-      'drac-select',
-      props.className,
-      variant && selectVariants[variant],
-      size && selectSizes[size],
-      color && selectColors[color],
-      ...paddingMixin(props),
-      ...marginMixin(props)
+    const finalProps = {
+      ...htmlProps,
+      className: cx(
+        'drac-select',
+        props.className,
+        variant && selectVariants[variant],
+        size && selectSizes[size],
+        color && selectColors[color],
+        ...paddingMixin(props),
+        ...marginMixin(props)
+      )
+    }
+
+    return (
+      <div style={{ position: 'relative' }}>
+        <select ref={ref} {...cleanProps(finalProps)} />
+        <div className={`drac-select-arrow drac-text-${props.color}`}>
+          <svg
+            viewBox="0 0 24 24"
+            focusable="false"
+            role="presentation"
+            aria-hidden="true"
+          >
+            <path
+              fill="currentColor"
+              d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+            ></path>
+          </svg>
+        </div>
+      </div>
     )
   }
-
-  return (
-    <div style={{ position: 'relative' }}>
-      <select {...cleanProps(finalProps)} />
-      <div className={`drac-select-arrow drac-text-${props.color}`}>
-        <svg
-          viewBox="0 0 24 24"
-          focusable="false"
-          role="presentation"
-          aria-hidden="true"
-        >
-          <path
-            fill="currentColor"
-            d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
-          ></path>
-        </svg>
-      </div>
-    </div>
-  )
-}
+)
 
 Select.displayName = 'Select'

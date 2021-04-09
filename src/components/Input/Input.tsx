@@ -60,23 +60,25 @@ export interface InputProps
  * There are no behavior changes applied to the native HTML tag other
  * than light styling done via CSS in order to keep inputs accessible.
  */
-export const Input: React.FC<InputProps> = (props: InputProps) => {
-  const { color, size, variant, ...htmlProps } = props
+export const Input = React.forwardRef<HTMLInputElement, InputProps>(
+  (props, ref) => {
+    const { color, size, variant, ...htmlProps } = props
 
-  const finalProps = {
-    ...htmlProps,
-    className: cx(
-      `drac-input`,
-      props.className,
-      variant && inputVariants[variant],
-      size && inputSizes[size],
-      color && inputColors[color],
-      ...paddingMixin(props),
-      ...marginMixin(props)
-    )
+    const finalProps = {
+      ...htmlProps,
+      className: cx(
+        `drac-input`,
+        props.className,
+        variant && inputVariants[variant],
+        size && inputSizes[size],
+        color && inputColors[color],
+        ...paddingMixin(props),
+        ...marginMixin(props)
+      )
+    }
+
+    return <input ref={ref} {...cleanProps(finalProps)} />
   }
-
-  return <input {...cleanProps(finalProps)} />
-}
+)
 
 Input.displayName = 'Input'

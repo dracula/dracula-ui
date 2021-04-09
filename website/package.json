@@ -9,7 +9,7 @@
   "author": "Zeno Rocha",
   "license": "MIT",
   "dependencies": {
-    "@dracula/dracula-ui": "^0.2.2",
+    "@dracula/dracula-ui": "latest",
     "globby": "^11.0.2",
     "lodash": "^4.17.21",
     "next": "^10.1.1",
