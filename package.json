@@ -96,6 +96,7 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "lodash": "^4.17.20",
+    "lodash-es": "^4.17.21",
     "normalize.css": "^8.0.1"
   }
 }
