@@ -3,13 +3,12 @@
   "version": "1.0.0",
   "description": "Dracula UI site",
   "scripts": {
-    "dev": "next dev",
-    "deploy": "npm run sitemap && vercel --prod"
+    "dev": "next dev"
   },
   "author": "Zeno Rocha",
   "license": "MIT",
   "dependencies": {
-    "@dracula/dracula-ui": "^0.4.1",
+    "@dracula/dracula-ui": "file:../dist",
     "globby": "^11.0.2",
     "lodash": "^4.17.21",
     "next": "^10.1.1",

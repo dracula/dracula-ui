@@ -206,13 +206,12 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@dracula/dracula-ui@^0.4.0":
+"@dracula/dracula-ui@file:../dist":
   version "0.4.0"
-  resolved "https://npm.pkg.github.com/download/@dracula/dracula-ui/0.4.0/5b4a73dad69b784a90e42a6e374c58b660098c852c2667579733ddbfb2de7d66#4941ceae38198837d24b9a7563cea7957d491b9c"
-  integrity sha512-nqSTSv0kEVSRos1Z9bfTBmkBVOlDItkLLQ3DTTIqOiOESMs4SE0ZYm2SQ/UA4sEcPFwYlvdEmaSiPkX/Qxas/g==
   dependencies:
     classnames "^2.2.6"
     lodash "^4.17.20"
+    lodash-es "^4.17.21"
     normalize.css "^8.0.1"
 
 "@eslint/eslintrc@^0.1.3":
@@ -1673,6 +1672,11 @@ locate-path@^5.0.0:
   integrity sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==
   dependencies:
     p-locate "^4.1.0"
+
+lodash-es@^4.17.21:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
+  integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
 
 lodash.sortby@^4.7.0:
   version "4.7.0"
