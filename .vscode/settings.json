@@ -8,5 +8,6 @@
   "typescript.tsdk": "node_modules/typescript/lib",
   "eslint.enable": true,
   "typescript.preferences.importModuleSpecifier": "relative",
-  "xd.lastPackage": "/Users/netto.farah/projects/dracula-ui/dsp" // use @/<path> imports by default
+  "xd.lastPackage": "/Users/nettofarah/projects/dracula-ui/dsp",
+  "xd.globalEditor": false // use @/<path> imports by default
 }

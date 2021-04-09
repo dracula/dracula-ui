@@ -76,14 +76,20 @@ export async function componentScreenshot(
   const parsed = parseData(dataURL)
   let svgPath: string | undefined = undefined
 
-  if (parsed) {
-    svgPath = `./dsp/assets/svgs/${name}${variation?.title ?? ''}.svg`
-    await fs.writeFile(svgPath, decodeURIComponent(parsed.data))
-  }
+  // SVG and HTML assets double the size of our package and aren't
+  // necessarily required for DSP to work
+  if (process.env.EXTRA_ASSETS) {
+    if (parsed) {
+      svgPath = `./dsp/assets/svgs/${name}${variation?.title ?? ''}.svg`
+      await fs.writeFile(svgPath, decodeURIComponent(parsed.data))
+    }
 
-  const content = await page.content()
-  const contentPath = `./dsp/assets/html/${name}${variation?.title ?? ''}.html`
-  await fs.writeFile(contentPath, pretty(content, 'html'))
+    const content = await page.content()
+    const contentPath = `./dsp/assets/html/${name}${
+      variation?.title ?? ''
+    }.html`
+    await fs.writeFile(contentPath, pretty(content, 'html'))
+  }
 
   return [path, svgPath]
 }
