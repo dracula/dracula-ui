@@ -20,7 +20,7 @@ export const buttonSizes = {
   md: 'drac-btn',
   lg: 'drac-btn-lg',
   sm: 'drac-btn-sm',
-  xs: 'drac-btn-xs',
+  xs: 'drac-btn-xs'
 }
 
 /** Button Props */
@@ -57,38 +57,40 @@ export interface ButtonProps
  * The Button component triggers actions, behaviors, or events based
  * on user input.
  */
-export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
-  const { color, size, variant, disabled, as, ...htmlProps } = props
+export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
+  (props, ref) => {
+    const { color, size, variant, disabled, as, ...htmlProps } = props
 
-  const isOutline = variant === 'outline'
-  const isGhost = variant === 'ghost'
-  const overrideTextColor = isOutline || isGhost
+    const isOutline = variant === 'outline'
+    const isGhost = variant === 'ghost'
+    const overrideTextColor = isOutline || isGhost
 
-  const textColorClass = overrideTextColor
-    ? textColors[color ?? 'green']
-    : undefined
+    const textColorClass = overrideTextColor
+      ? textColors[color ?? 'green']
+      : undefined
 
-  let backgroundClass = backgroundColors[color ?? 'green']
-  if (isGhost) {
-    backgroundClass = `${backgroundClass}-transparent`
+    let backgroundClass = backgroundColors[color ?? 'green']
+    if (isGhost) {
+      backgroundClass = `${backgroundClass}-transparent`
+    }
+
+    const classes = cx(
+      'drac-btn',
+      props.className,
+      backgroundClass,
+      buttonVariants[variant ?? 'normal'],
+      buttonSizes[size ?? 'md'],
+      textColorClass,
+      ...paddingMixin(props),
+      ...marginMixin(props)
+    )
+
+    return React.createElement(
+      as ?? 'button',
+      { className: classes, disabled, ...cleanProps(htmlProps), ref },
+      props.children
+    )
   }
-
-  const classes = cx(
-    'drac-btn',
-    props.className,
-    backgroundClass,
-    buttonVariants[variant ?? 'normal'],
-    buttonSizes[size ?? 'md'],
-    textColorClass,
-    ...paddingMixin(props),
-    ...marginMixin(props)
-  )
-
-  return React.createElement(
-    as ?? 'button',
-    { className: classes, disabled, ...cleanProps(htmlProps) },
-    props.children
-  )
-}
+)
 
 Button.displayName = 'Button'

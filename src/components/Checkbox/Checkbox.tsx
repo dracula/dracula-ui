@@ -42,23 +42,25 @@ export interface CheckboxProps
  * There are no behavior changes applied to the native HTML tag other
  * than light styling done via CSS in order to keep check boxes accessible.
  */
-export const Checkbox: React.FC<CheckboxProps> = (props: CheckboxProps) => {
-  const { className, color, name, disabled, ...htmlProps } = props
+export const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
+  (props, ref) => {
+    const { className, color, name, disabled, ...htmlProps } = props
 
-  const finalProps = {
-    name,
-    disabled,
-    ...htmlProps,
-    className: cx(
-      `drac-checkbox`,
-      className,
-      color && checkboxColors[color],
-      ...paddingMixin(props),
-      ...marginMixin(props)
-    )
+    const finalProps = {
+      name,
+      disabled,
+      ...htmlProps,
+      className: cx(
+        `drac-checkbox`,
+        className,
+        color && checkboxColors[color],
+        ...paddingMixin(props),
+        ...marginMixin(props)
+      )
+    }
+
+    return <input type="checkbox" ref={ref} {...cleanProps(finalProps)} />
   }
-
-  return <input type="checkbox" {...cleanProps(finalProps)} />
-}
+)
 
 Checkbox.displayName = 'Checkbox'
