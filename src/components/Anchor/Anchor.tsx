@@ -53,25 +53,31 @@ export interface AnchorProps
  *
  * Use this component to create text or element based anchors around other HTML tags or React Components.
  */
-export const Anchor = (props: AnchorProps) => {
-  const { size, weight, color, hoverColor, ...htmlProps } = props
+export const Anchor = React.forwardRef<HTMLAnchorElement, AnchorProps>(
+  (props, ref) => {
+    const { size, weight, color, hoverColor, ...htmlProps } = props
 
-  const finalProps = cleanProps({
-    ...htmlProps,
-    className: cx(
-      `drac-anchor`,
-      `drac-text`,
-      props.className,
-      textSizes[size ?? 'md'],
-      textWeights[weight ?? 'normal'],
-      textColors[color ?? 'white'],
-      hoverColors[hoverColor ?? 'purple'],
-      ...paddingMixin(props),
-      ...marginMixin(props)
+    const finalProps = cleanProps({
+      ...htmlProps,
+      className: cx(
+        `drac-anchor`,
+        `drac-text`,
+        props.className,
+        textSizes[size ?? 'md'],
+        textWeights[weight ?? 'normal'],
+        textColors[color ?? 'white'],
+        hoverColors[hoverColor ?? 'purple'],
+        ...paddingMixin(props),
+        ...marginMixin(props)
+      )
+    })
+
+    return (
+      <a ref={ref} {...finalProps}>
+        {props.children}
+      </a>
     )
-  })
-
-  return React.createElement('a', finalProps, props.children)
-}
+  }
+)
 
 Anchor.displayName = 'Anchor'
