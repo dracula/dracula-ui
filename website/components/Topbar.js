@@ -15,7 +15,7 @@ class Topbar extends Component {
           marginLeft: 12
         }}
       >
-        <Link href="/">
+        <Link href="/" passHref>
           <Anchor className={styles.title}>
             <Text className={styles.text}>Dracula</Text>
             <Text className={styles.text} color="purpleCyan">

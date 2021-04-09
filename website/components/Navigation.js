@@ -44,7 +44,7 @@ const Navigation = ({ selected }) => {
 
                 return (
                   <Box as="li" key={index}>
-                    <Link href={path}>
+                    <Link href={path} passHref>
                       <Anchor
                         size={"normal"}
                         className={
