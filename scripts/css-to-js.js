@@ -1,6 +1,6 @@
 const css = require('css')
 const fs = require('fs-extra')
-const { uniq } = require('lodash')
+const uniq = require('lodash/uniq')
 
 async function run() {
   const contents = await fs.readFile('./dist/styles/dracula-ui.css')

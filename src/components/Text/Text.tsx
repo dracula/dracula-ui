@@ -1,5 +1,5 @@
 import cx from 'classnames/dedupe'
-import { mapValues } from 'lodash'
+import mapValues from 'lodash/mapValues'
 import React, { HTMLAttributes } from 'react'
 import { colors } from '../../base/colors'
 import {
@@ -14,7 +14,7 @@ export const textSizes = {
   md: 'drac-text',
   lg: 'drac-text-lg',
   sm: 'drac-text-sm',
-  xs: 'drac-text-xs',
+  xs: 'drac-text-xs'
 }
 
 export const textWeights = {
@@ -28,7 +28,7 @@ export const lineHeights = {
   xl: 'drac-line-height-xl',
   lg: 'drac-line-height-lg',
   sm: 'drac-line-height-sm',
-  xs: 'drac-line-height-xs',
+  xs: 'drac-line-height-xs'
 }
 
 export const textColors = mapValues(colors, (className) => {

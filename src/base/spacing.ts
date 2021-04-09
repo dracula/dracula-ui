@@ -1,4 +1,5 @@
-import { mapValues, omit } from 'lodash'
+import omit from 'lodash/omit'
+import mapValues from 'lodash/mapValues'
 
 const padding = {
   none: 'drac-p-none',
