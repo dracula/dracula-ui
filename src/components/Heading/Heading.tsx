@@ -1,5 +1,5 @@
 import cx from 'classnames/dedupe'
-import { mapValues } from 'lodash'
+import mapValues from 'lodash/mapValues'
 import React, { HTMLAttributes } from 'react'
 import { colors } from '../../base/colors'
 import {
