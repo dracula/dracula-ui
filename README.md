@@ -16,7 +16,7 @@ Our mission is to unleash the creative potential in every developer. We do that 
 
 ## :book: Documentation
 
-You can access the documentation portal at: https://dracula-ui-zeta.vercel.app/principles.html
+You can access the documentation portal at: https://dracula-ui-zeta.vercel.app/
 
 > Note: Please don't share this secret URL with people outside of the early access program.
 
