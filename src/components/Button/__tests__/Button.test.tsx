@@ -33,11 +33,9 @@ docs(Button, {
           <Button color="purple" m="sm">
             Normal
           </Button>
-
           <Button variant="ghost" color="purple" m="sm">
             Ghost
           </Button>
-
           <Button variant="outline" color="purple" m="sm">
             Outline
           </Button>
@@ -45,7 +43,6 @@ docs(Button, {
       ),
       'Dracula UI ships with three distinct button variations that allow for different levels of hierarchy and usage.'
     ),
-
     snapshot(
       'Sizes',
       () => (
@@ -53,21 +50,32 @@ docs(Button, {
           <Button color="purple" size="xs" m="sm">
             xs
           </Button>
-
           <Button color="purple" size="sm" m="sm">
             sm
           </Button>
-
           <Button color="purple" size="md" m="sm">
             md
           </Button>
-
           <Button color="purple" size="lg" m="sm">
             lg
           </Button>
         </Box>
       ),
       'Button sizes range from `xs` to `lg` using the Dracula UI size scale.'
+    ),
+    snapshot(
+      'Tags',
+      () => (
+        <Box>
+          <Button as="button" m="sm">
+            Button
+          </Button>
+          <Button as="a" href="#" m="sm">
+            Anchor
+          </Button>
+        </Box>
+      ),
+      'By default, every Button is specified with the `<button>` tag, but you can change that to better match your semantic needs.'
     )
   ]
 })

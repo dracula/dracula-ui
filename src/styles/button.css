@@ -3,6 +3,8 @@
   border: none;
   border-radius: var(--rounded-lg);
   box-sizing: border-box;
+  color: black;
+  text-decoration: none;
   display: inline-block;
   background-color: var(--accentColor);
 }
