@@ -15,19 +15,13 @@ exports[`Site: Heading Colors 1`] = `
 Object {
   "docs": "Headings can be customized to use any of the Dracula UI theme colors, including all solid, gradient, and animated colors.",
   "html": "<div>
-  <h2 class=\\"drac-heading drac-heading-2xl drac-text-pink\\">pink</h2>
-  <h2 class=\\"drac-heading drac-heading-2xl drac-text-purple-cyan\\">
-    purpleCyan
-  </h2>
+  <h2 class=\\"drac-heading drac-heading-xl drac-text-pink\\">pink</h2>
+  <h2 class=\\"drac-heading drac-heading-xl drac-text-purple-cyan\\">purpleCyan</h2>
 </div>
 ",
   "react": "<div>
-  <Heading size=\\"2xl\\" color=\\"pink\\">
-    pink
-  </Heading>
-  <Heading size=\\"2xl\\" color=\\"purpleCyan\\">
-    purpleCyan
-  </Heading>
+  <Heading color=\\"pink\\">pink</Heading>
+  <Heading color=\\"purpleCyan\\">purpleCyan</Heading>
 </div>;
 ",
   "title": "Colors",
@@ -61,9 +55,9 @@ Object {
 
 exports[`Site: Heading Tags 1`] = `
 Object {
-  "docs": "By default, every Heading is specified with \`h2\`, but you can change that to better match your SEO needs.",
+  "docs": "By default, every Heading is specified with the \`<h2>\` tag, but you can change that to better match your semantic needs.",
   "html": "<div>
-  <h1 class=\\"drac-heading drac-heading-xl drac-text-white\\">h1</h1>
+  <h1 class=\\"drac-heading drac-heading-2xl drac-text-white\\">h1</h1>
   <h2 class=\\"drac-heading drac-heading-xl drac-text-white\\">h2</h2>
   <h3 class=\\"drac-heading drac-heading-lg drac-text-white\\">h3</h3>
   <h4 class=\\"drac-heading drac-text-white\\">h4</h4>
@@ -72,7 +66,9 @@ Object {
 </div>
 ",
   "react": "<div>
-  <Heading as=\\"h1\\">h1</Heading>
+  <Heading as=\\"h1\\" size=\\"2xl\\">
+    h1
+  </Heading>
   <Heading as=\\"h2\\" size=\\"xl\\">
     h2
   </Heading>
