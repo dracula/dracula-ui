@@ -61,6 +61,27 @@ Object {
 }
 `;
 
+exports[`Site: Button Tags 1`] = `
+Object {
+  "docs": "By default, every Button is specified with the \`<button>\` tag, but you can change that to better match your semantic needs.",
+  "html": "<div class=\\"drac-box\\">
+  <button class=\\"drac-btn drac-bg-green drac-m-sm\\">Button</button
+  ><a class=\\"drac-btn drac-bg-green drac-m-sm\\" href=\\"#\\">Anchor</a>
+</div>
+",
+  "react": "<Box>
+  <Button as=\\"button\\" m=\\"sm\\">
+    Button
+  </Button>
+  <Button as=\\"a\\" href=\\"#\\" m=\\"sm\\">
+    Anchor
+  </Button>
+</Box>;
+",
+  "title": "Tags",
+}
+`;
+
 exports[`Site: Button Variants 1`] = `
 Object {
   "docs": "Dracula UI ships with three distinct button variations that allow for different levels of hierarchy and usage.",
