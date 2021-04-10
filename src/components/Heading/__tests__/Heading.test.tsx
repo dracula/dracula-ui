@@ -17,21 +17,49 @@ docs(Heading, {
         'Sizes',
         () => (
           <div>
-            <Heading size="2xl">2xl</Heading>
-            <Heading size="xl">xl</Heading>
-            <Heading size="lg">lg</Heading>
-            <Heading size="md">md</Heading>
-            <Heading size="sm">sm</Heading>
-            <Heading size="xs">xs</Heading>
+            <Heading size="2xl">
+              2xl
+            </Heading>
+            <Heading size="xl">
+              xl
+            </Heading>
+            <Heading size="lg">
+              lg
+            </Heading>
+            <Heading size="md">
+              md
+            </Heading>
+            <Heading size="sm">
+              sm
+            </Heading>
+            <Heading size="xs">
+              xs
+            </Heading>
           </div>
         ),
         'Heading sizes range from xs to 2xl using the Dracula UI font size scale.'
       ),
       snapshot(
+        'Colors',
+        () => (
+          <div>
+            <Heading color="pink">
+              pink
+            </Heading>
+            <Heading color="purpleCyan">
+              purpleCyan
+            </Heading>
+          </div>
+        ),
+        'Headings can be customized to use any of the Dracula UI theme colors, including all solid, gradient, and animated colors.'
+      ),
+      snapshot(
         'Tags',
         () => (
           <div>
-            <Heading as="h1">h1</Heading>
+            <Heading as="h1" size="2xl">
+              h1
+            </Heading>
             <Heading as="h2" size="xl">
               h2
             </Heading>
@@ -49,22 +77,8 @@ docs(Heading, {
             </Heading>
           </div>
         ),
-        'By default, every Heading is specified with `h2`, but you can change that to better match your SEO needs.'
+        'By default, every Heading is specified with the `<h2>` tag, but you can change that to better match your semantic needs.'
       ),
-      snapshot(
-        'Colors',
-        () => (
-          <div>
-            <Heading size="2xl" color="pink">
-              pink
-            </Heading>
-            <Heading size="2xl" color="purpleCyan">
-              purpleCyan
-            </Heading>
-          </div>
-        ),
-        'Headings can be customized to use any of the Dracula UI theme colors, including all solid, gradient, and animated colors.'
-      )
     ]
   }
 })
