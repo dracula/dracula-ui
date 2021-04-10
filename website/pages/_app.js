@@ -4,7 +4,7 @@ import * as gtag from "../lib/gtag"
 
 Router.events.on("routeChangeComplete", (url) => gtag.pageview(url))
 
-import "normalize.css"
+import '../styles/main.css';
 import "@dracula/dracula-ui/styles/dracula-ui.css"
 
 const Noop = ({ children }) => children

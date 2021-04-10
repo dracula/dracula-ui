@@ -36,10 +36,6 @@ export async function componentScreenshot(
   })
 
   await page.addStyleTag({
-    path: process.cwd() + '/node_modules/normalize.css/normalize.css'
-  })
-
-  await page.addStyleTag({
     content: `
       body {
         background: #414558;
@@ -85,9 +81,8 @@ export async function componentScreenshot(
     }
 
     const content = await page.content()
-    const contentPath = `./dsp/assets/html/${name}${
-      variation?.title ?? ''
-    }.html`
+    const contentPath = `./dsp/assets/html/${name}${variation?.title ?? ''
+      }.html`
     await fs.writeFile(contentPath, pretty(content, 'html'))
   }
 

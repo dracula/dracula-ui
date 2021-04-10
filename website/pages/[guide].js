@@ -4,7 +4,6 @@ import { Anchor, Box, Heading, Paragraph, Text } from "@dracula/dracula-ui"
 import Navigation from "../components/Navigation"
 import PropsTable from "../components/PropsTable"
 import Tabs from "../components/Tabs"
-import Theme from "../layouts/Theme"
 import paths from "../lib/paths"
 import styles from "./index.module.css"
 
@@ -131,7 +130,5 @@ function Guide({ query }) {
     </Box>
   )
 }
-
-Guide.Layout = Theme
 
 export default Guide
