@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev"
   },
-  "author": "Zeno Rocha",
-  "license": "MIT",
+  "author": "Netto Farah & Zeno Rocha",
   "dependencies": {
     "@dracula/dracula-ui": "file:../dist",
     "globby": "^11.0.2",
