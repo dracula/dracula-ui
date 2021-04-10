@@ -32,6 +32,40 @@ Object {
 }
 `;
 
+exports[`Site: Button Disabled 1`] = `
+Object {
+  "docs": "A disabled button can't used, clicked, or even submitted with a form.",
+  "html": "<div class=\\"drac-box\\">
+  <button class=\\"drac-btn drac-bg-purple drac-m-sm\\" disabled=\\"\\">Normal</button
+  ><button
+    class=\\"drac-btn drac-bg-purple-transparent drac-btn-ghost drac-text-purple drac-m-sm\\"
+    disabled=\\"\\"
+  >
+    Ghost</button
+  ><button
+    class=\\"drac-btn drac-bg-purple drac-btn-outline drac-text-purple drac-m-sm\\"
+    disabled=\\"\\"
+  >
+    Outline
+  </button>
+</div>
+",
+  "react": "<Box>
+  <Button disabled={true} color=\\"purple\\" m=\\"sm\\">
+    Normal
+  </Button>
+  <Button disabled={true} variant=\\"ghost\\" color=\\"purple\\" m=\\"sm\\">
+    Ghost
+  </Button>
+  <Button disabled={true} variant=\\"outline\\" color=\\"purple\\" m=\\"sm\\">
+    Outline
+  </Button>
+</Box>;
+",
+  "title": "Disabled",
+}
+`;
+
 exports[`Site: Button Sizes 1`] = `
 Object {
   "docs": "Button sizes range from \`xs\` to \`lg\` using the Dracula UI size scale.",

@@ -2552,6 +2552,13 @@
           "screenshot": "./dsp/assets/ButtonVariants.png"
         },
         {
+          "title": "Disabled",
+          "html": "<div class=\"drac-box\">\n  <button class=\"drac-btn drac-bg-purple drac-m-sm\" disabled=\"\">Normal</button\n  ><button\n    class=\"drac-btn drac-bg-purple-transparent drac-btn-ghost drac-text-purple drac-m-sm\"\n    disabled=\"\"\n  >\n    Ghost</button\n  ><button\n    class=\"drac-btn drac-bg-purple drac-btn-outline drac-text-purple drac-m-sm\"\n    disabled=\"\"\n  >\n    Outline\n  </button>\n</div>\n",
+          "react": "<Box>\n  <Button disabled={true} color=\"purple\" m=\"sm\">\n    Normal\n  </Button>\n  <Button disabled={true} variant=\"ghost\" color=\"purple\" m=\"sm\">\n    Ghost\n  </Button>\n  <Button disabled={true} variant=\"outline\" color=\"purple\" m=\"sm\">\n    Outline\n  </Button>\n</Box>;\n",
+          "docs": "A disabled button can't used, clicked, or even submitted with a form.",
+          "screenshot": "./dsp/assets/ButtonDisabled.png"
+        },
+        {
           "title": "Sizes",
           "html": "<div class=\"drac-box\">\n  <button class=\"drac-btn drac-bg-purple drac-btn-xs drac-m-sm\">xs</button\n  ><button class=\"drac-btn drac-bg-purple drac-btn-sm drac-m-sm\">sm</button\n  ><button class=\"drac-btn drac-bg-purple drac-m-sm\">md</button\n  ><button class=\"drac-btn drac-bg-purple drac-btn-lg drac-m-sm\">lg</button>\n</div>\n",
           "react": "<Box>\n  <Button color=\"purple\" size=\"xs\" m=\"sm\">\n    xs\n  </Button>\n  <Button color=\"purple\" size=\"sm\" m=\"sm\">\n    sm\n  </Button>\n  <Button color=\"purple\" size=\"md\" m=\"sm\">\n    md\n  </Button>\n  <Button color=\"purple\" size=\"lg\" m=\"sm\">\n    lg\n  </Button>\n</Box>;\n",

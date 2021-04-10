@@ -44,6 +44,23 @@ docs(Button, {
       'Dracula UI ships with three distinct button variations that allow for different levels of hierarchy and usage.'
     ),
     snapshot(
+      'Disabled',
+      () => (
+        <Box>
+          <Button disabled color="purple" m="sm">
+            Normal
+          </Button>
+          <Button disabled variant="ghost" color="purple" m="sm">
+            Ghost
+          </Button>
+          <Button disabled variant="outline" color="purple" m="sm">
+            Outline
+          </Button>
+        </Box>
+      ),
+      `A disabled button can't used, clicked, or even submitted with a form.`
+    ),
+    snapshot(
       'Sizes',
       () => (
         <Box>
