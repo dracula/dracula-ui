@@ -93,7 +93,7 @@ function Guide({ query }) {
   return (
     <Box>
       <Head>
-        <title>{title}</title>
+        <title>{title} — Dracula UI</title>
         <meta content={title} property="og:title" />
         <meta content={description} name="description" />
         <meta content={description} property="og:description" />

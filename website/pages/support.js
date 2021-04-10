@@ -24,7 +24,7 @@ class Design extends React.Component {
       <div>
         <Head>
           <meta charSet="utf-8" />
-          <title>{title}</title>
+          <title>{title} — Dracula UI</title>
           <meta content={title} property="og:title" />
           <meta content={description} name="description" />
           <meta content={description} property="og:description" />
