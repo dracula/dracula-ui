@@ -14,7 +14,6 @@ import {
   textColors
 } from "@dracula/dracula-ui"
 import Navigation from "../components/Navigation"
-import Theme from "../layouts/Theme"
 import styles from "./index.module.css"
 
 export async function getStaticProps() {
@@ -264,7 +263,5 @@ class Colors extends React.Component {
     )
   }
 }
-
-Colors.Layout = Theme
 
 export default Colors

@@ -3,7 +3,6 @@ import React from "react"
 import { Anchor, Box, Heading, Paragraph } from "@dracula/dracula-ui"
 import CodeHighlight from "../components/CodeHighlight"
 import Navigation from "../components/Navigation"
-import Theme from "../layouts/Theme"
 import styles from "./index.module.css"
 
 export async function getStaticProps() {
@@ -162,7 +161,5 @@ export default Footer`}
     )
   }
 }
-
-Installation.Layout = Theme
 
 export default Installation

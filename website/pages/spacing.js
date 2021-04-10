@@ -11,7 +11,6 @@ import {
 import SpacingDocs from "@dracula/dracula-ui/dsp/data/components/Spacing.json"
 import Navigation from "../components/Navigation"
 import Tabs from "../components/Tabs"
-import Theme from "../layouts/Theme"
 import styles from "./index.module.css"
 
 export async function getStaticProps() {
@@ -179,7 +178,5 @@ class Spacing extends React.Component {
     )
   }
 }
-
-Spacing.Layout = Theme
 
 export default Spacing

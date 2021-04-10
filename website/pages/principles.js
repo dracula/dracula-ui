@@ -2,7 +2,6 @@ import Head from "next/head"
 import React from "react"
 import { Box, Heading, Paragraph } from "@dracula/dracula-ui"
 import Navigation from "../components/Navigation"
-import Theme from "../layouts/Theme"
 import styles from "./index.module.css"
 
 export async function getStaticProps() {
@@ -127,7 +126,5 @@ class Principles extends React.Component {
     )
   }
 }
-
-Principles.Layout = Theme
 
 export default Principles
