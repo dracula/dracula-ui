@@ -87,7 +87,7 @@ yarn add @dracula/dracula-ui@latest`}
                   </Paragraph>
                   <CodeHighlight
                     language="html"
-                    code={`<link rel="stylesheet" href="node_modules/dracula-ui/styles/dracula-ui.css" />`}
+                    code={`<link rel="stylesheet" href="node_modules/@dracula/dracula-ui/styles/dracula-ui.css" />`}
                   />
                   <Paragraph>
                     Now you can take advantage of all the classes, for example:
@@ -106,7 +106,7 @@ yarn add @dracula/dracula-ui@latest`}
                   <CodeHighlight
                     language="jsx"
                     code={`import { Component } from 'react'
-import { Paragraph } from 'dracula-ui'
+import { Paragraph } from '@dracula/dracula-ui'
 
 class Footer extends Component {
   render() {
@@ -128,7 +128,7 @@ export default Footer`}
                   </Paragraph>
                   <CodeHighlight
                     language="jsx"
-                    code={`import "dracula-ui/styles/dracula-ui.css"
+                    code={`import "@dracula/dracula-ui/styles/dracula-ui.css"
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
@@ -143,7 +143,7 @@ export default MyApp`}
                   <CodeHighlight
                     language="jsx"
                     code={`import { Component } from 'react'
-import { Paragraph } from 'dracula-ui'
+import { Paragraph } from '@dracula/dracula-ui'
 
 class Footer extends Component {
   render() {
