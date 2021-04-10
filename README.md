@@ -16,7 +16,7 @@ Our mission is to unleash the creative potential in every developer. We do that 
 
 ## :book: Documentation
 
-You can access the documentation portal at: https://dracula-ui-zeta.vercel.app/
+You can access the documentation portal at: https://dracula-ui-zeta.vercel.app/principles.html
 
 > Note: Please don't share this secret URL with people outside of the early access program.
 
@@ -53,13 +53,16 @@ If you're not into package managers, just [download a ZIP](https://github.com/dr
 You can use Dracula UI with plain HTML by importing the CSS file.
 
 ```html
-<link rel="stylesheet" href="node_modules/@dracula/dracula-ui/styles/dracula-ui.css" />
+<link
+  rel="stylesheet"
+  href="node_modules/@dracula/dracula-ui/styles/dracula-ui.css"
+/>
 ```
 
 Now you can take advantage of all the classes, for example:
 
 ```html
-<body class="drac-bg-black">
+<body class="drac-bg-black"></body>
 ```
 
 ## :sparkles: Using with React
@@ -86,7 +89,7 @@ First, you need to import the CSS globally.
 Go to `pages/_app.js` (or create this file if it doesn't exist yet) and add the CSS import:
 
 ```jsx
-import "@dracula/dracula-ui/styles/dracula-ui.css"
+import '@dracula/dracula-ui/styles/dracula-ui.css'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
