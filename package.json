@@ -19,8 +19,7 @@
     "lint": "echo Linting",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "release": "./scripts/release.sh",
-    "build-website": "cd website && yarn && NODE_ENV=production yarn next build && yarn next export"
+    "release": "./scripts/release.sh && ./scripts/deploy.sh"
   },
   "peerDependencies": {
     "react": ">=16"
