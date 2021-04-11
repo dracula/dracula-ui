@@ -37,6 +37,8 @@
 .toc {
   position: fixed;
   right: 80px;
+  top: 64px;
+  margin: 0;
 }
 
 @media (max-width: 76rem) {
