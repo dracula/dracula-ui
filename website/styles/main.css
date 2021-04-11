@@ -2,3 +2,12 @@ body {
   background: #1d1e26;
   margin: 0;
 }
+
+@font-face {
+  font-family: "Abril Text";
+  src: url("/static/fonts/AbrilText-Bold.woff2") format("woff2"),
+    url("/static/fonts/AbrilText-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
