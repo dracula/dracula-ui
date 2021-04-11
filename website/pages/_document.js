@@ -17,7 +17,7 @@ export default class extends Document {
           <meta property="og:type" content="website" />
           <meta content="summary_large_image" name="twitter:card" />
           <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
-          <meta content="https://ui.draculatheme.com/static/img/og.jpg" property="og:image" />
+          <meta content="https://ui.draculatheme.com/static/og.jpg" property="og:image" />
 
           <script
             async
