@@ -18,7 +18,7 @@
 .center {
   margin: 0 auto;
   max-width: 46rem;
-  padding: 0 1rem;
+  padding: 0 2.4rem;
 }
 
 .description {
@@ -32,4 +32,28 @@
 .image {
   max-width: 100%;
   margin: 0 -30px;
+}
+
+.toc {
+  position: fixed;
+  right: 80px;
+}
+
+@media (max-width: 76rem) {
+  .container {
+    display: block;
+    min-height: auto;
+  }
+
+  .content {
+    display: block;
+  }
+
+  .center {
+    max-width: none;
+  }
+
+  .toc {
+    display: none;
+  }
 }

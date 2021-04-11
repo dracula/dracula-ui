@@ -30,3 +30,11 @@
   color: var(--purple);
   background: var(--purple-transparent);
 }
+
+@media (max-width: 76rem) {
+  .nav {
+    position: relative;
+    height: auto;
+    min-width: 100%;
+  }
+}

@@ -30,7 +30,7 @@ function Properties({ docGenProps }) {
 
 function DocsOverview({ sections }) {
   return (
-    <Box as="ul" style={{ position: "fixed", right: 80 }}>
+    <Box as="ul" className={styles.toc}>
       <Text weight="semibold" style={{ textTransform: "uppercase" }}>
         On this page
       </Text>
