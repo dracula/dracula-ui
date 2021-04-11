@@ -1,11 +1,10 @@
-import Head from "next/head"
 import React from "react"
 import { Anchor, Box, Heading, Paragraph, Text } from "@dracula/dracula-ui"
-import Navigation from "../components/Navigation"
 import PropsTable from "../components/PropsTable"
 import Tabs from "../components/Tabs"
 import paths from "../lib/paths"
 import styles from "./index.module.css"
+import Docs from "../layouts/Docs"
 
 export async function getStaticPaths() {
   return { paths, fallback: false }
@@ -87,48 +86,29 @@ function Section({ section }) {
 }
 
 function Guide({ query }) {
-  const { title, description, sections, docgen } = query
+  const { title, sections, docgen } = query
 
   return (
     <Box>
-      <Head>
-        <title>{title} — Dracula UI</title>
-        <meta content={title} property="og:title" />
-        <meta content={description} name="description" />
-        <meta content={description} property="og:description" />
-        <meta content="Netto Farah &amp; Zeno Rocha" name="author" />
-      </Head>
+      <DocsOverview sections={sections} />
 
-      <Box className={styles.container} style={{ minHeight: "100vh" }}>
-        <Navigation selected={title} />
-
-        <Box className={styles.content} py="lg">
-          <main className={styles.center}>
-            <DocsOverview sections={sections} />
-
-            <Box>
-              <Heading as="h1" size="2xl">{title}</Heading>
-              <Paragraph className={styles.description} size="md">
-                {description}
-              </Paragraph>
-
-              {sections.map((section) => {
-                return (
-                  <Box key={section.title} my="lg">
-                    <Section key={section.title + title} section={section} />
-                  </Box>
-                )
-              })}
-
-              <Box mt="lg">
-                <Properties docGenProps={docgen.props} />
-              </Box>
+      <Box>
+        {sections.map((section) => {
+          return (
+            <Box key={section.title} my="lg">
+              <Section key={section.title + title} section={section} />
             </Box>
-          </main>
+          )
+        })}
+
+        <Box mt="lg">
+          <Properties docGenProps={docgen.props} />
         </Box>
       </Box>
     </Box>
   )
 }
+
+Guide.Layout = Docs
 
 export default Guide

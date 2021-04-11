@@ -18,6 +18,7 @@ export default class extends Document {
           <meta content="summary_large_image" name="twitter:card" />
           <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
           <meta content="https://ui.draculatheme.com/static/og.jpg" property="og:image" />
+          <meta content="Netto Farah &amp; Zeno Rocha" name="author" />
 
           <script
             async
