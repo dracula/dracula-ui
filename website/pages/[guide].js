@@ -40,7 +40,7 @@ function DocsOverview({ sections }) {
         return (
           <Box key={section.title} py="xxs">
             <Anchor
-              size="small"
+              size="sm"
               color="blackSecondary"
               href={`#${section.title.toLowerCase()}`}
               hoverColor="pinkPurple"
@@ -53,7 +53,7 @@ function DocsOverview({ sections }) {
 
       <Box key="properties">
         <Anchor
-          size="small"
+          size="sm"
           href="#properties"
           hoverColor="pinkPurple"
           color="blackSecondary"
@@ -72,7 +72,7 @@ function Section({ section }) {
         id={section.title.toLowerCase()}
         href={`#${section.title.toLowerCase()}`}
       >
-        <Heading as="h2" size="xl" my="small">
+        <Heading as="h2" size="xl" my="sm">
           {section.title}
         </Heading>
       </Anchor>

@@ -30,20 +30,20 @@ const PropsTable = ({ props }) => {
             <Text color="purple" weight="semibold">
               {prop.name}
             </Text>
-            <Text size="small" color="purple">
+            <Text color="purple" size="sm">
               {" "}
               {prop.required ? "(required)" : ""}
             </Text>
           </Box>
 
           <Box>
-            <Paragraph p="none" size="small">
+            <Paragraph p="none" size="sm">
               {prop.description}
             </Paragraph>
           </Box>
 
           <Box>
-            <Text color="green" size="small">
+            <Text color="green" size="sm">
               {prop.type.name
                 .replace("| undefined", "")
                 .replace("undefined", "")}
