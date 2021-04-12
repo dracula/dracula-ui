@@ -1,20 +1,14 @@
 import React from 'react'
-import { List } from '@/components/List/List'
 import { docs } from '@/documentation/site-docs'
-import { snapshot } from '../../../documentation/render-component'
-import { Box } from '../../Box/Box'
+import { snapshot } from '@/documentation/render-component'
+import { Box } from '@/components/Box/Box'
+import { List } from '@/components/List/List'
 
 docs(List, {
   basic() {
     return snapshot(
       'Usage',
-      () => (
-        <List>
-          <li className="drac-text drac-text-white">Blade</li>
-          <li className="drac-text drac-text-white">Buffy</li>
-          <li className="drac-text drac-text-white">Morbius</li>
-        </List>
-      ),
+      Usage,
       'Render an unstyled list by default.'
     )
   },
@@ -22,34 +16,52 @@ docs(List, {
     return [
       snapshot(
         'Variants',
-        () => (
-          <Box>
-            <List variant="ordered" color="purple">
-              <li className="drac-text drac-text-white">Blade</li>
-              <li className="drac-text drac-text-white">Buffy</li>
-              <li className="drac-text drac-text-white">Morbius</li>
-            </List>
-
-            <List variant="unordered" color="purple">
-              <li className="drac-text drac-text-white">Blade</li>
-              <li className="drac-text drac-text-white">Buffy</li>
-              <li className="drac-text drac-text-white">Morbius</li>
-            </List>
-          </Box>
-        ),
+        Variants,
         'Lists can be displayed in dashes as an `<ul>` or in numbers as an `<ol>'
       ),
       snapshot(
         'Colors',
-        () => (
-          <List variant="ordered" color="cyan">
-            <li className="drac-text drac-text-white">Blade</li>
-            <li className="drac-text drac-text-white">Buffy</li>
-            <li className="drac-text drac-text-white">Morbius</li>
-          </List>
-        ),
+        Colors,
         'Lists can be customized to use any of the Dracula UI theme colors.'
       ),
     ]
   }
 })
+
+function Usage() {
+  return (
+    <List>
+      <li className="drac-text drac-text-white">Blade</li>
+      <li className="drac-text drac-text-white">Buffy</li>
+      <li className="drac-text drac-text-white">Morbius</li>
+    </List>
+  )
+}
+
+function Variants() {
+  return (
+    <Box>
+      <List variant="ordered" color="purple">
+        <li className="drac-text drac-text-white">Blade</li>
+        <li className="drac-text drac-text-white">Buffy</li>
+        <li className="drac-text drac-text-white">Morbius</li>
+      </List>
+
+      <List variant="unordered" color="purple">
+        <li className="drac-text drac-text-white">Blade</li>
+        <li className="drac-text drac-text-white">Buffy</li>
+        <li className="drac-text drac-text-white">Morbius</li>
+      </List>
+    </Box>
+  )
+}
+
+function Colors() {
+  return (
+    <List variant="ordered" color="cyan">
+      <li className="drac-text drac-text-white">Blade</li>
+      <li className="drac-text drac-text-white">Buffy</li>
+      <li className="drac-text drac-text-white">Morbius</li>
+    </List>
+  )
+}

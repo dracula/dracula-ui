@@ -1,38 +1,54 @@
-import { docs } from '@/documentation/site-docs'
 import React from 'react'
-import { snapshot } from '../../../documentation/render-component'
-import { Badge } from '../Badge'
+import { docs } from '@/documentation/site-docs'
+import { snapshot } from '@/documentation/render-component'
+import { Badge } from '@/components/Badge/Badge'
 
 docs(Badge, {
-  basic: () =>
-    snapshot(
+  basic() {
+    return snapshot(
       'Usage',
-      () => <Badge>Badge</Badge>,
+      Usage,
       `You can create a new Badge with any text content you'd like to highlight.`
-    ),
+    )
+  },
   variations() {
-    const colors = snapshot(
-      'Colors',
-      () => <Badge themeColor="animated">Fun Badge</Badge>,
-      'Badges can be customized to use any of the Dracula UI theme colors, including all solid, gradient, and animated colors.'
-    )
-
-    const variants = snapshot(
-      'Variants',
-      () => (
-        <div>
-          <Badge m="sm" themeColor="orange" variant="outline">
-            Outline
-          </Badge>
-
-          <Badge m="sm" themeColor="cyan" variant="subtle">
-            Subtle
-          </Badge>
-        </div>
+    return [
+      snapshot(
+        'Colors',
+        Colors,
+        'Badges can be customized to use any of the Dracula UI theme colors, including all solid, gradient, and animated colors.'
       ),
-      "Use `outline` or `subtle` when you don't want your Badges to stand out, but still want to keep them playful."
-    )
-
-    return [colors, variants]
+      snapshot(
+        'Variants',
+        Variants,
+        "Use `outline` or `subtle` when you don't want your Badges to stand out, but still want to keep them playful."
+      )
+    ]
   }
 })
+
+function Usage() {
+  return (
+    <Badge>Badge</Badge>
+  )
+}
+
+function Colors() {
+  return (
+    <Badge themeColor="animated">Fun Badge</Badge>
+  )
+}
+
+function Variants() {
+  return (
+    <div>
+      <Badge m="sm" themeColor="orange" variant="outline">
+        Outline
+      </Badge>
+
+      <Badge m="sm" themeColor="cyan" variant="subtle">
+        Subtle
+      </Badge>
+    </div>
+  )
+}

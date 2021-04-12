@@ -1,14 +1,14 @@
 import React from 'react'
-import { Switch, SwitchProps, switchColors } from '@/components/Switch/Switch'
 import { docs } from '@/documentation/site-docs'
-import { snapshot } from '../../../documentation/render-component'
-import { Box } from '../../Box/Box'
+import { snapshot } from '@/documentation/render-component'
+import { Box } from '@/components/Box/Box'
+import { Switch, SwitchProps, switchColors } from '@/components/Switch/Switch'
 
 docs(Switch, {
   basic() {
     return snapshot(
       'Usage',
-      SwitchBasic,
+      Usage,
       'Render a toggle component using checkbox under the hood.'
     )
   },
@@ -16,19 +16,19 @@ docs(Switch, {
     return [
       snapshot(
         'Disabled',
-        SwitchDisabled,
+        Disabled,
         'A disabled switch is unusable and un-clickable.'
       ),
       snapshot(
         'Colors',
-        SwitchColors,
+        Colors,
         'Switches can be customized to use any of the Dracula UI theme colors.'
       )
     ]
   }
 })
 
-function SwitchBasic() {
+function Usage() {
   return (
     <Box>
       <Switch color="purple" id="demo" name="demo" defaultChecked />
@@ -39,7 +39,7 @@ function SwitchBasic() {
   )
 }
 
-function SwitchDisabled() {
+function Disabled() {
   return (
     <Box>
       <Box>
@@ -69,7 +69,7 @@ function SwitchDisabled() {
   )
 }
 
-function SwitchColors() {
+function Colors() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column' }}>
       {Object.keys(switchColors).map((color) => {

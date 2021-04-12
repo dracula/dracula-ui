@@ -1,13 +1,13 @@
 import React from 'react'
-import { Radio, RadioProps, radioColors } from '@/components/Radio/Radio'
 import { docs } from '@/documentation/site-docs'
-import { snapshot } from '../../../documentation/render-component'
+import { snapshot } from '@/documentation/render-component'
+import { Radio, RadioProps, radioColors } from '@/components/Radio/Radio'
 
 docs(Radio, {
   basic() {
     return snapshot(
       'Usage',
-      RadioNormal,
+      Usage,
       'Radio buttons let a user select only one of a limited number of choices.'
     )
   },
@@ -15,19 +15,19 @@ docs(Radio, {
     return [
       snapshot(
         'Disabled',
-        RadioDisabled,
+        Disabled,
         'A radio select is unusable and un-clickable.'
       ),
       snapshot(
         'Colors',
-        RadioColors,
+        Colors,
         'Radio can be customized to use any of the Dracula UI theme colors.'
       )
     ]
   }
 })
 
-function RadioNormal() {
+function Usage() {
   return (
     <div>
       <Radio
@@ -45,7 +45,7 @@ function RadioNormal() {
   )
 }
 
-function RadioDisabled() {
+function Disabled() {
   return (
     <div>
       <div style={{ marginBottom: 10 }}>
@@ -75,7 +75,7 @@ function RadioDisabled() {
   )
 }
 
-function RadioColors() {
+function Colors() {
   return (
     <div>
       {Object.keys(radioColors).map((color) => {

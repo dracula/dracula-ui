@@ -1,17 +1,13 @@
 import React from 'react'
-import { Divider } from '@/components/Divider/Divider'
-import {
-  DividerColors,
-  DividerNormal
-} from '@/components/Divider/__stories__/Divider.stories'
 import { docs } from '@/documentation/site-docs'
-import { snapshot } from '../../../documentation/render-component'
+import { snapshot } from '@/documentation/render-component'
+import { Divider } from '@/components/Divider/Divider'
 
 docs(Divider, {
   basic() {
     return snapshot(
       'Usage',
-      () => <Divider color="cyan" />,
+      Usage,
       'Dividers are used to defined a thematic break in a page.'
     )
   },
@@ -19,9 +15,21 @@ docs(Divider, {
     return [
       snapshot(
         'Colors',
-        () => <Divider color="yellow" />,
+        Colors,
         'Dividers can be customized to use any of the Dracula UI theme colors.'
       )
     ]
   }
 })
+
+function Usage() {
+  return (
+    <Divider color="cyan" />
+  )
+}
+
+function Colors() {
+  return (
+    <Divider color="yellow" />
+  )
+}

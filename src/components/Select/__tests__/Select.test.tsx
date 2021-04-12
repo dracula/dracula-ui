@@ -1,4 +1,6 @@
 import React from 'react'
+import { docs } from '@/documentation/site-docs'
+import { snapshot } from '@/documentation/render-component'
 import {
   Select,
   SelectProps,
@@ -6,14 +8,12 @@ import {
   selectColors,
   selectSizes
 } from '@/components/Select/Select'
-import { docs } from '@/documentation/site-docs'
-import { snapshot } from '../../../documentation/render-component'
 
 docs(Select, {
   basic() {
     return snapshot(
       'Usage',
-      SelectBasic,
+      Usage,
       'Select different items from a list.'
     )
   },
@@ -21,29 +21,29 @@ docs(Select, {
     return [
       snapshot(
         'Sizes',
-        SelectSizes,
+        Sizes,
         'Select can be customize to use several different sizes.'
       ),
       snapshot(
         'Variants',
-        SelectVariants,
+        Variants,
         'There are two different variations you can use: `normal` and `outline`'
       ),
       snapshot(
         'Disabled',
-        SelectDisabled,
+        Disabled,
         'A disabled select is unusable and un-clickable.'
       ),
       snapshot(
         'Colors',
-        SelectColors,
+        Colors,
         'Select can be customized to use any of the Dracula UI theme colors.'
       ),
     ]
   }
 })
 
-function SelectBasic() {
+function Usage() {
   return (
     <Select defaultValue="default" color="white">
       <option value="default" disabled>
@@ -58,7 +58,7 @@ function SelectBasic() {
   )
 }
 
-function SelectSizes() {
+function Sizes() {
   return (
     <div>
       {Object.keys(selectSizes).map((size) => {
@@ -85,7 +85,7 @@ function SelectSizes() {
   )
 }
 
-function SelectVariants() {
+function Variants() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column' }}>
       {Object.keys(selectVariants).map((variant) => {
@@ -112,7 +112,7 @@ function SelectVariants() {
   )
 }
 
-function SelectDisabled() {
+function Disabled() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column' }}>
       {Object.keys(selectVariants).map((variant) => {
@@ -137,7 +137,7 @@ function SelectDisabled() {
   )
 }
 
-function SelectColors() {
+function Colors() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column' }}>
       {Object.keys(selectColors).map((color) => {

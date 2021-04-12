@@ -692,6 +692,13 @@
           "screenshot": "./dsp/assets/Avatar.png"
         },
         {
+          "title": "Colors",
+          "html": "<span class=\"drac-avatar drac-bg-green-transparent drac-text-green\" color=\"cyan\"\n  ><span class=\"drac-text drac-line-height drac-text-white\">NF</span></span\n>\n",
+          "react": "<Avatar title=\"Netto Farah\" color=\"cyan\" />;\n",
+          "docs": "The Avatar component accepts a *color* param that allows for customizing the background and accent color for an Avatar.",
+          "screenshot": "./dsp/assets/AvatarColors.png"
+        },
+        {
           "title": "Variants",
           "html": "<div>\n  <span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-subtle\"\n    ><span class=\"drac-text drac-line-height drac-text-white\">ZR</span></span\n  ><span class=\"drac-avatar drac-bg-green-transparent drac-text-green\"\n    ><span class=\"drac-text drac-line-height drac-text-white\">NF</span></span\n  >\n</div>\n",
           "react": "<div>\n  <Avatar title=\"Zeno Rocha\" variant=\"subtle\" />\n  <Avatar title=\"Netto Farah\" variant=\"normal\" />\n</div>;\n",
@@ -704,13 +711,6 @@
           "react": "<div>\n  <Avatar title=\"Netto Farah\" borderVariant=\"large\" />\n  <Avatar title=\"Netto Farah\" borderVariant=\"none\" />\n</div>;\n",
           "docs": "A border variant allows for customization of the border width of an Avatar, or for an Avatar to be rendered without a border.",
           "screenshot": "./dsp/assets/AvatarBorders.png"
-        },
-        {
-          "title": "Colors",
-          "html": "<div>\n  <span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green\"\n    color=\"cyan\"\n    ><span class=\"drac-text drac-line-height drac-text-white\">NF</span></span\n  >\n</div>\n",
-          "react": "<div>\n  <Avatar title=\"Netto Farah\" color=\"cyan\" />\n</div>;\n",
-          "docs": "The Avatar component accepts a *color* param that allows for customizing the background and accent color for an Avatar.",
-          "screenshot": "./dsp/assets/AvatarColors.png"
         }
       ],
       "ext_com_draculaui_props": {
@@ -3228,11 +3228,11 @@
           "screenshot": "./dsp/assets/CardColors.png"
         },
         {
-          "title": "Variants: subtle",
+          "title": "Variants",
           "html": "<div>\n  <div\n    variant=\"subtle\"\n    class=\"drac-box drac-card drac-card-subtle drac-border-pink drac-bg-pink drac-p-md drac-m-md\"\n  >\n    <span class=\"drac-text drac-line-height drac-text-pink\">Subtle Card</span>\n  </div>\n</div>\n",
           "react": "<div>\n  <Card variant=\"subtle\" color=\"pink\" p=\"md\" m=\"md\">\n    <Text color=\"pink\">Subtle Card</Text>\n  </Card>\n</div>;\n",
           "docs": "Use variant=\"subtle\" to create discrete or secondary cards",
-          "screenshot": "./dsp/assets/CardVariants: subtle.png"
+          "screenshot": "./dsp/assets/CardVariants.png"
         },
         {
           "title": "Spacing",

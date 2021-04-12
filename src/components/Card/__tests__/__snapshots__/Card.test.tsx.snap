@@ -83,7 +83,7 @@ Object {
 }
 `;
 
-exports[`Site: Card Variants: subtle 1`] = `
+exports[`Site: Card Variants 1`] = `
 Object {
   "docs": "Use variant=\\"subtle\\" to create discrete or secondary cards",
   "html": "<div>
@@ -101,6 +101,6 @@ Object {
   </Card>
 </div>;
 ",
-  "title": "Variants: subtle",
+  "title": "Variants",
 }
 `;

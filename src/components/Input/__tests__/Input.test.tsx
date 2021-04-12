@@ -1,14 +1,14 @@
 import React from 'react'
-import { Input } from '@/components/Input/Input'
 import { docs } from '@/documentation/site-docs'
-import { snapshot } from '../../../documentation/render-component'
-import { Box } from '../../Box/Box'
+import { snapshot } from '@/documentation/render-component'
+import { Box } from '@/components/Box/Box'
+import { Input } from '@/components/Input/Input'
 
 docs(Input, {
   basic() {
     return snapshot(
       'Usage',
-      () => <Input placeholder="Input" color="white" />,
+      Usage,
       'Styles or abstracts HTML input elements.'
     )
   },
@@ -16,35 +16,53 @@ docs(Input, {
     return [
       snapshot(
         'Colors',
-        () => (
-          <Box>
-            <Input color="purple" placeholder="purple" m="xs" />
-            <Input color="green" placeholder="green" m="xs" />
-          </Box>
-        ),
+        Colors,
         'Inputs can be customized to use any of the Dracula UI theme colors.'
       ),
       snapshot(
         'Sizes',
-        () => (
-          <Box>
-            <Input size="small" placeholder="small" m="xs" />
-            <Input size="medium" placeholder="medium" m="xs" />
-            <Input size="large" placeholder="large" m="xs" />
-          </Box>
-        ),
+        Sizes,
         'Inputs can be customize to use several different sizes.'
       ),
       snapshot(
         'Variants',
-        () => (
-          <Box>
-            <Input variant="normal" placeholder="normal" m="xs" />
-            <Input variant="outline" placeholder="outline" m="xs" />
-          </Box>
-        ),
+        Variants,
         'Use the `outline` variant to represent subtler text Inputs'
       )
     ]
   }
 })
+
+function Usage() {
+  return (
+    <Input placeholder="Input" color="white" />
+  )
+}
+
+function Colors() {
+  return (
+    <Box>
+      <Input color="purple" placeholder="purple" m="xs" />
+      <Input color="green" placeholder="green" m="xs" />
+    </Box>
+  )
+}
+
+function Sizes() {
+  return (
+    <Box>
+      <Input size="small" placeholder="small" m="xs" />
+      <Input size="medium" placeholder="medium" m="xs" />
+      <Input size="large" placeholder="large" m="xs" />
+    </Box>
+  )
+}
+
+function Variants() {
+  return (
+    <Box>
+      <Input variant="normal" placeholder="normal" m="xs" />
+      <Input variant="outline" placeholder="outline" m="xs" />
+    </Box>
+  )
+}

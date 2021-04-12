@@ -44,17 +44,11 @@ Object {
 exports[`Site: Avatar Colors 1`] = `
 Object {
   "docs": "The Avatar component accepts a *color* param that allows for customizing the background and accent color for an Avatar.",
-  "html": "<div>
-  <span
-    class=\\"drac-avatar drac-bg-green-transparent drac-text-green\\"
-    color=\\"cyan\\"
-    ><span class=\\"drac-text drac-line-height drac-text-white\\">NF</span></span
-  >
-</div>
+  "html": "<span class=\\"drac-avatar drac-bg-green-transparent drac-text-green\\" color=\\"cyan\\"
+  ><span class=\\"drac-text drac-line-height drac-text-white\\">NF</span></span
+>
 ",
-  "react": "<div>
-  <Avatar title=\\"Netto Farah\\" color=\\"cyan\\" />
-</div>;
+  "react": "<Avatar title=\\"Netto Farah\\" color=\\"cyan\\" />;
 ",
   "title": "Colors",
 }

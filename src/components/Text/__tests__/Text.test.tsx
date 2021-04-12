@@ -1,14 +1,14 @@
 import React from 'react'
-import { Text } from '@/components/Text/Text'
 import { docs } from '@/documentation/site-docs'
-import { snapshot } from '../../../documentation/render-component'
-import { Box } from '../../Box/Box'
+import { snapshot } from '@/documentation/render-component'
+import { Box } from '@/components/Box/Box'
+import { Text } from '@/components/Text/Text'
 
 docs(Text, {
   basic() {
     return snapshot(
       'Usage',
-      () => <Text>basic</Text>,
+      Usage,
       'Show inline text within an interface.'
     )
   },
@@ -16,55 +16,73 @@ docs(Text, {
     return [
       snapshot(
         'Colors',
-        () => (
-          <Box>
-            <Box>
-              <Text color="cyan">cyan</Text>
-            </Box>
-            <Box>
-              <Text color="green">green</Text>
-            </Box>
-          </Box>
-        ),
+        Colors,
         'Text can be customized to use any of the Dracula UI theme colors.'
       ),
       snapshot(
         'Weights',
-        () => (
-          <Box>
-            <Box>
-              <Text weight="normal">normal</Text>
-            </Box>
-            <Box>
-              <Text weight="semibold">semibold</Text>
-            </Box>
-            <Box>
-              <Text weight="bold">bold</Text>
-            </Box>
-          </Box>
-        ),
+        Weights,
         'Text can be defined in different font weights.'
       ),
       snapshot(
         'Sizes',
-        () => (
-          <Box>
-            <Box>
-              <Text size="xs">xs</Text>
-            </Box>
-            <Box>
-              <Text size="sm">sm</Text>
-            </Box>
-            <Box>
-              <Text size="md">md</Text>
-            </Box>
-            <Box>
-              <Text size="lg">lg</Text>
-            </Box>
-          </Box>
-        ),
+        Sizes,
         'Text can be customize to use several different sizes.'
       )
     ]
   }
 })
+
+function Usage() {
+  return (
+    <Text>basic</Text>
+  )
+}
+
+function Colors() {
+  return (
+    <Box>
+      <Box>
+        <Text color="cyan">cyan</Text>
+      </Box>
+      <Box>
+        <Text color="green">green</Text>
+      </Box>
+    </Box>
+  )
+}
+
+function Weights() {
+  return (
+    <Box>
+      <Box>
+        <Text weight="normal">normal</Text>
+      </Box>
+      <Box>
+        <Text weight="semibold">semibold</Text>
+      </Box>
+      <Box>
+        <Text weight="bold">bold</Text>
+      </Box>
+    </Box>
+  )
+}
+
+function Sizes() {
+  return (
+    <Box>
+      <Box>
+        <Text size="xs">xs</Text>
+      </Box>
+      <Box>
+        <Text size="sm">sm</Text>
+      </Box>
+      <Box>
+        <Text size="md">md</Text>
+      </Box>
+      <Box>
+        <Text size="lg">lg</Text>
+      </Box>
+    </Box>
+  )
+}

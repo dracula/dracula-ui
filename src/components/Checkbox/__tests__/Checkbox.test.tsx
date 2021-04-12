@@ -1,13 +1,13 @@
 import React from 'react'
-import { Checkbox, CheckboxProps, checkboxColors } from '@/components/Checkbox/Checkbox'
 import { docs } from '@/documentation/site-docs'
-import { snapshot } from '../../../documentation/render-component'
+import { snapshot } from '@/documentation/render-component'
+import { Checkbox, CheckboxProps, checkboxColors } from '@/components/Checkbox/Checkbox'
 
 docs(Checkbox, {
   basic() {
     return snapshot(
       'Usage',
-      CheckboxNormal,
+      Usage,
       'Checkbox allows for styling HTML checkboxes with Dracula UI styles.'
     )
   },
@@ -15,19 +15,19 @@ docs(Checkbox, {
     return [
       snapshot(
         'Disabled',
-        CheckboxDisabled,
+        Disabled,
         'A disabled checkbox is unusable and un-clickable.'
       ),
       snapshot(
         'Colors',
-        CheckboxColors,
+        Colors,
         'Checkboxes can be customized to use any of the Dracula UI theme colors, including all solid, gradient, and animated colors.'
       )
     ]
   }
 })
 
-function CheckboxNormal() {
+function Usage() {
   return (
     <div>
       <Checkbox
@@ -43,7 +43,7 @@ function CheckboxNormal() {
   )
 }
 
-function CheckboxDisabled() {
+function Disabled() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column' }}>
       <div style={{ marginBottom: 10 }}>
@@ -75,7 +75,7 @@ function CheckboxDisabled() {
   )
 }
 
-function CheckboxColors() {
+function Colors() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column' }}>
       {Object.keys(checkboxColors).map((color) => {
