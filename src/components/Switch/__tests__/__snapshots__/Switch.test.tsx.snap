@@ -27,21 +27,131 @@ Object {
 exports[`Site: Switch Colors 1`] = `
 Object {
   "docs": "Switches can be customized to use any of the Dracula UI theme colors.",
-  "html": "<div class=\\"drac-box\\">
-  <input
-    type=\\"checkbox\\"
-    name=\\"colors\\"
-    id=\\"colors\\"
-    class=\\"drac-switch drac-checkbox drac-switch-cyan\\"
-  /><label for=\\"colors\\" class=\\"drac-text drac-text-cyan\\">Checked</label>
+  "html": "<div style=\\"display: flex; flex-direction: column\\">
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"checkbox\\"
+      name=\\"demo\\"
+      id=\\"white\\"
+      class=\\"drac-switch drac-checkbox drac-switch-white\\"
+      checked=\\"\\"
+    /><label for=\\"white\\" class=\\"drac-text drac-text-white\\">Switch</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"checkbox\\"
+      name=\\"demo\\"
+      id=\\"cyan\\"
+      class=\\"drac-switch drac-checkbox drac-switch-cyan\\"
+      checked=\\"\\"
+    /><label for=\\"cyan\\" class=\\"drac-text drac-text-white\\">Switch</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"checkbox\\"
+      name=\\"demo\\"
+      id=\\"green\\"
+      class=\\"drac-switch drac-checkbox drac-switch-green\\"
+      checked=\\"\\"
+    /><label for=\\"green\\" class=\\"drac-text drac-text-white\\">Switch</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"checkbox\\"
+      name=\\"demo\\"
+      id=\\"orange\\"
+      class=\\"drac-switch drac-checkbox drac-switch-orange\\"
+      checked=\\"\\"
+    /><label for=\\"orange\\" class=\\"drac-text drac-text-white\\">Switch</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"checkbox\\"
+      name=\\"demo\\"
+      id=\\"pink\\"
+      class=\\"drac-switch drac-checkbox drac-switch-pink\\"
+      checked=\\"\\"
+    /><label for=\\"pink\\" class=\\"drac-text drac-text-white\\">Switch</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"checkbox\\"
+      name=\\"demo\\"
+      id=\\"purple\\"
+      class=\\"drac-switch drac-checkbox drac-switch-purple\\"
+      checked=\\"\\"
+    /><label for=\\"purple\\" class=\\"drac-text drac-text-white\\">Switch</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"checkbox\\"
+      name=\\"demo\\"
+      id=\\"red\\"
+      class=\\"drac-switch drac-checkbox drac-switch-red\\"
+      checked=\\"\\"
+    /><label for=\\"red\\" class=\\"drac-text drac-text-white\\">Switch</label>
+  </div>
+  <div style=\\"margin-bottom: 10px\\">
+    <input
+      type=\\"checkbox\\"
+      name=\\"demo\\"
+      id=\\"yellow\\"
+      class=\\"drac-switch drac-checkbox drac-switch-yellow\\"
+      checked=\\"\\"
+    /><label for=\\"yellow\\" class=\\"drac-text drac-text-white\\">Switch</label>
+  </div>
 </div>
 ",
-  "react": "<Box>
-  <Switch color=\\"cyan\\" id=\\"colors\\" name=\\"colors\\" />
-  <label htmlFor=\\"colors\\" className=\\"drac-text drac-text-cyan\\">
-    Checked
-  </label>
-</Box>;
+  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\" }}>
+  <div style={{ marginBottom: 10 }}>
+    <Switch id=\\"white\\" defaultChecked={true} color=\\"white\\" name=\\"demo\\" />
+    <label htmlFor=\\"white\\" className=\\"drac-text drac-text-white\\">
+      Switch
+    </label>
+  </div>
+  <div style={{ marginBottom: 10 }}>
+    <Switch id=\\"cyan\\" defaultChecked={true} color=\\"cyan\\" name=\\"demo\\" />
+    <label htmlFor=\\"cyan\\" className=\\"drac-text drac-text-white\\">
+      Switch
+    </label>
+  </div>
+  <div style={{ marginBottom: 10 }}>
+    <Switch id=\\"green\\" defaultChecked={true} color=\\"green\\" name=\\"demo\\" />
+    <label htmlFor=\\"green\\" className=\\"drac-text drac-text-white\\">
+      Switch
+    </label>
+  </div>
+  <div style={{ marginBottom: 10 }}>
+    <Switch id=\\"orange\\" defaultChecked={true} color=\\"orange\\" name=\\"demo\\" />
+    <label htmlFor=\\"orange\\" className=\\"drac-text drac-text-white\\">
+      Switch
+    </label>
+  </div>
+  <div style={{ marginBottom: 10 }}>
+    <Switch id=\\"pink\\" defaultChecked={true} color=\\"pink\\" name=\\"demo\\" />
+    <label htmlFor=\\"pink\\" className=\\"drac-text drac-text-white\\">
+      Switch
+    </label>
+  </div>
+  <div style={{ marginBottom: 10 }}>
+    <Switch id=\\"purple\\" defaultChecked={true} color=\\"purple\\" name=\\"demo\\" />
+    <label htmlFor=\\"purple\\" className=\\"drac-text drac-text-white\\">
+      Switch
+    </label>
+  </div>
+  <div style={{ marginBottom: 10 }}>
+    <Switch id=\\"red\\" defaultChecked={true} color=\\"red\\" name=\\"demo\\" />
+    <label htmlFor=\\"red\\" className=\\"drac-text drac-text-white\\">
+      Switch
+    </label>
+  </div>
+  <div style={{ marginBottom: 10 }}>
+    <Switch id=\\"yellow\\" defaultChecked={true} color=\\"yellow\\" name=\\"demo\\" />
+    <label htmlFor=\\"yellow\\" className=\\"drac-text drac-text-white\\">
+      Switch
+    </label>
+  </div>
+</div>;
 ",
   "title": "Colors",
 }
