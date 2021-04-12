@@ -9,12 +9,13 @@
   border-bottom-color: var(--disabled);
   border-bottom-width: 0.2rem;
   border-bottom-style: solid;
-  padding: 1rem;
+  padding: var(--spacing-sm) 0;
 }
 
 .tab-link {
   color: var(--white);
   text-decoration: none;
+  padding: var(--spacing-sm);
 }
 
 @each $color in black, white, cyan, green, orange, pink, purple, red, yellow {
