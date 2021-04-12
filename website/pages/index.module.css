@@ -29,6 +29,11 @@
   background-color: #282a36;
 }
 
+.banner {
+  max-width: 100%;
+  border-radius: var(--rounded-md);
+}
+
 .image {
   max-width: 100%;
   margin: 0 -30px;

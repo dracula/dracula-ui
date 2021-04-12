@@ -13,6 +13,7 @@ const items = [
   {
     title: "Getting Started",
     pages: [
+      "Welcome",
       "Installation",
       "Principles",
       "Tooling",

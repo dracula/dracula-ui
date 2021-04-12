@@ -1,14 +1,14 @@
-import Installation from "./installation"
+import Welcome from "./welcome"
 
 export async function getStaticProps() {
   return {
     props: {
       query: {
-        title: "Installation",
-        description: "How to install and set up Dracula UI in your project"
+        title: "Welcome",
+        description: "Dracula UI is a dark-first collection of UI patterns and components."
       }
     }
   }
 }
 
-export default Installation
+export default Welcome
