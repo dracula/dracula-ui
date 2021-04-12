@@ -16,7 +16,7 @@ Our mission is to unleash the creative potential in every developer. We do that 
 
 ## :book: Documentation
 
-You can access the documentation portal at: https://dracula-ui-zeta.vercel.app/
+You can access the documentation portal at: [ui.draculatheme.com](https://ui.draculatheme.com)
 
 > Note: Please don't share this secret URL with people outside of the early access program.
 
@@ -62,8 +62,12 @@ You can use Dracula UI with plain HTML by importing the CSS file.
 Now you can take advantage of all the classes, for example:
 
 ```html
-<body class="drac-bg-black"></body>
+<body class="drac-bg-black">
+  <h1 class="drac-heading drac-text-white">Hello Vampire</h1>
+</body>
 ```
+
+> [See full example](https://github.com/dracula/dracula-ui/tree/master/examples/with-html).
 
 ## :sparkles: Using with React
 
