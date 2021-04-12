@@ -72,9 +72,7 @@ yarn add @dracula/dracula-ui@latest`}
           </Paragraph>
           <CodeHighlight
             language="html"
-            code={`<body class="drac-bg-black">
-  <h1 class="drac-heading drac-text-white">Hello Vampire</h1>
-</body>`}
+            code={`<p class="drac-text drac-text-black">Hello Vampire</p>`}
           />
           <Paragraph>
             <Anchor href="https://github.com/dracula/dracula-ui/tree/master/examples/with-html">See full example</Anchor>
