@@ -88,17 +88,19 @@ yarn add @dracula/dracula-ui@latest`}
           </Paragraph>
           <CodeHighlight
             language="jsx"
-            code={`import { Component } from 'react'
+            code={`import '@dracula/dracula-ui/styles/dracula-ui.css'
 import { Paragraph } from '@dracula/dracula-ui'
 
-class Footer extends Component {
-render() {
-return <Paragraph>Made using Dracula</Paragraph>
-}
+function App() {
+  return <Paragraph color="black">Hello Vampire</Paragraph>
 }
 
-export default Footer`}
+export default App;
+`}
           />
+          <Paragraph>
+            <Anchor href="https://github.com/dracula/dracula-ui/tree/master/examples/with-react">See full example</Anchor>
+          </Paragraph>
         </Box>
         <Box my="lg">
           <Heading as="h2" size="xl">Using with Next.js</Heading>
