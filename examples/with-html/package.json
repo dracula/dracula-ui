@@ -1,0 +1,6 @@
+{
+  "name": "with-html",
+  "dependencies": {
+    "@dracula/dracula-ui": "*"
+  }
+}

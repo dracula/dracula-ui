@@ -72,8 +72,13 @@ yarn add @dracula/dracula-ui@latest`}
           </Paragraph>
           <CodeHighlight
             language="html"
-            code={`<body class="drac-bg-black">`}
+            code={`<body class="drac-bg-black">
+  <h1 class="drac-heading drac-text-white">Hello Vampire</h1>
+</body>`}
           />
+          <Paragraph>
+            <Anchor href="https://github.com/dracula/dracula-ui/tree/master/examples/with-html">See full example</Anchor>
+          </Paragraph>
         </Box>
         <Box my="lg">
           <Heading as="h2" size="xl">Using with React</Heading>
