@@ -9,7 +9,7 @@ export async function getStaticProps() {
     props: {
       query: {
         title: "Installation",
-        description: "How to install and set up Dracula UI in your project"
+        description: "How to install and set up Dracula UI in your project."
       }
     }
   }

@@ -38,8 +38,8 @@ export const textColors = mapValues(colors, (className) => {
 /** Text Props */
 export interface TextProps
   extends HTMLAttributes<HTMLSpanElement>,
-    PaddingMixin,
-    MarginMixin {
+  PaddingMixin,
+  MarginMixin {
   /**
    * Controls the size of the text based on pre-configured Dracula UI sizes.
    */
@@ -72,7 +72,7 @@ export interface TextProps
  *
  * Use this component for generic, and non-hierarchical text that is
  * to be displayed on a page, or as part of other complex components
- * or UI patterns
+ * or UI patterns.
  */
 export const Text = (props: TextProps) => {
   const { size, weight, lineHeight, as, color, ...htmlProps } = props

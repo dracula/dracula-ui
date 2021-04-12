@@ -8,7 +8,7 @@ export async function getStaticProps() {
       query: {
         title: "Principles",
         description:
-          "Here are a set of principles in which we're creating Dracula UI"
+          "Here are a set of principles in which we're creating Dracula UI."
       }
     }
   }

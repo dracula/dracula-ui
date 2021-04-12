@@ -9,7 +9,7 @@ export async function getStaticProps() {
       query: {
         title: "Tooling",
         description:
-          "How to improve the developer experience in Visual Studio Code"
+          "How to improve the developer experience in Visual Studio Code."
       }
     }
   }

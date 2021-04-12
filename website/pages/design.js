@@ -8,7 +8,7 @@ export async function getStaticProps() {
     props: {
       query: {
         title: "Design",
-        description: "How to use Dracula UI on Figma"
+        description: "How to use Dracula UI on Figma."
       }
     }
   }
