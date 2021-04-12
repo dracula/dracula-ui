@@ -1,9 +1,5 @@
 import React from 'react'
 import { Tabs } from '@/components/Tabs/Tabs'
-import {
-  TabsColors,
-  TabsNormal
-} from '@/components/Tabs/__stories__/Tabs.stories'
 import { docs } from '@/documentation/site-docs'
 import { snapshot } from '../../../documentation/render-component'
 import { Box } from '../../Box/Box'
