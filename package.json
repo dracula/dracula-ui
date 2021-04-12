@@ -17,8 +17,6 @@
     "test": "jest",
     "docs": "RECORDING=true yarn test -u && node ./dsp/update.js",
     "lint": "echo Linting",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
     "release": "./scripts/release.sh && ./scripts/deploy.sh"
   },
   "peerDependencies": {
