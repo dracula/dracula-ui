@@ -62,9 +62,7 @@ You can use Dracula UI with plain HTML by importing the CSS file.
 Now you can take advantage of all the classes, for example:
 
 ```html
-<body class="drac-bg-black">
-  <h1 class="drac-heading drac-text-white">Hello Vampire</h1>
-</body>
+<p class="drac-text drac-text-black">Hello Vampire</p>
 ```
 
 > [See full example](https://github.com/dracula/dracula-ui/tree/master/examples/with-html).
