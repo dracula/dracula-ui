@@ -108,14 +108,16 @@ Then you can import Dracula UI and use all React components.
 import { Component } from 'react'
 import { Paragraph } from '@dracula/dracula-ui'
 
-class Footer extends Component {
+class Index extends Component {
   render() {
-    return <Paragraph>Made using Dracula</Paragraph>
+    return <Paragraph color="black">Hello Vampire</Paragraph>
   }
 }
 
-export default Footer
+export default Index
 ```
+
+> [See full example](https://github.com/dracula/dracula-ui/tree/master/examples/with-next).
 
 ## :bulb: Ideas
 

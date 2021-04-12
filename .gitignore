@@ -4,6 +4,7 @@ node_modules
 .cache
 dist
 .npmrc
+.next
 
 /dsp/data/components/*.json
 /dsp/assets/svgs/*

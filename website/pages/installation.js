@@ -111,10 +111,10 @@ export default Footer`}
           </Paragraph>
           <CodeHighlight
             language="jsx"
-            code={`import "@dracula/dracula-ui/styles/dracula-ui.css"
+            code={`import '@dracula/dracula-ui/styles/dracula-ui.css'
 
 function MyApp({ Component, pageProps }) {
-return <Component {...pageProps} />
+  return <Component {...pageProps} />
 }
 
 export default MyApp`}
@@ -128,14 +128,17 @@ export default MyApp`}
             code={`import { Component } from 'react'
 import { Paragraph } from '@dracula/dracula-ui'
 
-class Footer extends Component {
-render() {
-return <Paragraph>Made using Dracula</Paragraph>
-}
+class Index extends Component {
+  render() {
+    return <Paragraph color="black">Hello Vampire</Paragraph>
+  }
 }
 
-export default Footer`}
+export default Index`}
           />
+          <Paragraph>
+            <Anchor href="https://github.com/dracula/dracula-ui/tree/master/examples/with-next">See full example</Anchor>
+          </Paragraph>
         </Box>
       </Box>
     )
