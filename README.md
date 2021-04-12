@@ -74,17 +74,17 @@ Now you can take advantage of all the classes, for example:
 You can also use Dracula UI with React by importing the JS package.
 
 ```js
-import { Component } from 'react'
+import '@dracula/dracula-ui/styles/dracula-ui.css'
 import { Paragraph } from '@dracula/dracula-ui'
 
-class Footer extends Component {
-  render() {
-    return <Paragraph>Made using Dracula</Paragraph>
-  }
+function App() {
+  return <Paragraph color="black">Hello Vampire</Paragraph>
 }
 
-export default Footer
+export default App;
 ```
+
+> [See full example](https://github.com/dracula/dracula-ui/tree/master/examples/with-react).
 
 ## :rocket: Using with Next.js
 
