@@ -7,16 +7,20 @@
   },
   "author": "Netto Farah & Zeno Rocha",
   "dependencies": {
+
     "@dracula/dracula-ui": "file:../dist",
     "globby": "^11.0.2",
     "lodash": "^4.17.21",
     "next": "^10.1.1",
     "prism-react-renderer": "^1.2.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "clipboard": "^2.0.8"
   },
   "prettier": {
+    "printWidth": 80,
     "semi": false,
+    "singleQuote": true,
     "trailingComma": "none"
   },
   "devDependencies": {
