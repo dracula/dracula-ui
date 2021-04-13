@@ -50,7 +50,7 @@ class Welcome extends React.Component {
           <Heading as="h2" size="xl">Useful Links</Heading>
           <List variant="unordered" color="white" p="none" mb="sm">
             <li><Anchor href="https://github.com/dracula/dracula-ui">GitHub</Anchor></li>
-            <li><Anchor href="https://discord.gg/584kS9Mg">Discord</Anchor></li>
+            <li><Anchor href="https://discord.gg/vyA9AdqdbK">Discord</Anchor></li>
             <li><Anchor href="https://github.com/dracula/dracula-ui/tree/master/design">Figma</Anchor></li>
             <li><Anchor href="https://github.com/dracula/dracula-ui/blob/master/LICENSE.md">License</Anchor></li>
           </List>

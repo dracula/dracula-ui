@@ -25,7 +25,7 @@ class Support extends React.Component {
             <Anchor
               color="purple"
               hoverColor="purple"
-              href="https://discord.gg/584kS9Mg"
+              href="https://discord.gg/vyA9AdqdbK"
             >
               Discord
             </Anchor>{" "}
