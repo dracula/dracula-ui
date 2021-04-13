@@ -15,7 +15,7 @@
     "build": "tsdx build && cp package.json ./dist && cp -r dsp ./dist",
     "dev": "yarn build && yarn docs && concurrently \"yarn start\" \"cd website && yarn && yarn dev\" ",
     "test": "jest",
-    "docs": "RECORDING=true yarn test -u && node ./dsp/update.js",
+    "docs": "RECORDING=true yarn test -u && node ./dsp/update.js && cp -r dsp ./dist",
     "lint": "echo Linting",
     "release": "./scripts/release.sh && ./scripts/deploy.sh"
   },
