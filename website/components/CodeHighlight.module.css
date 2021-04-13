@@ -1,4 +1,10 @@
+.copyButtonContainer {
+  position: absolute;
+  right:0;
+  top: -10px;
+}
 .pre {
+  position: relative;
   padding: 1rem;
   overflow: scroll;
   composes: drac-text-xs from global;
@@ -7,3 +13,4 @@
   font-family: 'Fira Code', monospace;
   line-height: var(--line-height-md);
 }
+
