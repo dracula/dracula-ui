@@ -1,8 +1,9 @@
 .copyButtonContainer {
   position: absolute;
   right:0;
-  top: -10px;
+  top: 0;
 }
+
 .pre {
   position: relative;
   padding: 1rem;

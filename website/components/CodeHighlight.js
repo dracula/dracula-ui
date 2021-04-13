@@ -7,13 +7,24 @@ import ClipBoard from 'clipboard'
 import { Button } from '@dracula/dracula-ui'
 
 class CodeHighlight extends Component {
-  state = { visibility: 'hidden' }
+  state = { visibility: 'hidden', copyText: 'copy' }
   copyButton = React.createRef()
 
   componentDidMount() {
-    const clipboard = new ClipBoard(this.copyButton.current, {
-      text: (trigger) => this.props.code
+    new ClipBoard(this.copyButton.current, {
+      text: () => this.props.code
     })
+  }
+
+  onCopy = () => {
+    this.setState(
+      {
+        copyText: 'copied!'
+      },
+      () => {
+        setTimeout(() => this.setState({ copyText: 'copy' }), 1000)
+      }
+    )
   }
 
   render() {
@@ -37,10 +48,11 @@ class CodeHighlight extends Component {
                   size="sm"
                   ref={this.copyButton}
                   style={{ visibility }}
-                  aria-label="Copy code to clipboard"
+                  aria-label="Copy to clipboard"
                   data-clipboard-text={this.props.code}
+                  onClick={this.onCopy}
                 >
-                  Copy
+                  {this.state.copyText}
                 </Button>
               </span>
               {tokens.map((line, i) => (
