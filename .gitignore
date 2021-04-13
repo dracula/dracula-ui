@@ -5,6 +5,7 @@ node_modules
 dist
 .npmrc
 .next
+package-lock.json
 
 /dsp/data/components/*.json
 /dsp/assets/svgs/*
@@ -12,3 +13,4 @@ dist
 /dsp/assets/*.png
 
 /website/out
+/website/package-lock.json
