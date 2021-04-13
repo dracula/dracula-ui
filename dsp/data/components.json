@@ -2567,108 +2567,13 @@
         },
         {
           "title": "Tags",
-          "html": "<div class=\"drac-box\">\n  <button class=\"drac-btn drac-bg-green drac-m-sm\">Button</button\n  ><a class=\"drac-btn drac-bg-green drac-m-sm\" href=\"#\">Anchor</a>\n</div>\n",
-          "react": "<Box>\n  <Button as=\"button\" m=\"sm\">\n    Button\n  </Button>\n  <Button as=\"a\" href=\"#\" m=\"sm\">\n    Anchor\n  </Button>\n</Box>;\n",
+          "html": "<div class=\"drac-box\">\n  <div class=\"drac-box\">\n    <button class=\"drac-btn drac-bg-green drac-m-sm\">Button</button>\n  </div>\n  <div class=\"drac-box\">\n    <input\n      class=\"drac-btn drac-bg-green drac-m-sm\"\n      type=\"submit\"\n      value=\"Submit\"\n    />\n  </div>\n  <div class=\"drac-box\">\n    <a class=\"drac-btn drac-bg-green drac-m-sm\" href=\"#\">Anchor</a>\n  </div>\n</div>\n",
+          "react": "<Box>\n  <Box>\n    <Button as=\"button\" m=\"sm\">\n      Button\n    </Button>\n  </Box>\n  <Box>\n    <Button as=\"input\" m=\"sm\" type=\"submit\" value=\"Submit\" />\n  </Box>\n  <Box>\n    <Button as=\"a\" href=\"#\" m=\"sm\">\n      Anchor\n    </Button>\n  </Box>\n</Box>;\n",
           "docs": "By default, every Button is specified with the `<button>` tag, but you can change that to better match your semantic needs.",
           "screenshot": "./dsp/assets/ButtonTags.png"
         }
       ],
       "ext_com_draculaui_props": {
-        "color": {
-          "defaultValue": null,
-          "description": "A Dracula UI theme color for the Button.",
-          "name": "color",
-          "parent": {
-            "fileName": "src/components/Button/Button.tsx",
-            "name": "ButtonProps"
-          },
-          "declarations": [
-            {
-              "fileName": "src/components/Button/Button.tsx",
-              "name": "ButtonProps"
-            }
-          ],
-          "required": false,
-          "type": {
-            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
-          }
-        },
-        "size": {
-          "defaultValue": null,
-          "description": "Controls the size of the button based on pre-configured Dracula UI sizes.",
-          "name": "size",
-          "parent": {
-            "fileName": "src/components/Button/Button.tsx",
-            "name": "ButtonProps"
-          },
-          "declarations": [
-            {
-              "fileName": "src/components/Button/Button.tsx",
-              "name": "ButtonProps"
-            }
-          ],
-          "required": false,
-          "type": {
-            "name": "\"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
-          }
-        },
-        "variant": {
-          "defaultValue": null,
-          "description": "Controls the Button style:\n`normal` -> Default solid Button with background color.\n`outline` -> A subtle variation of the Button component with a softer background color that highlights the action text.\n`ghost` -> A less prominent variation of the Button component that highlights hover interactions.",
-          "name": "variant",
-          "parent": {
-            "fileName": "src/components/Button/Button.tsx",
-            "name": "ButtonProps"
-          },
-          "declarations": [
-            {
-              "fileName": "src/components/Button/Button.tsx",
-              "name": "ButtonProps"
-            }
-          ],
-          "required": false,
-          "type": {
-            "name": "\"normal\" | \"outline\" | \"ghost\" | undefined"
-          }
-        },
-        "disabled": {
-          "defaultValue": null,
-          "description": "Controls the Button state. Mirrors the HTMLButtonElement `disabled` property.",
-          "name": "disabled",
-          "parent": {
-            "fileName": "src/components/Button/Button.tsx",
-            "name": "ButtonProps"
-          },
-          "declarations": [
-            {
-              "fileName": "src/components/Button/Button.tsx",
-              "name": "ButtonProps"
-            }
-          ],
-          "required": false,
-          "type": {
-            "name": "boolean | undefined"
-          }
-        },
-        "as": {
-          "defaultValue": null,
-          "description": "The HTML element to be used",
-          "name": "as",
-          "parent": {
-            "fileName": "src/components/Button/Button.tsx",
-            "name": "ButtonProps"
-          },
-          "declarations": [
-            {
-              "fileName": "src/components/Button/Button.tsx",
-              "name": "ButtonProps"
-            }
-          ],
-          "required": false,
-          "type": {
-            "name": "\"input\" | \"button\" | \"a\" | undefined"
-          }
-        },
         "p": {
           "defaultValue": null,
           "description": "",
@@ -2878,6 +2783,154 @@
           "type": {
             "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
+        },
+        "color": {
+          "defaultValue": null,
+          "description": "A Dracula UI theme color for the Button.",
+          "name": "color",
+          "declarations": [
+            {
+              "fileName": "src/components/Button/Button.tsx",
+              "name": "TypeLiteral"
+            },
+            {
+              "fileName": "dracula-ui/node_modules/@types/react/index.d.ts",
+              "name": "HTMLAttributes"
+            },
+            {
+              "fileName": "src/components/Button/Button.tsx",
+              "name": "TypeLiteral"
+            },
+            {
+              "fileName": "dracula-ui/node_modules/@types/react/index.d.ts",
+              "name": "HTMLAttributes"
+            },
+            {
+              "fileName": "src/components/Button/Button.tsx",
+              "name": "TypeLiteral"
+            },
+            {
+              "fileName": "dracula-ui/node_modules/@types/react/index.d.ts",
+              "name": "HTMLAttributes"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+          }
+        },
+        "size": {
+          "defaultValue": null,
+          "description": "Controls the size of the button based on pre-configured Dracula UI sizes.",
+          "name": "size",
+          "declarations": [
+            {
+              "fileName": "src/components/Button/Button.tsx",
+              "name": "TypeLiteral"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+          }
+        },
+        "variant": {
+          "defaultValue": null,
+          "description": "Controls the Button style:\n`normal` -> Default solid Button with background color.\n`outline` -> A subtle variation of the Button component with a softer background color that highlights the action text.\n`ghost` -> A less prominent variation of the Button component that highlights hover interactions.",
+          "name": "variant",
+          "declarations": [
+            {
+              "fileName": "src/components/Button/Button.tsx",
+              "name": "TypeLiteral"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"normal\" | \"outline\" | \"ghost\" | undefined"
+          }
+        },
+        "disabled": {
+          "defaultValue": null,
+          "description": "Controls the Button state. Mirrors the HTMLButtonElement `disabled` property.",
+          "name": "disabled",
+          "declarations": [
+            {
+              "fileName": "src/components/Button/Button.tsx",
+              "name": "TypeLiteral"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "boolean | undefined"
+          }
+        },
+        "as": {
+          "defaultValue": null,
+          "description": "",
+          "name": "as",
+          "declarations": [
+            {
+              "fileName": "src/components/Button/Button.tsx",
+              "name": "TypeLiteral"
+            },
+            {
+              "fileName": "src/components/Button/Button.tsx",
+              "name": "TypeLiteral"
+            },
+            {
+              "fileName": "src/components/Button/Button.tsx",
+              "name": "TypeLiteral"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"input\" | \"a\" | \"button\" | undefined"
+          }
+        },
+        "type": {
+          "defaultValue": null,
+          "description": "",
+          "name": "type",
+          "declarations": [
+            {
+              "fileName": "src/components/Button/Button.tsx",
+              "name": "TypeLiteral"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "string | undefined"
+          }
+        },
+        "value": {
+          "defaultValue": null,
+          "description": "",
+          "name": "value",
+          "declarations": [
+            {
+              "fileName": "src/components/Button/Button.tsx",
+              "name": "TypeLiteral"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "string | undefined"
+          }
+        },
+        "href": {
+          "defaultValue": null,
+          "description": "",
+          "name": "href",
+          "declarations": [
+            {
+              "fileName": "src/components/Button/Button.tsx",
+              "name": "TypeLiteral"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "string | undefined"
+          }
         }
       },
       "ext_com_draculaui_docgen": {
@@ -2886,101 +2939,6 @@
         "displayName": "Button",
         "methods": [],
         "props": {
-          "color": {
-            "defaultValue": null,
-            "description": "A Dracula UI theme color for the Button.",
-            "name": "color",
-            "parent": {
-              "fileName": "src/components/Button/Button.tsx",
-              "name": "ButtonProps"
-            },
-            "declarations": [
-              {
-                "fileName": "src/components/Button/Button.tsx",
-                "name": "ButtonProps"
-              }
-            ],
-            "required": false,
-            "type": {
-              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
-            }
-          },
-          "size": {
-            "defaultValue": null,
-            "description": "Controls the size of the button based on pre-configured Dracula UI sizes.",
-            "name": "size",
-            "parent": {
-              "fileName": "src/components/Button/Button.tsx",
-              "name": "ButtonProps"
-            },
-            "declarations": [
-              {
-                "fileName": "src/components/Button/Button.tsx",
-                "name": "ButtonProps"
-              }
-            ],
-            "required": false,
-            "type": {
-              "name": "\"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
-            }
-          },
-          "variant": {
-            "defaultValue": null,
-            "description": "Controls the Button style:\n`normal` -> Default solid Button with background color.\n`outline` -> A subtle variation of the Button component with a softer background color that highlights the action text.\n`ghost` -> A less prominent variation of the Button component that highlights hover interactions.",
-            "name": "variant",
-            "parent": {
-              "fileName": "src/components/Button/Button.tsx",
-              "name": "ButtonProps"
-            },
-            "declarations": [
-              {
-                "fileName": "src/components/Button/Button.tsx",
-                "name": "ButtonProps"
-              }
-            ],
-            "required": false,
-            "type": {
-              "name": "\"normal\" | \"outline\" | \"ghost\" | undefined"
-            }
-          },
-          "disabled": {
-            "defaultValue": null,
-            "description": "Controls the Button state. Mirrors the HTMLButtonElement `disabled` property.",
-            "name": "disabled",
-            "parent": {
-              "fileName": "src/components/Button/Button.tsx",
-              "name": "ButtonProps"
-            },
-            "declarations": [
-              {
-                "fileName": "src/components/Button/Button.tsx",
-                "name": "ButtonProps"
-              }
-            ],
-            "required": false,
-            "type": {
-              "name": "boolean | undefined"
-            }
-          },
-          "as": {
-            "defaultValue": null,
-            "description": "The HTML element to be used",
-            "name": "as",
-            "parent": {
-              "fileName": "src/components/Button/Button.tsx",
-              "name": "ButtonProps"
-            },
-            "declarations": [
-              {
-                "fileName": "src/components/Button/Button.tsx",
-                "name": "ButtonProps"
-              }
-            ],
-            "required": false,
-            "type": {
-              "name": "\"input\" | \"button\" | \"a\" | undefined"
-            }
-          },
           "p": {
             "defaultValue": null,
             "description": "",
@@ -3189,6 +3147,154 @@
             "required": false,
             "type": {
               "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            }
+          },
+          "color": {
+            "defaultValue": null,
+            "description": "A Dracula UI theme color for the Button.",
+            "name": "color",
+            "declarations": [
+              {
+                "fileName": "src/components/Button/Button.tsx",
+                "name": "TypeLiteral"
+              },
+              {
+                "fileName": "dracula-ui/node_modules/@types/react/index.d.ts",
+                "name": "HTMLAttributes"
+              },
+              {
+                "fileName": "src/components/Button/Button.tsx",
+                "name": "TypeLiteral"
+              },
+              {
+                "fileName": "dracula-ui/node_modules/@types/react/index.d.ts",
+                "name": "HTMLAttributes"
+              },
+              {
+                "fileName": "src/components/Button/Button.tsx",
+                "name": "TypeLiteral"
+              },
+              {
+                "fileName": "dracula-ui/node_modules/@types/react/index.d.ts",
+                "name": "HTMLAttributes"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+            }
+          },
+          "size": {
+            "defaultValue": null,
+            "description": "Controls the size of the button based on pre-configured Dracula UI sizes.",
+            "name": "size",
+            "declarations": [
+              {
+                "fileName": "src/components/Button/Button.tsx",
+                "name": "TypeLiteral"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            }
+          },
+          "variant": {
+            "defaultValue": null,
+            "description": "Controls the Button style:\n`normal` -> Default solid Button with background color.\n`outline` -> A subtle variation of the Button component with a softer background color that highlights the action text.\n`ghost` -> A less prominent variation of the Button component that highlights hover interactions.",
+            "name": "variant",
+            "declarations": [
+              {
+                "fileName": "src/components/Button/Button.tsx",
+                "name": "TypeLiteral"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"normal\" | \"outline\" | \"ghost\" | undefined"
+            }
+          },
+          "disabled": {
+            "defaultValue": null,
+            "description": "Controls the Button state. Mirrors the HTMLButtonElement `disabled` property.",
+            "name": "disabled",
+            "declarations": [
+              {
+                "fileName": "src/components/Button/Button.tsx",
+                "name": "TypeLiteral"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "boolean | undefined"
+            }
+          },
+          "as": {
+            "defaultValue": null,
+            "description": "",
+            "name": "as",
+            "declarations": [
+              {
+                "fileName": "src/components/Button/Button.tsx",
+                "name": "TypeLiteral"
+              },
+              {
+                "fileName": "src/components/Button/Button.tsx",
+                "name": "TypeLiteral"
+              },
+              {
+                "fileName": "src/components/Button/Button.tsx",
+                "name": "TypeLiteral"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"input\" | \"a\" | \"button\" | undefined"
+            }
+          },
+          "type": {
+            "defaultValue": null,
+            "description": "",
+            "name": "type",
+            "declarations": [
+              {
+                "fileName": "src/components/Button/Button.tsx",
+                "name": "TypeLiteral"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "string | undefined"
+            }
+          },
+          "value": {
+            "defaultValue": null,
+            "description": "",
+            "name": "value",
+            "declarations": [
+              {
+                "fileName": "src/components/Button/Button.tsx",
+                "name": "TypeLiteral"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "string | undefined"
+            }
+          },
+          "href": {
+            "defaultValue": null,
+            "description": "",
+            "name": "href",
+            "declarations": [
+              {
+                "fileName": "src/components/Button/Button.tsx",
+                "name": "TypeLiteral"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "string | undefined"
             }
           }
         }
