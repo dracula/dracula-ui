@@ -5,12 +5,10 @@
 }
 
 .pre {
-  position: relative;
   padding: 1rem;
-  overflow: scroll;
   composes: drac-text-xs from global;
   border-radius: var(--rounded-md);
-  margin: 0 0 40px;
+  margin: 0;
   font-family: 'Fira Code', monospace;
   line-height: var(--line-height-md);
 }

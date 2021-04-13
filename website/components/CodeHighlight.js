@@ -41,11 +41,11 @@ class CodeHighlight extends Component {
             onMouseEnter={() => this.setState({ visibility: 'visible' })}
             onMouseLeave={() => this.setState({ visibility: 'hidden' })}
           >
-            <pre className={localStyles.pre} style={style}>
+            <div style={{ position: 'relative' }}>
               <span className={localStyles.copyButtonContainer}>
                 <Button
-                  m="sm"
-                  size="sm"
+                  m="xs"
+                  size="xs"
                   ref={this.copyButton}
                   style={{ visibility }}
                   aria-label="Copy to clipboard"
@@ -55,14 +55,16 @@ class CodeHighlight extends Component {
                   {this.state.copyText}
                 </Button>
               </span>
-              {tokens.map((line, i) => (
-                <div {...getLineProps({ line, key: i })}>
-                  {line.map((token, key) => (
-                    <span {...getTokenProps({ token, key })} />
-                  ))}
-                </div>
-              ))}
-            </pre>
+              <pre className={localStyles.pre} style={style}>
+                {tokens.map((line, i) => (
+                  <div {...getLineProps({ line, key: i })}>
+                    {line.map((token, key) => (
+                      <span {...getTokenProps({ token, key })} />
+                    ))}
+                  </div>
+                ))}
+              </pre>
+            </div>
           </div>
         )}
       </Highlight>
