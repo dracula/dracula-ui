@@ -19,11 +19,11 @@ exports[`Site: Box Colors 1`] = `
 Object {
   "docs": "Boxes can be customized to use any of the Dracula UI theme colors, including all solid, gradient, and animated colors.",
   "html": "<div class=\\"drac-box drac-bg-pink-purple\\">
-  <span class=\\"drac-text drac-line-height drac-text-white\\">Pink Purple</span>
+  <span class=\\"drac-text drac-line-height drac-text-black\\">Pink Purple</span>
 </div>
 ",
   "react": "<Box color=\\"pinkPurple\\">
-  <Text>Pink Purple</Text>
+  <Text color=\\"black\\">Pink Purple</Text>
 </Box>;
 ",
   "title": "Colors",
@@ -35,7 +35,7 @@ Object {
   "docs": "Choose from one of the predefined \`rounded\` options for a Box.",
   "html": "<div>
   <div class=\\"drac-box drac-bg-purple-cyan drac-rounded-lg drac-p-md\\">
-    <span class=\\"drac-text drac-line-height drac-text-white\\"
+    <span class=\\"drac-text drac-line-height drac-text-black\\"
       >Large round border</span
     >
   </div>
@@ -48,7 +48,7 @@ Object {
 ",
   "react": "<div>
   <Box rounded=\\"lg\\" color=\\"purpleCyan\\" p=\\"md\\">
-    <Text>Large round border</Text>
+    <Text color=\\"black\\">Large round border</Text>
   </Box>
   <Box rounded=\\"sm\\" color=\\"yellowPink\\" p=\\"md\\">
     <Text color=\\"black\\">small round border</Text>

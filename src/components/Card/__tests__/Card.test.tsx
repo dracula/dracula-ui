@@ -36,7 +36,7 @@ docs(Card, {
 function Usage() {
   return (
     <Card color="purple" p="sm">
-      <Text>Dracula</Text>
+      <Text color="black">Dracula</Text>
     </Card>
   )
 }
@@ -44,7 +44,7 @@ function Usage() {
 function Colors() {
   return (
     <Card color="pinkPurple" p="sm">
-      <Text>Pink Purple</Text>
+      <Text color="black">Pink Purple</Text>
     </Card>
   )
 }

@@ -44,7 +44,7 @@ function Usage() {
 function Colors() {
   return (
     <Box color="pinkPurple">
-      <Text>Pink Purple</Text>
+      <Text color="black">Pink Purple</Text>
     </Box>
   )
 }
@@ -53,7 +53,7 @@ function Rounded() {
   return (
     <div>
       <Box rounded="lg" color="purpleCyan" p="md">
-        <Text>Large round border</Text>
+        <Text color="black">Large round border</Text>
       </Box>
 
       <Box rounded="sm" color="yellowPink" p="md">

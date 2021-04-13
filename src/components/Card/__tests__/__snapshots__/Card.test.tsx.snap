@@ -4,11 +4,11 @@ exports[`Site: Card Basic Usage 1`] = `
 Object {
   "docs": "A Card is analogous to an HTML div and can contain any other component. Use Cards when you want to add hierarchy or highlight parts of your content.",
   "html": "<div class=\\"drac-box drac-card drac-bg-purple drac-p-sm\\">
-  <span class=\\"drac-text drac-line-height drac-text-white\\">Dracula</span>
+  <span class=\\"drac-text drac-line-height drac-text-black\\">Dracula</span>
 </div>
 ",
   "react": "<Card color=\\"purple\\" p=\\"sm\\">
-  <Text>Dracula</Text>
+  <Text color=\\"black\\">Dracula</Text>
 </Card>;
 ",
   "title": "Usage",
@@ -19,11 +19,11 @@ exports[`Site: Card Colors 1`] = `
 Object {
   "docs": "Cards can be customized to use any of the Dracula UI theme colors, including all solid, gradient, and animated colors.",
   "html": "<div class=\\"drac-box drac-card drac-bg-pink-purple drac-p-sm\\">
-  <span class=\\"drac-text drac-line-height drac-text-white\\">Pink Purple</span>
+  <span class=\\"drac-text drac-line-height drac-text-black\\">Pink Purple</span>
 </div>
 ",
   "react": "<Card color=\\"pinkPurple\\" p=\\"sm\\">
-  <Text>Pink Purple</Text>
+  <Text color=\\"black\\">Pink Purple</Text>
 </Card>;
 ",
   "title": "Colors",

@@ -66,7 +66,7 @@ export const Badge: React.FC<BadgeProps> = (props: BadgeProps) => {
 
   return (
     <span className={classes} {...cleanProps(htmlProps)}>
-      <Text color={overrideTextColor ? props.themeColor : undefined}>
+      <Text color={overrideTextColor ? props.themeColor : 'black'}>
         {children}
       </Text>
     </span>
