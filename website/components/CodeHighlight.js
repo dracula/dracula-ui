@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import localStyles from './CodeHighlight.module.css'
 import Highlight, { defaultProps } from 'prism-react-renderer'
 import theme from '../lib/prism'
-import ClipBoard from 'clipboard'
+import CopyToClipboard from 'clipboard'
 
 import { Button } from '@dracula/dracula-ui'
 
@@ -11,7 +11,7 @@ class CodeHighlight extends Component {
   copyButton = React.createRef()
 
   componentDidMount() {
-    new ClipBoard(this.copyButton.current, {
+    new CopyToClipboard(this.copyButton.current, {
       text: () => this.props.code
     })
   }
