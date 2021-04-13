@@ -4,7 +4,7 @@ import { snapshot } from '@/documentation/render-component'
 import { Box } from '@/components/Box/Box'
 import { Button } from '@/components/Button/Button'
 
-docs(Button, {
+docs('Button', {
   basic() {
     return snapshot(
       'Usage',
@@ -42,9 +42,7 @@ docs(Button, {
 })
 
 function Usage() {
-  return (
-    <Button color="purple">Dracula</Button>
-  )
+  return <Button color="purple">Dracula</Button>
 }
 
 function Colors() {
@@ -114,12 +112,21 @@ function Sizes() {
 function Tags() {
   return (
     <Box>
-      <Button as="button" m="sm">
-        Button
-      </Button>
-      <Button as="a" href="#" m="sm">
-        Anchor
-      </Button>
+      <Box>
+        <Button as="button" m="sm">
+          Button
+        </Button>
+      </Box>
+
+      <Box>
+        <Button as="input" m="sm" type="submit" value="Submit" />
+      </Box>
+
+      <Box>
+        <Button as="a" href="#" m="sm">
+          Anchor
+        </Button>
+      </Box>
     </Box>
   )
 }

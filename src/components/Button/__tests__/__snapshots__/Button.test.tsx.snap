@@ -99,17 +99,35 @@ exports[`Site: Button Tags 1`] = `
 Object {
   "docs": "By default, every Button is specified with the \`<button>\` tag, but you can change that to better match your semantic needs.",
   "html": "<div class=\\"drac-box\\">
-  <button class=\\"drac-btn drac-bg-green drac-m-sm\\">Button</button
-  ><a class=\\"drac-btn drac-bg-green drac-m-sm\\" href=\\"#\\">Anchor</a>
+  <div class=\\"drac-box\\">
+    <button class=\\"drac-btn drac-bg-green drac-m-sm\\">Button</button>
+  </div>
+  <div class=\\"drac-box\\">
+    <input
+      class=\\"drac-btn drac-bg-green drac-m-sm\\"
+      type=\\"submit\\"
+      value=\\"Submit\\"
+    />
+  </div>
+  <div class=\\"drac-box\\">
+    <a class=\\"drac-btn drac-bg-green drac-m-sm\\" href=\\"#\\">Anchor</a>
+  </div>
 </div>
 ",
   "react": "<Box>
-  <Button as=\\"button\\" m=\\"sm\\">
-    Button
-  </Button>
-  <Button as=\\"a\\" href=\\"#\\" m=\\"sm\\">
-    Anchor
-  </Button>
+  <Box>
+    <Button as=\\"button\\" m=\\"sm\\">
+      Button
+    </Button>
+  </Box>
+  <Box>
+    <Button as=\\"input\\" m=\\"sm\\" type=\\"submit\\" value=\\"Submit\\" />
+  </Box>
+  <Box>
+    <Button as=\\"a\\" href=\\"#\\" m=\\"sm\\">
+      Anchor
+    </Button>
+  </Box>
 </Box>;
 ",
   "title": "Tags",
