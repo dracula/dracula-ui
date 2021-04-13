@@ -8,6 +8,7 @@
   text-decoration: none;
   display: inline-block;
   background-color: var(--accentColor);
+  cursor: pointer;
 }
 
 .btn:active,
@@ -19,6 +20,7 @@
 
 .btn:disabled {
   background-color: var(--disabled);
+  cursor: not-allowed;
 }
 
 .btn:hover {
