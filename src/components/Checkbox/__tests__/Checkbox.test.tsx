@@ -1,6 +1,7 @@
 import React from 'react'
 import { docs } from '@/documentation/site-docs'
 import { snapshot } from '@/documentation/render-component'
+import { Box } from '@/components/Box/Box'
 import { Checkbox, CheckboxProps, checkboxColors } from '@/components/Checkbox/Checkbox'
 
 docs(Checkbox, {
@@ -14,22 +15,22 @@ docs(Checkbox, {
   variations() {
     return [
       snapshot(
+        'Colors',
+        Colors,
+        'Checkboxes can be customized to use any of the Dracula UI theme colors, including all solid, gradient, and animated colors.'
+      ),
+      snapshot(
         'Disabled',
         Disabled,
         'A disabled checkbox is unusable and un-clickable.'
       ),
-      snapshot(
-        'Colors',
-        Colors,
-        'Checkboxes can be customized to use any of the Dracula UI theme colors, including all solid, gradient, and animated colors.'
-      )
     ]
   }
 })
 
 function Usage() {
   return (
-    <div>
+    <Box>
       <Checkbox
         id="normal"
         name="normal"
@@ -39,14 +40,14 @@ function Usage() {
       <label htmlFor="normal" className="drac-text drac-text-white">
         Checked
       </label>
-    </div>
+    </Box>
   )
 }
 
 function Disabled() {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column' }}>
-      <div style={{ marginBottom: 10 }}>
+    <Box style={{ display: 'flex', flexDirection: 'column' }}>
+      <Box mb="xs">
         <Checkbox
           id="one"
           key="one"
@@ -58,8 +59,8 @@ function Disabled() {
         <label htmlFor="one" className="drac-text drac-text-white">
           Checked
         </label>
-      </div>
-      <div style={{ marginBottom: 10 }}>
+      </Box>
+      <Box mb="xs">
         <Checkbox
           id="two"
           key="two"
@@ -70,17 +71,17 @@ function Disabled() {
         <label htmlFor="two" className="drac-text drac-text-white">
           Unchecked
         </label>
-      </div>
-    </div>
+      </Box>
+    </Box>
   )
 }
 
 function Colors() {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column' }}>
+    <Box style={{ display: 'flex', flexDirection: 'column' }}>
       {Object.keys(checkboxColors).map((color) => {
         return (
-          <div key={color} style={{ marginBottom: 10 }}>
+          <Box key={color} mb="xs">
             <Checkbox
               id={color}
               color={color as CheckboxProps['color']}
@@ -90,9 +91,9 @@ function Colors() {
             <label htmlFor={color} className="drac-text drac-text-white">
               Checkbox
             </label>
-          </div>
+          </Box>
         )
       })}
-    </div>
+    </Box>
   )
 }

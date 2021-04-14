@@ -3,7 +3,7 @@
 exports[`Site: Radio Basic Usage 1`] = `
 Object {
   "docs": "Radio buttons let a user select only one of a limited number of choices.",
-  "html": "<div>
+  "html": "<div class=\\"drac-box\\">
   <input
     type=\\"radio\\"
     name=\\"normal\\"
@@ -13,12 +13,12 @@ Object {
   /><label for=\\"normal\\" class=\\"drac-text drac-text-white\\">Checked</label>
 </div>
 ",
-  "react": "<div>
+  "react": "<Box>
   <Radio id=\\"normal\\" name=\\"normal\\" color=\\"purple\\" defaultChecked={true} />
   <label htmlFor=\\"normal\\" className=\\"drac-text drac-text-white\\">
     Checked
   </label>
-</div>;
+</Box>;
 ",
   "title": "Usage",
 }
@@ -27,8 +27,8 @@ Object {
 exports[`Site: Radio Colors 1`] = `
 Object {
   "docs": "Radio can be customized to use any of the Dracula UI theme colors.",
-  "html": "<div>
-  <div style=\\"margin-bottom: 10px\\">
+  "html": "<div class=\\"drac-box\\">
+  <div class=\\"drac-box drac-mb-xs\\">
     <input
       type=\\"radio\\"
       name=\\"white\\"
@@ -36,7 +36,7 @@ Object {
       class=\\"drac-radio drac-radio-white\\"
     /><label for=\\"white\\" class=\\"drac-text drac-text-white\\">Radio</label>
   </div>
-  <div style=\\"margin-bottom: 10px\\">
+  <div class=\\"drac-box drac-mb-xs\\">
     <input
       type=\\"radio\\"
       name=\\"cyan\\"
@@ -44,7 +44,7 @@ Object {
       class=\\"drac-radio drac-radio-cyan\\"
     /><label for=\\"cyan\\" class=\\"drac-text drac-text-white\\">Radio</label>
   </div>
-  <div style=\\"margin-bottom: 10px\\">
+  <div class=\\"drac-box drac-mb-xs\\">
     <input
       type=\\"radio\\"
       name=\\"green\\"
@@ -52,7 +52,7 @@ Object {
       class=\\"drac-radio drac-radio-green\\"
     /><label for=\\"green\\" class=\\"drac-text drac-text-white\\">Radio</label>
   </div>
-  <div style=\\"margin-bottom: 10px\\">
+  <div class=\\"drac-box drac-mb-xs\\">
     <input
       type=\\"radio\\"
       name=\\"orange\\"
@@ -60,7 +60,7 @@ Object {
       class=\\"drac-radio drac-radio-orange\\"
     /><label for=\\"orange\\" class=\\"drac-text drac-text-white\\">Radio</label>
   </div>
-  <div style=\\"margin-bottom: 10px\\">
+  <div class=\\"drac-box drac-mb-xs\\">
     <input
       type=\\"radio\\"
       name=\\"pink\\"
@@ -68,7 +68,7 @@ Object {
       class=\\"drac-radio drac-radio-pink\\"
     /><label for=\\"pink\\" class=\\"drac-text drac-text-white\\">Radio</label>
   </div>
-  <div style=\\"margin-bottom: 10px\\">
+  <div class=\\"drac-box drac-mb-xs\\">
     <input
       type=\\"radio\\"
       name=\\"purple\\"
@@ -76,7 +76,7 @@ Object {
       class=\\"drac-radio drac-radio-purple\\"
     /><label for=\\"purple\\" class=\\"drac-text drac-text-white\\">Radio</label>
   </div>
-  <div style=\\"margin-bottom: 10px\\">
+  <div class=\\"drac-box drac-mb-xs\\">
     <input
       type=\\"radio\\"
       name=\\"red\\"
@@ -84,7 +84,7 @@ Object {
       class=\\"drac-radio drac-radio-red\\"
     /><label for=\\"red\\" class=\\"drac-text drac-text-white\\">Radio</label>
   </div>
-  <div style=\\"margin-bottom: 10px\\">
+  <div class=\\"drac-box drac-mb-xs\\">
     <input
       type=\\"radio\\"
       name=\\"yellow\\"
@@ -94,56 +94,56 @@ Object {
   </div>
 </div>
 ",
-  "react": "<div>
-  <div style={{ marginBottom: 10 }}>
+  "react": "<Box>
+  <Box mb=\\"xs\\">
     <Radio id=\\"white\\" color=\\"white\\" name=\\"white\\" />
     <label htmlFor=\\"white\\" className=\\"drac-text drac-text-white\\">
       Radio
     </label>
-  </div>
-  <div style={{ marginBottom: 10 }}>
+  </Box>
+  <Box mb=\\"xs\\">
     <Radio id=\\"cyan\\" color=\\"cyan\\" name=\\"cyan\\" />
     <label htmlFor=\\"cyan\\" className=\\"drac-text drac-text-white\\">
       Radio
     </label>
-  </div>
-  <div style={{ marginBottom: 10 }}>
+  </Box>
+  <Box mb=\\"xs\\">
     <Radio id=\\"green\\" color=\\"green\\" name=\\"green\\" />
     <label htmlFor=\\"green\\" className=\\"drac-text drac-text-white\\">
       Radio
     </label>
-  </div>
-  <div style={{ marginBottom: 10 }}>
+  </Box>
+  <Box mb=\\"xs\\">
     <Radio id=\\"orange\\" color=\\"orange\\" name=\\"orange\\" />
     <label htmlFor=\\"orange\\" className=\\"drac-text drac-text-white\\">
       Radio
     </label>
-  </div>
-  <div style={{ marginBottom: 10 }}>
+  </Box>
+  <Box mb=\\"xs\\">
     <Radio id=\\"pink\\" color=\\"pink\\" name=\\"pink\\" />
     <label htmlFor=\\"pink\\" className=\\"drac-text drac-text-white\\">
       Radio
     </label>
-  </div>
-  <div style={{ marginBottom: 10 }}>
+  </Box>
+  <Box mb=\\"xs\\">
     <Radio id=\\"purple\\" color=\\"purple\\" name=\\"purple\\" />
     <label htmlFor=\\"purple\\" className=\\"drac-text drac-text-white\\">
       Radio
     </label>
-  </div>
-  <div style={{ marginBottom: 10 }}>
+  </Box>
+  <Box mb=\\"xs\\">
     <Radio id=\\"red\\" color=\\"red\\" name=\\"red\\" />
     <label htmlFor=\\"red\\" className=\\"drac-text drac-text-white\\">
       Radio
     </label>
-  </div>
-  <div style={{ marginBottom: 10 }}>
+  </Box>
+  <Box mb=\\"xs\\">
     <Radio id=\\"yellow\\" color=\\"yellow\\" name=\\"yellow\\" />
     <label htmlFor=\\"yellow\\" className=\\"drac-text drac-text-white\\">
       Radio
     </label>
-  </div>
-</div>;
+  </Box>
+</Box>;
 ",
   "title": "Colors",
 }
@@ -152,40 +152,48 @@ Object {
 exports[`Site: Radio Disabled 1`] = `
 Object {
   "docs": "A radio select is unusable and un-clickable.",
-  "html": "<div>
-  <div style=\\"margin-bottom: 10px\\">
+  "html": "<div class=\\"drac-box\\">
+  <div class=\\"drac-box drac-mb-xs\\">
     <input
       type=\\"radio\\"
       name=\\"one\\"
+      disabled=\\"\\"
       id=\\"one\\"
       class=\\"drac-radio drac-radio-white\\"
       checked=\\"\\"
     /><label for=\\"one\\" class=\\"drac-text drac-text-white\\">Checked</label>
   </div>
-  <div style=\\"margin-bottom: 10px\\">
+  <div class=\\"drac-box drac-mb-xs\\">
     <input
       type=\\"radio\\"
       name=\\"two\\"
+      disabled=\\"\\"
       id=\\"two\\"
       class=\\"drac-radio drac-radio-white\\"
     /><label for=\\"two\\" class=\\"drac-text drac-text-white\\">Unchecked</label>
   </div>
 </div>
 ",
-  "react": "<div>
-  <div style={{ marginBottom: 10 }}>
-    <Radio id=\\"one\\" name=\\"one\\" color=\\"white\\" defaultChecked={true} />
+  "react": "<Box>
+  <Box mb=\\"xs\\">
+    <Radio
+      id=\\"one\\"
+      name=\\"one\\"
+      color=\\"white\\"
+      defaultChecked={true}
+      disabled={true}
+    />
     <label htmlFor=\\"one\\" className=\\"drac-text drac-text-white\\">
       Checked
     </label>
-  </div>
-  <div style={{ marginBottom: 10 }}>
-    <Radio id=\\"two\\" name=\\"two\\" color=\\"white\\" />
+  </Box>
+  <Box mb=\\"xs\\">
+    <Radio id=\\"two\\" name=\\"two\\" color=\\"white\\" disabled={true} />
     <label htmlFor=\\"two\\" className=\\"drac-text drac-text-white\\">
       Unchecked
     </label>
-  </div>
-</div>;
+  </Box>
+</Box>;
 ",
   "title": "Disabled",
 }

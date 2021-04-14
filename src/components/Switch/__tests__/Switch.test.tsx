@@ -15,15 +15,15 @@ docs(Switch, {
   variations() {
     return [
       snapshot(
+        'Colors',
+        Colors,
+        'Switches can be customized to use any of the Dracula UI theme colors.'
+      ),
+      snapshot(
         'Disabled',
         Disabled,
         'A disabled switch is unusable and un-clickable.'
       ),
-      snapshot(
-        'Colors',
-        Colors,
-        'Switches can be customized to use any of the Dracula UI theme colors.'
-      )
     ]
   }
 })
@@ -42,7 +42,7 @@ function Usage() {
 function Disabled() {
   return (
     <Box>
-      <Box>
+      <Box mb="xs">
         <Switch
           id="one"
           disabled
@@ -71,10 +71,10 @@ function Disabled() {
 
 function Colors() {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column' }}>
+    <Box style={{ display: 'flex', flexDirection: 'column' }}>
       {Object.keys(switchColors).map((color) => {
         return (
-          <div key={color} style={{ marginBottom: 10 }}>
+          <Box key={color} mb="xs">
             <Switch
               id={color}
               defaultChecked
@@ -84,9 +84,9 @@ function Colors() {
             <label htmlFor={color} className="drac-text drac-text-white">
               Switch
             </label>
-          </div>
+          </Box>
         )
       })}
-    </div>
+    </Box>
   )
 }
