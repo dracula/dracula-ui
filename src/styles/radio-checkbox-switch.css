@@ -4,6 +4,7 @@
   --background: var(--white);
   --disabled: var(--blackSecondary);
   --disabled-inner: var(--blackTernary);
+  --local-bg-color: var(--border-hover);
   appearance: none;
   height: 21px;
   outline: none;
@@ -13,7 +14,6 @@
   margin: 0;
   cursor: pointer;
   border: 1px solid var(--local-bg-color, var(--border));
-  background: var(--local-bg, var(--background));
   transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
 }
 
@@ -27,6 +27,10 @@
   transition: transform var(--local-transform-speed, 0.3s)
       var(--local-transform-effect, ease),
     opacity var(--local-opacity-speed, 0.2s);
+}
+
+.checkbox:checked {
+  background: var(--local-bg, var(--background));
 }
 
 .checkbox:checked,
@@ -54,11 +58,6 @@
 .checkbox:disabled + label,
 .radio:disabled + label {
   cursor: not-allowed;
-}
-
-.checkbox:hover:not(:checked):not(:disabled),
-.radio:hover:not(:checked):not(:disabled) {
-  --local-bg-color: var(--border-hover);
 }
 
 .checkbox:focus,
@@ -121,12 +120,13 @@
   border-radius: 50%;
   width: 15px;
   height: 15px;
-  background: var(--ab, var(--border));
+  background: var(--ab, var(--active-inner));
   transform: translateX(var(--x, 0));
 }
 
 .checkbox.switch:checked {
-  --ab: var(--active-inner);
+  background: none;
+  --ab: var(--active);
   --x: 17px;
 }
 
@@ -142,13 +142,17 @@
   width: 19px;
   height: 19px;
   border-radius: 50%;
-  background: var(--active-inner);
+  background: var(--local-bg-color);
   opacity: 0;
-  transform: scale(var(--s, 0.7));
+  transform: scale(var(--scale));
+}
+
+.radio:disabled:checked:after {
+  background: var(--disabled-inner);
 }
 
 .radio:checked {
-  --s: 0.5;
+  --scale: 0.8;
 }
 
 .radio-black,

@@ -1,6 +1,7 @@
 import React from 'react'
 import { docs } from '@/documentation/site-docs'
 import { snapshot } from '@/documentation/render-component'
+import { Box } from '@/components/Box/Box'
 import { Radio, RadioProps, radioColors } from '@/components/Radio/Radio'
 
 docs(Radio, {
@@ -14,22 +15,22 @@ docs(Radio, {
   variations() {
     return [
       snapshot(
+        'Colors',
+        Colors,
+        'Radio can be customized to use any of the Dracula UI theme colors.'
+      ),
+      snapshot(
         'Disabled',
         Disabled,
         'A radio select is unusable and un-clickable.'
       ),
-      snapshot(
-        'Colors',
-        Colors,
-        'Radio can be customized to use any of the Dracula UI theme colors.'
-      )
     ]
   }
 })
 
 function Usage() {
   return (
-    <div>
+    <Box>
       <Radio
         id="normal"
         key="normal"
@@ -41,46 +42,48 @@ function Usage() {
       <label htmlFor="normal" className="drac-text drac-text-white">
         Checked
       </label>
-    </div>
+    </Box>
   )
 }
 
 function Disabled() {
   return (
-    <div>
-      <div style={{ marginBottom: 10 }}>
+    <Box>
+      <Box mb="xs">
         <Radio
           id="one"
           key="one"
           name="one"
           color="white"
           defaultChecked
+          disabled
         />
         <label htmlFor="one" className="drac-text drac-text-white">
           Checked
         </label>
-      </div>
-      <div style={{ marginBottom: 10 }}>
+      </Box>
+      <Box mb="xs">
         <Radio
           id="two"
           key="two"
           name="two"
           color="white"
+          disabled
         />
         <label htmlFor="two" className="drac-text drac-text-white">
           Unchecked
         </label>
-      </div>
-    </div>
+      </Box>
+    </Box>
   )
 }
 
 function Colors() {
   return (
-    <div>
+    <Box>
       {Object.keys(radioColors).map((color) => {
         return (
-          <div key={color} style={{ marginBottom: 10 }}>
+          <Box key={color} mb="xs">
             <Radio
               id={color}
               color={color as RadioProps['color']}
@@ -89,9 +92,9 @@ function Colors() {
             <label htmlFor={color} className="drac-text drac-text-white">
               Radio
             </label>
-          </div>
+          </Box>
         )
       })}
-    </div>
+    </Box>
   )
 }
