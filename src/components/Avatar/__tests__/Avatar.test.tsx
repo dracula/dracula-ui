@@ -35,23 +35,36 @@ docs(Avatar, {
 function Usage() {
   return (
     <Avatar
-      title="Netto Farah"
-      src="https://pbs.twimg.com/profile_images/1325812776707690496/_iTWBLbr_400x400.jpg"
+      title="Count Dracula"
+      src="https://ui.draculatheme.com/static/images/avatar.png"
     />
   )
 }
 
 function Colors() {
   return (
-    <Avatar title="Netto Farah" color="cyan" />
+    <Avatar
+      src="https://ui.draculatheme.com/static/images/avatar.png"
+      title="Count Dracula"
+      color="cyan"
+    />
   )
 }
 
 function Variants() {
   return (
     <div>
-      <Avatar title="Zeno Rocha" variant="subtle" />
-      <Avatar title="Netto Farah" variant="normal" />
+      <Avatar
+        src="https://ui.draculatheme.com/static/images/avatar.png"
+        title="Count Dracula"
+        variant="normal"
+        mb="sm"
+      />
+      <Avatar
+        src="https://ui.draculatheme.com/static/images/avatar.png"
+        title="Count Dracula"
+        variant="subtle"
+      />
     </div>
   )
 }
@@ -59,8 +72,17 @@ function Variants() {
 function BorderVariants() {
   return (
     <div>
-      <Avatar title="Netto Farah" borderVariant="large" />
-      <Avatar title="Netto Farah" borderVariant="none" />
+      <Avatar
+        src="https://ui.draculatheme.com/static/images/avatar.png"
+        title="Count Dracula"
+        borderVariant="large"
+        mb="sm"
+      />
+      <Avatar
+        src="https://ui.draculatheme.com/static/images/avatar.png"
+        title="Count Dracula"
+        borderVariant="none"
+      />
     </div>
   )
 }
