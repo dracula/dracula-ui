@@ -18,7 +18,13 @@
 }
 
 .usage {
-  background: #282a36;
   border-radius: var(--rounded-md);
   padding: 2rem;
+}
+
+.usage,
+.codeContainer {
+  background: #282a36;
+  max-height: 300px;
+  overflow: auto;
 }

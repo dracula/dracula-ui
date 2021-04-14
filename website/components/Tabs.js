@@ -64,7 +64,6 @@ class Tabs extends Component {
         <Box
           className={styles.usage}
           dangerouslySetInnerHTML={{ __html: option.panel }}
-          style={{ overflow: "auto", maxHeight: 300 }}
         />
       )
     } else if (index === 1) {
@@ -78,7 +77,7 @@ class Tabs extends Component {
     return (
       <div>
         <ul className="drac-tabs drac-tabs-purple">{this.renderLabels()}</ul>
-        <Box style={{ maxHeight: 300, overflow: "auto" }}>
+        <Box className={styles.codeContainer}>
           {this.renderPanels()}
         </Box>
       </div>
