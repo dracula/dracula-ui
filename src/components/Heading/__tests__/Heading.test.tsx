@@ -34,7 +34,7 @@ docs(Heading, {
 
 function Usage() {
   return (
-    <Heading>Heading</Heading>
+    <Heading>The quick vampire jumps over the lazy human</Heading>
   )
 }
 

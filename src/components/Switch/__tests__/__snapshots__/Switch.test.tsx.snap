@@ -10,13 +10,13 @@ Object {
     id=\\"demo\\"
     class=\\"drac-switch drac-checkbox drac-switch-purple\\"
     checked=\\"\\"
-  /><label for=\\"demo\\" class=\\"drac-text drac-text-white\\">Checked</label>
+  /><label for=\\"demo\\" class=\\"drac-text drac-text-white\\">Has reflection</label>
 </div>
 ",
   "react": "<Box>
   <Switch color=\\"purple\\" id=\\"demo\\" name=\\"demo\\" defaultChecked={true} />
   <label htmlFor=\\"demo\\" className=\\"drac-text drac-text-white\\">
-    Checked
+    Has reflection
   </label>
 </Box>;
 ",
@@ -169,7 +169,7 @@ Object {
       id=\\"one\\"
       class=\\"drac-switch drac-checkbox drac-switch-white\\"
       checked=\\"\\"
-    /><label for=\\"one\\" class=\\"drac-text drac-text-white\\">Checked</label>
+    /><label for=\\"one\\" class=\\"drac-text drac-text-white\\">Vampire</label>
   </div>
   <div class=\\"drac-box\\">
     <input
@@ -178,7 +178,7 @@ Object {
       disabled=\\"\\"
       id=\\"two\\"
       class=\\"drac-switch drac-checkbox drac-switch-white\\"
-    /><label for=\\"two\\" class=\\"drac-text drac-text-white\\">Unchecked</label>
+    /><label for=\\"two\\" class=\\"drac-text drac-text-white\\">Human</label>
   </div>
 </div>
 ",
@@ -192,13 +192,13 @@ Object {
       name=\\"one\\"
     />
     <label htmlFor=\\"one\\" className=\\"drac-text drac-text-white\\">
-      Checked
+      Vampire
     </label>
   </Box>
   <Box>
     <Switch id=\\"two\\" disabled={true} color=\\"white\\" name=\\"two\\" />
     <label htmlFor=\\"two\\" className=\\"drac-text drac-text-white\\">
-      Unchecked
+      Human
     </label>
   </Box>
 </Box>;

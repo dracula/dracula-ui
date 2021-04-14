@@ -3,9 +3,11 @@
 exports[`Site: Text Basic Usage 1`] = `
 Object {
   "docs": "Show inline text within an interface.",
-  "html": "<span class=\\"drac-text drac-line-height drac-text-white\\">basic</span>
+  "html": "<span class=\\"drac-text drac-line-height drac-text-white\\"
+  >The quick vampire jumps over the lazy human</span
+>
 ",
-  "react": "<Text>basic</Text>;
+  "react": "<Text>The quick vampire jumps over the lazy human</Text>;
 ",
   "title": "Usage",
 }

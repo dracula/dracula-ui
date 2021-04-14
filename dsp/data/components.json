@@ -17,15 +17,15 @@
       "snippets": {
         "trigger": "anchor",
         "languages": {
-          "javascriptreact": "<Anchor href=\"#\">anchor</Anchor>;\n",
-          "html": "<a\n  href=\"#\"\n  class=\"drac-anchor drac-text drac-text-white drac-text-purple--hover\"\n  >anchor</a\n>\n"
+          "javascriptreact": "<Anchor href=\"#\" color=\"purple\" hoverColor=\"pinkPurple\">\n  Visit the Dracula Castle\n</Anchor>;\n",
+          "html": "<a\n  href=\"#\"\n  class=\"drac-anchor drac-text drac-text-purple drac-text-pink-purple--hover\"\n  >Visit the Dracula Castle</a\n>\n"
         }
       },
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
-          "html": "<a\n  href=\"#\"\n  class=\"drac-anchor drac-text drac-text-white drac-text-purple--hover\"\n  >anchor</a\n>\n",
-          "react": "<Anchor href=\"#\">anchor</Anchor>;\n",
+          "html": "<a\n  href=\"#\"\n  class=\"drac-anchor drac-text drac-text-purple drac-text-pink-purple--hover\"\n  >Visit the Dracula Castle</a\n>\n",
+          "react": "<Anchor href=\"#\" color=\"purple\" hoverColor=\"pinkPurple\">\n  Visit the Dracula Castle\n</Anchor>;\n",
           "docs": "Anchor is an abstraction/style that can/is applied to HTML anchor elements.",
           "screenshot": "./dsp/assets/Anchor.png"
         },
@@ -4005,15 +4005,15 @@
       "snippets": {
         "trigger": "checkbox",
         "languages": {
-          "javascriptreact": "<Box>\n  <Checkbox id=\"normal\" name=\"normal\" color=\"purple\" defaultChecked={true} />\n  <label htmlFor=\"normal\" className=\"drac-text drac-text-white\">\n    Checked\n  </label>\n</Box>;\n",
-          "html": "<div class=\"drac-box\">\n  <input\n    type=\"checkbox\"\n    name=\"normal\"\n    id=\"normal\"\n    class=\"drac-checkbox drac-checkbox-purple\"\n    checked=\"\"\n  /><label for=\"normal\" class=\"drac-text drac-text-white\">Checked</label>\n</div>\n"
+          "javascriptreact": "<Box>\n  <Checkbox id=\"normal\" name=\"normal\" color=\"purple\" defaultChecked={true} />\n  <label htmlFor=\"normal\" className=\"drac-text drac-text-white\">\n    Enjoys the light\n  </label>\n</Box>;\n",
+          "html": "<div class=\"drac-box\">\n  <input\n    type=\"checkbox\"\n    name=\"normal\"\n    id=\"normal\"\n    class=\"drac-checkbox drac-checkbox-purple\"\n    checked=\"\"\n  /><label for=\"normal\" class=\"drac-text drac-text-white\"\n    >Enjoys the light</label\n  >\n</div>\n"
         }
       },
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
-          "html": "<div class=\"drac-box\">\n  <input\n    type=\"checkbox\"\n    name=\"normal\"\n    id=\"normal\"\n    class=\"drac-checkbox drac-checkbox-purple\"\n    checked=\"\"\n  /><label for=\"normal\" class=\"drac-text drac-text-white\">Checked</label>\n</div>\n",
-          "react": "<Box>\n  <Checkbox id=\"normal\" name=\"normal\" color=\"purple\" defaultChecked={true} />\n  <label htmlFor=\"normal\" className=\"drac-text drac-text-white\">\n    Checked\n  </label>\n</Box>;\n",
+          "html": "<div class=\"drac-box\">\n  <input\n    type=\"checkbox\"\n    name=\"normal\"\n    id=\"normal\"\n    class=\"drac-checkbox drac-checkbox-purple\"\n    checked=\"\"\n  /><label for=\"normal\" class=\"drac-text drac-text-white\"\n    >Enjoys the light</label\n  >\n</div>\n",
+          "react": "<Box>\n  <Checkbox id=\"normal\" name=\"normal\" color=\"purple\" defaultChecked={true} />\n  <label htmlFor=\"normal\" className=\"drac-text drac-text-white\">\n    Enjoys the light\n  </label>\n</Box>;\n",
           "docs": "Checkbox allows for styling HTML checkboxes with Dracula UI styles.",
           "screenshot": "./dsp/assets/Checkbox.png"
         },
@@ -4026,8 +4026,8 @@
         },
         {
           "title": "Disabled",
-          "html": "<div style=\"display: flex; flex-direction: column\" class=\"drac-box\">\n  <div class=\"drac-box drac-mb-xs\">\n    <input\n      type=\"checkbox\"\n      name=\"one\"\n      disabled=\"\"\n      id=\"one\"\n      class=\"drac-checkbox drac-checkbox-white\"\n      checked=\"\"\n    /><label for=\"one\" class=\"drac-text drac-text-white\">Checked</label>\n  </div>\n  <div class=\"drac-box drac-mb-xs\">\n    <input\n      type=\"checkbox\"\n      name=\"two\"\n      disabled=\"\"\n      id=\"two\"\n      class=\"drac-checkbox drac-checkbox-white\"\n    /><label for=\"two\" class=\"drac-text drac-text-white\">Unchecked</label>\n  </div>\n</div>\n",
-          "react": "<Box style={{ display: \"flex\", flexDirection: \"column\" }}>\n  <Box mb=\"xs\">\n    <Checkbox\n      id=\"one\"\n      name=\"one\"\n      color=\"white\"\n      defaultChecked={true}\n      disabled={true}\n    />\n    <label htmlFor=\"one\" className=\"drac-text drac-text-white\">\n      Checked\n    </label>\n  </Box>\n  <Box mb=\"xs\">\n    <Checkbox id=\"two\" name=\"two\" color=\"white\" disabled={true} />\n    <label htmlFor=\"two\" className=\"drac-text drac-text-white\">\n      Unchecked\n    </label>\n  </Box>\n</Box>;\n",
+          "html": "<div style=\"display: flex; flex-direction: column\" class=\"drac-box\">\n  <div class=\"drac-box drac-mb-xs\">\n    <input\n      type=\"checkbox\"\n      name=\"one\"\n      disabled=\"\"\n      id=\"one\"\n      class=\"drac-checkbox drac-checkbox-white\"\n      checked=\"\"\n    /><label for=\"one\" class=\"drac-text drac-text-white\">Vampire</label>\n  </div>\n  <div class=\"drac-box drac-mb-xs\">\n    <input\n      type=\"checkbox\"\n      name=\"two\"\n      disabled=\"\"\n      id=\"two\"\n      class=\"drac-checkbox drac-checkbox-white\"\n    /><label for=\"two\" class=\"drac-text drac-text-white\">Human</label>\n  </div>\n</div>\n",
+          "react": "<Box style={{ display: \"flex\", flexDirection: \"column\" }}>\n  <Box mb=\"xs\">\n    <Checkbox\n      id=\"one\"\n      name=\"one\"\n      color=\"white\"\n      defaultChecked={true}\n      disabled={true}\n    />\n    <label htmlFor=\"one\" className=\"drac-text drac-text-white\">\n      Vampire\n    </label>\n  </Box>\n  <Box mb=\"xs\">\n    <Checkbox id=\"two\" name=\"two\" color=\"white\" disabled={true} />\n    <label htmlFor=\"two\" className=\"drac-text drac-text-white\">\n      Human\n    </label>\n  </Box>\n</Box>;\n",
           "docs": "A disabled checkbox is unusable and un-clickable.",
           "screenshot": "./dsp/assets/CheckboxDisabled.png"
         }
@@ -5094,15 +5094,15 @@
       "snippets": {
         "trigger": "heading",
         "languages": {
-          "javascriptreact": "<Heading>Heading</Heading>;\n",
-          "html": "<h2 class=\"drac-heading drac-heading-xl drac-text-white\">Heading</h2>\n"
+          "javascriptreact": "<Heading>The quick vampire jumps over the lazy human</Heading>;\n",
+          "html": "<h2 class=\"drac-heading drac-heading-xl drac-text-white\">\n  The quick vampire jumps over the lazy human\n</h2>\n"
         }
       },
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
-          "html": "<h2 class=\"drac-heading drac-heading-xl drac-text-white\">Heading</h2>\n",
-          "react": "<Heading>Heading</Heading>;\n",
+          "html": "<h2 class=\"drac-heading drac-heading-xl drac-text-white\">\n  The quick vampire jumps over the lazy human\n</h2>\n",
+          "react": "<Heading>The quick vampire jumps over the lazy human</Heading>;\n",
           "docs": "Heading is an abstraction/style that can/is applied to HTML heading elements.",
           "screenshot": "./dsp/assets/Heading.png"
         },
@@ -6828,15 +6828,15 @@
       "snippets": {
         "trigger": "paragraph",
         "languages": {
-          "javascriptreact": "<Paragraph>basic</Paragraph>;\n",
-          "html": "<p class=\"drac-text drac-line-height drac-text-white\">basic</p>\n"
+          "javascriptreact": "<Paragraph>\n  Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It\n  introduced the character of Count Dracula and established many conventions of\n  subsequent vampire fantasy. The novel tells the story of Dracula&#39;s attempt\n  to move from Transylvania to England so that he may find new blood and spread\n  the undead curse, and of the battle between Dracula and Professor Abraham Van\n  Helsing.\n</Paragraph>;\n",
+          "html": "<p class=\"drac-text drac-line-height drac-text-white\">\n  Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It\n  introduced the character of Count Dracula and established many conventions of\n  subsequent vampire fantasy. The novel tells the story of Dracula's attempt to\n  move from Transylvania to England so that he may find new blood and spread the\n  undead curse, and of the battle between Dracula and Professor Abraham Van\n  Helsing.\n</p>\n"
         }
       },
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
-          "html": "<p class=\"drac-text drac-line-height drac-text-white\">basic</p>\n",
-          "react": "<Paragraph>basic</Paragraph>;\n",
+          "html": "<p class=\"drac-text drac-line-height drac-text-white\">\n  Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It\n  introduced the character of Count Dracula and established many conventions of\n  subsequent vampire fantasy. The novel tells the story of Dracula's attempt to\n  move from Transylvania to England so that he may find new blood and spread the\n  undead curse, and of the battle between Dracula and Professor Abraham Van\n  Helsing.\n</p>\n",
+          "react": "<Paragraph>\n  Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It\n  introduced the character of Count Dracula and established many conventions of\n  subsequent vampire fantasy. The novel tells the story of Dracula&#39;s attempt\n  to move from Transylvania to England so that he may find new blood and spread\n  the undead curse, and of the battle between Dracula and Professor Abraham Van\n  Helsing.\n</Paragraph>;\n",
           "docs": "Show a paragraph within an interface.",
           "screenshot": "./dsp/assets/Paragraph.png"
         },
@@ -7504,15 +7504,15 @@
       "snippets": {
         "trigger": "radio",
         "languages": {
-          "javascriptreact": "<Box>\n  <Radio id=\"normal\" name=\"normal\" color=\"purple\" defaultChecked={true} />\n  <label htmlFor=\"normal\" className=\"drac-text drac-text-white\">\n    Checked\n  </label>\n</Box>;\n",
-          "html": "<div class=\"drac-box\">\n  <input\n    type=\"radio\"\n    name=\"normal\"\n    id=\"normal\"\n    class=\"drac-radio drac-radio-purple\"\n    checked=\"\"\n  /><label for=\"normal\" class=\"drac-text drac-text-white\">Checked</label>\n</div>\n"
+          "javascriptreact": "<Box>\n  <Radio id=\"normal\" name=\"normal\" color=\"purple\" defaultChecked={true} />\n  <label htmlFor=\"normal\" className=\"drac-text drac-text-white\">\n    Likes Garlic\n  </label>\n</Box>;\n",
+          "html": "<div class=\"drac-box\">\n  <input\n    type=\"radio\"\n    name=\"normal\"\n    id=\"normal\"\n    class=\"drac-radio drac-radio-purple\"\n    checked=\"\"\n  /><label for=\"normal\" class=\"drac-text drac-text-white\">Likes Garlic</label>\n</div>\n"
         }
       },
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
-          "html": "<div class=\"drac-box\">\n  <input\n    type=\"radio\"\n    name=\"normal\"\n    id=\"normal\"\n    class=\"drac-radio drac-radio-purple\"\n    checked=\"\"\n  /><label for=\"normal\" class=\"drac-text drac-text-white\">Checked</label>\n</div>\n",
-          "react": "<Box>\n  <Radio id=\"normal\" name=\"normal\" color=\"purple\" defaultChecked={true} />\n  <label htmlFor=\"normal\" className=\"drac-text drac-text-white\">\n    Checked\n  </label>\n</Box>;\n",
+          "html": "<div class=\"drac-box\">\n  <input\n    type=\"radio\"\n    name=\"normal\"\n    id=\"normal\"\n    class=\"drac-radio drac-radio-purple\"\n    checked=\"\"\n  /><label for=\"normal\" class=\"drac-text drac-text-white\">Likes Garlic</label>\n</div>\n",
+          "react": "<Box>\n  <Radio id=\"normal\" name=\"normal\" color=\"purple\" defaultChecked={true} />\n  <label htmlFor=\"normal\" className=\"drac-text drac-text-white\">\n    Likes Garlic\n  </label>\n</Box>;\n",
           "docs": "Radio buttons let a user select only one of a limited number of choices.",
           "screenshot": "./dsp/assets/Radio.png"
         },
@@ -7525,8 +7525,8 @@
         },
         {
           "title": "Disabled",
-          "html": "<div class=\"drac-box\">\n  <div class=\"drac-box drac-mb-xs\">\n    <input\n      type=\"radio\"\n      name=\"one\"\n      disabled=\"\"\n      id=\"one\"\n      class=\"drac-radio drac-radio-white\"\n      checked=\"\"\n    /><label for=\"one\" class=\"drac-text drac-text-white\">Checked</label>\n  </div>\n  <div class=\"drac-box drac-mb-xs\">\n    <input\n      type=\"radio\"\n      name=\"two\"\n      disabled=\"\"\n      id=\"two\"\n      class=\"drac-radio drac-radio-white\"\n    /><label for=\"two\" class=\"drac-text drac-text-white\">Unchecked</label>\n  </div>\n</div>\n",
-          "react": "<Box>\n  <Box mb=\"xs\">\n    <Radio\n      id=\"one\"\n      name=\"one\"\n      color=\"white\"\n      defaultChecked={true}\n      disabled={true}\n    />\n    <label htmlFor=\"one\" className=\"drac-text drac-text-white\">\n      Checked\n    </label>\n  </Box>\n  <Box mb=\"xs\">\n    <Radio id=\"two\" name=\"two\" color=\"white\" disabled={true} />\n    <label htmlFor=\"two\" className=\"drac-text drac-text-white\">\n      Unchecked\n    </label>\n  </Box>\n</Box>;\n",
+          "html": "<div class=\"drac-box\">\n  <div class=\"drac-box drac-mb-xs\">\n    <input\n      type=\"radio\"\n      name=\"one\"\n      disabled=\"\"\n      id=\"one\"\n      class=\"drac-radio drac-radio-white\"\n      checked=\"\"\n    /><label for=\"one\" class=\"drac-text drac-text-white\">Vampire</label>\n  </div>\n  <div class=\"drac-box drac-mb-xs\">\n    <input\n      type=\"radio\"\n      name=\"two\"\n      disabled=\"\"\n      id=\"two\"\n      class=\"drac-radio drac-radio-white\"\n    /><label for=\"two\" class=\"drac-text drac-text-white\">Human</label>\n  </div>\n</div>\n",
+          "react": "<Box>\n  <Box mb=\"xs\">\n    <Radio\n      id=\"one\"\n      name=\"one\"\n      color=\"white\"\n      defaultChecked={true}\n      disabled={true}\n    />\n    <label htmlFor=\"one\" className=\"drac-text drac-text-white\">\n      Vampire\n    </label>\n  </Box>\n  <Box mb=\"xs\">\n    <Radio id=\"two\" name=\"two\" color=\"white\" disabled={true} />\n    <label htmlFor=\"two\" className=\"drac-text drac-text-white\">\n      Human\n    </label>\n  </Box>\n</Box>;\n",
           "docs": "A radio select is unusable and un-clickable.",
           "screenshot": "./dsp/assets/RadioDisabled.png"
         }
@@ -8771,15 +8771,15 @@
       "snippets": {
         "trigger": "switch",
         "languages": {
-          "javascriptreact": "<Box>\n  <Switch color=\"purple\" id=\"demo\" name=\"demo\" defaultChecked={true} />\n  <label htmlFor=\"demo\" className=\"drac-text drac-text-white\">\n    Checked\n  </label>\n</Box>;\n",
-          "html": "<div class=\"drac-box\">\n  <input\n    type=\"checkbox\"\n    name=\"demo\"\n    id=\"demo\"\n    class=\"drac-switch drac-checkbox drac-switch-purple\"\n    checked=\"\"\n  /><label for=\"demo\" class=\"drac-text drac-text-white\">Checked</label>\n</div>\n"
+          "javascriptreact": "<Box>\n  <Switch color=\"purple\" id=\"demo\" name=\"demo\" defaultChecked={true} />\n  <label htmlFor=\"demo\" className=\"drac-text drac-text-white\">\n    Has reflection\n  </label>\n</Box>;\n",
+          "html": "<div class=\"drac-box\">\n  <input\n    type=\"checkbox\"\n    name=\"demo\"\n    id=\"demo\"\n    class=\"drac-switch drac-checkbox drac-switch-purple\"\n    checked=\"\"\n  /><label for=\"demo\" class=\"drac-text drac-text-white\">Has reflection</label>\n</div>\n"
         }
       },
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
-          "html": "<div class=\"drac-box\">\n  <input\n    type=\"checkbox\"\n    name=\"demo\"\n    id=\"demo\"\n    class=\"drac-switch drac-checkbox drac-switch-purple\"\n    checked=\"\"\n  /><label for=\"demo\" class=\"drac-text drac-text-white\">Checked</label>\n</div>\n",
-          "react": "<Box>\n  <Switch color=\"purple\" id=\"demo\" name=\"demo\" defaultChecked={true} />\n  <label htmlFor=\"demo\" className=\"drac-text drac-text-white\">\n    Checked\n  </label>\n</Box>;\n",
+          "html": "<div class=\"drac-box\">\n  <input\n    type=\"checkbox\"\n    name=\"demo\"\n    id=\"demo\"\n    class=\"drac-switch drac-checkbox drac-switch-purple\"\n    checked=\"\"\n  /><label for=\"demo\" class=\"drac-text drac-text-white\">Has reflection</label>\n</div>\n",
+          "react": "<Box>\n  <Switch color=\"purple\" id=\"demo\" name=\"demo\" defaultChecked={true} />\n  <label htmlFor=\"demo\" className=\"drac-text drac-text-white\">\n    Has reflection\n  </label>\n</Box>;\n",
           "docs": "Render a toggle component using checkbox under the hood.",
           "screenshot": "./dsp/assets/Switch.png"
         },
@@ -8792,8 +8792,8 @@
         },
         {
           "title": "Disabled",
-          "html": "<div class=\"drac-box\">\n  <div class=\"drac-box drac-mb-xs\">\n    <input\n      type=\"checkbox\"\n      name=\"one\"\n      disabled=\"\"\n      id=\"one\"\n      class=\"drac-switch drac-checkbox drac-switch-white\"\n      checked=\"\"\n    /><label for=\"one\" class=\"drac-text drac-text-white\">Checked</label>\n  </div>\n  <div class=\"drac-box\">\n    <input\n      type=\"checkbox\"\n      name=\"two\"\n      disabled=\"\"\n      id=\"two\"\n      class=\"drac-switch drac-checkbox drac-switch-white\"\n    /><label for=\"two\" class=\"drac-text drac-text-white\">Unchecked</label>\n  </div>\n</div>\n",
-          "react": "<Box>\n  <Box mb=\"xs\">\n    <Switch\n      id=\"one\"\n      disabled={true}\n      defaultChecked={true}\n      color=\"white\"\n      name=\"one\"\n    />\n    <label htmlFor=\"one\" className=\"drac-text drac-text-white\">\n      Checked\n    </label>\n  </Box>\n  <Box>\n    <Switch id=\"two\" disabled={true} color=\"white\" name=\"two\" />\n    <label htmlFor=\"two\" className=\"drac-text drac-text-white\">\n      Unchecked\n    </label>\n  </Box>\n</Box>;\n",
+          "html": "<div class=\"drac-box\">\n  <div class=\"drac-box drac-mb-xs\">\n    <input\n      type=\"checkbox\"\n      name=\"one\"\n      disabled=\"\"\n      id=\"one\"\n      class=\"drac-switch drac-checkbox drac-switch-white\"\n      checked=\"\"\n    /><label for=\"one\" class=\"drac-text drac-text-white\">Vampire</label>\n  </div>\n  <div class=\"drac-box\">\n    <input\n      type=\"checkbox\"\n      name=\"two\"\n      disabled=\"\"\n      id=\"two\"\n      class=\"drac-switch drac-checkbox drac-switch-white\"\n    /><label for=\"two\" class=\"drac-text drac-text-white\">Human</label>\n  </div>\n</div>\n",
+          "react": "<Box>\n  <Box mb=\"xs\">\n    <Switch\n      id=\"one\"\n      disabled={true}\n      defaultChecked={true}\n      color=\"white\"\n      name=\"one\"\n    />\n    <label htmlFor=\"one\" className=\"drac-text drac-text-white\">\n      Vampire\n    </label>\n  </Box>\n  <Box>\n    <Switch id=\"two\" disabled={true} color=\"white\" name=\"two\" />\n    <label htmlFor=\"two\" className=\"drac-text drac-text-white\">\n      Human\n    </label>\n  </Box>\n</Box>;\n",
           "docs": "A disabled switch is unusable and un-clickable.",
           "screenshot": "./dsp/assets/SwitchDisabled.png"
         }
@@ -10408,15 +10408,15 @@
       "snippets": {
         "trigger": "text",
         "languages": {
-          "javascriptreact": "<Text>basic</Text>;\n",
-          "html": "<span class=\"drac-text drac-line-height drac-text-white\">basic</span>\n"
+          "javascriptreact": "<Text>The quick vampire jumps over the lazy human</Text>;\n",
+          "html": "<span class=\"drac-text drac-line-height drac-text-white\"\n  >The quick vampire jumps over the lazy human</span\n>\n"
         }
       },
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
-          "html": "<span class=\"drac-text drac-line-height drac-text-white\">basic</span>\n",
-          "react": "<Text>basic</Text>;\n",
+          "html": "<span class=\"drac-text drac-line-height drac-text-white\"\n  >The quick vampire jumps over the lazy human</span\n>\n",
+          "react": "<Text>The quick vampire jumps over the lazy human</Text>;\n",
           "docs": "Show inline text within an interface.",
           "screenshot": "./dsp/assets/Text.png"
         },

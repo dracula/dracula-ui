@@ -10,13 +10,13 @@ Object {
     id=\\"normal\\"
     class=\\"drac-radio drac-radio-purple\\"
     checked=\\"\\"
-  /><label for=\\"normal\\" class=\\"drac-text drac-text-white\\">Checked</label>
+  /><label for=\\"normal\\" class=\\"drac-text drac-text-white\\">Likes Garlic</label>
 </div>
 ",
   "react": "<Box>
   <Radio id=\\"normal\\" name=\\"normal\\" color=\\"purple\\" defaultChecked={true} />
   <label htmlFor=\\"normal\\" className=\\"drac-text drac-text-white\\">
-    Checked
+    Likes Garlic
   </label>
 </Box>;
 ",
@@ -161,7 +161,7 @@ Object {
       id=\\"one\\"
       class=\\"drac-radio drac-radio-white\\"
       checked=\\"\\"
-    /><label for=\\"one\\" class=\\"drac-text drac-text-white\\">Checked</label>
+    /><label for=\\"one\\" class=\\"drac-text drac-text-white\\">Vampire</label>
   </div>
   <div class=\\"drac-box drac-mb-xs\\">
     <input
@@ -170,7 +170,7 @@ Object {
       disabled=\\"\\"
       id=\\"two\\"
       class=\\"drac-radio drac-radio-white\\"
-    /><label for=\\"two\\" class=\\"drac-text drac-text-white\\">Unchecked</label>
+    /><label for=\\"two\\" class=\\"drac-text drac-text-white\\">Human</label>
   </div>
 </div>
 ",
@@ -184,13 +184,13 @@ Object {
       disabled={true}
     />
     <label htmlFor=\\"one\\" className=\\"drac-text drac-text-white\\">
-      Checked
+      Vampire
     </label>
   </Box>
   <Box mb=\\"xs\\">
     <Radio id=\\"two\\" name=\\"two\\" color=\\"white\\" disabled={true} />
     <label htmlFor=\\"two\\" className=\\"drac-text drac-text-white\\">
-      Unchecked
+      Human
     </label>
   </Box>
 </Box>;

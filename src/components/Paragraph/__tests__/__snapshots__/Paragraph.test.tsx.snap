@@ -3,9 +3,23 @@
 exports[`Site: Paragraph Basic Usage 1`] = `
 Object {
   "docs": "Show a paragraph within an interface.",
-  "html": "<p class=\\"drac-text drac-line-height drac-text-white\\">basic</p>
+  "html": "<p class=\\"drac-text drac-line-height drac-text-white\\">
+  Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It
+  introduced the character of Count Dracula and established many conventions of
+  subsequent vampire fantasy. The novel tells the story of Dracula's attempt to
+  move from Transylvania to England so that he may find new blood and spread the
+  undead curse, and of the battle between Dracula and Professor Abraham Van
+  Helsing.
+</p>
 ",
-  "react": "<Paragraph>basic</Paragraph>;
+  "react": "<Paragraph>
+  Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It
+  introduced the character of Count Dracula and established many conventions of
+  subsequent vampire fantasy. The novel tells the story of Dracula&#39;s attempt
+  to move from Transylvania to England so that he may find new blood and spread
+  the undead curse, and of the battle between Dracula and Professor Abraham Van
+  Helsing.
+</Paragraph>;
 ",
   "title": "Usage",
 }

@@ -29,7 +29,7 @@ docs(Anchor, {
 
 function Usage() {
   return (
-    <Anchor href="#">anchor</Anchor>
+    <Anchor href="#" color="purple" hoverColor="pinkPurple">Visit the Dracula Castle</Anchor>
   )
 }
 

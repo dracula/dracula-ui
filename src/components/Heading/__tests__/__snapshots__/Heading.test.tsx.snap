@@ -3,9 +3,11 @@
 exports[`Site: Heading Basic Usage 1`] = `
 Object {
   "docs": "Heading is an abstraction/style that can/is applied to HTML heading elements.",
-  "html": "<h2 class=\\"drac-heading drac-heading-xl drac-text-white\\">Heading</h2>
+  "html": "<h2 class=\\"drac-heading drac-heading-xl drac-text-white\\">
+  The quick vampire jumps over the lazy human
+</h2>
 ",
-  "react": "<Heading>Heading</Heading>;
+  "react": "<Heading>The quick vampire jumps over the lazy human</Heading>;
 ",
   "title": "Usage",
 }

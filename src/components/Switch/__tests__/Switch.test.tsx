@@ -33,7 +33,7 @@ function Usage() {
     <Box>
       <Switch color="purple" id="demo" name="demo" defaultChecked />
       <label htmlFor="demo" className="drac-text drac-text-white">
-        Checked
+        Has reflection
       </label>
     </Box>
   )
@@ -51,7 +51,7 @@ function Disabled() {
           name="one"
         />
         <label htmlFor="one" className="drac-text drac-text-white">
-          Checked
+          Vampire
         </label>
       </Box>
       <Box>
@@ -62,7 +62,7 @@ function Disabled() {
           name="two"
         />
         <label htmlFor="two" className="drac-text drac-text-white">
-          Unchecked
+          Human
         </label>
       </Box>
     </Box>

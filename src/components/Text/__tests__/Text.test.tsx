@@ -35,7 +35,7 @@ docs(Text, {
 
 function Usage() {
   return (
-    <Text>basic</Text>
+    <Text>The quick vampire jumps over the lazy human</Text>
   )
 }
 

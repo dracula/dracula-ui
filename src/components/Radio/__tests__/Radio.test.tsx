@@ -40,7 +40,7 @@ function Usage() {
       />
 
       <label htmlFor="normal" className="drac-text drac-text-white">
-        Checked
+        Likes Garlic
       </label>
     </Box>
   )
@@ -59,7 +59,7 @@ function Disabled() {
           disabled
         />
         <label htmlFor="one" className="drac-text drac-text-white">
-          Checked
+          Vampire
         </label>
       </Box>
       <Box mb="xs">
@@ -71,7 +71,7 @@ function Disabled() {
           disabled
         />
         <label htmlFor="two" className="drac-text drac-text-white">
-          Unchecked
+          Human
         </label>
       </Box>
     </Box>
