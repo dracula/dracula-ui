@@ -43,7 +43,7 @@ export type BaseColorMap = Record<BaseColorNames, string>
 export type GradientColorNames = keyof typeof gradientColors
 export type GradientBaseColorMap = Record<GradientColorNames, string>
 
-export const borderColors: GradientBaseColorMap = mapValues(
+export const borderColors: BaseColorMap = mapValues(
   colors,
   (className) => className.replace('-bg-', '-border-')
 )

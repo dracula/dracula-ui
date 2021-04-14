@@ -1969,7 +1969,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+            "name": "\"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | undefined"
           }
         },
         "rounded": {
@@ -2269,7 +2269,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+              "name": "\"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | undefined"
             }
           },
           "rounded": {
@@ -3422,7 +3422,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+            "name": "\"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | undefined"
           }
         },
         "rounded": {
@@ -3741,7 +3741,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | undefined"
+              "name": "\"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | undefined"
             }
           },
           "rounded": {
@@ -4591,22 +4591,22 @@
       "snippets": {
         "trigger": "divider",
         "languages": {
-          "javascriptreact": "<Divider color=\"cyan\" />;\n",
-          "html": "<hr class=\"drac-divider drac-bg-cyan\" />\n"
+          "javascriptreact": "<Divider />;\n",
+          "html": "<hr class=\"drac-divider\" />\n"
         }
       },
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
-          "html": "<hr class=\"drac-divider drac-bg-cyan\" />\n",
-          "react": "<Divider color=\"cyan\" />;\n",
+          "html": "<hr class=\"drac-divider\" />\n",
+          "react": "<Divider />;\n",
           "docs": "Dividers are used to defined a thematic break in a page.",
           "screenshot": "./dsp/assets/Divider.png"
         },
         {
           "title": "Colors",
-          "html": "<hr class=\"drac-divider drac-bg-yellow\" />\n",
-          "react": "<Divider color=\"yellow\" />;\n",
+          "html": "<div class=\"drac-box\">\n  <div class=\"drac-box drac-mb-sm\">\n    <hr class=\"drac-divider drac-border-cyan\" />\n  </div>\n  <div class=\"drac-box drac-mb-sm\">\n    <hr class=\"drac-divider drac-border-green\" />\n  </div>\n  <div class=\"drac-box drac-mb-sm\">\n    <hr class=\"drac-divider drac-border-orange\" />\n  </div>\n  <div class=\"drac-box drac-mb-sm\">\n    <hr class=\"drac-divider drac-border-pink\" />\n  </div>\n  <div class=\"drac-box drac-mb-sm\">\n    <hr class=\"drac-divider drac-border-purple\" />\n  </div>\n  <div class=\"drac-box drac-mb-sm\">\n    <hr class=\"drac-divider drac-border-red\" />\n  </div>\n  <div class=\"drac-box drac-mb-sm\">\n    <hr class=\"drac-divider drac-border-yellow\" />\n  </div>\n</div>\n",
+          "react": "<Box>\n  <Box mb=\"sm\">\n    <Divider color=\"cyan\" />\n  </Box>\n  <Box mb=\"sm\">\n    <Divider color=\"green\" />\n  </Box>\n  <Box mb=\"sm\">\n    <Divider color=\"orange\" />\n  </Box>\n  <Box mb=\"sm\">\n    <Divider color=\"pink\" />\n  </Box>\n  <Box mb=\"sm\">\n    <Divider color=\"purple\" />\n  </Box>\n  <Box mb=\"sm\">\n    <Divider color=\"red\" />\n  </Box>\n  <Box mb=\"sm\">\n    <Divider color=\"yellow\" />\n  </Box>\n</Box>;\n",
           "docs": "Dividers can be customized to use any of the Dracula UI theme colors.",
           "screenshot": "./dsp/assets/DividerColors.png"
         }
@@ -4626,9 +4626,9 @@
               "name": "DividerProps"
             }
           ],
-          "required": true,
+          "required": false,
           "type": {
-            "name": "\"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\""
+            "name": "\"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | undefined"
           }
         },
         "p": {
@@ -4862,9 +4862,9 @@
                 "name": "DividerProps"
               }
             ],
-            "required": true,
+            "required": false,
             "type": {
-              "name": "\"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\""
+              "name": "\"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | undefined"
             }
           },
           "p": {

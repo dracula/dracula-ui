@@ -1,7 +1,9 @@
 import React from 'react'
 import { docs } from '@/documentation/site-docs'
 import { snapshot } from '@/documentation/render-component'
-import { Divider } from '@/components/Divider/Divider'
+import { Box } from '@/components/Box/Box'
+import { baseColors } from '@/base/colors'
+import { Divider, DividerProps } from '@/components/Divider/Divider'
 
 docs(Divider, {
   basic() {
@@ -24,12 +26,20 @@ docs(Divider, {
 
 function Usage() {
   return (
-    <Divider color="cyan" />
+    <Divider />
   )
 }
 
 function Colors() {
   return (
-    <Divider color="yellow" />
+    <Box>
+      {Object.keys(baseColors).map((color) => {
+        return (
+          <Box key={color} mb="sm">
+            <Divider color={color as DividerProps['color']} />
+          </Box>
+        )
+      })}
+    </Box>
   )
 }

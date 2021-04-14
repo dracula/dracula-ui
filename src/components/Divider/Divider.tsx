@@ -1,6 +1,6 @@
 import classNamesDedupe from 'classnames/dedupe'
 import React, { HTMLAttributes } from 'react'
-import { baseColors } from '../../base/colors'
+import { borderColors } from '../../base/colors'
 import {
   cleanProps,
   MarginMixin,
@@ -9,7 +9,7 @@ import {
   paddingMixin
 } from '../../base/spacing'
 
-export const dividerColors = baseColors
+export const dividerColors = borderColors
 
 /**
  * Divider Props
@@ -19,7 +19,7 @@ export interface DividerProps
     PaddingMixin,
     MarginMixin {
   /** The Dracula UI color for the Divider. */
-  color: keyof typeof dividerColors
+  color?: keyof typeof dividerColors
 }
 
 /**

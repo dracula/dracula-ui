@@ -3,9 +3,9 @@
 exports[`Site: Divider Basic Usage 1`] = `
 Object {
   "docs": "Dividers are used to defined a thematic break in a page.",
-  "html": "<hr class=\\"drac-divider drac-bg-cyan\\" />
+  "html": "<hr class=\\"drac-divider\\" />
 ",
-  "react": "<Divider color=\\"cyan\\" />;
+  "react": "<Divider />;
 ",
   "title": "Usage",
 }
@@ -14,9 +14,53 @@ Object {
 exports[`Site: Divider Colors 1`] = `
 Object {
   "docs": "Dividers can be customized to use any of the Dracula UI theme colors.",
-  "html": "<hr class=\\"drac-divider drac-bg-yellow\\" />
+  "html": "<div class=\\"drac-box\\">
+  <div class=\\"drac-box drac-mb-sm\\">
+    <hr class=\\"drac-divider drac-border-cyan\\" />
+  </div>
+  <div class=\\"drac-box drac-mb-sm\\">
+    <hr class=\\"drac-divider drac-border-green\\" />
+  </div>
+  <div class=\\"drac-box drac-mb-sm\\">
+    <hr class=\\"drac-divider drac-border-orange\\" />
+  </div>
+  <div class=\\"drac-box drac-mb-sm\\">
+    <hr class=\\"drac-divider drac-border-pink\\" />
+  </div>
+  <div class=\\"drac-box drac-mb-sm\\">
+    <hr class=\\"drac-divider drac-border-purple\\" />
+  </div>
+  <div class=\\"drac-box drac-mb-sm\\">
+    <hr class=\\"drac-divider drac-border-red\\" />
+  </div>
+  <div class=\\"drac-box drac-mb-sm\\">
+    <hr class=\\"drac-divider drac-border-yellow\\" />
+  </div>
+</div>
 ",
-  "react": "<Divider color=\\"yellow\\" />;
+  "react": "<Box>
+  <Box mb=\\"sm\\">
+    <Divider color=\\"cyan\\" />
+  </Box>
+  <Box mb=\\"sm\\">
+    <Divider color=\\"green\\" />
+  </Box>
+  <Box mb=\\"sm\\">
+    <Divider color=\\"orange\\" />
+  </Box>
+  <Box mb=\\"sm\\">
+    <Divider color=\\"pink\\" />
+  </Box>
+  <Box mb=\\"sm\\">
+    <Divider color=\\"purple\\" />
+  </Box>
+  <Box mb=\\"sm\\">
+    <Divider color=\\"red\\" />
+  </Box>
+  <Box mb=\\"sm\\">
+    <Divider color=\\"yellow\\" />
+  </Box>
+</Box>;
 ",
   "title": "Colors",
 }
