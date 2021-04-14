@@ -41,9 +41,9 @@ This will allow you to fetch all packages from npm except for Dracula UI, which 
 You can install Dracula UI via npm or yarn.
 
 ```bash
-npm install @dracula/dracula-ui@latest
+npm install @dracula/dracula-ui
 
-yarn add @dracula/dracula-ui@latest
+yarn add @dracula/dracula-ui
 ```
 
 If you're not into package managers, just [download a ZIP](https://github.com/dracula/dracula-ui/archive/master.zip) file.

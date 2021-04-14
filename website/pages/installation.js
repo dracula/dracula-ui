@@ -52,9 +52,9 @@ class Installation extends React.Component {
           </Paragraph>
           <CodeHighlight
             language="bash"
-            code={`npm install @dracula/dracula-ui@latest
+            code={`npm install @dracula/dracula-ui
 
-yarn add @dracula/dracula-ui@latest`}
+yarn add @dracula/dracula-ui`}
           />
         </Box>
         <Box my="lg">
