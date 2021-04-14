@@ -1,5 +1,5 @@
 import React from "react"
-import { Box, Heading, Paragraph } from "@dracula/dracula-ui"
+import { Anchor, Box, Heading, Paragraph } from "@dracula/dracula-ui"
 import styles from "./index.module.css"
 import Docs from "../layouts/Docs"
 
@@ -26,8 +26,7 @@ class Design extends React.Component {
             components on Figma.
           </Paragraph>
           <Paragraph>
-            You can find the <code>.fig</code> file inside the "design"
-            folder.
+            You can find the <code>.fig</code> file inside the <Anchor target="_blank" href="https://github.com/dracula/dracula-ui/tree/master/design">design</Anchor> folder.
           </Paragraph>
           <img
             className={styles.image}
