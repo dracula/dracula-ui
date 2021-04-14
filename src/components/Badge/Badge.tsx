@@ -23,7 +23,7 @@ export type BadgeProps = {
   /**
    * The theme variation color for a badge.
    */
-  themeColor?: keyof typeof backgroundColors
+  color?: keyof typeof backgroundColors
 
   /**
    * The variants for the Badge components.
@@ -41,15 +41,15 @@ export type BadgeProps = {
  * information.
  */
 export const Badge: React.FC<BadgeProps> = (props: BadgeProps) => {
-  const { variant, themeColor = 'purple', children, ...htmlProps } = props
+  const { variant, color = 'purple', children, ...htmlProps } = props
 
   const isOutline = variant === 'outline'
   const isSubtle = variant === 'subtle'
   const overrideTextColor = isOutline || isSubtle
 
-  const textColorClass = overrideTextColor ? textColors[themeColor] : undefined
+  const textColorClass = overrideTextColor ? textColors[color] : undefined
 
-  let backgroundClass = backgroundColors[themeColor]
+  let backgroundClass = backgroundColors[color]
   if (isSubtle) {
     backgroundClass = `${backgroundClass}-transparent`
   }
@@ -66,7 +66,7 @@ export const Badge: React.FC<BadgeProps> = (props: BadgeProps) => {
 
   return (
     <span className={classes} {...cleanProps(htmlProps)}>
-      <Text color={overrideTextColor ? props.themeColor : 'black'}>
+      <Text color={overrideTextColor ? props.color : 'black'}>
         {children}
       </Text>
     </span>

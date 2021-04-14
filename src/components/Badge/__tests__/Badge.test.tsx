@@ -35,18 +35,18 @@ function Usage() {
 
 function Colors() {
   return (
-    <Badge themeColor="animated">Fun Badge</Badge>
+    <Badge color="animated">Fun Badge</Badge>
   )
 }
 
 function Variants() {
   return (
     <div>
-      <Badge m="sm" themeColor="orange" variant="outline">
+      <Badge m="sm" color="orange" variant="outline">
         Outline
       </Badge>
 
-      <Badge m="sm" themeColor="cyan" variant="subtle">
+      <Badge m="sm" color="cyan" variant="subtle">
         Subtle
       </Badge>
     </div>

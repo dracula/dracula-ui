@@ -37,7 +37,7 @@ export interface AvatarProps
    * The theme color for the avatar.
    * This property controls the border and glow colors for the component.
    */
-  themeColor?: keyof typeof backgroundColors
+  color?: keyof typeof backgroundColors
 
   /**
    * The variant property allows for consumers to choose from
@@ -65,17 +65,16 @@ export interface AvatarProps
  * if a profile pic is not provided.
  */
 export const Avatar = (props: AvatarProps) => {
-  const { themeColor, variant, borderVariant, src, title, ...htmlProps } = props
+  const { color, variant, borderVariant, src, title, ...htmlProps } = props
 
-  const backgroundClass = `${
-    backgroundColors[themeColor ?? 'green']
-  }-transparent`
+  const backgroundClass = `${backgroundColors[color ?? 'green']
+    }-transparent`
 
   const classes = cx(
     'drac-avatar',
     props.className,
     backgroundClass,
-    textColors[themeColor ?? 'green'],
+    textColors[color ?? 'green'],
     AvatarVariants[variant ?? 'normal'],
     AvatarBorderVariants[borderVariant ?? 'normal'],
     ...paddingMixin(props),
@@ -97,7 +96,7 @@ export const Avatar = (props: AvatarProps) => {
   return (
     <span className={classes} style={style} {...cleanProps(htmlProps)}>
       {!props.src && (
-        <Text color={props.themeColor ?? 'white'}>
+        <Text color={props.color ?? 'white'}>
           {f}
           {l}
         </Text>
