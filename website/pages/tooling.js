@@ -70,7 +70,7 @@ class Tooling extends React.Component {
               Click on the "Load Package" option
             </li>
             <li className="drac-text drac-text-white">
-              Select the <code>dracula-ui/dsp</code> folder
+              Select the <code>node_modules/@dracula/dracula-ui/dsp</code> folder
             </li>
             <li className="drac-text drac-text-white">
               Now you should see the documentation
