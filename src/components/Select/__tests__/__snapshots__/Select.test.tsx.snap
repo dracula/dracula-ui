@@ -653,7 +653,7 @@ Object {
   "html": "<div style=\\"display: flex; flex-direction: column\\">
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
-      <select class=\\"drac-select drac-select-white\\">
+      <select disabled=\\"\\" class=\\"drac-select drac-select-white\\">
         <option value=\\"default\\">Select option</option>
         <option>Blade</option>
         <option>Buffy</option>
@@ -678,7 +678,10 @@ Object {
   </div>
   <div style=\\"margin-bottom: 10px\\">
     <div style=\\"position: relative\\">
-      <select class=\\"drac-select drac-select-outline drac-select-white\\">
+      <select
+        disabled=\\"\\"
+        class=\\"drac-select drac-select-outline drac-select-white\\"
+      >
         <option value=\\"default\\">Select option</option>
         <option>Blade</option>
         <option>Buffy</option>

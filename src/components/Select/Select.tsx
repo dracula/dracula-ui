@@ -68,6 +68,7 @@ export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
     const { size, variant, color, disabled, ...htmlProps } = props
 
     const finalProps = {
+      disabled,
       ...htmlProps,
       className: cx(
         'drac-select',
