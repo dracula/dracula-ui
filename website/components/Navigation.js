@@ -1,9 +1,9 @@
-import { Anchor, Box, List, Text } from "@dracula/dracula-ui"
-import { Component } from "react"
-import Link from "next/link"
-import dspComponents from "@dracula/dracula-ui/dsp/data/components.json"
-import styles from "./Navigation.module.css"
-import Topbar from "./Topbar"
+import { Anchor, Box, List, Text } from '@dracula/dracula-ui'
+import { Component } from 'react'
+import Link from 'next/link'
+import dspComponents from '@dracula/dracula-ui/dsp/data/components.json'
+import styles from './Navigation.module.css'
+import Topbar from './Topbar'
 
 const pages = dspComponents.entities.map((entity) => {
   return entity.name
@@ -11,21 +11,25 @@ const pages = dspComponents.entities.map((entity) => {
 
 const items = [
   {
-    title: "Getting Started",
+    title: 'Getting Started',
     pages: [
-      "Welcome",
-      "Installation",
-      "Principles",
-      "Tooling",
-      "Design",
-      "Support",
-      "Spacing",
-      "Colors"
+      'Welcome',
+      'Installation',
+      'Principles',
+      'Tooling',
+      'Design',
+      'Support',
+      'Spacing',
+      'Colors'
     ]
   },
   {
-    title: "Components",
+    title: 'Components',
     pages
+  },
+  {
+    title: '🎨 Patterns (Comming Soon)',
+    pages: ['Blog', 'Form', 'Login', 'Homepage', 'Pricing', '& many more...']
   }
 ]
 
@@ -41,20 +45,43 @@ class Navigation extends Component {
   renderNavigation() {
     return items.map((item) => {
       return (
-        <Box key={item.title} px="md" py="sm" style={{ display: this.state.isVisible ? 'block' : 'none' }}>
-          <Text size="sm" className={styles.navSectionTitle}>
+        <Box
+          key={item.title}
+          px="md"
+          py="sm"
+          style={{ display: this.state.isVisible ? 'block' : 'none' }}
+        >
+          <Text
+            size="sm"
+            className={styles.navSectionTitle}
+            weight={item.title.includes('Patterns') ? 'semibold' : 'normal'}
+          >
             {item.title}
           </Text>
+
           <List variant="none">
             {Object.keys(item.pages).map((index) => {
               const path = `/${item.pages[index].toLowerCase()}`
+              if (item.title.includes('Patterns')) {
+                return (
+                  <Box as="li" key={index}>
+                    <Anchor
+                      size={'normal'}
+                      className={styles.navSectionPatterns}
+                    >
+                      {item.pages[index]}
+                    </Anchor>
+                  </Box>
+                )
+              }
+
               const isSelected = item.pages[index] === this.props.selected
 
               return (
                 <Box as="li" key={index}>
                   <Link href={path} passHref>
                     <Anchor
-                      size={"normal"}
+                      size={'normal'}
                       className={
                         isSelected
                           ? styles.navSectionListActive
