@@ -29,15 +29,7 @@ const items = [
   },
   {
     title: '🎨 Patterns (Comming Soon)',
-    pages: [
-      'Blog',
-      'Sign in / Registrations',
-      'Landing Page',
-      'Pricing Sections',
-      'Headers',
-      'Form Layouts',
-      '& many more...'
-    ]
+    pages: ['Blog', 'Form', 'Login', 'Homepage', 'Pricing', '& many more...']
   }
 ]
 
