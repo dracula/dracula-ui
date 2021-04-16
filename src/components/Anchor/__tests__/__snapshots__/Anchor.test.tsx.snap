@@ -23,20 +23,20 @@ Object {
   "html": "<div style=\\"display: flex; flex-direction: column\\">
   <a
     href=\\"#\\"
-    class=\\"drac-anchor drac-text drac-text-pink drac-text-purple--hover drac-m-sm\\"
-    >pink / purple</a
+    class=\\"drac-anchor drac-text drac-text-purple drac-text-pink--hover drac-mb-sm\\"
+    >purple / pink</a
   ><a
     href=\\"#\\"
-    class=\\"drac-anchor drac-text drac-text-cyan-green drac-text-yellow-pink--hover drac-m-sm\\"
+    class=\\"drac-anchor drac-text drac-text-cyan-green drac-text-yellow-pink--hover drac-mb-sm\\"
     >cyanGreen / yellowPink</a
   >
 </div>
 ",
   "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\" }}>
-  <Anchor href=\\"#\\" color=\\"pink\\" hoverColor=\\"purple\\" m=\\"sm\\">
-    pink / purple
+  <Anchor href=\\"#\\" color=\\"purple\\" hoverColor=\\"pink\\" mb=\\"sm\\">
+    purple / pink
   </Anchor>
-  <Anchor href=\\"#\\" color=\\"cyanGreen\\" hoverColor=\\"yellowPink\\" m=\\"sm\\">
+  <Anchor href=\\"#\\" color=\\"cyanGreen\\" hoverColor=\\"yellowPink\\" mb=\\"sm\\">
     cyanGreen / yellowPink
   </Anchor>
 </div>;
@@ -45,59 +45,79 @@ Object {
 }
 `;
 
-exports[`Site: Anchor Sizes & Weights 1`] = `
+exports[`Site: Anchor Sizes 1`] = `
 Object {
-  "docs": "Anchor sizes can be customized with pre defined sizes or using regular HTML styles or CSS classes.",
-  "html": "<div style=\\"display: flex; flex-direction: column\\">
+  "docs": "Anchors can be customize to use several different sizes.",
+  "html": "<div style=\\"display: flex; flex-direction: column\\" class=\\"drac-box\\">
   <a
     href=\\"#\\"
-    class=\\"drac-anchor drac-text drac-text-xs drac-text-white drac-text-purple--hover\\"
+    class=\\"drac-anchor drac-text drac-text-xs drac-text-white drac-text-purple--hover drac-mb-sm\\"
     >xs</a
   ><a
     href=\\"#\\"
-    class=\\"drac-anchor drac-text drac-text-sm drac-text-white drac-text-purple--hover\\"
+    class=\\"drac-anchor drac-text drac-text-sm drac-text-white drac-text-purple--hover drac-mb-sm\\"
     >sm</a
   ><a
     href=\\"#\\"
-    class=\\"drac-anchor drac-text drac-text-white drac-text-purple--hover\\"
+    class=\\"drac-anchor drac-text drac-text-white drac-text-purple--hover drac-mb-sm\\"
     >md</a
   ><a
     href=\\"#\\"
-    class=\\"drac-anchor drac-text drac-text-lg drac-text-white drac-text-purple--hover\\"
+    class=\\"drac-anchor drac-text drac-text-lg drac-text-white drac-text-purple--hover drac-mb-sm\\"
     >lg</a
-  ><a
-    href=\\"#\\"
-    class=\\"drac-anchor drac-text drac-text-semibold drac-text-white drac-text-purple--hover\\"
-    >semibold</a
-  ><a
-    href=\\"#\\"
-    style=\\"font-size: 30px\\"
-    class=\\"drac-anchor drac-text drac-text-white drac-text-purple--hover\\"
-    >font-size: 30</a
   >
 </div>
 ",
-  "react": "<div style={{ display: \\"flex\\", flexDirection: \\"column\\" }}>
-  <Anchor href=\\"#\\" size=\\"xs\\">
+  "react": "<Box style={{ display: \\"flex\\", flexDirection: \\"column\\" }}>
+  <Anchor href=\\"#\\" size=\\"xs\\" mb=\\"sm\\">
     xs
   </Anchor>
-  <Anchor href=\\"#\\" size=\\"sm\\">
+  <Anchor href=\\"#\\" size=\\"sm\\" mb=\\"sm\\">
     sm
   </Anchor>
-  <Anchor href=\\"#\\" size=\\"md\\">
+  <Anchor href=\\"#\\" size=\\"md\\" mb=\\"sm\\">
     md
   </Anchor>
-  <Anchor href=\\"#\\" size=\\"lg\\">
+  <Anchor href=\\"#\\" size=\\"lg\\" mb=\\"sm\\">
     lg
   </Anchor>
-  <Anchor href=\\"#\\" weight=\\"semibold\\">
+</Box>;
+",
+  "title": "Sizes",
+}
+`;
+
+exports[`Site: Anchor Weights 1`] = `
+Object {
+  "docs": "Anchors can be defined in different font weights.",
+  "html": "<div style=\\"display: flex; flex-direction: column\\" class=\\"drac-box\\">
+  <a
+    href=\\"#\\"
+    class=\\"drac-anchor drac-text drac-text-white drac-text-purple--hover drac-mb-sm\\"
+    >normal</a
+  ><a
+    href=\\"#\\"
+    class=\\"drac-anchor drac-text drac-text-semibold drac-text-white drac-text-purple--hover drac-mb-sm\\"
+    >semibold</a
+  ><a
+    href=\\"#\\"
+    class=\\"drac-anchor drac-text drac-text-bold drac-text-white drac-text-purple--hover drac-mb-sm\\"
+    >bold</a
+  >
+</div>
+",
+  "react": "<Box style={{ display: \\"flex\\", flexDirection: \\"column\\" }}>
+  <Anchor href=\\"#\\" weight=\\"normal\\" mb=\\"sm\\">
+    normal
+  </Anchor>
+  <Anchor href=\\"#\\" weight=\\"semibold\\" mb=\\"sm\\">
     semibold
   </Anchor>
-  <Anchor href=\\"#\\" style={{ fontSize: 30 }}>
-    font-size: 30
+  <Anchor href=\\"#\\" weight=\\"bold\\" mb=\\"sm\\">
+    bold
   </Anchor>
-</div>;
+</Box>;
 ",
-  "title": "Sizes & Weights",
+  "title": "Weights",
 }
 `;

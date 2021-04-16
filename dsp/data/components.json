@@ -30,18 +30,25 @@
           "screenshot": "./dsp/assets/Anchor.png"
         },
         {
-          "title": "Sizes & Weights",
-          "html": "<div style=\"display: flex; flex-direction: column\">\n  <a\n    href=\"#\"\n    class=\"drac-anchor drac-text drac-text-xs drac-text-white drac-text-purple--hover\"\n    >xs</a\n  ><a\n    href=\"#\"\n    class=\"drac-anchor drac-text drac-text-sm drac-text-white drac-text-purple--hover\"\n    >sm</a\n  ><a\n    href=\"#\"\n    class=\"drac-anchor drac-text drac-text-white drac-text-purple--hover\"\n    >md</a\n  ><a\n    href=\"#\"\n    class=\"drac-anchor drac-text drac-text-lg drac-text-white drac-text-purple--hover\"\n    >lg</a\n  ><a\n    href=\"#\"\n    class=\"drac-anchor drac-text drac-text-semibold drac-text-white drac-text-purple--hover\"\n    >semibold</a\n  ><a\n    href=\"#\"\n    style=\"font-size: 30px\"\n    class=\"drac-anchor drac-text drac-text-white drac-text-purple--hover\"\n    >font-size: 30</a\n  >\n</div>\n",
-          "react": "<div style={{ display: \"flex\", flexDirection: \"column\" }}>\n  <Anchor href=\"#\" size=\"xs\">\n    xs\n  </Anchor>\n  <Anchor href=\"#\" size=\"sm\">\n    sm\n  </Anchor>\n  <Anchor href=\"#\" size=\"md\">\n    md\n  </Anchor>\n  <Anchor href=\"#\" size=\"lg\">\n    lg\n  </Anchor>\n  <Anchor href=\"#\" weight=\"semibold\">\n    semibold\n  </Anchor>\n  <Anchor href=\"#\" style={{ fontSize: 30 }}>\n    font-size: 30\n  </Anchor>\n</div>;\n",
-          "docs": "Anchor sizes can be customized with pre defined sizes or using regular HTML styles or CSS classes.",
-          "screenshot": "./dsp/assets/AnchorSizes & Weights.png"
-        },
-        {
           "title": "Colors",
-          "html": "<div style=\"display: flex; flex-direction: column\">\n  <a\n    href=\"#\"\n    class=\"drac-anchor drac-text drac-text-pink drac-text-purple--hover drac-m-sm\"\n    >pink / purple</a\n  ><a\n    href=\"#\"\n    class=\"drac-anchor drac-text drac-text-cyan-green drac-text-yellow-pink--hover drac-m-sm\"\n    >cyanGreen / yellowPink</a\n  >\n</div>\n",
-          "react": "<div style={{ display: \"flex\", flexDirection: \"column\" }}>\n  <Anchor href=\"#\" color=\"pink\" hoverColor=\"purple\" m=\"sm\">\n    pink / purple\n  </Anchor>\n  <Anchor href=\"#\" color=\"cyanGreen\" hoverColor=\"yellowPink\" m=\"sm\">\n    cyanGreen / yellowPink\n  </Anchor>\n</div>;\n",
+          "html": "<div style=\"display: flex; flex-direction: column\">\n  <a\n    href=\"#\"\n    class=\"drac-anchor drac-text drac-text-purple drac-text-pink--hover drac-mb-sm\"\n    >purple / pink</a\n  ><a\n    href=\"#\"\n    class=\"drac-anchor drac-text drac-text-cyan-green drac-text-yellow-pink--hover drac-mb-sm\"\n    >cyanGreen / yellowPink</a\n  >\n</div>\n",
+          "react": "<div style={{ display: \"flex\", flexDirection: \"column\" }}>\n  <Anchor href=\"#\" color=\"purple\" hoverColor=\"pink\" mb=\"sm\">\n    purple / pink\n  </Anchor>\n  <Anchor href=\"#\" color=\"cyanGreen\" hoverColor=\"yellowPink\" mb=\"sm\">\n    cyanGreen / yellowPink\n  </Anchor>\n</div>;\n",
           "docs": "Anchors can be customized to use any of the Dracula UI theme colors, including all solid, and gradients.",
           "screenshot": "./dsp/assets/AnchorColors.png"
+        },
+        {
+          "title": "Weights",
+          "html": "<div style=\"display: flex; flex-direction: column\" class=\"drac-box\">\n  <a\n    href=\"#\"\n    class=\"drac-anchor drac-text drac-text-white drac-text-purple--hover drac-mb-sm\"\n    >normal</a\n  ><a\n    href=\"#\"\n    class=\"drac-anchor drac-text drac-text-semibold drac-text-white drac-text-purple--hover drac-mb-sm\"\n    >semibold</a\n  ><a\n    href=\"#\"\n    class=\"drac-anchor drac-text drac-text-bold drac-text-white drac-text-purple--hover drac-mb-sm\"\n    >bold</a\n  >\n</div>\n",
+          "react": "<Box style={{ display: \"flex\", flexDirection: \"column\" }}>\n  <Anchor href=\"#\" weight=\"normal\" mb=\"sm\">\n    normal\n  </Anchor>\n  <Anchor href=\"#\" weight=\"semibold\" mb=\"sm\">\n    semibold\n  </Anchor>\n  <Anchor href=\"#\" weight=\"bold\" mb=\"sm\">\n    bold\n  </Anchor>\n</Box>;\n",
+          "docs": "Anchors can be defined in different font weights.",
+          "screenshot": "./dsp/assets/AnchorWeights.png"
+        },
+        {
+          "title": "Sizes",
+          "html": "<div style=\"display: flex; flex-direction: column\" class=\"drac-box\">\n  <a\n    href=\"#\"\n    class=\"drac-anchor drac-text drac-text-xs drac-text-white drac-text-purple--hover drac-mb-sm\"\n    >xs</a\n  ><a\n    href=\"#\"\n    class=\"drac-anchor drac-text drac-text-sm drac-text-white drac-text-purple--hover drac-mb-sm\"\n    >sm</a\n  ><a\n    href=\"#\"\n    class=\"drac-anchor drac-text drac-text-white drac-text-purple--hover drac-mb-sm\"\n    >md</a\n  ><a\n    href=\"#\"\n    class=\"drac-anchor drac-text drac-text-lg drac-text-white drac-text-purple--hover drac-mb-sm\"\n    >lg</a\n  >\n</div>\n",
+          "react": "<Box style={{ display: \"flex\", flexDirection: \"column\" }}>\n  <Anchor href=\"#\" size=\"xs\" mb=\"sm\">\n    xs\n  </Anchor>\n  <Anchor href=\"#\" size=\"sm\" mb=\"sm\">\n    sm\n  </Anchor>\n  <Anchor href=\"#\" size=\"md\" mb=\"sm\">\n    md\n  </Anchor>\n  <Anchor href=\"#\" size=\"lg\" mb=\"sm\">\n    lg\n  </Anchor>\n</Box>;\n",
+          "docs": "Anchors can be customize to use several different sizes.",
+          "screenshot": "./dsp/assets/AnchorSizes.png"
         }
       ],
       "ext_com_draculaui_props": {
