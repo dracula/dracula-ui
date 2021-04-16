@@ -21,7 +21,7 @@ docs(Tabs, {
 
 function Usage() {
   return (
-    <Tabs color="white">
+    <Tabs>
       <li className="drac-tab drac-tab-active">
         <a className="drac-tab-link drac-text" href="#">
           Item One
