@@ -15,7 +15,7 @@ Object {
   </li>
 </ul>
 ",
-  "react": "<Tabs color=\\"white\\">
+  "react": "<Tabs>
   <li className=\\"drac-tab drac-tab-active\\">
     <a className=\\"drac-tab-link drac-text\\" href=\\"#\\">
       Item One

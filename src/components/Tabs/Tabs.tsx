@@ -28,7 +28,7 @@ export interface TabsProps
     PaddingMixin,
     MarginMixin {
   /** The Dracula UI color for the Tabs. */
-  color: keyof typeof tabsColors
+  color?: keyof typeof tabsColors
 }
 
 /**
@@ -42,7 +42,7 @@ export const Tabs: React.FC<TabsProps> = (props: TabsProps) => {
     className: cx(
       'drac-tabs',
       props.className,
-      color && tabsColors[color],
+      tabsColors[color ?? 'white'],
       ...paddingMixin(props),
       ...marginMixin(props)
     )

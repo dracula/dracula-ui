@@ -9912,7 +9912,7 @@
       "snippets": {
         "trigger": "tabs",
         "languages": {
-          "javascriptreact": "<Tabs color=\"white\">\n  <li className=\"drac-tab drac-tab-active\">\n    <a className=\"drac-tab-link drac-text\" href=\"#\">\n      Item One\n    </a>\n  </li>\n  <li className=\"drac-tab\">\n    <a className=\"drac-tab-link drac-text\" href=\"#\">\n      Item Two\n    </a>\n  </li>\n  <li className=\"drac-tab\">\n    <a className=\"drac-tab-link drac-text\" href=\"#\">\n      Item Three\n    </a>\n  </li>\n</Tabs>;\n",
+          "javascriptreact": "<Tabs>\n  <li className=\"drac-tab drac-tab-active\">\n    <a className=\"drac-tab-link drac-text\" href=\"#\">\n      Item One\n    </a>\n  </li>\n  <li className=\"drac-tab\">\n    <a className=\"drac-tab-link drac-text\" href=\"#\">\n      Item Two\n    </a>\n  </li>\n  <li className=\"drac-tab\">\n    <a className=\"drac-tab-link drac-text\" href=\"#\">\n      Item Three\n    </a>\n  </li>\n</Tabs>;\n",
           "html": "<ul class=\"drac-tabs drac-tabs-white\">\n  <li class=\"drac-tab drac-tab-active\">\n    <a class=\"drac-tab-link drac-text\" href=\"#\">Item One</a>\n  </li>\n  <li class=\"drac-tab\">\n    <a class=\"drac-tab-link drac-text\" href=\"#\">Item Two</a>\n  </li>\n  <li class=\"drac-tab\">\n    <a class=\"drac-tab-link drac-text\" href=\"#\">Item Three</a>\n  </li>\n</ul>\n"
         }
       },
@@ -9920,7 +9920,7 @@
         {
           "title": "Usage",
           "html": "<ul class=\"drac-tabs drac-tabs-white\">\n  <li class=\"drac-tab drac-tab-active\">\n    <a class=\"drac-tab-link drac-text\" href=\"#\">Item One</a>\n  </li>\n  <li class=\"drac-tab\">\n    <a class=\"drac-tab-link drac-text\" href=\"#\">Item Two</a>\n  </li>\n  <li class=\"drac-tab\">\n    <a class=\"drac-tab-link drac-text\" href=\"#\">Item Three</a>\n  </li>\n</ul>\n",
-          "react": "<Tabs color=\"white\">\n  <li className=\"drac-tab drac-tab-active\">\n    <a className=\"drac-tab-link drac-text\" href=\"#\">\n      Item One\n    </a>\n  </li>\n  <li className=\"drac-tab\">\n    <a className=\"drac-tab-link drac-text\" href=\"#\">\n      Item Two\n    </a>\n  </li>\n  <li className=\"drac-tab\">\n    <a className=\"drac-tab-link drac-text\" href=\"#\">\n      Item Three\n    </a>\n  </li>\n</Tabs>;\n",
+          "react": "<Tabs>\n  <li className=\"drac-tab drac-tab-active\">\n    <a className=\"drac-tab-link drac-text\" href=\"#\">\n      Item One\n    </a>\n  </li>\n  <li className=\"drac-tab\">\n    <a className=\"drac-tab-link drac-text\" href=\"#\">\n      Item Two\n    </a>\n  </li>\n  <li className=\"drac-tab\">\n    <a className=\"drac-tab-link drac-text\" href=\"#\">\n      Item Three\n    </a>\n  </li>\n</Tabs>;\n",
           "docs": "Display different content based on the Tabs behavior.",
           "screenshot": "./dsp/assets/Tabs.png"
         },
@@ -9947,9 +9947,9 @@
               "name": "TabsProps"
             }
           ],
-          "required": true,
+          "required": false,
           "type": {
-            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\""
+            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
           }
         },
         "p": {
@@ -10183,9 +10183,9 @@
                 "name": "TabsProps"
               }
             ],
-            "required": true,
+            "required": false,
             "type": {
-              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\""
+              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
             }
           },
           "p": {
