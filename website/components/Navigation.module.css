@@ -13,7 +13,7 @@
 }
 
 .navSectionList,
-.navSectionListActive {
+.navSectionListActive, .navSectionPatterns {
   border-radius: var(--rounded-md);
   cursor: pointer;
   display: block;
@@ -23,6 +23,11 @@
 
 .navSectionList {
   color: #8a8f98;
+}
+
+.navSectionPatterns, .navSectionPatterns:hover {
+  color: #8a8f989d;
+  cursor: default;
 }
 
 .navSectionListActive,
