@@ -1,26 +1,44 @@
 .tabs {
+  border-bottom: 1px solid var(--disabled);
+  display: inline-flex;
   list-style: none;
-  display: flex;
   padding: 0;
-  border-color: var(--accentColor);
 }
 
 .tab {
-  border-bottom-color: var(--disabled);
-  border-bottom-width: 0.2rem;
-  border-bottom-style: solid;
   padding: var(--spacing-sm) 0;
+  position: relative;
+  transition: all .2s ease-in-out;
+}
+
+.tab:after {
+  background: transparent;
+  bottom: -1px;
+  content: '';
+  height: 2px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: scaleX(0.75);
+  transition: all .2s ease-in-out;
+  width: 100%;
 }
 
 .tab-link {
-  color: var(--white);
-  text-decoration: none;
+  color: var(--disabled);
   padding: var(--spacing-sm);
+  text-decoration: none;
+  transition: color .2s ease-in-out;
+}
+
+.tab:hover .tab-link {
+  color: var(--white);
 }
 
 @each $color in black, white, cyan, green, orange, pink, purple, red, yellow {
-  .tabs-$(color) .tab-active {
-    border-color: var(--$(color));
+  .tabs-$(color) .tab-active:after {
+    background: var(--$(color));
+    transform: scaleX(1);
   }
 
   .tabs-$(color) .tab-active .tab-link {
