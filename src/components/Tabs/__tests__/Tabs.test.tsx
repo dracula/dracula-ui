@@ -2,7 +2,7 @@ import React from 'react'
 import { docs } from '@/documentation/site-docs'
 import { snapshot } from '@/documentation/render-component'
 import { Box } from '@/components/Box/Box'
-import { Tabs } from '@/components/Tabs/Tabs'
+import { Tabs, TabsProps, tabsColors } from '@/components/Tabs/Tabs'
 
 docs(Tabs, {
   basic() {
@@ -22,6 +22,30 @@ docs(Tabs, {
 function Usage() {
   return (
     <Tabs>
+      {TabsContent()}
+    </Tabs>
+  )
+}
+
+function Colors() {
+  return (
+    <Box>
+      {Object.keys(tabsColors).map((color) => {
+        return (
+          <Box key={color}>
+            <Tabs color={color as TabsProps['color']}>
+              {TabsContent()}
+            </Tabs>
+          </Box>
+        )
+      })}
+    </Box>
+  )
+}
+
+function TabsContent() {
+  return (
+    <>
       <li className="drac-tab drac-tab-active">
         <a className="drac-tab-link drac-text" href="#">
           Item One
@@ -37,51 +61,6 @@ function Usage() {
           Item Three
         </a>
       </li>
-    </Tabs>
-  )
-}
-
-function Colors() {
-  return (
-    <Box>
-      <Box>
-        <Tabs color="cyan">
-          <li className="drac-tab drac-tab-active">
-            <a className="drac-tab-link drac-text" href="#">
-              Item One
-            </a>
-          </li>
-          <li className="drac-tab">
-            <a className="drac-tab-link drac-text" href="#">
-              Item Two
-            </a>
-          </li>
-          <li className="drac-tab">
-            <a className="drac-tab-link drac-text" href="#">
-              Item Three
-            </a>
-          </li>
-        </Tabs>
-      </Box>
-      <Box>
-        <Tabs color="green">
-          <li className="drac-tab drac-tab-active">
-            <a className="drac-tab-link drac-text" href="#">
-              Item One
-            </a>
-          </li>
-          <li className="drac-tab">
-            <a className="drac-tab-link drac-text" href="#">
-              Item Two
-            </a>
-          </li>
-          <li className="drac-tab">
-            <a className="drac-tab-link drac-text" href="#">
-              Item Three
-            </a>
-          </li>
-        </Tabs>
-      </Box>
-    </Box>
+    </>
   )
 }
