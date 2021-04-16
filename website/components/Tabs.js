@@ -1,9 +1,9 @@
 import { Component } from "react"
 import styles from "./Tabs.module.css"
 import CodeHighlight from "./CodeHighlight"
-import { Box } from "@dracula/dracula-ui"
+import { Box, Tabs } from "@dracula/dracula-ui"
 
-class Tabs extends Component {
+class DocsTabs extends Component {
   constructor(props) {
     super(props)
 
@@ -76,7 +76,9 @@ class Tabs extends Component {
   render() {
     return (
       <div>
-        <ul className="drac-tabs drac-tabs-purple">{this.renderLabels()}</ul>
+        <Tabs color="cyan">
+          {this.renderLabels()}
+        </Tabs>
         <Box className={styles.codeContainer}>
           {this.renderPanels()}
         </Box>
@@ -85,4 +87,4 @@ class Tabs extends Component {
   }
 }
 
-export default Tabs
+export default DocsTabs
