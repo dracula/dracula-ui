@@ -1,5 +1,5 @@
 import cx from 'classnames/dedupe'
-import React, { HTMLAttributes } from 'react'
+import React, { InputHTMLAttributes } from 'react'
 import { ColorMap } from '../../base/colors'
 import {
   cleanProps,
@@ -33,7 +33,7 @@ export const inputColors: Partial<ColorMap> = {
 
 /** Input Props */
 export interface InputProps
-  extends HTMLAttributes<HTMLInputElement>,
+  extends Omit<InputHTMLAttributes<HTMLInputElement>, 'size' | 'type'>,
     PaddingMixin,
     MarginMixin {
   /**
@@ -44,7 +44,7 @@ export interface InputProps
   /**
    * Controls the size of the input based on pre-configured Dracula UI sizes.
    */
-  size?: keyof typeof inputSizes
+  size?: keyof typeof inputSizes | number
 
   /**
    * Controls the variation the input.
@@ -52,6 +52,33 @@ export interface InputProps
    * `outline` -> Keeps the accent color, but removes the background.
    */
   variant?: keyof typeof inputVariants
+
+  /**
+   * Controls the type of the input.
+   */
+  type?:
+    | 'button'
+    | 'checkbox'
+    | 'color'
+    | 'date'
+    | 'datetime-local'
+    | 'email'
+    | 'file'
+    | 'hidden'
+    | 'image'
+    | 'month'
+    | 'number'
+    | 'password'
+    | 'radio'
+    | 'range'
+    | 'reset'
+    | 'search'
+    | 'submit'
+    | 'tel'
+    | 'text'
+    | 'time'
+    | 'url'
+    | 'week'
 }
 
 /**
@@ -64,17 +91,21 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
   (props, ref) => {
     const { color, size, variant, ...htmlProps } = props
 
-    const finalProps = {
+    const finalProps: Record<string, any> = {
       ...htmlProps,
       className: cx(
         `drac-input`,
         props.className,
         variant && inputVariants[variant],
-        size && inputSizes[size],
+        size && typeof size === 'string' && inputSizes[size],
         color && inputColors[color],
         ...paddingMixin(props),
         ...marginMixin(props)
       )
+    }
+
+    if (size && typeof size === 'number') {
+      finalProps[size] = size
     }
 
     return <input ref={ref} {...cleanProps(finalProps)} />
