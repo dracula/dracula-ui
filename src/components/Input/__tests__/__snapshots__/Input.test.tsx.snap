@@ -40,19 +40,69 @@ exports[`Site: Input Sizes 1`] = `
 Object {
   "docs": "Inputs can be customize to use several different sizes.",
   "html": "<div class=\\"drac-box\\">
-  <input placeholder=\\"small\\" class=\\"drac-input drac-input-sm drac-m-xs\\" /><input
+  <input
+    placeholder=\\"small\\"
+    class=\\"drac-input drac-input-sm drac-input-white drac-text-white drac-m-xs\\"
+  /><input
     placeholder=\\"medium\\"
-    class=\\"drac-input drac-m-xs\\"
-  /><input placeholder=\\"large\\" class=\\"drac-input drac-input-lg drac-m-xs\\" />
+    class=\\"drac-input drac-input-white drac-text-white drac-m-xs\\"
+  /><input
+    placeholder=\\"large\\"
+    class=\\"drac-input drac-input-lg drac-input-white drac-text-white drac-m-xs\\"
+  />
 </div>
 ",
   "react": "<Box>
-  <Input size=\\"small\\" placeholder=\\"small\\" m=\\"xs\\" />
-  <Input size=\\"medium\\" placeholder=\\"medium\\" m=\\"xs\\" />
-  <Input size=\\"large\\" placeholder=\\"large\\" m=\\"xs\\" />
+  <Input color=\\"white\\" size=\\"small\\" placeholder=\\"small\\" m=\\"xs\\" />
+  <Input color=\\"white\\" size=\\"medium\\" placeholder=\\"medium\\" m=\\"xs\\" />
+  <Input color=\\"white\\" size=\\"large\\" placeholder=\\"large\\" m=\\"xs\\" />
 </Box>;
 ",
   "title": "Sizes",
+}
+`;
+
+exports[`Site: Input Type 1`] = `
+Object {
+  "docs": "Use the \`type\` property to define what kind of HTML input you would like to use",
+  "html": "<div class=\\"drac-box\\">
+  <input
+    placeholder=\\"Password\\"
+    type=\\"password\\"
+    class=\\"drac-input drac-input-white drac-text-white drac-my-sm\\"
+  /><input
+    placeholder=\\"Date\\"
+    type=\\"date\\"
+    class=\\"drac-input drac-input-white drac-text-white drac-my-sm\\"
+  /><input
+    placeholder=\\"Email\\"
+    type=\\"email\\"
+    class=\\"drac-input drac-input-white drac-text-white drac-my-sm\\"
+  /><input
+    placeholder=\\"Number\\"
+    type=\\"number\\"
+    class=\\"drac-input drac-input-white drac-text-white drac-my-sm\\"
+  /><input
+    placeholder=\\"Range\\"
+    type=\\"range\\"
+    class=\\"drac-input drac-input-white drac-text-white drac-my-sm\\"
+  /><input
+    placeholder=\\"Telephone\\"
+    type=\\"tel\\"
+    class=\\"drac-input drac-input-white drac-text-white drac-my-sm\\"
+  />
+</div>
+",
+  "react": "<Box>
+  <Input my=\\"sm\\" color=\\"white\\" placeholder=\\"Password\\" type=\\"password\\" />
+  <Input my=\\"sm\\" color=\\"white\\" placeholder=\\"Date\\" type=\\"date\\" />
+  <Input my=\\"sm\\" color=\\"white\\" placeholder=\\"Email\\" type=\\"email\\" />
+  <Input my=\\"sm\\" color=\\"white\\" placeholder=\\"Number\\" type=\\"number\\" />
+  <Input my=\\"sm\\" color=\\"white\\" placeholder=\\"Range\\" type=\\"range\\" />
+  <Input my=\\"sm\\" color=\\"white\\" placeholder=\\"Telephone\\" type=\\"tel\\" />
+</Box>;
+",
+  "title": "Type",
 }
 `;
 
@@ -60,15 +110,18 @@ exports[`Site: Input Variants 1`] = `
 Object {
   "docs": "Use the \`outline\` variant to represent subtler text Inputs",
   "html": "<div class=\\"drac-box\\">
-  <input placeholder=\\"normal\\" class=\\"drac-input drac-m-xs\\" /><input
+  <input
+    placeholder=\\"normal\\"
+    class=\\"drac-input drac-input-white drac-text-white drac-m-xs\\"
+  /><input
     placeholder=\\"outline\\"
-    class=\\"drac-input drac-input-outline drac-m-xs\\"
+    class=\\"drac-input drac-input-outline drac-input-white drac-text-white drac-m-xs\\"
   />
 </div>
 ",
   "react": "<Box>
-  <Input variant=\\"normal\\" placeholder=\\"normal\\" m=\\"xs\\" />
-  <Input variant=\\"outline\\" placeholder=\\"outline\\" m=\\"xs\\" />
+  <Input color=\\"white\\" variant=\\"normal\\" placeholder=\\"normal\\" m=\\"xs\\" />
+  <Input color=\\"white\\" variant=\\"outline\\" placeholder=\\"outline\\" m=\\"xs\\" />
 </Box>;
 ",
   "title": "Variants",

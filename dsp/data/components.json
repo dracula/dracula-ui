@@ -5715,17 +5715,24 @@
         },
         {
           "title": "Sizes",
-          "html": "<div class=\"drac-box\">\n  <input placeholder=\"small\" class=\"drac-input drac-input-sm drac-m-xs\" /><input\n    placeholder=\"medium\"\n    class=\"drac-input drac-m-xs\"\n  /><input placeholder=\"large\" class=\"drac-input drac-input-lg drac-m-xs\" />\n</div>\n",
-          "react": "<Box>\n  <Input size=\"small\" placeholder=\"small\" m=\"xs\" />\n  <Input size=\"medium\" placeholder=\"medium\" m=\"xs\" />\n  <Input size=\"large\" placeholder=\"large\" m=\"xs\" />\n</Box>;\n",
+          "html": "<div class=\"drac-box\">\n  <input\n    placeholder=\"small\"\n    class=\"drac-input drac-input-sm drac-input-white drac-text-white drac-m-xs\"\n  /><input\n    placeholder=\"medium\"\n    class=\"drac-input drac-input-white drac-text-white drac-m-xs\"\n  /><input\n    placeholder=\"large\"\n    class=\"drac-input drac-input-lg drac-input-white drac-text-white drac-m-xs\"\n  />\n</div>\n",
+          "react": "<Box>\n  <Input color=\"white\" size=\"small\" placeholder=\"small\" m=\"xs\" />\n  <Input color=\"white\" size=\"medium\" placeholder=\"medium\" m=\"xs\" />\n  <Input color=\"white\" size=\"large\" placeholder=\"large\" m=\"xs\" />\n</Box>;\n",
           "docs": "Inputs can be customize to use several different sizes.",
           "screenshot": "./dsp/assets/InputSizes.png"
         },
         {
           "title": "Variants",
-          "html": "<div class=\"drac-box\">\n  <input placeholder=\"normal\" class=\"drac-input drac-m-xs\" /><input\n    placeholder=\"outline\"\n    class=\"drac-input drac-input-outline drac-m-xs\"\n  />\n</div>\n",
-          "react": "<Box>\n  <Input variant=\"normal\" placeholder=\"normal\" m=\"xs\" />\n  <Input variant=\"outline\" placeholder=\"outline\" m=\"xs\" />\n</Box>;\n",
+          "html": "<div class=\"drac-box\">\n  <input\n    placeholder=\"normal\"\n    class=\"drac-input drac-input-white drac-text-white drac-m-xs\"\n  /><input\n    placeholder=\"outline\"\n    class=\"drac-input drac-input-outline drac-input-white drac-text-white drac-m-xs\"\n  />\n</div>\n",
+          "react": "<Box>\n  <Input color=\"white\" variant=\"normal\" placeholder=\"normal\" m=\"xs\" />\n  <Input color=\"white\" variant=\"outline\" placeholder=\"outline\" m=\"xs\" />\n</Box>;\n",
           "docs": "Use the `outline` variant to represent subtler text Inputs",
           "screenshot": "./dsp/assets/InputVariants.png"
+        },
+        {
+          "title": "Type",
+          "html": "<div class=\"drac-box\">\n  <input\n    placeholder=\"Password\"\n    type=\"password\"\n    class=\"drac-input drac-input-white drac-text-white drac-my-sm\"\n  /><input\n    placeholder=\"Date\"\n    type=\"date\"\n    class=\"drac-input drac-input-white drac-text-white drac-my-sm\"\n  /><input\n    placeholder=\"Email\"\n    type=\"email\"\n    class=\"drac-input drac-input-white drac-text-white drac-my-sm\"\n  /><input\n    placeholder=\"Number\"\n    type=\"number\"\n    class=\"drac-input drac-input-white drac-text-white drac-my-sm\"\n  /><input\n    placeholder=\"Range\"\n    type=\"range\"\n    class=\"drac-input drac-input-white drac-text-white drac-my-sm\"\n  /><input\n    placeholder=\"Telephone\"\n    type=\"tel\"\n    class=\"drac-input drac-input-white drac-text-white drac-my-sm\"\n  />\n</div>\n",
+          "react": "<Box>\n  <Input my=\"sm\" color=\"white\" placeholder=\"Password\" type=\"password\" />\n  <Input my=\"sm\" color=\"white\" placeholder=\"Date\" type=\"date\" />\n  <Input my=\"sm\" color=\"white\" placeholder=\"Email\" type=\"email\" />\n  <Input my=\"sm\" color=\"white\" placeholder=\"Number\" type=\"number\" />\n  <Input my=\"sm\" color=\"white\" placeholder=\"Range\" type=\"range\" />\n  <Input my=\"sm\" color=\"white\" placeholder=\"Telephone\" type=\"tel\" />\n</Box>;\n",
+          "docs": "Use the `type` property to define what kind of HTML input you would like to use",
+          "screenshot": "./dsp/assets/InputType.png"
         }
       ],
       "ext_com_draculaui_props": {
@@ -5764,7 +5771,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"large\" | \"medium\" | \"small\" | undefined"
+            "name": "number | \"large\" | \"medium\" | \"small\" | undefined"
           }
         },
         "variant": {
@@ -5784,6 +5791,25 @@
           "required": false,
           "type": {
             "name": "\"normal\" | \"outline\" | undefined"
+          }
+        },
+        "type": {
+          "defaultValue": null,
+          "description": "Controls the type of the input.",
+          "name": "type",
+          "parent": {
+            "fileName": "src/components/Input/Input.tsx",
+            "name": "InputProps"
+          },
+          "declarations": [
+            {
+              "fileName": "src/components/Input/Input.tsx",
+              "name": "InputProps"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"number\" | \"hidden\" | \"color\" | \"button\" | \"checkbox\" | \"date\" | \"datetime-local\" | \"email\" | \"file\" | \"image\" | \"month\" | \"password\" | \"radio\" | \"range\" | \"reset\" | \"search\" | ... 6 more ... | undefined"
           }
         },
         "p": {
@@ -6038,7 +6064,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"large\" | \"medium\" | \"small\" | undefined"
+              "name": "number | \"large\" | \"medium\" | \"small\" | undefined"
             }
           },
           "variant": {
@@ -6058,6 +6084,25 @@
             "required": false,
             "type": {
               "name": "\"normal\" | \"outline\" | undefined"
+            }
+          },
+          "type": {
+            "defaultValue": null,
+            "description": "Controls the type of the input.",
+            "name": "type",
+            "parent": {
+              "fileName": "src/components/Input/Input.tsx",
+              "name": "InputProps"
+            },
+            "declarations": [
+              {
+                "fileName": "src/components/Input/Input.tsx",
+                "name": "InputProps"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"number\" | \"hidden\" | \"color\" | \"button\" | \"checkbox\" | \"date\" | \"datetime-local\" | \"email\" | \"file\" | \"image\" | \"month\" | \"password\" | \"radio\" | \"range\" | \"reset\" | \"search\" | ... 6 more ... | undefined"
             }
           },
           "p": {

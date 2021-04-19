@@ -6,11 +6,7 @@ import { Input } from '@/components/Input/Input'
 
 docs(Input, {
   basic() {
-    return snapshot(
-      'Usage',
-      Usage,
-      'Styles or abstracts HTML input elements.'
-    )
+    return snapshot('Usage', Usage, 'Styles or abstracts HTML input elements.')
   },
   variations() {
     return [
@@ -28,14 +24,30 @@ docs(Input, {
         'Variants',
         Variants,
         'Use the `outline` variant to represent subtler text Inputs'
+      ),
+      snapshot(
+        'Type',
+        Types,
+        'Use the `type` property to define what kind of HTML input you would like to use'
       )
     ]
   }
 })
 
 function Usage() {
+  return <Input placeholder="Input" color="white" />
+}
+
+function Types() {
   return (
-    <Input placeholder="Input" color="white" />
+    <Box>
+      <Input my="sm" color="white" placeholder="Password" type="password" />
+      <Input my="sm" color="white" placeholder="Date" type="date" />
+      <Input my="sm" color="white" placeholder="Email" type="email" />
+      <Input my="sm" color="white" placeholder="Number" type="number" />
+      <Input my="sm" color="white" placeholder="Range" type="range" />
+      <Input my="sm" color="white" placeholder="Telephone" type="tel" />
+    </Box>
   )
 }
 
@@ -51,9 +63,9 @@ function Colors() {
 function Sizes() {
   return (
     <Box>
-      <Input size="small" placeholder="small" m="xs" />
-      <Input size="medium" placeholder="medium" m="xs" />
-      <Input size="large" placeholder="large" m="xs" />
+      <Input color="white" size="small" placeholder="small" m="xs" />
+      <Input color="white" size="medium" placeholder="medium" m="xs" />
+      <Input color="white" size="large" placeholder="large" m="xs" />
     </Box>
   )
 }
@@ -61,8 +73,8 @@ function Sizes() {
 function Variants() {
   return (
     <Box>
-      <Input variant="normal" placeholder="normal" m="xs" />
-      <Input variant="outline" placeholder="outline" m="xs" />
+      <Input color="white" variant="normal" placeholder="normal" m="xs" />
+      <Input color="white" variant="outline" placeholder="outline" m="xs" />
     </Box>
   )
 }
