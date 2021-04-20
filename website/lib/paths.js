@@ -1,7 +1,8 @@
-import dspComponents from "@dracula/dracula-ui/dsp/data/components.json"
+import dspComponents from '@dracula/dracula-ui/dsp/data/components.json'
 
 const paths = dspComponents.entities
-  .filter((entity) => !["Spacing", "Colors"].includes(entity.name))
+  .filter((entity) => !['Spacing', 'Colors'].includes(entity.name))
+  .filter((en) => !en.name.startsWith('.'))
   .map((entity) => {
     return {
       params: {
