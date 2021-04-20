@@ -1,10 +1,10 @@
-import React from "react"
-import { Anchor, Box, Heading, Paragraph, Text } from "@dracula/dracula-ui"
-import PropsTable from "../components/PropsTable"
-import Tabs from "../components/Tabs"
-import paths from "../lib/paths"
-import styles from "./index.module.css"
-import Docs from "../layouts/Docs"
+import React from 'react'
+import { Anchor, Box, Heading, Paragraph } from '@dracula/dracula-ui'
+import { DocsOverview } from '../components/DocsOverview'
+import PropsTable from '../components/PropsTable'
+import Tabs from '../components/Tabs'
+import Docs from '../layouts/Docs'
+import paths from '../lib/paths'
 
 export async function getStaticPaths() {
   return { paths, fallback: false }
@@ -19,48 +19,13 @@ function Properties({ docGenProps }) {
   return (
     <>
       <Anchor id="properties" href="#properties" color="black">
-        <Heading as="h2" size="xl">Properties</Heading>
+        <Heading as="h2" size="xl">
+          Properties
+        </Heading>
       </Anchor>
 
       <PropsTable props={docGenProps} />
     </>
-  )
-}
-
-function DocsOverview({ sections }) {
-  return (
-    <Box as="ul" className={styles.toc}>
-      <Text weight="semibold" style={{ textTransform: "uppercase" }}>
-        On this page
-      </Text>
-      <Box color="pinkPurple" style={{ height: 2 }} my="xs" />
-
-      {sections.map((section) => {
-        return (
-          <Box key={section.title} py="xxs">
-            <Anchor
-              size="sm"
-              color="blackSecondary"
-              href={`#${section.title.toLowerCase()}`}
-              hoverColor="pinkPurple"
-            >
-              {section.title}
-            </Anchor>
-          </Box>
-        )
-      })}
-
-      <Box key="properties">
-        <Anchor
-          size="sm"
-          href="#properties"
-          hoverColor="pinkPurple"
-          color="blackSecondary"
-        >
-          Properties
-        </Anchor>
-      </Box>
-    </Box>
   )
 }
 
@@ -90,7 +55,7 @@ function Guide({ query }) {
 
   return (
     <Box>
-      <DocsOverview sections={sections} />
+      <DocsOverview sections={sections} showProperties />
 
       <Box>
         {sections.map((section) => {

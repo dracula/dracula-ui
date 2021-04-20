@@ -136,14 +136,18 @@ export const spacingUtilities = {
       ...Object.values(paddingX),
       ...Object.values(paddingY),
       ...Object.values(paddingTop),
-      ...Object.values(paddingBottom)
+      ...Object.values(paddingBottom),
+      ...Object.values(paddingLeft),
+      ...Object.values(paddingRight)
     ],
     margin: [
       ...Object.values(margin),
       ...Object.values(mX),
       ...Object.values(mY),
       ...Object.values(mTop),
-      ...Object.values(mBottom)
+      ...Object.values(mBottom),
+      ...Object.values(mRight),
+      ...Object.values(mLeft)
     ]
   },
   react: {

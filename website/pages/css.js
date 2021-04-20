@@ -1,12 +1,31 @@
-import { Box, Heading, Paragraph, Table, Text } from '@dracula/dracula-ui'
+import {
+  Anchor,
+  Box,
+  Heading,
+  Paragraph,
+  spacingUtilities,
+  Table,
+  Text
+} from '@dracula/dracula-ui'
 import classes from '@dracula/dracula-ui/dsp/data/css.json'
 import { groupBy } from 'lodash'
 import React from 'react'
+import { DocsOverview } from '../components/DocsOverview'
 import Docs from '../layouts/Docs'
 import styles from './index.module.css'
 
 const classGroup = groupBy(classes.entities, (entity) => {
+  const noDot = entity.name.replace('.', '')
   const [prefix, second, ..._rest] = entity.name.split('-')
+
+  if (spacingUtilities.classes.margin.includes(noDot)) {
+    return `${prefix}-m`
+  }
+
+  if (spacingUtilities.classes.padding.includes(noDot)) {
+    return `${prefix}-p`
+  }
+
   return `${prefix}-${second}`
 })
 
@@ -25,6 +44,12 @@ class CSS extends React.Component {
   render() {
     return (
       <Box>
+        <DocsOverview
+          sections={Object.keys(classGroup).map((group) => ({
+            title: group
+          }))}
+        />
+
         <Box my="lg">
           <Heading as="h2" size="xl" color="cyanGreen">
             CSS Classes Index
@@ -50,9 +75,14 @@ class CSS extends React.Component {
           const [_prefix, component] = group.split('-')
 
           return (
-            <Box key={group} my="lg">
+            <Box key={group} my="md">
               <Heading size="xl" pb="sm" color="white">
-                {component}
+                <Anchor
+                  id={group.toLowerCase()}
+                  href={`#${group.toLowerCase()}`}
+                >
+                  {component}
+                </Anchor>
               </Heading>
 
               <Table variant="striped">
