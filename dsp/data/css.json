@@ -4974,18 +4974,18 @@
     {
       "class": "component",
       "type": "page",
-      "id": ".drac-text-black\\--hover",
-      "name": ".drac-text-black\\--hover",
+      "id": ".drac-text-black--hover",
+      "name": ".drac-text-black--hover",
       "last_updated_by": "System",
-      "description": "CSS class containing .drac-text-black\\--hover",
+      "description": "CSS class containing .drac-text-black--hover",
       "related_entity_ids": [],
       "tags": [
         "component"
       ],
       "snippets": {
-        "trigger": "css-text-black\\--hover",
+        "trigger": "css-text-black--hover",
         "languages": {
-          "css": "drac-text-black\\--hover"
+          "css": "drac-text-black--hover"
         }
       }
     },
@@ -5046,18 +5046,18 @@
     {
       "class": "component",
       "type": "page",
-      "id": ".drac-text-cyan-green\\--hover",
-      "name": ".drac-text-cyan-green\\--hover",
+      "id": ".drac-text-cyan-green--hover",
+      "name": ".drac-text-cyan-green--hover",
       "last_updated_by": "System",
-      "description": "CSS class containing .drac-text-cyan-green\\--hover",
+      "description": "CSS class containing .drac-text-cyan-green--hover",
       "related_entity_ids": [],
       "tags": [
         "component"
       ],
       "snippets": {
-        "trigger": "css-text-cyan-green\\--hover",
+        "trigger": "css-text-cyan-green--hover",
         "languages": {
-          "css": "drac-text-cyan-green\\--hover"
+          "css": "drac-text-cyan-green--hover"
         }
       }
     },
@@ -5100,18 +5100,18 @@
     {
       "class": "component",
       "type": "page",
-      "id": ".drac-text-cyan\\--hover",
-      "name": ".drac-text-cyan\\--hover",
+      "id": ".drac-text-cyan--hover",
+      "name": ".drac-text-cyan--hover",
       "last_updated_by": "System",
-      "description": "CSS class containing .drac-text-cyan\\--hover",
+      "description": "CSS class containing .drac-text-cyan--hover",
       "related_entity_ids": [],
       "tags": [
         "component"
       ],
       "snippets": {
-        "trigger": "css-text-cyan\\--hover",
+        "trigger": "css-text-cyan--hover",
         "languages": {
-          "css": "drac-text-cyan\\--hover"
+          "css": "drac-text-cyan--hover"
         }
       }
     },
@@ -5172,18 +5172,18 @@
     {
       "class": "component",
       "type": "page",
-      "id": ".drac-text-green\\--hover",
-      "name": ".drac-text-green\\--hover",
+      "id": ".drac-text-green--hover",
+      "name": ".drac-text-green--hover",
       "last_updated_by": "System",
-      "description": "CSS class containing .drac-text-green\\--hover",
+      "description": "CSS class containing .drac-text-green--hover",
       "related_entity_ids": [],
       "tags": [
         "component"
       ],
       "snippets": {
-        "trigger": "css-text-green\\--hover",
+        "trigger": "css-text-green--hover",
         "languages": {
-          "css": "drac-text-green\\--hover"
+          "css": "drac-text-green--hover"
         }
       }
     },
@@ -5262,18 +5262,18 @@
     {
       "class": "component",
       "type": "page",
-      "id": ".drac-text-orange\\--hover",
-      "name": ".drac-text-orange\\--hover",
+      "id": ".drac-text-orange--hover",
+      "name": ".drac-text-orange--hover",
       "last_updated_by": "System",
-      "description": "CSS class containing .drac-text-orange\\--hover",
+      "description": "CSS class containing .drac-text-orange--hover",
       "related_entity_ids": [],
       "tags": [
         "component"
       ],
       "snippets": {
-        "trigger": "css-text-orange\\--hover",
+        "trigger": "css-text-orange--hover",
         "languages": {
-          "css": "drac-text-orange\\--hover"
+          "css": "drac-text-orange--hover"
         }
       }
     },
@@ -5316,18 +5316,18 @@
     {
       "class": "component",
       "type": "page",
-      "id": ".drac-text-pink-purple\\--hover",
-      "name": ".drac-text-pink-purple\\--hover",
+      "id": ".drac-text-pink-purple--hover",
+      "name": ".drac-text-pink-purple--hover",
       "last_updated_by": "System",
-      "description": "CSS class containing .drac-text-pink-purple\\--hover",
+      "description": "CSS class containing .drac-text-pink-purple--hover",
       "related_entity_ids": [],
       "tags": [
         "component"
       ],
       "snippets": {
-        "trigger": "css-text-pink-purple\\--hover",
+        "trigger": "css-text-pink-purple--hover",
         "languages": {
-          "css": "drac-text-pink-purple\\--hover"
+          "css": "drac-text-pink-purple--hover"
         }
       }
     },
@@ -5370,18 +5370,18 @@
     {
       "class": "component",
       "type": "page",
-      "id": ".drac-text-pink\\--hover",
-      "name": ".drac-text-pink\\--hover",
+      "id": ".drac-text-pink--hover",
+      "name": ".drac-text-pink--hover",
       "last_updated_by": "System",
-      "description": "CSS class containing .drac-text-pink\\--hover",
+      "description": "CSS class containing .drac-text-pink--hover",
       "related_entity_ids": [],
       "tags": [
         "component"
       ],
       "snippets": {
-        "trigger": "css-text-pink\\--hover",
+        "trigger": "css-text-pink--hover",
         "languages": {
-          "css": "drac-text-pink\\--hover"
+          "css": "drac-text-pink--hover"
         }
       }
     },
@@ -5424,18 +5424,18 @@
     {
       "class": "component",
       "type": "page",
-      "id": ".drac-text-purple-cyan\\--hover",
-      "name": ".drac-text-purple-cyan\\--hover",
+      "id": ".drac-text-purple-cyan--hover",
+      "name": ".drac-text-purple-cyan--hover",
       "last_updated_by": "System",
-      "description": "CSS class containing .drac-text-purple-cyan\\--hover",
+      "description": "CSS class containing .drac-text-purple-cyan--hover",
       "related_entity_ids": [],
       "tags": [
         "component"
       ],
       "snippets": {
-        "trigger": "css-text-purple-cyan\\--hover",
+        "trigger": "css-text-purple-cyan--hover",
         "languages": {
-          "css": "drac-text-purple-cyan\\--hover"
+          "css": "drac-text-purple-cyan--hover"
         }
       }
     },
@@ -5478,18 +5478,18 @@
     {
       "class": "component",
       "type": "page",
-      "id": ".drac-text-purple\\--hover",
-      "name": ".drac-text-purple\\--hover",
+      "id": ".drac-text-purple--hover",
+      "name": ".drac-text-purple--hover",
       "last_updated_by": "System",
-      "description": "CSS class containing .drac-text-purple\\--hover",
+      "description": "CSS class containing .drac-text-purple--hover",
       "related_entity_ids": [],
       "tags": [
         "component"
       ],
       "snippets": {
-        "trigger": "css-text-purple\\--hover",
+        "trigger": "css-text-purple--hover",
         "languages": {
-          "css": "drac-text-purple\\--hover"
+          "css": "drac-text-purple--hover"
         }
       }
     },
@@ -5550,18 +5550,18 @@
     {
       "class": "component",
       "type": "page",
-      "id": ".drac-text-red\\--hover",
-      "name": ".drac-text-red\\--hover",
+      "id": ".drac-text-red--hover",
+      "name": ".drac-text-red--hover",
       "last_updated_by": "System",
-      "description": "CSS class containing .drac-text-red\\--hover",
+      "description": "CSS class containing .drac-text-red--hover",
       "related_entity_ids": [],
       "tags": [
         "component"
       ],
       "snippets": {
-        "trigger": "css-text-red\\--hover",
+        "trigger": "css-text-red--hover",
         "languages": {
-          "css": "drac-text-red\\--hover"
+          "css": "drac-text-red--hover"
         }
       }
     },
@@ -5658,18 +5658,18 @@
     {
       "class": "component",
       "type": "page",
-      "id": ".drac-text-white\\--hover",
-      "name": ".drac-text-white\\--hover",
+      "id": ".drac-text-white--hover",
+      "name": ".drac-text-white--hover",
       "last_updated_by": "System",
-      "description": "CSS class containing .drac-text-white\\--hover",
+      "description": "CSS class containing .drac-text-white--hover",
       "related_entity_ids": [],
       "tags": [
         "component"
       ],
       "snippets": {
-        "trigger": "css-text-white\\--hover",
+        "trigger": "css-text-white--hover",
         "languages": {
-          "css": "drac-text-white\\--hover"
+          "css": "drac-text-white--hover"
         }
       }
     },
@@ -5730,18 +5730,18 @@
     {
       "class": "component",
       "type": "page",
-      "id": ".drac-text-yellow-pink\\--hover",
-      "name": ".drac-text-yellow-pink\\--hover",
+      "id": ".drac-text-yellow-pink--hover",
+      "name": ".drac-text-yellow-pink--hover",
       "last_updated_by": "System",
-      "description": "CSS class containing .drac-text-yellow-pink\\--hover",
+      "description": "CSS class containing .drac-text-yellow-pink--hover",
       "related_entity_ids": [],
       "tags": [
         "component"
       ],
       "snippets": {
-        "trigger": "css-text-yellow-pink\\--hover",
+        "trigger": "css-text-yellow-pink--hover",
         "languages": {
-          "css": "drac-text-yellow-pink\\--hover"
+          "css": "drac-text-yellow-pink--hover"
         }
       }
     },
@@ -5784,18 +5784,18 @@
     {
       "class": "component",
       "type": "page",
-      "id": ".drac-text-yellow\\--hover",
-      "name": ".drac-text-yellow\\--hover",
+      "id": ".drac-text-yellow--hover",
+      "name": ".drac-text-yellow--hover",
       "last_updated_by": "System",
-      "description": "CSS class containing .drac-text-yellow\\--hover",
+      "description": "CSS class containing .drac-text-yellow--hover",
       "related_entity_ids": [],
       "tags": [
         "component"
       ],
       "snippets": {
-        "trigger": "css-text-yellow\\--hover",
+        "trigger": "css-text-yellow--hover",
         "languages": {
-          "css": "drac-text-yellow\\--hover"
+          "css": "drac-text-yellow--hover"
         }
       }
     }

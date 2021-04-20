@@ -6,7 +6,9 @@ async function run() {
     ['dist/styles/**/*.css'], // source
     { include: ['classes'] }, // options
     ({ classes }) => {
-      const components = classes.map((className) => {
+      const cleanClasses = classes.map((cl) => cl.replace('\\', ''))
+
+      const components = cleanClasses.map((className) => {
         return {
           class: 'component',
           type: 'page',
