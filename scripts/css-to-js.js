@@ -1,36 +1,45 @@
-const css = require('css')
-const fs = require('fs-extra')
-const uniq = require('lodash/uniq')
+const listSelectors = require('list-selectors')
+const fs = require('fs')
 
 async function run() {
-  const contents = await fs.readFile('./dist/styles/dracula-ui.css')
-
-  const obj = css.parse(contents.toString(), {
-    source: './dist/styles/dracula-ui.css.map'
-  })
-
-  const selectors = obj.stylesheet.rules
-    .filter((rule) => rule.type === 'rule')
-    .map((r) => {
-      const uniqSelectors = uniq(r.selectors.filter((s) => s.startsWith('.')))
-
-      const comments = (r.declarations ?? []).filter((dec) => {
-        return dec.type === 'comment'
+  listSelectors(
+    ['dist/styles/**/*.css'], // source
+    { include: ['classes'] }, // options
+    ({ classes }) => {
+      const components = classes.map((className) => {
+        return {
+          class: 'component',
+          type: 'page',
+          id: className,
+          name: className,
+          last_updated_by: 'System',
+          description: `CSS class containing ${className}`,
+          related_entity_ids: [],
+          tags: ['component'],
+          snippets: {
+            trigger: className.replace('.drac-', 'css-'),
+            languages: {
+              css: className.replace('.', '')
+            }
+          }
+        }
       })
 
-      if (comments.length === 0 || uniqSelectors.length === 0) {
-        return
-      }
-
-      return {
-        selectors: uniqSelectors,
-        comments
-      }
-    })
-    .filter(Boolean)
-    .sort()
-
-  console.log(JSON.stringify(selectors, null, ' '))
+      fs.writeFileSync(
+        './dsp/data/css.json',
+        JSON.stringify(
+          {
+            dsp_spec_version: '0.0.1',
+            last_updated_by: '',
+            last_updated: '2020-09-30T21:16:45.280Z',
+            entities: components
+          },
+          null,
+          '  '
+        )
+      )
+    }
+  )
 }
 
-run().catch(console.error)
+run()

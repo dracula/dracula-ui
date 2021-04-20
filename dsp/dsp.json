@@ -14,6 +14,11 @@
         "syntax": "text/html"
       },
       {
+        "label": "CSS",
+        "snippet_id": "css",
+        "syntax": "text/css"
+      },
+      {
         "label": "React",
         "snippet_id": "javascriptreact",
         "syntax": "text/typescript-jsx"
@@ -29,6 +34,9 @@
     },
     {
       "src": "data/components.json"
+    },
+    {
+      "src": "data/css.json"
     },
     {
       "src": "data/docs.json"
