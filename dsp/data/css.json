@@ -1,0 +1,5803 @@
+{
+  "dsp_spec_version": "0.0.1",
+  "last_updated_by": "",
+  "last_updated": "2020-09-30T21:16:45.280Z",
+  "entities": [
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-anchor",
+      "name": ".drac-anchor",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-anchor",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-anchor",
+        "languages": {
+          "css": "drac-anchor"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-avatar",
+      "name": ".drac-avatar",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-avatar",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-avatar",
+        "languages": {
+          "css": "drac-avatar"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-avatar-lg-stroke",
+      "name": ".drac-avatar-lg-stroke",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-avatar-lg-stroke",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-avatar-lg-stroke",
+        "languages": {
+          "css": "drac-avatar-lg-stroke"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-avatar-no-border",
+      "name": ".drac-avatar-no-border",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-avatar-no-border",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-avatar-no-border",
+        "languages": {
+          "css": "drac-avatar-no-border"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-avatar-subtle",
+      "name": ".drac-avatar-subtle",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-avatar-subtle",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-avatar-subtle",
+        "languages": {
+          "css": "drac-avatar-subtle"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-badge",
+      "name": ".drac-badge",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-badge",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-badge",
+        "languages": {
+          "css": "drac-badge"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-badge-outline",
+      "name": ".drac-badge-outline",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-badge-outline",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-badge-outline",
+        "languages": {
+          "css": "drac-badge-outline"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-badge-subtle",
+      "name": ".drac-badge-subtle",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-badge-subtle",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-badge-subtle",
+        "languages": {
+          "css": "drac-badge-subtle"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-animated",
+      "name": ".drac-bg-animated",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-animated",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-animated",
+        "languages": {
+          "css": "drac-bg-animated"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-black",
+      "name": ".drac-bg-black",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-black",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-black",
+        "languages": {
+          "css": "drac-bg-black"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-black-secondary",
+      "name": ".drac-bg-black-secondary",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-black-secondary",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-black-secondary",
+        "languages": {
+          "css": "drac-bg-black-secondary"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-black-transparent",
+      "name": ".drac-bg-black-transparent",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-black-transparent",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-black-transparent",
+        "languages": {
+          "css": "drac-bg-black-transparent"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-cyan",
+      "name": ".drac-bg-cyan",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-cyan",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-cyan",
+        "languages": {
+          "css": "drac-bg-cyan"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-cyan-green",
+      "name": ".drac-bg-cyan-green",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-cyan-green",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-cyan-green",
+        "languages": {
+          "css": "drac-bg-cyan-green"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-cyan-green-transparent",
+      "name": ".drac-bg-cyan-green-transparent",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-cyan-green-transparent",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-cyan-green-transparent",
+        "languages": {
+          "css": "drac-bg-cyan-green-transparent"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-cyan-secondary",
+      "name": ".drac-bg-cyan-secondary",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-cyan-secondary",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-cyan-secondary",
+        "languages": {
+          "css": "drac-bg-cyan-secondary"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-cyan-transparent",
+      "name": ".drac-bg-cyan-transparent",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-cyan-transparent",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-cyan-transparent",
+        "languages": {
+          "css": "drac-bg-cyan-transparent"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-green",
+      "name": ".drac-bg-green",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-green",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-green",
+        "languages": {
+          "css": "drac-bg-green"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-green-secondary",
+      "name": ".drac-bg-green-secondary",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-green-secondary",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-green-secondary",
+        "languages": {
+          "css": "drac-bg-green-secondary"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-green-transparent",
+      "name": ".drac-bg-green-transparent",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-green-transparent",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-green-transparent",
+        "languages": {
+          "css": "drac-bg-green-transparent"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-orange",
+      "name": ".drac-bg-orange",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-orange",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-orange",
+        "languages": {
+          "css": "drac-bg-orange"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-orange-secondary",
+      "name": ".drac-bg-orange-secondary",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-orange-secondary",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-orange-secondary",
+        "languages": {
+          "css": "drac-bg-orange-secondary"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-orange-transparent",
+      "name": ".drac-bg-orange-transparent",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-orange-transparent",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-orange-transparent",
+        "languages": {
+          "css": "drac-bg-orange-transparent"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-pink",
+      "name": ".drac-bg-pink",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-pink",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-pink",
+        "languages": {
+          "css": "drac-bg-pink"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-pink-purple",
+      "name": ".drac-bg-pink-purple",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-pink-purple",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-pink-purple",
+        "languages": {
+          "css": "drac-bg-pink-purple"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-pink-purple-transparent",
+      "name": ".drac-bg-pink-purple-transparent",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-pink-purple-transparent",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-pink-purple-transparent",
+        "languages": {
+          "css": "drac-bg-pink-purple-transparent"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-pink-secondary",
+      "name": ".drac-bg-pink-secondary",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-pink-secondary",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-pink-secondary",
+        "languages": {
+          "css": "drac-bg-pink-secondary"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-pink-transparent",
+      "name": ".drac-bg-pink-transparent",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-pink-transparent",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-pink-transparent",
+        "languages": {
+          "css": "drac-bg-pink-transparent"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-purple",
+      "name": ".drac-bg-purple",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-purple",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-purple",
+        "languages": {
+          "css": "drac-bg-purple"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-purple-cyan",
+      "name": ".drac-bg-purple-cyan",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-purple-cyan",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-purple-cyan",
+        "languages": {
+          "css": "drac-bg-purple-cyan"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-purple-cyan-transparent",
+      "name": ".drac-bg-purple-cyan-transparent",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-purple-cyan-transparent",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-purple-cyan-transparent",
+        "languages": {
+          "css": "drac-bg-purple-cyan-transparent"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-purple-secondary",
+      "name": ".drac-bg-purple-secondary",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-purple-secondary",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-purple-secondary",
+        "languages": {
+          "css": "drac-bg-purple-secondary"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-purple-transparent",
+      "name": ".drac-bg-purple-transparent",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-purple-transparent",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-purple-transparent",
+        "languages": {
+          "css": "drac-bg-purple-transparent"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-red",
+      "name": ".drac-bg-red",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-red",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-red",
+        "languages": {
+          "css": "drac-bg-red"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-red-secondary",
+      "name": ".drac-bg-red-secondary",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-red-secondary",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-red-secondary",
+        "languages": {
+          "css": "drac-bg-red-secondary"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-red-transparent",
+      "name": ".drac-bg-red-transparent",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-red-transparent",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-red-transparent",
+        "languages": {
+          "css": "drac-bg-red-transparent"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-white",
+      "name": ".drac-bg-white",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-white",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-white",
+        "languages": {
+          "css": "drac-bg-white"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-white-secondary",
+      "name": ".drac-bg-white-secondary",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-white-secondary",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-white-secondary",
+        "languages": {
+          "css": "drac-bg-white-secondary"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-white-transparent",
+      "name": ".drac-bg-white-transparent",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-white-transparent",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-white-transparent",
+        "languages": {
+          "css": "drac-bg-white-transparent"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-yellow",
+      "name": ".drac-bg-yellow",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-yellow",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-yellow",
+        "languages": {
+          "css": "drac-bg-yellow"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-yellow-pink",
+      "name": ".drac-bg-yellow-pink",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-yellow-pink",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-yellow-pink",
+        "languages": {
+          "css": "drac-bg-yellow-pink"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-yellow-pink-transparent",
+      "name": ".drac-bg-yellow-pink-transparent",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-yellow-pink-transparent",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-yellow-pink-transparent",
+        "languages": {
+          "css": "drac-bg-yellow-pink-transparent"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-yellow-secondary",
+      "name": ".drac-bg-yellow-secondary",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-yellow-secondary",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-yellow-secondary",
+        "languages": {
+          "css": "drac-bg-yellow-secondary"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-yellow-transparent",
+      "name": ".drac-bg-yellow-transparent",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-yellow-transparent",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-yellow-transparent",
+        "languages": {
+          "css": "drac-bg-yellow-transparent"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-border-black",
+      "name": ".drac-border-black",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-border-black",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-border-black",
+        "languages": {
+          "css": "drac-border-black"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-border-cyan",
+      "name": ".drac-border-cyan",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-border-cyan",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-border-cyan",
+        "languages": {
+          "css": "drac-border-cyan"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-border-green",
+      "name": ".drac-border-green",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-border-green",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-border-green",
+        "languages": {
+          "css": "drac-border-green"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-border-orange",
+      "name": ".drac-border-orange",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-border-orange",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-border-orange",
+        "languages": {
+          "css": "drac-border-orange"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-border-pink",
+      "name": ".drac-border-pink",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-border-pink",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-border-pink",
+        "languages": {
+          "css": "drac-border-pink"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-border-purple",
+      "name": ".drac-border-purple",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-border-purple",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-border-purple",
+        "languages": {
+          "css": "drac-border-purple"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-border-red",
+      "name": ".drac-border-red",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-border-red",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-border-red",
+        "languages": {
+          "css": "drac-border-red"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-border-white",
+      "name": ".drac-border-white",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-border-white",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-border-white",
+        "languages": {
+          "css": "drac-border-white"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-border-yellow",
+      "name": ".drac-border-yellow",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-border-yellow",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-border-yellow",
+        "languages": {
+          "css": "drac-border-yellow"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-box",
+      "name": ".drac-box",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-box",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-box",
+        "languages": {
+          "css": "drac-box"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-btn",
+      "name": ".drac-btn",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-btn",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-btn",
+        "languages": {
+          "css": "drac-btn"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-btn-ghost",
+      "name": ".drac-btn-ghost",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-btn-ghost",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-btn-ghost",
+        "languages": {
+          "css": "drac-btn-ghost"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-btn-lg",
+      "name": ".drac-btn-lg",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-btn-lg",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-btn-lg",
+        "languages": {
+          "css": "drac-btn-lg"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-btn-outline",
+      "name": ".drac-btn-outline",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-btn-outline",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-btn-outline",
+        "languages": {
+          "css": "drac-btn-outline"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-btn-sm",
+      "name": ".drac-btn-sm",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-btn-sm",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-btn-sm",
+        "languages": {
+          "css": "drac-btn-sm"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-btn-xs",
+      "name": ".drac-btn-xs",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-btn-xs",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-btn-xs",
+        "languages": {
+          "css": "drac-btn-xs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-card",
+      "name": ".drac-card",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-card",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-card",
+        "languages": {
+          "css": "drac-card"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-card-subtle",
+      "name": ".drac-card-subtle",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-card-subtle",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-card-subtle",
+        "languages": {
+          "css": "drac-card-subtle"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-checkbox",
+      "name": ".drac-checkbox",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-checkbox",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-checkbox",
+        "languages": {
+          "css": "drac-checkbox"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-checkbox-black",
+      "name": ".drac-checkbox-black",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-checkbox-black",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-checkbox-black",
+        "languages": {
+          "css": "drac-checkbox-black"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-checkbox-cyan",
+      "name": ".drac-checkbox-cyan",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-checkbox-cyan",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-checkbox-cyan",
+        "languages": {
+          "css": "drac-checkbox-cyan"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-checkbox-green",
+      "name": ".drac-checkbox-green",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-checkbox-green",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-checkbox-green",
+        "languages": {
+          "css": "drac-checkbox-green"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-checkbox-orange",
+      "name": ".drac-checkbox-orange",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-checkbox-orange",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-checkbox-orange",
+        "languages": {
+          "css": "drac-checkbox-orange"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-checkbox-pink",
+      "name": ".drac-checkbox-pink",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-checkbox-pink",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-checkbox-pink",
+        "languages": {
+          "css": "drac-checkbox-pink"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-checkbox-purple",
+      "name": ".drac-checkbox-purple",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-checkbox-purple",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-checkbox-purple",
+        "languages": {
+          "css": "drac-checkbox-purple"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-checkbox-red",
+      "name": ".drac-checkbox-red",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-checkbox-red",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-checkbox-red",
+        "languages": {
+          "css": "drac-checkbox-red"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-checkbox-white",
+      "name": ".drac-checkbox-white",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-checkbox-white",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-checkbox-white",
+        "languages": {
+          "css": "drac-checkbox-white"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-checkbox-yellow",
+      "name": ".drac-checkbox-yellow",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-checkbox-yellow",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-checkbox-yellow",
+        "languages": {
+          "css": "drac-checkbox-yellow"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-glow-black",
+      "name": ".drac-glow-black",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-glow-black",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-glow-black",
+        "languages": {
+          "css": "drac-glow-black"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-glow-cyan",
+      "name": ".drac-glow-cyan",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-glow-cyan",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-glow-cyan",
+        "languages": {
+          "css": "drac-glow-cyan"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-glow-green",
+      "name": ".drac-glow-green",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-glow-green",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-glow-green",
+        "languages": {
+          "css": "drac-glow-green"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-glow-orange",
+      "name": ".drac-glow-orange",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-glow-orange",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-glow-orange",
+        "languages": {
+          "css": "drac-glow-orange"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-glow-pink",
+      "name": ".drac-glow-pink",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-glow-pink",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-glow-pink",
+        "languages": {
+          "css": "drac-glow-pink"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-glow-purple",
+      "name": ".drac-glow-purple",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-glow-purple",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-glow-purple",
+        "languages": {
+          "css": "drac-glow-purple"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-glow-red",
+      "name": ".drac-glow-red",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-glow-red",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-glow-red",
+        "languages": {
+          "css": "drac-glow-red"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-glow-white",
+      "name": ".drac-glow-white",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-glow-white",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-glow-white",
+        "languages": {
+          "css": "drac-glow-white"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-glow-yellow",
+      "name": ".drac-glow-yellow",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-glow-yellow",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-glow-yellow",
+        "languages": {
+          "css": "drac-glow-yellow"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-heading",
+      "name": ".drac-heading",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-heading",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-heading",
+        "languages": {
+          "css": "drac-heading"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-heading-2xl",
+      "name": ".drac-heading-2xl",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-heading-2xl",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-heading-2xl",
+        "languages": {
+          "css": "drac-heading-2xl"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-heading-lg",
+      "name": ".drac-heading-lg",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-heading-lg",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-heading-lg",
+        "languages": {
+          "css": "drac-heading-lg"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-heading-sm",
+      "name": ".drac-heading-sm",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-heading-sm",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-heading-sm",
+        "languages": {
+          "css": "drac-heading-sm"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-heading-xl",
+      "name": ".drac-heading-xl",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-heading-xl",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-heading-xl",
+        "languages": {
+          "css": "drac-heading-xl"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-heading-xs",
+      "name": ".drac-heading-xs",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-heading-xs",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-heading-xs",
+        "languages": {
+          "css": "drac-heading-xs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-input",
+      "name": ".drac-input",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-input",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-input",
+        "languages": {
+          "css": "drac-input"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-input-black",
+      "name": ".drac-input-black",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-input-black",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-input-black",
+        "languages": {
+          "css": "drac-input-black"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-input-blackSecondary",
+      "name": ".drac-input-blackSecondary",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-input-blackSecondary",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-input-blackSecondary",
+        "languages": {
+          "css": "drac-input-blackSecondary"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-input-cyan",
+      "name": ".drac-input-cyan",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-input-cyan",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-input-cyan",
+        "languages": {
+          "css": "drac-input-cyan"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-input-green",
+      "name": ".drac-input-green",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-input-green",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-input-green",
+        "languages": {
+          "css": "drac-input-green"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-input-lg",
+      "name": ".drac-input-lg",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-input-lg",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-input-lg",
+        "languages": {
+          "css": "drac-input-lg"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-input-orange",
+      "name": ".drac-input-orange",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-input-orange",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-input-orange",
+        "languages": {
+          "css": "drac-input-orange"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-input-outline",
+      "name": ".drac-input-outline",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-input-outline",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-input-outline",
+        "languages": {
+          "css": "drac-input-outline"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-input-pink",
+      "name": ".drac-input-pink",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-input-pink",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-input-pink",
+        "languages": {
+          "css": "drac-input-pink"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-input-purple",
+      "name": ".drac-input-purple",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-input-purple",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-input-purple",
+        "languages": {
+          "css": "drac-input-purple"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-input-red",
+      "name": ".drac-input-red",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-input-red",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-input-red",
+        "languages": {
+          "css": "drac-input-red"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-input-sm",
+      "name": ".drac-input-sm",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-input-sm",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-input-sm",
+        "languages": {
+          "css": "drac-input-sm"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-input-white",
+      "name": ".drac-input-white",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-input-white",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-input-white",
+        "languages": {
+          "css": "drac-input-white"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-input-yellow",
+      "name": ".drac-input-yellow",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-input-yellow",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-input-yellow",
+        "languages": {
+          "css": "drac-input-yellow"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-line-height",
+      "name": ".drac-line-height",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-line-height",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-line-height",
+        "languages": {
+          "css": "drac-line-height"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-line-height-2xl",
+      "name": ".drac-line-height-2xl",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-line-height-2xl",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-line-height-2xl",
+        "languages": {
+          "css": "drac-line-height-2xl"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-line-height-lg",
+      "name": ".drac-line-height-lg",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-line-height-lg",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-line-height-lg",
+        "languages": {
+          "css": "drac-line-height-lg"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-line-height-sm",
+      "name": ".drac-line-height-sm",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-line-height-sm",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-line-height-sm",
+        "languages": {
+          "css": "drac-line-height-sm"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-line-height-xl",
+      "name": ".drac-line-height-xl",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-line-height-xl",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-line-height-xl",
+        "languages": {
+          "css": "drac-line-height-xl"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-line-height-xs",
+      "name": ".drac-line-height-xs",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-line-height-xs",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-line-height-xs",
+        "languages": {
+          "css": "drac-line-height-xs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-list",
+      "name": ".drac-list",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-list",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-list",
+        "languages": {
+          "css": "drac-list"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-list-black",
+      "name": ".drac-list-black",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-list-black",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-list-black",
+        "languages": {
+          "css": "drac-list-black"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-list-blackSecondary",
+      "name": ".drac-list-blackSecondary",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-list-blackSecondary",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-list-blackSecondary",
+        "languages": {
+          "css": "drac-list-blackSecondary"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-list-cyan",
+      "name": ".drac-list-cyan",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-list-cyan",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-list-cyan",
+        "languages": {
+          "css": "drac-list-cyan"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-list-green",
+      "name": ".drac-list-green",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-list-green",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-list-green",
+        "languages": {
+          "css": "drac-list-green"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-list-none",
+      "name": ".drac-list-none",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-list-none",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-list-none",
+        "languages": {
+          "css": "drac-list-none"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-list-orange",
+      "name": ".drac-list-orange",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-list-orange",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-list-orange",
+        "languages": {
+          "css": "drac-list-orange"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-list-ordered",
+      "name": ".drac-list-ordered",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-list-ordered",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-list-ordered",
+        "languages": {
+          "css": "drac-list-ordered"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-list-pink",
+      "name": ".drac-list-pink",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-list-pink",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-list-pink",
+        "languages": {
+          "css": "drac-list-pink"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-list-purple",
+      "name": ".drac-list-purple",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-list-purple",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-list-purple",
+        "languages": {
+          "css": "drac-list-purple"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-list-red",
+      "name": ".drac-list-red",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-list-red",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-list-red",
+        "languages": {
+          "css": "drac-list-red"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-list-unordered",
+      "name": ".drac-list-unordered",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-list-unordered",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-list-unordered",
+        "languages": {
+          "css": "drac-list-unordered"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-list-white",
+      "name": ".drac-list-white",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-list-white",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-list-white",
+        "languages": {
+          "css": "drac-list-white"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-list-yellow",
+      "name": ".drac-list-yellow",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-list-yellow",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-list-yellow",
+        "languages": {
+          "css": "drac-list-yellow"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-m-lg",
+      "name": ".drac-m-lg",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-m-lg",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-m-lg",
+        "languages": {
+          "css": "drac-m-lg"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-m-md",
+      "name": ".drac-m-md",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-m-md",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-m-md",
+        "languages": {
+          "css": "drac-m-md"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-m-none",
+      "name": ".drac-m-none",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-m-none",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-m-none",
+        "languages": {
+          "css": "drac-m-none"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-m-sm",
+      "name": ".drac-m-sm",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-m-sm",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-m-sm",
+        "languages": {
+          "css": "drac-m-sm"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-m-xs",
+      "name": ".drac-m-xs",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-m-xs",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-m-xs",
+        "languages": {
+          "css": "drac-m-xs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-m-xxs",
+      "name": ".drac-m-xxs",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-m-xxs",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-m-xxs",
+        "languages": {
+          "css": "drac-m-xxs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-mb-lg",
+      "name": ".drac-mb-lg",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-mb-lg",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-mb-lg",
+        "languages": {
+          "css": "drac-mb-lg"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-mb-md",
+      "name": ".drac-mb-md",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-mb-md",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-mb-md",
+        "languages": {
+          "css": "drac-mb-md"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-mb-none",
+      "name": ".drac-mb-none",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-mb-none",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-mb-none",
+        "languages": {
+          "css": "drac-mb-none"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-mb-sm",
+      "name": ".drac-mb-sm",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-mb-sm",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-mb-sm",
+        "languages": {
+          "css": "drac-mb-sm"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-mb-xs",
+      "name": ".drac-mb-xs",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-mb-xs",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-mb-xs",
+        "languages": {
+          "css": "drac-mb-xs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-mb-xxs",
+      "name": ".drac-mb-xxs",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-mb-xxs",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-mb-xxs",
+        "languages": {
+          "css": "drac-mb-xxs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-ml-lg",
+      "name": ".drac-ml-lg",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-ml-lg",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-ml-lg",
+        "languages": {
+          "css": "drac-ml-lg"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-ml-md",
+      "name": ".drac-ml-md",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-ml-md",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-ml-md",
+        "languages": {
+          "css": "drac-ml-md"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-ml-none",
+      "name": ".drac-ml-none",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-ml-none",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-ml-none",
+        "languages": {
+          "css": "drac-ml-none"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-ml-sm",
+      "name": ".drac-ml-sm",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-ml-sm",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-ml-sm",
+        "languages": {
+          "css": "drac-ml-sm"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-ml-xs",
+      "name": ".drac-ml-xs",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-ml-xs",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-ml-xs",
+        "languages": {
+          "css": "drac-ml-xs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-ml-xxs",
+      "name": ".drac-ml-xxs",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-ml-xxs",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-ml-xxs",
+        "languages": {
+          "css": "drac-ml-xxs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-mr-lg",
+      "name": ".drac-mr-lg",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-mr-lg",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-mr-lg",
+        "languages": {
+          "css": "drac-mr-lg"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-mr-md",
+      "name": ".drac-mr-md",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-mr-md",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-mr-md",
+        "languages": {
+          "css": "drac-mr-md"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-mr-none",
+      "name": ".drac-mr-none",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-mr-none",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-mr-none",
+        "languages": {
+          "css": "drac-mr-none"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-mr-sm",
+      "name": ".drac-mr-sm",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-mr-sm",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-mr-sm",
+        "languages": {
+          "css": "drac-mr-sm"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-mr-xs",
+      "name": ".drac-mr-xs",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-mr-xs",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-mr-xs",
+        "languages": {
+          "css": "drac-mr-xs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-mr-xxs",
+      "name": ".drac-mr-xxs",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-mr-xxs",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-mr-xxs",
+        "languages": {
+          "css": "drac-mr-xxs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-mt-lg",
+      "name": ".drac-mt-lg",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-mt-lg",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-mt-lg",
+        "languages": {
+          "css": "drac-mt-lg"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-mt-md",
+      "name": ".drac-mt-md",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-mt-md",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-mt-md",
+        "languages": {
+          "css": "drac-mt-md"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-mt-none",
+      "name": ".drac-mt-none",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-mt-none",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-mt-none",
+        "languages": {
+          "css": "drac-mt-none"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-mt-sm",
+      "name": ".drac-mt-sm",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-mt-sm",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-mt-sm",
+        "languages": {
+          "css": "drac-mt-sm"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-mt-xs",
+      "name": ".drac-mt-xs",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-mt-xs",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-mt-xs",
+        "languages": {
+          "css": "drac-mt-xs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-mt-xxs",
+      "name": ".drac-mt-xxs",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-mt-xxs",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-mt-xxs",
+        "languages": {
+          "css": "drac-mt-xxs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-mx-lg",
+      "name": ".drac-mx-lg",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-mx-lg",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-mx-lg",
+        "languages": {
+          "css": "drac-mx-lg"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-mx-md",
+      "name": ".drac-mx-md",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-mx-md",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-mx-md",
+        "languages": {
+          "css": "drac-mx-md"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-mx-none",
+      "name": ".drac-mx-none",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-mx-none",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-mx-none",
+        "languages": {
+          "css": "drac-mx-none"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-mx-sm",
+      "name": ".drac-mx-sm",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-mx-sm",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-mx-sm",
+        "languages": {
+          "css": "drac-mx-sm"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-mx-xs",
+      "name": ".drac-mx-xs",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-mx-xs",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-mx-xs",
+        "languages": {
+          "css": "drac-mx-xs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-mx-xxs",
+      "name": ".drac-mx-xxs",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-mx-xxs",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-mx-xxs",
+        "languages": {
+          "css": "drac-mx-xxs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-my-lg",
+      "name": ".drac-my-lg",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-my-lg",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-my-lg",
+        "languages": {
+          "css": "drac-my-lg"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-my-md",
+      "name": ".drac-my-md",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-my-md",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-my-md",
+        "languages": {
+          "css": "drac-my-md"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-my-none",
+      "name": ".drac-my-none",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-my-none",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-my-none",
+        "languages": {
+          "css": "drac-my-none"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-my-sm",
+      "name": ".drac-my-sm",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-my-sm",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-my-sm",
+        "languages": {
+          "css": "drac-my-sm"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-my-xs",
+      "name": ".drac-my-xs",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-my-xs",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-my-xs",
+        "languages": {
+          "css": "drac-my-xs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-my-xxs",
+      "name": ".drac-my-xxs",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-my-xxs",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-my-xxs",
+        "languages": {
+          "css": "drac-my-xxs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-p-lg",
+      "name": ".drac-p-lg",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-p-lg",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-p-lg",
+        "languages": {
+          "css": "drac-p-lg"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-p-md",
+      "name": ".drac-p-md",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-p-md",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-p-md",
+        "languages": {
+          "css": "drac-p-md"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-p-none",
+      "name": ".drac-p-none",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-p-none",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-p-none",
+        "languages": {
+          "css": "drac-p-none"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-p-sm",
+      "name": ".drac-p-sm",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-p-sm",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-p-sm",
+        "languages": {
+          "css": "drac-p-sm"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-p-xs",
+      "name": ".drac-p-xs",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-p-xs",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-p-xs",
+        "languages": {
+          "css": "drac-p-xs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-p-xxs",
+      "name": ".drac-p-xxs",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-p-xxs",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-p-xxs",
+        "languages": {
+          "css": "drac-p-xxs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-pb-lg",
+      "name": ".drac-pb-lg",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-pb-lg",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-pb-lg",
+        "languages": {
+          "css": "drac-pb-lg"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-pb-md",
+      "name": ".drac-pb-md",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-pb-md",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-pb-md",
+        "languages": {
+          "css": "drac-pb-md"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-pb-none",
+      "name": ".drac-pb-none",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-pb-none",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-pb-none",
+        "languages": {
+          "css": "drac-pb-none"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-pb-sm",
+      "name": ".drac-pb-sm",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-pb-sm",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-pb-sm",
+        "languages": {
+          "css": "drac-pb-sm"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-pb-xs",
+      "name": ".drac-pb-xs",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-pb-xs",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-pb-xs",
+        "languages": {
+          "css": "drac-pb-xs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-pb-xxs",
+      "name": ".drac-pb-xxs",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-pb-xxs",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-pb-xxs",
+        "languages": {
+          "css": "drac-pb-xxs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-pl-lg",
+      "name": ".drac-pl-lg",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-pl-lg",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-pl-lg",
+        "languages": {
+          "css": "drac-pl-lg"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-pl-md",
+      "name": ".drac-pl-md",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-pl-md",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-pl-md",
+        "languages": {
+          "css": "drac-pl-md"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-pl-none",
+      "name": ".drac-pl-none",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-pl-none",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-pl-none",
+        "languages": {
+          "css": "drac-pl-none"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-pl-sm",
+      "name": ".drac-pl-sm",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-pl-sm",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-pl-sm",
+        "languages": {
+          "css": "drac-pl-sm"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-pl-xs",
+      "name": ".drac-pl-xs",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-pl-xs",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-pl-xs",
+        "languages": {
+          "css": "drac-pl-xs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-pl-xxs",
+      "name": ".drac-pl-xxs",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-pl-xxs",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-pl-xxs",
+        "languages": {
+          "css": "drac-pl-xxs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-pr-lg",
+      "name": ".drac-pr-lg",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-pr-lg",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-pr-lg",
+        "languages": {
+          "css": "drac-pr-lg"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-pr-md",
+      "name": ".drac-pr-md",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-pr-md",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-pr-md",
+        "languages": {
+          "css": "drac-pr-md"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-pr-none",
+      "name": ".drac-pr-none",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-pr-none",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-pr-none",
+        "languages": {
+          "css": "drac-pr-none"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-pr-sm",
+      "name": ".drac-pr-sm",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-pr-sm",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-pr-sm",
+        "languages": {
+          "css": "drac-pr-sm"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-pr-xs",
+      "name": ".drac-pr-xs",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-pr-xs",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-pr-xs",
+        "languages": {
+          "css": "drac-pr-xs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-pr-xxs",
+      "name": ".drac-pr-xxs",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-pr-xxs",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-pr-xxs",
+        "languages": {
+          "css": "drac-pr-xxs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-pt-lg",
+      "name": ".drac-pt-lg",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-pt-lg",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-pt-lg",
+        "languages": {
+          "css": "drac-pt-lg"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-pt-md",
+      "name": ".drac-pt-md",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-pt-md",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-pt-md",
+        "languages": {
+          "css": "drac-pt-md"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-pt-none",
+      "name": ".drac-pt-none",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-pt-none",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-pt-none",
+        "languages": {
+          "css": "drac-pt-none"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-pt-sm",
+      "name": ".drac-pt-sm",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-pt-sm",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-pt-sm",
+        "languages": {
+          "css": "drac-pt-sm"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-pt-xs",
+      "name": ".drac-pt-xs",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-pt-xs",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-pt-xs",
+        "languages": {
+          "css": "drac-pt-xs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-pt-xxs",
+      "name": ".drac-pt-xxs",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-pt-xxs",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-pt-xxs",
+        "languages": {
+          "css": "drac-pt-xxs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-px-lg",
+      "name": ".drac-px-lg",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-px-lg",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-px-lg",
+        "languages": {
+          "css": "drac-px-lg"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-px-md",
+      "name": ".drac-px-md",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-px-md",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-px-md",
+        "languages": {
+          "css": "drac-px-md"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-px-none",
+      "name": ".drac-px-none",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-px-none",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-px-none",
+        "languages": {
+          "css": "drac-px-none"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-px-sm",
+      "name": ".drac-px-sm",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-px-sm",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-px-sm",
+        "languages": {
+          "css": "drac-px-sm"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-px-xs",
+      "name": ".drac-px-xs",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-px-xs",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-px-xs",
+        "languages": {
+          "css": "drac-px-xs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-px-xxs",
+      "name": ".drac-px-xxs",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-px-xxs",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-px-xxs",
+        "languages": {
+          "css": "drac-px-xxs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-py-lg",
+      "name": ".drac-py-lg",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-py-lg",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-py-lg",
+        "languages": {
+          "css": "drac-py-lg"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-py-md",
+      "name": ".drac-py-md",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-py-md",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-py-md",
+        "languages": {
+          "css": "drac-py-md"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-py-none",
+      "name": ".drac-py-none",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-py-none",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-py-none",
+        "languages": {
+          "css": "drac-py-none"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-py-sm",
+      "name": ".drac-py-sm",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-py-sm",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-py-sm",
+        "languages": {
+          "css": "drac-py-sm"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-py-xs",
+      "name": ".drac-py-xs",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-py-xs",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-py-xs",
+        "languages": {
+          "css": "drac-py-xs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-py-xxs",
+      "name": ".drac-py-xxs",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-py-xxs",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-py-xxs",
+        "languages": {
+          "css": "drac-py-xxs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-radio",
+      "name": ".drac-radio",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-radio",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-radio",
+        "languages": {
+          "css": "drac-radio"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-radio-black",
+      "name": ".drac-radio-black",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-radio-black",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-radio-black",
+        "languages": {
+          "css": "drac-radio-black"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-radio-cyan",
+      "name": ".drac-radio-cyan",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-radio-cyan",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-radio-cyan",
+        "languages": {
+          "css": "drac-radio-cyan"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-radio-green",
+      "name": ".drac-radio-green",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-radio-green",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-radio-green",
+        "languages": {
+          "css": "drac-radio-green"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-radio-orange",
+      "name": ".drac-radio-orange",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-radio-orange",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-radio-orange",
+        "languages": {
+          "css": "drac-radio-orange"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-radio-pink",
+      "name": ".drac-radio-pink",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-radio-pink",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-radio-pink",
+        "languages": {
+          "css": "drac-radio-pink"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-radio-purple",
+      "name": ".drac-radio-purple",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-radio-purple",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-radio-purple",
+        "languages": {
+          "css": "drac-radio-purple"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-radio-red",
+      "name": ".drac-radio-red",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-radio-red",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-radio-red",
+        "languages": {
+          "css": "drac-radio-red"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-radio-white",
+      "name": ".drac-radio-white",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-radio-white",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-radio-white",
+        "languages": {
+          "css": "drac-radio-white"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-radio-yellow",
+      "name": ".drac-radio-yellow",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-radio-yellow",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-radio-yellow",
+        "languages": {
+          "css": "drac-radio-yellow"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-rounded",
+      "name": ".drac-rounded",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-rounded",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-rounded",
+        "languages": {
+          "css": "drac-rounded"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-rounded-2xl",
+      "name": ".drac-rounded-2xl",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-rounded-2xl",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-rounded-2xl",
+        "languages": {
+          "css": "drac-rounded-2xl"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-rounded-3xl",
+      "name": ".drac-rounded-3xl",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-rounded-3xl",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-rounded-3xl",
+        "languages": {
+          "css": "drac-rounded-3xl"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-rounded-full",
+      "name": ".drac-rounded-full",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-rounded-full",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-rounded-full",
+        "languages": {
+          "css": "drac-rounded-full"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-rounded-lg",
+      "name": ".drac-rounded-lg",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-rounded-lg",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-rounded-lg",
+        "languages": {
+          "css": "drac-rounded-lg"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-rounded-md",
+      "name": ".drac-rounded-md",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-rounded-md",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-rounded-md",
+        "languages": {
+          "css": "drac-rounded-md"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-rounded-none",
+      "name": ".drac-rounded-none",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-rounded-none",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-rounded-none",
+        "languages": {
+          "css": "drac-rounded-none"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-rounded-sm",
+      "name": ".drac-rounded-sm",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-rounded-sm",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-rounded-sm",
+        "languages": {
+          "css": "drac-rounded-sm"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-rounded-xl",
+      "name": ".drac-rounded-xl",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-rounded-xl",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-rounded-xl",
+        "languages": {
+          "css": "drac-rounded-xl"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-select",
+      "name": ".drac-select",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-select",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-select",
+        "languages": {
+          "css": "drac-select"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-select-arrow",
+      "name": ".drac-select-arrow",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-select-arrow",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-select-arrow",
+        "languages": {
+          "css": "drac-select-arrow"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-select-black",
+      "name": ".drac-select-black",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-select-black",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-select-black",
+        "languages": {
+          "css": "drac-select-black"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-select-cyan",
+      "name": ".drac-select-cyan",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-select-cyan",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-select-cyan",
+        "languages": {
+          "css": "drac-select-cyan"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-select-green",
+      "name": ".drac-select-green",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-select-green",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-select-green",
+        "languages": {
+          "css": "drac-select-green"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-select-lg",
+      "name": ".drac-select-lg",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-select-lg",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-select-lg",
+        "languages": {
+          "css": "drac-select-lg"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-select-orange",
+      "name": ".drac-select-orange",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-select-orange",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-select-orange",
+        "languages": {
+          "css": "drac-select-orange"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-select-outline",
+      "name": ".drac-select-outline",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-select-outline",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-select-outline",
+        "languages": {
+          "css": "drac-select-outline"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-select-pink",
+      "name": ".drac-select-pink",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-select-pink",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-select-pink",
+        "languages": {
+          "css": "drac-select-pink"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-select-purple",
+      "name": ".drac-select-purple",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-select-purple",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-select-purple",
+        "languages": {
+          "css": "drac-select-purple"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-select-red",
+      "name": ".drac-select-red",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-select-red",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-select-red",
+        "languages": {
+          "css": "drac-select-red"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-select-sm",
+      "name": ".drac-select-sm",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-select-sm",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-select-sm",
+        "languages": {
+          "css": "drac-select-sm"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-select-white",
+      "name": ".drac-select-white",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-select-white",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-select-white",
+        "languages": {
+          "css": "drac-select-white"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-select-yellow",
+      "name": ".drac-select-yellow",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-select-yellow",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-select-yellow",
+        "languages": {
+          "css": "drac-select-yellow"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-switch",
+      "name": ".drac-switch",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-switch",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-switch",
+        "languages": {
+          "css": "drac-switch"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-switch-black",
+      "name": ".drac-switch-black",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-switch-black",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-switch-black",
+        "languages": {
+          "css": "drac-switch-black"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-switch-cyan",
+      "name": ".drac-switch-cyan",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-switch-cyan",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-switch-cyan",
+        "languages": {
+          "css": "drac-switch-cyan"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-switch-green",
+      "name": ".drac-switch-green",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-switch-green",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-switch-green",
+        "languages": {
+          "css": "drac-switch-green"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-switch-orange",
+      "name": ".drac-switch-orange",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-switch-orange",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-switch-orange",
+        "languages": {
+          "css": "drac-switch-orange"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-switch-pink",
+      "name": ".drac-switch-pink",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-switch-pink",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-switch-pink",
+        "languages": {
+          "css": "drac-switch-pink"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-switch-purple",
+      "name": ".drac-switch-purple",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-switch-purple",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-switch-purple",
+        "languages": {
+          "css": "drac-switch-purple"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-switch-red",
+      "name": ".drac-switch-red",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-switch-red",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-switch-red",
+        "languages": {
+          "css": "drac-switch-red"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-switch-white",
+      "name": ".drac-switch-white",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-switch-white",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-switch-white",
+        "languages": {
+          "css": "drac-switch-white"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-switch-yellow",
+      "name": ".drac-switch-yellow",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-switch-yellow",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-switch-yellow",
+        "languages": {
+          "css": "drac-switch-yellow"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-tab",
+      "name": ".drac-tab",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-tab",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-tab",
+        "languages": {
+          "css": "drac-tab"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-tab-active",
+      "name": ".drac-tab-active",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-tab-active",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-tab-active",
+        "languages": {
+          "css": "drac-tab-active"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-tab-link",
+      "name": ".drac-tab-link",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-tab-link",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-tab-link",
+        "languages": {
+          "css": "drac-tab-link"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-table",
+      "name": ".drac-table",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-table",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-table",
+        "languages": {
+          "css": "drac-table"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-table-black",
+      "name": ".drac-table-black",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-table-black",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-table-black",
+        "languages": {
+          "css": "drac-table-black"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-table-cyan",
+      "name": ".drac-table-cyan",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-table-cyan",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-table-cyan",
+        "languages": {
+          "css": "drac-table-cyan"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-table-green",
+      "name": ".drac-table-green",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-table-green",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-table-green",
+        "languages": {
+          "css": "drac-table-green"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-table-orange",
+      "name": ".drac-table-orange",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-table-orange",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-table-orange",
+        "languages": {
+          "css": "drac-table-orange"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-table-pink",
+      "name": ".drac-table-pink",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-table-pink",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-table-pink",
+        "languages": {
+          "css": "drac-table-pink"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-table-purple",
+      "name": ".drac-table-purple",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-table-purple",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-table-purple",
+        "languages": {
+          "css": "drac-table-purple"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-table-red",
+      "name": ".drac-table-red",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-table-red",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-table-red",
+        "languages": {
+          "css": "drac-table-red"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-table-striped",
+      "name": ".drac-table-striped",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-table-striped",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-table-striped",
+        "languages": {
+          "css": "drac-table-striped"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-table-white",
+      "name": ".drac-table-white",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-table-white",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-table-white",
+        "languages": {
+          "css": "drac-table-white"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-table-yellow",
+      "name": ".drac-table-yellow",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-table-yellow",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-table-yellow",
+        "languages": {
+          "css": "drac-table-yellow"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-tabs",
+      "name": ".drac-tabs",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-tabs",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-tabs",
+        "languages": {
+          "css": "drac-tabs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-tabs-black",
+      "name": ".drac-tabs-black",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-tabs-black",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-tabs-black",
+        "languages": {
+          "css": "drac-tabs-black"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-tabs-cyan",
+      "name": ".drac-tabs-cyan",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-tabs-cyan",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-tabs-cyan",
+        "languages": {
+          "css": "drac-tabs-cyan"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-tabs-green",
+      "name": ".drac-tabs-green",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-tabs-green",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-tabs-green",
+        "languages": {
+          "css": "drac-tabs-green"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-tabs-orange",
+      "name": ".drac-tabs-orange",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-tabs-orange",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-tabs-orange",
+        "languages": {
+          "css": "drac-tabs-orange"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-tabs-pink",
+      "name": ".drac-tabs-pink",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-tabs-pink",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-tabs-pink",
+        "languages": {
+          "css": "drac-tabs-pink"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-tabs-purple",
+      "name": ".drac-tabs-purple",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-tabs-purple",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-tabs-purple",
+        "languages": {
+          "css": "drac-tabs-purple"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-tabs-red",
+      "name": ".drac-tabs-red",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-tabs-red",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-tabs-red",
+        "languages": {
+          "css": "drac-tabs-red"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-tabs-white",
+      "name": ".drac-tabs-white",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-tabs-white",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-tabs-white",
+        "languages": {
+          "css": "drac-tabs-white"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-tabs-yellow",
+      "name": ".drac-tabs-yellow",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-tabs-yellow",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-tabs-yellow",
+        "languages": {
+          "css": "drac-tabs-yellow"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text",
+      "name": ".drac-text",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text",
+        "languages": {
+          "css": "drac-text"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-black",
+      "name": ".drac-text-black",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-black",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-black",
+        "languages": {
+          "css": "drac-text-black"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-black-secondary",
+      "name": ".drac-text-black-secondary",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-black-secondary",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-black-secondary",
+        "languages": {
+          "css": "drac-text-black-secondary"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-black-secondary--hover",
+      "name": ".drac-text-black-secondary--hover",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-black-secondary--hover",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-black-secondary--hover",
+        "languages": {
+          "css": "drac-text-black-secondary--hover"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-black\\--hover",
+      "name": ".drac-text-black\\--hover",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-black\\--hover",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-black\\--hover",
+        "languages": {
+          "css": "drac-text-black\\--hover"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-bold",
+      "name": ".drac-text-bold",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-bold",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-bold",
+        "languages": {
+          "css": "drac-text-bold"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-cyan",
+      "name": ".drac-text-cyan",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-cyan",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-cyan",
+        "languages": {
+          "css": "drac-text-cyan"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-cyan-green",
+      "name": ".drac-text-cyan-green",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-cyan-green",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-cyan-green",
+        "languages": {
+          "css": "drac-text-cyan-green"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-cyan-green\\--hover",
+      "name": ".drac-text-cyan-green\\--hover",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-cyan-green\\--hover",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-cyan-green\\--hover",
+        "languages": {
+          "css": "drac-text-cyan-green\\--hover"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-cyan-secondary",
+      "name": ".drac-text-cyan-secondary",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-cyan-secondary",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-cyan-secondary",
+        "languages": {
+          "css": "drac-text-cyan-secondary"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-cyan-secondary--hover",
+      "name": ".drac-text-cyan-secondary--hover",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-cyan-secondary--hover",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-cyan-secondary--hover",
+        "languages": {
+          "css": "drac-text-cyan-secondary--hover"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-cyan\\--hover",
+      "name": ".drac-text-cyan\\--hover",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-cyan\\--hover",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-cyan\\--hover",
+        "languages": {
+          "css": "drac-text-cyan\\--hover"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-green",
+      "name": ".drac-text-green",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-green",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-green",
+        "languages": {
+          "css": "drac-text-green"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-green-secondary",
+      "name": ".drac-text-green-secondary",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-green-secondary",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-green-secondary",
+        "languages": {
+          "css": "drac-text-green-secondary"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-green-secondary--hover",
+      "name": ".drac-text-green-secondary--hover",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-green-secondary--hover",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-green-secondary--hover",
+        "languages": {
+          "css": "drac-text-green-secondary--hover"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-green\\--hover",
+      "name": ".drac-text-green\\--hover",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-green\\--hover",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-green\\--hover",
+        "languages": {
+          "css": "drac-text-green\\--hover"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-lg",
+      "name": ".drac-text-lg",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-lg",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-lg",
+        "languages": {
+          "css": "drac-text-lg"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-orange",
+      "name": ".drac-text-orange",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-orange",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-orange",
+        "languages": {
+          "css": "drac-text-orange"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-orange-secondary",
+      "name": ".drac-text-orange-secondary",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-orange-secondary",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-orange-secondary",
+        "languages": {
+          "css": "drac-text-orange-secondary"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-orange-secondary--hover",
+      "name": ".drac-text-orange-secondary--hover",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-orange-secondary--hover",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-orange-secondary--hover",
+        "languages": {
+          "css": "drac-text-orange-secondary--hover"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-orange\\--hover",
+      "name": ".drac-text-orange\\--hover",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-orange\\--hover",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-orange\\--hover",
+        "languages": {
+          "css": "drac-text-orange\\--hover"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-pink",
+      "name": ".drac-text-pink",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-pink",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-pink",
+        "languages": {
+          "css": "drac-text-pink"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-pink-purple",
+      "name": ".drac-text-pink-purple",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-pink-purple",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-pink-purple",
+        "languages": {
+          "css": "drac-text-pink-purple"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-pink-purple\\--hover",
+      "name": ".drac-text-pink-purple\\--hover",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-pink-purple\\--hover",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-pink-purple\\--hover",
+        "languages": {
+          "css": "drac-text-pink-purple\\--hover"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-pink-secondary",
+      "name": ".drac-text-pink-secondary",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-pink-secondary",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-pink-secondary",
+        "languages": {
+          "css": "drac-text-pink-secondary"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-pink-secondary--hover",
+      "name": ".drac-text-pink-secondary--hover",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-pink-secondary--hover",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-pink-secondary--hover",
+        "languages": {
+          "css": "drac-text-pink-secondary--hover"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-pink\\--hover",
+      "name": ".drac-text-pink\\--hover",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-pink\\--hover",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-pink\\--hover",
+        "languages": {
+          "css": "drac-text-pink\\--hover"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-purple",
+      "name": ".drac-text-purple",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-purple",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-purple",
+        "languages": {
+          "css": "drac-text-purple"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-purple-cyan",
+      "name": ".drac-text-purple-cyan",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-purple-cyan",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-purple-cyan",
+        "languages": {
+          "css": "drac-text-purple-cyan"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-purple-cyan\\--hover",
+      "name": ".drac-text-purple-cyan\\--hover",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-purple-cyan\\--hover",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-purple-cyan\\--hover",
+        "languages": {
+          "css": "drac-text-purple-cyan\\--hover"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-purple-secondary",
+      "name": ".drac-text-purple-secondary",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-purple-secondary",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-purple-secondary",
+        "languages": {
+          "css": "drac-text-purple-secondary"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-purple-secondary--hover",
+      "name": ".drac-text-purple-secondary--hover",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-purple-secondary--hover",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-purple-secondary--hover",
+        "languages": {
+          "css": "drac-text-purple-secondary--hover"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-purple\\--hover",
+      "name": ".drac-text-purple\\--hover",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-purple\\--hover",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-purple\\--hover",
+        "languages": {
+          "css": "drac-text-purple\\--hover"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-red",
+      "name": ".drac-text-red",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-red",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-red",
+        "languages": {
+          "css": "drac-text-red"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-red-secondary",
+      "name": ".drac-text-red-secondary",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-red-secondary",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-red-secondary",
+        "languages": {
+          "css": "drac-text-red-secondary"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-red-secondary--hover",
+      "name": ".drac-text-red-secondary--hover",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-red-secondary--hover",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-red-secondary--hover",
+        "languages": {
+          "css": "drac-text-red-secondary--hover"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-red\\--hover",
+      "name": ".drac-text-red\\--hover",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-red\\--hover",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-red\\--hover",
+        "languages": {
+          "css": "drac-text-red\\--hover"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-semibold",
+      "name": ".drac-text-semibold",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-semibold",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-semibold",
+        "languages": {
+          "css": "drac-text-semibold"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-sm",
+      "name": ".drac-text-sm",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-sm",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-sm",
+        "languages": {
+          "css": "drac-text-sm"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-white",
+      "name": ".drac-text-white",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-white",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-white",
+        "languages": {
+          "css": "drac-text-white"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-white-secondary",
+      "name": ".drac-text-white-secondary",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-white-secondary",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-white-secondary",
+        "languages": {
+          "css": "drac-text-white-secondary"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-white-secondary--hover",
+      "name": ".drac-text-white-secondary--hover",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-white-secondary--hover",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-white-secondary--hover",
+        "languages": {
+          "css": "drac-text-white-secondary--hover"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-white\\--hover",
+      "name": ".drac-text-white\\--hover",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-white\\--hover",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-white\\--hover",
+        "languages": {
+          "css": "drac-text-white\\--hover"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-xs",
+      "name": ".drac-text-xs",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-xs",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-xs",
+        "languages": {
+          "css": "drac-text-xs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-yellow",
+      "name": ".drac-text-yellow",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-yellow",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-yellow",
+        "languages": {
+          "css": "drac-text-yellow"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-yellow-pink",
+      "name": ".drac-text-yellow-pink",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-yellow-pink",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-yellow-pink",
+        "languages": {
+          "css": "drac-text-yellow-pink"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-yellow-pink\\--hover",
+      "name": ".drac-text-yellow-pink\\--hover",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-yellow-pink\\--hover",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-yellow-pink\\--hover",
+        "languages": {
+          "css": "drac-text-yellow-pink\\--hover"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-yellow-secondary",
+      "name": ".drac-text-yellow-secondary",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-yellow-secondary",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-yellow-secondary",
+        "languages": {
+          "css": "drac-text-yellow-secondary"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-yellow-secondary--hover",
+      "name": ".drac-text-yellow-secondary--hover",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-yellow-secondary--hover",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-yellow-secondary--hover",
+        "languages": {
+          "css": "drac-text-yellow-secondary--hover"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-yellow\\--hover",
+      "name": ".drac-text-yellow\\--hover",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-yellow\\--hover",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-yellow\\--hover",
+        "languages": {
+          "css": "drac-text-yellow\\--hover"
+        }
+      }
+    }
+  ]
+}
