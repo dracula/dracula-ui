@@ -1,18 +1,9 @@
-import {
-  Anchor,
-  Box,
-  Heading,
-  Paragraph,
-  Table,
-  Text
-} from '@dracula/dracula-ui'
+import { Box, Heading, Paragraph, Table, Text } from '@dracula/dracula-ui'
+import classes from '@dracula/dracula-ui/dsp/data/css.json'
+import { groupBy } from 'lodash'
 import React from 'react'
 import Docs from '../layouts/Docs'
 import styles from './index.module.css'
-import classes from '@dracula/dracula-ui/dsp/data/css.json'
-import components from '@dracula/dracula-ui/dsp/data/components.json'
-import { groupBy } from 'lodash'
-import Link from 'next/link'
 
 const classGroup = groupBy(classes.entities, (entity) => {
   const [prefix, second, ..._rest] = entity.name.split('-')
@@ -30,7 +21,7 @@ export async function getStaticProps() {
   }
 }
 
-class Spacing extends React.Component {
+class CSS extends React.Component {
   render() {
     return (
       <Box>
@@ -57,33 +48,13 @@ class Spacing extends React.Component {
 
         {Object.keys(classGroup).map((group) => {
           const [_prefix, component] = group.split('-')
-          const match = components.entities.find(
-            (comp) => comp.name.toLowerCase() === component.toLowerCase()
-          )
 
           return (
             <Box key={group} my="lg">
-              {!match && (
-                <Heading size="xl" pb="sm" color="white">
-                  {component}
-                </Heading>
-              )}
+              <Heading size="xl" pb="sm" color="white">
+                {component}
+              </Heading>
 
-              {match && (
-                <Link href={`/${match.name.toLowerCase()}`} passHref>
-                  <Anchor>
-                    <Heading size="xl" color="purpleCyan">
-                      {match.name}
-                    </Heading>
-                  </Anchor>
-                </Link>
-              )}
-
-              {match && (
-                <Paragraph className={styles.description} size="sm">
-                  {match.description}
-                </Paragraph>
-              )}
               <Table variant="striped">
                 <tbody>
                   {classGroup[group].map((clz) => {
@@ -105,6 +76,6 @@ class Spacing extends React.Component {
   }
 }
 
-Spacing.Layout = Docs
+CSS.Layout = Docs
 
-export default Spacing
+export default CSS
