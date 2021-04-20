@@ -5,9 +5,11 @@ import dspComponents from '@dracula/dracula-ui/dsp/data/components.json'
 import styles from './Navigation.module.css'
 import Topbar from './Topbar'
 
-const pages = dspComponents.entities.map((entity) => {
-  return entity.name
-})
+const pages = dspComponents.entities
+  .map((entity) => {
+    return entity.name
+  })
+  .filter((en) => !en.startsWith('.'))
 
 const items = [
   {
@@ -20,7 +22,8 @@ const items = [
       'Design',
       'Support',
       'Spacing',
-      'Colors'
+      'Colors',
+      'CSS'
     ]
   },
   {
