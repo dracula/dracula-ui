@@ -128,7 +128,7 @@ include:
 
 Create a Sass file at `assets/css/styles.scss` with the following content:
 
-```sass
+```scss
 ---
 ---
 @import "../../node_modules/@dracula/dracula-ui/styles/dracula-ui.css"
