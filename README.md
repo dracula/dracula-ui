@@ -117,6 +117,33 @@ export default Index
 
 > [See full example](https://github.com/dracula/dracula-ui/tree/master/examples/with-next).
 
+## :test_tube: Using with Jekyll
+
+Go to `_config.yml` and include the `node_modules` folder:
+
+```yaml
+include:
+  - node_modules
+```
+
+Create a Sass file at `assets/css/styles.scss` with the following content:
+
+```sass
+---
+---
+@import "../../node_modules/@dracula/dracula-ui/styles/dracula-ui.css"
+```
+
+The empty front matter at the top tells Jekyll it needs to process the Dracula UI file.
+
+Finally, include the compiled CSS file into your `_layouts`.
+
+```html
+<link rel="stylesheet" href="/assets/css/styles.css">
+```
+
+> [See full example](https://github.com/dracula/dracula-ui/tree/master/examples/with-jekyll).
+
 ## :bulb: Ideas
 
 You can suggest new ideas using [GitHub Discussions](https://github.com/dracula/dracula-ui/discussions).
