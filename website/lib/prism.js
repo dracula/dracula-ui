@@ -64,18 +64,12 @@ const theme = {
         color: "hsl(115, 100%, 75%)",
       },
     },
-    // {
-    //   types: ["tag"],
-    //   style: {
-    //     color: "hsl(170, 100%, 75%)",
-    //   },
-    // },
-    // {
-    //   types: ["attr-value"],
-    //   style: {
-    //     color: "hsl(250, 100%, 75%)",
-    //   },
-    // },
+    {
+      types: ["atrule"],
+      style: {
+        color: "hsl(170, 100%, 75%)",
+      },
+    },
   ],
 };
 

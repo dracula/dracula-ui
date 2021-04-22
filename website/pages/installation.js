@@ -144,7 +144,7 @@ export default Index`}
           <Heading as="h2" size="xl">Using with Jekyll</Heading>
           <Paragraph>
             Go to <code>_config.yml</code> and include the <code>node_modules</code> folder:
-            </Paragraph>
+          </Paragraph>
           <CodeHighlight
             language="yaml"
             code={`include:
@@ -152,9 +152,9 @@ export default Index`}
           />
           <Paragraph>
             Create a Sass file at <code>assets/css/styles.scss</code> with the following content:
-            </Paragraph>
+          </Paragraph>
           <CodeHighlight
-            language="sass"
+            language="scss"
             code={`---
 ---
 @import "../../node_modules/@dracula/dracula-ui/styles/dracula-ui.css"`}
@@ -164,7 +164,7 @@ export default Index`}
             </Paragraph>
           <Paragraph>
             Finally, include the compiled CSS file into your <code>_layouts</code>.
-            </Paragraph>
+          </Paragraph>
           <CodeHighlight
             language="html"
             code={`<link rel="stylesheet" href="/assets/css/styles.css">`}
