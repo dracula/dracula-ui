@@ -17,15 +17,15 @@
       "snippets": {
         "trigger": "anchor",
         "languages": {
-          "javascriptreact": "<Anchor href=\"#\" color=\"purple\" hoverColor=\"pinkPurple\">\n  Visit the Dracula Castle\n</Anchor>;\n",
-          "html": "<a\n  href=\"#\"\n  class=\"drac-anchor drac-text drac-text-purple drac-text-pink-purple--hover\"\n  >Visit the Dracula Castle</a\n>\n"
+          "javascriptreact": "<Anchor href=\"#\">Visit the Dracula Castle</Anchor>;\n",
+          "html": "<a\n  href=\"#\"\n  class=\"drac-anchor drac-text drac-text-white drac-text-purple--hover\"\n  >Visit the Dracula Castle</a\n>\n"
         }
       },
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
-          "html": "<a\n  href=\"#\"\n  class=\"drac-anchor drac-text drac-text-purple drac-text-pink-purple--hover\"\n  >Visit the Dracula Castle</a\n>\n",
-          "react": "<Anchor href=\"#\" color=\"purple\" hoverColor=\"pinkPurple\">\n  Visit the Dracula Castle\n</Anchor>;\n",
+          "html": "<a\n  href=\"#\"\n  class=\"drac-anchor drac-text drac-text-white drac-text-purple--hover\"\n  >Visit the Dracula Castle</a\n>\n",
+          "react": "<Anchor href=\"#\">Visit the Dracula Castle</Anchor>;\n",
           "docs": "Anchor is an abstraction/style that can/is applied to HTML anchor elements.",
           "screenshot": "./dsp/assets/Anchor.png"
         },
