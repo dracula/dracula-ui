@@ -140,6 +140,39 @@ export default Index`}
             <Anchor href="https://github.com/dracula/dracula-ui/tree/master/examples/with-next">See full example</Anchor>
           </Paragraph>
         </Box>
+        <Box my="lg">
+          <Heading as="h2" size="xl">Using with Jekyll</Heading>
+          <Paragraph>
+            Go to <code>_config.yml</code> and include the <code>node_modules</code> folder:
+            </Paragraph>
+          <CodeHighlight
+            language="yaml"
+            code={`include:
+- node_modules`}
+          />
+          <Paragraph>
+            Create a Sass file at <code>assets/css/styles.scss</code> with the following content:
+            </Paragraph>
+          <CodeHighlight
+            language="sass"
+            code={`---
+---
+@import "../../node_modules/@dracula/dracula-ui/styles/dracula-ui.css"`}
+          />
+          <Paragraph>
+            The empty front matter at the top tells Jekyll it needs to process the Dracula UI file.
+            </Paragraph>
+          <Paragraph>
+            Finally, include the compiled CSS file into your <code>_layouts</code>.
+            </Paragraph>
+          <CodeHighlight
+            language="html"
+            code={`<link rel="stylesheet" href="/assets/css/styles.css">`}
+          />
+          <Paragraph>
+            <Anchor href="https://github.com/dracula/dracula-ui/tree/master/examples/with-jekyll">See full example</Anchor>
+          </Paragraph>
+        </Box>
       </Box>
     )
   }
