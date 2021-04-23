@@ -35,7 +35,7 @@ docs(Anchor, {
 
 function Usage() {
   return (
-    <Anchor href="#" color="purple" hoverColor="pinkPurple">Visit the Dracula Castle</Anchor>
+    <Anchor href="#">Visit the Dracula Castle</Anchor>
   )
 }
 
