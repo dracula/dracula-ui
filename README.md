@@ -103,16 +103,11 @@ export default MyApp
 Then you can import Dracula UI and use all React components.
 
 ```jsx
-import { Component } from 'react'
 import { Paragraph } from '@dracula/dracula-ui'
 
-class Index extends Component {
-  render() {
-    return <Paragraph color="black">Hello Vampire</Paragraph>
-  }
+export default function Index() {
+  return <Paragraph color="black">Hello Vampire</Paragraph>
 }
-
-export default Index
 ```
 
 > [See full example](https://github.com/dracula/dracula-ui/tree/master/examples/with-next).
