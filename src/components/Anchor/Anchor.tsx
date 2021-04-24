@@ -1,6 +1,6 @@
 import cx from 'classnames/dedupe'
 import mapValues from 'lodash/mapValues'
-import React, { HTMLAttributes } from 'react'
+import React, { AnchorHTMLAttributes } from 'react'
 import {
   cleanProps,
   marginMixin,
@@ -16,7 +16,7 @@ export const hoverColors = mapValues(textColors, (classname) => {
 
 /** Anchor Props */
 export interface AnchorProps
-  extends HTMLAttributes<HTMLAnchorElement>,
+  extends AnchorHTMLAttributes<HTMLAnchorElement>,
     PaddingMixin,
     MarginMixin {
   /**

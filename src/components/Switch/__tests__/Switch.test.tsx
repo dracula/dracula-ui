@@ -23,7 +23,7 @@ docs(Switch, {
         'Disabled',
         Disabled,
         'A disabled switch is unusable and un-clickable.'
-      ),
+      )
     ]
   }
 })
@@ -43,24 +43,13 @@ function Disabled() {
   return (
     <Box>
       <Box mb="xs">
-        <Switch
-          id="one"
-          disabled
-          defaultChecked
-          color="white"
-          name="one"
-        />
+        <Switch id="one" disabled defaultChecked color="white" name="one" />
         <label htmlFor="one" className="drac-text drac-text-white">
           Vampire
         </label>
       </Box>
       <Box>
-        <Switch
-          id="two"
-          disabled
-          color="white"
-          name="two"
-        />
+        <Switch id="two" disabled color="white" name="two" />
         <label htmlFor="two" className="drac-text drac-text-white">
           Human
         </label>

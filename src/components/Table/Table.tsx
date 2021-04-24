@@ -1,5 +1,5 @@
 import cx from 'classnames/dedupe'
-import React, { HTMLAttributes } from 'react'
+import React, { TableHTMLAttributes } from 'react'
 import { ColorMap } from '../../base/colors'
 import {
   cleanProps,
@@ -29,7 +29,7 @@ export const tableVariants = {
  * Table Props
  */
 export interface TableProps
-  extends HTMLAttributes<HTMLTableElement>,
+  extends TableHTMLAttributes<HTMLTableElement>,
     PaddingMixin,
     MarginMixin {
   /** The Dracula UI color for the Table. */

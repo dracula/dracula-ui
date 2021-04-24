@@ -1,5 +1,5 @@
 import classNamesDedupe from 'classnames/dedupe'
-import React, { HTMLAttributes } from 'react'
+import React, { InputHTMLAttributes } from 'react'
 import { ColorMap } from '../../base/colors'
 import {
   cleanProps,
@@ -22,7 +22,7 @@ export const radioColors: Partial<ColorMap> = {
 
 /** Radio Props */
 export interface RadioProps
-  extends HTMLAttributes<HTMLInputElement>,
+  extends InputHTMLAttributes<HTMLInputElement>,
     PaddingMixin,
     MarginMixin {
   /** The Dracula UI theme color for the radio button. */

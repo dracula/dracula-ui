@@ -1,7 +1,7 @@
 import cx from 'classnames/dedupe'
 import first from 'lodash/first'
 import last from 'lodash/last'
-import React, { HTMLAttributes } from 'react'
+import React, { ImgHTMLAttributes } from 'react'
 import { colors as backgroundColors } from '../../base/colors'
 import {
   cleanProps,
@@ -25,7 +25,7 @@ export const AvatarBorderVariants = {
 
 /** Avatar Props */
 export interface AvatarProps
-  extends HTMLAttributes<HTMLSpanElement & HTMLImageElement>,
+  extends ImgHTMLAttributes<HTMLSpanElement & HTMLImageElement>,
     PaddingMixin,
     MarginMixin {
   /**
@@ -67,8 +67,7 @@ export interface AvatarProps
 export const Avatar = (props: AvatarProps) => {
   const { color, variant, borderVariant, src, title, ...htmlProps } = props
 
-  const backgroundClass = `${backgroundColors[color ?? 'green']
-    }-transparent`
+  const backgroundClass = `${backgroundColors[color ?? 'green']}-transparent`
 
   const classes = cx(
     'drac-avatar',

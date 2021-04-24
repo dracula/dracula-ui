@@ -1,5 +1,6 @@
+import classNamesDedupe from 'classnames/dedupe'
+import React, { InputHTMLAttributes } from 'react'
 import { ColorMap } from '../../base/colors'
-import React, { HTMLAttributes } from 'react'
 import {
   cleanProps,
   marginMixin,
@@ -7,7 +8,6 @@ import {
   paddingMixin,
   PaddingMixin
 } from '../../base/spacing'
-import classNamesDedupe from 'classnames/dedupe'
 
 export const switchColors: Partial<ColorMap> = {
   white: 'drac-switch-white',
@@ -22,7 +22,7 @@ export const switchColors: Partial<ColorMap> = {
 
 /** Switch Props. */
 export interface SwitchProps
-  extends HTMLAttributes<HTMLInputElement>,
+  extends InputHTMLAttributes<HTMLInputElement>,
     PaddingMixin,
     MarginMixin {
   /** The name of the form element. */

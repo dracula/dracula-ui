@@ -1,5 +1,5 @@
 import cx from 'classnames/dedupe'
-import React, { HTMLAttributes } from 'react'
+import React, { LiHTMLAttributes } from 'react'
 import { ColorMap } from '../../base/colors'
 import {
   cleanProps,
@@ -30,7 +30,7 @@ export const listVariants = {
  * List Props
  */
 export interface ListProps
-  extends HTMLAttributes<HTMLOListElement>,
+  extends LiHTMLAttributes<HTMLOListElement>,
     PaddingMixin,
     MarginMixin {
   /** The Dracula UI color for the List. */

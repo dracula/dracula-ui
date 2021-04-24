@@ -1,5 +1,5 @@
-import React, { HTMLAttributes } from 'react'
 import cx from 'classnames/dedupe'
+import React, { InputHTMLAttributes } from 'react'
 import { ColorMap } from '../../base/colors'
 import {
   cleanProps,
@@ -22,7 +22,7 @@ export const checkboxColors: Partial<ColorMap> = {
 
 /** Checkbox Props */
 export interface CheckboxProps
-  extends HTMLAttributes<HTMLInputElement>,
+  extends InputHTMLAttributes<HTMLInputElement>,
     PaddingMixin,
     MarginMixin {
   /** The Dracula UI theme color for the checkbox. */

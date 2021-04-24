@@ -1,7 +1,10 @@
-import React, { HTMLAttributes } from 'react'
-import { colors as backgroundColors } from '../../base/colors'
 import cx from 'classnames/dedupe'
-import { textColors } from '../../components/Text/Text'
+import React, {
+  AnchorHTMLAttributes,
+  ButtonHTMLAttributes,
+  InputHTMLAttributes
+} from 'react'
+import { colors as backgroundColors } from '../../base/colors'
 import {
   cleanProps,
   marginMixin,
@@ -9,6 +12,7 @@ import {
   paddingMixin,
   PaddingMixin
 } from '../../base/spacing'
+import { textColors } from '../../components/Text/Text'
 
 export const buttonVariants = {
   normal: 'drac-btn',
@@ -49,17 +53,13 @@ export type ButtonProps = PaddingMixin &
   } & (
     | ({
         as: 'input'
-        type?: string
-        value?: string
-        children?: never
-      } & HTMLAttributes<HTMLInputElement>)
+      } & InputHTMLAttributes<HTMLInputElement>)
     | ({
         as: 'a'
-        href?: string
-      } & HTMLAttributes<HTMLAnchorElement>)
+      } & AnchorHTMLAttributes<HTMLAnchorElement>)
     | ({
         as?: 'button' | undefined
-      } & HTMLAttributes<HTMLButtonElement>)
+      } & ButtonHTMLAttributes<HTMLButtonElement>)
   )
 
 /**

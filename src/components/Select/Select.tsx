@@ -1,5 +1,5 @@
 import cx from 'classnames/dedupe'
-import React, { HTMLAttributes } from 'react'
+import React, { SelectHTMLAttributes } from 'react'
 import { ColorMap } from '../../base/colors'
 import {
   cleanProps,
@@ -33,7 +33,7 @@ export const selectColors: Partial<ColorMap> = {
 
 /** Select Props */
 export interface SelectProps
-  extends HTMLAttributes<HTMLSelectElement>,
+  extends Omit<SelectHTMLAttributes<HTMLSelectElement>, 'size'>,
     PaddingMixin,
     MarginMixin {
   /** The Dracula UI theme color for the Select. */
@@ -42,7 +42,9 @@ export interface SelectProps
   /**
    * Controls the size of the select based on pre-configured Dracula UI sizes.
    */
-  size?: keyof typeof selectSizes
+  size?:
+    | keyof typeof selectSizes
+    | SelectHTMLAttributes<HTMLSelectElement>['size']
 
   /**
    * The variation to be used for the Select element.
@@ -67,18 +69,22 @@ export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
   (props, ref) => {
     const { size, variant, color, disabled, ...htmlProps } = props
 
-    const finalProps = {
+    const finalProps: SelectHTMLAttributes<HTMLSelectElement> = {
       disabled,
       ...htmlProps,
       className: cx(
         'drac-select',
         props.className,
         variant && selectVariants[variant],
-        size && selectSizes[size],
+        typeof size === 'string' && size && selectSizes[size],
         color && selectColors[color],
         ...paddingMixin(props),
         ...marginMixin(props)
       )
+    }
+
+    if (typeof size === 'number') {
+      finalProps.size = size
     }
 
     return (
