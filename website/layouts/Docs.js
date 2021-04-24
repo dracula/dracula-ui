@@ -1,34 +1,82 @@
+import { Component } from 'react';
 import Head from "next/head"
 import { Box, Heading, Paragraph } from "@dracula/dracula-ui"
 import Navigation from "../components/Navigation"
 import styles from "../pages/index.module.css"
 
-export default function Docs({ children }) {
-  const { title, description } = children.props.query
-  const pageTitle = `${title} — Dracula UI`;
+import { HotKeys, configure } from 'react-hotkeys'
+import Launcher from '../components/Launcher';
 
-  return (
-    <Box>
-      <Head>
-        <title>{pageTitle}</title>
-        <meta content={pageTitle} property="og:title" />
-        <meta content={description} name="description" />
-        <meta content={description} property="og:description" />
-      </Head>
+configure({
+  ignoreRepeatedEventsWhenKeyHeldDown: false,
+  ignoreTags: []
+});
 
-      <Box className={styles.container}>
-        <Navigation selected={title} />
-        <Box className={styles.content} py="lg">
-          <main className={styles.center}>
-            <Heading as="h1" size="2xl">{title}</Heading>
-            <Paragraph className={styles.description} size="md">
-              {description}
-            </Paragraph>
+class Docs extends Component {
+  constructor(props) {
+    super(props);
 
-            {children}
-          </main>
-        </Box>
+    this.state = {
+      launcherVisible: false
+    };
+  }
+
+  showLauncher() {
+    this.setState({ launcherVisible: true });
+    document.body.style.overflow = 'hidden'
+  }
+
+  hideLauncher() {
+    this.setState({ launcherVisible: false });
+    document.body.style.overflow = 'unset'
+  }
+
+  render() {
+    const { title, description } = this.props.children.props.query
+    const pageTitle = `${title} — Dracula UI`;
+
+    const keyMap = {
+      SHOW_LAUNCHER: "command+k",
+      HIDE_LAUNCHER: "esc"
+    };
+
+    const handlers = {
+      SHOW_LAUNCHER: this.showLauncher.bind(this),
+      HIDE_LAUNCHER: this.hideLauncher.bind(this)
+    };
+
+    return (
+      <Box>
+        <Head>
+          <title>{pageTitle}</title>
+          <meta content={pageTitle} property="og:title" />
+          <meta content={description} name="description" />
+          <meta content={description} property="og:description" />
+        </Head>
+
+        <HotKeys root keyMap={keyMap} handlers={handlers}>
+          <Launcher
+            launcherVisible={this.state.launcherVisible}
+            hideLauncher={this.hideLauncher.bind(this)}
+          />
+
+          <Box className={styles.container}>
+            <Navigation selected={title} />
+            <Box className={styles.content} py="lg">
+              <main className={styles.center}>
+                <Heading as="h1" size="2xl">{title}</Heading>
+                <Paragraph className={styles.description} size="md">
+                  {description}
+                </Paragraph>
+
+                {this.props.children}
+              </main>
+            </Box>
+          </Box>
+        </HotKeys>
       </Box>
-    </Box>
-  )
+    )
+  }
 }
+
+export default Docs;
