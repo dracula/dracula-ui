@@ -5,7 +5,8 @@ import * as gtag from "../lib/gtag"
 Router.events.on("routeChangeComplete", (url) => gtag.pageview(url))
 
 import '../styles/main.css';
-import "@dracula/dracula-ui/styles/dracula-ui.css"
+import '@dracula/dracula-ui/styles/dracula-ui.css'
+import 'bootstrap-icons/font/bootstrap-icons.css'
 
 const Noop = ({ children }) => children
 
