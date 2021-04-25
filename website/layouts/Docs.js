@@ -2,11 +2,16 @@ import { Component } from 'react'
 import Head from "next/head"
 import { Box, Heading, Paragraph } from "@dracula/dracula-ui"
 import Navigation from "../components/Navigation"
-import Search from "../components/Search"
 import styles from "../pages/index.module.css"
 
 import { HotKeys, configure } from 'react-hotkeys'
 import Launcher from '../components/Launcher'
+
+import dynamic from "next/dynamic"
+const Search = dynamic(
+  () => import("../components/Search"),
+  { ssr: false }
+)
 
 configure({
   ignoreRepeatedEventsWhenKeyHeldDown: false,
