@@ -1,4 +1,4 @@
-import { Component } from 'react'
+import { Component, createRef } from 'react'
 import Router from 'next/router'
 import { HotKeys } from 'react-hotkeys'
 import styles from "./Launcher.module.css"
@@ -65,6 +65,14 @@ class Launcher extends Component {
     this.setState({ filtered, selected: 0 })
   }
 
+  onClickOutsideModal(event) {
+    if (this.containerRef.current.contains(event.target)) {
+      return
+    }
+
+    this.props.hideLauncher()
+  }
+
   onMoveUp() {
     let { selected } = this.state
 
@@ -100,12 +108,14 @@ class Launcher extends Component {
   }
 
   renderLauncher() {
+    this.containerRef = createRef()
+
     if (this.props.launcherVisible) {
       return <FocusTrap focusTrapOptions={{
         onDeactivate: this.props.hideLauncher
       }}>
-        <div className={styles.background}>
-          <Box ref={this.containerRef} className={styles.container}>
+        <div className={styles.background} onClick={this.onClickOutsideModal.bind(this)}>
+          <div ref={this.containerRef} className={styles.container}>
             <Box className={styles.search}>
               <Box className={styles.iconSearch}>
                 <i className="bi-search" style={{ fontSize: 18 }} />
@@ -123,7 +133,7 @@ class Launcher extends Component {
             <ul className={styles.list}>
               {this.renderOptions()}
             </ul>
-          </Box>
+          </div>
         </div>
       </FocusTrap>
     }
