@@ -34,7 +34,7 @@ class Launcher extends Component {
 
   onClick(option) {
     option.handler()
-    this.props.hideLauncher()
+    this.prepareToHideLauncher()
   }
 
   onKeyPress(option, event) {
@@ -70,7 +70,7 @@ class Launcher extends Component {
       return
     }
 
-    this.props.hideLauncher()
+    this.prepareToHideLauncher()
   }
 
   onMoveUp() {
@@ -85,6 +85,16 @@ class Launcher extends Component {
 
     selected = selected < this.options.length - 1 ? selected + 1 : 0
     this.setState({ selected })
+  }
+
+  prepareToHideLauncher() {
+    this.setState({
+      query: '',
+      selected: 0,
+      filtered: this.options,
+    })
+
+    this.props.hideLauncher()
   }
 
   renderOptions() {
@@ -112,7 +122,7 @@ class Launcher extends Component {
 
     if (this.props.launcherVisible) {
       return <FocusTrap focusTrapOptions={{
-        onDeactivate: this.props.hideLauncher
+        onDeactivate: this.prepareToHideLauncher.bind(this)
       }}>
         <div className={styles.background} onClick={this.onClickOutsideModal.bind(this)}>
           <div ref={this.containerRef} className={styles.container}>
