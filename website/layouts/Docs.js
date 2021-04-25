@@ -1,49 +1,51 @@
-import { Component } from 'react';
+import { Component } from 'react'
 import Head from "next/head"
 import { Box, Heading, Paragraph } from "@dracula/dracula-ui"
 import Navigation from "../components/Navigation"
+import Search from "../components/Search"
 import styles from "../pages/index.module.css"
 
 import { HotKeys, configure } from 'react-hotkeys'
-import Launcher from '../components/Launcher';
+import Launcher from '../components/Launcher'
 
 configure({
   ignoreRepeatedEventsWhenKeyHeldDown: false,
   ignoreTags: []
-});
+})
 
 class Docs extends Component {
   constructor(props) {
-    super(props);
+    super(props)
 
     this.state = {
       launcherVisible: false
-    };
+    }
   }
 
-  showLauncher() {
-    this.setState({ launcherVisible: true });
+  showLauncher(event) {
+    event.preventDefault();
+    this.setState({ launcherVisible: true })
     document.body.style.overflow = 'hidden'
   }
 
   hideLauncher() {
-    this.setState({ launcherVisible: false });
+    this.setState({ launcherVisible: false })
     document.body.style.overflow = 'unset'
   }
 
   render() {
     const { title, description } = this.props.children.props.query
-    const pageTitle = `${title} — Dracula UI`;
+    const pageTitle = `${title} — Dracula UI`
 
     const keyMap = {
-      SHOW_LAUNCHER: "command+k",
+      SHOW_LAUNCHER: ["ctrl+k", "command+k"],
       HIDE_LAUNCHER: "esc"
-    };
+    }
 
     const handlers = {
       SHOW_LAUNCHER: this.showLauncher.bind(this),
       HIDE_LAUNCHER: this.hideLauncher.bind(this)
-    };
+    }
 
     return (
       <Box>
@@ -62,8 +64,9 @@ class Docs extends Component {
 
           <Box className={styles.container}>
             <Navigation selected={title} />
-            <Box className={styles.content} py="lg">
+            <Box className={styles.content}>
               <main className={styles.center}>
+                <Search showLauncher={this.showLauncher.bind(this)} />
                 <Heading as="h1" size="2xl">{title}</Heading>
                 <Paragraph className={styles.description} size="md">
                   {description}
@@ -79,4 +82,4 @@ class Docs extends Component {
   }
 }
 
-export default Docs;
+export default Docs

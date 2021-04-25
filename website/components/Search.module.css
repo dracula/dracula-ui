@@ -1,0 +1,63 @@
+.container {
+  background: #1d1e26;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.button {
+  transition: all .3s ease-in-out;
+  appearance: none;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Code', monospace;
+  border-bottom: 1px solid var(--disabled);
+  background: transparent;
+  color: var(--disabled);
+  cursor: pointer;
+  display: block;
+  font-size: var(--font-lg);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  outline: none;
+  text-align: left;
+  width: 46rem;
+}
+
+.button:hover {
+  color: var(--white);
+  border-color: var(--white);
+}
+
+.button:hover .shortcut {
+  border-color: var(--white);
+}
+
+.searchIcon {
+  composes: bi-search from global;
+  padding-right: 1rem;
+  position: relative;
+  font-size: 18px;
+  top: 2px;
+}
+
+.shortcut {
+  border: 1px solid var(--disabled);
+  display: inline;
+  margin-left: 1rem;
+  padding: 2px 4px;
+  border-radius: var(--rounded-md);
+  font-size: var(--font-md);
+  transition: border .3s ease-in-out;
+}
+
+.shortcut kbd {
+  padding: 0 2px;
+  font-family: sans-serif;
+}
+
+@media (max-width: 76rem) {
+  .button {
+    display: none;
+  }
+}

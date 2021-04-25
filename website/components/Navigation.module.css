@@ -4,6 +4,7 @@
   min-width: 15rem;
   overflow-y: auto;
   position: fixed;
+  z-index: 2;
 }
 
 .navSectionTitle {
