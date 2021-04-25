@@ -3,14 +3,6 @@ import { Box } from "@dracula/dracula-ui"
 import styles from "./Search.module.css"
 
 class Search extends Component {
-  constructor(props) {
-    super(props)
-
-    if (typeof window === 'undefined') {
-      global.navigator = {}
-    }
-  }
-
   renderShortcut() {
     if (global.navigator.platform.indexOf('Mac') > -1) {
       return <span className={styles.shortcut}>
