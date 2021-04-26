@@ -58,8 +58,7 @@
   border-top: 1px solid rgba(255, 255, 255, .2);
 }
 
-.option,
-.optionSelected {
+.option {
   display: flex;
   cursor: pointer;
   justify-content: space-between;
@@ -69,16 +68,15 @@
   padding-bottom: 1rem;
   border-radius: var(--rounded-lg);
   outline: none;
-}
-
-.option {
   color: gray;
   opacity: .5;
+  transition: all .3s ease-in-out;
 }
 
-.optionSelected {
+.option[aria-selected="true"] {
   color: white;
   background: rgba(0, 0, 0, .5);
+  opacity: 1;
 }
 
 .optionIcon {

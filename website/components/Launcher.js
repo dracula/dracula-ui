@@ -28,7 +28,7 @@ class Launcher extends Component {
     this.optionRefs = []
   }
 
-  async componentDidMount() {
+  componentDidMount() {
     this.fuse = new Fuse(this.options, {
       keys: ['title']
     })
@@ -118,11 +118,12 @@ class Launcher extends Component {
       return <li
         key={index}
         ref={el => this.optionRefs[index] = el}
+        aria-selected={this.state.selected === index}
         tabIndex={this.state.selected === index ? "0" : "-1"}
         onClick={this.onClick.bind(this, option)}
         onKeyPress={this.onKeyPress.bind(this, option)}
         onMouseEnter={this.onMouseEnter.bind(this, index)}
-        className={this.state.selected === index ? styles.optionSelected : styles.option}>
+        className={styles.option}>
         <div className={styles.optionTitle}>
           <Box className={styles.optionIcon}>
             <i className={`bi-${option.icon}`} style={{ fontSize: 18 }} />
@@ -142,7 +143,15 @@ class Launcher extends Component {
         onDeactivate: this.prepareToHideLauncher.bind(this)
       }}>
         <div className={styles.background} onClick={this.onClickOutsideModal.bind(this)}>
-          <div ref={this.containerRef} className={styles.container}>
+          <div
+            ref={this.containerRef}
+            className={styles.container}
+            role="combobox"
+            aria-expanded="true"
+            aria-haspopup="listbox"
+            aria-modal="true"
+            tabIndex="-1"
+          >
             <Box className={styles.search}>
               <Box className={styles.iconSearch}>
                 <i className="bi-search" style={{ fontSize: 18 }} />
@@ -152,12 +161,15 @@ class Launcher extends Component {
                 value={this.state.query}
                 onChange={this.onSearch.bind(this)}
                 placeholder="Search docs"
+                aria-autocomplete="list"
+                spellCheck="false"
                 autoComplete="off"
+                autoCorrect="off"
                 type="text"
                 autoFocus
               />
             </Box>
-            <ul className={styles.list}>
+            <ul role="listbox" className={styles.list}>
               {this.renderOptions()}
             </ul>
           </div>
