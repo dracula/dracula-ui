@@ -24,12 +24,20 @@ class Launcher extends Component {
       selected: 0,
       filtered: this.options,
     }
+
+    this.optionRefs = []
   }
 
   async componentDidMount() {
     this.fuse = new Fuse(this.options, {
       keys: ['title']
     })
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.filtered !== this.state.filtered) {
+      this.optionRefs = this.optionRefs.filter(x => x !== null)
+    }
   }
 
   onClick(option) {
@@ -74,17 +82,25 @@ class Launcher extends Component {
   }
 
   onMoveUp() {
-    let { selected } = this.state
+    let { selected, filtered } = this.state
 
-    selected = selected > 0 ? selected - 1 : this.options.length - 1
+    selected = selected > 0 ? selected - 1 : filtered.length - 1
     this.setState({ selected })
+
+    if (this.optionRefs[selected]) {
+      this.optionRefs[selected].focus()
+    }
   }
 
   onMoveDown() {
-    let { selected } = this.state
+    let { selected, filtered } = this.state
 
-    selected = selected < this.options.length - 1 ? selected + 1 : 0
+    selected = selected < filtered.length - 1 ? selected + 1 : 0
     this.setState({ selected })
+
+    if (this.optionRefs[selected]) {
+      this.optionRefs[selected].focus()
+    }
   }
 
   prepareToHideLauncher() {
@@ -101,7 +117,8 @@ class Launcher extends Component {
     return this.state.filtered.map((option, index) => {
       return <li
         key={index}
-        tabIndex={index}
+        ref={el => this.optionRefs[index] = el}
+        tabIndex={this.state.selected === index ? "0" : "-1"}
         onClick={this.onClick.bind(this, option)}
         onKeyPress={this.onKeyPress.bind(this, option)}
         onMouseEnter={this.onMouseEnter.bind(this, index)}
