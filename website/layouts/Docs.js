@@ -1,17 +1,14 @@
 import { Component } from 'react'
-import Head from "next/head"
-import { Box, Heading, Paragraph } from "@dracula/dracula-ui"
-import Navigation from "../components/Navigation"
-import styles from "../pages/index.module.css"
+import Head from 'next/head'
+import { Box, Heading, Paragraph } from '@dracula/dracula-ui'
+import Navigation from '../components/Navigation'
+import styles from '../pages/index.module.css'
 
 import { HotKeys, configure } from 'react-hotkeys'
 import Launcher from '../components/Launcher'
 
-import dynamic from "next/dynamic"
-const Search = dynamic(
-  () => import("../components/Search"),
-  { ssr: false }
-)
+import dynamic from 'next/dynamic'
+const Search = dynamic(() => import('../components/Search'), { ssr: false })
 
 configure({
   ignoreRepeatedEventsWhenKeyHeldDown: false,
@@ -28,14 +25,16 @@ class Docs extends Component {
   }
 
   showLauncher(event) {
-    event.preventDefault();
-    this.setState({ launcherVisible: true })
-    document.body.style.overflow = 'hidden'
+    event.preventDefault()
+    this.setState({ launcherVisible: true }, () => {
+      document.body.style.overflow = 'hidden'
+    })
   }
 
   hideLauncher() {
-    this.setState({ launcherVisible: false })
-    document.body.style.overflow = 'unset'
+    this.setState({ launcherVisible: false }, () => {
+      document.body.style.overflow = 'unset'
+    })
   }
 
   render() {
@@ -43,8 +42,8 @@ class Docs extends Component {
     const pageTitle = `${title} — Dracula UI`
 
     const keyMap = {
-      SHOW_LAUNCHER: ["ctrl+k", "command+k"],
-      HIDE_LAUNCHER: "esc"
+      SHOW_LAUNCHER: ['ctrl+k', 'command+k'],
+      HIDE_LAUNCHER: 'esc'
     }
 
     const handlers = {
@@ -72,7 +71,9 @@ class Docs extends Component {
             <Box className={styles.content}>
               <main className={styles.center}>
                 <Search showLauncher={this.showLauncher.bind(this)} />
-                <Heading as="h1" size="2xl">{title}</Heading>
+                <Heading as="h1" size="2xl">
+                  {title}
+                </Heading>
                 <Paragraph className={styles.description} size="md">
                   {description}
                 </Paragraph>

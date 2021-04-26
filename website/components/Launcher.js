@@ -1,7 +1,7 @@
 import { Component, createRef } from 'react'
 import Router from 'next/router'
 import { HotKeys } from 'react-hotkeys'
-import styles from "./Launcher.module.css"
+import styles from './Launcher.module.css'
 import dspComponents from '@dracula/dracula-ui/dsp/data/components.json'
 import { Box, Text } from '@dracula/dracula-ui'
 import FocusTrap from 'focus-trap-react'
@@ -11,7 +11,7 @@ class Launcher extends Component {
   constructor(props) {
     super(props)
 
-    this.options = dspComponents.entities.map(entity => {
+    this.options = dspComponents.entities.map((entity) => {
       return {
         title: entity.name,
         icon: entity.ext_com_draculaui_icon,
@@ -22,7 +22,7 @@ class Launcher extends Component {
     this.state = {
       query: '',
       selected: 0,
-      filtered: this.options,
+      filtered: this.options
     }
 
     this.optionRefs = []
@@ -34,9 +34,9 @@ class Launcher extends Component {
     })
   }
 
-  componentDidUpdate(prevProps, prevState) {
+  componentDidUpdate(_prevProps, prevState) {
     if (prevState.filtered !== this.state.filtered) {
-      this.optionRefs = this.optionRefs.filter(x => x !== null)
+      this.optionRefs = this.optionRefs.filter((x) => x !== null)
     }
   }
 
@@ -66,7 +66,7 @@ class Launcher extends Component {
       return
     }
 
-    let filtered = this.fuse.search(query).map(option => {
+    let filtered = this.fuse.search(query).map((option) => {
       return option.item
     })
 
@@ -107,7 +107,7 @@ class Launcher extends Component {
     this.setState({
       query: '',
       selected: 0,
-      filtered: this.options,
+      filtered: this.options
     })
 
     this.props.hideLauncher()
@@ -115,23 +115,41 @@ class Launcher extends Component {
 
   renderOptions() {
     return this.state.filtered.map((option, index) => {
-      return <li
-        key={index}
-        ref={el => this.optionRefs[index] = el}
-        aria-selected={this.state.selected === index}
-        tabIndex={this.state.selected === index ? "0" : "-1"}
-        onClick={this.onClick.bind(this, option)}
-        onKeyPress={this.onKeyPress.bind(this, option)}
-        onMouseEnter={this.onMouseEnter.bind(this, index)}
-        className={styles.option}>
-        <div className={styles.optionTitle}>
-          <Box className={styles.optionIcon}>
-            <i className={`bi-${option.icon}`} style={{ fontSize: 18 }} />
-          </Box>
-          <Text>{option.title}</Text>
-        </div>
-        <svg className={styles.enterIcon} strokeWidth="2px" viewBox="0 0 20 20"><g stroke="currentColor" fill="none" fillRule="evenodd" strokeLinecap="round" strokeLinejoin="round"><path d="M18 3v4c0 2-2 4-4 4H2"></path><path d="M8 17l-6-6 6-6"></path></g></svg>
-      </li>
+      return (
+        <li
+          key={index}
+          ref={(el) => (this.optionRefs[index] = el)}
+          aria-selected={this.state.selected === index}
+          tabIndex={this.state.selected === index ? '0' : '-1'}
+          onClick={this.onClick.bind(this, option)}
+          onKeyPress={this.onKeyPress.bind(this, option)}
+          onMouseEnter={this.onMouseEnter.bind(this, index)}
+          className={styles.option}
+        >
+          <div className={styles.optionTitle}>
+            <Box className={styles.optionIcon}>
+              <i className={`bi-${option.icon}`} style={{ fontSize: 18 }} />
+            </Box>
+            <Text>{option.title}</Text>
+          </div>
+          <svg
+            className={styles.enterIcon}
+            strokeWidth="2px"
+            viewBox="0 0 20 20"
+          >
+            <g
+              stroke="currentColor"
+              fill="none"
+              fillRule="evenodd"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M18 3v4c0 2-2 4-4 4H2"></path>
+              <path d="M8 17l-6-6 6-6"></path>
+            </g>
+          </svg>
+        </li>
+      )
     })
   }
 
@@ -139,59 +157,68 @@ class Launcher extends Component {
     this.containerRef = createRef()
 
     if (this.props.launcherVisible) {
-      return <FocusTrap focusTrapOptions={{
-        onDeactivate: this.prepareToHideLauncher.bind(this)
-      }}>
-        <div className={styles.background} onClick={this.onClickOutsideModal.bind(this)}>
+      return (
+        <FocusTrap
+          focusTrapOptions={{
+            onDeactivate: this.prepareToHideLauncher.bind(this)
+          }}
+        >
           <div
-            ref={this.containerRef}
-            className={styles.container}
-            role="combobox"
-            aria-expanded="true"
-            aria-haspopup="listbox"
-            aria-modal="true"
-            tabIndex="-1"
+            className={styles.background}
+            onClick={this.onClickOutsideModal.bind(this)}
           >
-            <Box className={styles.search}>
-              <Box className={styles.iconSearch}>
-                <i className="bi-search" style={{ fontSize: 18 }} />
+            <div
+              ref={this.containerRef}
+              className={styles.container}
+              role="combobox"
+              aria-expanded="true"
+              aria-haspopup="listbox"
+              aria-modal="true"
+              tabIndex="-1"
+            >
+              <Box className={styles.search}>
+                <Box className={styles.iconSearch}>
+                  <i className="bi-search" style={{ fontSize: 18 }} />
+                </Box>
+                <input
+                  className={styles.input}
+                  value={this.state.query}
+                  onChange={this.onSearch.bind(this)}
+                  placeholder="Search docs"
+                  aria-autocomplete="list"
+                  spellCheck="false"
+                  autoComplete="off"
+                  autoCorrect="off"
+                  type="text"
+                  autoFocus
+                />
               </Box>
-              <input
-                className={styles.input}
-                value={this.state.query}
-                onChange={this.onSearch.bind(this)}
-                placeholder="Search docs"
-                aria-autocomplete="list"
-                spellCheck="false"
-                autoComplete="off"
-                autoCorrect="off"
-                type="text"
-                autoFocus
-              />
-            </Box>
-            <ul role="listbox" className={styles.list}>
-              {this.renderOptions()}
-            </ul>
+              <ul role="listbox" className={styles.list}>
+                {this.renderOptions()}
+              </ul>
+            </div>
           </div>
-        </div>
-      </FocusTrap>
+        </FocusTrap>
+      )
     }
   }
 
   render() {
     const keyMap = {
       LAUNCHER_UP: ['up'],
-      LAUNCHER_DOWN: ['down'],
+      LAUNCHER_DOWN: ['down']
     }
 
     const handlers = {
       LAUNCHER_UP: this.onMoveUp.bind(this),
-      LAUNCHER_DOWN: this.onMoveDown.bind(this),
+      LAUNCHER_DOWN: this.onMoveDown.bind(this)
     }
 
-    return <HotKeys keyMap={keyMap} handlers={handlers}>
-      {this.renderLauncher()}
-    </HotKeys>
+    return (
+      <HotKeys keyMap={keyMap} handlers={handlers}>
+        {this.renderLauncher()}
+      </HotKeys>
+    )
   }
 }
 
