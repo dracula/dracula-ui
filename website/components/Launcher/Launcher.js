@@ -6,6 +6,7 @@ import dspComponents from '@dracula/dracula-ui/dsp/data/components.json'
 import { Box, Text } from '@dracula/dracula-ui'
 import FocusTrap from 'focus-trap-react'
 import Fuse from 'fuse.js'
+import { iconMap } from './icon-map'
 
 class Launcher extends Component {
   constructor(props) {
@@ -14,7 +15,7 @@ class Launcher extends Component {
     this.options = dspComponents.entities.map((entity) => {
       return {
         title: entity.name,
-        icon: entity.ext_com_draculaui_icon,
+        icon: iconMap[entity.name],
         handler: () => Router.push(`/${entity.name.toLowerCase()}`)
       }
     })
