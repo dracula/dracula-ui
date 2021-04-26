@@ -35,3 +35,5 @@ export const Paragraph: React.FC<TextProps> = (props: TextProps) => {
 
   return <p {...cleanProps(finalProps)}>{props.children}</p>
 }
+
+Paragraph.displayName = 'Paragraph'
