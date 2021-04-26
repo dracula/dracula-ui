@@ -5,7 +5,7 @@ import Navigation from '../components/Navigation'
 import styles from '../pages/index.module.css'
 
 import { HotKeys, configure } from 'react-hotkeys'
-import Launcher from '../components/Launcher'
+import Launcher from '../components/Launcher/Launcher'
 
 import dynamic from 'next/dynamic'
 const Search = dynamic(() => import('../components/Search'), { ssr: false })
