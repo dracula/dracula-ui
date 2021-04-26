@@ -41,15 +41,9 @@ class Launcher extends Component {
     }
   }
 
-  onClick(option) {
+  navigate(option) {
     option.handler()
     this.prepareToHideLauncher()
-  }
-
-  onKeyPress(option, event) {
-    if (event.key === 'Enter') {
-      this.onClick(option)
-    }
   }
 
   onMouseEnter(index, event) {
@@ -82,7 +76,7 @@ class Launcher extends Component {
     this.prepareToHideLauncher()
   }
 
-  onMoveUp() {
+  onArrowUpPressed() {
     let { selected, filtered } = this.state
 
     selected = selected > 0 ? selected - 1 : filtered.length - 1
@@ -93,7 +87,7 @@ class Launcher extends Component {
     }
   }
 
-  onMoveDown() {
+  onArrowDownPressed() {
     let { selected, filtered } = this.state
 
     selected = selected < filtered.length - 1 ? selected + 1 : 0
@@ -102,6 +96,10 @@ class Launcher extends Component {
     if (this.optionRefs[selected]) {
       this.optionRefs[selected].focus()
     }
+  }
+
+  onEnterPressed() {
+    this.navigate(this.state.filtered[this.state.selected])
   }
 
   prepareToHideLauncher() {
@@ -122,8 +120,7 @@ class Launcher extends Component {
           ref={(el) => (this.optionRefs[index] = el)}
           aria-selected={this.state.selected === index}
           tabIndex={this.state.selected === index ? '0' : '-1'}
-          onClick={this.onClick.bind(this, option)}
-          onKeyPress={this.onKeyPress.bind(this, option)}
+          onClick={this.navigate.bind(this, option)}
           onMouseEnter={this.onMouseEnter.bind(this, index)}
           className={styles.option}
         >
@@ -207,12 +204,14 @@ class Launcher extends Component {
   render() {
     const keyMap = {
       LAUNCHER_UP: ['up'],
-      LAUNCHER_DOWN: ['down']
+      LAUNCHER_DOWN: ['down'],
+      LAUNCHER_ENTER: ['enter']
     }
 
     const handlers = {
-      LAUNCHER_UP: this.onMoveUp.bind(this),
-      LAUNCHER_DOWN: this.onMoveDown.bind(this)
+      LAUNCHER_UP: this.onArrowUpPressed.bind(this),
+      LAUNCHER_DOWN: this.onArrowDownPressed.bind(this),
+      LAUNCHER_ENTER: this.onEnterPressed.bind(this)
     }
 
     return (
