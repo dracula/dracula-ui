@@ -21,7 +21,6 @@
           "html": "<a\n  href=\"#\"\n  class=\"drac-anchor drac-text drac-text-white drac-text-purple--hover\"\n  >Visit the Dracula Castle</a\n>\n"
         }
       },
-      "ext_com_draculaui_icon": "box-arrow-up-right",
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
@@ -691,7 +690,6 @@
           "html": "<span\n  class=\"drac-avatar drac-bg-green-transparent drac-text-green\"\n  style=\"\n    background-image: url(https://ui.draculatheme.com/static/images/avatar.png);\n  \"\n></span>\n"
         }
       },
-      "ext_com_draculaui_icon": "person-circle",
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
@@ -1361,7 +1359,6 @@
           "html": "<span class=\"drac-badge drac-bg-purple\"\n  ><span class=\"drac-text drac-line-height drac-text-black\">Badge</span></span\n>\n"
         }
       },
-      "ext_com_draculaui_icon": "textarea-resize",
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
@@ -1902,7 +1899,6 @@
           "html": "<div class=\"drac-box\">\n  <span class=\"drac-text drac-line-height drac-text-white\">Dracula</span>\n</div>\n"
         }
       },
-      "ext_com_draculaui_icon": "bounding-box-circles",
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
@@ -2548,7 +2544,6 @@
           "html": "<button class=\"drac-btn drac-bg-purple\">Dracula</button>\n"
         }
       },
-      "ext_com_draculaui_icon": "bootstrap",
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
@@ -3296,7 +3291,6 @@
           "html": "<div class=\"drac-box drac-card drac-bg-purple drac-p-sm\">\n  <span class=\"drac-text drac-line-height drac-text-black\">Dracula</span>\n</div>\n"
         }
       },
-      "ext_com_draculaui_icon": "card-heading",
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
@@ -3980,7 +3974,6 @@
           "html": "<div class=\"drac-box\">\n  <input\n    type=\"checkbox\"\n    name=\"normal\"\n    id=\"normal\"\n    class=\"drac-checkbox drac-checkbox-purple\"\n    checked=\"\"\n  /><label for=\"normal\" class=\"drac-text drac-text-white\"\n    >Enjoys the light</label\n  >\n</div>\n"
         }
       },
-      "ext_com_draculaui_icon": "ui-checks",
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
@@ -4552,36 +4545,6 @@
     {
       "class": "component",
       "type": "page",
-      "id": "Colors",
-      "name": "Colors",
-      "last_updated_by": "System",
-      "description": "undefined",
-      "related_entity_ids": [],
-      "tags": [
-        "component"
-      ],
-      "snippets": {
-        "trigger": "colors",
-        "languages": {
-          "javascriptreact": "<Box p=\"md\" style={{ display: \"flex\" }}>\n  <Box color=\"pink\" style={{ width: 48, height: 48 }} />\n  <Box color=\"purpleCyan\" style={{ width: 48, height: 48 }} />\n  <Box color=\"animated\" style={{ width: 48, height: 48 }} />\n</Box>;\n",
-          "html": "<div p=\"md\" style=\"display: flex\" class=\"drac-box drac-p-md\">\n  <div\n    color=\"pink\"\n    style=\"width: 48px; height: 48px\"\n    class=\"drac-box drac-bg-pink\"\n  ></div>\n  <div\n    color=\"purpleCyan\"\n    style=\"width: 48px; height: 48px\"\n    class=\"drac-box drac-bg-purple-cyan\"\n  ></div>\n  <div\n    color=\"animated\"\n    style=\"width: 48px; height: 48px\"\n    class=\"drac-box drac-bg-animated\"\n  ></div>\n</div>\n"
-        }
-      },
-      "ext_com_draculaui_variations": [
-        {
-          "title": "Usage",
-          "html": "<div p=\"md\" style=\"display: flex\" class=\"drac-box drac-p-md\">\n  <div\n    color=\"pink\"\n    style=\"width: 48px; height: 48px\"\n    class=\"drac-box drac-bg-pink\"\n  ></div>\n  <div\n    color=\"purpleCyan\"\n    style=\"width: 48px; height: 48px\"\n    class=\"drac-box drac-bg-purple-cyan\"\n  ></div>\n  <div\n    color=\"animated\"\n    style=\"width: 48px; height: 48px\"\n    class=\"drac-box drac-bg-animated\"\n  ></div>\n</div>\n",
-          "react": "<Box p=\"md\" style={{ display: \"flex\" }}>\n  <Box color=\"pink\" style={{ width: 48, height: 48 }} />\n  <Box color=\"purpleCyan\" style={{ width: 48, height: 48 }} />\n  <Box color=\"animated\" style={{ width: 48, height: 48 }} />\n</Box>;\n",
-          "docs": "",
-          "screenshot": "./dsp/assets/Colors.png",
-          "svgData": "./dsp/assets/svgs/Colors.svg"
-        }
-      ],
-      "ext_com_draculaui_props": {}
-    },
-    {
-      "class": "component",
-      "type": "page",
       "id": "Divider",
       "name": "Divider",
       "last_updated_by": "System",
@@ -4597,7 +4560,6 @@
           "html": "<hr class=\"drac-divider\" />\n"
         }
       },
-      "ext_com_draculaui_icon": "hr",
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
@@ -5101,7 +5063,6 @@
           "html": "<h2 class=\"drac-heading drac-heading-xl drac-text-white\">\n  The quick vampire jumps over the lazy human\n</h2>\n"
         }
       },
-      "ext_com_draculaui_icon": "type-h1",
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
@@ -5695,7 +5656,6 @@
           "html": "<input\n  placeholder=\"Input\"\n  class=\"drac-input drac-input-white drac-text-white\"\n/>\n"
         }
       },
-      "ext_com_draculaui_icon": "input-cursor-text",
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
@@ -6334,7 +6294,6 @@
           "html": "<ol class=\"drac-list\">\n  <li class=\"drac-text drac-text-white\">Blade</li>\n  <li class=\"drac-text drac-text-white\">Buffy</li>\n  <li class=\"drac-text drac-text-white\">Morbius</li>\n</ol>\n"
         }
       },
-      "ext_com_draculaui_icon": "list-ul",
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
@@ -6883,7 +6842,6 @@
           "html": "<p class=\"drac-text drac-line-height drac-text-white\">\n  Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It\n  introduced the character of Count Dracula and established many conventions of\n  subsequent vampire fantasy. The novel tells the story of Dracula's attempt to\n  move from Transylvania to England so that he may find new blood and spread the\n  undead curse, and of the battle between Dracula and Professor Abraham Van\n  Helsing.\n</p>\n"
         }
       },
-      "ext_com_draculaui_icon": "card-text",
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
@@ -7560,7 +7518,6 @@
           "html": "<div class=\"drac-box\">\n  <input\n    type=\"radio\"\n    name=\"normal\"\n    id=\"normal\"\n    class=\"drac-radio drac-radio-purple\"\n    checked=\"\"\n  /><label for=\"normal\" class=\"drac-text drac-text-white\">Likes Garlic</label>\n</div>\n"
         }
       },
-      "ext_com_draculaui_icon": "ui-radios-grid",
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
@@ -8147,7 +8104,6 @@
           "html": "<div style=\"position: relative\">\n  <select class=\"drac-select drac-select-white\">\n    <option value=\"default\" disabled=\"\" selected=\"\">Select option</option>\n    <option>Blade</option>\n    <option>Buffy</option>\n    <option>Lincoln</option>\n    <option>Morbius</option>\n    <option>Van Helsing</option>\n  </select>\n  <div class=\"drac-select-arrow drac-text-white\">\n    <svg\n      viewBox=\"0 0 24 24\"\n      focusable=\"false\"\n      role=\"presentation\"\n      aria-hidden=\"true\"\n    >\n      <path\n        fill=\"currentColor\"\n        d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"\n      ></path>\n    </svg>\n  </div>\n</div>\n"
         }
       },
-      "ext_com_draculaui_icon": "menu-button",
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
@@ -8786,7 +8742,6 @@
           "html": "<div class=\"drac-box drac-bg-pink drac-p-md\">\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-line-height drac-text-white\">Padding</span>\n  </div>\n</div>\n"
         }
       },
-      "ext_com_draculaui_icon": "grid-1x2",
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
@@ -8830,7 +8785,6 @@
           "html": "<div class=\"drac-box\">\n  <input\n    type=\"checkbox\"\n    name=\"demo\"\n    id=\"demo\"\n    class=\"drac-switch drac-checkbox drac-switch-purple\"\n    checked=\"\"\n  /><label for=\"demo\" class=\"drac-text drac-text-white\">Has reflection</label>\n</div>\n"
         }
       },
-      "ext_com_draculaui_icon": "toggles",
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
@@ -9417,7 +9371,6 @@
           "html": "<table class=\"drac-table\">\n  <thead>\n    <tr>\n      <th class=\"drac-text drac-text-white\">Name</th>\n      <th class=\"drac-text drac-text-white\">Age</th>\n      <th class=\"drac-text drac-text-white\" style=\"max-width: 200px\">Bio</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td class=\"drac-text drac-text-white\">Nandor</td>\n      <td class=\"drac-text drac-text-white\">758 years</td>\n      <td class=\"drac-text drac-text-white\" style=\"max-width: 200px\">\n        Nandor was born in 1262 in the country of Al Quolanudar, now based in\n        southern Iran. He is a former soldier of the Ottoman Empire; during this\n        time he pillaged many villages without discrimination and twice turned\n        the Euphrates “red with blood”. One village, a utopia that he burned to\n        the ground, would later become the birthplace of Nadja, his future\n        vampire roommate. Nadja would not realise this until the 21st century.\n      </td>\n    </tr>\n    <tr>\n      <td class=\"drac-text drac-text-white\">Nadja</td>\n      <td class=\"drac-text drac-text-white\">512 years</td>\n      <td class=\"drac-text drac-text-white\" style=\"max-width: 200px\">\n        Nadja was very disadvantaged during her human life. Her village, located\n        on a “beautiful” island with a high snake population, was once a utopia,\n        but was burned to the ground by the army of an unknown warrior (who\n        would eventually turn out to be her future roommate Nandor the\n        Relentless) around 200 years before she was born. Only the \"stupidest\"\n        people were spared and the village never recovered, leaving its citizens\n        badly affected by famine and poverty.\n      </td>\n    </tr>\n    <tr>\n      <td class=\"drac-text drac-text-white\">Laszlo</td>\n      <td class=\"drac-text drac-text-white\">329 years</td>\n      <td class=\"drac-text drac-text-white\" style=\"max-width: 200px\">\n        As a human, Laszlo was the most handsome man in a village affected by\n        leprosy and plague, though he also contracted leprosy himself. One\n        night, the vampire Nadja flew into his window and seduced him, before\n        transforming into a hideous creature, biting him and turning him into a\n        vampire. As a vampire, Laszlo gained powerful hypnosis abilities and the\n        unique ability to control and communicate with animals. Like most\n        vampires, he could transform into a bat, but for some reason he prefers\n        to yell \"bat!\" each time before doing so.\n      </td>\n    </tr>\n    <tr>\n      <td class=\"drac-text drac-text-white\">Colin</td>\n      <td class=\"drac-text drac-text-white\">103 years</td>\n      <td class=\"drac-text drac-text-white\" style=\"max-width: 200px\">\n        As an energy vampire, Colin Robinson’s origin is unclear. According to\n        his roommate Laszlo, Colin “came with the house” they reside in. He has\n        lived in the Staten Island residence with fellow vampires Laszlo, Nadja\n        and Nandor since the 1970s at least. Nandor's former familiar Benjy and\n        his current familiar Guillermo have also shared his home. He works in an\n        office and frequently feeds off his co-workers by boring them with inane\n        conversations. Outside of work hours, Colin gains energy by aggravating\n        his roommates and trolling people online.\n      </td>\n    </tr>\n  </tbody>\n</table>\n"
         }
       },
-      "ext_com_draculaui_icon": "table",
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
@@ -9966,7 +9919,6 @@
           "html": "<ul class=\"drac-tabs drac-tabs-white\">\n  <li class=\"drac-tab drac-tab-active\">\n    <a class=\"drac-tab-link drac-text\" href=\"#\">Item One</a>\n  </li>\n  <li class=\"drac-tab\">\n    <a class=\"drac-tab-link drac-text\" href=\"#\">Item Two</a>\n  </li>\n  <li class=\"drac-tab\">\n    <a class=\"drac-tab-link drac-text\" href=\"#\">Item Three</a>\n  </li>\n</ul>\n"
         }
       },
-      "ext_com_draculaui_icon": "segmented-nav",
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
@@ -10470,7 +10422,6 @@
           "html": "<span class=\"drac-text drac-line-height drac-text-white\"\n  >The quick vampire jumps over the lazy human</span\n>\n"
         }
       },
-      "ext_com_draculaui_icon": "type",
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
