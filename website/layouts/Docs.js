@@ -4,14 +4,13 @@ import { Box, Heading, Paragraph } from '@dracula/dracula-ui'
 import Navigation from '../components/Navigation'
 import styles from '../pages/index.module.css'
 
-import { HotKeys, configure } from 'react-hotkeys'
+import { GlobalHotKeys, configure } from 'react-hotkeys'
 import Launcher from '../components/Launcher/Launcher'
 
 import dynamic from 'next/dynamic'
 const Search = dynamic(() => import('../components/Search'), { ssr: false })
 
 configure({
-  ignoreRepeatedEventsWhenKeyHeldDown: false,
   ignoreTags: []
 })
 
@@ -60,29 +59,29 @@ class Docs extends Component {
           <meta content={description} property="og:description" />
         </Head>
 
-        <HotKeys root keyMap={keyMap} handlers={handlers}>
-          <Launcher
-            launcherVisible={this.state.launcherVisible}
-            hideLauncher={this.hideLauncher.bind(this)}
-          />
+        <GlobalHotKeys root keyMap={keyMap} handlers={handlers} />
 
-          <Box className={styles.container}>
-            <Navigation selected={title} />
-            <Box className={styles.content}>
-              <main className={styles.center}>
-                <Search showLauncher={this.showLauncher.bind(this)} />
-                <Heading as="h1" size="2xl">
-                  {title}
-                </Heading>
-                <Paragraph className={styles.description} size="md">
-                  {description}
-                </Paragraph>
+        <Launcher
+          launcherVisible={this.state.launcherVisible}
+          hideLauncher={this.hideLauncher.bind(this)}
+        />
 
-                {this.props.children}
-              </main>
-            </Box>
+        <Box className={styles.container}>
+          <Navigation selected={title} />
+          <Box className={styles.content}>
+            <main className={styles.center}>
+              <Search showLauncher={this.showLauncher.bind(this)} />
+              <Heading as="h1" size="2xl">
+                {title}
+              </Heading>
+              <Paragraph className={styles.description} size="md">
+                {description}
+              </Paragraph>
+
+              {this.props.children}
+            </main>
           </Box>
-        </HotKeys>
+        </Box>
       </Box>
     )
   }

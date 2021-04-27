@@ -156,11 +156,7 @@ class Launcher extends Component {
 
     if (this.props.launcherVisible) {
       return (
-        <FocusTrap
-          focusTrapOptions={{
-            onDeactivate: this.prepareToHideLauncher.bind(this)
-          }}
-        >
+        <FocusTrap>
           <div
             className={styles.background}
             onClick={this.onClickOutsideModal.bind(this)}
