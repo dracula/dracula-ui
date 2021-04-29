@@ -20,6 +20,7 @@ export const iconMap = {
   Heading: 'type-h1',
   Input: 'input-cursor-text',
   List: 'list-ul',
+  OrderedList: 'list-ol',
   Paragraph: 'card-text',
   Radio: 'ui-radios-grid',
   Select: 'menu-button',

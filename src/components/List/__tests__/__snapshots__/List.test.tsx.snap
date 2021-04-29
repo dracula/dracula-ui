@@ -3,11 +3,11 @@
 exports[`Site: List Basic Usage 1`] = `
 Object {
   "docs": "Render an unstyled list by default.",
-  "html": "<ol class=\\"drac-list\\">
+  "html": "<ul class=\\"drac-list\\">
   <li class=\\"drac-text drac-text-white\\">Blade</li>
   <li class=\\"drac-text drac-text-white\\">Buffy</li>
   <li class=\\"drac-text drac-text-white\\">Morbius</li>
-</ol>
+</ul>
 ",
   "react": "<List>
   <li className=\\"drac-text drac-text-white\\">Blade</li>
@@ -22,13 +22,13 @@ Object {
 exports[`Site: List Colors 1`] = `
 Object {
   "docs": "Lists can be customized to use any of the Dracula UI theme colors.",
-  "html": "<ol class=\\"drac-list drac-list-ordered drac-list-cyan\\">
+  "html": "<ul class=\\"drac-list drac-list-cyan\\">
   <li class=\\"drac-text drac-text-white\\">Blade</li>
   <li class=\\"drac-text drac-text-white\\">Buffy</li>
   <li class=\\"drac-text drac-text-white\\">Morbius</li>
-</ol>
+</ul>
 ",
-  "react": "<List variant=\\"ordered\\" color=\\"cyan\\">
+  "react": "<List color=\\"cyan\\">
   <li className=\\"drac-text drac-text-white\\">Blade</li>
   <li className=\\"drac-text drac-text-white\\">Buffy</li>
   <li className=\\"drac-text drac-text-white\\">Morbius</li>
@@ -40,13 +40,13 @@ Object {
 
 exports[`Site: List Variants 1`] = `
 Object {
-  "docs": "Lists can be displayed in dashes as an \`<ul>\` or in numbers as an \`<ol>",
+  "docs": "Lists can be displayed as plain list items or with dashes.",
   "html": "<div class=\\"drac-box\\">
-  <ol class=\\"drac-list drac-list-ordered drac-list-purple\\">
+  <ul class=\\"drac-list drac-list-purple\\">
     <li class=\\"drac-text drac-text-white\\">Blade</li>
     <li class=\\"drac-text drac-text-white\\">Buffy</li>
     <li class=\\"drac-text drac-text-white\\">Morbius</li>
-  </ol>
+  </ul>
   <ul class=\\"drac-list drac-list-unordered drac-list-purple\\">
     <li class=\\"drac-text drac-text-white\\">Blade</li>
     <li class=\\"drac-text drac-text-white\\">Buffy</li>
@@ -55,7 +55,7 @@ Object {
 </div>
 ",
   "react": "<Box>
-  <List variant=\\"ordered\\" color=\\"purple\\">
+  <List color=\\"purple\\">
     <li className=\\"drac-text drac-text-white\\">Blade</li>
     <li className=\\"drac-text drac-text-white\\">Buffy</li>
     <li className=\\"drac-text drac-text-white\\">Morbius</li>
