@@ -10,7 +10,7 @@ docs(Divider, {
     return snapshot(
       'Usage',
       Usage,
-      'Dividers are used to defined a thematic break in a page.'
+      'Dividers are used to define a thematic break in a page.'
     )
   },
   variations() {
