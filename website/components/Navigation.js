@@ -31,7 +31,7 @@ const items = [
     pages
   },
   {
-    title: 'Patterns (Comming Soon)',
+    title: 'Patterns (Coming Soon)',
     pages: ['Blog', 'Form', 'Login', 'Homepage', 'Pricing', '& many more...']
   }
 ]

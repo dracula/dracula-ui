@@ -18,6 +18,7 @@ export * from './components/Card/Card'
 export * from './components/Tabs/Tabs'
 export * from './components/Table/Table'
 export * from './components/List/List'
+export * from './components/OrderedList/OrderedList'
 
 export * from './base/spacing'
 export * from './base/colors'
