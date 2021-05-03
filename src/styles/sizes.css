@@ -73,7 +73,7 @@
   }
 }
 
-@each $size in none, xxs, xs, sm, md, lg {
+@each $size in auto, none, xxs, xs, sm, md, lg {
   .m-$(size) {
     margin: var(--spacing-$(size));
   }

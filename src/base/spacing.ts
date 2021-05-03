@@ -66,6 +66,7 @@ export function paddingMixin(mixin: PaddingMixin) {
 }
 
 const margin = {
+  auto: 'drac-m-auto',
   none: 'drac-m-none',
   xxs: 'drac-m-xxs',
   xs: 'drac-m-xs',
