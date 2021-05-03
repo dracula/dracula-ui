@@ -1,5 +1,82 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Site: Paragraph Align 1`] = `
+Object {
+  "docs": "Paragraphs can be customized with different alignments.",
+  "html": "<div class=\\"drac-box\\">
+  <p class=\\"drac-text drac-text-left drac-line-height drac-text-white\\">
+    Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It
+    introduced the character of Count Dracula and established many conventions
+    of subsequent vampire fantasy. The novel tells the story of Dracula's
+    attempt to move from Transylvania to England so that he may find new blood
+    and spread the undead curse, and of the battle between Dracula and Professor
+    Abraham Van Helsing.
+  </p>
+  <p class=\\"drac-text drac-text-center drac-line-height drac-text-white\\">
+    Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It
+    introduced the character of Count Dracula and established many conventions
+    of subsequent vampire fantasy. The novel tells the story of Dracula's
+    attempt to move from Transylvania to England so that he may find new blood
+    and spread the undead curse, and of the battle between Dracula and Professor
+    Abraham Van Helsing.
+  </p>
+  <p class=\\"drac-text drac-text-right drac-line-height drac-text-white\\">
+    Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It
+    introduced the character of Count Dracula and established many conventions
+    of subsequent vampire fantasy. The novel tells the story of Dracula's
+    attempt to move from Transylvania to England so that he may find new blood
+    and spread the undead curse, and of the battle between Dracula and Professor
+    Abraham Van Helsing.
+  </p>
+  <p class=\\"drac-text drac-text-justify drac-line-height drac-text-white\\">
+    Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It
+    introduced the character of Count Dracula and established many conventions
+    of subsequent vampire fantasy. The novel tells the story of Dracula's
+    attempt to move from Transylvania to England so that he may find new blood
+    and spread the undead curse, and of the battle between Dracula and Professor
+    Abraham Van Helsing.
+  </p>
+</div>
+",
+  "react": "<Box>
+  <Paragraph align=\\"left\\">
+    Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It
+    introduced the character of Count Dracula and established many conventions
+    of subsequent vampire fantasy. The novel tells the story of Dracula&#39;s
+    attempt to move from Transylvania to England so that he may find new blood
+    and spread the undead curse, and of the battle between Dracula and Professor
+    Abraham Van Helsing.
+  </Paragraph>
+  <Paragraph align=\\"center\\">
+    Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It
+    introduced the character of Count Dracula and established many conventions
+    of subsequent vampire fantasy. The novel tells the story of Dracula&#39;s
+    attempt to move from Transylvania to England so that he may find new blood
+    and spread the undead curse, and of the battle between Dracula and Professor
+    Abraham Van Helsing.
+  </Paragraph>
+  <Paragraph align=\\"right\\">
+    Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It
+    introduced the character of Count Dracula and established many conventions
+    of subsequent vampire fantasy. The novel tells the story of Dracula&#39;s
+    attempt to move from Transylvania to England so that he may find new blood
+    and spread the undead curse, and of the battle between Dracula and Professor
+    Abraham Van Helsing.
+  </Paragraph>
+  <Paragraph align=\\"justify\\">
+    Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It
+    introduced the character of Count Dracula and established many conventions
+    of subsequent vampire fantasy. The novel tells the story of Dracula&#39;s
+    attempt to move from Transylvania to England so that he may find new blood
+    and spread the undead curse, and of the battle between Dracula and Professor
+    Abraham Van Helsing.
+  </Paragraph>
+</Box>;
+",
+  "title": "Align",
+}
+`;
+
 exports[`Site: Paragraph Basic Usage 1`] = `
 Object {
   "docs": "Show a paragraph within an interface.",
@@ -167,7 +244,7 @@ Object {
 
 exports[`Site: Paragraph Sizes 1`] = `
 Object {
-  "docs": "Paragraphs can be customize to use several different sizes.",
+  "docs": "Paragraphs can be customized to use several different sizes.",
   "html": "<div class=\\"drac-box\\">
   <p class=\\"drac-text drac-text-xs drac-line-height drac-text-white\\">xs</p>
   <p class=\\"drac-text drac-text-sm drac-line-height drac-text-white\\">sm</p>
