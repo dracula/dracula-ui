@@ -5010,6 +5010,24 @@
     {
       "class": "component",
       "type": "page",
+      "id": ".drac-text-center",
+      "name": ".drac-text-center",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-center",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-center",
+        "languages": {
+          "css": "drac-text-center"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
       "id": ".drac-text-cyan",
       "name": ".drac-text-cyan",
       "last_updated_by": "System",
@@ -5184,6 +5202,42 @@
         "trigger": "css-text-green--hover",
         "languages": {
           "css": "drac-text-green--hover"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-justify",
+      "name": ".drac-text-justify",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-justify",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-justify",
+        "languages": {
+          "css": "drac-text-justify"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-left",
+      "name": ".drac-text-left",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-left",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-left",
+        "languages": {
+          "css": "drac-text-left"
         }
       }
     },
@@ -5562,6 +5616,24 @@
         "trigger": "css-text-red--hover",
         "languages": {
           "css": "drac-text-red--hover"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-right",
+      "name": ".drac-text-right",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-right",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-right",
+        "languages": {
+          "css": "drac-text-right"
         }
       }
     },

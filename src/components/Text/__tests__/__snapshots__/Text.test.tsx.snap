@@ -1,5 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Site: Text Align 1`] = `
+Object {
+  "docs": "Text can be customized with different alignments.",
+  "html": "<div class=\\"drac-box\\">
+  <p class=\\"drac-text drac-text-left drac-line-height drac-text-white\\">
+    The quick vampire jumps over the lazy human
+  </p>
+  <p class=\\"drac-text drac-text-center drac-line-height drac-text-white\\">
+    The quick vampire jumps over the lazy human
+  </p>
+  <p class=\\"drac-text drac-text-right drac-line-height drac-text-white\\">
+    The quick vampire jumps over the lazy human
+  </p>
+</div>
+",
+  "react": "<Box>
+  <Text align=\\"left\\" as=\\"p\\">
+    The quick vampire jumps over the lazy human
+  </Text>
+  <Text align=\\"center\\" as=\\"p\\">
+    The quick vampire jumps over the lazy human
+  </Text>
+  <Text align=\\"right\\" as=\\"p\\">
+    The quick vampire jumps over the lazy human
+  </Text>
+</Box>;
+",
+  "title": "Align",
+}
+`;
+
 exports[`Site: Text Basic Usage 1`] = `
 Object {
   "docs": "Show inline text within an interface.",
@@ -40,7 +71,7 @@ Object {
 
 exports[`Site: Text Sizes 1`] = `
 Object {
-  "docs": "Text can be customize to use several different sizes.",
+  "docs": "Text can be customized to use several different sizes.",
   "html": "<div class=\\"drac-box\\">
   <div class=\\"drac-box\\">
     <span class=\\"drac-text drac-text-xs drac-line-height drac-text-white\\"

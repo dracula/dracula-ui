@@ -20,6 +20,11 @@ docs(Paragraph, {
         'Paragraphs can be customized to use any of the Dracula UI theme colors.'
       ),
       snapshot(
+        'Align',
+        Align,
+        'Paragraphs can be customized with different alignments.'
+      ),
+      snapshot(
         'Weights',
         Weights,
         'Paragraphs can be defined in different font weights.'
@@ -27,7 +32,7 @@ docs(Paragraph, {
       snapshot(
         'Sizes',
         Sizes,
-        'Paragraphs can be customize to use several different sizes.'
+        'Paragraphs can be customized to use several different sizes.'
       ),
       snapshot(
         'Line Height',
@@ -49,6 +54,17 @@ function Colors() {
     <Box>
       <Paragraph color="cyan">cyan</Paragraph>
       <Paragraph color="green">green</Paragraph>
+    </Box>
+  )
+}
+
+function Align() {
+  return (
+    <Box>
+      <Paragraph align="left">Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It introduced the character of Count Dracula and established many conventions of subsequent vampire fantasy. The novel tells the story of Dracula's attempt to move from Transylvania to England so that he may find new blood and spread the undead curse, and of the battle between Dracula and Professor Abraham Van Helsing.</Paragraph>
+      <Paragraph align="center">Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It introduced the character of Count Dracula and established many conventions of subsequent vampire fantasy. The novel tells the story of Dracula's attempt to move from Transylvania to England so that he may find new blood and spread the undead curse, and of the battle between Dracula and Professor Abraham Van Helsing.</Paragraph>
+      <Paragraph align="right">Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It introduced the character of Count Dracula and established many conventions of subsequent vampire fantasy. The novel tells the story of Dracula's attempt to move from Transylvania to England so that he may find new blood and spread the undead curse, and of the battle between Dracula and Professor Abraham Van Helsing.</Paragraph>
+      <Paragraph align="justify">Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It introduced the character of Count Dracula and established many conventions of subsequent vampire fantasy. The novel tells the story of Dracula's attempt to move from Transylvania to England so that he may find new blood and spread the undead curse, and of the battle between Dracula and Professor Abraham Van Helsing.</Paragraph>
     </Box>
   )
 }
