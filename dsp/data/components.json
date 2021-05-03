@@ -4565,7 +4565,7 @@
           "title": "Usage",
           "html": "<hr class=\"drac-divider\" />\n",
           "react": "<Divider />;\n",
-          "docs": "Dividers are used to defined a thematic break in a page.",
+          "docs": "Dividers are used to define a thematic break in a page.",
           "screenshot": "./dsp/assets/Divider.png"
         },
         {
@@ -6353,7 +6353,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"unordered\" | \"ordered\" | undefined"
+            "name": "\"unordered\" | \"ordered\" | \"none\" | undefined"
           }
         },
         "p": {
@@ -6608,7 +6608,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"unordered\" | \"ordered\" | undefined"
+              "name": "\"unordered\" | \"ordered\" | \"none\" | undefined"
             }
           },
           "p": {
@@ -7361,6 +7361,13 @@
           "screenshot": "./dsp/assets/ParagraphColors.png"
         },
         {
+          "title": "Align",
+          "html": "<div class=\"drac-box\">\n  <p class=\"drac-text drac-text-left drac-line-height drac-text-white\">\n    Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It\n    introduced the character of Count Dracula and established many conventions\n    of subsequent vampire fantasy. The novel tells the story of Dracula's\n    attempt to move from Transylvania to England so that he may find new blood\n    and spread the undead curse, and of the battle between Dracula and Professor\n    Abraham Van Helsing.\n  </p>\n  <p class=\"drac-text drac-text-center drac-line-height drac-text-white\">\n    Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It\n    introduced the character of Count Dracula and established many conventions\n    of subsequent vampire fantasy. The novel tells the story of Dracula's\n    attempt to move from Transylvania to England so that he may find new blood\n    and spread the undead curse, and of the battle between Dracula and Professor\n    Abraham Van Helsing.\n  </p>\n  <p class=\"drac-text drac-text-right drac-line-height drac-text-white\">\n    Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It\n    introduced the character of Count Dracula and established many conventions\n    of subsequent vampire fantasy. The novel tells the story of Dracula's\n    attempt to move from Transylvania to England so that he may find new blood\n    and spread the undead curse, and of the battle between Dracula and Professor\n    Abraham Van Helsing.\n  </p>\n  <p class=\"drac-text drac-text-justify drac-line-height drac-text-white\">\n    Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It\n    introduced the character of Count Dracula and established many conventions\n    of subsequent vampire fantasy. The novel tells the story of Dracula's\n    attempt to move from Transylvania to England so that he may find new blood\n    and spread the undead curse, and of the battle between Dracula and Professor\n    Abraham Van Helsing.\n  </p>\n</div>\n",
+          "react": "<Box>\n  <Paragraph align=\"left\">\n    Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It\n    introduced the character of Count Dracula and established many conventions\n    of subsequent vampire fantasy. The novel tells the story of Dracula&#39;s\n    attempt to move from Transylvania to England so that he may find new blood\n    and spread the undead curse, and of the battle between Dracula and Professor\n    Abraham Van Helsing.\n  </Paragraph>\n  <Paragraph align=\"center\">\n    Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It\n    introduced the character of Count Dracula and established many conventions\n    of subsequent vampire fantasy. The novel tells the story of Dracula&#39;s\n    attempt to move from Transylvania to England so that he may find new blood\n    and spread the undead curse, and of the battle between Dracula and Professor\n    Abraham Van Helsing.\n  </Paragraph>\n  <Paragraph align=\"right\">\n    Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It\n    introduced the character of Count Dracula and established many conventions\n    of subsequent vampire fantasy. The novel tells the story of Dracula&#39;s\n    attempt to move from Transylvania to England so that he may find new blood\n    and spread the undead curse, and of the battle between Dracula and Professor\n    Abraham Van Helsing.\n  </Paragraph>\n  <Paragraph align=\"justify\">\n    Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It\n    introduced the character of Count Dracula and established many conventions\n    of subsequent vampire fantasy. The novel tells the story of Dracula&#39;s\n    attempt to move from Transylvania to England so that he may find new blood\n    and spread the undead curse, and of the battle between Dracula and Professor\n    Abraham Van Helsing.\n  </Paragraph>\n</Box>;\n",
+          "docs": "Paragraphs can be customized with different alignments.",
+          "screenshot": "./dsp/assets/ParagraphAlign.png"
+        },
+        {
           "title": "Weights",
           "html": "<div class=\"drac-box\">\n  <p class=\"drac-text drac-line-height drac-text-white\">normal</p>\n  <p class=\"drac-text drac-text-semibold drac-line-height drac-text-white\">\n    semibold\n  </p>\n  <p class=\"drac-text drac-text-bold drac-line-height drac-text-white\">bold</p>\n</div>\n",
           "react": "<Box>\n  <Paragraph weight=\"normal\">normal</Paragraph>\n  <Paragraph weight=\"semibold\">semibold</Paragraph>\n  <Paragraph weight=\"bold\">bold</Paragraph>\n</Box>;\n",
@@ -7371,7 +7378,7 @@
           "title": "Sizes",
           "html": "<div class=\"drac-box\">\n  <p class=\"drac-text drac-text-xs drac-line-height drac-text-white\">xs</p>\n  <p class=\"drac-text drac-text-sm drac-line-height drac-text-white\">sm</p>\n  <p class=\"drac-text drac-line-height drac-text-white\">md</p>\n  <p class=\"drac-text drac-text-lg drac-line-height drac-text-white\">lg</p>\n</div>\n",
           "react": "<Box>\n  <Paragraph size=\"xs\">xs</Paragraph>\n  <Paragraph size=\"sm\">sm</Paragraph>\n  <Paragraph size=\"md\">md</Paragraph>\n  <Paragraph size=\"lg\">lg</Paragraph>\n</Box>;\n",
-          "docs": "Paragraphs can be customize to use several different sizes.",
+          "docs": "Paragraphs can be customized to use several different sizes.",
           "screenshot": "./dsp/assets/ParagraphSizes.png"
         },
         {
@@ -7383,6 +7390,25 @@
         }
       ],
       "ext_com_draculaui_props": {
+        "align": {
+          "defaultValue": null,
+          "description": "Controls the alignment of text.",
+          "name": "align",
+          "parent": {
+            "fileName": "dracula-ui/src/components/Text/Text.tsx",
+            "name": "TextProps"
+          },
+          "declarations": [
+            {
+              "fileName": "dracula-ui/src/components/Text/Text.tsx",
+              "name": "TextProps"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"left\" | \"center\" | \"right\" | \"justify\" | undefined"
+          }
+        },
         "size": {
           "defaultValue": null,
           "description": "Controls the size of the text based on pre-configured Dracula UI sizes.",
@@ -7695,6 +7721,25 @@
         "displayName": "Paragraph",
         "methods": [],
         "props": {
+          "align": {
+            "defaultValue": null,
+            "description": "Controls the alignment of text.",
+            "name": "align",
+            "parent": {
+              "fileName": "dracula-ui/src/components/Text/Text.tsx",
+              "name": "TextProps"
+            },
+            "declarations": [
+              {
+                "fileName": "dracula-ui/src/components/Text/Text.tsx",
+                "name": "TextProps"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"left\" | \"center\" | \"right\" | \"justify\" | undefined"
+            }
+          },
           "size": {
             "defaultValue": null,
             "description": "Controls the size of the text based on pre-configured Dracula UI sizes.",
@@ -10941,6 +10986,13 @@
           "screenshot": "./dsp/assets/TextColors.png"
         },
         {
+          "title": "Align",
+          "html": "<div class=\"drac-box\">\n  <p class=\"drac-text drac-text-left drac-line-height drac-text-white\">\n    The quick vampire jumps over the lazy human\n  </p>\n  <p class=\"drac-text drac-text-center drac-line-height drac-text-white\">\n    The quick vampire jumps over the lazy human\n  </p>\n  <p class=\"drac-text drac-text-right drac-line-height drac-text-white\">\n    The quick vampire jumps over the lazy human\n  </p>\n</div>\n",
+          "react": "<Box>\n  <Text align=\"left\" as=\"p\">\n    The quick vampire jumps over the lazy human\n  </Text>\n  <Text align=\"center\" as=\"p\">\n    The quick vampire jumps over the lazy human\n  </Text>\n  <Text align=\"right\" as=\"p\">\n    The quick vampire jumps over the lazy human\n  </Text>\n</Box>;\n",
+          "docs": "Text can be customized with different alignments.",
+          "screenshot": "./dsp/assets/TextAlign.png"
+        },
+        {
           "title": "Weights",
           "html": "<div class=\"drac-box\">\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-line-height drac-text-white\">normal</span>\n  </div>\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-text-semibold drac-line-height drac-text-white\"\n      >semibold</span\n    >\n  </div>\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-text-bold drac-line-height drac-text-white\"\n      >bold</span\n    >\n  </div>\n</div>\n",
           "react": "<Box>\n  <Box>\n    <Text weight=\"normal\">normal</Text>\n  </Box>\n  <Box>\n    <Text weight=\"semibold\">semibold</Text>\n  </Box>\n  <Box>\n    <Text weight=\"bold\">bold</Text>\n  </Box>\n</Box>;\n",
@@ -10951,11 +11003,30 @@
           "title": "Sizes",
           "html": "<div class=\"drac-box\">\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-text-xs drac-line-height drac-text-white\"\n      >xs</span\n    >\n  </div>\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-text-sm drac-line-height drac-text-white\"\n      >sm</span\n    >\n  </div>\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-line-height drac-text-white\">md</span>\n  </div>\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-text-lg drac-line-height drac-text-white\"\n      >lg</span\n    >\n  </div>\n</div>\n",
           "react": "<Box>\n  <Box>\n    <Text size=\"xs\">xs</Text>\n  </Box>\n  <Box>\n    <Text size=\"sm\">sm</Text>\n  </Box>\n  <Box>\n    <Text size=\"md\">md</Text>\n  </Box>\n  <Box>\n    <Text size=\"lg\">lg</Text>\n  </Box>\n</Box>;\n",
-          "docs": "Text can be customize to use several different sizes.",
+          "docs": "Text can be customized to use several different sizes.",
           "screenshot": "./dsp/assets/TextSizes.png"
         }
       ],
       "ext_com_draculaui_props": {
+        "align": {
+          "defaultValue": null,
+          "description": "Controls the alignment of text.",
+          "name": "align",
+          "parent": {
+            "fileName": "src/components/Text/Text.tsx",
+            "name": "TextProps"
+          },
+          "declarations": [
+            {
+              "fileName": "src/components/Text/Text.tsx",
+              "name": "TextProps"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"left\" | \"center\" | \"right\" | \"justify\" | undefined"
+          }
+        },
         "size": {
           "defaultValue": null,
           "description": "Controls the size of the text based on pre-configured Dracula UI sizes.",
@@ -11268,6 +11339,25 @@
         "displayName": "Text",
         "methods": [],
         "props": {
+          "align": {
+            "defaultValue": null,
+            "description": "Controls the alignment of text.",
+            "name": "align",
+            "parent": {
+              "fileName": "src/components/Text/Text.tsx",
+              "name": "TextProps"
+            },
+            "declarations": [
+              {
+                "fileName": "src/components/Text/Text.tsx",
+                "name": "TextProps"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"left\" | \"center\" | \"right\" | \"justify\" | undefined"
+            }
+          },
           "size": {
             "defaultValue": null,
             "description": "Controls the size of the text based on pre-configured Dracula UI sizes.",
