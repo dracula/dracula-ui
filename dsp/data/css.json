@@ -2184,6 +2184,24 @@
     {
       "class": "component",
       "type": "page",
+      "id": ".drac-m-auto",
+      "name": ".drac-m-auto",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-m-auto",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-m-auto",
+        "languages": {
+          "css": "drac-m-auto"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
       "id": ".drac-m-lg",
       "name": ".drac-m-lg",
       "last_updated_by": "System",
@@ -2286,6 +2304,24 @@
         "trigger": "css-m-xxs",
         "languages": {
           "css": "drac-m-xxs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-mb-auto",
+      "name": ".drac-mb-auto",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-mb-auto",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-mb-auto",
+        "languages": {
+          "css": "drac-mb-auto"
         }
       }
     },
@@ -2400,6 +2436,24 @@
     {
       "class": "component",
       "type": "page",
+      "id": ".drac-ml-auto",
+      "name": ".drac-ml-auto",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-ml-auto",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-ml-auto",
+        "languages": {
+          "css": "drac-ml-auto"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
       "id": ".drac-ml-lg",
       "name": ".drac-ml-lg",
       "last_updated_by": "System",
@@ -2502,6 +2556,24 @@
         "trigger": "css-ml-xxs",
         "languages": {
           "css": "drac-ml-xxs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-mr-auto",
+      "name": ".drac-mr-auto",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-mr-auto",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-mr-auto",
+        "languages": {
+          "css": "drac-mr-auto"
         }
       }
     },
@@ -2616,6 +2688,24 @@
     {
       "class": "component",
       "type": "page",
+      "id": ".drac-mt-auto",
+      "name": ".drac-mt-auto",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-mt-auto",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-mt-auto",
+        "languages": {
+          "css": "drac-mt-auto"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
       "id": ".drac-mt-lg",
       "name": ".drac-mt-lg",
       "last_updated_by": "System",
@@ -2724,6 +2814,24 @@
     {
       "class": "component",
       "type": "page",
+      "id": ".drac-mx-auto",
+      "name": ".drac-mx-auto",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-mx-auto",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-mx-auto",
+        "languages": {
+          "css": "drac-mx-auto"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
       "id": ".drac-mx-lg",
       "name": ".drac-mx-lg",
       "last_updated_by": "System",
@@ -2826,6 +2934,24 @@
         "trigger": "css-mx-xxs",
         "languages": {
           "css": "drac-mx-xxs"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-my-auto",
+      "name": ".drac-my-auto",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-my-auto",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-my-auto",
+        "languages": {
+          "css": "drac-my-auto"
         }
       }
     },
