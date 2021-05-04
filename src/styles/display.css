@@ -1,0 +1,18 @@
+:root {
+  --display-none: none;
+  --display-block: block;
+  --display-flex: flex;
+  --display-grid: grid;
+  --display-table: table;
+  --display-inline: inline;
+  --display-inline-block: inline-block;
+  --display-inline-flex: inline-flex;
+  --display-inline-grid: inline-grid;
+  --display-inline-table: inline-table;
+}
+
+@each $var in none, block, flex, grid, table, inline, inline-block, inline-flex, inline-grid, inline-table {
+  .d-$(var) {
+    display: var(--display-$(var));
+  }
+}

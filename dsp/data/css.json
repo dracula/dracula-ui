@@ -1302,6 +1302,186 @@
     {
       "class": "component",
       "type": "page",
+      "id": ".drac-d-block",
+      "name": ".drac-d-block",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-d-block",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-d-block",
+        "languages": {
+          "css": "drac-d-block"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-d-flex",
+      "name": ".drac-d-flex",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-d-flex",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-d-flex",
+        "languages": {
+          "css": "drac-d-flex"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-d-grid",
+      "name": ".drac-d-grid",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-d-grid",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-d-grid",
+        "languages": {
+          "css": "drac-d-grid"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-d-inline",
+      "name": ".drac-d-inline",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-d-inline",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-d-inline",
+        "languages": {
+          "css": "drac-d-inline"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-d-inline-block",
+      "name": ".drac-d-inline-block",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-d-inline-block",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-d-inline-block",
+        "languages": {
+          "css": "drac-d-inline-block"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-d-inline-flex",
+      "name": ".drac-d-inline-flex",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-d-inline-flex",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-d-inline-flex",
+        "languages": {
+          "css": "drac-d-inline-flex"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-d-inline-grid",
+      "name": ".drac-d-inline-grid",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-d-inline-grid",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-d-inline-grid",
+        "languages": {
+          "css": "drac-d-inline-grid"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-d-inline-table",
+      "name": ".drac-d-inline-table",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-d-inline-table",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-d-inline-table",
+        "languages": {
+          "css": "drac-d-inline-table"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-d-none",
+      "name": ".drac-d-none",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-d-none",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-d-none",
+        "languages": {
+          "css": "drac-d-none"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-d-table",
+      "name": ".drac-d-table",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-d-table",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-d-table",
+        "languages": {
+          "css": "drac-d-table"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
       "id": ".drac-glow-black",
       "name": ".drac-glow-black",
       "last_updated_by": "System",

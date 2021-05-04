@@ -30,6 +30,43 @@ Object {
 }
 `;
 
+exports[`Site: Box Display 1`] = `
+Object {
+  "docs": "Control the display type of an element.",
+  "html": "<div class=\\"drac-box\\">
+  <div
+    class=\\"drac-box drac-bg-purple-cyan drac-d-inline-block drac-rounded-lg drac-p-xs drac-mr-xs\\"
+  >
+    <span class=\\"drac-text drac-line-height drac-text-black\\">1</span>
+  </div>
+  <div
+    class=\\"drac-box drac-bg-purple-cyan drac-d-inline-block drac-rounded-lg drac-p-xs drac-mr-xs\\"
+  >
+    <span class=\\"drac-text drac-line-height drac-text-black\\">2</span>
+  </div>
+  <div
+    class=\\"drac-box drac-bg-purple-cyan drac-d-inline-block drac-rounded-lg drac-p-xs drac-mr-xs\\"
+  >
+    <span class=\\"drac-text drac-line-height drac-text-black\\">3</span>
+  </div>
+</div>
+",
+  "react": "<Box>
+  <Box color=\\"purpleCyan\\" display=\\"inline-block\\" rounded=\\"lg\\" p=\\"xs\\" mr=\\"xs\\">
+    <Text color=\\"black\\">1</Text>
+  </Box>
+  <Box color=\\"purpleCyan\\" display=\\"inline-block\\" rounded=\\"lg\\" p=\\"xs\\" mr=\\"xs\\">
+    <Text color=\\"black\\">2</Text>
+  </Box>
+  <Box color=\\"purpleCyan\\" display=\\"inline-block\\" rounded=\\"lg\\" p=\\"xs\\" mr=\\"xs\\">
+    <Text color=\\"black\\">3</Text>
+  </Box>
+</Box>;
+",
+  "title": "Display",
+}
+`;
+
 exports[`Site: Box Height 1`] = `
 Object {
   "docs": "Set an element with a fixed height, including \`auto\` and \`full\`.",
