@@ -30,10 +30,55 @@ Object {
 }
 `;
 
+exports[`Site: Box Height 1`] = `
+Object {
+  "docs": "Set an element with a fixed height, including \`auto\` and \`full\`.",
+  "html": "<div style=\\"display: flex; align-items: flex-end\\" class=\\"drac-box\\">
+  <div
+    class=\\"drac-box drac-h-xxs drac-bg-cyan-green drac-rounded-lg drac-p-xs drac-mr-xs\\"
+  >
+    <span class=\\"drac-text drac-line-height drac-text-black\\">xxs</span>
+  </div>
+  <div
+    class=\\"drac-box drac-h-xs drac-bg-cyan-green drac-rounded-lg drac-p-xs drac-mr-xs\\"
+  >
+    <span class=\\"drac-text drac-line-height drac-text-black\\">xs</span>
+  </div>
+  <div
+    class=\\"drac-box drac-h-sm drac-bg-cyan-green drac-rounded-lg drac-p-xs drac-mr-xs\\"
+  >
+    <span class=\\"drac-text drac-line-height drac-text-black\\">sm</span>
+  </div>
+  <div
+    class=\\"drac-box drac-h-md drac-bg-cyan-green drac-rounded-lg drac-p-xs drac-mr-xs\\"
+  >
+    <span class=\\"drac-text drac-line-height drac-text-black\\">md</span>
+  </div>
+</div>
+",
+  "react": "<Box style={{ display: \\"flex\\", alignItems: \\"flex-end\\" }}>
+  <Box color=\\"cyanGreen\\" height=\\"xxs\\" rounded=\\"lg\\" p=\\"xs\\" mr=\\"xs\\">
+    <Text color=\\"black\\">xxs</Text>
+  </Box>
+  <Box color=\\"cyanGreen\\" height=\\"xs\\" rounded=\\"lg\\" p=\\"xs\\" mr=\\"xs\\">
+    <Text color=\\"black\\">xs</Text>
+  </Box>
+  <Box color=\\"cyanGreen\\" height=\\"sm\\" rounded=\\"lg\\" p=\\"xs\\" mr=\\"xs\\">
+    <Text color=\\"black\\">sm</Text>
+  </Box>
+  <Box color=\\"cyanGreen\\" height=\\"md\\" rounded=\\"lg\\" p=\\"xs\\" mr=\\"xs\\">
+    <Text color=\\"black\\">md</Text>
+  </Box>
+</Box>;
+",
+  "title": "Height",
+}
+`;
+
 exports[`Site: Box Rounded 1`] = `
 Object {
   "docs": "Choose from one of the predefined \`rounded\` options for a Box.",
-  "html": "<div>
+  "html": "<div class=\\"drac-box\\">
   <div class=\\"drac-box drac-bg-purple-cyan drac-rounded-lg drac-p-md\\">
     <span class=\\"drac-text drac-line-height drac-text-black\\"
       >Large round border</span
@@ -46,14 +91,14 @@ Object {
   </div>
 </div>
 ",
-  "react": "<div>
+  "react": "<Box>
   <Box rounded=\\"lg\\" color=\\"purpleCyan\\" p=\\"md\\">
     <Text color=\\"black\\">Large round border</Text>
   </Box>
   <Box rounded=\\"sm\\" color=\\"yellowPink\\" p=\\"md\\">
     <Text color=\\"black\\">small round border</Text>
   </Box>
-</div>;
+</Box>;
 ",
   "title": "Rounded",
 }
@@ -62,7 +107,7 @@ Object {
 exports[`Site: Box Spacing 1`] = `
 Object {
   "docs": "Boxes come with pre defined spacing primitives for padding and margin that allow for customizing the spacing inside and around boxes.",
-  "html": "<div>
+  "html": "<div class=\\"drac-box\\">
   <div class=\\"drac-box drac-bg-yellow-pink drac-p-xs\\">
     <span class=\\"drac-text drac-line-height drac-text-black\\">xs padding</span>
   </div>
@@ -87,7 +132,7 @@ Object {
   </div>
 </div>
 ",
-  "react": "<div>
+  "react": "<Box>
   <Box color=\\"yellowPink\\" p=\\"xs\\">
     <Text color=\\"black\\">xs padding</Text>
   </Box>
@@ -106,8 +151,53 @@ Object {
   <Box color=\\"pinkPurple\\" m=\\"md\\">
     <Text color=\\"black\\">medium margin</Text>
   </Box>
-</div>;
+</Box>;
 ",
   "title": "Spacing",
+}
+`;
+
+exports[`Site: Box Width 1`] = `
+Object {
+  "docs": "Set an element with a fixed width, including \`auto\` and \`full\`.",
+  "html": "<div class=\\"drac-box\\">
+  <div
+    class=\\"drac-box drac-w-xs drac-bg-yellow-pink drac-rounded-lg drac-p-xs drac-mb-xs\\"
+  >
+    <span class=\\"drac-text drac-line-height drac-text-black\\">xs</span>
+  </div>
+  <div
+    class=\\"drac-box drac-w-md drac-bg-yellow-pink drac-rounded-lg drac-p-xs drac-mb-xs\\"
+  >
+    <span class=\\"drac-text drac-line-height drac-text-black\\">md</span>
+  </div>
+  <div
+    class=\\"drac-box drac-w-xl drac-bg-yellow-pink drac-rounded-lg drac-p-xs drac-mb-xs\\"
+  >
+    <span class=\\"drac-text drac-line-height drac-text-black\\">xl</span>
+  </div>
+  <div
+    class=\\"drac-box drac-w-full drac-bg-yellow-pink drac-rounded-lg drac-p-xs drac-mb-xs\\"
+  >
+    <span class=\\"drac-text drac-line-height drac-text-black\\">full</span>
+  </div>
+</div>
+",
+  "react": "<Box>
+  <Box color=\\"yellowPink\\" width=\\"xs\\" rounded=\\"lg\\" p=\\"xs\\" mb=\\"xs\\">
+    <Text color=\\"black\\">xs</Text>
+  </Box>
+  <Box color=\\"yellowPink\\" width=\\"md\\" rounded=\\"lg\\" p=\\"xs\\" mb=\\"xs\\">
+    <Text color=\\"black\\">md</Text>
+  </Box>
+  <Box color=\\"yellowPink\\" width=\\"xl\\" rounded=\\"lg\\" p=\\"xs\\" mb=\\"xs\\">
+    <Text color=\\"black\\">xl</Text>
+  </Box>
+  <Box color=\\"yellowPink\\" width=\\"full\\" rounded=\\"lg\\" p=\\"xs\\" mb=\\"xs\\">
+    <Text color=\\"black\\">full</Text>
+  </Box>
+</Box>;
+",
+  "title": "Width",
 }
 `;

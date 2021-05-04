@@ -24,6 +24,18 @@ docs(Box, {
       Rounded,
       'Choose from one of the predefined `rounded` options for a Box.'
     ),
+    
+    snapshot(
+      'Height',
+      Height,
+      'Set an element with a fixed height, including `auto` and `full`.'
+    ),
+    
+    snapshot(
+      'Width',
+      Width,
+      'Set an element with a fixed width, including `auto` and `full`.'
+    ),
 
     snapshot(
       'Spacing',
@@ -51,7 +63,7 @@ function Colors() {
 
 function Rounded() {
   return (
-    <div>
+    <Box>
       <Box rounded="lg" color="purpleCyan" p="md">
         <Text color="black">Large round border</Text>
       </Box>
@@ -59,13 +71,51 @@ function Rounded() {
       <Box rounded="sm" color="yellowPink" p="md">
         <Text color="black">small round border</Text>
       </Box>
-    </div>
+    </Box>
+  )
+}
+
+function Height() {
+  return (
+    <Box style={{ display: 'flex', alignItems: 'flex-end' }}>
+      <Box color="cyanGreen" height="xxs" rounded="lg" p="xs" mr="xs">
+        <Text color="black">xxs</Text>
+      </Box>
+      <Box color="cyanGreen" height="xs" rounded="lg" p="xs" mr="xs">
+        <Text color="black">xs</Text>
+      </Box>
+      <Box color="cyanGreen" height="sm" rounded="lg" p="xs" mr="xs">
+        <Text color="black">sm</Text>
+      </Box>
+      <Box color="cyanGreen" height="md" rounded="lg" p="xs" mr="xs">
+        <Text color="black">md</Text>
+      </Box>
+    </Box>
+  )
+}
+
+function Width() {
+  return (
+    <Box>
+      <Box color="yellowPink" width="xs" rounded="lg" p="xs" mb="xs">
+        <Text color="black">xs</Text>
+      </Box>
+      <Box color="yellowPink" width="md" rounded="lg" p="xs" mb="xs">
+        <Text color="black">md</Text>
+      </Box>
+      <Box color="yellowPink" width="xl" rounded="lg" p="xs" mb="xs">
+        <Text color="black">xl</Text>
+      </Box>
+      <Box color="yellowPink" width="full" rounded="lg" p="xs" mb="xs">
+        <Text color="black">full</Text>
+      </Box>
+    </Box>
   )
 }
 
 function Spacing() {
   return (
-    <div>
+    <Box>
       <Box color="yellowPink" p="xs">
         <Text color="black">xs padding</Text>
       </Box>
@@ -89,6 +139,6 @@ function Spacing() {
       <Box color="pinkPurple" m="md">
         <Text color="black">medium margin</Text>
       </Box>
-    </div>
+    </Box>
   )
 }
