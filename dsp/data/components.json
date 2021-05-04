@@ -1916,15 +1916,29 @@
         },
         {
           "title": "Rounded",
-          "html": "<div>\n  <div class=\"drac-box drac-bg-purple-cyan drac-rounded-lg drac-p-md\">\n    <span class=\"drac-text drac-line-height drac-text-black\"\n      >Large round border</span\n    >\n  </div>\n  <div class=\"drac-box drac-bg-yellow-pink drac-rounded-sm drac-p-md\">\n    <span class=\"drac-text drac-line-height drac-text-black\"\n      >small round border</span\n    >\n  </div>\n</div>\n",
-          "react": "<div>\n  <Box rounded=\"lg\" color=\"purpleCyan\" p=\"md\">\n    <Text color=\"black\">Large round border</Text>\n  </Box>\n  <Box rounded=\"sm\" color=\"yellowPink\" p=\"md\">\n    <Text color=\"black\">small round border</Text>\n  </Box>\n</div>;\n",
+          "html": "<div class=\"drac-box\">\n  <div class=\"drac-box drac-bg-purple-cyan drac-rounded-lg drac-p-md\">\n    <span class=\"drac-text drac-line-height drac-text-black\"\n      >Large round border</span\n    >\n  </div>\n  <div class=\"drac-box drac-bg-yellow-pink drac-rounded-sm drac-p-md\">\n    <span class=\"drac-text drac-line-height drac-text-black\"\n      >small round border</span\n    >\n  </div>\n</div>\n",
+          "react": "<Box>\n  <Box rounded=\"lg\" color=\"purpleCyan\" p=\"md\">\n    <Text color=\"black\">Large round border</Text>\n  </Box>\n  <Box rounded=\"sm\" color=\"yellowPink\" p=\"md\">\n    <Text color=\"black\">small round border</Text>\n  </Box>\n</Box>;\n",
           "docs": "Choose from one of the predefined `rounded` options for a Box.",
           "screenshot": "./dsp/assets/BoxRounded.png"
         },
         {
+          "title": "Height",
+          "html": "<div style=\"display: flex; align-items: flex-end\" class=\"drac-box\">\n  <div\n    class=\"drac-box drac-h-xxs drac-bg-cyan-green drac-rounded-lg drac-p-xs drac-mr-xs\"\n  >\n    <span class=\"drac-text drac-line-height drac-text-black\">xxs</span>\n  </div>\n  <div\n    class=\"drac-box drac-h-xs drac-bg-cyan-green drac-rounded-lg drac-p-xs drac-mr-xs\"\n  >\n    <span class=\"drac-text drac-line-height drac-text-black\">xs</span>\n  </div>\n  <div\n    class=\"drac-box drac-h-sm drac-bg-cyan-green drac-rounded-lg drac-p-xs drac-mr-xs\"\n  >\n    <span class=\"drac-text drac-line-height drac-text-black\">sm</span>\n  </div>\n  <div\n    class=\"drac-box drac-h-md drac-bg-cyan-green drac-rounded-lg drac-p-xs drac-mr-xs\"\n  >\n    <span class=\"drac-text drac-line-height drac-text-black\">md</span>\n  </div>\n</div>\n",
+          "react": "<Box style={{ display: \"flex\", alignItems: \"flex-end\" }}>\n  <Box color=\"cyanGreen\" height=\"xxs\" rounded=\"lg\" p=\"xs\" mr=\"xs\">\n    <Text color=\"black\">xxs</Text>\n  </Box>\n  <Box color=\"cyanGreen\" height=\"xs\" rounded=\"lg\" p=\"xs\" mr=\"xs\">\n    <Text color=\"black\">xs</Text>\n  </Box>\n  <Box color=\"cyanGreen\" height=\"sm\" rounded=\"lg\" p=\"xs\" mr=\"xs\">\n    <Text color=\"black\">sm</Text>\n  </Box>\n  <Box color=\"cyanGreen\" height=\"md\" rounded=\"lg\" p=\"xs\" mr=\"xs\">\n    <Text color=\"black\">md</Text>\n  </Box>\n</Box>;\n",
+          "docs": "Set an element with a fixed height, including `auto` and `full`.",
+          "screenshot": "./dsp/assets/BoxHeight.png"
+        },
+        {
+          "title": "Width",
+          "html": "<div class=\"drac-box\">\n  <div\n    class=\"drac-box drac-w-xs drac-bg-yellow-pink drac-rounded-lg drac-p-xs drac-mb-xs\"\n  >\n    <span class=\"drac-text drac-line-height drac-text-black\">xs</span>\n  </div>\n  <div\n    class=\"drac-box drac-w-md drac-bg-yellow-pink drac-rounded-lg drac-p-xs drac-mb-xs\"\n  >\n    <span class=\"drac-text drac-line-height drac-text-black\">md</span>\n  </div>\n  <div\n    class=\"drac-box drac-w-xl drac-bg-yellow-pink drac-rounded-lg drac-p-xs drac-mb-xs\"\n  >\n    <span class=\"drac-text drac-line-height drac-text-black\">xl</span>\n  </div>\n  <div\n    class=\"drac-box drac-w-full drac-bg-yellow-pink drac-rounded-lg drac-p-xs drac-mb-xs\"\n  >\n    <span class=\"drac-text drac-line-height drac-text-black\">full</span>\n  </div>\n</div>\n",
+          "react": "<Box>\n  <Box color=\"yellowPink\" width=\"xs\" rounded=\"lg\" p=\"xs\" mb=\"xs\">\n    <Text color=\"black\">xs</Text>\n  </Box>\n  <Box color=\"yellowPink\" width=\"md\" rounded=\"lg\" p=\"xs\" mb=\"xs\">\n    <Text color=\"black\">md</Text>\n  </Box>\n  <Box color=\"yellowPink\" width=\"xl\" rounded=\"lg\" p=\"xs\" mb=\"xs\">\n    <Text color=\"black\">xl</Text>\n  </Box>\n  <Box color=\"yellowPink\" width=\"full\" rounded=\"lg\" p=\"xs\" mb=\"xs\">\n    <Text color=\"black\">full</Text>\n  </Box>\n</Box>;\n",
+          "docs": "Set an element with a fixed width, including `auto` and `full`.",
+          "screenshot": "./dsp/assets/BoxWidth.png"
+        },
+        {
           "title": "Spacing",
-          "html": "<div>\n  <div class=\"drac-box drac-bg-yellow-pink drac-p-xs\">\n    <span class=\"drac-text drac-line-height drac-text-black\">xs padding</span>\n  </div>\n  <div class=\"drac-box drac-bg-purple-cyan drac-p-sm\">\n    <span class=\"drac-text drac-line-height drac-text-black\">sm padding</span>\n  </div>\n  <div class=\"drac-box drac-bg-pink-purple drac-p-md\">\n    <span class=\"drac-text drac-line-height drac-text-black\"\n      >medium padding</span\n    >\n  </div>\n  <div class=\"drac-box drac-bg-yellow-pink drac-m-xs\">\n    <span class=\"drac-text drac-line-height drac-text-black\">xs margin</span>\n  </div>\n  <div class=\"drac-box drac-bg-purple-cyan drac-m-sm\">\n    <span class=\"drac-text drac-line-height drac-text-black\">sm margin</span>\n  </div>\n  <div class=\"drac-box drac-bg-pink-purple drac-m-md\">\n    <span class=\"drac-text drac-line-height drac-text-black\"\n      >medium margin</span\n    >\n  </div>\n</div>\n",
-          "react": "<div>\n  <Box color=\"yellowPink\" p=\"xs\">\n    <Text color=\"black\">xs padding</Text>\n  </Box>\n  <Box color=\"purpleCyan\" p=\"sm\">\n    <Text color=\"black\">sm padding</Text>\n  </Box>\n  <Box color=\"pinkPurple\" p=\"md\">\n    <Text color=\"black\">medium padding</Text>\n  </Box>\n  <Box color=\"yellowPink\" m=\"xs\">\n    <Text color=\"black\">xs margin</Text>\n  </Box>\n  <Box color=\"purpleCyan\" m=\"sm\">\n    <Text color=\"black\">sm margin</Text>\n  </Box>\n  <Box color=\"pinkPurple\" m=\"md\">\n    <Text color=\"black\">medium margin</Text>\n  </Box>\n</div>;\n",
+          "html": "<div class=\"drac-box\">\n  <div class=\"drac-box drac-bg-yellow-pink drac-p-xs\">\n    <span class=\"drac-text drac-line-height drac-text-black\">xs padding</span>\n  </div>\n  <div class=\"drac-box drac-bg-purple-cyan drac-p-sm\">\n    <span class=\"drac-text drac-line-height drac-text-black\">sm padding</span>\n  </div>\n  <div class=\"drac-box drac-bg-pink-purple drac-p-md\">\n    <span class=\"drac-text drac-line-height drac-text-black\"\n      >medium padding</span\n    >\n  </div>\n  <div class=\"drac-box drac-bg-yellow-pink drac-m-xs\">\n    <span class=\"drac-text drac-line-height drac-text-black\">xs margin</span>\n  </div>\n  <div class=\"drac-box drac-bg-purple-cyan drac-m-sm\">\n    <span class=\"drac-text drac-line-height drac-text-black\">sm margin</span>\n  </div>\n  <div class=\"drac-box drac-bg-pink-purple drac-m-md\">\n    <span class=\"drac-text drac-line-height drac-text-black\"\n      >medium margin</span\n    >\n  </div>\n</div>\n",
+          "react": "<Box>\n  <Box color=\"yellowPink\" p=\"xs\">\n    <Text color=\"black\">xs padding</Text>\n  </Box>\n  <Box color=\"purpleCyan\" p=\"sm\">\n    <Text color=\"black\">sm padding</Text>\n  </Box>\n  <Box color=\"pinkPurple\" p=\"md\">\n    <Text color=\"black\">medium padding</Text>\n  </Box>\n  <Box color=\"yellowPink\" m=\"xs\">\n    <Text color=\"black\">xs margin</Text>\n  </Box>\n  <Box color=\"purpleCyan\" m=\"sm\">\n    <Text color=\"black\">sm margin</Text>\n  </Box>\n  <Box color=\"pinkPurple\" m=\"md\">\n    <Text color=\"black\">medium margin</Text>\n  </Box>\n</Box>;\n",
           "docs": "Boxes come with pre defined spacing primitives for padding and margin that allow for customizing the spacing inside and around boxes.",
           "screenshot": "./dsp/assets/BoxSpacing.png"
         }
@@ -1991,7 +2005,45 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"base\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"full\" | undefined"
+            "name": "\"none\" | \"full\" | \"sm\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"base\" | undefined"
+          }
+        },
+        "height": {
+          "defaultValue": null,
+          "description": "The height of the element.",
+          "name": "height",
+          "declarations": [
+            {
+              "fileName": "src/components/Box/Box.tsx",
+              "name": "TypeLiteral"
+            },
+            {
+              "fileName": "dracula-ui/node_modules/@types/react/index.d.ts",
+              "name": "AllHTMLAttributes"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"auto\" | \"none\" | \"full\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"4xl\" | \"5xl\" | \"6xl\" | \"7xl\" | \"8xl\" | undefined"
+          }
+        },
+        "width": {
+          "defaultValue": null,
+          "description": "The width of the element.",
+          "name": "width",
+          "declarations": [
+            {
+              "fileName": "src/components/Box/Box.tsx",
+              "name": "TypeLiteral"
+            },
+            {
+              "fileName": "dracula-ui/node_modules/@types/react/index.d.ts",
+              "name": "AllHTMLAttributes"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"auto\" | \"none\" | \"full\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"4xl\" | \"5xl\" | \"6xl\" | \"7xl\" | \"8xl\" | undefined"
           }
         },
         "as": {
@@ -2025,7 +2077,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "py": {
@@ -2040,7 +2092,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "px": {
@@ -2055,7 +2107,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "pt": {
@@ -2070,7 +2122,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "pb": {
@@ -2085,7 +2137,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "pl": {
@@ -2100,7 +2152,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "pr": {
@@ -2115,7 +2167,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "m": {
@@ -2130,7 +2182,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | \"auto\" | undefined"
+            "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "my": {
@@ -2145,7 +2197,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | \"auto\" | undefined"
+            "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "mx": {
@@ -2160,7 +2212,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | \"auto\" | undefined"
+            "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "mt": {
@@ -2175,7 +2227,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | \"auto\" | undefined"
+            "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "mb": {
@@ -2190,7 +2242,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | \"auto\" | undefined"
+            "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "ml": {
@@ -2205,7 +2257,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | \"auto\" | undefined"
+            "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "mr": {
@@ -2220,7 +2272,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | \"auto\" | undefined"
+            "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         }
       },
@@ -2291,7 +2343,45 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"base\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"full\" | undefined"
+              "name": "\"none\" | \"full\" | \"sm\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"base\" | undefined"
+            }
+          },
+          "height": {
+            "defaultValue": null,
+            "description": "The height of the element.",
+            "name": "height",
+            "declarations": [
+              {
+                "fileName": "src/components/Box/Box.tsx",
+                "name": "TypeLiteral"
+              },
+              {
+                "fileName": "dracula-ui/node_modules/@types/react/index.d.ts",
+                "name": "AllHTMLAttributes"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"auto\" | \"none\" | \"full\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"4xl\" | \"5xl\" | \"6xl\" | \"7xl\" | \"8xl\" | undefined"
+            }
+          },
+          "width": {
+            "defaultValue": null,
+            "description": "The width of the element.",
+            "name": "width",
+            "declarations": [
+              {
+                "fileName": "src/components/Box/Box.tsx",
+                "name": "TypeLiteral"
+              },
+              {
+                "fileName": "dracula-ui/node_modules/@types/react/index.d.ts",
+                "name": "AllHTMLAttributes"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"auto\" | \"none\" | \"full\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"4xl\" | \"5xl\" | \"6xl\" | \"7xl\" | \"8xl\" | undefined"
             }
           },
           "as": {
@@ -2325,7 +2415,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "py": {
@@ -2340,7 +2430,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "px": {
@@ -2355,7 +2445,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "pt": {
@@ -2370,7 +2460,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "pb": {
@@ -2385,7 +2475,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "pl": {
@@ -2400,7 +2490,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "pr": {
@@ -2415,7 +2505,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "m": {
@@ -2430,7 +2520,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | \"auto\" | undefined"
+              "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "my": {
@@ -2445,7 +2535,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | \"auto\" | undefined"
+              "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "mx": {
@@ -2460,7 +2550,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | \"auto\" | undefined"
+              "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "mt": {
@@ -2475,7 +2565,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | \"auto\" | undefined"
+              "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "mb": {
@@ -2490,7 +2580,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | \"auto\" | undefined"
+              "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "ml": {
@@ -2505,7 +2595,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | \"auto\" | undefined"
+              "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "mr": {
@@ -2520,7 +2610,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | \"auto\" | undefined"
+              "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           }
         }
@@ -2706,7 +2796,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         },
         "my": {
@@ -2721,7 +2811,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         },
         "mx": {
@@ -2736,7 +2826,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         },
         "mt": {
@@ -2751,7 +2841,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         },
         "mb": {
@@ -2766,7 +2856,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         },
         "ml": {
@@ -2781,7 +2871,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         },
         "mr": {
@@ -2796,7 +2886,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         },
         "color": {
@@ -3050,7 +3140,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           },
           "my": {
@@ -3065,7 +3155,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           },
           "mx": {
@@ -3080,7 +3170,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           },
           "mt": {
@@ -3095,7 +3185,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           },
           "mb": {
@@ -3110,7 +3200,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           },
           "ml": {
@@ -3125,7 +3215,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           },
           "mr": {
@@ -3140,7 +3230,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           },
           "color": {
@@ -3402,7 +3492,45 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"base\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"full\" | undefined"
+            "name": "\"none\" | \"full\" | \"sm\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"base\" | undefined"
+          }
+        },
+        "height": {
+          "defaultValue": null,
+          "description": "The height of the element.",
+          "name": "height",
+          "declarations": [
+            {
+              "fileName": "dracula-ui/src/components/Box/Box.tsx",
+              "name": "TypeLiteral"
+            },
+            {
+              "fileName": "dracula-ui/node_modules/@types/react/index.d.ts",
+              "name": "AllHTMLAttributes"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"auto\" | \"none\" | \"full\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"4xl\" | \"5xl\" | \"6xl\" | \"7xl\" | \"8xl\" | undefined"
+          }
+        },
+        "width": {
+          "defaultValue": null,
+          "description": "The width of the element.",
+          "name": "width",
+          "declarations": [
+            {
+              "fileName": "dracula-ui/src/components/Box/Box.tsx",
+              "name": "TypeLiteral"
+            },
+            {
+              "fileName": "dracula-ui/node_modules/@types/react/index.d.ts",
+              "name": "AllHTMLAttributes"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"auto\" | \"none\" | \"full\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"4xl\" | \"5xl\" | \"6xl\" | \"7xl\" | \"8xl\" | undefined"
           }
         },
         "as": {
@@ -3436,7 +3564,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "py": {
@@ -3451,7 +3579,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "px": {
@@ -3466,7 +3594,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "pt": {
@@ -3481,7 +3609,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "pb": {
@@ -3496,7 +3624,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "pl": {
@@ -3511,7 +3639,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "pr": {
@@ -3526,7 +3654,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "m": {
@@ -3541,7 +3669,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | \"auto\" | undefined"
+            "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "my": {
@@ -3556,7 +3684,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | \"auto\" | undefined"
+            "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "mx": {
@@ -3571,7 +3699,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | \"auto\" | undefined"
+            "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "mt": {
@@ -3586,7 +3714,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | \"auto\" | undefined"
+            "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "mb": {
@@ -3601,7 +3729,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | \"auto\" | undefined"
+            "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "ml": {
@@ -3616,7 +3744,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | \"auto\" | undefined"
+            "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "mr": {
@@ -3631,7 +3759,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | \"auto\" | undefined"
+            "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         }
       },
@@ -3721,7 +3849,45 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"base\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"full\" | undefined"
+              "name": "\"none\" | \"full\" | \"sm\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"base\" | undefined"
+            }
+          },
+          "height": {
+            "defaultValue": null,
+            "description": "The height of the element.",
+            "name": "height",
+            "declarations": [
+              {
+                "fileName": "dracula-ui/src/components/Box/Box.tsx",
+                "name": "TypeLiteral"
+              },
+              {
+                "fileName": "dracula-ui/node_modules/@types/react/index.d.ts",
+                "name": "AllHTMLAttributes"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"auto\" | \"none\" | \"full\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"4xl\" | \"5xl\" | \"6xl\" | \"7xl\" | \"8xl\" | undefined"
+            }
+          },
+          "width": {
+            "defaultValue": null,
+            "description": "The width of the element.",
+            "name": "width",
+            "declarations": [
+              {
+                "fileName": "dracula-ui/src/components/Box/Box.tsx",
+                "name": "TypeLiteral"
+              },
+              {
+                "fileName": "dracula-ui/node_modules/@types/react/index.d.ts",
+                "name": "AllHTMLAttributes"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"auto\" | \"none\" | \"full\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"4xl\" | \"5xl\" | \"6xl\" | \"7xl\" | \"8xl\" | undefined"
             }
           },
           "as": {
@@ -3755,7 +3921,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "py": {
@@ -3770,7 +3936,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "px": {
@@ -3785,7 +3951,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "pt": {
@@ -3800,7 +3966,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "pb": {
@@ -3815,7 +3981,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "pl": {
@@ -3830,7 +3996,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "pr": {
@@ -3845,7 +4011,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "m": {
@@ -3860,7 +4026,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | \"auto\" | undefined"
+              "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "my": {
@@ -3875,7 +4041,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | \"auto\" | undefined"
+              "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "mx": {
@@ -3890,7 +4056,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | \"auto\" | undefined"
+              "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "mt": {
@@ -3905,7 +4071,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | \"auto\" | undefined"
+              "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "mb": {
@@ -3920,7 +4086,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | \"auto\" | undefined"
+              "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "ml": {
@@ -3935,7 +4101,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | \"auto\" | undefined"
+              "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "mr": {
@@ -3950,7 +4116,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | \"auto\" | undefined"
+              "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           }
         }
@@ -8264,7 +8430,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "my": {
@@ -8279,7 +8445,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mx": {
@@ -8294,7 +8460,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mt": {
@@ -8309,7 +8475,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mb": {
@@ -8324,7 +8490,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "ml": {
@@ -8339,7 +8505,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mr": {
@@ -8354,7 +8520,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         }
       },
@@ -8538,7 +8704,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "my": {
@@ -8553,7 +8719,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mx": {
@@ -8568,7 +8734,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mt": {
@@ -8583,7 +8749,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mb": {
@@ -8598,7 +8764,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "ml": {
@@ -8613,7 +8779,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mr": {
@@ -8628,7 +8794,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           }
         }

@@ -1,4 +1,5 @@
 import cx from 'classnames/dedupe'
+import mapValues from 'lodash/mapValues'
 import React, { AllHTMLAttributes } from 'react'
 import { borderColors, colors, glowColors } from '../../base/colors'
 import {
@@ -22,6 +23,27 @@ export const roundedBorders = {
   full: 'drac-rounded-full'
 }
 
+export const widths = {
+  auto: 'drac-w-auto',
+  none: 'drac-w-none',
+  full: 'drac-w-full',
+  xxs: 'drac-w-xxs',
+  xs: 'drac-w-xs',
+  sm: 'drac-w-sm',
+  md: 'drac-w-md',
+  lg: 'drac-w-lg',
+  xl: 'drac-w-xl',
+  '2xl': 'drac-w-2xl',
+  '3xl': 'drac-w-3xl',
+  '4xl': 'drac-w-4xl',
+  '5xl': 'drac-w-5xl',
+  '6xl': 'drac-w-6xl',
+  '7xl': 'drac-w-7xl',
+  '8xl': 'drac-w-8xl'
+}
+
+export const heights = mapValues(widths, (clz) => clz.replace('-w-', '-h-'))
+
 /**
  * Box Props
  */
@@ -37,6 +59,12 @@ export type BoxProps<K extends keyof Element = 'div'> = {
 
   /** The border radius. */
   rounded?: keyof typeof roundedBorders
+  
+  /** The height of the element. */
+  height?: keyof typeof heights
+  
+  /** The width of the element. */
+  width?: keyof typeof widths
 
   /** The HTML element to be used */
   as?: K
@@ -55,6 +83,8 @@ export type BoxProps<K extends keyof Element = 'div'> = {
 export function Box<T extends keyof Element>(props: BoxProps<T>) {
   const {
     color,
+    height,
+    width,
     glowColor,
     borderColor,
     rounded,
@@ -67,6 +97,8 @@ export function Box<T extends keyof Element>(props: BoxProps<T>) {
     className: cx(
       `drac-box`,
       props.className,
+      height && heights[height],
+      width && widths[width],
       color && colors[color],
       glowColor && glowColors[glowColor],
       borderColor && borderColors[borderColor],
