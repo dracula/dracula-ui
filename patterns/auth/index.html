@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../../dist/styles/dracula-ui.css"
+    />
+    <title>Sign in / Auth</title>
+    <style>
+      body {
+        background: #282A36;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="drac-w-md drac-m-auto">
+      <img class="drac-d-block drac-m-auto" width="150" height="150" src="logo.svg" alt="Logo" />
+      <h1 class="drac-heading drac-heading-xl drac-text-white drac-pb-sm drac-text-center">Sign in to your account</h1>
+
+      <form class="drac-box drac-bg-black drac-rounded-lg drac-p-md">
+        <div class="drac-box drac-mb-sm">
+          <label for="email" class="drac-text drac-text-white">Email</label>
+          <input type="email" id="email" name="email" class="drac-input drac-input-purple drac-text-white drac-mt-xs" placeholder="Enter your email" />
+        </div>
+
+        <div class="drac-box drac-mb-sm">
+          <label for="password" class="drac-text drac-text-white">Password</label>
+          <input type="password" id="password" name="email" class="drac-input drac-input-purple drac-text-white drac-mt-xs" placeholder="Enter your password" />
+        </div>
+
+        <div class="drac-box drac-mb-sm">
+          <input type="checkbox" id="remember" name="remember" class="drac-checkbox drac-checkbox-purple" checked />
+          <label for="remember" class="drac-text drac-text-white">Remember me</label>
+        </div>
+
+        <div class="drac-box">
+          <button class="drac-btn drac-bg-purple drac-w-full">Sign in</button>
+        </div>
+      </form>
+
+      <p class="drac-text drac-text-white drac-text-center">
+        Don't have an account? <a class="drac-anchor drac-text-purple" href="#">Sign up now</a>
+      </p>
+    </main>
+  </body>
+</html>
