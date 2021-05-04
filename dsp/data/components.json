@@ -1915,6 +1915,13 @@
           "screenshot": "./dsp/assets/BoxColors.png"
         },
         {
+          "title": "Display",
+          "html": "<div class=\"drac-box\">\n  <div\n    class=\"drac-box drac-bg-purple-cyan drac-d-inline-block drac-rounded-lg drac-p-xs drac-mr-xs\"\n  >\n    <span class=\"drac-text drac-line-height drac-text-black\">1</span>\n  </div>\n  <div\n    class=\"drac-box drac-bg-purple-cyan drac-d-inline-block drac-rounded-lg drac-p-xs drac-mr-xs\"\n  >\n    <span class=\"drac-text drac-line-height drac-text-black\">2</span>\n  </div>\n  <div\n    class=\"drac-box drac-bg-purple-cyan drac-d-inline-block drac-rounded-lg drac-p-xs drac-mr-xs\"\n  >\n    <span class=\"drac-text drac-line-height drac-text-black\">3</span>\n  </div>\n</div>\n",
+          "react": "<Box>\n  <Box color=\"purpleCyan\" display=\"inline-block\" rounded=\"lg\" p=\"xs\" mr=\"xs\">\n    <Text color=\"black\">1</Text>\n  </Box>\n  <Box color=\"purpleCyan\" display=\"inline-block\" rounded=\"lg\" p=\"xs\" mr=\"xs\">\n    <Text color=\"black\">2</Text>\n  </Box>\n  <Box color=\"purpleCyan\" display=\"inline-block\" rounded=\"lg\" p=\"xs\" mr=\"xs\">\n    <Text color=\"black\">3</Text>\n  </Box>\n</Box>;\n",
+          "docs": "Control the display type of an element.",
+          "screenshot": "./dsp/assets/BoxDisplay.png"
+        },
+        {
           "title": "Rounded",
           "html": "<div class=\"drac-box\">\n  <div class=\"drac-box drac-bg-purple-cyan drac-rounded-lg drac-p-md\">\n    <span class=\"drac-text drac-line-height drac-text-black\"\n      >Large round border</span\n    >\n  </div>\n  <div class=\"drac-box drac-bg-yellow-pink drac-rounded-sm drac-p-md\">\n    <span class=\"drac-text drac-line-height drac-text-black\"\n      >small round border</span\n    >\n  </div>\n</div>\n",
           "react": "<Box>\n  <Box rounded=\"lg\" color=\"purpleCyan\" p=\"md\">\n    <Text color=\"black\">Large round border</Text>\n  </Box>\n  <Box rounded=\"sm\" color=\"yellowPink\" p=\"md\">\n    <Text color=\"black\">small round border</Text>\n  </Box>\n</Box>;\n",
@@ -1961,6 +1968,21 @@
           "required": false,
           "type": {
             "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+          }
+        },
+        "display": {
+          "defaultValue": null,
+          "description": "The display of the element.",
+          "name": "display",
+          "declarations": [
+            {
+              "fileName": "src/components/Box/Box.tsx",
+              "name": "TypeLiteral"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"none\" | \"block\" | \"flex\" | \"grid\" | \"table\" | \"inline\" | \"inline-block\" | \"inline-flex\" | \"inline-grid\" | \"inline-table\" | undefined"
           }
         },
         "glowColor": {
@@ -2062,7 +2084,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"object\" | \"base\" | \"time\" | \"link\" | \"menu\" | \"dialog\" | \"a\" | \"abbr\" | \"address\" | \"applet\" | \"area\" | \"article\" | \"aside\" | \"audio\" | \"b\" | \"basefont\" | \"bdi\" | \"bdo\" | \"blockquote\" | ... 100 more ... | undefined"
+            "name": "\"object\" | \"table\" | \"base\" | \"time\" | \"link\" | \"menu\" | \"dialog\" | \"a\" | \"abbr\" | \"address\" | \"applet\" | \"area\" | \"article\" | \"aside\" | \"audio\" | \"b\" | \"basefont\" | \"bdi\" | \"bdo\" | ... 100 more ... | undefined"
           }
         },
         "p": {
@@ -2301,6 +2323,21 @@
               "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
             }
           },
+          "display": {
+            "defaultValue": null,
+            "description": "The display of the element.",
+            "name": "display",
+            "declarations": [
+              {
+                "fileName": "src/components/Box/Box.tsx",
+                "name": "TypeLiteral"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"none\" | \"block\" | \"flex\" | \"grid\" | \"table\" | \"inline\" | \"inline-block\" | \"inline-flex\" | \"inline-grid\" | \"inline-table\" | undefined"
+            }
+          },
           "glowColor": {
             "defaultValue": null,
             "description": "The glow color.",
@@ -2400,7 +2437,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"object\" | \"base\" | \"time\" | \"link\" | \"menu\" | \"dialog\" | \"a\" | \"abbr\" | \"address\" | \"applet\" | \"area\" | \"article\" | \"aside\" | \"audio\" | \"b\" | \"basefont\" | \"bdi\" | \"bdo\" | \"blockquote\" | ... 100 more ... | undefined"
+              "name": "\"object\" | \"table\" | \"base\" | \"time\" | \"link\" | \"menu\" | \"dialog\" | \"a\" | \"abbr\" | \"address\" | \"applet\" | \"area\" | \"article\" | \"aside\" | \"audio\" | \"b\" | \"basefont\" | \"bdi\" | \"bdo\" | ... 100 more ... | undefined"
             }
           },
           "p": {
@@ -3450,6 +3487,21 @@
             "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
           }
         },
+        "display": {
+          "defaultValue": null,
+          "description": "The display of the element.",
+          "name": "display",
+          "declarations": [
+            {
+              "fileName": "dracula-ui/src/components/Box/Box.tsx",
+              "name": "TypeLiteral"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"none\" | \"block\" | \"flex\" | \"grid\" | \"table\" | \"inline\" | \"inline-block\" | \"inline-flex\" | \"inline-grid\" | \"inline-table\" | undefined"
+          }
+        },
         "glowColor": {
           "defaultValue": null,
           "description": "The glow color.",
@@ -3805,6 +3857,21 @@
             "required": false,
             "type": {
               "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+            }
+          },
+          "display": {
+            "defaultValue": null,
+            "description": "The display of the element.",
+            "name": "display",
+            "declarations": [
+              {
+                "fileName": "dracula-ui/src/components/Box/Box.tsx",
+                "name": "TypeLiteral"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"none\" | \"block\" | \"flex\" | \"grid\" | \"table\" | \"inline\" | \"inline-block\" | \"inline-flex\" | \"inline-grid\" | \"inline-table\" | undefined"
             }
           },
           "glowColor": {

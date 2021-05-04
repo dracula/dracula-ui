@@ -23,6 +23,19 @@ export const roundedBorders = {
   full: 'drac-rounded-full'
 }
 
+export const displays = {
+  none: 'drac-d-none',
+  block: 'drac-d-block',
+  flex: 'drac-d-flex',
+  grid: 'drac-d-grid',
+  table: 'drac-d-table',
+  inline: 'drac-d-inline',
+  'inline-block': 'drac-d-inline-block',
+  'inline-flex': 'drac-d-inline-flex',
+  'inline-grid': 'drac-d-inline-grid',
+  'inline-table': 'drac-d-inline-table'
+}
+
 export const widths = {
   auto: 'drac-w-auto',
   none: 'drac-w-none',
@@ -50,6 +63,9 @@ export const heights = mapValues(widths, (clz) => clz.replace('-w-', '-h-'))
 export type BoxProps<K extends keyof Element = 'div'> = {
   /** The background color. */
   color?: keyof typeof colors
+  
+  /** The display of the element. */
+  display?: keyof typeof displays
 
   /** The glow color. */
   glowColor?: keyof typeof glowColors
@@ -83,6 +99,7 @@ export type BoxProps<K extends keyof Element = 'div'> = {
 export function Box<T extends keyof Element>(props: BoxProps<T>) {
   const {
     color,
+    display,
     height,
     width,
     glowColor,
@@ -100,6 +117,7 @@ export function Box<T extends keyof Element>(props: BoxProps<T>) {
       height && heights[height],
       width && widths[width],
       color && colors[color],
+      display && displays[display],
       glowColor && glowColors[glowColor],
       borderColor && borderColors[borderColor],
       rounded && roundedBorders[rounded],

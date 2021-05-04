@@ -20,6 +20,12 @@ docs(Box, {
     ),
 
     snapshot(
+      'Display',
+      Display,
+      'Control the display type of an element.'
+    ),
+
+    snapshot(
       'Rounded',
       Rounded,
       'Choose from one of the predefined `rounded` options for a Box.'
@@ -70,6 +76,22 @@ function Rounded() {
 
       <Box rounded="sm" color="yellowPink" p="md">
         <Text color="black">small round border</Text>
+      </Box>
+    </Box>
+  )
+}
+
+function Display() {
+  return (
+    <Box>
+      <Box color="purpleCyan" display="inline-block" rounded="lg" p="xs" mr="xs">
+        <Text color="black">1</Text>
+      </Box>
+      <Box color="purpleCyan" display="inline-block" rounded="lg" p="xs" mr="xs">
+        <Text color="black">2</Text>
+      </Box>
+      <Box color="purpleCyan" display="inline-block" rounded="lg" p="xs" mr="xs">
+        <Text color="black">3</Text>
       </Box>
     </Box>
   )
