@@ -21,6 +21,11 @@ docs(Input, {
         'Inputs can be customize to use several different sizes.'
       ),
       snapshot(
+        'BorderSizes',
+        BorderSizes,
+        'Inputs can be customize to use several different sizes.'
+      ),
+      snapshot(
         'Variants',
         Variants,
         'Use the `outline` variant to represent subtler text Inputs'
@@ -71,6 +76,16 @@ function Sizes() {
       <Input color="white" size="small" placeholder="small" m="xs" />
       <Input color="white" size="medium" placeholder="medium" m="xs" />
       <Input color="white" size="large" placeholder="large" m="xs" />
+    </Box>
+  )
+}
+
+function BorderSizes() {
+  return (
+    <Box>
+      <Input color="white"  borderSize="small" placeholder="small border" m="xs" />
+      <Input color="white"  borderSize="medium" placeholder="medium border" m="xs" />
+      <Input color="white" borderSize="large" placeholder="large border" m="xs" />
     </Box>
   )
 }

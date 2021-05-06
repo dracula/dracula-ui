@@ -53,7 +53,7 @@ export interface InputProps
   size?: keyof typeof inputSizes | number
  
   /**
-   * Controls the bordersize of the input based on pre-configured Dracula UI sizes.
+   * Controls the border size of the input based on pre-configured Dracula UI sizes.
    */
   'borderSize'?: keyof typeof borderSizes | number
 
