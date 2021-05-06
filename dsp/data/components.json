@@ -5974,7 +5974,7 @@
         },
         "borderSize": {
           "defaultValue": null,
-          "description": "Controls the bordersize of the input based on pre-configured Dracula UI sizes.",
+          "description": "Controls the border size of the input based on pre-configured Dracula UI sizes.",
           "name": "borderSize",
           "parent": {
             "fileName": "src/components/Input/Input.tsx",
@@ -6286,7 +6286,7 @@
           },
           "borderSize": {
             "defaultValue": null,
-            "description": "Controls the bordersize of the input based on pre-configured Dracula UI sizes.",
+            "description": "Controls the border size of the input based on pre-configured Dracula UI sizes.",
             "name": "borderSize",
             "parent": {
               "fileName": "src/components/Input/Input.tsx",

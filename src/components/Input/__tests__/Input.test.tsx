@@ -21,11 +21,6 @@ docs(Input, {
         'Inputs can be customize to use several different sizes.'
       ),
       snapshot(
-        'BorderSizes',
-        BorderSizes,
-        'Inputs can be customize to use several different sizes.'
-      ),
-      snapshot(
         'Variants',
         Variants,
         'Use the `outline` variant to represent subtler text Inputs'
