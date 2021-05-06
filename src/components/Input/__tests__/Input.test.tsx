@@ -80,16 +80,6 @@ function Sizes() {
   )
 }
 
-function BorderSizes() {
-  return (
-    <Box>
-      <Input color="white"  borderSize="small" placeholder="small border" m="xs" />
-      <Input color="white"  borderSize="medium" placeholder="medium border" m="xs" />
-      <Input color="white" borderSize="large" placeholder="large border" m="xs" />
-    </Box>
-  )
-}
-
 function Variants() {
   return (
     <Box>
