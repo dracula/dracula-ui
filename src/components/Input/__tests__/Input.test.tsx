@@ -26,6 +26,11 @@ docs(Input, {
         'Use the `outline` variant to represent subtler text Inputs'
       ),
       snapshot(
+        'BorderSizes',
+        BorderSizes,
+        'Border size can be customize to use several different sizes.'
+      ),
+      snapshot(
         'Type',
         Types,
         'Use the `type` property to define what kind of HTML input you would like to use'
@@ -75,6 +80,19 @@ function Variants() {
     <Box>
       <Input color="white" variant="normal" placeholder="normal" m="xs" />
       <Input color="white" variant="outline" placeholder="outline" m="xs" />
+    </Box>
+  )
+}
+
+function BorderSizes() {
+  return (
+    <Box>
+      <Input color="white" variant="normal" borderSize="small" placeholder="small border outline" m="xs" />
+      <Input color="white" variant="outline" borderSize="small" placeholder="small border outline" m="xs" />
+      <Input color="white" variant="normal" borderSize="medium" placeholder="medium border outline" m="xs" />
+      <Input color="white" variant="outline" borderSize="medium" placeholder="medium border outline" m="xs" />
+      <Input color="white" variant="normal" borderSize="large" placeholder="large border outline" m="xs" />
+      <Input color="white" variant="outline" borderSize="large" placeholder="large border outline" m="xs" />
     </Box>
   )
 }

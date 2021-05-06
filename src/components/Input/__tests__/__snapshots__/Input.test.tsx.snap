@@ -14,6 +14,80 @@ Object {
 }
 `;
 
+exports[`Site: Input BorderSizes 1`] = `
+Object {
+  "docs": "Border size can be customize to use several different sizes.",
+  "html": "<div class=\\"drac-box\\">
+  <input
+    placeholder=\\"small border outline\\"
+    class=\\"drac-input drac-input-border-sm drac-input-white drac-text-white drac-m-xs\\"
+  /><input
+    placeholder=\\"small border outline\\"
+    class=\\"drac-input drac-input-outline drac-input-border-sm drac-input-white drac-text-white drac-m-xs\\"
+  /><input
+    placeholder=\\"medium border outline\\"
+    class=\\"drac-input drac-input-border-md drac-input-white drac-text-white drac-m-xs\\"
+  /><input
+    placeholder=\\"medium border outline\\"
+    class=\\"drac-input drac-input-outline drac-input-border-md drac-input-white drac-text-white drac-m-xs\\"
+  /><input
+    placeholder=\\"large border outline\\"
+    class=\\"drac-input drac-input-border-lg drac-input-white drac-text-white drac-m-xs\\"
+  /><input
+    placeholder=\\"large border outline\\"
+    class=\\"drac-input drac-input-outline drac-input-border-lg drac-input-white drac-text-white drac-m-xs\\"
+  />
+</div>
+",
+  "react": "<Box>
+  <Input
+    color=\\"white\\"
+    variant=\\"normal\\"
+    borderSize=\\"small\\"
+    placeholder=\\"small border outline\\"
+    m=\\"xs\\"
+  />
+  <Input
+    color=\\"white\\"
+    variant=\\"outline\\"
+    borderSize=\\"small\\"
+    placeholder=\\"small border outline\\"
+    m=\\"xs\\"
+  />
+  <Input
+    color=\\"white\\"
+    variant=\\"normal\\"
+    borderSize=\\"medium\\"
+    placeholder=\\"medium border outline\\"
+    m=\\"xs\\"
+  />
+  <Input
+    color=\\"white\\"
+    variant=\\"outline\\"
+    borderSize=\\"medium\\"
+    placeholder=\\"medium border outline\\"
+    m=\\"xs\\"
+  />
+  <Input
+    color=\\"white\\"
+    variant=\\"normal\\"
+    borderSize=\\"large\\"
+    placeholder=\\"large border outline\\"
+    m=\\"xs\\"
+  />
+  <Input
+    color=\\"white\\"
+    variant=\\"outline\\"
+    borderSize=\\"large\\"
+    placeholder=\\"large border outline\\"
+    m=\\"xs\\"
+  />
+</Box>;
+",
+  "title": "BorderSizes",
+}
+`;
+
 exports[`Site: Input Colors 1`] = `
 Object {
   "docs": "Inputs can be customized to use any of the Dracula UI theme colors.",

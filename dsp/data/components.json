@@ -5919,6 +5919,13 @@
           "screenshot": "./dsp/assets/InputVariants.png"
         },
         {
+          "title": "BorderSizes",
+          "html": "<div class=\"drac-box\">\n  <input\n    placeholder=\"small border outline\"\n    class=\"drac-input drac-input-border-sm drac-input-white drac-text-white drac-m-xs\"\n  /><input\n    placeholder=\"small border outline\"\n    class=\"drac-input drac-input-outline drac-input-border-sm drac-input-white drac-text-white drac-m-xs\"\n  /><input\n    placeholder=\"medium border outline\"\n    class=\"drac-input drac-input-border-md drac-input-white drac-text-white drac-m-xs\"\n  /><input\n    placeholder=\"medium border outline\"\n    class=\"drac-input drac-input-outline drac-input-border-md drac-input-white drac-text-white drac-m-xs\"\n  /><input\n    placeholder=\"large border outline\"\n    class=\"drac-input drac-input-border-lg drac-input-white drac-text-white drac-m-xs\"\n  /><input\n    placeholder=\"large border outline\"\n    class=\"drac-input drac-input-outline drac-input-border-lg drac-input-white drac-text-white drac-m-xs\"\n  />\n</div>\n",
+          "react": "<Box>\n  <Input\n    color=\"white\"\n    variant=\"normal\"\n    borderSize=\"small\"\n    placeholder=\"small border outline\"\n    m=\"xs\"\n  />\n  <Input\n    color=\"white\"\n    variant=\"outline\"\n    borderSize=\"small\"\n    placeholder=\"small border outline\"\n    m=\"xs\"\n  />\n  <Input\n    color=\"white\"\n    variant=\"normal\"\n    borderSize=\"medium\"\n    placeholder=\"medium border outline\"\n    m=\"xs\"\n  />\n  <Input\n    color=\"white\"\n    variant=\"outline\"\n    borderSize=\"medium\"\n    placeholder=\"medium border outline\"\n    m=\"xs\"\n  />\n  <Input\n    color=\"white\"\n    variant=\"normal\"\n    borderSize=\"large\"\n    placeholder=\"large border outline\"\n    m=\"xs\"\n  />\n  <Input\n    color=\"white\"\n    variant=\"outline\"\n    borderSize=\"large\"\n    placeholder=\"large border outline\"\n    m=\"xs\"\n  />\n</Box>;\n",
+          "docs": "Border size can be customize to use several different sizes.",
+          "screenshot": "./dsp/assets/InputBorderSizes.png"
+        },
+        {
           "title": "Type",
           "html": "<div class=\"drac-box\">\n  <input\n    placeholder=\"Password\"\n    type=\"password\"\n    class=\"drac-input drac-input-white drac-text-white drac-my-sm\"\n  /><input\n    placeholder=\"Date\"\n    type=\"date\"\n    class=\"drac-input drac-input-white drac-text-white drac-my-sm\"\n  /><input\n    placeholder=\"Email\"\n    type=\"email\"\n    class=\"drac-input drac-input-white drac-text-white drac-my-sm\"\n  /><input\n    placeholder=\"Number\"\n    type=\"number\"\n    class=\"drac-input drac-input-white drac-text-white drac-my-sm\"\n  /><input\n    placeholder=\"Range\"\n    type=\"range\"\n    class=\"drac-input drac-input-white drac-text-white drac-my-sm\"\n  /><input\n    placeholder=\"Telephone\"\n    type=\"tel\"\n    class=\"drac-input drac-input-white drac-text-white drac-my-sm\"\n  />\n</div>\n",
           "react": "<Box>\n  <Input my=\"sm\" color=\"white\" placeholder=\"Password\" type=\"password\" />\n  <Input my=\"sm\" color=\"white\" placeholder=\"Date\" type=\"date\" />\n  <Input my=\"sm\" color=\"white\" placeholder=\"Email\" type=\"email\" />\n  <Input my=\"sm\" color=\"white\" placeholder=\"Number\" type=\"number\" />\n  <Input my=\"sm\" color=\"white\" placeholder=\"Range\" type=\"range\" />\n  <Input my=\"sm\" color=\"white\" placeholder=\"Telephone\" type=\"tel\" />\n</Box>;\n",
@@ -5950,6 +5957,25 @@
           "defaultValue": null,
           "description": "Controls the size of the input based on pre-configured Dracula UI sizes.",
           "name": "size",
+          "parent": {
+            "fileName": "src/components/Input/Input.tsx",
+            "name": "InputProps"
+          },
+          "declarations": [
+            {
+              "fileName": "src/components/Input/Input.tsx",
+              "name": "InputProps"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "number | \"large\" | \"medium\" | \"small\" | undefined"
+          }
+        },
+        "borderSize": {
+          "defaultValue": null,
+          "description": "Controls the bordersize of the input based on pre-configured Dracula UI sizes.",
+          "name": "borderSize",
           "parent": {
             "fileName": "src/components/Input/Input.tsx",
             "name": "InputProps"
@@ -6243,6 +6269,25 @@
             "defaultValue": null,
             "description": "Controls the size of the input based on pre-configured Dracula UI sizes.",
             "name": "size",
+            "parent": {
+              "fileName": "src/components/Input/Input.tsx",
+              "name": "InputProps"
+            },
+            "declarations": [
+              {
+                "fileName": "src/components/Input/Input.tsx",
+                "name": "InputProps"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "number | \"large\" | \"medium\" | \"small\" | undefined"
+            }
+          },
+          "borderSize": {
+            "defaultValue": null,
+            "description": "Controls the bordersize of the input based on pre-configured Dracula UI sizes.",
+            "name": "borderSize",
             "parent": {
               "fileName": "src/components/Input/Input.tsx",
               "name": "InputProps"
