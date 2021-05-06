@@ -6,11 +6,7 @@ import { Text } from '@/components/Text/Text'
 
 docs(Text, {
   basic() {
-    return snapshot(
-      'Usage',
-      Usage,
-      'Show inline text within an interface.'
-    )
+    return snapshot('Usage', Usage, 'Show inline text within an interface.')
   },
   variations() {
     return [
@@ -39,9 +35,7 @@ docs(Text, {
 })
 
 function Usage() {
-  return (
-    <Text>The quick vampire jumps over the lazy human</Text>
-  )
+  return <Text>The quick vampire jumps over the lazy human</Text>
 }
 
 function Colors() {
@@ -60,9 +54,15 @@ function Colors() {
 function Align() {
   return (
     <Box>
-      <Text align="left" as="p">The quick vampire jumps over the lazy human</Text>
-      <Text align="center" as="p">The quick vampire jumps over the lazy human</Text>
-      <Text align="right" as="p">The quick vampire jumps over the lazy human</Text>
+      <Text align="left" as="p">
+        The quick vampire jumps over the lazy human
+      </Text>
+      <Text align="center" as="p">
+        The quick vampire jumps over the lazy human
+      </Text>
+      <Text align="right" as="p">
+        The quick vampire jumps over the lazy human
+      </Text>
     </Box>
   )
 }

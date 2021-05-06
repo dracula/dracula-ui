@@ -1,13 +1,13 @@
 import cx from 'classnames/dedupe'
 import mapValues from 'lodash/mapValues'
 import React, { AllHTMLAttributes } from 'react'
-import { borderColors, colors, glowColors } from '../../base/colors'
+import { backgroundColors, borderColors, glowColors } from '../../base/colors'
 import {
-  PaddingMixin,
-  paddingMixin,
+  cleanProps,
   marginMixin,
   MarginMixin,
-  cleanProps
+  PaddingMixin,
+  paddingMixin
 } from '../../base/spacing'
 
 type Element = HTMLElementTagNameMap
@@ -62,8 +62,8 @@ export const heights = mapValues(widths, (clz) => clz.replace('-w-', '-h-'))
  */
 export type BoxProps<K extends keyof Element = 'div'> = {
   /** The background color. */
-  color?: keyof typeof colors
-  
+  color?: keyof typeof backgroundColors
+
   /** The display of the element. */
   display?: keyof typeof displays
 
@@ -75,10 +75,10 @@ export type BoxProps<K extends keyof Element = 'div'> = {
 
   /** The border radius. */
   rounded?: keyof typeof roundedBorders
-  
+
   /** The height of the element. */
   height?: keyof typeof heights
-  
+
   /** The width of the element. */
   width?: keyof typeof widths
 
@@ -116,7 +116,7 @@ export function Box<T extends keyof Element>(props: BoxProps<T>) {
       props.className,
       height && heights[height],
       width && widths[width],
-      color && colors[color],
+      color && backgroundColors[color],
       display && displays[display],
       glowColor && glowColors[glowColor],
       borderColor && borderColors[borderColor],

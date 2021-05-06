@@ -4,7 +4,7 @@ import React, {
   ButtonHTMLAttributes,
   InputHTMLAttributes
 } from 'react'
-import { colors as backgroundColors } from '../../base/colors'
+import { backgroundColors } from '../../base/colors'
 import {
   cleanProps,
   marginMixin,
@@ -76,9 +76,10 @@ export const Button = React.forwardRef<
   const isGhost = variant === 'ghost'
   const overrideTextColor = isOutline || isGhost
 
-  const textColorClass = overrideTextColor
-    ? textColors[color ?? 'green']
-    : undefined
+  const textColorClass =
+    overrideTextColor && color !== 'animated'
+      ? textColors[color ?? 'green']
+      : undefined
 
   let backgroundClass = backgroundColors[color ?? 'green']
   if (isGhost) {
