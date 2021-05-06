@@ -20,6 +20,12 @@ export const inputSizes = {
   small: 'drac-input-sm'
 }
 
+export const borderSizes = {
+  large: 'drac-input-border-lg',
+  medium: 'drac-input-border-md',
+  small: 'drac-input-border-sm'
+}
+
 export const inputColors: Partial<ColorMap> = {
   white: 'drac-input-white drac-text-white',
   cyan: 'drac-input-cyan drac-text-cyan',
@@ -45,6 +51,11 @@ export interface InputProps
    * Controls the size of the input based on pre-configured Dracula UI sizes.
    */
   size?: keyof typeof inputSizes | number
+ 
+  /**
+   * Controls the border size of the input based on pre-configured Dracula UI sizes.
+   */
+  'borderSize'?: keyof typeof borderSizes | number
 
   /**
    * Controls the variation the input.
@@ -98,6 +109,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
         props.className,
         variant && inputVariants[variant],
         size && typeof size === 'string' && inputSizes[size],
+        borderSizes && typeof size === 'string' && inputSizes[size], 
         color && inputColors[color],
         ...paddingMixin(props),
         ...marginMixin(props)

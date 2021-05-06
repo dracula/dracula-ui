@@ -14,6 +14,35 @@ Object {
 }
 `;
 
+exports[`Site: Input BorderSizes 1`] = `
+Object {
+  "docs": "Inputs can be customize to use several different sizes.",
+  "html": "<div class=\\"drac-box\\">
+  <input
+    bordersize=\\"small\\"
+    placeholder=\\"small border\\"
+    class=\\"drac-input drac-input-white drac-text-white drac-m-xs\\"
+  /><input
+    bordersize=\\"medium\\"
+    placeholder=\\"medium border\\"
+    class=\\"drac-input drac-input-white drac-text-white drac-m-xs\\"
+  /><input
+    bordersize=\\"large\\"
+    placeholder=\\"large border\\"
+    class=\\"drac-input drac-input-white drac-text-white drac-m-xs\\"
+  />
+</div>
+",
+  "react": "<Box>
+  <Input color=\\"white\\" borderSize=\\"small\\" placeholder=\\"small border\\" m=\\"xs\\" />
+  <Input color=\\"white\\" borderSize=\\"medium\\" placeholder=\\"medium border\\" m=\\"xs\\" />
+  <Input color=\\"white\\" borderSize=\\"large\\" placeholder=\\"large border\\" m=\\"xs\\" />
+</Box>;
+",
+  "title": "BorderSizes",
+}
+`;
+
 exports[`Site: Input Colors 1`] = `
 Object {
   "docs": "Inputs can be customized to use any of the Dracula UI theme colors.",

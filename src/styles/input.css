@@ -51,3 +51,17 @@
   height: var(--spacing-12);
   font-size: var(--font-lg);
 }
+
+/* Border Sizes */
+
+.input.input-border-sm {
+  border: 0.1rem solid;
+}
+
+.input.input-border-md {
+  border: 0.2rem solid;
+}
+
+.input.input-border-lg {
+  border: 0.3rem solid;
+}
