@@ -49,6 +49,13 @@
           "react": "<Box style={{ display: \"flex\", flexDirection: \"column\" }}>\n  <Anchor href=\"#\" size=\"xs\" mb=\"sm\">\n    xs\n  </Anchor>\n  <Anchor href=\"#\" size=\"sm\" mb=\"sm\">\n    sm\n  </Anchor>\n  <Anchor href=\"#\" size=\"md\" mb=\"sm\">\n    md\n  </Anchor>\n  <Anchor href=\"#\" size=\"lg\" mb=\"sm\">\n    lg\n  </Anchor>\n</Box>;\n",
           "docs": "Anchors can be customize to use several different sizes.",
           "screenshot": "./dsp/assets/AnchorSizes.png"
+        },
+        {
+          "title": "External",
+          "html": "<a\n  target=\"_blank\"\n  rel=\"noopener noreferrer\"\n  href=\"https://www.google.com/search?q=count+dracula\"\n  class=\"drac-anchor drac-text drac-text-white drac-text-purple--hover\"\n  >Find Dracula on Google</a\n>\n",
+          "react": "<Anchor href=\"https://www.google.com/search?q=count+dracula\" isExternal={true}>\n  Find Dracula on Google\n</Anchor>;\n",
+          "docs": "The isExternal prop can be used to apply external link props such as target=\"_blank\"",
+          "screenshot": "./dsp/assets/AnchorExternal.png"
         }
       ],
       "ext_com_draculaui_props": {
@@ -145,6 +152,25 @@
           "required": false,
           "type": {
             "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+          }
+        },
+        "isExternal": {
+          "defaultValue": null,
+          "description": "Whether or not to apply external link props such as `target=\"_blank\"` and `rel=\"noopener noreferrer\"`",
+          "name": "isExternal",
+          "parent": {
+            "fileName": "src/components/Anchor/Anchor.tsx",
+            "name": "AnchorProps"
+          },
+          "declarations": [
+            {
+              "fileName": "src/components/Anchor/Anchor.tsx",
+              "name": "AnchorProps"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "boolean | undefined"
           }
         },
         "p": {
@@ -457,6 +483,25 @@
             "required": false,
             "type": {
               "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+            }
+          },
+          "isExternal": {
+            "defaultValue": null,
+            "description": "Whether or not to apply external link props such as `target=\"_blank\"` and `rel=\"noopener noreferrer\"`",
+            "name": "isExternal",
+            "parent": {
+              "fileName": "src/components/Anchor/Anchor.tsx",
+              "name": "AnchorProps"
+            },
+            "declarations": [
+              {
+                "fileName": "src/components/Anchor/Anchor.tsx",
+                "name": "AnchorProps"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "boolean | undefined"
             }
           },
           "p": {
