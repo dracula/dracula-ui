@@ -1,6 +1,6 @@
 {
   "name": "@dracula/dracula-ui",
-  "version": "0.7.8",
+  "version": "0.7.9",
   "main": "index.js",
   "style": "./styles/dracula-ui.css",
   "typings": "index.d.ts",
