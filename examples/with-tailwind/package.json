@@ -1,0 +1,7 @@
+{
+  "name": "with-tailwind",
+  "private": true,
+  "dependencies": {
+    "@dracula/dracula-ui": "*"
+  }
+}
