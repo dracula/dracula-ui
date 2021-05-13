@@ -43,42 +43,42 @@ Object {
   <Input
     color=\\"white\\"
     variant=\\"normal\\"
-    borderSize=\\"small\\"
+    borderSize=\\"sm\\"
     placeholder=\\"small border outline\\"
     m=\\"xs\\"
   />
   <Input
     color=\\"white\\"
     variant=\\"outline\\"
-    borderSize=\\"small\\"
+    borderSize=\\"sm\\"
     placeholder=\\"small border outline\\"
     m=\\"xs\\"
   />
   <Input
     color=\\"white\\"
     variant=\\"normal\\"
-    borderSize=\\"medium\\"
+    borderSize=\\"md\\"
     placeholder=\\"medium border outline\\"
     m=\\"xs\\"
   />
   <Input
     color=\\"white\\"
     variant=\\"outline\\"
-    borderSize=\\"medium\\"
+    borderSize=\\"md\\"
     placeholder=\\"medium border outline\\"
     m=\\"xs\\"
   />
   <Input
     color=\\"white\\"
     variant=\\"normal\\"
-    borderSize=\\"large\\"
+    borderSize=\\"lg\\"
     placeholder=\\"large border outline\\"
     m=\\"xs\\"
   />
   <Input
     color=\\"white\\"
     variant=\\"outline\\"
-    borderSize=\\"large\\"
+    borderSize=\\"lg\\"
     placeholder=\\"large border outline\\"
     m=\\"xs\\"
   />

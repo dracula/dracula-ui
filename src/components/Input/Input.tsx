@@ -21,9 +21,9 @@ export const inputSizes = {
 }
 
 export const borderSizes = {
-  large: 'drac-input-border-lg',
-  medium: 'drac-input-border-md',
-  small: 'drac-input-border-sm'
+  lg: 'drac-input-border-lg',
+  md: 'drac-input-border-md',
+  sm: 'drac-input-border-sm'
 }
 
 export const inputColors: Partial<ColorMap> = {
@@ -55,7 +55,7 @@ export interface InputProps
   /**
    * Controls the border size of the input based on pre-configured Dracula UI sizes.
    */
-  'borderSize'?: keyof typeof borderSizes | number
+  borderSize?: keyof typeof borderSizes
 
   /**
    * Controls the variation the input.
@@ -118,10 +118,6 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
 
     if (size && typeof size === 'number') {
       finalProps[size] = size
-    }
-    
-    if (borderSize && typeof borderSize === 'number') {
-      finalProps[borderSize] = borderSize
     }
 
     return <input ref={ref} {...cleanProps(finalProps)} />

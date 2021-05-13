@@ -87,12 +87,12 @@ function Variants() {
 function BorderSizes() {
   return (
     <Box>
-      <Input color="white" variant="normal" borderSize="small" placeholder="small border outline" m="xs" />
-      <Input color="white" variant="outline" borderSize="small" placeholder="small border outline" m="xs" />
-      <Input color="white" variant="normal" borderSize="medium" placeholder="medium border outline" m="xs" />
-      <Input color="white" variant="outline" borderSize="medium" placeholder="medium border outline" m="xs" />
-      <Input color="white" variant="normal" borderSize="large" placeholder="large border outline" m="xs" />
-      <Input color="white" variant="outline" borderSize="large" placeholder="large border outline" m="xs" />
+      <Input color="white" variant="normal" borderSize="sm" placeholder="small border outline" m="xs" />
+      <Input color="white" variant="outline" borderSize="sm" placeholder="small border outline" m="xs" />
+      <Input color="white" variant="normal" borderSize="md" placeholder="medium border outline" m="xs" />
+      <Input color="white" variant="outline" borderSize="md" placeholder="medium border outline" m="xs" />
+      <Input color="white" variant="normal" borderSize="lg" placeholder="large border outline" m="xs" />
+      <Input color="white" variant="outline" borderSize="lg" placeholder="large border outline" m="xs" />
     </Box>
   )
 }
