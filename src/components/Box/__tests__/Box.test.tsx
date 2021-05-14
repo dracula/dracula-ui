@@ -19,24 +19,20 @@ docs(Box, {
       'Boxes can be customized to use any of the Dracula UI theme colors, including all solid, gradient, and animated colors.'
     ),
 
-    snapshot(
-      'Display',
-      Display,
-      'Control the display type of an element.'
-    ),
+    snapshot('Display', Display, 'Control the display type of an element.'),
 
     snapshot(
       'Rounded',
       Rounded,
       'Choose from one of the predefined `rounded` options for a Box.'
     ),
-    
+
     snapshot(
       'Height',
       Height,
       'Set an element with a fixed height, including `auto` and `full`.'
     ),
-    
+
     snapshot(
       'Width',
       Width,
@@ -52,7 +48,7 @@ docs(Box, {
     snapshot(
       'Scrollbar',
       Scrollbar,
-      'Boxes come with primitive scrollbars, which allow you to customize the colors and shapes.'
+      'You can customize the color of scrollbars for boxes with any of the existing Dracula UI base colors.'
     )
   ]
 })
@@ -90,13 +86,31 @@ function Rounded() {
 function Display() {
   return (
     <Box>
-      <Box color="purpleCyan" display="inline-block" rounded="lg" p="xs" mr="xs">
+      <Box
+        color="purpleCyan"
+        display="inline-block"
+        rounded="lg"
+        p="xs"
+        mr="xs"
+      >
         <Text color="black">1</Text>
       </Box>
-      <Box color="purpleCyan" display="inline-block" rounded="lg" p="xs" mr="xs">
+      <Box
+        color="purpleCyan"
+        display="inline-block"
+        rounded="lg"
+        p="xs"
+        mr="xs"
+      >
         <Text color="black">2</Text>
       </Box>
-      <Box color="purpleCyan" display="inline-block" rounded="lg" p="xs" mr="xs">
+      <Box
+        color="purpleCyan"
+        display="inline-block"
+        rounded="lg"
+        p="xs"
+        mr="xs"
+      >
         <Text color="black">3</Text>
       </Box>
     </Box>
