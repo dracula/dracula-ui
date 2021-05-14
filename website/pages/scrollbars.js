@@ -64,18 +64,18 @@ class CustomScrollbars extends React.Component {
             <List color="white" variant="ordered">
               <li className="drac-text drac-text-white">
                 <code>--custom-scrollbar-bg</code> - Change the background
-                colour of the scrollbar.
+                color of the scrollbar.
               </li>
               <li className="drac-text drac-text-white">
-                <code>--custom-scrollbar-border</code> - Changes the colour of
+                <code>--custom-scrollbar-border</code> - Changes the color of
                 the scrollbar border.
               </li>
               <li className="drac-text drac-text-white">
-                <code>--custom-scrollbar-thumb</code> - Change the colour of the
+                <code>--custom-scrollbar-thumb</code> - Change the color of the
                 bar.
               </li>
               <li className="drac-text drac-text-white">
-                <code>--custom-scrollbar-thumb-hover</code> - Changes the colour
+                <code>--custom-scrollbar-thumb-hover</code> - Changes the color
                 of the scrollbar when the user interacts with it.
               </li>
             </List>

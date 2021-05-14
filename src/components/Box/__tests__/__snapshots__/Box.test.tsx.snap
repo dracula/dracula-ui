@@ -59,6 +59,31 @@ Object {
 }
 `;
 
+exports[`Site: Box Scrollbar 1`] = `
+Object {
+  "docs": "Boxes come with primitive scrollbars, which allow you to customize the colors and shapes.",
+  "html": "<div>
+  <div class=\\"drac-box drac-scrollbar-purple drac-p-xs\\">
+    <span class=\\"drac-text drac-line-height drac-text-black\\">xs padding</span>
+  </div>
+  <div class=\\"drac-box drac-scrollbar-pink drac-p-xs\\">
+    <span class=\\"drac-text drac-line-height drac-text-black\\">xs padding</span>
+  </div>
+</div>
+",
+  "react": "<div>
+  <Box scrollbar={true} p=\\"xs\\">
+    <Text color=\\"black\\">xs padding</Text>
+  </Box>
+  <Box scrollbar=\\"pink\\" p=\\"xs\\">
+    <Text color=\\"black\\">xs padding</Text>
+  </Box>
+</div>;
+",
+  "title": "Scrollbar",
+}
+`;
+
 exports[`Site: Box Spacing 1`] = `
 Object {
   "docs": "Boxes come with pre defined spacing primitives for padding and margin that allow for customizing the spacing inside and around boxes.",

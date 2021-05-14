@@ -25,6 +25,16 @@ export const gradientColors = {
   animated: 'drac-bg-animated'
 }
 
+export const scrollbarColors = {
+  cyan: 'drac-scrollbar-cyan',
+  green: 'drac-scrollbar-green',
+  orange: 'drac-scrollbar-orange',
+  pink: 'drac-scrollbar-pink',
+  purple: 'drac-scrollbar-purple',
+  red: 'drac-scrollbar-red',
+  yellow: 'drac-scrollbar-yellow'
+}
+
 export const colors = {
   ...supportColors,
   ...baseColors,
@@ -43,9 +53,8 @@ export type BaseColorMap = Record<BaseColorNames, string>
 export type GradientColorNames = keyof typeof gradientColors
 export type GradientBaseColorMap = Record<GradientColorNames, string>
 
-export const borderColors: BaseColorMap = mapValues(
-  colors,
-  (className) => className.replace('-bg-', '-border-')
+export const borderColors: BaseColorMap = mapValues(colors, (className) =>
+  className.replace('-bg-', '-border-')
 )
 
 export const glowColors: BaseColorMap = mapValues(colors, (className) =>

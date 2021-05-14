@@ -29,6 +29,12 @@ docs(Box, {
       'Spacing',
       Spacing,
       'Boxes come with pre defined spacing primitives for padding and margin that allow for customizing the spacing inside and around boxes.'
+    ),
+
+    snapshot(
+      'Scrollbar',
+      Scrollbar,
+      'Boxes come with primitive scrollbars, which allow you to customize the colors and shapes.'
     )
   ]
 })
@@ -88,6 +94,20 @@ function Spacing() {
 
       <Box color="pinkPurple" m="md">
         <Text color="black">medium margin</Text>
+      </Box>
+    </div>
+  )
+}
+
+function Scrollbar() {
+  return (
+    <div>
+      <Box scrollbar p="xs">
+        <Text color="black">xs padding</Text>
+      </Box>
+
+      <Box scrollbar="pink" p="xs">
+        <Text color="black">xs padding</Text>
       </Box>
     </div>
   )
