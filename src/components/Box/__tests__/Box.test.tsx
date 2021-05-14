@@ -3,6 +3,7 @@ import { docs } from '@/documentation/site-docs'
 import { snapshot } from '@/documentation/render-component'
 import { Text } from '@/components/Text/Text'
 import { Box } from '@/components/Box/Box'
+import { Paragraph } from '../../Paragraph/Paragraph'
 
 docs(Box, {
   basic() {
@@ -19,24 +20,20 @@ docs(Box, {
       'Boxes can be customized to use any of the Dracula UI theme colors, including all solid, gradient, and animated colors.'
     ),
 
-    snapshot(
-      'Display',
-      Display,
-      'Control the display type of an element.'
-    ),
+    snapshot('Display', Display, 'Control the display type of an element.'),
 
     snapshot(
       'Rounded',
       Rounded,
       'Choose from one of the predefined `rounded` options for a Box.'
     ),
-    
+
     snapshot(
       'Height',
       Height,
       'Set an element with a fixed height, including `auto` and `full`.'
     ),
-    
+
     snapshot(
       'Width',
       Width,
@@ -47,6 +44,12 @@ docs(Box, {
       'Spacing',
       Spacing,
       'Boxes come with pre defined spacing primitives for padding and margin that allow for customizing the spacing inside and around boxes.'
+    ),
+
+    snapshot(
+      'Scrollbar',
+      Scrollbar,
+      'You can customize the color of scrollbars for boxes with any of the existing Dracula UI base colors.'
     )
   ]
 })
@@ -84,13 +87,31 @@ function Rounded() {
 function Display() {
   return (
     <Box>
-      <Box color="purpleCyan" display="inline-block" rounded="lg" p="xs" mr="xs">
+      <Box
+        color="purpleCyan"
+        display="inline-block"
+        rounded="lg"
+        p="xs"
+        mr="xs"
+      >
         <Text color="black">1</Text>
       </Box>
-      <Box color="purpleCyan" display="inline-block" rounded="lg" p="xs" mr="xs">
+      <Box
+        color="purpleCyan"
+        display="inline-block"
+        rounded="lg"
+        p="xs"
+        mr="xs"
+      >
         <Text color="black">2</Text>
       </Box>
-      <Box color="purpleCyan" display="inline-block" rounded="lg" p="xs" mr="xs">
+      <Box
+        color="purpleCyan"
+        display="inline-block"
+        rounded="lg"
+        p="xs"
+        mr="xs"
+      >
         <Text color="black">3</Text>
       </Box>
     </Box>
@@ -162,5 +183,77 @@ function Spacing() {
         <Text color="black">medium margin</Text>
       </Box>
     </Box>
+  )
+}
+
+function Scrollbar() {
+  return (
+    <div>
+      <Box scrollbar height="sm">
+        <Text color="white">Scrollbar</Text>
+        <Paragraph>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra
+          dictum imperdiet. Praesent at interdum sem. Suspendisse congue, nibh
+          sit amet facilisis egestas, leo leo tempus ligula, sit amet tristique
+          lacus diam non massa. Quisque egestas magna ligula, vel aliquet quam
+          auctor sed. Maecenas quam dui, tincidunt in rutrum vel, porttitor non
+          nulla. Praesent eu congue magna, nec pellentesque justo. Nulla
+          viverra, eros a vulputate sollicitudin, erat erat lacinia risus, sed
+          eleifend nibh neque eu turpis. Maecenas vitae nulla finibus, faucibus
+          diam et, posuere est. In non leo et est ornare laoreet ac vel odio.
+          Vestibulum tempor, quam eleifend suscipit tempus, nisl nibh eleifend
+          nunc, vitae sollicitudin mi purus sed nisl. Vivamus dapibus dui ac
+          viverra aliquam. Vestibulum non luctus risus.
+        </Paragraph>
+
+        <Paragraph>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra
+          dictum imperdiet. Praesent at interdum sem. Suspendisse congue, nibh
+          sit amet facilisis egestas, leo leo tempus ligula, sit amet tristique
+          lacus diam non massa. Quisque egestas magna ligula, vel aliquet quam
+          auctor sed. Maecenas quam dui, tincidunt in rutrum vel, porttitor non
+          nulla. Praesent eu congue magna, nec pellentesque justo. Nulla
+          viverra, eros a vulputate sollicitudin, erat erat lacinia risus, sed
+          eleifend nibh neque eu turpis. Maecenas vitae nulla finibus, faucibus
+          diam et, posuere est. In non leo et est ornare laoreet ac vel odio.
+          Vestibulum tempor, quam eleifend suscipit tempus, nisl nibh eleifend
+          nunc, vitae sollicitudin mi purus sed nisl. Vivamus dapibus dui ac
+          viverra aliquam. Vestibulum non luctus risus.
+        </Paragraph>
+      </Box>
+
+      <Box scrollbar="pink" p="xs" height="xs">
+        <Text color="white">Scrollbar</Text>
+        <Paragraph>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra
+          dictum imperdiet. Praesent at interdum sem. Suspendisse congue, nibh
+          sit amet facilisis egestas, leo leo tempus ligula, sit amet tristique
+          lacus diam non massa. Quisque egestas magna ligula, vel aliquet quam
+          auctor sed. Maecenas quam dui, tincidunt in rutrum vel, porttitor non
+          nulla. Praesent eu congue magna, nec pellentesque justo. Nulla
+          viverra, eros a vulputate sollicitudin, erat erat lacinia risus, sed
+          eleifend nibh neque eu turpis. Maecenas vitae nulla finibus, faucibus
+          diam et, posuere est. In non leo et est ornare laoreet ac vel odio.
+          Vestibulum tempor, quam eleifend suscipit tempus, nisl nibh eleifend
+          nunc, vitae sollicitudin mi purus sed nisl. Vivamus dapibus dui ac
+          viverra aliquam. Vestibulum non luctus risus.
+        </Paragraph>
+
+        <Paragraph>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra
+          dictum imperdiet. Praesent at interdum sem. Suspendisse congue, nibh
+          sit amet facilisis egestas, leo leo tempus ligula, sit amet tristique
+          lacus diam non massa. Quisque egestas magna ligula, vel aliquet quam
+          auctor sed. Maecenas quam dui, tincidunt in rutrum vel, porttitor non
+          nulla. Praesent eu congue magna, nec pellentesque justo. Nulla
+          viverra, eros a vulputate sollicitudin, erat erat lacinia risus, sed
+          eleifend nibh neque eu turpis. Maecenas vitae nulla finibus, faucibus
+          diam et, posuere est. In non leo et est ornare laoreet ac vel odio.
+          Vestibulum tempor, quam eleifend suscipit tempus, nisl nibh eleifend
+          nunc, vitae sollicitudin mi purus sed nisl. Vivamus dapibus dui ac
+          viverra aliquam. Vestibulum non luctus risus.
+        </Paragraph>
+      </Box>
+    </div>
   )
 }

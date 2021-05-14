@@ -14,3 +14,5 @@ package-lock.json
 
 /website/out
 /website/package-lock.json
+
+/dracula-ui.code-workspace

@@ -1,7 +1,12 @@
 import cx from 'classnames/dedupe'
 import mapValues from 'lodash/mapValues'
 import React, { AllHTMLAttributes } from 'react'
-import { backgroundColors, borderColors, glowColors } from '../../base/colors'
+import {
+  backgroundColors,
+  borderColors,
+  glowColors,
+  scrollbarColors
+} from '../../base/colors'
 import {
   cleanProps,
   marginMixin,
@@ -84,6 +89,9 @@ export type BoxProps<K extends keyof Element = 'div'> = {
 
   /** The HTML element to be used */
   as?: K
+
+  /** If the custom scrollbar is to be used and its color. */
+  scrollbar?: keyof typeof scrollbarColors | boolean
 } & AllHTMLAttributes<K> &
   PaddingMixin &
   MarginMixin
@@ -106,6 +114,7 @@ export function Box<T extends keyof Element>(props: BoxProps<T>) {
     borderColor,
     rounded,
     as = 'div',
+    scrollbar,
     ...htmlProps
   } = props
 
@@ -114,6 +123,9 @@ export function Box<T extends keyof Element>(props: BoxProps<T>) {
     className: cx(
       `drac-box`,
       props.className,
+      scrollbar &&
+        scrollbarColors[typeof scrollbar === 'boolean' ? 'purple' : scrollbar],
+
       height && heights[height],
       width && widths[width],
       color && backgroundColors[color],

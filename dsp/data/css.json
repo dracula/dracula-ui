@@ -4632,6 +4632,132 @@
     {
       "class": "component",
       "type": "page",
+      "id": ".drac-scrollbar-cyan",
+      "name": ".drac-scrollbar-cyan",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-scrollbar-cyan",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-scrollbar-cyan",
+        "languages": {
+          "css": "drac-scrollbar-cyan"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-scrollbar-green",
+      "name": ".drac-scrollbar-green",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-scrollbar-green",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-scrollbar-green",
+        "languages": {
+          "css": "drac-scrollbar-green"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-scrollbar-orange",
+      "name": ".drac-scrollbar-orange",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-scrollbar-orange",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-scrollbar-orange",
+        "languages": {
+          "css": "drac-scrollbar-orange"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-scrollbar-pink",
+      "name": ".drac-scrollbar-pink",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-scrollbar-pink",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-scrollbar-pink",
+        "languages": {
+          "css": "drac-scrollbar-pink"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-scrollbar-purple",
+      "name": ".drac-scrollbar-purple",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-scrollbar-purple",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-scrollbar-purple",
+        "languages": {
+          "css": "drac-scrollbar-purple"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-scrollbar-red",
+      "name": ".drac-scrollbar-red",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-scrollbar-red",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-scrollbar-red",
+        "languages": {
+          "css": "drac-scrollbar-red"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-scrollbar-yellow",
+      "name": ".drac-scrollbar-yellow",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-scrollbar-yellow",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-scrollbar-yellow",
+        "languages": {
+          "css": "drac-scrollbar-yellow"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
       "id": ".drac-select",
       "name": ".drac-select",
       "last_updated_by": "System",

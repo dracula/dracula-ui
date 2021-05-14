@@ -63,6 +63,13 @@ export const baseTextColors: ColorMap = mapValues(colors, (className) => {
   return className.replace('-bg-', '-text-')
 })
 
+export const scrollbarColors: BaseColorMap = mapValues(
+  baseColors,
+  (className) => {
+    return className.replace('-bg-', '-scrollbar-')
+  }
+)
+
 export const colorUtilities = {
   classes: [
     ...Object.values(baseColors),

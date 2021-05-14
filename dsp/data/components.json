@@ -1993,6 +1993,13 @@
           "react": "<Box>\n  <Box color=\"yellowPink\" p=\"xs\">\n    <Text color=\"black\">xs padding</Text>\n  </Box>\n  <Box color=\"purpleCyan\" p=\"sm\">\n    <Text color=\"black\">sm padding</Text>\n  </Box>\n  <Box color=\"pinkPurple\" p=\"md\">\n    <Text color=\"black\">medium padding</Text>\n  </Box>\n  <Box color=\"yellowPink\" m=\"xs\">\n    <Text color=\"black\">xs margin</Text>\n  </Box>\n  <Box color=\"purpleCyan\" m=\"sm\">\n    <Text color=\"black\">sm margin</Text>\n  </Box>\n  <Box color=\"pinkPurple\" m=\"md\">\n    <Text color=\"black\">medium margin</Text>\n  </Box>\n</Box>;\n",
           "docs": "Boxes come with pre defined spacing primitives for padding and margin that allow for customizing the spacing inside and around boxes.",
           "screenshot": "./dsp/assets/BoxSpacing.png"
+        },
+        {
+          "title": "Scrollbar",
+          "html": "<div>\n  <div class=\"drac-box drac-scrollbar-purple drac-h-sm\">\n    <span class=\"drac-text drac-line-height drac-text-white\">Scrollbar</span>\n    <p class=\"drac-text drac-line-height drac-text-white\">\n      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra\n      dictum imperdiet. Praesent at interdum sem. Suspendisse congue, nibh sit\n      amet facilisis egestas, leo leo tempus ligula, sit amet tristique lacus\n      diam non massa. Quisque egestas magna ligula, vel aliquet quam auctor sed.\n      Maecenas quam dui, tincidunt in rutrum vel, porttitor non nulla. Praesent\n      eu congue magna, nec pellentesque justo. Nulla viverra, eros a vulputate\n      sollicitudin, erat erat lacinia risus, sed eleifend nibh neque eu turpis.\n      Maecenas vitae nulla finibus, faucibus diam et, posuere est. In non leo et\n      est ornare laoreet ac vel odio. Vestibulum tempor, quam eleifend suscipit\n      tempus, nisl nibh eleifend nunc, vitae sollicitudin mi purus sed nisl.\n      Vivamus dapibus dui ac viverra aliquam. Vestibulum non luctus risus.\n    </p>\n    <p class=\"drac-text drac-line-height drac-text-white\">\n      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra\n      dictum imperdiet. Praesent at interdum sem. Suspendisse congue, nibh sit\n      amet facilisis egestas, leo leo tempus ligula, sit amet tristique lacus\n      diam non massa. Quisque egestas magna ligula, vel aliquet quam auctor sed.\n      Maecenas quam dui, tincidunt in rutrum vel, porttitor non nulla. Praesent\n      eu congue magna, nec pellentesque justo. Nulla viverra, eros a vulputate\n      sollicitudin, erat erat lacinia risus, sed eleifend nibh neque eu turpis.\n      Maecenas vitae nulla finibus, faucibus diam et, posuere est. In non leo et\n      est ornare laoreet ac vel odio. Vestibulum tempor, quam eleifend suscipit\n      tempus, nisl nibh eleifend nunc, vitae sollicitudin mi purus sed nisl.\n      Vivamus dapibus dui ac viverra aliquam. Vestibulum non luctus risus.\n    </p>\n  </div>\n  <div class=\"drac-box drac-scrollbar-pink drac-h-xs drac-p-xs\">\n    <span class=\"drac-text drac-line-height drac-text-white\">Scrollbar</span>\n    <p class=\"drac-text drac-line-height drac-text-white\">\n      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra\n      dictum imperdiet. Praesent at interdum sem. Suspendisse congue, nibh sit\n      amet facilisis egestas, leo leo tempus ligula, sit amet tristique lacus\n      diam non massa. Quisque egestas magna ligula, vel aliquet quam auctor sed.\n      Maecenas quam dui, tincidunt in rutrum vel, porttitor non nulla. Praesent\n      eu congue magna, nec pellentesque justo. Nulla viverra, eros a vulputate\n      sollicitudin, erat erat lacinia risus, sed eleifend nibh neque eu turpis.\n      Maecenas vitae nulla finibus, faucibus diam et, posuere est. In non leo et\n      est ornare laoreet ac vel odio. Vestibulum tempor, quam eleifend suscipit\n      tempus, nisl nibh eleifend nunc, vitae sollicitudin mi purus sed nisl.\n      Vivamus dapibus dui ac viverra aliquam. Vestibulum non luctus risus.\n    </p>\n    <p class=\"drac-text drac-line-height drac-text-white\">\n      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra\n      dictum imperdiet. Praesent at interdum sem. Suspendisse congue, nibh sit\n      amet facilisis egestas, leo leo tempus ligula, sit amet tristique lacus\n      diam non massa. Quisque egestas magna ligula, vel aliquet quam auctor sed.\n      Maecenas quam dui, tincidunt in rutrum vel, porttitor non nulla. Praesent\n      eu congue magna, nec pellentesque justo. Nulla viverra, eros a vulputate\n      sollicitudin, erat erat lacinia risus, sed eleifend nibh neque eu turpis.\n      Maecenas vitae nulla finibus, faucibus diam et, posuere est. In non leo et\n      est ornare laoreet ac vel odio. Vestibulum tempor, quam eleifend suscipit\n      tempus, nisl nibh eleifend nunc, vitae sollicitudin mi purus sed nisl.\n      Vivamus dapibus dui ac viverra aliquam. Vestibulum non luctus risus.\n    </p>\n  </div>\n</div>\n",
+          "react": "<div>\n  <Box scrollbar={true} height=\"sm\">\n    <Text color=\"white\">Scrollbar</Text>\n    <Paragraph>\n      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra\n      dictum imperdiet. Praesent at interdum sem. Suspendisse congue, nibh sit\n      amet facilisis egestas, leo leo tempus ligula, sit amet tristique lacus\n      diam non massa. Quisque egestas magna ligula, vel aliquet quam auctor sed.\n      Maecenas quam dui, tincidunt in rutrum vel, porttitor non nulla. Praesent\n      eu congue magna, nec pellentesque justo. Nulla viverra, eros a vulputate\n      sollicitudin, erat erat lacinia risus, sed eleifend nibh neque eu turpis.\n      Maecenas vitae nulla finibus, faucibus diam et, posuere est. In non leo et\n      est ornare laoreet ac vel odio. Vestibulum tempor, quam eleifend suscipit\n      tempus, nisl nibh eleifend nunc, vitae sollicitudin mi purus sed nisl.\n      Vivamus dapibus dui ac viverra aliquam. Vestibulum non luctus risus.\n    </Paragraph>\n    <Paragraph>\n      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra\n      dictum imperdiet. Praesent at interdum sem. Suspendisse congue, nibh sit\n      amet facilisis egestas, leo leo tempus ligula, sit amet tristique lacus\n      diam non massa. Quisque egestas magna ligula, vel aliquet quam auctor sed.\n      Maecenas quam dui, tincidunt in rutrum vel, porttitor non nulla. Praesent\n      eu congue magna, nec pellentesque justo. Nulla viverra, eros a vulputate\n      sollicitudin, erat erat lacinia risus, sed eleifend nibh neque eu turpis.\n      Maecenas vitae nulla finibus, faucibus diam et, posuere est. In non leo et\n      est ornare laoreet ac vel odio. Vestibulum tempor, quam eleifend suscipit\n      tempus, nisl nibh eleifend nunc, vitae sollicitudin mi purus sed nisl.\n      Vivamus dapibus dui ac viverra aliquam. Vestibulum non luctus risus.\n    </Paragraph>\n  </Box>\n  <Box scrollbar=\"pink\" p=\"xs\" height=\"xs\">\n    <Text color=\"white\">Scrollbar</Text>\n    <Paragraph>\n      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra\n      dictum imperdiet. Praesent at interdum sem. Suspendisse congue, nibh sit\n      amet facilisis egestas, leo leo tempus ligula, sit amet tristique lacus\n      diam non massa. Quisque egestas magna ligula, vel aliquet quam auctor sed.\n      Maecenas quam dui, tincidunt in rutrum vel, porttitor non nulla. Praesent\n      eu congue magna, nec pellentesque justo. Nulla viverra, eros a vulputate\n      sollicitudin, erat erat lacinia risus, sed eleifend nibh neque eu turpis.\n      Maecenas vitae nulla finibus, faucibus diam et, posuere est. In non leo et\n      est ornare laoreet ac vel odio. Vestibulum tempor, quam eleifend suscipit\n      tempus, nisl nibh eleifend nunc, vitae sollicitudin mi purus sed nisl.\n      Vivamus dapibus dui ac viverra aliquam. Vestibulum non luctus risus.\n    </Paragraph>\n    <Paragraph>\n      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra\n      dictum imperdiet. Praesent at interdum sem. Suspendisse congue, nibh sit\n      amet facilisis egestas, leo leo tempus ligula, sit amet tristique lacus\n      diam non massa. Quisque egestas magna ligula, vel aliquet quam auctor sed.\n      Maecenas quam dui, tincidunt in rutrum vel, porttitor non nulla. Praesent\n      eu congue magna, nec pellentesque justo. Nulla viverra, eros a vulputate\n      sollicitudin, erat erat lacinia risus, sed eleifend nibh neque eu turpis.\n      Maecenas vitae nulla finibus, faucibus diam et, posuere est. In non leo et\n      est ornare laoreet ac vel odio. Vestibulum tempor, quam eleifend suscipit\n      tempus, nisl nibh eleifend nunc, vitae sollicitudin mi purus sed nisl.\n      Vivamus dapibus dui ac viverra aliquam. Vestibulum non luctus risus.\n    </Paragraph>\n  </Box>\n</div>;\n",
+          "docs": "You can customize the color of scrollbars for boxes with any of the existing Dracula UI base colors.",
+          "screenshot": "./dsp/assets/BoxScrollbar.png"
         }
       ],
       "ext_com_draculaui_props": {
@@ -2130,6 +2137,21 @@
           "required": false,
           "type": {
             "name": "\"object\" | \"table\" | \"base\" | \"time\" | \"link\" | \"menu\" | \"dialog\" | \"a\" | \"abbr\" | \"address\" | \"applet\" | \"area\" | \"article\" | \"aside\" | \"audio\" | \"b\" | \"basefont\" | \"bdi\" | \"bdo\" | ... 100 more ... | undefined"
+          }
+        },
+        "scrollbar": {
+          "defaultValue": null,
+          "description": "If the custom scrollbar is to be used and its color.",
+          "name": "scrollbar",
+          "declarations": [
+            {
+              "fileName": "src/components/Box/Box.tsx",
+              "name": "TypeLiteral"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "boolean | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | undefined"
           }
         },
         "p": {
@@ -2483,6 +2505,21 @@
             "required": false,
             "type": {
               "name": "\"object\" | \"table\" | \"base\" | \"time\" | \"link\" | \"menu\" | \"dialog\" | \"a\" | \"abbr\" | \"address\" | \"applet\" | \"area\" | \"article\" | \"aside\" | \"audio\" | \"b\" | \"basefont\" | \"bdi\" | \"bdo\" | ... 100 more ... | undefined"
+            }
+          },
+          "scrollbar": {
+            "defaultValue": null,
+            "description": "If the custom scrollbar is to be used and its color.",
+            "name": "scrollbar",
+            "declarations": [
+              {
+                "fileName": "src/components/Box/Box.tsx",
+                "name": "TypeLiteral"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "boolean | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | undefined"
             }
           },
           "p": {
@@ -3649,6 +3686,21 @@
             "name": "\"div\" | undefined"
           }
         },
+        "scrollbar": {
+          "defaultValue": null,
+          "description": "If the custom scrollbar is to be used and its color.",
+          "name": "scrollbar",
+          "declarations": [
+            {
+              "fileName": "dracula-ui/src/components/Box/Box.tsx",
+              "name": "TypeLiteral"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "boolean | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | undefined"
+          }
+        },
         "p": {
           "defaultValue": null,
           "description": "",
@@ -4019,6 +4071,21 @@
             "required": false,
             "type": {
               "name": "\"div\" | undefined"
+            }
+          },
+          "scrollbar": {
+            "defaultValue": null,
+            "description": "If the custom scrollbar is to be used and its color.",
+            "name": "scrollbar",
+            "declarations": [
+              {
+                "fileName": "dracula-ui/src/components/Box/Box.tsx",
+                "name": "TypeLiteral"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "boolean | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | undefined"
             }
           },
           "p": {

@@ -1,0 +1,44 @@
+@each $color in cyan, green, orange, pink, purple, red, yellow {
+  .scrollbar-$(color) {
+    --drac-scrollbar-bg: transparent;
+    --drac-scrollbar-border: var(--$(color)Light);
+    --drac-scrollbar-thumb: var(--$(color));
+    --drac-scrollbar-thumb-hover: var(--$(color)Secondary);
+    overflow: auto;
+  }
+
+  .scrollbar-$(color)::-webkit-scrollbar {
+    width: 1.4rem;
+    height: 1.4rem;
+    background-color: var(--drac-scrollbar-bg);
+  }
+
+  .scrollbar-$(color)::-webkit-scrollbar-track:horizontal {
+    border-top: 0.0625rem solid var(--drac-scrollbar-border);
+  }
+
+  .scrollbar-$(color)::-webkit-scrollbar-track:vertical {
+    border-left: 0.0625rem solid var(--drac-scrollbar-border);
+  }
+
+  .scrollbar-$(color)::-webkit-scrollbar-corner {
+    background-color: transparent;
+    border-top: 0.0625rem solid var(--drac-scrollbar-border);
+    border-left: 0.0625rem solid var(--drac-scrollbar-border);
+  }
+
+  .scrollbar-$(color)::-webkit-scrollbar-thumb {
+    min-width: 3rem;
+    min-height: 3rem;
+    border-radius: 1rem;
+    border: 0.4rem solid transparent;
+    background-clip: content-box;
+    background-color: var(--drac-scrollbar-thumb);
+    -moz-background-clip: content;
+    -webkit-background-clip: content;
+  }
+
+  .scrollbar-$(color)::-webkit-scrollbar-thumb:hover {
+    background-color: var(--drac-scrollbar-thumb-hover);
+  }
+}
