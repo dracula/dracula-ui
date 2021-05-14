@@ -1,6 +1,6 @@
 {
   "name": "@dracula/dracula-ui",
-  "version": "0.7.6",
+  "version": "0.7.9",
   "main": "index.js",
   "style": "./styles/dracula-ui.css",
   "typings": "index.d.ts",
@@ -47,7 +47,7 @@
     "babel-loader": "^8.1.0",
     "caniuse-lite": "^1.0.30001197",
     "concurrently": "^6.0.0",
-    "cssnano": "^4.1.10",
+    "cssnano": "^5.0.2",
     "enzyme": "^3.11.0",
     "enzyme-to-json": "^3.5.0",
     "fs-extra": "^9.0.1",

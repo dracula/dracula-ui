@@ -43,6 +43,25 @@ Object {
 }
 `;
 
+exports[`Site: Anchor External 1`] = `
+Object {
+  "docs": "The isExternal prop can be used to apply external link props such as target=\\"_blank\\"",
+  "html": "<a
+  target=\\"_blank\\"
+  rel=\\"noopener noreferrer\\"
+  href=\\"https://www.google.com/search?q=count+dracula\\"
+  class=\\"drac-anchor drac-text drac-text-white drac-text-purple--hover\\"
+  >Find Dracula on Google</a
+>
+",
+  "react": "<Anchor href=\\"https://www.google.com/search?q=count+dracula\\" isExternal={true}>
+  Find Dracula on Google
+</Anchor>;
+",
+  "title": "External",
+}
+`;
+
 exports[`Site: Anchor Sizes 1`] = `
 Object {
   "docs": "Anchors can be customize to use several different sizes.",

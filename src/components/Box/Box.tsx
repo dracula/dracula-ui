@@ -1,13 +1,18 @@
 import cx from 'classnames/dedupe'
 import mapValues from 'lodash/mapValues'
 import React, { AllHTMLAttributes } from 'react'
-import { borderColors, colors, glowColors } from '../../base/colors'
 import {
-  PaddingMixin,
-  paddingMixin,
+  backgroundColors,
+  borderColors,
+  glowColors,
+  scrollbarColors
+} from '../../base/colors'
+import {
+  cleanProps,
   marginMixin,
   MarginMixin,
-  cleanProps
+  PaddingMixin,
+  paddingMixin
 } from '../../base/spacing'
 
 type Element = HTMLElementTagNameMap
@@ -62,8 +67,8 @@ export const heights = mapValues(widths, (clz) => clz.replace('-w-', '-h-'))
  */
 export type BoxProps<K extends keyof Element = 'div'> = {
   /** The background color. */
-  color?: keyof typeof colors
-  
+  color?: keyof typeof backgroundColors
+
   /** The display of the element. */
   display?: keyof typeof displays
 
@@ -75,15 +80,18 @@ export type BoxProps<K extends keyof Element = 'div'> = {
 
   /** The border radius. */
   rounded?: keyof typeof roundedBorders
-  
+
   /** The height of the element. */
   height?: keyof typeof heights
-  
+
   /** The width of the element. */
   width?: keyof typeof widths
 
   /** The HTML element to be used */
   as?: K
+
+  /** If the custom scrollbar is to be used and its color. */
+  scrollbar?: keyof typeof scrollbarColors | boolean
 } & AllHTMLAttributes<K> &
   PaddingMixin &
   MarginMixin
@@ -106,6 +114,7 @@ export function Box<T extends keyof Element>(props: BoxProps<T>) {
     borderColor,
     rounded,
     as = 'div',
+    scrollbar,
     ...htmlProps
   } = props
 
@@ -114,9 +123,12 @@ export function Box<T extends keyof Element>(props: BoxProps<T>) {
     className: cx(
       `drac-box`,
       props.className,
+      scrollbar &&
+        scrollbarColors[typeof scrollbar === 'boolean' ? 'purple' : scrollbar],
+
       height && heights[height],
       width && widths[width],
-      color && colors[color],
+      color && backgroundColors[color],
       display && displays[display],
       glowColor && glowColors[glowColor],
       borderColor && borderColors[borderColor],

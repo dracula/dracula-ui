@@ -46,8 +46,6 @@ npm install @dracula/dracula-ui
 yarn add @dracula/dracula-ui
 ```
 
-If you're not into package managers, just [download a ZIP](https://github.com/dracula/dracula-ui/archive/master.zip) file.
-
 ## :zap: Using with HTML
 
 You can use Dracula UI with plain HTML by importing the CSS file.

@@ -45,13 +45,13 @@ export const textColors = mapValues(colors, (className) => {
 /** Text Props */
 export interface TextProps
   extends HTMLAttributes<HTMLSpanElement>,
-  PaddingMixin,
-  MarginMixin {
+    PaddingMixin,
+    MarginMixin {
   /**
    * Controls the alignment of text.
    */
   align?: keyof typeof textAligns
-  
+
   /**
    * Controls the size of the text based on pre-configured Dracula UI sizes.
    */

@@ -1,6 +1,10 @@
 import cx from 'classnames/dedupe'
 import React from 'react'
-import { borderColors, colors, glowColors } from '../../base/colors'
+import {
+  borderColors,
+  backgroundColors as colors,
+  glowColors
+} from '../../base/colors'
 import { Box, BoxProps } from '../../components/Box/Box'
 
 export const cardOrientations = {
