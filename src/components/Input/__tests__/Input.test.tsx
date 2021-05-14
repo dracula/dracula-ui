@@ -3,6 +3,7 @@ import { docs } from '@/documentation/site-docs'
 import { snapshot } from '@/documentation/render-component'
 import { Box } from '@/components/Box/Box'
 import { Input } from '@/components/Input/Input'
+import { Heading } from '../../Heading/Heading'
 
 docs(Input, {
   basic() {
@@ -24,6 +25,11 @@ docs(Input, {
         'Variants',
         Variants,
         'Use the `outline` variant to represent subtler text Inputs'
+      ),
+      snapshot(
+        'Border Sizes',
+        BorderSizes,
+        'Border size can be customize to use several different sizes.'
       ),
       snapshot(
         'Type',
@@ -63,9 +69,9 @@ function Colors() {
 function Sizes() {
   return (
     <Box>
-      <Input color="white" size="small" placeholder="small" m="xs" />
-      <Input color="white" size="medium" placeholder="medium" m="xs" />
-      <Input color="white" size="large" placeholder="large" m="xs" />
+      <Input color="white" size="sm" placeholder="small" m="xs" />
+      <Input color="white" size="md" placeholder="medium" m="xs" />
+      <Input color="white" size="lg" placeholder="large" m="xs" />
     </Box>
   )
 }
@@ -75,6 +81,68 @@ function Variants() {
     <Box>
       <Input color="white" variant="normal" placeholder="normal" m="xs" />
       <Input color="white" variant="outline" placeholder="outline" m="xs" />
+    </Box>
+  )
+}
+
+function BorderSizes() {
+  return (
+    <Box>
+      <Box mb="sm">
+        <Heading size="sm">sm</Heading>
+        <Input
+          color="green"
+          variant="normal"
+          borderSize="sm"
+          placeholder="small border outline"
+          m="xs"
+        />
+        <Input
+          color="green"
+          variant="outline"
+          borderSize="sm"
+          placeholder="small border outline"
+          m="xs"
+        />
+      </Box>
+
+      <Box mb="sm">
+        <Heading size="sm">md</Heading>
+
+        <Input
+          color="purple"
+          variant="normal"
+          borderSize="md"
+          placeholder="medium border outline"
+          m="xs"
+        />
+        <Input
+          color="purple"
+          variant="outline"
+          borderSize="md"
+          placeholder="medium border outline"
+          m="xs"
+        />
+      </Box>
+
+      <Box mb="sm">
+        <Heading size="sm">lg</Heading>
+
+        <Input
+          color="yellow"
+          variant="normal"
+          borderSize="lg"
+          placeholder="large border outline"
+          m="xs"
+        />
+        <Input
+          color="yellow"
+          variant="outline"
+          borderSize="lg"
+          placeholder="large border outline"
+          m="xs"
+        />
+      </Box>
     </Box>
   )
 }

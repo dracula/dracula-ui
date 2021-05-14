@@ -14,6 +14,100 @@ Object {
 }
 `;
 
+exports[`Site: Input Border Sizes 1`] = `
+Object {
+  "docs": "Border size can be customize to use several different sizes.",
+  "html": "<div class=\\"drac-box\\">
+  <div class=\\"drac-box drac-mb-sm\\">
+    <h2 class=\\"drac-heading drac-heading-sm drac-text-white\\">sm</h2>
+    <input
+      placeholder=\\"small border outline\\"
+      class=\\"drac-input drac-input-border-sm drac-input-green drac-text-green drac-m-xs\\"
+    /><input
+      placeholder=\\"small border outline\\"
+      class=\\"drac-input drac-input-outline drac-input-border-sm drac-input-green drac-text-green drac-m-xs\\"
+    />
+  </div>
+  <div class=\\"drac-box drac-mb-sm\\">
+    <h2 class=\\"drac-heading drac-heading-sm drac-text-white\\">md</h2>
+    <input
+      placeholder=\\"medium border outline\\"
+      class=\\"drac-input drac-input-border-md drac-input-purple drac-text-purple drac-m-xs\\"
+    /><input
+      placeholder=\\"medium border outline\\"
+      class=\\"drac-input drac-input-outline drac-input-border-md drac-input-purple drac-text-purple drac-m-xs\\"
+    />
+  </div>
+  <div class=\\"drac-box drac-mb-sm\\">
+    <h2 class=\\"drac-heading drac-heading-sm drac-text-white\\">lg</h2>
+    <input
+      placeholder=\\"large border outline\\"
+      class=\\"drac-input drac-input-border-lg drac-input-yellow drac-text-yellow drac-m-xs\\"
+    /><input
+      placeholder=\\"large border outline\\"
+      class=\\"drac-input drac-input-outline drac-input-border-lg drac-input-yellow drac-text-yellow drac-m-xs\\"
+    />
+  </div>
+</div>
+",
+  "react": "<Box>
+  <Box mb=\\"sm\\">
+    <Heading size=\\"sm\\">sm</Heading>
+    <Input
+      color=\\"green\\"
+      variant=\\"normal\\"
+      borderSize=\\"sm\\"
+      placeholder=\\"small border outline\\"
+      m=\\"xs\\"
+    />
+    <Input
+      color=\\"green\\"
+      variant=\\"outline\\"
+      borderSize=\\"sm\\"
+      placeholder=\\"small border outline\\"
+      m=\\"xs\\"
+    />
+  </Box>
+  <Box mb=\\"sm\\">
+    <Heading size=\\"sm\\">md</Heading>
+    <Input
+      color=\\"purple\\"
+      variant=\\"normal\\"
+      borderSize=\\"md\\"
+      placeholder=\\"medium border outline\\"
+      m=\\"xs\\"
+    />
+    <Input
+      color=\\"purple\\"
+      variant=\\"outline\\"
+      borderSize=\\"md\\"
+      placeholder=\\"medium border outline\\"
+      m=\\"xs\\"
+    />
+  </Box>
+  <Box mb=\\"sm\\">
+    <Heading size=\\"sm\\">lg</Heading>
+    <Input
+      color=\\"yellow\\"
+      variant=\\"normal\\"
+      borderSize=\\"lg\\"
+      placeholder=\\"large border outline\\"
+      m=\\"xs\\"
+    />
+    <Input
+      color=\\"yellow\\"
+      variant=\\"outline\\"
+      borderSize=\\"lg\\"
+      placeholder=\\"large border outline\\"
+      m=\\"xs\\"
+    />
+  </Box>
+</Box>;
+",
+  "title": "Border Sizes",
+}
+`;
+
 exports[`Site: Input Colors 1`] = `
 Object {
   "docs": "Inputs can be customized to use any of the Dracula UI theme colors.",
@@ -53,9 +147,9 @@ Object {
 </div>
 ",
   "react": "<Box>
-  <Input color=\\"white\\" size=\\"small\\" placeholder=\\"small\\" m=\\"xs\\" />
-  <Input color=\\"white\\" size=\\"medium\\" placeholder=\\"medium\\" m=\\"xs\\" />
-  <Input color=\\"white\\" size=\\"large\\" placeholder=\\"large\\" m=\\"xs\\" />
+  <Input color=\\"white\\" size=\\"sm\\" placeholder=\\"small\\" m=\\"xs\\" />
+  <Input color=\\"white\\" size=\\"md\\" placeholder=\\"medium\\" m=\\"xs\\" />
+  <Input color=\\"white\\" size=\\"lg\\" placeholder=\\"large\\" m=\\"xs\\" />
 </Box>;
 ",
   "title": "Sizes",

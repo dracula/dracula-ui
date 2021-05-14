@@ -6019,7 +6019,7 @@
         {
           "title": "Sizes",
           "html": "<div class=\"drac-box\">\n  <input\n    placeholder=\"small\"\n    class=\"drac-input drac-input-sm drac-input-white drac-text-white drac-m-xs\"\n  /><input\n    placeholder=\"medium\"\n    class=\"drac-input drac-input-white drac-text-white drac-m-xs\"\n  /><input\n    placeholder=\"large\"\n    class=\"drac-input drac-input-lg drac-input-white drac-text-white drac-m-xs\"\n  />\n</div>\n",
-          "react": "<Box>\n  <Input color=\"white\" size=\"small\" placeholder=\"small\" m=\"xs\" />\n  <Input color=\"white\" size=\"medium\" placeholder=\"medium\" m=\"xs\" />\n  <Input color=\"white\" size=\"large\" placeholder=\"large\" m=\"xs\" />\n</Box>;\n",
+          "react": "<Box>\n  <Input color=\"white\" size=\"sm\" placeholder=\"small\" m=\"xs\" />\n  <Input color=\"white\" size=\"md\" placeholder=\"medium\" m=\"xs\" />\n  <Input color=\"white\" size=\"lg\" placeholder=\"large\" m=\"xs\" />\n</Box>;\n",
           "docs": "Inputs can be customize to use several different sizes.",
           "screenshot": "./dsp/assets/InputSizes.png"
         },
@@ -6029,6 +6029,13 @@
           "react": "<Box>\n  <Input color=\"white\" variant=\"normal\" placeholder=\"normal\" m=\"xs\" />\n  <Input color=\"white\" variant=\"outline\" placeholder=\"outline\" m=\"xs\" />\n</Box>;\n",
           "docs": "Use the `outline` variant to represent subtler text Inputs",
           "screenshot": "./dsp/assets/InputVariants.png"
+        },
+        {
+          "title": "Border Sizes",
+          "html": "<div class=\"drac-box\">\n  <div class=\"drac-box drac-mb-sm\">\n    <h2 class=\"drac-heading drac-heading-sm drac-text-white\">sm</h2>\n    <input\n      placeholder=\"small border outline\"\n      class=\"drac-input drac-input-border-sm drac-input-green drac-text-green drac-m-xs\"\n    /><input\n      placeholder=\"small border outline\"\n      class=\"drac-input drac-input-outline drac-input-border-sm drac-input-green drac-text-green drac-m-xs\"\n    />\n  </div>\n  <div class=\"drac-box drac-mb-sm\">\n    <h2 class=\"drac-heading drac-heading-sm drac-text-white\">md</h2>\n    <input\n      placeholder=\"medium border outline\"\n      class=\"drac-input drac-input-border-md drac-input-purple drac-text-purple drac-m-xs\"\n    /><input\n      placeholder=\"medium border outline\"\n      class=\"drac-input drac-input-outline drac-input-border-md drac-input-purple drac-text-purple drac-m-xs\"\n    />\n  </div>\n  <div class=\"drac-box drac-mb-sm\">\n    <h2 class=\"drac-heading drac-heading-sm drac-text-white\">lg</h2>\n    <input\n      placeholder=\"large border outline\"\n      class=\"drac-input drac-input-border-lg drac-input-yellow drac-text-yellow drac-m-xs\"\n    /><input\n      placeholder=\"large border outline\"\n      class=\"drac-input drac-input-outline drac-input-border-lg drac-input-yellow drac-text-yellow drac-m-xs\"\n    />\n  </div>\n</div>\n",
+          "react": "<Box>\n  <Box mb=\"sm\">\n    <Heading size=\"sm\">sm</Heading>\n    <Input\n      color=\"green\"\n      variant=\"normal\"\n      borderSize=\"sm\"\n      placeholder=\"small border outline\"\n      m=\"xs\"\n    />\n    <Input\n      color=\"green\"\n      variant=\"outline\"\n      borderSize=\"sm\"\n      placeholder=\"small border outline\"\n      m=\"xs\"\n    />\n  </Box>\n  <Box mb=\"sm\">\n    <Heading size=\"sm\">md</Heading>\n    <Input\n      color=\"purple\"\n      variant=\"normal\"\n      borderSize=\"md\"\n      placeholder=\"medium border outline\"\n      m=\"xs\"\n    />\n    <Input\n      color=\"purple\"\n      variant=\"outline\"\n      borderSize=\"md\"\n      placeholder=\"medium border outline\"\n      m=\"xs\"\n    />\n  </Box>\n  <Box mb=\"sm\">\n    <Heading size=\"sm\">lg</Heading>\n    <Input\n      color=\"yellow\"\n      variant=\"normal\"\n      borderSize=\"lg\"\n      placeholder=\"large border outline\"\n      m=\"xs\"\n    />\n    <Input\n      color=\"yellow\"\n      variant=\"outline\"\n      borderSize=\"lg\"\n      placeholder=\"large border outline\"\n      m=\"xs\"\n    />\n  </Box>\n</Box>;\n",
+          "docs": "Border size can be customize to use several different sizes.",
+          "screenshot": "./dsp/assets/InputBorder Sizes.png"
         },
         {
           "title": "Type",
@@ -6055,7 +6062,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+            "name": "\"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | undefined"
           }
         },
         "size": {
@@ -6074,7 +6081,26 @@
           ],
           "required": false,
           "type": {
-            "name": "number | \"large\" | \"medium\" | \"small\" | undefined"
+            "name": "number | \"lg\" | \"md\" | \"sm\" | undefined"
+          }
+        },
+        "borderSize": {
+          "defaultValue": null,
+          "description": "Controls the border size of the input based on pre-configured Dracula UI sizes.",
+          "name": "borderSize",
+          "parent": {
+            "fileName": "src/components/Input/Input.tsx",
+            "name": "InputProps"
+          },
+          "declarations": [
+            {
+              "fileName": "src/components/Input/Input.tsx",
+              "name": "InputProps"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"lg\" | \"md\" | \"sm\" | undefined"
           }
         },
         "variant": {
@@ -6127,7 +6153,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"none\" | \"xxs\" | \"xs\" | undefined"
           }
         },
         "py": {
@@ -6142,7 +6168,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"none\" | \"xxs\" | \"xs\" | undefined"
           }
         },
         "px": {
@@ -6157,7 +6183,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"none\" | \"xxs\" | \"xs\" | undefined"
           }
         },
         "pt": {
@@ -6172,7 +6198,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"none\" | \"xxs\" | \"xs\" | undefined"
           }
         },
         "pb": {
@@ -6187,7 +6213,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"none\" | \"xxs\" | \"xs\" | undefined"
           }
         },
         "pl": {
@@ -6202,7 +6228,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"none\" | \"xxs\" | \"xs\" | undefined"
           }
         },
         "pr": {
@@ -6217,7 +6243,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"none\" | \"xxs\" | \"xs\" | undefined"
           }
         },
         "m": {
@@ -6232,7 +6258,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"none\" | \"xxs\" | \"xs\" | \"auto\" | undefined"
           }
         },
         "my": {
@@ -6247,7 +6273,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"none\" | \"xxs\" | \"xs\" | \"auto\" | undefined"
           }
         },
         "mx": {
@@ -6262,7 +6288,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"none\" | \"xxs\" | \"xs\" | \"auto\" | undefined"
           }
         },
         "mt": {
@@ -6277,7 +6303,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"none\" | \"xxs\" | \"xs\" | \"auto\" | undefined"
           }
         },
         "mb": {
@@ -6292,7 +6318,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"none\" | \"xxs\" | \"xs\" | \"auto\" | undefined"
           }
         },
         "ml": {
@@ -6307,7 +6333,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"none\" | \"xxs\" | \"xs\" | \"auto\" | undefined"
           }
         },
         "mr": {
@@ -6322,7 +6348,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"none\" | \"xxs\" | \"xs\" | \"auto\" | undefined"
           }
         }
       },
@@ -6348,7 +6374,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+              "name": "\"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | undefined"
             }
           },
           "size": {
@@ -6367,7 +6393,26 @@
             ],
             "required": false,
             "type": {
-              "name": "number | \"large\" | \"medium\" | \"small\" | undefined"
+              "name": "number | \"lg\" | \"md\" | \"sm\" | undefined"
+            }
+          },
+          "borderSize": {
+            "defaultValue": null,
+            "description": "Controls the border size of the input based on pre-configured Dracula UI sizes.",
+            "name": "borderSize",
+            "parent": {
+              "fileName": "src/components/Input/Input.tsx",
+              "name": "InputProps"
+            },
+            "declarations": [
+              {
+                "fileName": "src/components/Input/Input.tsx",
+                "name": "InputProps"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"lg\" | \"md\" | \"sm\" | undefined"
             }
           },
           "variant": {
@@ -6420,7 +6465,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"none\" | \"xxs\" | \"xs\" | undefined"
             }
           },
           "py": {
@@ -6435,7 +6480,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"none\" | \"xxs\" | \"xs\" | undefined"
             }
           },
           "px": {
@@ -6450,7 +6495,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"none\" | \"xxs\" | \"xs\" | undefined"
             }
           },
           "pt": {
@@ -6465,7 +6510,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"none\" | \"xxs\" | \"xs\" | undefined"
             }
           },
           "pb": {
@@ -6480,7 +6525,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"none\" | \"xxs\" | \"xs\" | undefined"
             }
           },
           "pl": {
@@ -6495,7 +6540,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"none\" | \"xxs\" | \"xs\" | undefined"
             }
           },
           "pr": {
@@ -6510,7 +6555,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"none\" | \"xxs\" | \"xs\" | undefined"
             }
           },
           "m": {
@@ -6525,7 +6570,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"none\" | \"xxs\" | \"xs\" | \"auto\" | undefined"
             }
           },
           "my": {
@@ -6540,7 +6585,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"none\" | \"xxs\" | \"xs\" | \"auto\" | undefined"
             }
           },
           "mx": {
@@ -6555,7 +6600,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"none\" | \"xxs\" | \"xs\" | \"auto\" | undefined"
             }
           },
           "mt": {
@@ -6570,7 +6615,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"none\" | \"xxs\" | \"xs\" | \"auto\" | undefined"
             }
           },
           "mb": {
@@ -6585,7 +6630,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"none\" | \"xxs\" | \"xs\" | \"auto\" | undefined"
             }
           },
           "ml": {
@@ -6600,7 +6645,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"none\" | \"xxs\" | \"xs\" | \"auto\" | undefined"
             }
           },
           "mr": {
@@ -6615,7 +6660,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"none\" | \"xxs\" | \"xs\" | \"auto\" | undefined"
             }
           }
         }

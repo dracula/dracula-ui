@@ -1,6 +1,6 @@
 import cx from 'classnames/dedupe'
 import React, { InputHTMLAttributes } from 'react'
-import { ColorMap } from '../../base/colors'
+import { BaseColorMap } from '../../base/colors'
 import {
   cleanProps,
   marginMixin,
@@ -15,12 +15,18 @@ export const inputVariants = {
 }
 
 export const inputSizes = {
-  large: 'drac-input-lg',
-  medium: 'drac-input',
-  small: 'drac-input-sm'
+  lg: 'drac-input-lg',
+  md: 'drac-input',
+  sm: 'drac-input-sm'
 }
 
-export const inputColors: Partial<ColorMap> = {
+export const borderSizes = {
+  lg: 'drac-input-border-lg',
+  md: 'drac-input-border-md',
+  sm: 'drac-input-border-sm'
+}
+
+export const inputColors: BaseColorMap & { white: string } = {
   white: 'drac-input-white drac-text-white',
   cyan: 'drac-input-cyan drac-text-cyan',
   green: 'drac-input-green drac-text-green',
@@ -45,6 +51,11 @@ export interface InputProps
    * Controls the size of the input based on pre-configured Dracula UI sizes.
    */
   size?: keyof typeof inputSizes | number
+
+  /**
+   * Controls the border size of the input based on pre-configured Dracula UI sizes.
+   */
+  borderSize?: keyof typeof borderSizes
 
   /**
    * Controls the variation the input.
@@ -89,7 +100,7 @@ export interface InputProps
  */
 export const Input = React.forwardRef<HTMLInputElement, InputProps>(
   (props, ref) => {
-    const { color, size, variant, ...htmlProps } = props
+    const { color, size, borderSize, variant, ...htmlProps } = props
 
     const finalProps: Record<string, any> = {
       ...htmlProps,
@@ -98,6 +109,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
         props.className,
         variant && inputVariants[variant],
         size && typeof size === 'string' && inputSizes[size],
+        borderSize && borderSizes[borderSize],
         color && inputColors[color],
         ...paddingMixin(props),
         ...marginMixin(props)

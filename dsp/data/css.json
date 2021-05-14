@@ -2094,6 +2094,60 @@
     {
       "class": "component",
       "type": "page",
+      "id": ".drac-input-border-lg",
+      "name": ".drac-input-border-lg",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-input-border-lg",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-input-border-lg",
+        "languages": {
+          "css": "drac-input-border-lg"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-input-border-md",
+      "name": ".drac-input-border-md",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-input-border-md",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-input-border-md",
+        "languages": {
+          "css": "drac-input-border-md"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-input-border-sm",
+      "name": ".drac-input-border-sm",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-input-border-sm",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-input-border-sm",
+        "languages": {
+          "css": "drac-input-border-sm"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
       "id": ".drac-input-cyan",
       "name": ".drac-input-cyan",
       "last_updated_by": "System",
