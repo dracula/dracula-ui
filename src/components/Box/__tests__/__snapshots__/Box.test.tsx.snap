@@ -143,22 +143,126 @@ Object {
 
 exports[`Site: Box Scrollbar 1`] = `
 Object {
-  "docs": "Boxes come with primitive scrollbars, which allow you to customize the colors and shapes.",
+  "docs": "You can customize the color of scrollbars for boxes with any of the existing Dracula UI base colors.",
   "html": "<div>
-  <div class=\\"drac-box drac-scrollbar-purple drac-p-xs\\">
-    <span class=\\"drac-text drac-line-height drac-text-black\\">xs padding</span>
+  <div class=\\"drac-box drac-scrollbar-purple drac-h-sm\\">
+    <span class=\\"drac-text drac-line-height drac-text-white\\">Scrollbar</span>
+    <p class=\\"drac-text drac-line-height drac-text-white\\">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra
+      dictum imperdiet. Praesent at interdum sem. Suspendisse congue, nibh sit
+      amet facilisis egestas, leo leo tempus ligula, sit amet tristique lacus
+      diam non massa. Quisque egestas magna ligula, vel aliquet quam auctor sed.
+      Maecenas quam dui, tincidunt in rutrum vel, porttitor non nulla. Praesent
+      eu congue magna, nec pellentesque justo. Nulla viverra, eros a vulputate
+      sollicitudin, erat erat lacinia risus, sed eleifend nibh neque eu turpis.
+      Maecenas vitae nulla finibus, faucibus diam et, posuere est. In non leo et
+      est ornare laoreet ac vel odio. Vestibulum tempor, quam eleifend suscipit
+      tempus, nisl nibh eleifend nunc, vitae sollicitudin mi purus sed nisl.
+      Vivamus dapibus dui ac viverra aliquam. Vestibulum non luctus risus.
+    </p>
+    <p class=\\"drac-text drac-line-height drac-text-white\\">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra
+      dictum imperdiet. Praesent at interdum sem. Suspendisse congue, nibh sit
+      amet facilisis egestas, leo leo tempus ligula, sit amet tristique lacus
+      diam non massa. Quisque egestas magna ligula, vel aliquet quam auctor sed.
+      Maecenas quam dui, tincidunt in rutrum vel, porttitor non nulla. Praesent
+      eu congue magna, nec pellentesque justo. Nulla viverra, eros a vulputate
+      sollicitudin, erat erat lacinia risus, sed eleifend nibh neque eu turpis.
+      Maecenas vitae nulla finibus, faucibus diam et, posuere est. In non leo et
+      est ornare laoreet ac vel odio. Vestibulum tempor, quam eleifend suscipit
+      tempus, nisl nibh eleifend nunc, vitae sollicitudin mi purus sed nisl.
+      Vivamus dapibus dui ac viverra aliquam. Vestibulum non luctus risus.
+    </p>
   </div>
-  <div class=\\"drac-box drac-scrollbar-pink drac-p-xs\\">
-    <span class=\\"drac-text drac-line-height drac-text-black\\">xs padding</span>
+  <div class=\\"drac-box drac-scrollbar-pink drac-h-xs drac-p-xs\\">
+    <span class=\\"drac-text drac-line-height drac-text-white\\">Scrollbar</span>
+    <p class=\\"drac-text drac-line-height drac-text-white\\">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra
+      dictum imperdiet. Praesent at interdum sem. Suspendisse congue, nibh sit
+      amet facilisis egestas, leo leo tempus ligula, sit amet tristique lacus
+      diam non massa. Quisque egestas magna ligula, vel aliquet quam auctor sed.
+      Maecenas quam dui, tincidunt in rutrum vel, porttitor non nulla. Praesent
+      eu congue magna, nec pellentesque justo. Nulla viverra, eros a vulputate
+      sollicitudin, erat erat lacinia risus, sed eleifend nibh neque eu turpis.
+      Maecenas vitae nulla finibus, faucibus diam et, posuere est. In non leo et
+      est ornare laoreet ac vel odio. Vestibulum tempor, quam eleifend suscipit
+      tempus, nisl nibh eleifend nunc, vitae sollicitudin mi purus sed nisl.
+      Vivamus dapibus dui ac viverra aliquam. Vestibulum non luctus risus.
+    </p>
+    <p class=\\"drac-text drac-line-height drac-text-white\\">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra
+      dictum imperdiet. Praesent at interdum sem. Suspendisse congue, nibh sit
+      amet facilisis egestas, leo leo tempus ligula, sit amet tristique lacus
+      diam non massa. Quisque egestas magna ligula, vel aliquet quam auctor sed.
+      Maecenas quam dui, tincidunt in rutrum vel, porttitor non nulla. Praesent
+      eu congue magna, nec pellentesque justo. Nulla viverra, eros a vulputate
+      sollicitudin, erat erat lacinia risus, sed eleifend nibh neque eu turpis.
+      Maecenas vitae nulla finibus, faucibus diam et, posuere est. In non leo et
+      est ornare laoreet ac vel odio. Vestibulum tempor, quam eleifend suscipit
+      tempus, nisl nibh eleifend nunc, vitae sollicitudin mi purus sed nisl.
+      Vivamus dapibus dui ac viverra aliquam. Vestibulum non luctus risus.
+    </p>
   </div>
 </div>
 ",
   "react": "<div>
-  <Box scrollbar={true} p=\\"xs\\">
-    <Text color=\\"black\\">xs padding</Text>
+  <Box scrollbar={true} height=\\"sm\\">
+    <Text color=\\"white\\">Scrollbar</Text>
+    <Paragraph>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra
+      dictum imperdiet. Praesent at interdum sem. Suspendisse congue, nibh sit
+      amet facilisis egestas, leo leo tempus ligula, sit amet tristique lacus
+      diam non massa. Quisque egestas magna ligula, vel aliquet quam auctor sed.
+      Maecenas quam dui, tincidunt in rutrum vel, porttitor non nulla. Praesent
+      eu congue magna, nec pellentesque justo. Nulla viverra, eros a vulputate
+      sollicitudin, erat erat lacinia risus, sed eleifend nibh neque eu turpis.
+      Maecenas vitae nulla finibus, faucibus diam et, posuere est. In non leo et
+      est ornare laoreet ac vel odio. Vestibulum tempor, quam eleifend suscipit
+      tempus, nisl nibh eleifend nunc, vitae sollicitudin mi purus sed nisl.
+      Vivamus dapibus dui ac viverra aliquam. Vestibulum non luctus risus.
+    </Paragraph>
+    <Paragraph>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra
+      dictum imperdiet. Praesent at interdum sem. Suspendisse congue, nibh sit
+      amet facilisis egestas, leo leo tempus ligula, sit amet tristique lacus
+      diam non massa. Quisque egestas magna ligula, vel aliquet quam auctor sed.
+      Maecenas quam dui, tincidunt in rutrum vel, porttitor non nulla. Praesent
+      eu congue magna, nec pellentesque justo. Nulla viverra, eros a vulputate
+      sollicitudin, erat erat lacinia risus, sed eleifend nibh neque eu turpis.
+      Maecenas vitae nulla finibus, faucibus diam et, posuere est. In non leo et
+      est ornare laoreet ac vel odio. Vestibulum tempor, quam eleifend suscipit
+      tempus, nisl nibh eleifend nunc, vitae sollicitudin mi purus sed nisl.
+      Vivamus dapibus dui ac viverra aliquam. Vestibulum non luctus risus.
+    </Paragraph>
   </Box>
-  <Box scrollbar=\\"pink\\" p=\\"xs\\">
-    <Text color=\\"black\\">xs padding</Text>
+  <Box scrollbar=\\"pink\\" p=\\"xs\\" height=\\"xs\\">
+    <Text color=\\"white\\">Scrollbar</Text>
+    <Paragraph>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra
+      dictum imperdiet. Praesent at interdum sem. Suspendisse congue, nibh sit
+      amet facilisis egestas, leo leo tempus ligula, sit amet tristique lacus
+      diam non massa. Quisque egestas magna ligula, vel aliquet quam auctor sed.
+      Maecenas quam dui, tincidunt in rutrum vel, porttitor non nulla. Praesent
+      eu congue magna, nec pellentesque justo. Nulla viverra, eros a vulputate
+      sollicitudin, erat erat lacinia risus, sed eleifend nibh neque eu turpis.
+      Maecenas vitae nulla finibus, faucibus diam et, posuere est. In non leo et
+      est ornare laoreet ac vel odio. Vestibulum tempor, quam eleifend suscipit
+      tempus, nisl nibh eleifend nunc, vitae sollicitudin mi purus sed nisl.
+      Vivamus dapibus dui ac viverra aliquam. Vestibulum non luctus risus.
+    </Paragraph>
+    <Paragraph>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra
+      dictum imperdiet. Praesent at interdum sem. Suspendisse congue, nibh sit
+      amet facilisis egestas, leo leo tempus ligula, sit amet tristique lacus
+      diam non massa. Quisque egestas magna ligula, vel aliquet quam auctor sed.
+      Maecenas quam dui, tincidunt in rutrum vel, porttitor non nulla. Praesent
+      eu congue magna, nec pellentesque justo. Nulla viverra, eros a vulputate
+      sollicitudin, erat erat lacinia risus, sed eleifend nibh neque eu turpis.
+      Maecenas vitae nulla finibus, faucibus diam et, posuere est. In non leo et
+      est ornare laoreet ac vel odio. Vestibulum tempor, quam eleifend suscipit
+      tempus, nisl nibh eleifend nunc, vitae sollicitudin mi purus sed nisl.
+      Vivamus dapibus dui ac viverra aliquam. Vestibulum non luctus risus.
+    </Paragraph>
   </Box>
 </div>;
 ",

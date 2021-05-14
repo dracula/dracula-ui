@@ -3,6 +3,7 @@ import { docs } from '@/documentation/site-docs'
 import { snapshot } from '@/documentation/render-component'
 import { Text } from '@/components/Text/Text'
 import { Box } from '@/components/Box/Box'
+import { Paragraph } from '../../Paragraph/Paragraph'
 
 docs(Box, {
   basic() {
@@ -188,12 +189,70 @@ function Spacing() {
 function Scrollbar() {
   return (
     <div>
-      <Box scrollbar p="xs">
-        <Text color="black">xs padding</Text>
+      <Box scrollbar height="sm">
+        <Text color="white">Scrollbar</Text>
+        <Paragraph>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra
+          dictum imperdiet. Praesent at interdum sem. Suspendisse congue, nibh
+          sit amet facilisis egestas, leo leo tempus ligula, sit amet tristique
+          lacus diam non massa. Quisque egestas magna ligula, vel aliquet quam
+          auctor sed. Maecenas quam dui, tincidunt in rutrum vel, porttitor non
+          nulla. Praesent eu congue magna, nec pellentesque justo. Nulla
+          viverra, eros a vulputate sollicitudin, erat erat lacinia risus, sed
+          eleifend nibh neque eu turpis. Maecenas vitae nulla finibus, faucibus
+          diam et, posuere est. In non leo et est ornare laoreet ac vel odio.
+          Vestibulum tempor, quam eleifend suscipit tempus, nisl nibh eleifend
+          nunc, vitae sollicitudin mi purus sed nisl. Vivamus dapibus dui ac
+          viverra aliquam. Vestibulum non luctus risus.
+        </Paragraph>
+
+        <Paragraph>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra
+          dictum imperdiet. Praesent at interdum sem. Suspendisse congue, nibh
+          sit amet facilisis egestas, leo leo tempus ligula, sit amet tristique
+          lacus diam non massa. Quisque egestas magna ligula, vel aliquet quam
+          auctor sed. Maecenas quam dui, tincidunt in rutrum vel, porttitor non
+          nulla. Praesent eu congue magna, nec pellentesque justo. Nulla
+          viverra, eros a vulputate sollicitudin, erat erat lacinia risus, sed
+          eleifend nibh neque eu turpis. Maecenas vitae nulla finibus, faucibus
+          diam et, posuere est. In non leo et est ornare laoreet ac vel odio.
+          Vestibulum tempor, quam eleifend suscipit tempus, nisl nibh eleifend
+          nunc, vitae sollicitudin mi purus sed nisl. Vivamus dapibus dui ac
+          viverra aliquam. Vestibulum non luctus risus.
+        </Paragraph>
       </Box>
 
-      <Box scrollbar="pink" p="xs">
-        <Text color="black">xs padding</Text>
+      <Box scrollbar="pink" p="xs" height="xs">
+        <Text color="white">Scrollbar</Text>
+        <Paragraph>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra
+          dictum imperdiet. Praesent at interdum sem. Suspendisse congue, nibh
+          sit amet facilisis egestas, leo leo tempus ligula, sit amet tristique
+          lacus diam non massa. Quisque egestas magna ligula, vel aliquet quam
+          auctor sed. Maecenas quam dui, tincidunt in rutrum vel, porttitor non
+          nulla. Praesent eu congue magna, nec pellentesque justo. Nulla
+          viverra, eros a vulputate sollicitudin, erat erat lacinia risus, sed
+          eleifend nibh neque eu turpis. Maecenas vitae nulla finibus, faucibus
+          diam et, posuere est. In non leo et est ornare laoreet ac vel odio.
+          Vestibulum tempor, quam eleifend suscipit tempus, nisl nibh eleifend
+          nunc, vitae sollicitudin mi purus sed nisl. Vivamus dapibus dui ac
+          viverra aliquam. Vestibulum non luctus risus.
+        </Paragraph>
+
+        <Paragraph>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra
+          dictum imperdiet. Praesent at interdum sem. Suspendisse congue, nibh
+          sit amet facilisis egestas, leo leo tempus ligula, sit amet tristique
+          lacus diam non massa. Quisque egestas magna ligula, vel aliquet quam
+          auctor sed. Maecenas quam dui, tincidunt in rutrum vel, porttitor non
+          nulla. Praesent eu congue magna, nec pellentesque justo. Nulla
+          viverra, eros a vulputate sollicitudin, erat erat lacinia risus, sed
+          eleifend nibh neque eu turpis. Maecenas vitae nulla finibus, faucibus
+          diam et, posuere est. In non leo et est ornare laoreet ac vel odio.
+          Vestibulum tempor, quam eleifend suscipit tempus, nisl nibh eleifend
+          nunc, vitae sollicitudin mi purus sed nisl. Vivamus dapibus dui ac
+          viverra aliquam. Vestibulum non luctus risus.
+        </Paragraph>
       </Box>
     </div>
   )
