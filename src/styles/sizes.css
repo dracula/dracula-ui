@@ -1,9 +1,27 @@
 :root {
+  --spacing-auto: auto;
   --spacing-xxs: 0.375rem;
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
   --spacing-md: 2rem;
   --spacing-lg: 4rem;
+
+  --sizing-auto: auto;
+  --sizing-none: none;
+  --sizing-full: 100%;
+  --sizing-xxs: 16rem; /* 256px */
+  --sizing-xs: 20rem; /* 320px */
+  --sizing-sm: 24rem; /* 384px */
+  --sizing-md: 28rem; /* 448px */
+  --sizing-lg: 32rem; /* 512px */
+  --sizing-xl: 36rem; /* 576px */
+  --sizing-2xl: 40rem; /* 640px */
+  --sizing-3xl: 48rem; /* 768px */
+  --sizing-4xl: 56rem; /* 896px */
+  --sizing-5xl: 64rem; /* 1024px */
+  --sizing-6xl: 72rem; /* 1152px */
+  --sizing-7xl: 80rem; /* 1280px */
+  --sizing-8xl: 90rem; /* 1440px */
 
   --glow-spacing-x: var(--spacing-md);
   --glow-spacing-y: var(--spacing-lg);
@@ -73,7 +91,7 @@
   }
 }
 
-@each $size in none, xxs, xs, sm, md, lg {
+@each $size in auto, none, xxs, xs, sm, md, lg {
   .m-$(size) {
     margin: var(--spacing-$(size));
   }
@@ -102,5 +120,17 @@
 
   .mb-$(size) {
     margin-bottom: var(--spacing-$(size));
+  }
+}
+
+/* -- Height & Width -- */
+
+@each $size in auto, none, full, xxs, xs, sm, md, lg, xl, 2xl, 3xl, 4xl, 5xl, 6xl, 7xl, 8xl {
+  .h-$(size) {
+    height: var(--sizing-$(size));
+  }
+  
+  .w-$(size) {
+    width: var(--sizing-$(size));
   }
 }

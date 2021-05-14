@@ -21,7 +21,10 @@ export const gradientColors = {
   purpleCyan: 'drac-bg-purple-cyan',
   yellowPink: 'drac-bg-yellow-pink',
   cyanGreen: 'drac-bg-cyan-green',
-  pinkPurple: 'drac-bg-pink-purple',
+  pinkPurple: 'drac-bg-pink-purple'
+}
+
+export const animatedColors = {
   animated: 'drac-bg-animated'
 }
 
@@ -41,6 +44,11 @@ export const colors = {
   ...gradientColors
 }
 
+export const backgroundColors = {
+  ...colors,
+  ...animatedColors
+}
+
 export type ColorNames = keyof typeof colors
 export type ColorMap = Record<ColorNames, string>
 
@@ -53,11 +61,11 @@ export type BaseColorMap = Record<BaseColorNames, string>
 export type GradientColorNames = keyof typeof gradientColors
 export type GradientBaseColorMap = Record<GradientColorNames, string>
 
-export const borderColors: BaseColorMap = mapValues(colors, (className) =>
+export const borderColors: BaseColorMap = mapValues(baseColors, (className) =>
   className.replace('-bg-', '-border-')
 )
 
-export const glowColors: BaseColorMap = mapValues(colors, (className) =>
+export const glowColors: BaseColorMap = mapValues(baseColors, (className) =>
   className.replace('-bg-', '-glow-')
 )
 
@@ -71,13 +79,15 @@ export const colorUtilities = {
     ...Object.values(baseTextColors),
     ...Object.values(supportColors),
     ...Object.values(gradientColors),
-    ...Object.values(borderColors)
+    ...Object.values(borderColors),
+    ...Object.values(animatedColors)
   ],
   react: {
     base: Object.keys(baseColors),
     text: Object.keys(baseTextColors),
     support: Object.keys(supportColors),
     gradient: Object.keys(gradientColors),
-    border: Object.keys(borderColors)
+    border: Object.keys(borderColors),
+    animated: Object.keys(animatedColors)
   }
 }

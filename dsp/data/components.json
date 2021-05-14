@@ -49,6 +49,13 @@
           "react": "<Box style={{ display: \"flex\", flexDirection: \"column\" }}>\n  <Anchor href=\"#\" size=\"xs\" mb=\"sm\">\n    xs\n  </Anchor>\n  <Anchor href=\"#\" size=\"sm\" mb=\"sm\">\n    sm\n  </Anchor>\n  <Anchor href=\"#\" size=\"md\" mb=\"sm\">\n    md\n  </Anchor>\n  <Anchor href=\"#\" size=\"lg\" mb=\"sm\">\n    lg\n  </Anchor>\n</Box>;\n",
           "docs": "Anchors can be customize to use several different sizes.",
           "screenshot": "./dsp/assets/AnchorSizes.png"
+        },
+        {
+          "title": "External",
+          "html": "<a\n  target=\"_blank\"\n  rel=\"noopener noreferrer\"\n  href=\"https://www.google.com/search?q=count+dracula\"\n  class=\"drac-anchor drac-text drac-text-white drac-text-purple--hover\"\n  >Find Dracula on Google</a\n>\n",
+          "react": "<Anchor href=\"https://www.google.com/search?q=count+dracula\" isExternal={true}>\n  Find Dracula on Google\n</Anchor>;\n",
+          "docs": "The isExternal prop can be used to apply external link props such as target=\"_blank\"",
+          "screenshot": "./dsp/assets/AnchorExternal.png"
         }
       ],
       "ext_com_draculaui_props": {
@@ -125,7 +132,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
           }
         },
         "hoverColor": {
@@ -144,7 +151,26 @@
           ],
           "required": false,
           "type": {
-            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+          }
+        },
+        "isExternal": {
+          "defaultValue": null,
+          "description": "Whether or not to apply external link props such as `target=\"_blank\"` and `rel=\"noopener noreferrer\"`",
+          "name": "isExternal",
+          "parent": {
+            "fileName": "src/components/Anchor/Anchor.tsx",
+            "name": "AnchorProps"
+          },
+          "declarations": [
+            {
+              "fileName": "src/components/Anchor/Anchor.tsx",
+              "name": "AnchorProps"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "boolean | undefined"
           }
         },
         "p": {
@@ -264,7 +290,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         },
         "my": {
@@ -279,7 +305,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         },
         "mx": {
@@ -294,7 +320,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         },
         "mt": {
@@ -309,7 +335,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         },
         "mb": {
@@ -324,7 +350,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         },
         "ml": {
@@ -339,7 +365,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         },
         "mr": {
@@ -354,7 +380,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         }
       },
@@ -437,7 +463,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
             }
           },
           "hoverColor": {
@@ -456,7 +482,26 @@
             ],
             "required": false,
             "type": {
-              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+            }
+          },
+          "isExternal": {
+            "defaultValue": null,
+            "description": "Whether or not to apply external link props such as `target=\"_blank\"` and `rel=\"noopener noreferrer\"`",
+            "name": "isExternal",
+            "parent": {
+              "fileName": "src/components/Anchor/Anchor.tsx",
+              "name": "AnchorProps"
+            },
+            "declarations": [
+              {
+                "fileName": "src/components/Anchor/Anchor.tsx",
+                "name": "AnchorProps"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "boolean | undefined"
             }
           },
           "p": {
@@ -576,7 +621,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           },
           "my": {
@@ -591,7 +636,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           },
           "mx": {
@@ -606,7 +651,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           },
           "mt": {
@@ -621,7 +666,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           },
           "mb": {
@@ -636,7 +681,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           },
           "ml": {
@@ -651,7 +696,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           },
           "mr": {
@@ -666,7 +711,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           }
         }
@@ -756,7 +801,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
           }
         },
         "variant": {
@@ -933,7 +978,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"auto\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "my": {
@@ -948,7 +993,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"auto\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "mx": {
@@ -963,7 +1008,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"auto\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "mt": {
@@ -978,7 +1023,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"auto\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "mb": {
@@ -993,7 +1038,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"auto\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "ml": {
@@ -1008,7 +1053,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"auto\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "mr": {
@@ -1023,7 +1068,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"auto\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         }
       },
@@ -1068,7 +1113,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
             }
           },
           "variant": {
@@ -1245,7 +1290,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"auto\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "my": {
@@ -1260,7 +1305,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"auto\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "mx": {
@@ -1275,7 +1320,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"auto\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "mt": {
@@ -1290,7 +1335,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"auto\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "mb": {
@@ -1305,7 +1350,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"auto\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "ml": {
@@ -1320,7 +1365,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"auto\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "mr": {
@@ -1335,7 +1380,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"auto\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           }
         }
@@ -1399,7 +1444,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+            "name": "\"animated\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
           }
         },
         "variant": {
@@ -1534,7 +1579,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "my": {
@@ -1549,7 +1594,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mx": {
@@ -1564,7 +1609,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mt": {
@@ -1579,7 +1624,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mb": {
@@ -1594,7 +1639,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "ml": {
@@ -1609,7 +1654,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mr": {
@@ -1624,7 +1669,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         }
       },
@@ -1650,7 +1695,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+              "name": "\"animated\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
             }
           },
           "variant": {
@@ -1785,7 +1830,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "my": {
@@ -1800,7 +1845,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mx": {
@@ -1815,7 +1860,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mt": {
@@ -1830,7 +1875,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mb": {
@@ -1845,7 +1890,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "ml": {
@@ -1860,7 +1905,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mr": {
@@ -1875,7 +1920,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           }
         }
@@ -1915,16 +1960,37 @@
           "screenshot": "./dsp/assets/BoxColors.png"
         },
         {
+          "title": "Display",
+          "html": "<div class=\"drac-box\">\n  <div\n    class=\"drac-box drac-bg-purple-cyan drac-d-inline-block drac-rounded-lg drac-p-xs drac-mr-xs\"\n  >\n    <span class=\"drac-text drac-line-height drac-text-black\">1</span>\n  </div>\n  <div\n    class=\"drac-box drac-bg-purple-cyan drac-d-inline-block drac-rounded-lg drac-p-xs drac-mr-xs\"\n  >\n    <span class=\"drac-text drac-line-height drac-text-black\">2</span>\n  </div>\n  <div\n    class=\"drac-box drac-bg-purple-cyan drac-d-inline-block drac-rounded-lg drac-p-xs drac-mr-xs\"\n  >\n    <span class=\"drac-text drac-line-height drac-text-black\">3</span>\n  </div>\n</div>\n",
+          "react": "<Box>\n  <Box color=\"purpleCyan\" display=\"inline-block\" rounded=\"lg\" p=\"xs\" mr=\"xs\">\n    <Text color=\"black\">1</Text>\n  </Box>\n  <Box color=\"purpleCyan\" display=\"inline-block\" rounded=\"lg\" p=\"xs\" mr=\"xs\">\n    <Text color=\"black\">2</Text>\n  </Box>\n  <Box color=\"purpleCyan\" display=\"inline-block\" rounded=\"lg\" p=\"xs\" mr=\"xs\">\n    <Text color=\"black\">3</Text>\n  </Box>\n</Box>;\n",
+          "docs": "Control the display type of an element.",
+          "screenshot": "./dsp/assets/BoxDisplay.png"
+        },
+        {
           "title": "Rounded",
-          "html": "<div>\n  <div class=\"drac-box drac-bg-purple-cyan drac-rounded-lg drac-p-md\">\n    <span class=\"drac-text drac-line-height drac-text-black\"\n      >Large round border</span\n    >\n  </div>\n  <div class=\"drac-box drac-bg-yellow-pink drac-rounded-sm drac-p-md\">\n    <span class=\"drac-text drac-line-height drac-text-black\"\n      >small round border</span\n    >\n  </div>\n</div>\n",
-          "react": "<div>\n  <Box rounded=\"lg\" color=\"purpleCyan\" p=\"md\">\n    <Text color=\"black\">Large round border</Text>\n  </Box>\n  <Box rounded=\"sm\" color=\"yellowPink\" p=\"md\">\n    <Text color=\"black\">small round border</Text>\n  </Box>\n</div>;\n",
+          "html": "<div class=\"drac-box\">\n  <div class=\"drac-box drac-bg-purple-cyan drac-rounded-lg drac-p-md\">\n    <span class=\"drac-text drac-line-height drac-text-black\"\n      >Large round border</span\n    >\n  </div>\n  <div class=\"drac-box drac-bg-yellow-pink drac-rounded-sm drac-p-md\">\n    <span class=\"drac-text drac-line-height drac-text-black\"\n      >small round border</span\n    >\n  </div>\n</div>\n",
+          "react": "<Box>\n  <Box rounded=\"lg\" color=\"purpleCyan\" p=\"md\">\n    <Text color=\"black\">Large round border</Text>\n  </Box>\n  <Box rounded=\"sm\" color=\"yellowPink\" p=\"md\">\n    <Text color=\"black\">small round border</Text>\n  </Box>\n</Box>;\n",
           "docs": "Choose from one of the predefined `rounded` options for a Box.",
           "screenshot": "./dsp/assets/BoxRounded.png"
         },
         {
+          "title": "Height",
+          "html": "<div style=\"display: flex; align-items: flex-end\" class=\"drac-box\">\n  <div\n    class=\"drac-box drac-h-xxs drac-bg-cyan-green drac-rounded-lg drac-p-xs drac-mr-xs\"\n  >\n    <span class=\"drac-text drac-line-height drac-text-black\">xxs</span>\n  </div>\n  <div\n    class=\"drac-box drac-h-xs drac-bg-cyan-green drac-rounded-lg drac-p-xs drac-mr-xs\"\n  >\n    <span class=\"drac-text drac-line-height drac-text-black\">xs</span>\n  </div>\n  <div\n    class=\"drac-box drac-h-sm drac-bg-cyan-green drac-rounded-lg drac-p-xs drac-mr-xs\"\n  >\n    <span class=\"drac-text drac-line-height drac-text-black\">sm</span>\n  </div>\n  <div\n    class=\"drac-box drac-h-md drac-bg-cyan-green drac-rounded-lg drac-p-xs drac-mr-xs\"\n  >\n    <span class=\"drac-text drac-line-height drac-text-black\">md</span>\n  </div>\n</div>\n",
+          "react": "<Box style={{ display: \"flex\", alignItems: \"flex-end\" }}>\n  <Box color=\"cyanGreen\" height=\"xxs\" rounded=\"lg\" p=\"xs\" mr=\"xs\">\n    <Text color=\"black\">xxs</Text>\n  </Box>\n  <Box color=\"cyanGreen\" height=\"xs\" rounded=\"lg\" p=\"xs\" mr=\"xs\">\n    <Text color=\"black\">xs</Text>\n  </Box>\n  <Box color=\"cyanGreen\" height=\"sm\" rounded=\"lg\" p=\"xs\" mr=\"xs\">\n    <Text color=\"black\">sm</Text>\n  </Box>\n  <Box color=\"cyanGreen\" height=\"md\" rounded=\"lg\" p=\"xs\" mr=\"xs\">\n    <Text color=\"black\">md</Text>\n  </Box>\n</Box>;\n",
+          "docs": "Set an element with a fixed height, including `auto` and `full`.",
+          "screenshot": "./dsp/assets/BoxHeight.png"
+        },
+        {
+          "title": "Width",
+          "html": "<div class=\"drac-box\">\n  <div\n    class=\"drac-box drac-w-xs drac-bg-yellow-pink drac-rounded-lg drac-p-xs drac-mb-xs\"\n  >\n    <span class=\"drac-text drac-line-height drac-text-black\">xs</span>\n  </div>\n  <div\n    class=\"drac-box drac-w-md drac-bg-yellow-pink drac-rounded-lg drac-p-xs drac-mb-xs\"\n  >\n    <span class=\"drac-text drac-line-height drac-text-black\">md</span>\n  </div>\n  <div\n    class=\"drac-box drac-w-xl drac-bg-yellow-pink drac-rounded-lg drac-p-xs drac-mb-xs\"\n  >\n    <span class=\"drac-text drac-line-height drac-text-black\">xl</span>\n  </div>\n  <div\n    class=\"drac-box drac-w-full drac-bg-yellow-pink drac-rounded-lg drac-p-xs drac-mb-xs\"\n  >\n    <span class=\"drac-text drac-line-height drac-text-black\">full</span>\n  </div>\n</div>\n",
+          "react": "<Box>\n  <Box color=\"yellowPink\" width=\"xs\" rounded=\"lg\" p=\"xs\" mb=\"xs\">\n    <Text color=\"black\">xs</Text>\n  </Box>\n  <Box color=\"yellowPink\" width=\"md\" rounded=\"lg\" p=\"xs\" mb=\"xs\">\n    <Text color=\"black\">md</Text>\n  </Box>\n  <Box color=\"yellowPink\" width=\"xl\" rounded=\"lg\" p=\"xs\" mb=\"xs\">\n    <Text color=\"black\">xl</Text>\n  </Box>\n  <Box color=\"yellowPink\" width=\"full\" rounded=\"lg\" p=\"xs\" mb=\"xs\">\n    <Text color=\"black\">full</Text>\n  </Box>\n</Box>;\n",
+          "docs": "Set an element with a fixed width, including `auto` and `full`.",
+          "screenshot": "./dsp/assets/BoxWidth.png"
+        },
+        {
           "title": "Spacing",
-          "html": "<div>\n  <div class=\"drac-box drac-bg-yellow-pink drac-p-xs\">\n    <span class=\"drac-text drac-line-height drac-text-black\">xs padding</span>\n  </div>\n  <div class=\"drac-box drac-bg-purple-cyan drac-p-sm\">\n    <span class=\"drac-text drac-line-height drac-text-black\">sm padding</span>\n  </div>\n  <div class=\"drac-box drac-bg-pink-purple drac-p-md\">\n    <span class=\"drac-text drac-line-height drac-text-black\"\n      >medium padding</span\n    >\n  </div>\n  <div class=\"drac-box drac-bg-yellow-pink drac-m-xs\">\n    <span class=\"drac-text drac-line-height drac-text-black\">xs margin</span>\n  </div>\n  <div class=\"drac-box drac-bg-purple-cyan drac-m-sm\">\n    <span class=\"drac-text drac-line-height drac-text-black\">sm margin</span>\n  </div>\n  <div class=\"drac-box drac-bg-pink-purple drac-m-md\">\n    <span class=\"drac-text drac-line-height drac-text-black\"\n      >medium margin</span\n    >\n  </div>\n</div>\n",
-          "react": "<div>\n  <Box color=\"yellowPink\" p=\"xs\">\n    <Text color=\"black\">xs padding</Text>\n  </Box>\n  <Box color=\"purpleCyan\" p=\"sm\">\n    <Text color=\"black\">sm padding</Text>\n  </Box>\n  <Box color=\"pinkPurple\" p=\"md\">\n    <Text color=\"black\">medium padding</Text>\n  </Box>\n  <Box color=\"yellowPink\" m=\"xs\">\n    <Text color=\"black\">xs margin</Text>\n  </Box>\n  <Box color=\"purpleCyan\" m=\"sm\">\n    <Text color=\"black\">sm margin</Text>\n  </Box>\n  <Box color=\"pinkPurple\" m=\"md\">\n    <Text color=\"black\">medium margin</Text>\n  </Box>\n</div>;\n",
+          "html": "<div class=\"drac-box\">\n  <div class=\"drac-box drac-bg-yellow-pink drac-p-xs\">\n    <span class=\"drac-text drac-line-height drac-text-black\">xs padding</span>\n  </div>\n  <div class=\"drac-box drac-bg-purple-cyan drac-p-sm\">\n    <span class=\"drac-text drac-line-height drac-text-black\">sm padding</span>\n  </div>\n  <div class=\"drac-box drac-bg-pink-purple drac-p-md\">\n    <span class=\"drac-text drac-line-height drac-text-black\"\n      >medium padding</span\n    >\n  </div>\n  <div class=\"drac-box drac-bg-yellow-pink drac-m-xs\">\n    <span class=\"drac-text drac-line-height drac-text-black\">xs margin</span>\n  </div>\n  <div class=\"drac-box drac-bg-purple-cyan drac-m-sm\">\n    <span class=\"drac-text drac-line-height drac-text-black\">sm margin</span>\n  </div>\n  <div class=\"drac-box drac-bg-pink-purple drac-m-md\">\n    <span class=\"drac-text drac-line-height drac-text-black\"\n      >medium margin</span\n    >\n  </div>\n</div>\n",
+          "react": "<Box>\n  <Box color=\"yellowPink\" p=\"xs\">\n    <Text color=\"black\">xs padding</Text>\n  </Box>\n  <Box color=\"purpleCyan\" p=\"sm\">\n    <Text color=\"black\">sm padding</Text>\n  </Box>\n  <Box color=\"pinkPurple\" p=\"md\">\n    <Text color=\"black\">medium padding</Text>\n  </Box>\n  <Box color=\"yellowPink\" m=\"xs\">\n    <Text color=\"black\">xs margin</Text>\n  </Box>\n  <Box color=\"purpleCyan\" m=\"sm\">\n    <Text color=\"black\">sm margin</Text>\n  </Box>\n  <Box color=\"pinkPurple\" m=\"md\">\n    <Text color=\"black\">medium margin</Text>\n  </Box>\n</Box>;\n",
           "docs": "Boxes come with pre defined spacing primitives for padding and margin that allow for customizing the spacing inside and around boxes.",
           "screenshot": "./dsp/assets/BoxSpacing.png"
         }
@@ -1946,7 +2012,22 @@
           ],
           "required": false,
           "type": {
-            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+            "name": "\"animated\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+          }
+        },
+        "display": {
+          "defaultValue": null,
+          "description": "The display of the element.",
+          "name": "display",
+          "declarations": [
+            {
+              "fileName": "src/components/Box/Box.tsx",
+              "name": "TypeLiteral"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"none\" | \"block\" | \"flex\" | \"grid\" | \"table\" | \"inline\" | \"inline-block\" | \"inline-flex\" | \"inline-grid\" | \"inline-table\" | undefined"
           }
         },
         "glowColor": {
@@ -1991,7 +2072,45 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"base\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"full\" | undefined"
+            "name": "\"none\" | \"full\" | \"sm\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"base\" | undefined"
+          }
+        },
+        "height": {
+          "defaultValue": null,
+          "description": "The height of the element.",
+          "name": "height",
+          "declarations": [
+            {
+              "fileName": "src/components/Box/Box.tsx",
+              "name": "TypeLiteral"
+            },
+            {
+              "fileName": "dracula-ui/node_modules/@types/react/index.d.ts",
+              "name": "AllHTMLAttributes"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"auto\" | \"none\" | \"full\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"4xl\" | \"5xl\" | \"6xl\" | \"7xl\" | \"8xl\" | undefined"
+          }
+        },
+        "width": {
+          "defaultValue": null,
+          "description": "The width of the element.",
+          "name": "width",
+          "declarations": [
+            {
+              "fileName": "src/components/Box/Box.tsx",
+              "name": "TypeLiteral"
+            },
+            {
+              "fileName": "dracula-ui/node_modules/@types/react/index.d.ts",
+              "name": "AllHTMLAttributes"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"auto\" | \"none\" | \"full\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"4xl\" | \"5xl\" | \"6xl\" | \"7xl\" | \"8xl\" | undefined"
           }
         },
         "as": {
@@ -2010,7 +2129,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"object\" | \"base\" | \"time\" | \"link\" | \"menu\" | \"dialog\" | \"a\" | \"abbr\" | \"address\" | \"applet\" | \"area\" | \"article\" | \"aside\" | \"audio\" | \"b\" | \"basefont\" | \"bdi\" | \"bdo\" | \"blockquote\" | ... 100 more ... | undefined"
+            "name": "\"object\" | \"table\" | \"base\" | \"time\" | \"link\" | \"menu\" | \"dialog\" | \"a\" | \"abbr\" | \"address\" | \"applet\" | \"area\" | \"article\" | \"aside\" | \"audio\" | \"b\" | \"basefont\" | \"bdi\" | \"bdo\" | ... 100 more ... | undefined"
           }
         },
         "p": {
@@ -2025,7 +2144,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "py": {
@@ -2040,7 +2159,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "px": {
@@ -2055,7 +2174,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "pt": {
@@ -2070,7 +2189,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "pb": {
@@ -2085,7 +2204,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "pl": {
@@ -2100,7 +2219,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "pr": {
@@ -2115,7 +2234,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "m": {
@@ -2130,7 +2249,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "my": {
@@ -2145,7 +2264,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "mx": {
@@ -2160,7 +2279,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "mt": {
@@ -2175,7 +2294,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "mb": {
@@ -2190,7 +2309,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "ml": {
@@ -2205,7 +2324,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "mr": {
@@ -2220,7 +2339,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         }
       },
@@ -2246,7 +2365,22 @@
             ],
             "required": false,
             "type": {
-              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+              "name": "\"animated\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+            }
+          },
+          "display": {
+            "defaultValue": null,
+            "description": "The display of the element.",
+            "name": "display",
+            "declarations": [
+              {
+                "fileName": "src/components/Box/Box.tsx",
+                "name": "TypeLiteral"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"none\" | \"block\" | \"flex\" | \"grid\" | \"table\" | \"inline\" | \"inline-block\" | \"inline-flex\" | \"inline-grid\" | \"inline-table\" | undefined"
             }
           },
           "glowColor": {
@@ -2291,7 +2425,45 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"base\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"full\" | undefined"
+              "name": "\"none\" | \"full\" | \"sm\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"base\" | undefined"
+            }
+          },
+          "height": {
+            "defaultValue": null,
+            "description": "The height of the element.",
+            "name": "height",
+            "declarations": [
+              {
+                "fileName": "src/components/Box/Box.tsx",
+                "name": "TypeLiteral"
+              },
+              {
+                "fileName": "dracula-ui/node_modules/@types/react/index.d.ts",
+                "name": "AllHTMLAttributes"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"auto\" | \"none\" | \"full\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"4xl\" | \"5xl\" | \"6xl\" | \"7xl\" | \"8xl\" | undefined"
+            }
+          },
+          "width": {
+            "defaultValue": null,
+            "description": "The width of the element.",
+            "name": "width",
+            "declarations": [
+              {
+                "fileName": "src/components/Box/Box.tsx",
+                "name": "TypeLiteral"
+              },
+              {
+                "fileName": "dracula-ui/node_modules/@types/react/index.d.ts",
+                "name": "AllHTMLAttributes"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"auto\" | \"none\" | \"full\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"4xl\" | \"5xl\" | \"6xl\" | \"7xl\" | \"8xl\" | undefined"
             }
           },
           "as": {
@@ -2310,7 +2482,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"object\" | \"base\" | \"time\" | \"link\" | \"menu\" | \"dialog\" | \"a\" | \"abbr\" | \"address\" | \"applet\" | \"area\" | \"article\" | \"aside\" | \"audio\" | \"b\" | \"basefont\" | \"bdi\" | \"bdo\" | \"blockquote\" | ... 100 more ... | undefined"
+              "name": "\"object\" | \"table\" | \"base\" | \"time\" | \"link\" | \"menu\" | \"dialog\" | \"a\" | \"abbr\" | \"address\" | \"applet\" | \"area\" | \"article\" | \"aside\" | \"audio\" | \"b\" | \"basefont\" | \"bdi\" | \"bdo\" | ... 100 more ... | undefined"
             }
           },
           "p": {
@@ -2325,7 +2497,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "py": {
@@ -2340,7 +2512,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "px": {
@@ -2355,7 +2527,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "pt": {
@@ -2370,7 +2542,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "pb": {
@@ -2385,7 +2557,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "pl": {
@@ -2400,7 +2572,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "pr": {
@@ -2415,7 +2587,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "m": {
@@ -2430,7 +2602,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "my": {
@@ -2445,7 +2617,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "mx": {
@@ -2460,7 +2632,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "mt": {
@@ -2475,7 +2647,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "mb": {
@@ -2490,7 +2662,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "ml": {
@@ -2505,7 +2677,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "mr": {
@@ -2520,7 +2692,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           }
         }
@@ -2706,7 +2878,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         },
         "my": {
@@ -2721,7 +2893,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         },
         "mx": {
@@ -2736,7 +2908,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         },
         "mt": {
@@ -2751,7 +2923,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         },
         "mb": {
@@ -2766,7 +2938,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         },
         "ml": {
@@ -2781,7 +2953,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         },
         "mr": {
@@ -2796,7 +2968,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         },
         "color": {
@@ -2831,7 +3003,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+            "name": "\"animated\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
           }
         },
         "size": {
@@ -3050,7 +3222,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           },
           "my": {
@@ -3065,7 +3237,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           },
           "mx": {
@@ -3080,7 +3252,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           },
           "mt": {
@@ -3095,7 +3267,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           },
           "mb": {
@@ -3110,7 +3282,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           },
           "ml": {
@@ -3125,7 +3297,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           },
           "mr": {
@@ -3140,7 +3312,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           },
           "color": {
@@ -3175,7 +3347,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+              "name": "\"animated\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
             }
           },
           "size": {
@@ -3357,7 +3529,22 @@
           ],
           "required": false,
           "type": {
-            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+            "name": "\"animated\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+          }
+        },
+        "display": {
+          "defaultValue": null,
+          "description": "The display of the element.",
+          "name": "display",
+          "declarations": [
+            {
+              "fileName": "dracula-ui/src/components/Box/Box.tsx",
+              "name": "TypeLiteral"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"none\" | \"block\" | \"flex\" | \"grid\" | \"table\" | \"inline\" | \"inline-block\" | \"inline-flex\" | \"inline-grid\" | \"inline-table\" | undefined"
           }
         },
         "glowColor": {
@@ -3402,7 +3589,45 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"base\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"full\" | undefined"
+            "name": "\"none\" | \"full\" | \"sm\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"base\" | undefined"
+          }
+        },
+        "height": {
+          "defaultValue": null,
+          "description": "The height of the element.",
+          "name": "height",
+          "declarations": [
+            {
+              "fileName": "dracula-ui/src/components/Box/Box.tsx",
+              "name": "TypeLiteral"
+            },
+            {
+              "fileName": "dracula-ui/node_modules/@types/react/index.d.ts",
+              "name": "AllHTMLAttributes"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"auto\" | \"none\" | \"full\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"4xl\" | \"5xl\" | \"6xl\" | \"7xl\" | \"8xl\" | undefined"
+          }
+        },
+        "width": {
+          "defaultValue": null,
+          "description": "The width of the element.",
+          "name": "width",
+          "declarations": [
+            {
+              "fileName": "dracula-ui/src/components/Box/Box.tsx",
+              "name": "TypeLiteral"
+            },
+            {
+              "fileName": "dracula-ui/node_modules/@types/react/index.d.ts",
+              "name": "AllHTMLAttributes"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"auto\" | \"none\" | \"full\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"4xl\" | \"5xl\" | \"6xl\" | \"7xl\" | \"8xl\" | undefined"
           }
         },
         "as": {
@@ -3436,7 +3661,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "py": {
@@ -3451,7 +3676,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "px": {
@@ -3466,7 +3691,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "pt": {
@@ -3481,7 +3706,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "pb": {
@@ -3496,7 +3721,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "pl": {
@@ -3511,7 +3736,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "pr": {
@@ -3526,7 +3751,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "m": {
@@ -3541,7 +3766,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "my": {
@@ -3556,7 +3781,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "mx": {
@@ -3571,7 +3796,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "mt": {
@@ -3586,7 +3811,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "mb": {
@@ -3601,7 +3826,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "ml": {
@@ -3616,7 +3841,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         },
         "mr": {
@@ -3631,7 +3856,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+            "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
           }
         }
       },
@@ -3676,7 +3901,22 @@
             ],
             "required": false,
             "type": {
-              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+              "name": "\"animated\" | \"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+            }
+          },
+          "display": {
+            "defaultValue": null,
+            "description": "The display of the element.",
+            "name": "display",
+            "declarations": [
+              {
+                "fileName": "dracula-ui/src/components/Box/Box.tsx",
+                "name": "TypeLiteral"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"none\" | \"block\" | \"flex\" | \"grid\" | \"table\" | \"inline\" | \"inline-block\" | \"inline-flex\" | \"inline-grid\" | \"inline-table\" | undefined"
             }
           },
           "glowColor": {
@@ -3721,7 +3961,45 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"base\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"full\" | undefined"
+              "name": "\"none\" | \"full\" | \"sm\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"base\" | undefined"
+            }
+          },
+          "height": {
+            "defaultValue": null,
+            "description": "The height of the element.",
+            "name": "height",
+            "declarations": [
+              {
+                "fileName": "dracula-ui/src/components/Box/Box.tsx",
+                "name": "TypeLiteral"
+              },
+              {
+                "fileName": "dracula-ui/node_modules/@types/react/index.d.ts",
+                "name": "AllHTMLAttributes"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"auto\" | \"none\" | \"full\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"4xl\" | \"5xl\" | \"6xl\" | \"7xl\" | \"8xl\" | undefined"
+            }
+          },
+          "width": {
+            "defaultValue": null,
+            "description": "The width of the element.",
+            "name": "width",
+            "declarations": [
+              {
+                "fileName": "dracula-ui/src/components/Box/Box.tsx",
+                "name": "TypeLiteral"
+              },
+              {
+                "fileName": "dracula-ui/node_modules/@types/react/index.d.ts",
+                "name": "AllHTMLAttributes"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"auto\" | \"none\" | \"full\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"4xl\" | \"5xl\" | \"6xl\" | \"7xl\" | \"8xl\" | undefined"
             }
           },
           "as": {
@@ -3755,7 +4033,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "py": {
@@ -3770,7 +4048,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "px": {
@@ -3785,7 +4063,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "pt": {
@@ -3800,7 +4078,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "pb": {
@@ -3815,7 +4093,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "pl": {
@@ -3830,7 +4108,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "pr": {
@@ -3845,7 +4123,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "m": {
@@ -3860,7 +4138,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "my": {
@@ -3875,7 +4153,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "mx": {
@@ -3890,7 +4168,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "mt": {
@@ -3905,7 +4183,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "mb": {
@@ -3920,7 +4198,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "ml": {
@@ -3935,7 +4213,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           },
           "mr": {
@@ -3950,7 +4228,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"sm\" | \"lg\" | \"xxs\" | \"xs\" | \"md\" | undefined"
+              "name": "\"auto\" | \"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
             }
           }
         }
@@ -4014,7 +4292,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
           }
         },
         "name": {
@@ -4172,7 +4450,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "my": {
@@ -4187,7 +4465,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mx": {
@@ -4202,7 +4480,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mt": {
@@ -4217,7 +4495,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mb": {
@@ -4232,7 +4510,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "ml": {
@@ -4247,7 +4525,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mr": {
@@ -4262,7 +4540,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         }
       },
@@ -4288,7 +4566,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
             }
           },
           "name": {
@@ -4446,7 +4724,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "my": {
@@ -4461,7 +4739,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mx": {
@@ -4476,7 +4754,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mt": {
@@ -4491,7 +4769,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mb": {
@@ -4506,7 +4784,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "ml": {
@@ -4521,7 +4799,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mr": {
@@ -4536,7 +4814,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           }
         }
@@ -4565,7 +4843,7 @@
           "title": "Usage",
           "html": "<hr class=\"drac-divider\" />\n",
           "react": "<Divider />;\n",
-          "docs": "Dividers are used to defined a thematic break in a page.",
+          "docs": "Dividers are used to define a thematic break in a page.",
           "screenshot": "./dsp/assets/Divider.png"
         },
         {
@@ -4713,7 +4991,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "my": {
@@ -4728,7 +5006,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mx": {
@@ -4743,7 +5021,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mt": {
@@ -4758,7 +5036,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mb": {
@@ -4773,7 +5051,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "ml": {
@@ -4788,7 +5066,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mr": {
@@ -4803,7 +5081,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         }
       },
@@ -4949,7 +5227,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "my": {
@@ -4964,7 +5242,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mx": {
@@ -4979,7 +5257,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mt": {
@@ -4994,7 +5272,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mb": {
@@ -5009,7 +5287,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "ml": {
@@ -5024,7 +5302,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mr": {
@@ -5039,7 +5317,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           }
         }
@@ -5129,7 +5407,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
           }
         },
         "as": {
@@ -5163,7 +5441,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"auto\" | \"xxs\" | undefined"
           }
         },
         "my": {
@@ -5178,7 +5456,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"auto\" | \"xxs\" | undefined"
           }
         },
         "mx": {
@@ -5193,7 +5471,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"auto\" | \"xxs\" | undefined"
           }
         },
         "mt": {
@@ -5208,7 +5486,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"auto\" | \"xxs\" | undefined"
           }
         },
         "mb": {
@@ -5223,7 +5501,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"auto\" | \"xxs\" | undefined"
           }
         },
         "ml": {
@@ -5238,7 +5516,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"auto\" | \"xxs\" | undefined"
           }
         },
         "mr": {
@@ -5253,7 +5531,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"auto\" | \"xxs\" | undefined"
           }
         },
         "p": {
@@ -5403,7 +5681,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
             }
           },
           "as": {
@@ -5437,7 +5715,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"auto\" | \"xxs\" | undefined"
             }
           },
           "my": {
@@ -5452,7 +5730,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"auto\" | \"xxs\" | undefined"
             }
           },
           "mx": {
@@ -5467,7 +5745,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"auto\" | \"xxs\" | undefined"
             }
           },
           "mt": {
@@ -5482,7 +5760,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"auto\" | \"xxs\" | undefined"
             }
           },
           "mb": {
@@ -5497,7 +5775,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"auto\" | \"xxs\" | undefined"
             }
           },
           "ml": {
@@ -5512,7 +5790,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"auto\" | \"xxs\" | undefined"
             }
           },
           "mr": {
@@ -5527,7 +5805,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"lg\" | \"md\" | \"sm\" | \"xs\" | \"none\" | \"auto\" | \"xxs\" | undefined"
             }
           },
           "p": {
@@ -5710,7 +5988,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
           }
         },
         "size": {
@@ -5887,7 +6165,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "my": {
@@ -5902,7 +6180,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mx": {
@@ -5917,7 +6195,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mt": {
@@ -5932,7 +6210,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mb": {
@@ -5947,7 +6225,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "ml": {
@@ -5962,7 +6240,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mr": {
@@ -5977,7 +6255,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         }
       },
@@ -6003,7 +6281,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
             }
           },
           "size": {
@@ -6180,7 +6458,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "my": {
@@ -6195,7 +6473,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mx": {
@@ -6210,7 +6488,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mt": {
@@ -6225,7 +6503,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mb": {
@@ -6240,7 +6518,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "ml": {
@@ -6255,7 +6533,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mr": {
@@ -6270,7 +6548,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           }
         }
@@ -6282,7 +6560,7 @@
       "id": "List",
       "name": "List",
       "last_updated_by": "System",
-      "description": "Lists are used to display list items in an ordered or unordered way.",
+      "description": "Lists are used to display list items in an unordered way.",
       "related_entity_ids": [],
       "tags": [
         "component"
@@ -6291,28 +6569,28 @@
         "trigger": "list",
         "languages": {
           "javascriptreact": "<List>\n  <li className=\"drac-text drac-text-white\">Blade</li>\n  <li className=\"drac-text drac-text-white\">Buffy</li>\n  <li className=\"drac-text drac-text-white\">Morbius</li>\n</List>;\n",
-          "html": "<ol class=\"drac-list\">\n  <li class=\"drac-text drac-text-white\">Blade</li>\n  <li class=\"drac-text drac-text-white\">Buffy</li>\n  <li class=\"drac-text drac-text-white\">Morbius</li>\n</ol>\n"
+          "html": "<ul class=\"drac-list\">\n  <li class=\"drac-text drac-text-white\">Blade</li>\n  <li class=\"drac-text drac-text-white\">Buffy</li>\n  <li class=\"drac-text drac-text-white\">Morbius</li>\n</ul>\n"
         }
       },
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
-          "html": "<ol class=\"drac-list\">\n  <li class=\"drac-text drac-text-white\">Blade</li>\n  <li class=\"drac-text drac-text-white\">Buffy</li>\n  <li class=\"drac-text drac-text-white\">Morbius</li>\n</ol>\n",
+          "html": "<ul class=\"drac-list\">\n  <li class=\"drac-text drac-text-white\">Blade</li>\n  <li class=\"drac-text drac-text-white\">Buffy</li>\n  <li class=\"drac-text drac-text-white\">Morbius</li>\n</ul>\n",
           "react": "<List>\n  <li className=\"drac-text drac-text-white\">Blade</li>\n  <li className=\"drac-text drac-text-white\">Buffy</li>\n  <li className=\"drac-text drac-text-white\">Morbius</li>\n</List>;\n",
           "docs": "Render an unstyled list by default.",
           "screenshot": "./dsp/assets/List.png"
         },
         {
           "title": "Variants",
-          "html": "<div class=\"drac-box\">\n  <ol class=\"drac-list drac-list-ordered drac-list-purple\">\n    <li class=\"drac-text drac-text-white\">Blade</li>\n    <li class=\"drac-text drac-text-white\">Buffy</li>\n    <li class=\"drac-text drac-text-white\">Morbius</li>\n  </ol>\n  <ul class=\"drac-list drac-list-unordered drac-list-purple\">\n    <li class=\"drac-text drac-text-white\">Blade</li>\n    <li class=\"drac-text drac-text-white\">Buffy</li>\n    <li class=\"drac-text drac-text-white\">Morbius</li>\n  </ul>\n</div>\n",
-          "react": "<Box>\n  <List variant=\"ordered\" color=\"purple\">\n    <li className=\"drac-text drac-text-white\">Blade</li>\n    <li className=\"drac-text drac-text-white\">Buffy</li>\n    <li className=\"drac-text drac-text-white\">Morbius</li>\n  </List>\n  <List variant=\"unordered\" color=\"purple\">\n    <li className=\"drac-text drac-text-white\">Blade</li>\n    <li className=\"drac-text drac-text-white\">Buffy</li>\n    <li className=\"drac-text drac-text-white\">Morbius</li>\n  </List>\n</Box>;\n",
-          "docs": "Lists can be displayed in dashes as an `<ul>` or in numbers as an `<ol>",
+          "html": "<div class=\"drac-box\">\n  <ul class=\"drac-list drac-list-purple\">\n    <li class=\"drac-text drac-text-white\">Blade</li>\n    <li class=\"drac-text drac-text-white\">Buffy</li>\n    <li class=\"drac-text drac-text-white\">Morbius</li>\n  </ul>\n  <ul class=\"drac-list drac-list-unordered drac-list-purple\">\n    <li class=\"drac-text drac-text-white\">Blade</li>\n    <li class=\"drac-text drac-text-white\">Buffy</li>\n    <li class=\"drac-text drac-text-white\">Morbius</li>\n  </ul>\n</div>\n",
+          "react": "<Box>\n  <List color=\"purple\">\n    <li className=\"drac-text drac-text-white\">Blade</li>\n    <li className=\"drac-text drac-text-white\">Buffy</li>\n    <li className=\"drac-text drac-text-white\">Morbius</li>\n  </List>\n  <List variant=\"unordered\" color=\"purple\">\n    <li className=\"drac-text drac-text-white\">Blade</li>\n    <li className=\"drac-text drac-text-white\">Buffy</li>\n    <li className=\"drac-text drac-text-white\">Morbius</li>\n  </List>\n</Box>;\n",
+          "docs": "Lists can be displayed as plain list items or with dashes.",
           "screenshot": "./dsp/assets/ListVariants.png"
         },
         {
           "title": "Colors",
-          "html": "<ol class=\"drac-list drac-list-ordered drac-list-cyan\">\n  <li class=\"drac-text drac-text-white\">Blade</li>\n  <li class=\"drac-text drac-text-white\">Buffy</li>\n  <li class=\"drac-text drac-text-white\">Morbius</li>\n</ol>\n",
-          "react": "<List variant=\"ordered\" color=\"cyan\">\n  <li className=\"drac-text drac-text-white\">Blade</li>\n  <li className=\"drac-text drac-text-white\">Buffy</li>\n  <li className=\"drac-text drac-text-white\">Morbius</li>\n</List>;\n",
+          "html": "<ul class=\"drac-list drac-list-cyan\">\n  <li class=\"drac-text drac-text-white\">Blade</li>\n  <li class=\"drac-text drac-text-white\">Buffy</li>\n  <li class=\"drac-text drac-text-white\">Morbius</li>\n</ul>\n",
+          "react": "<List color=\"cyan\">\n  <li className=\"drac-text drac-text-white\">Blade</li>\n  <li className=\"drac-text drac-text-white\">Buffy</li>\n  <li className=\"drac-text drac-text-white\">Morbius</li>\n</List>;\n",
           "docs": "Lists can be customized to use any of the Dracula UI theme colors.",
           "screenshot": "./dsp/assets/ListColors.png"
         }
@@ -6334,12 +6612,12 @@
           ],
           "required": false,
           "type": {
-            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
           }
         },
         "variant": {
           "defaultValue": null,
-          "description": "The variation to be used for the List element.\n`unordered` -> Display list in dashes as an `<ul>`\n`ordered` -> Display list in numbers as an `<ol>`",
+          "description": "The variation to be used for the List element.\n`unordered` -> Display list in dashes as an `<ul>`\n`ordered` -> Deprecated and moved to OrderedList",
           "name": "variant",
           "parent": {
             "fileName": "src/components/List/List.tsx",
@@ -6473,7 +6751,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "my": {
@@ -6488,7 +6766,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mx": {
@@ -6503,7 +6781,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mt": {
@@ -6518,7 +6796,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mb": {
@@ -6533,7 +6811,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "ml": {
@@ -6548,7 +6826,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mr": {
@@ -6563,13 +6841,13 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         }
       },
       "ext_com_draculaui_docgen": {
         "tags": {},
-        "description": "Lists are used to display list items in an ordered or unordered way.",
+        "description": "Lists are used to display list items in an unordered way.",
         "displayName": "List",
         "methods": [],
         "props": {
@@ -6589,12 +6867,12 @@
             ],
             "required": false,
             "type": {
-              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
             }
           },
           "variant": {
             "defaultValue": null,
-            "description": "The variation to be used for the List element.\n`unordered` -> Display list in dashes as an `<ul>`\n`ordered` -> Display list in numbers as an `<ol>`",
+            "description": "The variation to be used for the List element.\n`unordered` -> Display list in dashes as an `<ul>`\n`ordered` -> Deprecated and moved to OrderedList",
             "name": "variant",
             "parent": {
               "fileName": "src/components/List/List.tsx",
@@ -6728,7 +7006,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "my": {
@@ -6743,7 +7021,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mx": {
@@ -6758,7 +7036,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mt": {
@@ -6773,7 +7051,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mb": {
@@ -6788,7 +7066,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "ml": {
@@ -6803,7 +7081,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mr": {
@@ -6818,7 +7096,510 @@
             ],
             "required": false,
             "type": {
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
+            }
+          }
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": "OrderedList",
+      "name": "OrderedList",
+      "last_updated_by": "System",
+      "description": "Ordered Lists are used to display list items in an ordered way.",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "orderedlist",
+        "languages": {
+          "javascriptreact": "<OrderedList>\n  <li className=\"drac-text drac-text-white\">Blade</li>\n  <li className=\"drac-text drac-text-white\">Buffy</li>\n  <li className=\"drac-text drac-text-white\">Morbius</li>\n</OrderedList>;\n",
+          "html": "<ol class=\"drac-list drac-list-ordered\">\n  <li class=\"drac-text drac-text-white\">Blade</li>\n  <li class=\"drac-text drac-text-white\">Buffy</li>\n  <li class=\"drac-text drac-text-white\">Morbius</li>\n</ol>\n"
+        }
+      },
+      "ext_com_draculaui_variations": [
+        {
+          "title": "Usage",
+          "html": "<ol class=\"drac-list drac-list-ordered\">\n  <li class=\"drac-text drac-text-white\">Blade</li>\n  <li class=\"drac-text drac-text-white\">Buffy</li>\n  <li class=\"drac-text drac-text-white\">Morbius</li>\n</ol>\n",
+          "react": "<OrderedList>\n  <li className=\"drac-text drac-text-white\">Blade</li>\n  <li className=\"drac-text drac-text-white\">Buffy</li>\n  <li className=\"drac-text drac-text-white\">Morbius</li>\n</OrderedList>;\n",
+          "docs": "Render an ordered list by default.",
+          "screenshot": "./dsp/assets/OrderedList.png"
+        },
+        {
+          "title": "Colors",
+          "html": "<ol class=\"drac-list drac-list-ordered drac-list-cyan\">\n  <li class=\"drac-text drac-text-white\">Blade</li>\n  <li class=\"drac-text drac-text-white\">Buffy</li>\n  <li class=\"drac-text drac-text-white\">Morbius</li>\n</ol>\n",
+          "react": "<OrderedList color=\"cyan\">\n  <li className=\"drac-text drac-text-white\">Blade</li>\n  <li className=\"drac-text drac-text-white\">Buffy</li>\n  <li className=\"drac-text drac-text-white\">Morbius</li>\n</OrderedList>;\n",
+          "docs": "OrderedLists can be customized to use any of the Dracula UI theme colors.",
+          "screenshot": "./dsp/assets/OrderedListColors.png"
+        }
+      ],
+      "ext_com_draculaui_props": {
+        "color": {
+          "defaultValue": null,
+          "description": "The Dracula UI color for the Ordered List.",
+          "name": "color",
+          "parent": {
+            "fileName": "src/components/OrderedList/OrderedList.tsx",
+            "name": "OrderedListProps"
+          },
+          "declarations": [
+            {
+              "fileName": "src/components/OrderedList/OrderedList.tsx",
+              "name": "OrderedListProps"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+          }
+        },
+        "p": {
+          "defaultValue": null,
+          "description": "",
+          "name": "p",
+          "declarations": [
+            {
+              "fileName": "dracula-ui/src/base/spacing.ts",
+              "name": "TypeLiteral"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+          }
+        },
+        "py": {
+          "defaultValue": null,
+          "description": "",
+          "name": "py",
+          "declarations": [
+            {
+              "fileName": "dracula-ui/src/base/spacing.ts",
+              "name": "TypeLiteral"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+          }
+        },
+        "px": {
+          "defaultValue": null,
+          "description": "",
+          "name": "px",
+          "declarations": [
+            {
+              "fileName": "dracula-ui/src/base/spacing.ts",
+              "name": "TypeLiteral"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+          }
+        },
+        "pt": {
+          "defaultValue": null,
+          "description": "",
+          "name": "pt",
+          "declarations": [
+            {
+              "fileName": "dracula-ui/src/base/spacing.ts",
+              "name": "TypeLiteral"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+          }
+        },
+        "pb": {
+          "defaultValue": null,
+          "description": "",
+          "name": "pb",
+          "declarations": [
+            {
+              "fileName": "dracula-ui/src/base/spacing.ts",
+              "name": "TypeLiteral"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+          }
+        },
+        "pl": {
+          "defaultValue": null,
+          "description": "",
+          "name": "pl",
+          "declarations": [
+            {
+              "fileName": "dracula-ui/src/base/spacing.ts",
+              "name": "TypeLiteral"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+          }
+        },
+        "pr": {
+          "defaultValue": null,
+          "description": "",
+          "name": "pr",
+          "declarations": [
+            {
+              "fileName": "dracula-ui/src/base/spacing.ts",
+              "name": "TypeLiteral"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+          }
+        },
+        "m": {
+          "defaultValue": null,
+          "description": "",
+          "name": "m",
+          "declarations": [
+            {
+              "fileName": "dracula-ui/src/base/spacing.ts",
+              "name": "TypeLiteral"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
+          }
+        },
+        "my": {
+          "defaultValue": null,
+          "description": "",
+          "name": "my",
+          "declarations": [
+            {
+              "fileName": "dracula-ui/src/base/spacing.ts",
+              "name": "TypeLiteral"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
+          }
+        },
+        "mx": {
+          "defaultValue": null,
+          "description": "",
+          "name": "mx",
+          "declarations": [
+            {
+              "fileName": "dracula-ui/src/base/spacing.ts",
+              "name": "TypeLiteral"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
+          }
+        },
+        "mt": {
+          "defaultValue": null,
+          "description": "",
+          "name": "mt",
+          "declarations": [
+            {
+              "fileName": "dracula-ui/src/base/spacing.ts",
+              "name": "TypeLiteral"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
+          }
+        },
+        "mb": {
+          "defaultValue": null,
+          "description": "",
+          "name": "mb",
+          "declarations": [
+            {
+              "fileName": "dracula-ui/src/base/spacing.ts",
+              "name": "TypeLiteral"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
+          }
+        },
+        "ml": {
+          "defaultValue": null,
+          "description": "",
+          "name": "ml",
+          "declarations": [
+            {
+              "fileName": "dracula-ui/src/base/spacing.ts",
+              "name": "TypeLiteral"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
+          }
+        },
+        "mr": {
+          "defaultValue": null,
+          "description": "",
+          "name": "mr",
+          "declarations": [
+            {
+              "fileName": "dracula-ui/src/base/spacing.ts",
+              "name": "TypeLiteral"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
+          }
+        }
+      },
+      "ext_com_draculaui_docgen": {
+        "tags": {},
+        "description": "Ordered Lists are used to display list items in an ordered way.",
+        "displayName": "OrderedList",
+        "methods": [],
+        "props": {
+          "color": {
+            "defaultValue": null,
+            "description": "The Dracula UI color for the Ordered List.",
+            "name": "color",
+            "parent": {
+              "fileName": "src/components/OrderedList/OrderedList.tsx",
+              "name": "OrderedListProps"
+            },
+            "declarations": [
+              {
+                "fileName": "src/components/OrderedList/OrderedList.tsx",
+                "name": "OrderedListProps"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+            }
+          },
+          "p": {
+            "defaultValue": null,
+            "description": "",
+            "name": "p",
+            "declarations": [
+              {
+                "fileName": "dracula-ui/src/base/spacing.ts",
+                "name": "TypeLiteral"
+              }
+            ],
+            "required": false,
+            "type": {
               "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            }
+          },
+          "py": {
+            "defaultValue": null,
+            "description": "",
+            "name": "py",
+            "declarations": [
+              {
+                "fileName": "dracula-ui/src/base/spacing.ts",
+                "name": "TypeLiteral"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            }
+          },
+          "px": {
+            "defaultValue": null,
+            "description": "",
+            "name": "px",
+            "declarations": [
+              {
+                "fileName": "dracula-ui/src/base/spacing.ts",
+                "name": "TypeLiteral"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            }
+          },
+          "pt": {
+            "defaultValue": null,
+            "description": "",
+            "name": "pt",
+            "declarations": [
+              {
+                "fileName": "dracula-ui/src/base/spacing.ts",
+                "name": "TypeLiteral"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            }
+          },
+          "pb": {
+            "defaultValue": null,
+            "description": "",
+            "name": "pb",
+            "declarations": [
+              {
+                "fileName": "dracula-ui/src/base/spacing.ts",
+                "name": "TypeLiteral"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            }
+          },
+          "pl": {
+            "defaultValue": null,
+            "description": "",
+            "name": "pl",
+            "declarations": [
+              {
+                "fileName": "dracula-ui/src/base/spacing.ts",
+                "name": "TypeLiteral"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            }
+          },
+          "pr": {
+            "defaultValue": null,
+            "description": "",
+            "name": "pr",
+            "declarations": [
+              {
+                "fileName": "dracula-ui/src/base/spacing.ts",
+                "name": "TypeLiteral"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            }
+          },
+          "m": {
+            "defaultValue": null,
+            "description": "",
+            "name": "m",
+            "declarations": [
+              {
+                "fileName": "dracula-ui/src/base/spacing.ts",
+                "name": "TypeLiteral"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
+            }
+          },
+          "my": {
+            "defaultValue": null,
+            "description": "",
+            "name": "my",
+            "declarations": [
+              {
+                "fileName": "dracula-ui/src/base/spacing.ts",
+                "name": "TypeLiteral"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
+            }
+          },
+          "mx": {
+            "defaultValue": null,
+            "description": "",
+            "name": "mx",
+            "declarations": [
+              {
+                "fileName": "dracula-ui/src/base/spacing.ts",
+                "name": "TypeLiteral"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
+            }
+          },
+          "mt": {
+            "defaultValue": null,
+            "description": "",
+            "name": "mt",
+            "declarations": [
+              {
+                "fileName": "dracula-ui/src/base/spacing.ts",
+                "name": "TypeLiteral"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
+            }
+          },
+          "mb": {
+            "defaultValue": null,
+            "description": "",
+            "name": "mb",
+            "declarations": [
+              {
+                "fileName": "dracula-ui/src/base/spacing.ts",
+                "name": "TypeLiteral"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
+            }
+          },
+          "ml": {
+            "defaultValue": null,
+            "description": "",
+            "name": "ml",
+            "declarations": [
+              {
+                "fileName": "dracula-ui/src/base/spacing.ts",
+                "name": "TypeLiteral"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
+            }
+          },
+          "mr": {
+            "defaultValue": null,
+            "description": "",
+            "name": "mr",
+            "declarations": [
+              {
+                "fileName": "dracula-ui/src/base/spacing.ts",
+                "name": "TypeLiteral"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           }
         }
@@ -6858,6 +7639,13 @@
           "screenshot": "./dsp/assets/ParagraphColors.png"
         },
         {
+          "title": "Align",
+          "html": "<div class=\"drac-box\">\n  <p class=\"drac-text drac-text-left drac-line-height drac-text-white\">\n    Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It\n    introduced the character of Count Dracula and established many conventions\n    of subsequent vampire fantasy. The novel tells the story of Dracula's\n    attempt to move from Transylvania to England so that he may find new blood\n    and spread the undead curse, and of the battle between Dracula and Professor\n    Abraham Van Helsing.\n  </p>\n  <p class=\"drac-text drac-text-center drac-line-height drac-text-white\">\n    Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It\n    introduced the character of Count Dracula and established many conventions\n    of subsequent vampire fantasy. The novel tells the story of Dracula's\n    attempt to move from Transylvania to England so that he may find new blood\n    and spread the undead curse, and of the battle between Dracula and Professor\n    Abraham Van Helsing.\n  </p>\n  <p class=\"drac-text drac-text-right drac-line-height drac-text-white\">\n    Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It\n    introduced the character of Count Dracula and established many conventions\n    of subsequent vampire fantasy. The novel tells the story of Dracula's\n    attempt to move from Transylvania to England so that he may find new blood\n    and spread the undead curse, and of the battle between Dracula and Professor\n    Abraham Van Helsing.\n  </p>\n  <p class=\"drac-text drac-text-justify drac-line-height drac-text-white\">\n    Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It\n    introduced the character of Count Dracula and established many conventions\n    of subsequent vampire fantasy. The novel tells the story of Dracula's\n    attempt to move from Transylvania to England so that he may find new blood\n    and spread the undead curse, and of the battle between Dracula and Professor\n    Abraham Van Helsing.\n  </p>\n</div>\n",
+          "react": "<Box>\n  <Paragraph align=\"left\">\n    Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It\n    introduced the character of Count Dracula and established many conventions\n    of subsequent vampire fantasy. The novel tells the story of Dracula&#39;s\n    attempt to move from Transylvania to England so that he may find new blood\n    and spread the undead curse, and of the battle between Dracula and Professor\n    Abraham Van Helsing.\n  </Paragraph>\n  <Paragraph align=\"center\">\n    Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It\n    introduced the character of Count Dracula and established many conventions\n    of subsequent vampire fantasy. The novel tells the story of Dracula&#39;s\n    attempt to move from Transylvania to England so that he may find new blood\n    and spread the undead curse, and of the battle between Dracula and Professor\n    Abraham Van Helsing.\n  </Paragraph>\n  <Paragraph align=\"right\">\n    Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It\n    introduced the character of Count Dracula and established many conventions\n    of subsequent vampire fantasy. The novel tells the story of Dracula&#39;s\n    attempt to move from Transylvania to England so that he may find new blood\n    and spread the undead curse, and of the battle between Dracula and Professor\n    Abraham Van Helsing.\n  </Paragraph>\n  <Paragraph align=\"justify\">\n    Dracula is an 1897 Gothic horror novel by Irish author Bram Stoker. It\n    introduced the character of Count Dracula and established many conventions\n    of subsequent vampire fantasy. The novel tells the story of Dracula&#39;s\n    attempt to move from Transylvania to England so that he may find new blood\n    and spread the undead curse, and of the battle between Dracula and Professor\n    Abraham Van Helsing.\n  </Paragraph>\n</Box>;\n",
+          "docs": "Paragraphs can be customized with different alignments.",
+          "screenshot": "./dsp/assets/ParagraphAlign.png"
+        },
+        {
           "title": "Weights",
           "html": "<div class=\"drac-box\">\n  <p class=\"drac-text drac-line-height drac-text-white\">normal</p>\n  <p class=\"drac-text drac-text-semibold drac-line-height drac-text-white\">\n    semibold\n  </p>\n  <p class=\"drac-text drac-text-bold drac-line-height drac-text-white\">bold</p>\n</div>\n",
           "react": "<Box>\n  <Paragraph weight=\"normal\">normal</Paragraph>\n  <Paragraph weight=\"semibold\">semibold</Paragraph>\n  <Paragraph weight=\"bold\">bold</Paragraph>\n</Box>;\n",
@@ -6868,7 +7656,7 @@
           "title": "Sizes",
           "html": "<div class=\"drac-box\">\n  <p class=\"drac-text drac-text-xs drac-line-height drac-text-white\">xs</p>\n  <p class=\"drac-text drac-text-sm drac-line-height drac-text-white\">sm</p>\n  <p class=\"drac-text drac-line-height drac-text-white\">md</p>\n  <p class=\"drac-text drac-text-lg drac-line-height drac-text-white\">lg</p>\n</div>\n",
           "react": "<Box>\n  <Paragraph size=\"xs\">xs</Paragraph>\n  <Paragraph size=\"sm\">sm</Paragraph>\n  <Paragraph size=\"md\">md</Paragraph>\n  <Paragraph size=\"lg\">lg</Paragraph>\n</Box>;\n",
-          "docs": "Paragraphs can be customize to use several different sizes.",
+          "docs": "Paragraphs can be customized to use several different sizes.",
           "screenshot": "./dsp/assets/ParagraphSizes.png"
         },
         {
@@ -6880,6 +7668,25 @@
         }
       ],
       "ext_com_draculaui_props": {
+        "align": {
+          "defaultValue": null,
+          "description": "Controls the alignment of text.",
+          "name": "align",
+          "parent": {
+            "fileName": "dracula-ui/src/components/Text/Text.tsx",
+            "name": "TextProps"
+          },
+          "declarations": [
+            {
+              "fileName": "dracula-ui/src/components/Text/Text.tsx",
+              "name": "TextProps"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"left\" | \"center\" | \"right\" | \"justify\" | undefined"
+          }
+        },
         "size": {
           "defaultValue": null,
           "description": "Controls the size of the text based on pre-configured Dracula UI sizes.",
@@ -6953,7 +7760,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
           }
         },
         "as": {
@@ -7092,7 +7899,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         },
         "my": {
@@ -7107,7 +7914,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         },
         "mx": {
@@ -7122,7 +7929,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         },
         "mt": {
@@ -7137,7 +7944,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         },
         "mb": {
@@ -7152,7 +7959,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         },
         "ml": {
@@ -7167,7 +7974,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         },
         "mr": {
@@ -7182,7 +7989,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         }
       },
@@ -7192,6 +7999,25 @@
         "displayName": "Paragraph",
         "methods": [],
         "props": {
+          "align": {
+            "defaultValue": null,
+            "description": "Controls the alignment of text.",
+            "name": "align",
+            "parent": {
+              "fileName": "dracula-ui/src/components/Text/Text.tsx",
+              "name": "TextProps"
+            },
+            "declarations": [
+              {
+                "fileName": "dracula-ui/src/components/Text/Text.tsx",
+                "name": "TextProps"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"left\" | \"center\" | \"right\" | \"justify\" | undefined"
+            }
+          },
           "size": {
             "defaultValue": null,
             "description": "Controls the size of the text based on pre-configured Dracula UI sizes.",
@@ -7265,7 +8091,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
             }
           },
           "as": {
@@ -7404,7 +8230,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           },
           "my": {
@@ -7419,7 +8245,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           },
           "mx": {
@@ -7434,7 +8260,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           },
           "mt": {
@@ -7449,7 +8275,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           },
           "mb": {
@@ -7464,7 +8290,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           },
           "ml": {
@@ -7479,7 +8305,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           },
           "mr": {
@@ -7494,7 +8320,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           }
         }
@@ -7558,7 +8384,7 @@
           ],
           "required": true,
           "type": {
-            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\""
+            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\""
           }
         },
         "name": {
@@ -7716,7 +8542,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "my": {
@@ -7731,7 +8557,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mx": {
@@ -7746,7 +8572,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mt": {
@@ -7761,7 +8587,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mb": {
@@ -7776,7 +8602,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "ml": {
@@ -7791,7 +8617,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mr": {
@@ -7806,7 +8632,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         }
       },
@@ -7832,7 +8658,7 @@
             ],
             "required": true,
             "type": {
-              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\""
+              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\""
             }
           },
           "name": {
@@ -7990,7 +8816,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "my": {
@@ -8005,7 +8831,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mx": {
@@ -8020,7 +8846,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mt": {
@@ -8035,7 +8861,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mb": {
@@ -8050,7 +8876,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "ml": {
@@ -8065,7 +8891,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mr": {
@@ -8080,7 +8906,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           }
         }
@@ -8158,7 +8984,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
           }
         },
         "size": {
@@ -8335,7 +9161,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "my": {
@@ -8350,7 +9176,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mx": {
@@ -8365,7 +9191,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mt": {
@@ -8380,7 +9206,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mb": {
@@ -8395,7 +9221,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "ml": {
@@ -8410,7 +9236,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mr": {
@@ -8425,7 +9251,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         }
       },
@@ -8451,7 +9277,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
             }
           },
           "size": {
@@ -8628,7 +9454,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "my": {
@@ -8643,7 +9469,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mx": {
@@ -8658,7 +9484,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mt": {
@@ -8673,7 +9499,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mb": {
@@ -8688,7 +9514,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "ml": {
@@ -8703,7 +9529,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mr": {
@@ -8718,7 +9544,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           }
         }
@@ -8844,7 +9670,7 @@
           ],
           "required": true,
           "type": {
-            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\""
+            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\""
           }
         },
         "disabled": {
@@ -8983,7 +9809,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "my": {
@@ -8998,7 +9824,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mx": {
@@ -9013,7 +9839,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mt": {
@@ -9028,7 +9854,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mb": {
@@ -9043,7 +9869,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "ml": {
@@ -9058,7 +9884,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mr": {
@@ -9073,7 +9899,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         }
       },
@@ -9118,7 +9944,7 @@
             ],
             "required": true,
             "type": {
-              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\""
+              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\""
             }
           },
           "disabled": {
@@ -9257,7 +10083,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "my": {
@@ -9272,7 +10098,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mx": {
@@ -9287,7 +10113,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mt": {
@@ -9302,7 +10128,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mb": {
@@ -9317,7 +10143,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "ml": {
@@ -9332,7 +10158,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mr": {
@@ -9347,7 +10173,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           }
         }
@@ -9411,7 +10237,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
           }
         },
         "variant": {
@@ -9550,7 +10376,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "my": {
@@ -9565,7 +10391,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mx": {
@@ -9580,7 +10406,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mt": {
@@ -9595,7 +10421,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mb": {
@@ -9610,7 +10436,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "ml": {
@@ -9625,7 +10451,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mr": {
@@ -9640,7 +10466,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         }
       },
@@ -9666,7 +10492,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
             }
           },
           "variant": {
@@ -9805,7 +10631,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "my": {
@@ -9820,7 +10646,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mx": {
@@ -9835,7 +10661,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mt": {
@@ -9850,7 +10676,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mb": {
@@ -9865,7 +10691,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "ml": {
@@ -9880,7 +10706,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mr": {
@@ -9895,7 +10721,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           }
         }
@@ -9952,7 +10778,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
           }
         },
         "p": {
@@ -10072,7 +10898,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "my": {
@@ -10087,7 +10913,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mx": {
@@ -10102,7 +10928,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mt": {
@@ -10117,7 +10943,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mb": {
@@ -10132,7 +10958,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "ml": {
@@ -10147,7 +10973,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         },
         "mr": {
@@ -10162,7 +10988,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+            "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
           }
         }
       },
@@ -10188,7 +11014,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
             }
           },
           "p": {
@@ -10308,7 +11134,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "my": {
@@ -10323,7 +11149,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mx": {
@@ -10338,7 +11164,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mt": {
@@ -10353,7 +11179,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mb": {
@@ -10368,7 +11194,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "ml": {
@@ -10383,7 +11209,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           },
           "mr": {
@@ -10398,7 +11224,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | undefined"
+              "name": "\"none\" | \"xxs\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"auto\" | undefined"
             }
           }
         }
@@ -10438,6 +11264,13 @@
           "screenshot": "./dsp/assets/TextColors.png"
         },
         {
+          "title": "Align",
+          "html": "<div class=\"drac-box\">\n  <p class=\"drac-text drac-text-left drac-line-height drac-text-white\">\n    The quick vampire jumps over the lazy human\n  </p>\n  <p class=\"drac-text drac-text-center drac-line-height drac-text-white\">\n    The quick vampire jumps over the lazy human\n  </p>\n  <p class=\"drac-text drac-text-right drac-line-height drac-text-white\">\n    The quick vampire jumps over the lazy human\n  </p>\n</div>\n",
+          "react": "<Box>\n  <Text align=\"left\" as=\"p\">\n    The quick vampire jumps over the lazy human\n  </Text>\n  <Text align=\"center\" as=\"p\">\n    The quick vampire jumps over the lazy human\n  </Text>\n  <Text align=\"right\" as=\"p\">\n    The quick vampire jumps over the lazy human\n  </Text>\n</Box>;\n",
+          "docs": "Text can be customized with different alignments.",
+          "screenshot": "./dsp/assets/TextAlign.png"
+        },
+        {
           "title": "Weights",
           "html": "<div class=\"drac-box\">\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-line-height drac-text-white\">normal</span>\n  </div>\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-text-semibold drac-line-height drac-text-white\"\n      >semibold</span\n    >\n  </div>\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-text-bold drac-line-height drac-text-white\"\n      >bold</span\n    >\n  </div>\n</div>\n",
           "react": "<Box>\n  <Box>\n    <Text weight=\"normal\">normal</Text>\n  </Box>\n  <Box>\n    <Text weight=\"semibold\">semibold</Text>\n  </Box>\n  <Box>\n    <Text weight=\"bold\">bold</Text>\n  </Box>\n</Box>;\n",
@@ -10448,11 +11281,30 @@
           "title": "Sizes",
           "html": "<div class=\"drac-box\">\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-text-xs drac-line-height drac-text-white\"\n      >xs</span\n    >\n  </div>\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-text-sm drac-line-height drac-text-white\"\n      >sm</span\n    >\n  </div>\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-line-height drac-text-white\">md</span>\n  </div>\n  <div class=\"drac-box\">\n    <span class=\"drac-text drac-text-lg drac-line-height drac-text-white\"\n      >lg</span\n    >\n  </div>\n</div>\n",
           "react": "<Box>\n  <Box>\n    <Text size=\"xs\">xs</Text>\n  </Box>\n  <Box>\n    <Text size=\"sm\">sm</Text>\n  </Box>\n  <Box>\n    <Text size=\"md\">md</Text>\n  </Box>\n  <Box>\n    <Text size=\"lg\">lg</Text>\n  </Box>\n</Box>;\n",
-          "docs": "Text can be customize to use several different sizes.",
+          "docs": "Text can be customized to use several different sizes.",
           "screenshot": "./dsp/assets/TextSizes.png"
         }
       ],
       "ext_com_draculaui_props": {
+        "align": {
+          "defaultValue": null,
+          "description": "Controls the alignment of text.",
+          "name": "align",
+          "parent": {
+            "fileName": "src/components/Text/Text.tsx",
+            "name": "TextProps"
+          },
+          "declarations": [
+            {
+              "fileName": "src/components/Text/Text.tsx",
+              "name": "TextProps"
+            }
+          ],
+          "required": false,
+          "type": {
+            "name": "\"left\" | \"center\" | \"right\" | \"justify\" | undefined"
+          }
+        },
         "size": {
           "defaultValue": null,
           "description": "Controls the size of the text based on pre-configured Dracula UI sizes.",
@@ -10526,7 +11378,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+            "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
           }
         },
         "as": {
@@ -10665,7 +11517,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         },
         "my": {
@@ -10680,7 +11532,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         },
         "mx": {
@@ -10695,7 +11547,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         },
         "mt": {
@@ -10710,7 +11562,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         },
         "mb": {
@@ -10725,7 +11577,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         },
         "ml": {
@@ -10740,7 +11592,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         },
         "mr": {
@@ -10755,7 +11607,7 @@
           ],
           "required": false,
           "type": {
-            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+            "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
           }
         }
       },
@@ -10765,6 +11617,25 @@
         "displayName": "Text",
         "methods": [],
         "props": {
+          "align": {
+            "defaultValue": null,
+            "description": "Controls the alignment of text.",
+            "name": "align",
+            "parent": {
+              "fileName": "src/components/Text/Text.tsx",
+              "name": "TextProps"
+            },
+            "declarations": [
+              {
+                "fileName": "src/components/Text/Text.tsx",
+                "name": "TextProps"
+              }
+            ],
+            "required": false,
+            "type": {
+              "name": "\"left\" | \"center\" | \"right\" | \"justify\" | undefined"
+            }
+          },
           "size": {
             "defaultValue": null,
             "description": "Controls the size of the text based on pre-configured Dracula UI sizes.",
@@ -10838,7 +11709,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"animated\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
+              "name": "\"purpleCyan\" | \"yellowPink\" | \"cyanGreen\" | \"pinkPurple\" | \"cyan\" | \"green\" | \"orange\" | \"pink\" | \"purple\" | \"red\" | \"yellow\" | \"white\" | \"black\" | \"blackSecondary\" | \"blackLight\" | undefined"
             }
           },
           "as": {
@@ -10977,7 +11848,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           },
           "my": {
@@ -10992,7 +11863,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           },
           "mx": {
@@ -11007,7 +11878,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           },
           "mt": {
@@ -11022,7 +11893,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           },
           "mb": {
@@ -11037,7 +11908,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           },
           "ml": {
@@ -11052,7 +11923,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           },
           "mr": {
@@ -11067,7 +11938,7 @@
             ],
             "required": false,
             "type": {
-              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | undefined"
+              "name": "\"md\" | \"lg\" | \"sm\" | \"xs\" | \"none\" | \"xxs\" | \"auto\" | undefined"
             }
           }
         }

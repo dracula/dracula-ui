@@ -2,7 +2,7 @@
 
 exports[`Site: Divider Basic Usage 1`] = `
 Object {
-  "docs": "Dividers are used to defined a thematic break in a page.",
+  "docs": "Dividers are used to define a thematic break in a page.",
   "html": "<hr class=\\"drac-divider\\" />
 ",
   "react": "<Divider />;

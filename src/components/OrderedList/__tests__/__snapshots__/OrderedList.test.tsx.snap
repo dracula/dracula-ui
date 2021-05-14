@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Site: OrderedList Basic Usage 1`] = `
+Object {
+  "docs": "Render an ordered list by default.",
+  "html": "<ol class=\\"drac-list drac-list-ordered\\">
+  <li class=\\"drac-text drac-text-white\\">Blade</li>
+  <li class=\\"drac-text drac-text-white\\">Buffy</li>
+  <li class=\\"drac-text drac-text-white\\">Morbius</li>
+</ol>
+",
+  "react": "<OrderedList>
+  <li className=\\"drac-text drac-text-white\\">Blade</li>
+  <li className=\\"drac-text drac-text-white\\">Buffy</li>
+  <li className=\\"drac-text drac-text-white\\">Morbius</li>
+</OrderedList>;
+",
+  "title": "Usage",
+}
+`;
+
+exports[`Site: OrderedList Colors 1`] = `
+Object {
+  "docs": "OrderedLists can be customized to use any of the Dracula UI theme colors.",
+  "html": "<ol class=\\"drac-list drac-list-ordered drac-list-cyan\\">
+  <li class=\\"drac-text drac-text-white\\">Blade</li>
+  <li class=\\"drac-text drac-text-white\\">Buffy</li>
+  <li class=\\"drac-text drac-text-white\\">Morbius</li>
+</ol>
+",
+  "react": "<OrderedList color=\\"cyan\\">
+  <li className=\\"drac-text drac-text-white\\">Blade</li>
+  <li className=\\"drac-text drac-text-white\\">Buffy</li>
+  <li className=\\"drac-text drac-text-white\\">Morbius</li>
+</OrderedList>;
+",
+  "title": "Colors",
+}
+`;

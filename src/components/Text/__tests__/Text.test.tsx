@@ -6,11 +6,7 @@ import { Text } from '@/components/Text/Text'
 
 docs(Text, {
   basic() {
-    return snapshot(
-      'Usage',
-      Usage,
-      'Show inline text within an interface.'
-    )
+    return snapshot('Usage', Usage, 'Show inline text within an interface.')
   },
   variations() {
     return [
@@ -20,6 +16,11 @@ docs(Text, {
         'Text can be customized to use any of the Dracula UI theme colors.'
       ),
       snapshot(
+        'Align',
+        Align,
+        'Text can be customized with different alignments.'
+      ),
+      snapshot(
         'Weights',
         Weights,
         'Text can be defined in different font weights.'
@@ -27,16 +28,14 @@ docs(Text, {
       snapshot(
         'Sizes',
         Sizes,
-        'Text can be customize to use several different sizes.'
+        'Text can be customized to use several different sizes.'
       )
     ]
   }
 })
 
 function Usage() {
-  return (
-    <Text>The quick vampire jumps over the lazy human</Text>
-  )
+  return <Text>The quick vampire jumps over the lazy human</Text>
 }
 
 function Colors() {
@@ -48,6 +47,22 @@ function Colors() {
       <Box>
         <Text color="green">green</Text>
       </Box>
+    </Box>
+  )
+}
+
+function Align() {
+  return (
+    <Box>
+      <Text align="left" as="p">
+        The quick vampire jumps over the lazy human
+      </Text>
+      <Text align="center" as="p">
+        The quick vampire jumps over the lazy human
+      </Text>
+      <Text align="right" as="p">
+        The quick vampire jumps over the lazy human
+      </Text>
     </Box>
   )
 }

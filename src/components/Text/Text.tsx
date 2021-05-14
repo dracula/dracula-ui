@@ -10,6 +10,13 @@ import {
   PaddingMixin
 } from '../../base/spacing'
 
+export const textAligns = {
+  left: 'drac-text-left',
+  center: 'drac-text-center',
+  right: 'drac-text-right',
+  justify: 'drac-text-justify'
+}
+
 export const textSizes = {
   md: 'drac-text',
   lg: 'drac-text-lg',
@@ -38,8 +45,13 @@ export const textColors = mapValues(colors, (className) => {
 /** Text Props */
 export interface TextProps
   extends HTMLAttributes<HTMLSpanElement>,
-  PaddingMixin,
-  MarginMixin {
+    PaddingMixin,
+    MarginMixin {
+  /**
+   * Controls the alignment of text.
+   */
+  align?: keyof typeof textAligns
+
   /**
    * Controls the size of the text based on pre-configured Dracula UI sizes.
    */
@@ -75,13 +87,14 @@ export interface TextProps
  * or UI patterns.
  */
 export const Text = (props: TextProps) => {
-  const { size, weight, lineHeight, as, color, ...htmlProps } = props
+  const { align, size, weight, lineHeight, as, color, ...htmlProps } = props
 
   const finalProps = {
     ...htmlProps,
     className: cx(
       `drac-text`,
       props.className,
+      align && textAligns[align],
       textSizes[size ?? 'md'],
       textWeights[weight ?? 'normal'],
       lineHeights[lineHeight ?? 'md'],

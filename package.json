@@ -1,6 +1,6 @@
 {
   "name": "@dracula/dracula-ui",
-  "version": "0.7.6",
+  "version": "0.7.9",
   "main": "index.js",
   "style": "./styles/dracula-ui.css",
   "typings": "index.d.ts",
@@ -66,7 +66,7 @@
     "postcss-import": "^14.0.0",
     "postcss-prefixer": "^2.1.2",
     "prettier": "^2.1.1",
-    "puppeteer": "^8.0.0",
+    "puppeteer": "^9.1.0",
     "react": "^17.0.1",
     "react-docgen-typescript-loader": "^3.7.2",
     "react-dom": "^17.0.1",

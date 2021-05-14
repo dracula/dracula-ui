@@ -7,7 +7,6 @@
   border: 0.3rem solid transparent;
   transition: 0.3s ease-in-out all;
   -webkit-appearance: textfield;
-  border-color: var(--accentColor);
 }
 
 .input:focus {

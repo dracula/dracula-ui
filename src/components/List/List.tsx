@@ -1,5 +1,5 @@
 import cx from 'classnames/dedupe'
-import React, { LiHTMLAttributes } from 'react'
+import React, { HTMLAttributes } from 'react'
 import { ColorMap } from '../../base/colors'
 import {
   cleanProps,
@@ -30,25 +30,29 @@ export const listVariants = {
  * List Props
  */
 export interface ListProps
-  extends LiHTMLAttributes<HTMLOListElement>,
+  extends HTMLAttributes<HTMLUListElement>,
     PaddingMixin,
     MarginMixin {
   /** The Dracula UI color for the List. */
   color?: keyof typeof listColors
-
   /**
    * The variation to be used for the List element.
    * `unordered` -> Display list in dashes as an `<ul>`
-   * `ordered` -> Display list in numbers as an `<ol>`
+   * `ordered` -> Deprecated and moved to OrderedList
    */
   variant?: keyof typeof listVariants
 }
 
 /**
- * Lists are used to display list items in an ordered or unordered way.
+ * Lists are used to display list items in an unordered way.
  */
 export const List: React.FC<ListProps> = (props: ListProps) => {
   const { color, variant, ...htmlProps } = props
+
+  if (variant === 'ordered')
+    throw new Error(
+      'the `ordered` prop has been deprecated. Please use the OrderedList component.'
+    )
 
   const finalProps = cleanProps({
     ...htmlProps,
@@ -62,11 +66,7 @@ export const List: React.FC<ListProps> = (props: ListProps) => {
     )
   })
 
-  if (variant === 'unordered') {
-    return <ul {...finalProps} />
-  }
-
-  return <ol {...finalProps} />
+  return <ul {...finalProps} />
 }
 
 List.displayName = 'List'

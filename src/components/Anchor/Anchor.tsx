@@ -43,6 +43,11 @@ export interface AnchorProps
    * Controls the color of the link on hover
    */
   hoverColor?: keyof typeof hoverColors
+
+  /**
+   * Whether or not to apply external link props such as `target="_blank"` and `rel="noopener noreferrer"`
+   */
+  isExternal?: boolean
 }
 
 /**
@@ -55,7 +60,7 @@ export interface AnchorProps
  */
 export const Anchor = React.forwardRef<HTMLAnchorElement, AnchorProps>(
   (props, ref) => {
-    const { size, weight, color, hoverColor, ...htmlProps } = props
+    const { size, weight, color, hoverColor, isExternal, ...htmlProps } = props
 
     const finalProps = cleanProps({
       ...htmlProps,
@@ -73,7 +78,12 @@ export const Anchor = React.forwardRef<HTMLAnchorElement, AnchorProps>(
     })
 
     return (
-      <a ref={ref} {...finalProps}>
+      <a
+        ref={ref}
+        target={isExternal ? '_blank' : undefined}
+        rel={isExternal ? 'noopener noreferrer' : undefined}
+        {...finalProps}
+      >
         {props.children}
       </a>
     )

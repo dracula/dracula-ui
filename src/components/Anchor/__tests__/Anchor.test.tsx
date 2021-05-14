@@ -29,22 +29,31 @@ docs(Anchor, {
         Sizes,
         'Anchors can be customize to use several different sizes.'
       ),
+      snapshot(
+        'External',
+        External,
+        'The isExternal prop can be used to apply external link props such as target="_blank"'
+      )
     ]
   }
 })
 
 function Usage() {
-  return (
-    <Anchor href="#">Visit the Dracula Castle</Anchor>
-  )
+  return <Anchor href="#">Visit the Dracula Castle</Anchor>
 }
 
 function Weights() {
   return (
     <Box style={{ display: 'flex', flexDirection: 'column' }}>
-      <Anchor href="#" weight="normal" mb="sm">normal</Anchor>
-      <Anchor href="#" weight="semibold" mb="sm">semibold</Anchor>
-      <Anchor href="#" weight="bold" mb="sm">bold</Anchor>
+      <Anchor href="#" weight="normal" mb="sm">
+        normal
+      </Anchor>
+      <Anchor href="#" weight="semibold" mb="sm">
+        semibold
+      </Anchor>
+      <Anchor href="#" weight="bold" mb="sm">
+        bold
+      </Anchor>
     </Box>
   )
 }
@@ -52,10 +61,18 @@ function Weights() {
 function Sizes() {
   return (
     <Box style={{ display: 'flex', flexDirection: 'column' }}>
-      <Anchor href="#" size="xs" mb="sm">xs</Anchor>
-      <Anchor href="#" size="sm" mb="sm">sm</Anchor>
-      <Anchor href="#" size="md" mb="sm">md</Anchor>
-      <Anchor href="#" size="lg" mb="sm">lg</Anchor>
+      <Anchor href="#" size="xs" mb="sm">
+        xs
+      </Anchor>
+      <Anchor href="#" size="sm" mb="sm">
+        sm
+      </Anchor>
+      <Anchor href="#" size="md" mb="sm">
+        md
+      </Anchor>
+      <Anchor href="#" size="lg" mb="sm">
+        lg
+      </Anchor>
     </Box>
   )
 }
@@ -73,3 +90,12 @@ function Colors() {
     </div>
   )
 }
+
+function External() {
+  return (
+    <Anchor href="https://www.google.com/search?q=count+dracula" isExternal>
+      Find Dracula on Google
+    </Anchor>
+  )
+}
+

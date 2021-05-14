@@ -2,6 +2,7 @@ import cx from 'classnames/dedupe'
 import React from 'react'
 import { cleanProps, marginMixin, paddingMixin } from '../../base/spacing'
 import {
+  textAligns,
   textColors,
   TextProps,
   textSizes,
@@ -16,7 +17,7 @@ import {
  * Paragraph accepts all the same customization options as Text.
  */
 export const Paragraph: React.FC<TextProps> = (props: TextProps) => {
-  const { size, weight, lineHeight, color, ...htmlProps } = props
+  const { align, size, weight, lineHeight, color, ...htmlProps } = props
 
   const finalProps = {
     ...htmlProps,
@@ -24,6 +25,7 @@ export const Paragraph: React.FC<TextProps> = (props: TextProps) => {
     className: cx(
       `drac-text`,
       props.className,
+      align && textAligns[align],
       textSizes[size ?? 'md'],
       textWeights[weight ?? 'normal'],
       lineHeights[lineHeight ?? 'md'],
