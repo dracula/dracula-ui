@@ -3,11 +3,13 @@
 exports[`Site: Avatar Basic Usage 1`] = `
 Object {
   "docs": "The most basic instance of an Avatar requires a src image and a title to be used for accessibility or as a fallback in case the image can't be loaded.",
-  "html": "<span
-  class=\\"drac-avatar drac-bg-green-transparent drac-text-green\\"
-  style=\\"
-    background-image: url(https://ui.draculatheme.com/static/images/avatar.png);
-  \\"
+  "html": "<span class=\\"drac-avatar drac-bg-green-transparent drac-text-green\\"
+  ><span
+    class=\\"drac-avatar-background\\"
+    style=\\"
+      background-image: url(https://ui.draculatheme.com/static/images/avatar.png);
+    \\"
+  ></span
 ></span>
 ",
   "react": "<Avatar
@@ -25,15 +27,20 @@ Object {
   "html": "<div>
   <span
     class=\\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-lg-stroke drac-mb-sm\\"
-    style=\\"
-      background-image: url(https://ui.draculatheme.com/static/images/avatar.png);
-    \\"
-  ></span
+    ><span
+      class=\\"drac-avatar-background\\"
+      style=\\"
+        background-image: url(https://ui.draculatheme.com/static/images/avatar.png);
+      \\"
+    ></span></span
   ><span
     class=\\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-no-border\\"
-    style=\\"
-      background-image: url(https://ui.draculatheme.com/static/images/avatar.png);
-    \\"
+    ><span
+      class=\\"drac-avatar-background\\"
+      style=\\"
+        background-image: url(https://ui.draculatheme.com/static/images/avatar.png);
+      \\"
+    ></span
   ></span>
 </div>
 ",
@@ -58,11 +65,13 @@ Object {
 exports[`Site: Avatar Colors 1`] = `
 Object {
   "docs": "The Avatar component accepts a *color* param that allows for customizing the background and accent color for an Avatar.",
-  "html": "<span
-  class=\\"drac-avatar drac-bg-cyan-transparent drac-text-cyan\\"
-  style=\\"
-    background-image: url(https://ui.draculatheme.com/static/images/avatar.png);
-  \\"
+  "html": "<span class=\\"drac-avatar drac-bg-cyan-transparent drac-text-cyan\\"
+  ><span
+    class=\\"drac-avatar-background\\"
+    style=\\"
+      background-image: url(https://ui.draculatheme.com/static/images/avatar.png);
+    \\"
+  ></span
 ></span>
 ",
   "react": "<Avatar
@@ -79,17 +88,21 @@ exports[`Site: Avatar Variants 1`] = `
 Object {
   "docs": "Avatars accept multiple variants, which can be used to render a more subtle variation of the Avatar component.",
   "html": "<div>
-  <span
-    class=\\"drac-avatar drac-bg-green-transparent drac-text-green drac-mb-sm\\"
-    style=\\"
-      background-image: url(https://ui.draculatheme.com/static/images/avatar.png);
-    \\"
-  ></span
+  <span class=\\"drac-avatar drac-bg-green-transparent drac-text-green drac-mb-sm\\"
+    ><span
+      class=\\"drac-avatar-background\\"
+      style=\\"
+        background-image: url(https://ui.draculatheme.com/static/images/avatar.png);
+      \\"
+    ></span></span
   ><span
     class=\\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-subtle\\"
-    style=\\"
-      background-image: url(https://ui.draculatheme.com/static/images/avatar.png);
-    \\"
+    ><span
+      class=\\"drac-avatar-background\\"
+      style=\\"
+        background-image: url(https://ui.draculatheme.com/static/images/avatar.png);
+      \\"
+    ></span
   ></span>
 </div>
 ",

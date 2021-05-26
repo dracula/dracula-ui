@@ -42,6 +42,24 @@
     {
       "class": "component",
       "type": "page",
+      "id": ".drac-avatar-background",
+      "name": ".drac-avatar-background",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-avatar-background",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-avatar-background",
+        "languages": {
+          "css": "drac-avatar-background"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
       "id": ".drac-avatar-lg-stroke",
       "name": ".drac-avatar-lg-stroke",
       "last_updated_by": "System",
