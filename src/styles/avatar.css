@@ -17,10 +17,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
+.avatar-background {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  box-sizing: border-box;
+  border-radius: var(--rounded-full);
+
+  display: 'inline-block';
+  height: 100%;
+  width: 100%;
 }
 
 .avatar-lg-stroke {
