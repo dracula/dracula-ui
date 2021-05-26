@@ -88,12 +88,16 @@ export const Avatar = (props: AvatarProps) => {
     ...props.style
   }
 
-  if (props.src) {
-    style.backgroundImage = `url('${props.src}')`
-  }
-
   return (
     <span className={classes} style={style} {...cleanProps(htmlProps)}>
+      {props.src && (
+        <span
+          className={cx('drac-avatar-background')}
+          style={{
+            backgroundImage: `url('${props.src}')`
+          }}
+        />
+      )}
       {!props.src && (
         <Text color={props.color ?? 'white'}>
           {f}
