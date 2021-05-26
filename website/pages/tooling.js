@@ -1,5 +1,5 @@
 import React from "react"
-import { Anchor, Box, Heading, List, Paragraph } from "@dracula/dracula-ui"
+import { Anchor, Box, Heading, OrderedList, Paragraph } from "@dracula/dracula-ui"
 import styles from "./index.module.css"
 import Docs from "../layouts/Docs"
 
@@ -51,7 +51,7 @@ class Tooling extends React.Component {
             If you want to see the Dracula UI documentation inside
             Visual Studio Code, follow these steps:
           </Paragraph>
-          <List color="white" variant="ordered">
+          <OrderedList color="white">
             <li className="drac-text drac-text-white">
               Install the{" "}
               <Anchor
@@ -75,7 +75,7 @@ class Tooling extends React.Component {
             <li className="drac-text drac-text-white">
               Now you should see the documentation
             </li>
-          </List>
+          </OrderedList>
         </Box>
         <Box my="lg">
           <Heading as="h2" size="xl">Autocomplete</Heading>
