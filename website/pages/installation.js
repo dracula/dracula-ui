@@ -36,6 +36,7 @@ class Installation extends React.Component {
             Now, create a <code>.npmrc</code> file in the root of your project and include the following lines, replacing <code>TOKEN</code> with your Personal Access Token.
           </Paragraph>
           <CodeHighlight
+            language="plain"
             code={`registry=https://registry.npmjs.org/
 @dracula:registry=https://npm.pkg.github.com/
 //npm.pkg.github.com/:_authToken=TOKEN`}

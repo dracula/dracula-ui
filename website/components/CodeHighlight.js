@@ -17,6 +17,10 @@ class CodeHighlight extends Component {
   }
 
   onCopy = () => {
+    const { code, language } = this.props
+
+    analytics.track('Copied to Clipboard', { code, language })
+
     this.setState(
       {
         copyText: 'copied!'
@@ -50,7 +54,7 @@ class CodeHighlight extends Component {
                   style={{ visibility }}
                   aria-label="Copy to clipboard"
                   data-clipboard-text={this.props.code}
-                  onClick={this.onCopy}
+                  onClick={this.onCopy.bind(this)}
                 >
                   {this.state.copyText}
                 </Button>
