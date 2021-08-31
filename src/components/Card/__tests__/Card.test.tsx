@@ -28,7 +28,7 @@ docs(Card, {
     snapshot(
       'Spacing',
       Spacing,
-      'Cards come with pre defined spacing primitives for padding and margin that allow for customizing the spacing inside and around Cardes.'
+      'Cards come with pre defined spacing primitives for padding and margin that allow for customizing the spacing inside and around Cards.'
     )
   ]
 })
