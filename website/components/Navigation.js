@@ -30,10 +30,6 @@ const items = [
     title: 'Components',
     pages
   },
-  {
-    title: 'Patterns (Coming Soon)',
-    pages: ['Blog', 'Form', 'Login', 'Homepage', 'Pricing', '& many more...']
-  }
 ]
 
 class Navigation extends Component {
