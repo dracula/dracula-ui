@@ -1,4 +1,4 @@
-import puppeteer from 'puppeteer'
+import { Browser } from "puppeteer"
 import { ComponentExample, SnapshotBuilder } from '../render-component'
 
 // @ts-ignore
@@ -8,7 +8,7 @@ import fs from 'fs-extra'
 import { pretty } from '../pretty'
 
 export async function componentScreenshot(
-  browser: puppeteer.Browser,
+  browser: Browser,
   snapshot: ComponentExample,
   variation: SnapshotBuilder | null,
   name: string
