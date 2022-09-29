@@ -1,5 +1,5 @@
 import React from "react"
-import { Box, Heading, Paragraph } from "@dracula/dracula-ui"
+import { Box, Heading, Paragraph } from "dracula-ui"
 import CodeHighlight from "../components/CodeHighlight"
 import Docs from "../layouts/Docs"
 
@@ -44,7 +44,7 @@ class Migration extends React.Component {
         <Box my="lg">
           <Heading size="heading-2">2. Update package.json</Heading>
           <Paragraph>
-            Update your local package.json file to use the new package name which is <Box as="code" className="drac-text-pink">dracula-ui</Box> instead of <Box as="code" className="drac-text-pink">@dracula/dracula-ui</Box>.
+            Update your local package.json file to use the new package name which is <Box as="code" className="drac-text-pink">dracula-ui</Box> instead of <Box as="code" className="drac-text-pink">dracula-ui</Box>.
           </Paragraph>
           <Paragraph>
             You'll also have to bump the version to <Box as="code" className="drac-text-pink">1.0.0</Box> which only contains the package rename and no breaking changes.

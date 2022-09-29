@@ -1,5 +1,5 @@
 import React from 'react'
-import { Anchor, Box, Text } from '@dracula/dracula-ui'
+import { Anchor, Box, Text } from 'dracula-ui'
 
 export function DocsOverview({ sections, showProperties }) {
   return (

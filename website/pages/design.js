@@ -1,5 +1,5 @@
 import React from "react"
-import { Anchor, Box, Heading, Paragraph } from "@dracula/dracula-ui"
+import { Anchor, Box, Heading, Paragraph } from "dracula-ui"
 import styles from "./index.module.css"
 import Docs from "../layouts/Docs"
 

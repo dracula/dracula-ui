@@ -1,4 +1,4 @@
-import * as Dracula from '@dracula/dracula-ui'
+import * as Dracula from 'dracula-ui'
 import { difference } from 'lodash'
 
 const componentNames = Object.keys(Dracula)

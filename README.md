@@ -19,9 +19,9 @@ You can access the documentation at: [ui.draculatheme.com](https://ui.draculathe
 You can install Dracula UI via npm or yarn.
 
 ```bash
-npm install @dracula/dracula-ui
+npm install dracula-ui
 
-yarn add @dracula/dracula-ui
+yarn add dracula-ui
 ```
 
 ## :zap: Using with HTML
@@ -31,7 +31,7 @@ You can use Dracula UI with plain HTML by importing the CSS file.
 ```html
 <link
   rel="stylesheet"
-  href="node_modules/@dracula/dracula-ui/styles/dracula-ui.css"
+  href="node_modules/dracula-ui/styles/dracula-ui.css"
 />
 ```
 
@@ -48,8 +48,8 @@ Now you can take advantage of all the classes, for example:
 You can also use Dracula UI with React by importing the JS package.
 
 ```js
-import '@dracula/dracula-ui/styles/dracula-ui.css'
-import { Paragraph } from '@dracula/dracula-ui'
+import 'dracula-ui/styles/dracula-ui.css'
+import { Paragraph } from 'dracula-ui'
 
 function App() {
   return <Paragraph color="black">Hello Vampire</Paragraph>
@@ -67,7 +67,7 @@ First, you need to import the CSS globally.
 Go to `pages/_app.js` (or create this file if it doesn't exist yet) and add the CSS import:
 
 ```jsx
-import '@dracula/dracula-ui/styles/dracula-ui.css'
+import 'dracula-ui/styles/dracula-ui.css'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
@@ -79,7 +79,7 @@ export default MyApp
 Then you can import Dracula UI and use all React components.
 
 ```jsx
-import { Paragraph } from '@dracula/dracula-ui'
+import { Paragraph } from 'dracula-ui'
 
 export default function Index() {
   return <Paragraph color="black">Hello Vampire</Paragraph>
@@ -102,7 +102,7 @@ Create a Sass file at `assets/css/styles.scss` with the following content:
 ```scss
 ---
 ---
-@import "../../node_modules/@dracula/dracula-ui/styles/dracula-ui.css"
+@import "../../node_modules/dracula-ui/styles/dracula-ui.css"
 ```
 
 The empty front matter at the top tells Jekyll it needs to process the Dracula UI file.

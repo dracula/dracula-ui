@@ -39,7 +39,7 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@dracula/dracula-ui@file:../dist":
+"dracula-ui@file:../dist":
   version "0.7.9"
   dependencies:
     classnames "^2.2.6"

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Anchor, Box, Heading, Paragraph } from '@dracula/dracula-ui'
+import { Anchor, Box, Heading, Paragraph } from 'dracula-ui'
 import { DocsOverview } from '../components/DocsOverview'
 import PropsTable from '../components/PropsTable'
 import Tabs from '../components/Tabs'

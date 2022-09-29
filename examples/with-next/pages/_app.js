@@ -1,4 +1,4 @@
-import '@dracula/dracula-ui/styles/dracula-ui.css'
+import 'dracula-ui/styles/dracula-ui.css'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />

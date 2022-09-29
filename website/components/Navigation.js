@@ -1,7 +1,7 @@
-import { Anchor, Box, List, Text } from '@dracula/dracula-ui'
+import { Anchor, Box, List, Text } from 'dracula-ui'
 import { Component } from 'react'
 import Link from 'next/link'
-import dspComponents from '@dracula/dracula-ui/dsp/data/components.json'
+import dspComponents from 'dracula-ui/dsp/data/components.json'
 import styles from './Navigation.module.css'
 import Topbar from './Topbar'
 

@@ -11,7 +11,7 @@ import {
   Table,
   Text,
   textColors
-} from "@dracula/dracula-ui"
+} from "dracula-ui"
 import styles from "./index.module.css"
 import Docs from "../layouts/Docs"
 

@@ -1,5 +1,5 @@
 import React from "react"
-import { Anchor, Box, Heading, Paragraph } from "@dracula/dracula-ui"
+import { Anchor, Box, Heading, Paragraph } from "dracula-ui"
 import CodeHighlight from "../components/CodeHighlight"
 import styles from "./index.module.css"
 import Docs from "../layouts/Docs"
@@ -27,9 +27,9 @@ class Installation extends React.Component {
           </Paragraph>
           <CodeHighlight
             language="bash"
-            code={`npm install @dracula/dracula-ui
+            code={`npm install dracula-ui
 
-yarn add @dracula/dracula-ui`}
+yarn add dracula-ui`}
           />
         </Box>
         <Box my="lg">
@@ -40,7 +40,7 @@ yarn add @dracula/dracula-ui`}
           </Paragraph>
           <CodeHighlight
             language="html"
-            code={`<link rel="stylesheet" href="node_modules/@dracula/dracula-ui/styles/dracula-ui.css" />`}
+            code={`<link rel="stylesheet" href="node_modules/dracula-ui/styles/dracula-ui.css" />`}
           />
           <Paragraph>
             Now you can take advantage of all the classes, for example:
@@ -61,8 +61,8 @@ yarn add @dracula/dracula-ui`}
           </Paragraph>
           <CodeHighlight
             language="jsx"
-            code={`import '@dracula/dracula-ui/styles/dracula-ui.css'
-import { Paragraph } from '@dracula/dracula-ui'
+            code={`import 'dracula-ui/styles/dracula-ui.css'
+import { Paragraph } from 'dracula-ui'
 
 function App() {
   return <Paragraph color="black">Hello Vampire</Paragraph>
@@ -86,7 +86,7 @@ export default App;
           </Paragraph>
           <CodeHighlight
             language="jsx"
-            code={`import '@dracula/dracula-ui/styles/dracula-ui.css'
+            code={`import 'dracula-ui/styles/dracula-ui.css'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
@@ -101,7 +101,7 @@ export default MyApp`}
           <CodeHighlight
             language="jsx"
             code={`import { Component } from 'react'
-import { Paragraph } from '@dracula/dracula-ui'
+import { Paragraph } from 'dracula-ui'
 
 class Index extends Component {
   render() {
@@ -132,7 +132,7 @@ export default Index`}
             language="scss"
             code={`---
 ---
-@import "../../node_modules/@dracula/dracula-ui/styles/dracula-ui.css"`}
+@import "../../node_modules/dracula-ui/styles/dracula-ui.css"`}
           />
           <Paragraph>
             The empty front matter at the top tells Jekyll it needs to process the Dracula UI file.

@@ -2,6 +2,6 @@
   "name": "with-bootstrap",
   "private": true,
   "dependencies": {
-    "@dracula/dracula-ui": "*"
+    "dracula-ui": "*"
   }
 }

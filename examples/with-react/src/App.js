@@ -1,5 +1,5 @@
-import '@dracula/dracula-ui/styles/dracula-ui.css'
-import { Paragraph } from '@dracula/dracula-ui'
+import 'dracula-ui/styles/dracula-ui.css'
+import { Paragraph } from 'dracula-ui'
 
 function App() {
   return <Paragraph color="black">Hello Vampire</Paragraph>

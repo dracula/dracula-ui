@@ -1,7 +1,7 @@
 import { Component } from "react"
 import styles from "./Tabs.module.css"
 import CodeHighlight from "./CodeHighlight"
-import { Box, Tabs } from "@dracula/dracula-ui"
+import { Box, Tabs } from "dracula-ui"
 
 class DocsTabs extends Component {
   constructor(props) {

@@ -1,5 +1,5 @@
 import { Component } from "react"
-import { Box } from "@dracula/dracula-ui"
+import { Box } from "dracula-ui"
 import styles from "./Search.module.css"
 
 class Search extends Component {

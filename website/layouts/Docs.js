@@ -1,6 +1,6 @@
 import { Component } from 'react'
 import Head from 'next/head'
-import { Box, Heading, Paragraph } from '@dracula/dracula-ui'
+import { Box, Heading, Paragraph } from 'dracula-ui'
 import Navigation from '../components/Navigation'
 import styles from '../pages/index.module.css'
 

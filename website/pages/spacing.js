@@ -6,7 +6,7 @@ import {
   spacingUtilities,
   Table,
   Text
-} from "@dracula/dracula-ui"
+} from "dracula-ui"
 import Tabs from "../components/Tabs"
 import styles from "./index.module.css"
 import Docs from "../layouts/Docs"

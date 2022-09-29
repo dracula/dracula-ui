@@ -6,8 +6,8 @@ import {
   spacingUtilities,
   Table,
   Text
-} from '@dracula/dracula-ui'
-import classes from '@dracula/dracula-ui/dsp/data/css.json'
+} from 'dracula-ui'
+import classes from 'dracula-ui/dsp/data/css.json'
 import { groupBy } from 'lodash'
 import React from 'react'
 import { DocsOverview } from '../components/DocsOverview'

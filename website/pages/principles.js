@@ -1,5 +1,5 @@
 import React from "react"
-import { Box, Heading, Paragraph } from "@dracula/dracula-ui"
+import { Box, Heading, Paragraph } from "dracula-ui"
 import Docs from "../layouts/Docs"
 
 export async function getStaticProps() {
