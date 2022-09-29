@@ -28,7 +28,7 @@
     "singleQuote": true,
     "trailingComma": "none"
   },
-  "license": "SEE LICENSE IN LICENSE.md",
+  "license": "MIT",
   "author": "Netto Farah & Zeno Rocha",
   "module": "dracula-ui.esm.js",
   "devDependencies": {

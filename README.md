@@ -2,11 +2,7 @@
 
 > A dark-first collection of UI patterns and components.
 
-![Dracula UI](https://user-images.githubusercontent.com/398893/111241824-24571f00-85bb-11eb-86fc-15836ac703c6.png)
-
-## :tada: Early Access Program
-
-[Welcome / GitHub Discussion](https://github.com/dracula/dracula-ui/discussions/17)
+![Dracula UI](https://ui.draculatheme.com/static/og.jpg)
 
 ## :thinking: Why
 
@@ -126,3 +122,7 @@ You can suggest new ideas using [GitHub Discussions](https://github.com/dracula/
 ## :wave: Questions
 
 If you find a problem, feel free to open new [GitHub Issues](https://github.com/dracula/dracula-ui/issues).
+
+### :pencil2: License
+
+[MIT License](https://zenorocha.mit-license.org/) © Zeno Rocha
