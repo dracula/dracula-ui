@@ -17,7 +17,8 @@
     "test": "jest",
     "docs": "RECORDING=true yarn test -u && node ./dsp/update.js && cp -r dsp ./dist",
     "lint": "echo Linting",
-    "release": "./scripts/release.sh && ./scripts/deploy.sh"
+    "release": "./scripts/release.sh",
+    "deploy": "./scripts/deploy.sh"
   },
   "peerDependencies": {
     "react": ">=16"

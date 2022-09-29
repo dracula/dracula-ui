@@ -16,3 +16,4 @@ package-lock.json
 /website/package-lock.json
 
 /dracula-ui.code-workspace
+.vercel
