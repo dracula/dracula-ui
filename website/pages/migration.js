@@ -58,6 +58,16 @@ class Migration extends React.Component {
 }`}
           />
         </Box>
+        <Box my="lg">
+          <Heading size="heading-2">3. Rename imports</Heading>
+          <Paragraph>
+            Find and replace all instances of <Box as="code" className="drac-text-pink">@dracula/dracula-ui</Box> with <Box as="code" className="drac-text-pink">dracula-ui</Box>.
+          </Paragraph>
+          <CodeHighlight
+            language="js"
+            code={`import { Text } from 'dracula-ui'`}
+          />
+        </Box>
       </Box>
     )
   }
