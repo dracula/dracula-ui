@@ -50,7 +50,7 @@ yarn add dracula-ui`}
             code={`<p class="drac-text drac-text-black">Hello Vampire</p>`}
           />
           <Paragraph>
-            <Anchor href="https://github.com/dracula/dracula-ui/tree/master/examples/with-html">See full example</Anchor>
+            <Anchor href="https://github.com/dracula/dracula-ui/tree/main/examples/with-html">See full example</Anchor>
           </Paragraph>
         </Box>
         <Box my="lg">
@@ -72,7 +72,7 @@ export default App;
 `}
           />
           <Paragraph>
-            <Anchor href="https://github.com/dracula/dracula-ui/tree/master/examples/with-react">See full example</Anchor>
+            <Anchor href="https://github.com/dracula/dracula-ui/tree/main/examples/with-react">See full example</Anchor>
           </Paragraph>
         </Box>
         <Box my="lg">
@@ -112,7 +112,7 @@ class Index extends Component {
 export default Index`}
           />
           <Paragraph>
-            <Anchor href="https://github.com/dracula/dracula-ui/tree/master/examples/with-next">See full example</Anchor>
+            <Anchor href="https://github.com/dracula/dracula-ui/tree/main/examples/with-next">See full example</Anchor>
           </Paragraph>
         </Box>
         <Box my="lg">
@@ -145,7 +145,7 @@ export default Index`}
             code={`<link rel="stylesheet" href="/assets/css/styles.css">`}
           />
           <Paragraph>
-            <Anchor href="https://github.com/dracula/dracula-ui/tree/master/examples/with-jekyll">See full example</Anchor>
+            <Anchor href="https://github.com/dracula/dracula-ui/tree/main/examples/with-jekyll">See full example</Anchor>
           </Paragraph>
         </Box>
       </Box>

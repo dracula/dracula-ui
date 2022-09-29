@@ -45,8 +45,8 @@ class Welcome extends React.Component {
           <List variant="unordered" color="white" p="none" mb="sm">
             <li><Anchor href="https://github.com/dracula/dracula-ui">GitHub</Anchor></li>
             <li><Anchor href="https://discord.gg/vyA9AdqdbK">Discord</Anchor></li>
-            <li><Anchor href="https://github.com/dracula/dracula-ui/tree/master/design">Figma</Anchor></li>
-            <li><Anchor href="https://github.com/dracula/dracula-ui/blob/master/LICENSE.md">License</Anchor></li>
+            <li><Anchor href="https://github.com/dracula/dracula-ui/tree/main/design">Figma</Anchor></li>
+            <li><Anchor href="https://github.com/dracula/dracula-ui/blob/main/LICENSE">License</Anchor></li>
           </List>
 
           <List variant="unordered" color="white" p="none">
