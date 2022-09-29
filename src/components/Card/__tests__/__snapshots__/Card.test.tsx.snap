@@ -32,7 +32,7 @@ Object {
 
 exports[`Site: Card Spacing 1`] = `
 Object {
-  "docs": "Cards come with pre defined spacing primitives for padding and margin that allow for customizing the spacing inside and around Cardes.",
+  "docs": "Cards come with pre defined spacing primitives for padding and margin that allow for customizing the spacing inside and around Cards.",
   "html": "<div>
   <div class=\\"drac-box drac-card drac-bg-yellow-pink drac-p-xs\\">
     <span class=\\"drac-text drac-line-height drac-text-black\\">xs padding</span>

@@ -732,34 +732,34 @@
         "trigger": "avatar",
         "languages": {
           "javascriptreact": "<Avatar\n  title=\"Count Dracula\"\n  src=\"https://ui.draculatheme.com/static/images/avatar.png\"\n/>;\n",
-          "html": "<span\n  class=\"drac-avatar drac-bg-green-transparent drac-text-green\"\n  style=\"\n    background-image: url(https://ui.draculatheme.com/static/images/avatar.png);\n  \"\n></span>\n"
+          "html": "<span class=\"drac-avatar drac-bg-green-transparent drac-text-green\"\n  ><span\n    class=\"drac-avatar-background\"\n    style=\"\n      background-image: url(https://ui.draculatheme.com/static/images/avatar.png);\n    \"\n  ></span\n></span>\n"
         }
       },
       "ext_com_draculaui_variations": [
         {
           "title": "Usage",
-          "html": "<span\n  class=\"drac-avatar drac-bg-green-transparent drac-text-green\"\n  style=\"\n    background-image: url(https://ui.draculatheme.com/static/images/avatar.png);\n  \"\n></span>\n",
+          "html": "<span class=\"drac-avatar drac-bg-green-transparent drac-text-green\"\n  ><span\n    class=\"drac-avatar-background\"\n    style=\"\n      background-image: url(https://ui.draculatheme.com/static/images/avatar.png);\n    \"\n  ></span\n></span>\n",
           "react": "<Avatar\n  title=\"Count Dracula\"\n  src=\"https://ui.draculatheme.com/static/images/avatar.png\"\n/>;\n",
           "docs": "The most basic instance of an Avatar requires a src image and a title to be used for accessibility or as a fallback in case the image can't be loaded.",
           "screenshot": "./dsp/assets/Avatar.png"
         },
         {
           "title": "Colors",
-          "html": "<span\n  class=\"drac-avatar drac-bg-cyan-transparent drac-text-cyan\"\n  style=\"\n    background-image: url(https://ui.draculatheme.com/static/images/avatar.png);\n  \"\n></span>\n",
+          "html": "<span class=\"drac-avatar drac-bg-cyan-transparent drac-text-cyan\"\n  ><span\n    class=\"drac-avatar-background\"\n    style=\"\n      background-image: url(https://ui.draculatheme.com/static/images/avatar.png);\n    \"\n  ></span\n></span>\n",
           "react": "<Avatar\n  src=\"https://ui.draculatheme.com/static/images/avatar.png\"\n  title=\"Count Dracula\"\n  color=\"cyan\"\n/>;\n",
           "docs": "The Avatar component accepts a *color* param that allows for customizing the background and accent color for an Avatar.",
           "screenshot": "./dsp/assets/AvatarColors.png"
         },
         {
           "title": "Variants",
-          "html": "<div>\n  <span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-mb-sm\"\n    style=\"\n      background-image: url(https://ui.draculatheme.com/static/images/avatar.png);\n    \"\n  ></span\n  ><span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-subtle\"\n    style=\"\n      background-image: url(https://ui.draculatheme.com/static/images/avatar.png);\n    \"\n  ></span>\n</div>\n",
+          "html": "<div>\n  <span class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-mb-sm\"\n    ><span\n      class=\"drac-avatar-background\"\n      style=\"\n        background-image: url(https://ui.draculatheme.com/static/images/avatar.png);\n      \"\n    ></span></span\n  ><span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-subtle\"\n    ><span\n      class=\"drac-avatar-background\"\n      style=\"\n        background-image: url(https://ui.draculatheme.com/static/images/avatar.png);\n      \"\n    ></span\n  ></span>\n</div>\n",
           "react": "<div>\n  <Avatar\n    src=\"https://ui.draculatheme.com/static/images/avatar.png\"\n    title=\"Count Dracula\"\n    variant=\"normal\"\n    mb=\"sm\"\n  />\n  <Avatar\n    src=\"https://ui.draculatheme.com/static/images/avatar.png\"\n    title=\"Count Dracula\"\n    variant=\"subtle\"\n  />\n</div>;\n",
           "docs": "Avatars accept multiple variants, which can be used to render a more subtle variation of the Avatar component.",
           "screenshot": "./dsp/assets/AvatarVariants.png"
         },
         {
           "title": "Borders",
-          "html": "<div>\n  <span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-lg-stroke drac-mb-sm\"\n    style=\"\n      background-image: url(https://ui.draculatheme.com/static/images/avatar.png);\n    \"\n  ></span\n  ><span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-no-border\"\n    style=\"\n      background-image: url(https://ui.draculatheme.com/static/images/avatar.png);\n    \"\n  ></span>\n</div>\n",
+          "html": "<div>\n  <span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-lg-stroke drac-mb-sm\"\n    ><span\n      class=\"drac-avatar-background\"\n      style=\"\n        background-image: url(https://ui.draculatheme.com/static/images/avatar.png);\n      \"\n    ></span></span\n  ><span\n    class=\"drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-no-border\"\n    ><span\n      class=\"drac-avatar-background\"\n      style=\"\n        background-image: url(https://ui.draculatheme.com/static/images/avatar.png);\n      \"\n    ></span\n  ></span>\n</div>\n",
           "react": "<div>\n  <Avatar\n    src=\"https://ui.draculatheme.com/static/images/avatar.png\"\n    title=\"Count Dracula\"\n    borderVariant=\"large\"\n    mb=\"sm\"\n  />\n  <Avatar\n    src=\"https://ui.draculatheme.com/static/images/avatar.png\"\n    title=\"Count Dracula\"\n    borderVariant=\"none\"\n  />\n</div>;\n",
           "docs": "A border variant allows for customization of the border width of an Avatar, or for an Avatar to be rendered without a border.",
           "screenshot": "./dsp/assets/AvatarBorders.png"
@@ -3526,7 +3526,7 @@
           "title": "Spacing",
           "html": "<div>\n  <div class=\"drac-box drac-card drac-bg-yellow-pink drac-p-xs\">\n    <span class=\"drac-text drac-line-height drac-text-black\">xs padding</span>\n  </div>\n  <div class=\"drac-box drac-card drac-bg-purple-cyan drac-p-sm\">\n    <span class=\"drac-text drac-line-height drac-text-black\">sm padding</span>\n  </div>\n  <div class=\"drac-box drac-card drac-bg-pink-purple drac-p-md\">\n    <span class=\"drac-text drac-line-height drac-text-black\"\n      >medium padding</span\n    >\n  </div>\n  <div class=\"drac-box drac-card drac-bg-yellow-pink drac-m-xs\">\n    <span class=\"drac-text drac-line-height drac-text-black\">xs margin</span>\n  </div>\n  <div class=\"drac-box drac-card drac-bg-purple-cyan drac-m-sm\">\n    <span class=\"drac-text drac-line-height drac-text-black\">sm margin</span>\n  </div>\n  <div class=\"drac-box drac-card drac-bg-pink-purple drac-m-md\">\n    <span class=\"drac-text drac-line-height drac-text-black\"\n      >medium margin</span\n    >\n  </div>\n</div>\n",
           "react": "<div>\n  <Card color=\"yellowPink\" p=\"xs\">\n    <Text color=\"black\">xs padding</Text>\n  </Card>\n  <Card color=\"purpleCyan\" p=\"sm\">\n    <Text color=\"black\">sm padding</Text>\n  </Card>\n  <Card color=\"pinkPurple\" p=\"md\">\n    <Text color=\"black\">medium padding</Text>\n  </Card>\n  <Card color=\"yellowPink\" m=\"xs\">\n    <Text color=\"black\">xs margin</Text>\n  </Card>\n  <Card color=\"purpleCyan\" m=\"sm\">\n    <Text color=\"black\">sm margin</Text>\n  </Card>\n  <Card color=\"pinkPurple\" m=\"md\">\n    <Text color=\"black\">medium margin</Text>\n  </Card>\n</div>;\n",
-          "docs": "Cards come with pre defined spacing primitives for padding and margin that allow for customizing the spacing inside and around Cardes.",
+          "docs": "Cards come with pre defined spacing primitives for padding and margin that allow for customizing the spacing inside and around Cards.",
           "screenshot": "./dsp/assets/CardSpacing.png"
         }
       ],
