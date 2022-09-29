@@ -18,6 +18,7 @@ const items = [
       'Welcome',
       'Installation',
       'Principles',
+      'Migration',
       'Tooling',
       'Design',
       'Support',
