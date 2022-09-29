@@ -41,7 +41,7 @@ Now you can take advantage of all the classes, for example:
 <p class="drac-text drac-text-black">Hello Vampire</p>
 ```
 
-> [See full example](https://github.com/dracula/dracula-ui/tree/master/examples/with-html).
+> [See full example](https://github.com/dracula/dracula-ui/tree/main/examples/with-html).
 
 ## :sparkles: Using with React
 
@@ -58,7 +58,7 @@ function App() {
 export default App;
 ```
 
-> [See full example](https://github.com/dracula/dracula-ui/tree/master/examples/with-react).
+> [See full example](https://github.com/dracula/dracula-ui/tree/main/examples/with-react).
 
 ## :rocket: Using with Next.js
 
@@ -86,7 +86,7 @@ export default function Index() {
 }
 ```
 
-> [See full example](https://github.com/dracula/dracula-ui/tree/master/examples/with-next).
+> [See full example](https://github.com/dracula/dracula-ui/tree/main/examples/with-next).
 
 ## :test_tube: Using with Jekyll
 
@@ -113,7 +113,7 @@ Finally, include the compiled CSS file into your `_layouts`.
 <link rel="stylesheet" href="/assets/css/styles.css">
 ```
 
-> [See full example](https://github.com/dracula/dracula-ui/tree/master/examples/with-jekyll).
+> [See full example](https://github.com/dracula/dracula-ui/tree/main/examples/with-jekyll).
 
 ## :bulb: Ideas
 
