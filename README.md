@@ -1,4 +1,4 @@
-# Dracula UI (Early Access)
+# Dracula UI
 
 > A dark-first collection of UI patterns and components.
 

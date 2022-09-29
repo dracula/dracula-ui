@@ -27,12 +27,6 @@ class Welcome extends React.Component {
         </Box>
 
         <Box my="lg">
-          <Heading as="h2" size="xl">Vision</Heading>
-          <Paragraph>Our goal is to build something special, so instead of waiting months to release this, we decided to offer an early access version that will allow you to give feedback and shape the future of this project.</Paragraph>
-          <Paragraph>We're starting with a series of 21 components, however our vision is to not only grow that number, but also to create a collection of UI patterns like Pricing pages, Contact pages, Landing pages, and more.</Paragraph>
-        </Box>
-
-        <Box my="lg">
           <Heading as="h2" size="xl" pb="md">Key Features</Heading>
 
           <Heading as="h3" size="md">Built for Dark Mode</Heading>

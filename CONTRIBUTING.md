@@ -1,9 +1,4 @@
-# Dracula UI (Early Access)
-
-> A dark-first collection of UI patterns and components.
-
-Thank you for your interest in contributing to Dracula UI, and for making the time to test our alpha release.
-We're grateful to have you as an early adopter 🥰
+# Dracula UI
 
 Here's an overview of the architecture and some useful commands.
 
