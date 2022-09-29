@@ -45,7 +45,6 @@ export default class CodeHighlight extends Component {
               }}
             />
             <Check
-              isVisible={copied}
               className={localStyles.check}
               style={{
                 strokeDashoffset: copied ? 0 : -50
