@@ -7,9 +7,6 @@
   "engines": {
     "node": ">=10"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "scripts": {
     "start": "tsdx watch --noClean",
     "build": "tsdx build && node ./scripts/css-to-js.js && cp package.json ./dist && cp -r dsp ./dist",

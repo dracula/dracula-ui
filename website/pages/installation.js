@@ -20,31 +20,6 @@ class Installation extends React.Component {
     return (
       <Box>
         <Box my="lg">
-          <Heading as="h2" size="xl">Getting set up</Heading>
-          <Paragraph>
-            Dracula UI uses <Anchor href="https://github.com/features/packages" target="_blank">GitHub Packages</Anchor> to distribute the code to you.
-          </Paragraph>
-          <Paragraph lineHeight="large">
-            First, create a <Anchor href="https://github.com/settings/tokens/new" target="_blank">Personal Access Token</Anchor> with the following scopes: <code>write:packages</code> and <code>delete:packages</code>.
-          </Paragraph>
-          <img
-            className={styles.image}
-            src="/static/images/installation-1.png"
-            alt="GitHub Personal Access Token"
-          />
-          <Paragraph lineHeight="large">
-            Now, create a <code>.npmrc</code> file in the root of your project and include the following lines, replacing <code>TOKEN</code> with your Personal Access Token.
-          </Paragraph>
-          <CodeHighlight
-            code={`registry=https://registry.npmjs.org/
-@dracula:registry=https://npm.pkg.github.com/
-//npm.pkg.github.com/:_authToken=TOKEN`}
-          />
-          <Paragraph>
-            This will allow you to fetch all packages from npm except for Dracula UI, which will be downloaded from GitHub Packages.
-          </Paragraph>
-        </Box>
-        <Box my="lg">
           <Heading size="heading-2">Installing the package</Heading>
           <Paragraph>
             Inside your project directory, install Dracula UI by running

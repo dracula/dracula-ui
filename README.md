@@ -16,25 +16,7 @@ Our mission is to unleash the creative potential in every developer. We do that 
 
 ## :book: Documentation
 
-You can access the documentation portal at: [ui.draculatheme.com](https://ui.draculatheme.com)
-
-> Note: Please don't share this secret URL with people outside of the early access program.
-
-## :computer: Setup
-
-Dracula UI uses [GitHub Packages](https://github.com/features/packages) to distribute the code to you.
-
-First, create a [Personal Access Token](https://github.com/settings/tokens/new) with the following scopes: `write:packages` and `delete:packages`.
-
-Now, create a `.npmrc` file in the root of your project and include the following lines, replacing `TOKEN` with your Personal Access Token.
-
-```
-registry=https://registry.npmjs.org/
-@dracula:registry=https://npm.pkg.github.com/
-//npm.pkg.github.com/:_authToken=TOKEN
-```
-
-This will allow you to fetch all packages from npm except for Dracula UI, which will be downloaded from GitHub Packages.
+You can access the documentation at: [ui.draculatheme.com](https://ui.draculatheme.com)
 
 ## :package: Install
 
