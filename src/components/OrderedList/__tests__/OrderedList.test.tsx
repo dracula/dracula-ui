@@ -13,6 +13,11 @@ docs(OrderedList, {
         'Colors',
         Colors,
         'OrderedLists can be customized to use any of the Dracula UI theme colors.'
+      ),
+      snapshot(
+        'Types',
+        Types,
+        'OrderedLists can have a numbering type similar to an <ol> element.'
       )
     ]
   }
@@ -31,6 +36,16 @@ function Usage() {
 function Colors() {
   return (
     <OrderedList color="cyan">
+      <li className="drac-text drac-text-white">Blade</li>
+      <li className="drac-text drac-text-white">Buffy</li>
+      <li className="drac-text drac-text-white">Morbius</li>
+    </OrderedList>
+  )
+}
+
+function Types() {
+  return (
+    <OrderedList color="cyan" type="A">
       <li className="drac-text drac-text-white">Blade</li>
       <li className="drac-text drac-text-white">Buffy</li>
       <li className="drac-text drac-text-white">Morbius</li>

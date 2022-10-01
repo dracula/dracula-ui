@@ -2616,6 +2616,96 @@
     {
       "class": "component",
       "type": "page",
+      "id": ".drac-list-ordered-decimal",
+      "name": ".drac-list-ordered-decimal",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-list-ordered-decimal",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-list-ordered-decimal",
+        "languages": {
+          "css": "drac-list-ordered-decimal"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-list-ordered-lower-alpha",
+      "name": ".drac-list-ordered-lower-alpha",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-list-ordered-lower-alpha",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-list-ordered-lower-alpha",
+        "languages": {
+          "css": "drac-list-ordered-lower-alpha"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-list-ordered-lower-roman",
+      "name": ".drac-list-ordered-lower-roman",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-list-ordered-lower-roman",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-list-ordered-lower-roman",
+        "languages": {
+          "css": "drac-list-ordered-lower-roman"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-list-ordered-upper-alpha",
+      "name": ".drac-list-ordered-upper-alpha",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-list-ordered-upper-alpha",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-list-ordered-upper-alpha",
+        "languages": {
+          "css": "drac-list-ordered-upper-alpha"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-list-ordered-upper-roman",
+      "name": ".drac-list-ordered-upper-roman",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-list-ordered-upper-roman",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-list-ordered-upper-roman",
+        "languages": {
+          "css": "drac-list-ordered-upper-roman"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
       "id": ".drac-list-pink",
       "name": ".drac-list-pink",
       "last_updated_by": "System",

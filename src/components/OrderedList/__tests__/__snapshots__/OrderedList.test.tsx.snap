@@ -37,3 +37,25 @@ Object {
   "title": "Colors",
 }
 `;
+
+exports[`Site: OrderedList Types 1`] = `
+Object {
+  "docs": "OrderedLists can have a numbering type similar to an <ol> element.",
+  "html": "<ol
+  type=\\"A\\"
+  class=\\"drac-list drac-list-ordered drac-list-ordered-lower-alpha drac-list-cyan\\"
+>
+  <li class=\\"drac-text drac-text-white\\">Blade</li>
+  <li class=\\"drac-text drac-text-white\\">Buffy</li>
+  <li class=\\"drac-text drac-text-white\\">Morbius</li>
+</ol>
+",
+  "react": "<OrderedList color=\\"cyan\\" type=\\"A\\">
+  <li className=\\"drac-text drac-text-white\\">Blade</li>
+  <li className=\\"drac-text drac-text-white\\">Buffy</li>
+  <li className=\\"drac-text drac-text-white\\">Morbius</li>
+</OrderedList>;
+",
+  "title": "Types",
+}
+`;

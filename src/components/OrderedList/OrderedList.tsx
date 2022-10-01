@@ -20,6 +20,14 @@ export const orderedListColors: Partial<ColorMap> = {
   yellow: 'drac-list-yellow'
 }
 
+const orderedListTypes = {
+  1: 'drac-list-ordered-decimal',
+  a: 'drac-list-ordered-lower-alpha',
+  A: 'drac-list-ordered-lower-alpha',
+  i: 'drac-list-ordered-lower-roman',
+  I: 'drac-list-ordered-lower-roman'
+}
+
 /**
  * OrderedList Props
  */
@@ -29,18 +37,22 @@ export interface OrderedListProps
     MarginMixin {
   /** The Dracula UI color for the Ordered List. */
   color?: keyof typeof orderedListColors
+  /** The numbering type of the Ordered List, same as a regular `<ol>` element. */
+  type?: OlHTMLAttributes<HTMLOListElement>['type']
 }
 
 /**
  * Ordered Lists are used to display list items in an ordered way.
  */
 export const OrderedList: React.FC<OrderedListProps> = (props) => {
-  const { color, ...htmlProps } = props
+  const { color, type, ...htmlProps } = props
 
   const finalProps = cleanProps({
     ...htmlProps,
+    type,
     className: cx(
       'drac-list drac-list-ordered',
+      type && orderedListTypes[type],
       props.className,
       color && orderedListColors[color],
       ...paddingMixin(props),
