@@ -4,7 +4,10 @@ export const supportColors = {
   white: 'drac-bg-white',
   black: 'drac-bg-black',
   blackSecondary: 'drac-bg-black-secondary',
-  blackLight: 'drac-bg-black-light'
+  blackLight: 'drac-bg-black-light',
+  grey: 'drac-bg-grey',
+  greySecondary: 'drac-bg-grey-secondary',
+  greyLight: 'drac-bg-grey-light'
 }
 
 export const baseColors = {
@@ -63,8 +66,8 @@ export const baseTextColors: ColorMap = mapValues(colors, (className) => {
   return className.replace('-bg-', '-text-')
 })
 
-export const scrollbarColors: BaseColorMap = mapValues(
-  baseColors,
+export const scrollbarColors: ColorMap = mapValues(
+  colors,
   (className) => {
     return className.replace('-bg-', '-scrollbar-')
   }
