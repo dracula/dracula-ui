@@ -23,6 +23,7 @@
 
 .usage,
 .codeContainer {
+  composes: drac-scrollbar-grey from global;
   background: #282a36;
   border-radius: var(--rounded-md);
   max-height: 300px;

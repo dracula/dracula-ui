@@ -1,7 +1,7 @@
-import React from "react";
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import Document, { Head, Html, Main, NextScript } from "next/document";
 
 import { GA_TRACKING_ID } from "../lib/gtag";
+import React from "react";
 
 export default class extends Document {
   static async getInitialProps(ctx) {
@@ -17,7 +17,10 @@ export default class extends Document {
           <meta property="og:type" content="website" />
           <meta content="summary_large_image" name="twitter:card" />
           <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
-          <meta content="https://ui.draculatheme.com/static/og.jpg" property="og:image" />
+          <meta
+            content="https://ui.draculatheme.com/static/og.jpg"
+            property="og:image"
+          />
           <meta content="Netto Farah &amp; Zeno Rocha" name="author" />
 
           <script
@@ -31,13 +34,15 @@ export default class extends Document {
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', '${GA_TRACKING_ID}');
-          `,
+          `
             }}
           />
         </Head>
-        <Main />
-        <NextScript />
+        <body className="drac-scrollbar-grey">
+          <Main />
+          <NextScript />
+        </body>
       </Html>
-    );
+    )
   }
 }
