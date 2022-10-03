@@ -1,4 +1,5 @@
 .nav {
+  composes: drac-scrollbar-grey from global;
   background: #15171b;
   height: 100vh;
   min-width: 15rem;
