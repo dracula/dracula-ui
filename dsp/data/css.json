@@ -384,6 +384,60 @@
     {
       "class": "component",
       "type": "page",
+      "id": ".drac-bg-grey",
+      "name": ".drac-bg-grey",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-grey",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-grey",
+        "languages": {
+          "css": "drac-bg-grey"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-grey-secondary",
+      "name": ".drac-bg-grey-secondary",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-grey-secondary",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-grey-secondary",
+        "languages": {
+          "css": "drac-bg-grey-secondary"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-bg-grey-transparent",
+      "name": ".drac-bg-grey-transparent",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-bg-grey-transparent",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-bg-grey-transparent",
+        "languages": {
+          "css": "drac-bg-grey-transparent"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
       "id": ".drac-bg-orange",
       "name": ".drac-bg-orange",
       "last_updated_by": "System",
@@ -864,6 +918,24 @@
         "trigger": "css-border-green",
         "languages": {
           "css": "drac-border-green"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-border-grey",
+      "name": ".drac-border-grey",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-border-grey",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-border-grey",
+        "languages": {
+          "css": "drac-border-grey"
         }
       }
     },
@@ -1548,6 +1620,24 @@
         "trigger": "css-glow-green",
         "languages": {
           "css": "drac-glow-green"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-glow-grey",
+      "name": ".drac-glow-grey",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-glow-grey",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-glow-grey",
+        "languages": {
+          "css": "drac-glow-grey"
         }
       }
     },
@@ -4740,6 +4830,24 @@
     {
       "class": "component",
       "type": "page",
+      "id": ".drac-scrollbar-grey",
+      "name": ".drac-scrollbar-grey",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-scrollbar-grey",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-scrollbar-grey",
+        "languages": {
+          "css": "drac-scrollbar-grey"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
       "id": ".drac-scrollbar-orange",
       "name": ".drac-scrollbar-orange",
       "last_updated_by": "System",
@@ -5994,6 +6102,42 @@
         "trigger": "css-text-green--hover",
         "languages": {
           "css": "drac-text-green--hover"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-grey",
+      "name": ".drac-text-grey",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-grey",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-grey",
+        "languages": {
+          "css": "drac-text-grey"
+        }
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "id": ".drac-text-grey-secondary",
+      "name": ".drac-text-grey-secondary",
+      "last_updated_by": "System",
+      "description": "CSS class containing .drac-text-grey-secondary",
+      "related_entity_ids": [],
+      "tags": [
+        "component"
+      ],
+      "snippets": {
+        "trigger": "css-text-grey-secondary",
+        "languages": {
+          "css": "drac-text-grey-secondary"
         }
       }
     },
