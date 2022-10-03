@@ -1,4 +1,4 @@
-@each $color in cyan, green, orange, pink, purple, red, yellow {
+@each $color in grey, cyan, green, orange, pink, purple, red, yellow {
   .scrollbar-$(color) {
     --drac-scrollbar-bg: transparent;
     --drac-scrollbar-border: var(--$(color)Light);

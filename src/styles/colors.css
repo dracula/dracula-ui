@@ -4,6 +4,11 @@
   --blackTernary: hsl(230, 15%, 70%);
   --blackLight: hsla(230, 15%, 15%, 5%);
 
+  --grey: hsl(230, 15%, 30%);
+  --greySecondary: hsl(230, 15%, 45%);
+  --greyTernary: hsl(230, 15%, 75%);
+  --greyLight: hsla(230, 15%, 30%, 5%);
+
   --white: hsl(60, 30%, 96%);
   --whiteSecondary: hsl(60, 30%, 100%);
   --whiteLight: hsla(60, 30%, 96%, 5%);
@@ -106,7 +111,7 @@
   }
 }
 
-@each $color in black, white, cyan, green, orange, pink, purple, red, yellow {
+@each $color in black, grey, white, cyan, green, orange, pink, purple, red, yellow {
   .bg-$(color) {
     background-color: var(--$(color));
   }
