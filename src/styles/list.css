@@ -11,13 +11,33 @@
   counter-reset: li;
 }
 
+.list-ordered-lower-alpha {
+  --type: lower-alpha;
+}
+
+.list-ordered-upper-alpha {
+  --type: upper-alpha;
+}
+
+.list-ordered-lower-roman {
+  --type: lower-roman;
+}
+
+.list-ordered-upper-roman {
+  --type: upper-roman;
+}
+
+.list-ordered-decimal {
+  --type: decimal;
+}
+
 .list-ordered li {
   counter-increment: li;
   margin-left: -30px;
 }
 
 .list-ordered li::before {
-  content: counter(li)'.';
+  content: counter(li, var(--type, decimal))'.';
   display: inline-block;
   margin-left: 15px;
   padding-right: 5px;
