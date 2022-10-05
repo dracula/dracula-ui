@@ -1,6 +1,6 @@
 {
   "name": "dracula-ui",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A dark-first collection of UI patterns and components.",
   "homepage": "https://ui.draculatheme.com",
   "repository": "dracula/dracula-ui",
@@ -15,9 +15,9 @@
     "build": "tsdx build && node ./scripts/css-to-js.js && cp package.json ./dist && cp README.md ./dist && cp -r dsp ./dist",
     "dev": "yarn build && yarn docs && concurrently \"yarn start\" \"cd website && yarn && yarn dev\" ",
     "test": "jest",
-    "docs": "RECORDING=true yarn test -u && node ./dsp/update.js && cp -r dsp ./dist",
+    "docs": "yarn test -u && node ./dsp/update.js && cp -r dsp ./dist",
     "lint": "echo Linting",
-    "release": "./scripts/release.sh",
+    "release": "bash scripts/release.sh",
     "deploy": "./scripts/deploy.sh"
   },
   "peerDependencies": {
