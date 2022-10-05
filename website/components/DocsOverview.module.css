@@ -1,0 +1,18 @@
+.docsOverview {
+    max-height: 80vh;
+    margin: 0;
+    position: fixed;
+    overflow-y: auto;
+    top: 64px;
+    right: 80px;
+}
+
+@media (max-width: 76rem){
+    .docsOverview{
+        width: 100%;
+        margin: 3.75rem 0 0 0;
+        padding: 0;
+        position: relative;
+        inset: unset;
+    }
+}
