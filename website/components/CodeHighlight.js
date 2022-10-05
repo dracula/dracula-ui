@@ -1,8 +1,9 @@
-import React, { Component } from 'react'
-import localStyles from './CodeHighlight.module.css'
 import Highlight, { defaultProps } from 'prism-react-renderer'
-import theme from '../lib/prism'
+import React, { Component } from 'react'
+
 import CopyToClipboard from 'clipboard'
+import localStyles from './CodeHighlight.module.css'
+import theme from '../lib/prism'
 
 export default class CodeHighlight extends Component {
   state = { copied: false }
