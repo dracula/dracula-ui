@@ -1,19 +1,11 @@
-import React from 'react'
 import { Anchor, Box, Text } from 'dracula-ui'
+
+import React from 'react'
+import localStyles from './DocsOverview.module.css'
 
 export function DocsOverview({ sections, showProperties }) {
   return (
-    <Box
-      as="ul"
-      style={{
-        position: 'fixed',
-        right: '80px',
-        top: '64px',
-        margin: 0,
-        maxHeight: '80vh',
-        overflowY: 'auto'
-      }}
-    >
+    <Box as="ul" className={localStyles.docsOverview}>
       <Text weight="semibold" style={{ textTransform: 'uppercase' }}>
         On this page
       </Text>
