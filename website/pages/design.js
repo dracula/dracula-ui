@@ -21,7 +21,7 @@ class Design extends React.Component {
         <Box my="lg">
           <Heading as="h2" size="xl">Using Figma</Heading>
           <Paragraph>
-            To facilitate the communication between between designers
+            To facilitate the communication between designers
             and developers, we decided to build all Dracula UI
             components on Figma.
           </Paragraph>
