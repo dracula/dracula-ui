@@ -7,6 +7,8 @@
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
+
+  transition: all ease-in-out;
 }
 
 .btn:active,

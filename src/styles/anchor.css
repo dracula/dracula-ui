@@ -1,5 +1,6 @@
 .anchor {
   text-decoration: none;
+  transition: all ease-in-out;
 }
 
 @each $color in black, white, cyan, green, orange, pink, purple, red, yellow {
