@@ -1,0 +1,69 @@
+
+@each $from, $to in (purple, yellow, cyan, pink), (cyan, pink, green, purple) {
+  .bg-$(from)-$(to) {
+    background: linear-gradient(
+      var(--gradientDegree),
+      var(--$(from)) 0%,
+      var(--$(to)) 100%
+    );
+  }
+
+  .bg-$(from)-$(to)-transparent {
+    background: linear-gradient(
+      var(--gradientDegree),
+      var(--$(from)-transparent) 0%,
+      var(--$(to)-transparent) 100%
+    );
+  }
+
+  .text-$(from)-$(to) {
+    background-image: linear-gradient(
+      var(--gradientDegree),
+      var(--$(from)) 0%,
+      var(--$(to)) 100%
+    );
+
+    background-size: 100%;
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+  }
+}
+  
+@each $color in black, grey, white, cyan, green, orange, pink, purple, red, yellow {
+  .bg-$(color) {
+    background-color: var(--$(color));
+  }
+
+  .bg-$(color)-secondary {
+    --accentColor: var(--$(color)Secondary);
+    background-color: var(--$(color)Secondary);
+  }
+
+  .bg-$(color)-transparent {
+    --accentColor: var(--$(color)-transparent);
+    background-color: var(--$(color)-transparent);
+  }
+
+  .text-$(color) {
+    color: var(--$(color));
+  }
+
+  .text-$(color)-secondary {
+    color: var(--$(color)Secondary);
+  }
+
+  .glow-$(color) {
+    background-color: var(--$(color));
+    --glowColor: var(--$(color));
+  }
+
+  .border-$(color) {
+    border-color: var(--$(color));
+    --borderColor: var(--$(color));
+  }
+}

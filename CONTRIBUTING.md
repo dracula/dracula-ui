@@ -12,7 +12,7 @@ Here's an overview of the architecture and some useful commands.
 
 - src/styles: Contains the CSS styles for all components, typography, and colors.
 - src/components: Contains the React implementation for each component.
-- sec/base: Contains the base spacing and color helpers.
+- src/base: Contains the base spacing and color helpers.
 
 ## Component Design Guidelines
 
