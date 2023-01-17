@@ -40,7 +40,7 @@ You can also import Dracula UI via npm's [unpkg CDN](https://unpkg.com):
 ```html
 <link
   rel="stylesheet"
-  href="href="https://unpkg.com/dracula-ui@1.0.3/styles/dracula-ui.css"
+  href="https://unpkg.com/dracula-ui@1.0.3/styles/dracula-ui.css"
 />
 ```
 
