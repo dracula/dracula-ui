@@ -35,6 +35,15 @@ You can use Dracula UI with plain HTML by importing the CSS file.
 />
 ```
 
+You can also import Dracula UI via npm's [unpkg CDN](https://unpkg.com):
+
+```html
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/dracula-ui@1.0.3/styles/dracula-ui.css"
+/>
+```
+
 Now you can take advantage of all the classes, for example:
 
 ```html
