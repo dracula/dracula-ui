@@ -17,7 +17,7 @@
     "test": "jest",
     "docs": "yarn test -u && node ./dsp/update.js && cp -r dsp ./dist",
     "lint": "echo Linting",
-    "release": "bash scripts/release.sh",
+    "release": "./scripts/release.sh",
     "deploy": "./scripts/deploy.sh"
   },
   "peerDependencies": {
