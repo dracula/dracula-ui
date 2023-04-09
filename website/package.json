@@ -2,6 +2,9 @@
   "name": "website",
   "version": "1.0.0",
   "description": "Dracula UI site",
+  "engines": {
+    "node": ">=10 <17.0.0"
+  },
   "scripts": {
     "dev": "next dev"
   },
