@@ -29,10 +29,13 @@ yarn add dracula-ui
 You can use Dracula UI with plain HTML by importing the CSS file.
 
 ```html
-<link
-  rel="stylesheet"
-  href="node_modules/dracula-ui/styles/dracula-ui.css"
-/>
+<link rel="stylesheet" href="node_modules/dracula-ui/styles/dracula-ui.css" />
+```
+
+Or by importing it on your main JavaScript file (when using a tool like [Vite](https://vitejs.dev/), for example).
+
+```js
+import 'dracula-ui/styles/dracula-ui.css'
 ```
 
 You can also import Dracula UI via npm's [unpkg CDN](https://unpkg.com):

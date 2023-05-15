@@ -43,6 +43,29 @@ yarn add dracula-ui`}
             code={`<link rel="stylesheet" href="node_modules/dracula-ui/styles/dracula-ui.css" />`}
           />
           <Paragraph>
+            Or by importing it on your main JavaScript file (when using a tool
+            like
+            <Anchor href="https://vitejs.dev/" isExternal={true} pl="xxs">
+              Vite
+            </Anchor>
+            , for example).
+          </Paragraph>
+          <CodeHighlight
+            language="js"
+            code={`import 'dracula-ui/styles/dracula-ui.css'`}
+          />
+          <Paragraph>
+            You can also import Dracula UI via npm's
+            <Anchor href="https://unpkg.com" isExternal={true} pl="xxs">
+              unpkg CDN
+            </Anchor>
+            :
+          </Paragraph>
+          <CodeHighlight
+            language="html"
+            code={`<link rel="stylesheet" href="https://unpkg.com/dracula-ui@1.0.3/styles/dracula-ui.css" />`}
+          />
+          <Paragraph>
             Now you can take advantage of all the classes, for example:
           </Paragraph>
           <CodeHighlight
