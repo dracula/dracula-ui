@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Site: Textarea Basic Usage 1`] = `
+Object {
+  "docs": "Styles or abstrats HTML textarea elements.",
+  "html": "<textarea
+  placeholder=\\"Textarea\\"
+  class=\\"drac-textarea drac-textarea-white drac-text-white\\"
+></textarea>
+",
+  "react": "<Textarea placeholder=\\"Textarea\\" color=\\"white\\" />;
+",
+  "title": "Usage",
+}
+`;
+
+exports[`Site: Textarea Border Sizes 1`] = `
+Object {
+  "docs": "Border size can be customized to use several different sizes",
+  "html": "<div class=\\"drac-box\\">
+  <div class=\\"drac-box drac-mb-sm\\">
+    <h2 class=\\"drac-heading drac-heading-sm drac-text-white\\">sm</h2>
+    <textarea
+      placeholder=\\"small border outline\\"
+      class=\\"drac-textarea drac-textarea-border-sm drac-textarea-green drac-text-green drac-m-xs\\"
+    ></textarea
+    ><textarea
+      placeholder=\\"small border outline\\"
+      class=\\"drac-textarea drac-textarea-outline drac-textarea-border-sm drac-textarea-green drac-text-green drac-m-xs\\"
+    ></textarea>
+  </div>
+  <div class=\\"drac-box drac-mb-sm\\">
+    <h2 class=\\"drac-heading drac-heading-sm drac-text-white\\">md</h2>
+    <textarea
+      placeholder=\\"medium border outline\\"
+      class=\\"drac-textarea drac-textarea-border-md drac-textarea-purple drac-text-purple drac-m-xs\\"
+    ></textarea
+    ><textarea
+      placeholder=\\"medium border outline\\"
+      class=\\"drac-textarea drac-textarea-outline drac-textarea-border-md drac-textarea-purple drac-text-purple drac-m-xs\\"
+    ></textarea>
+  </div>
+  <div class=\\"drac-box drac-mb-sm\\">
+    <h2 class=\\"drac-heading drac-heading-sm drac-text-white\\">lg</h2>
+    <textarea
+      placeholder=\\"large border outline\\"
+      class=\\"drac-textarea drac-textarea-border-lg drac-textarea-yellow drac-text-yellow drac-m-xs\\"
+    ></textarea
+    ><textarea
+      placeholder=\\"large border outline\\"
+      class=\\"drac-textarea drac-textarea-outline drac-textarea-border-lg drac-textarea-yellow drac-text-yellow drac-m-xs\\"
+    ></textarea>
+  </div>
+</div>
+",
+  "react": "<Box>
+  <Box mb=\\"sm\\">
+    <Heading size=\\"sm\\">sm</Heading>
+    <Textarea
+      color=\\"green\\"
+      variant=\\"normal\\"
+      borderSize=\\"sm\\"
+      placeholder=\\"small border outline\\"
+      m=\\"xs\\"
+    />
+    <Textarea
+      color=\\"green\\"
+      variant=\\"outline\\"
+      borderSize=\\"sm\\"
+      placeholder=\\"small border outline\\"
+      m=\\"xs\\"
+    />
+  </Box>
+  <Box mb=\\"sm\\">
+    <Heading size=\\"sm\\">md</Heading>
+    <Textarea
+      color=\\"purple\\"
+      variant=\\"normal\\"
+      borderSize=\\"md\\"
+      placeholder=\\"medium border outline\\"
+      m=\\"xs\\"
+    />
+    <Textarea
+      color=\\"purple\\"
+      variant=\\"outline\\"
+      borderSize=\\"md\\"
+      placeholder=\\"medium border outline\\"
+      m=\\"xs\\"
+    />
+  </Box>
+  <Box mb=\\"sm\\">
+    <Heading size=\\"sm\\">lg</Heading>
+    <Textarea
+      color=\\"yellow\\"
+      variant=\\"normal\\"
+      borderSize=\\"lg\\"
+      placeholder=\\"large border outline\\"
+      m=\\"xs\\"
+    />
+    <Textarea
+      color=\\"yellow\\"
+      variant=\\"outline\\"
+      borderSize=\\"lg\\"
+      placeholder=\\"large border outline\\"
+      m=\\"xs\\"
+    />
+  </Box>
+</Box>;
+",
+  "title": "Border Sizes",
+}
+`;
+
+exports[`Site: Textarea Colors 1`] = `
+Object {
+  "docs": "Textareas can be customized to use any of the Dracula UI theme colors.",
+  "html": "<div class=\\"drac-box\\">
+  <textarea
+    placeholder=\\"purple\\"
+    class=\\"drac-textarea drac-textarea-purple drac-text-purple drac-m-xs\\"
+  ></textarea
+  ><textarea
+    placeholder=\\"green\\"
+    class=\\"drac-textarea drac-textarea-green drac-text-green drac-m-xs\\"
+  ></textarea>
+</div>
+",
+  "react": "<Box>
+  <Textarea color=\\"purple\\" placeholder=\\"purple\\" m=\\"xs\\" />
+  <Textarea color=\\"green\\" placeholder=\\"green\\" m=\\"xs\\" />
+</Box>;
+",
+  "title": "Colors",
+}
+`;
+
+exports[`Site: Textarea Sizes 1`] = `
+Object {
+  "docs": "Textareaas can be customized to use several different sizes.",
+  "html": "<div class=\\"drac-box\\">
+  <textarea
+    placeholder=\\"small\\"
+    class=\\"drac-textarea drac-textarea-sm drac-textarea-white drac-text-white drac-m-xs\\"
+  ></textarea
+  ><textarea
+    placeholder=\\"medium\\"
+    class=\\"drac-textarea drac-textarea-white drac-text-white drac-m-xs\\"
+  ></textarea
+  ><textarea
+    placeholder=\\"large\\"
+    class=\\"drac-textarea drac-textarea-lg drac-textarea-white drac-text-white drac-m-xs\\"
+  ></textarea>
+</div>
+",
+  "react": "<Box>
+  <Textarea color=\\"white\\" size=\\"sm\\" placeholder=\\"small\\" m=\\"xs\\" />
+  <Textarea color=\\"white\\" size=\\"md\\" placeholder=\\"medium\\" m=\\"xs\\" />
+  <Textarea color=\\"white\\" size=\\"lg\\" placeholder=\\"large\\" m=\\"xs\\" />
+</Box>;
+",
+  "title": "Sizes",
+}
+`;
+
+exports[`Site: Textarea Variants 1`] = `
+Object {
+  "docs": "Use the \`outline\` variant to represent subtler Textareas",
+  "html": "<div class=\\"drac-box\\">
+  <textarea
+    placeholder=\\"normal\\"
+    class=\\"drac-textarea drac-textarea-white drac-text-white drac-m-xs\\"
+  ></textarea
+  ><textarea
+    placeholder=\\"outline\\"
+    class=\\"drac-textarea drac-textarea-outline drac-textarea-white drac-text-white drac-m-xs\\"
+  ></textarea>
+</div>
+",
+  "react": "<Box>
+  <Textarea color=\\"white\\" variant=\\"normal\\" placeholder=\\"normal\\" m=\\"xs\\" />
+  <Textarea color=\\"white\\" variant=\\"outline\\" placeholder=\\"outline\\" m=\\"xs\\" />
+</Box>;
+",
+  "title": "Variants",
+}
+`;
