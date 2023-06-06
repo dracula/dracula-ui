@@ -13,7 +13,7 @@
 	border-color: var(--white);
 }
 
-.textarea:placeholder {
+.textarea::placeholder {
 	color: var(--blackTernary);
 }
 
@@ -22,7 +22,8 @@
 	border-color: var(--blackTernary);
 }
 
-@each $color in black, blackSecondary, white, cyan, green, orange, pink, purple, red, yellow
+@each $color in black, blackSecondary, white, cyan, green, orange, pink, purple, 
+  red, yellow
 {
   .textarea-outline.textarea-$(color),
   .textarea-outline.textarea-$(color):focus,
@@ -33,19 +34,19 @@
 
 .textarea.textarea-sm {
 	padding: 0 var(--spacing-3);
-	height: var(--spacing-8);
+	height: var(--spacing-12);
 	font-size: var(--font-sm);
 }
 
 .textarea {
 	padding: 0 var(--spacing-4);
-	height: var(--spacing-10);
+	height: var(--spacing-32);
 	font-size: var(--font-md);
 }
 
 .textarea.textarea-lg {
 	padding: 0 var(--spacing-6);
-	height: var(--spacing-12);
+	height: var(--spacing-64);
 	font-size: var(--font-lg);
 }
 
