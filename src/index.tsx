@@ -2,6 +2,7 @@ import './styles/dracula-ui.css'
 
 export * from './components/Heading/Heading'
 export * from './components/Text/Text'
+export * from './components/Textarea/Textarea'
 export * from './components/Anchor/Anchor'
 export * from './components/Paragraph/Paragraph'
 export * from './components/Box/Box'
