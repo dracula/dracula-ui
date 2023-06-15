@@ -160,7 +160,7 @@ class Colors extends React.Component {
 
           <Box my="sm" color="blackSecondary" rounded="base">
             <Box color="blackSecondary" p="lg" my="xxs" rounded="base">
-              <Text color="blackLight">.drac-black-secondary</Text>
+              <Text color="blackLight">.drac-bg-black-secondary</Text>
             </Box>
           </Box>
 
