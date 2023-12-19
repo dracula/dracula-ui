@@ -1,3 +1,5 @@
+**🚧 Dracula UI is no longer maintained. [Read announcement](https://draculatheme.com/blog/sunsetting-dracula-ui).**
+
 # Dracula UI
 
 > A dark-first collection of UI patterns and components.
